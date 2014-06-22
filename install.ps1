@@ -92,7 +92,7 @@ try {
   #preparing paths
   $ConEmuTempDir = Join-Path $env:TEMP "ConEmuDownloads"
   if (-Not (Test-Path -Path $ConEmuTempDir -PathType Container)) {
-    mkdir $ConEmuTempDir
+    $d = mkdir $ConEmuTempDir
   }
 
   # download the package
@@ -110,7 +110,7 @@ try {
     $dstdir = "C:\ConEmu"
   }
   if (-Not (Test-Path -Path $dstdir -PathType Container)) {
-    mkdir $dstdir
+    $d = mkdir $dstdir
   }
 
   # unpacking
@@ -133,4 +133,4 @@ try {
   return 99
 }
 
-Write-Host "ConEmu installation succeeded"
+Write-Host -ForegroundColor Green "`nConEmu installation succeeded`n"
