@@ -10,7 +10,91 @@
 
  <title>Automate install of ConEmu portable</title>
 
+ <style type="text/css">
+
+ .text {
+  max-width: 800px;
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+ }
+
+ .code {
+  max-width: 800px;
+  font-size: small;
+  font-family: monospace
+  border: 1px solid black;
+  background-color: lightgray;
+  color: black;
+  overflow: auto;
+ }
+
+ .pad0 {
+  margin-top: 0;
+  margin-bottom: 5pt;
+ }
+
+ .pad1 {
+  margin-bottom: 5pt;
+ }
+ </style>
+
 <body>
-<span>powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install.ps1'))"</span>
+
+<div class="maincol" align="center">
+<table cellpadding="0" cellspacing="0"><tr><td valign="top">
+<h2 class="pad0">Abstract</h2>
+<div class="text">If you need to automate your box installation, this page describes how to
+setup ConEmu via PowerShell with single command. Internet connection required.</div>
+
+<h2 class="pad1">Default automatic installation</h2>
+
+<div><table border="1">
+<tr><td>ConEmu version</td><td>Latest</td></tr>
+<tr><td>Destination folder</td><td>C:\ConEmu</td></tr>
+<tr><td>Create shortcut on desktop</td><td>Yes</td></tr>
+<tr><td>Run after installation</td><td>No</td></tr>
+</table></div>
+
+<div class="text">Just copy the following command, press ‘Win+R’, paste command and press ‘Enter’.</div>
+
+<div class="code">powershell -NoProfile -ExecutionPolicy Unrestricted
+-Command "iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install.ps1'))"</div>
+
+
+
+<h2 class="pad1">Automatic installation with parameters</h2>
+
+<div class="text">If you need to customize parameters (folder, default xml file, etc.) you may use another syntax. Note, ‘install2.ps1’ is used here instead of ‘install.ps1’.</div>
+
+<div><table border="1">
+<tr><th>Description</th><th>Name</th><th>Values</th></tr>
+<tr><td>Destination folder</td><td>dst</td><td>Full path to desired location<br>C:\Tools\ConEmu</td></tr>
+<tr><td>ConEmu version</td><td>ver</td><td><ul><li>'alpha'<li>'preview'<li>'stable'</ul></td></tr>
+<tr><td>Create shortcut on desktop</td><td>lnk</td><td><ul><li>$TRUE<li>$FALSE<li>'Desired link name'</ul></td></tr>
+<tr><td>Run after installation</td><td>run</td><td><ul><li>$TRUE<li>$FALSE</ul></td></tr>
+</table></div>
+
+<div class="text">Paste the following command to your box startup script (cmd-file for example) and change arguments to desired values.</div>
+
+<div class="code">powershell -NoProfile -ExecutionPolicy Unrestricted
+-Command "set ver 'alpha';
+set dst 'C:\ConEmu';
+set lnk $TRUE;
+set run $TRUE;
+set xml 'https://conemu.github.io/ConEmu.xml';
+iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install2.ps1'))"
+</div>
+
+<!--<h2 class="pad1">Just another example</h2>
+<div class="code">powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set run $TRUE; set xml 'https://conemu.github.io/ConEmu.xml'; iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install2.ps1'))"</div>-->
+
+<h2 class="pad1">Manual installation</h2>
+<div><a href="http://www.fosshub.com/ConEmu.html"><img src="http://conemu-maximus5.googlecode.com/svn/files/Downloads.png" alt="Fosshub.com" title="Fosshub.com mirror"/></div>
+
+</td><td style="width:5pt">&nbsp;</td>
+<td width="230" valign="top" align="center"> <a href="http://code.google.com/p/conemu-maximus5/issues/list?can=1&amp;q=Type%3DDocumentation+&amp;sort=-modified" rel="nofollow"><img src="http://conemu-maximus5.googlecode.com/svn/files/ConEmu2013.png" title="Helping with documentation"></img></a><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=3LV8XTRBK9K4E" rel="nofollow"><img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" alt="Donation" title="Donate ConEmu"></img></a> <a href="http://flattr.com/thing/2002773/Maximus5ConEmu-on-GitHub" rel="nofollow"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></img></a> </td>
+</tr></table>
+</div>
+
 </body>
 </html>
