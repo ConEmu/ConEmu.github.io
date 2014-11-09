@@ -1,0 +1,62 @@
+﻿
+body {
+  font-family: "Segoe UI", "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+  background: #eee8d5;
+  color: #002b36;
+}
+
+div {
+  display: block;
+}
+
+.text {
+  max-width: 800px;
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+}
+
+.wrapper {
+  width: 960px;
+  min-width: 760px;
+  margin: 0 auto; 
+  min-height: 100%;
+  background-color: #fdf6e3;
+  -webkit-box-shadow: 0 0 8px 3px #93a1a1;
+  -moz-box-shadow: 0 0 8px 3px #93a1a1;
+  box-shadow: 0 0 8px 3px #93a1a1;
+}
+
+.maincol {
+  padding: 10px 10px 10px 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: .6em 0;
+}
+
+code {
+  width: 600px;
+  font: .8em 'andale mono', 'lucida console', monospace;
+  line-height: 1.462em;
+  background-color: #002b36;
+  border: 4px solid #93a1a1;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 2px 2px 3px #839496;
+  color: #eee8d5;
+  display: block;
+  line-height: 1.5em;
+  overflow: auto;
+  padding: .7em;
+}
+
+.pad0 {
+  margin-top: 0;
+  margin-bottom: 5pt;
+}
+
+.pad1 {
+  margin-bottom: 5pt;
+}
