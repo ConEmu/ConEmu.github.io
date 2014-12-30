@@ -70,3 +70,8 @@ img {
 .pad1 {
   margin-bottom: 5pt;
 }
+
+.text.Yinfo {
+  max-width: 450px;
+  font-size: .8em;
+}
