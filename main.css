@@ -75,3 +75,12 @@ img {
   max-width: 450px;
   font-size: .8em;
 }
+
+.donatebox {
+  width: 300px;
+  background-color: #fdf6e3;
+  -webkit-box-shadow: 0 0 8px 3px #93a1a1;
+  -moz-box-shadow: 0 0 8px 3px #93a1a1;
+  box-shadow: 0 0 8px 3px #93a1a1;
+  padding: .5em;
+}
