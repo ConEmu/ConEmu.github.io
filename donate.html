@@ -39,10 +39,31 @@ Currency is Russian Rubles: 10 USD ≈ 580 RUB, 10 EUR ≈ 710 RUB.<br>
 After you press ‘Donate’ button you will be passed to https Yandex.Money website to confirm amount and start the transaction.
 </div>
 <div>
-<iframe
-  frameborder="0" allowtransparency="true" scrolling="no"
-  src="https://money.yandex.ru/embed/shop.xml?account=410011983971991&quickpay=shop&payment-type-choice=on&writer=seller&targets=ConEmu+donation&targets-hint=&default-sum=&button-text=04&comment=on&hint=&successURL=http%3A%2F%2Fconemu.github.io"
-  width="450" height="253">Your browser does not support &lt;iframe&gt; elements.</iframe>
+<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+ <input type="hidden" name="receiver" value="410011983971991">
+ <input type="hidden" name="formcomment" value="ConEmu.Maximus5@gmail.com">
+ <input type="hidden" name="short-dest" value="ConEmu donation">
+ <!-- <input type="hidden" name="label" value="$order_id"> -->
+ <input type="hidden" name="quickpay-form" value="donate">
+ <input type="hidden" name="targets" value="ConEmu donation">
+ <input type="hidden" name="need-fio" value="false">
+ <input type="hidden" name="need-email" value="false" >
+ <input type="hidden" name="need-phone" value="false">
+ <input type="hidden" name="need-address" value="false">
+<table border="0">
+<tr><td class="text Yinfo">Amount (rub):</td>
+<td><input type="number" name="sum" value="" data-type="number" ></td></tr>
+<tr><td class="text Yinfo">Comment (optional):</td>
+<td><input type="text" name="comment" value="" ></td></tr>
+<tr><td colspan="2" align="center" class="text Yinfo">
+ <input type="radio" name="paymentType" value="AC" checked>Visa/MasterCard</input>
+ <input type="radio" name="paymentType" value="PC">Yandex.Money</input>
+</td></tr>
+<tr><td colspan="2" align="center">
+ <input type="submit" name="submit-button" value="Donate">
+</td></tr>
+</table>
+</form>
 </div>
 
 <h3><a href="http://www.wmtransfer.com/">WebMoney transfer</a></h3>
