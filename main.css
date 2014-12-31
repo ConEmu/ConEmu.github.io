@@ -69,13 +69,12 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-.pad0 {
-  margin-top: 0;
+h1, h2 {
   margin-bottom: 5pt;
 }
 
-.pad1 {
-  margin-bottom: 5pt;
+#h0 {
+  margin-top: 0;
 }
 
 .text.Yinfo {

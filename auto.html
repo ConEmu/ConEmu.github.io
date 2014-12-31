@@ -31,11 +31,11 @@
 <div class="maincol">
 
 <table cellpadding="0" cellspacing="0"><tr><td valign="top">
-<h2 class="pad0">Abstract</h2>
+<h2 id="h0">Abstract</h2>
 <div class="text">If you need to automate your box installation, this page describes how to
 setup ConEmu via PowerShell with single command. Internet connection required.</div>
 
-<h2 class="pad1">Default automatic installation</h2>
+<h2>Default automatic installation</h2>
 
 <div><table border="1">
 <tr><td>ConEmu version</td><td>Latest</td></tr>
@@ -50,7 +50,7 @@ setup ConEmu via PowerShell with single command. Internet connection required.</
 
 
 
-<h2 class="pad1">Automatic installation with parameters</h2>
+<h2>Automatic installation with parameters</h2>
 
 <div class="text">If you need to customize parameters (folder, default xml file, etc.) you may use another syntax. Note, ‘install2.ps1’ is used here instead of ‘install.ps1’.</div>
 
@@ -66,7 +66,7 @@ setup ConEmu via PowerShell with single command. Internet connection required.</
 
 <code>powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set ver 'alpha'; set dst 'C:\ConEmu'; set lnk $TRUE; set run $TRUE; set xml 'https://conemu.github.io/ConEmu.xml'; iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install2.ps1'))"</code>
 
-<h2 class="pad1">Manual installation</h2>
+<h2>Manual installation</h2>
 <div><a href="http://www.fosshub.com/ConEmu.html"><img src="http://conemu-maximus5.googlecode.com/svn/files/Downloads.png" alt="Fosshub.com" title="Fosshub.com mirror"/></div>
 
 </td><td style="width:5pt">&nbsp;</td>
