@@ -1,4 +1,11 @@
 ﻿
+.site {
+margin: 0 auto;
+max-width: 960px;
+/*max-width: 68.571428571rem;*/
+overflow: hidden;
+}
+
 body {
   font-family: "Segoe UI", "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
   background: #eee8d5;
