@@ -175,8 +175,8 @@ table, th, td {
 #soc-plus {
   background: #fdf6e3;
   display: block;
-  /*width: 32px;*/
-  height: 32px;
+  width: 124px;
+  height: 26px;
   float: left;
   margin: 10px 6px 0px 0px;
 }
@@ -348,7 +348,7 @@ table, th, td {
   margin: 0;
   background: url('./img/logo.png') no-repeat;
   width: 270px;
-  height: 48px;
+  height: 90px;
 }
 #logo-block h1 {
   margin: 0px 0px 0px 55px;
