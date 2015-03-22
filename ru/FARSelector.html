@@ -1,19 +1,19 @@
-<p><a href="http://code.google.com/p/conemu-maximus5/downloads/list?q=summary:Selector" rel="nofollow">Download (Far2 x86/x64)</a> </p>
+п»ї<p><a href="http://code.google.com/p/conemu-maximus5/downloads/list?q=summary:Selector" rel="nofollow">Download (Far2 x86/x64)</a> </p>
 <h3><a name="About"></a>About<a href="#About" class="section_anchor"></a></h3>
-<p>Данный плагин позволяет открывать папки и позиционировать курсор на файл используя одну копию Far Manager. </p>
+<p>Р”Р°РЅРЅС‹Р№ РїР»Р°РіРёРЅ РїРѕР·РІРѕР»СЏРµС‚ РѕС‚РєСЂС‹РІР°С‚СЊ РїР°РїРєРё Рё РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°С‚СЊ РєСѓСЂСЃРѕСЂ РЅР° С„Р°Р№Р» РёСЃРїРѕР»СЊР·СѓСЏ РѕРґРЅСѓ РєРѕРїРёСЋ Far Manager. </p>
 <h3><a name="Requirements"></a>Requirements<a href="#Requirements" class="section_anchor"></a></h3>
-<p>Минимальная поддерживаемая версия FAR 2 build 1007. </p>
+<p>РњРёРЅРёРјР°Р»СЊРЅР°СЏ РїРѕРґРґРµСЂР¶РёРІР°РµРјР°СЏ РІРµСЂСЃРёСЏ FAR 2 build 1007. </p>
 <h3><a name="Installation"></a>Installation<a href="#Installation" class="section_anchor"></a></h3>
-<ol><li>Распакуйте архив в папку с far.exe; </li><li>Замените вызовы far.exe на FarS.exe. </li></ol><h3><a name="How_it_works?"></a>How it works?<a href="#How_it_works?" class="section_anchor"></a></h3>
-<p>При запуске FarS.exe ищет открытые и доступные копии FAR.EXE. Недоступный - значит нет активных панелей (в данный момент выполняется какая-либо консольная команда, активен редактор/вьювер, или диалог...). </p>
-<p>Если доступных копий нет вообще - запускается новый FAR.EXE, или новая вкладка в ConEmu если он найден в той же папке, что и FAR.EXE. </p>
-<p>Если доступные копии есть - дальнейшее поведение зависит от настройки: </p>
+<ol><li>Р Р°СЃРїР°РєСѓР№С‚Рµ Р°СЂС…РёРІ РІ РїР°РїРєСѓ СЃ far.exe; </li><li>Р—Р°РјРµРЅРёС‚Рµ РІС‹Р·РѕРІС‹ far.exe РЅР° FarS.exe. </li></ol><h3><a name="How_it_works?"></a>How it works?<a href="#How_it_works?" class="section_anchor"></a></h3>
+<p>РџСЂРё Р·Р°РїСѓСЃРєРµ FarS.exe РёС‰РµС‚ РѕС‚РєСЂС‹С‚С‹Рµ Рё РґРѕСЃС‚СѓРїРЅС‹Рµ РєРѕРїРёРё FAR.EXE. РќРµРґРѕСЃС‚СѓРїРЅС‹Р№ - Р·РЅР°С‡РёС‚ РЅРµС‚ Р°РєС‚РёРІРЅС‹С… РїР°РЅРµР»РµР№ (РІ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РІС‹РїРѕР»РЅСЏРµС‚СЃСЏ РєР°РєР°СЏ-Р»РёР±Рѕ РєРѕРЅСЃРѕР»СЊРЅР°СЏ РєРѕРјР°РЅРґР°, Р°РєС‚РёРІРµРЅ СЂРµРґР°РєС‚РѕСЂ/РІСЊСЋРІРµСЂ, РёР»Рё РґРёР°Р»РѕРі...). </p>
+<p>Р•СЃР»Рё РґРѕСЃС‚СѓРїРЅС‹С… РєРѕРїРёР№ РЅРµС‚ РІРѕРѕР±С‰Рµ - Р·Р°РїСѓСЃРєР°РµС‚СЃСЏ РЅРѕРІС‹Р№ FAR.EXE, РёР»Рё РЅРѕРІР°СЏ РІРєР»Р°РґРєР° РІ ConEmu РµСЃР»Рё РѕРЅ РЅР°Р№РґРµРЅ РІ С‚РѕР№ Р¶Рµ РїР°РїРєРµ, С‡С‚Рѕ Рё FAR.EXE. </p>
+<p>Р•СЃР»Рё РґРѕСЃС‚СѓРїРЅС‹Рµ РєРѕРїРёРё РµСЃС‚СЊ - РґР°Р»СЊРЅРµР№С€РµРµ РїРѕРІРµРґРµРЅРёРµ Р·Р°РІРёСЃРёС‚ РѕС‚ РЅР°СЃС‚СЂРѕР№РєРё: </p>
 <pre class="prettyprint">[HKEY_CURRENT_USER\Software\Far2\Plugins\FarSelector]
 &quot;Autoselect&quot;=hex:01</pre>
-<p>Если 00 - открывается диалог выбора копии с информацией о папках на панелях. Иначе - параметры сразу передаются в первую (активную) копию FAR.EXE. </p>
-<p>Применяются параметры макросом вроде: </p>
+<p>Р•СЃР»Рё 00 - РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РґРёР°Р»РѕРі РІС‹Р±РѕСЂР° РєРѕРїРёРё СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ РїР°РїРєР°С… РЅР° РїР°РЅРµР»СЏС…. РРЅР°С‡Рµ - РїР°СЂР°РјРµС‚СЂС‹ СЃСЂР°Р·Сѓ РїРµСЂРµРґР°СЋС‚СЃСЏ РІ РїРµСЂРІСѓСЋ (Р°РєС‚РёРІРЅСѓСЋ) РєРѕРїРёСЋ FAR.EXE. </p>
+<p>РџСЂРёРјРµРЅСЏСЋС‚СЃСЏ РїР°СЂР°РјРµС‚СЂС‹ РјР°РєСЂРѕСЃРѕРј РІСЂРѕРґРµ: </p>
 <pre class="prettyprint">$If (Shell) panel.SetPath(&quot;C:\\Program Files\\far\\&quot;,&quot;far.exe&quot;) CtrlPgDn $End</pre>
-<p>CtrlPgDn &quot;нажимается&quot; только для первого файла (активная панель). Добавление CtrlPgDn в макрос можно отключить в настройке плагина. </p>
+<p>CtrlPgDn &quot;РЅР°Р¶РёРјР°РµС‚СЃСЏ&quot; С‚РѕР»СЊРєРѕ РґР»СЏ РїРµСЂРІРѕРіРѕ С„Р°Р№Р»Р° (Р°РєС‚РёРІРЅР°СЏ РїР°РЅРµР»СЊ). Р”РѕР±Р°РІР»РµРЅРёРµ CtrlPgDn РІ РјР°РєСЂРѕСЃ РјРѕР¶РЅРѕ РѕС‚РєР»СЋС‡РёС‚СЊ РІ РЅР°СЃС‚СЂРѕР№РєРµ РїР»Р°РіРёРЅР°. </p>
 <h2><a name="Screenshots"></a>Screenshots<a href="#Screenshots" class="section_anchor"></a></h2>
 <p><strong>Optional instance selection dialog</strong><br> <img src="../img/FarSelector/fars.png" title="FAR Selector. Optional instance selection dialog"> </p>
 <p><strong>Plugin configuration</strong><br> <img src="../img/FarSelector/config.png" title="FAR Selector. Plugin configuration"> </p>

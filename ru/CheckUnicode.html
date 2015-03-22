@@ -1,9 +1,9 @@
-<!--
+ï»¿<!--
 <i>unicode support</i>
 -->
 <p>ConEmu is a unicode application. That means if your console application (cmd, java, perl, powershell, bash and so on) can write unicode characters to the console, ConEmu will show them. </p>
 <h1><a name="UTF-8"></a>UTF-8<a href="#UTF-8" class="section_anchor"></a></h1>
-<p>On Windows, unlike Unix, the console itself is not a stream of ‘bytes’ but a spreadsheet of cells, each of which contains an UTF-16 character and a color attribute. </p>
+<p>On Windows, unlike Unix, the console itself is not a stream of â€˜bytesâ€™ but a spreadsheet of cells, each of which contains an UTF-16 character and a color attribute. </p>
 <p>That means if your application produces output using single-byte or multi-byte character sets (which are ANSI, OEM, UTF-8 and many others) the Windows converts that output to UTF-16 automatically regarding active codepage selected in your console (use &quot;chcp&quot; command to check it). </p>
 <p>If you want to work with UTF-8 encoding you have to select UTF-8 as active console codepage. Just use &quot;chcp 65001&quot; command to do that. You may call this command from your shell prompt or run it before shell in a <a href="ConEmu.html">ConEmu</a> task content. Of course your application must be able to output data using UTF-8. Refer to your application manual. </p>
 <pre class="prettyprint">chcp 65001 &amp; cmd</pre>
@@ -12,25 +12,25 @@
 <pre class="prettyprint">set ConEmuCpCvt=perl.exe:1252:1251
 git app -p</pre>
 <h1><a name="Font_charset"></a>Font charset<a href="#Font_charset" class="section_anchor"></a></h1>
-<p>There is a ‘Font charset’ option in the font settings. This setting is <strong>not</strong> related to UTF-8 or Unicode itself, it just tells to Windows what font it must choose if there are several fonts available in one family. But you may play with this option and see how the result is changed. </p>
+<p>There is a â€˜Font charsetâ€™ option in the font settings. This setting is <strong>not</strong> related to UTF-8 or Unicode itself, it just tells to Windows what font it must choose if there are several fonts available in one family. But you may play with this option and see how the result is changed. </p>
 <h1><a name="Troubleshooting"></a>Troubleshooting<a href="#Troubleshooting" class="section_anchor"></a></h1>
 <p>If you observe some non-ascii characters are not displayed correctly you may check the following: </p>
 <h2><a name="Check_if_the_font_used_in_ConEmu_has_proper_glyphs"></a>Check if the font used in ConEmu has proper glyphs<a href="#Check_if_the_font_used_in_ConEmu_has_proper_glyphs" class="section_anchor"></a></h2>
 <h3><a name="What_font_you_are_using"></a>What font you are using<a href="#What_font_you_are_using" class="section_anchor"></a></h3>
-<p><a href="SettingsMain.html">Main</a> settings page has two section: ‘Main console font’ and ‘Change pseudographics font’. </p>
-<p>‘Pseudographics font’ is used for some unicode ranges generally containing frames and some pseudographics symbols. For example: <tt>= ¦ - ã ã ¬ ¬ ¬ L L L - - - ¦ ¦</tt>. The default range is U2013..U25C4. You may change it within <a href="ConEmuXml.html">ConEmuXml</a>: </p>
+<p><a href="SettingsMain.html">Main</a> settings page has two section: â€˜Main console fontâ€™ and â€˜Change pseudographics fontâ€™. </p>
+<p>â€˜Pseudographics fontâ€™ is used for some unicode ranges generally containing frames and some pseudographics symbols. For example: <tt>= Â¦ - Ð³ Ð³ Â¬ Â¬ Â¬ L L L - - - Â¦ Â¦</tt>. The default range is U2013..U25C4. You may change it within <a href="ConEmuXml.html">ConEmuXml</a>: </p>
 <pre class="prettyprint">&lt;value name=&quot;FixFarBordersRanges&quot; type=&quot;string&quot; data=&quot;2013-25C4;&quot;/&gt;</pre>
-<p>Actually, you may untick the ‘Change pseudographics font’ if you do not need it. </p>
-<p>‘Main console’ font is used for all other symbols. </p>
-<p>There is ‘Font charset’ there. Usually it must contain ‘Default’ or ‘ANSI’. Read ‘Font charset’ section above. </p>
-<p>One more strange thing: the option ‘Treat font height as device units’ reflects on created font too. </p>
+<p>Actually, you may untick the â€˜Change pseudographics fontâ€™ if you do not need it. </p>
+<p>â€˜Main consoleâ€™ font is used for all other symbols. </p>
+<p>There is â€˜Font charsetâ€™ there. Usually it must contain â€˜Defaultâ€™ or â€˜ANSIâ€™. Read â€˜Font charsetâ€™ section above. </p>
+<p>One more strange thing: the option â€˜Treat font height as device unitsâ€™ reflects on created font too. </p>
 <h3><a name="Check_font_glyphs"></a>Check font glyphs<a href="#Check_font_glyphs" class="section_anchor"></a></h3>
 <p>Check if the font has proper glyphs: run from <tt>Win+R</tt> the <tt>charmap.exe</tt> tool and examine your font. </p>
 <h2><a name="Check_if_is_capable_to_accept_unicode"></a>Check if <a href="RealConsole.html">RealConsole</a> is capable to accept unicode<a href="#Check_if_is_capable_to_accept_unicode" class="section_anchor"></a></h2>
-<p>Press ‘Ctrl+Win+Alt+Space’ to reveal <a href="RealConsole.html">RealConsole</a> and check its contents. Actually, it may fails for hieroglyphs and some others unicode ranges. </p>
+<p>Press â€˜Ctrl+Win+Alt+Spaceâ€™ to reveal <a href="RealConsole.html">RealConsole</a> and check its contents. Actually, it may fails for hieroglyphs and some others unicode ranges. </p>
 <p>Anyway, the critical thing is that <a href="RealConsole.html">RealConsole</a> has TrueType font selected in the console properties. </p>
 <p><img src="../img/RealConsoleProperties.png" title="RealConsole properties"> </p>
-<p>This font may be configured from ConEmu&#x27;s <a href="SettingsFeatures.html">Features setting page</a> <tt>-&gt;</tt> button ‘<tt>...</tt>’ on the right of ‘Show real console’<br> <img src="../img/SettingsMoreRealFont.png" title="ConEmu settings, RealConsole font" alt="ConEmu settings, RealConsole font"> </p>
+<p>This font may be configured from ConEmu&#x27;s <a href="SettingsFeatures.html">Features setting page</a> <tt>-&gt;</tt> button â€˜<tt>...</tt>â€™ on the right of â€˜Show real consoleâ€™<br> <img src="../img/SettingsMoreRealFont.png" title="ConEmu settings, RealConsole font" alt="ConEmu settings, RealConsole font"> </p>
 <h2><a name="Check_if_your_console_application_is_Unicode-aware"></a>Check if your console application is Unicode-aware<a href="#Check_if_your_console_application_is_Unicode-aware" class="section_anchor"></a></h2>
 <p>What shell or application is responsible for your broken output? In most cases you will see the active application exe name in the <a href="StatusBar.html">StatusBar</a>. If it does not support unicode output you need to check for updates of this application. For example, MSYS1 is not unicode-aware. May be your application has some configuration where you may choose proper encoding. </p>
 <p>At last, in some cases the following trick may help: set console codepage to UTF-8 before running your shell or application. For example, put the following in the startup task. </p>

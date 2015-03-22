@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 <i>The problem with apphelp.dll</i>
 -->
 <p><!-- https://bugs.php.net/bug.php?id=36055 https://bugzilla.mozilla.org/show_bug.cgi?id=939043 --> </p>
@@ -24,8 +24,8 @@ C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\lib\perl5\site_perl\5.8.8\msys\a
 <pre class="prettyprint">OPTIONAL HEADER VALUES
         6F1C0000 image base (6F1C0000 to 6F2E7FFF)</pre>
 <p>So, you you see that one of the cygwin/msys libraries is loaded in low memory address (below 0x5FFF0000) you have a problem most probably... The easies way to check is using <a href="ProcessExplorer.html">ProcessExplorer</a>. </p>
-<p>Press <tt>Ctrl+D</tt> (Menu <tt>-&gt;</tt> View <tt>-&gt;</tt> Lower pane view <tt>-&gt;</tt> DLLs) and look at ‘Base’ column in the lower pane. If it is not visible just right-click on the DLLs list header, choose ‘Select columns’ and turn on ‘Base address’ on the ‘DLL’ tab page. And use ‘dumpbin’ to ensure that required ‘image base’ differs. </p>
-<p>Scroll the DLLs list in the <a href="ProcessExplorer.html">ProcessExplorer</a> lower pane to find ‘Base+Size’ which covers desired address was shown by ‘dumpbin’. And who was loaded that dll? You may use <a href="DependencyWalker.html">DependencyWalker</a> or <a href="ImpEx.html">ImpEx</a> to check ‘Imports’ section of each dll loaded before. Yeah, that is not too simple but rather... </p>
+<p>Press <tt>Ctrl+D</tt> (Menu <tt>-&gt;</tt> View <tt>-&gt;</tt> Lower pane view <tt>-&gt;</tt> DLLs) and look at вЂBaseвЂ™ column in the lower pane. If it is not visible just right-click on the DLLs list header, choose вЂSelect columnsвЂ™ and turn on вЂBase addressвЂ™ on the вЂDLLвЂ™ tab page. And use вЂdumpbinвЂ™ to ensure that required вЂimage baseвЂ™ differs. </p>
+<p>Scroll the DLLs list in the <a href="ProcessExplorer.html">ProcessExplorer</a> lower pane to find вЂBase+SizeвЂ™ which covers desired address was shown by вЂdumpbinвЂ™. And who was loaded that dll? You may use <a href="DependencyWalker.html">DependencyWalker</a> or <a href="ImpEx.html">ImpEx</a> to check вЂImportsвЂ™ section of each dll loaded before. Yeah, that is not too simple but rather... </p>
 <h2><a name="The_solution"></a>The solution<a href="#The_solution" class="section_anchor"></a></h2>
-<p>1) You need to ‘rebase’ conflicting modules. </p>
-<p>2) Alternatively you need to run your shell in different way so process tree will not include DLLs raised the conflict. In my case, when I run ConEmu from TaskBar icon there is no <tt>apphelp.dll</tt> in the result process tree (from <tt>ConEmu.exe</tt> down to <tt>perl.exe</tt>). But when I run ConEmu from ‘USB Safe Remove’ tool (automatically on connecting USB flash), <tt>apphelp.dll</tt> appears in the process tree and perl is always failed... </p>
+<p>1) You need to вЂrebaseвЂ™ conflicting modules. </p>
+<p>2) Alternatively you need to run your shell in different way so process tree will not include DLLs raised the conflict. In my case, when I run ConEmu from TaskBar icon there is no <tt>apphelp.dll</tt> in the result process tree (from <tt>ConEmu.exe</tt> down to <tt>perl.exe</tt>). But when I run ConEmu from вЂUSB Safe RemoveвЂ™ tool (automatically on connecting USB flash), <tt>apphelp.dll</tt> appears in the process tree and perl is always failed... </p>

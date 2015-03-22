@@ -1,12 +1,12 @@
-<!--
+ï»¿<!--
 <i>How to display bold/italic/underlined text in the console</i>
 -->
 <p><a href="ConEmu.html">ConEmu</a> provides full-featured support of Windows console functions. That means you may run here any console applications designed for <a href="WinApi.html">WinApi</a>. On the other hand, Windows console does not provide official way to print bold/italic/underlined text. </p>
 <p>However, when you are using <a href="ConEmu.html">ConEmu</a> you may use them. Here are some tricks. </p>
 <h1><a name="Extend_fonts_feature"></a>Extend fonts feature<a href="#Extend_fonts_feature" class="section_anchor"></a></h1>
 <p>You may choose two background color indexes to force <a href="ConEmu.html">ConEmu</a> to draw text using bold/italic outline. </p>
-<p>When you turn the feature <strong>On</strong> on the ‘Main’ page, by default, ‘Light red’ background will be replaced with bold outlined text, and ‘Magenta’ background will be replaced with italic outlined text. </p>
-<p>Example for ‘cmd.exe’ prompt: bold ‘path’ followed by italic ‘time’ and normal ‘&gt;’. </p>
+<p>When you turn the feature <strong>On</strong> on the â€˜Mainâ€™ page, by default, â€˜Light redâ€™ background will be replaced with bold outlined text, and â€˜Magentaâ€™ background will be replaced with italic outlined text. </p>
+<p>Example for â€˜cmd.exeâ€™ prompt: bold â€˜pathâ€™ followed by italic â€˜timeâ€™ and normal â€˜&gt;â€™. </p>
 <pre class="prettyprint">prompt $E[37;4;41m$P$E[m$S$E[37;4;45m$T$E[m$G</pre>
 <p>The drawback. You lose two background indexes and you must choose the background color they would replaced with. In the following examples, black color (<tt>#0</tt>) was selected for using with <tt>cmd.exe</tt> prompt. </p>
 <p><strong>Extend fonts settings</strong><br> <img src="../img/ConEmuExtFonts1.png" title="ConEmu Settings: Extend fonts"> </p>

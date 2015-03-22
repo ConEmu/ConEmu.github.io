@@ -1,4 +1,4 @@
-<p>When you run any application compiled with cygwin or msys (that is statically linked with cygwin1.dll or msys???.dll) you may, sometimes, notice weird error in application console output, and it will immediately exits after that. </p>
+﻿<p>When you run any application compiled with cygwin or msys (that is statically linked with cygwin1.dll or msys???.dll) you may, sometimes, notice weird error in application console output, and it will immediately exits after that. </p>
 <pre class="prettyprint">0 [main] us 0 init_cheap: VirtualAlloc pointer is null, Win32 error 487 AllocationBase 0x68520000, BaseAddress 0x68570000, RegionSize 0x218000, State 0x1000 C:\Program Files (x86)\Git\bin\ls.exe: *** Couldn&#x27;t reserve space for cygwin&#x27;s heap, Win32 error 487</pre>
 <p>That is known cygwin problem mentioned in their FAQ (link?) </p>
 <p>And what does that error means? Cygwin (or msys) initialization routine tries to allocate memory (relatively large amount) at the <strong></strong>fixed<strong></strong> address. And, yep, it is already used by some dll! </p>
