@@ -1,11 +1,80 @@
-﻿<p>When you run any application compiled with cygwin or msys (that is statically linked with cygwin1.dll or msys???.dll) you may, sometimes, notice weird error in application console output, and it will immediately exits after that. </p>
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+
+ <link rel="icon" type="image/vnd.microsoft.icon" href="../conemu.ico">
+
+ <link rel="canonical" href="http://conemu.github.io" />
+
+ <link rel="stylesheet" href="../main.css">
+
+ <title>ConEmu</title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9200434-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="maincol" id="wikimaincol">
+
+	<div class="header">
+		<div id="logo-block">
+			<div>
+				<h1><a href="http://conemu.github.io">ConEmu</a></h1>
+				<div id="logo-descr"><a href="http://conemu.github.io">Windows terminal</a></div>
+				<div id="social">
+					<a href="http://www.facebook.com/share.php?u=http://conemu.github.io/" rel="nofollow" target="_blank" title="FaceBook" id="soc-facebook"></a>
+					<a href="http://twitter.com/share?url=http://conemu.github.io/" rel="nofollow" target="_blank" title="Twitter" id="soc-twitter"></a>
+					<div id="soc-plus">
+						<div style="background: transparent; text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 124px; height: 26px;"
+							id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="background: transparent; position: static; top: 0px; width: 88px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%"
+							id="I0_1419983428828" name="I0_1419983428828" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;origin=http%3A%2F%2Fconemu.github.io&amp;url=http%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.j1QholfdnmY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCP1BSvtxoI3E2wzG7twjHbDrCUuHA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1419983428828&amp;parent=http%3A%2F%2Fconemu.github.io&amp;pfname=&amp;rpctoken=42383786" data-gapiattached="true"
+							title="+1"></iframe></div>
+					</div>
+				</div>
+			</div>
+			<div style="overflow: hidden; width:728px; height:90px; position: relative; left: 210px; top: -90px;">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- conemu.github.io -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-8810818700876198"
+				     data-ad-slot="5792850468"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		<div id="header-line"></div>
+	</div><!-- .header-->
+
+	<div class="middle">
+		<div class="container">
+			<div class="content">
+
+<!-- Content starts -->
+
+<p>When you run any application compiled with cygwin or msys (that is statically linked with cygwin1.dll or msys???.dll) you may, sometimes, notice weird error in application console output, and it will immediately exits after that. </p>
 <pre class="prettyprint">0 [main] us 0 init_cheap: VirtualAlloc pointer is null, Win32 error 487 AllocationBase 0x68520000, BaseAddress 0x68570000, RegionSize 0x218000, State 0x1000 C:\Program Files (x86)\Git\bin\ls.exe: *** Couldn&#x27;t reserve space for cygwin&#x27;s heap, Win32 error 487</pre>
 <p>That is known cygwin problem mentioned in their FAQ (link?) </p>
 <p>And what does that error means? Cygwin (or msys) initialization routine tries to allocate memory (relatively large amount) at the <strong></strong>fixed<strong></strong> address. And, yep, it is already used by some dll! </p>
 <p>Is that a <a href="ConEmu.html">ConEmu</a> problem? </p>
 <p>No! </p>
 <p>1) <a href="ConEmu.html">ConEmu</a> is aware about cygwin and msys requirements and <a href="ConEmuHk.html">ConEmuHk</a> compiled with link options ask Windows kernel to load <a href="ConEmuHk.html">ConEmuHk</a>.dll (or ConEmuHk64.dll) in the memory address which must not has conflicts with cygwin or msys. 2) There is no one bug report which confirm conflict between <a href="ConEmu.html">ConEmu</a> and cygwin/msys. </p>
-<h1><a name="How_to_fix_that?"></a>How to fix that?<a href="#How_to_fix_that?" class="section_anchor"></a></h1>
+<h1 id="h0"><a name="How_to_fix_that?"></a>How to fix that?<a href="#How_to_fix_that?" class="section_anchor"></a></h1>
 <p>I really can&#x27;t help you because it is not a <a href="ConEmu.html">ConEmu</a> bug... But you may fix it yourself in your PC. 1) First of all, try to logoff/logon. If same here - try to restart your PC. 2) Same here? That means you must find problematic dll. Use ConEmuReportExe environment variable to stop execution of your application (sh.exe, ls.exe, and so on). And when message box arrears &quot;sh.exe loaded&quot; use <a href="ProcessMonitor.html">ProcessMonitor</a> to find dll which was loaded immediately after cygwin1.dll or msys???.dll. Press OK in the waiting message box and confirm that &quot;failed&quot; allocation memory address overlaps with dll your found. From my experience, that can be &quot;<a href="AppHelp.html">apphelp.dll</a>&quot;. When you find bad gay: a) You may to PATCH this dll. Use rebase tool from Windows sdk for example. What new base address to choose? I can&#x27;t tell you. Ideally, that address must not overlaps with any other libraries... but there are thousands... Good thing - must of them can be linked with dynamic base, bad thing - off you choose bad address, your system will be unstable (error code 0xC???). b) And, if it possible, you may install the program which had installed that dll c) Also, may be that program allows to set up exclusions. If you are working in the <a href="ConEmu.html">ConEmu</a> consoles only, you may add to exclusions list only <a href="ConEmu.html">ConEmu</a>&#x27;s executables (ConEmuC.exe, ConEmuC64.exe, <a href="ConEmu.html">ConEmu</a>.exe, ConEmu64.exe). Otherwise, you need to add to exclusions list all of your cygwin/msys applications (sh, ls, and on). </p>
 <h1><a name="Still_not_sure?"></a>Still not sure?<a href="#Still_not_sure?" class="section_anchor"></a></h1>
 <p>Well, submit your report with <a href="MiniDump.html">MiniDump</a> attached. All reports will be checked. </p>
@@ -13,3 +82,45 @@
 <p>Run your cmd prompt set ConEmuReportExe=ls.exe ls </p>
 <p>Message box must appears &quot;ls.exe loaded&quot; At this time, call <a href="ConEmu.html">ConEmu</a> system menu &gt; Debug &gt; Active process memory dump Attach here <a href="MiniDump.html">MiniDump</a> (full dump is not required) </p>
 <p>After pressing OK in &quot;loaded&quot; message box your error message expected. </p>
+
+<!-- Content ends -->
+
+			</div><!-- .content-->
+		</div><!-- .container-->
+
+		<div class="left-sidebar">
+			<div class="block">
+				<div class="blocktitle">Site menu</div>
+				<div class="blockcontent">
+					<ul>
+					<!-- Menu starts -->
+					<!-- Add ' class="MenuItemA" ' to current <a> item -->
+					<li><a href="../index.html"><span>Home</span></a></li>
+					<li><a href="http://www.fosshub.com/ConEmu.html"><span>Download</span></a></li>
+					<li><a class="MenuItemA" href="./TableOfContents.html"><span>Documentation</span></a></li>
+					<li><a href="./Screenshots.html"><span>Screenshots</span></a></li>
+					<li><a href="./Settings.html"><span>Setting</span></a></li>
+					<li><a href="../auto.html"><span>Auto install</span></a></li>
+					<li><a href="../donate.html"><span>Donate</span></a></li>
+					<li><a href="./AnsiEscapeCodes.html"><span>ANSI</span></a></li>
+					<li><a href="./Awards.html"><span>Awards</span></a></li>
+					<li><a href="./Delusions.html"><span>Delusions</span></a></li>
+					<li><a href="https://github.com/Maximus5/ConEmu"><span>Source code</span></a></li>
+					<!-- Menu ends -->
+					</ul>
+				</div>
+				<div class="blockbottom"></div>
+			</div>
+		</div><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- maincol -->
+</div>
+
+<div class="footer">
+	<div id="footertext">Copyright Maximus5 © 2015</div>
+</div><!-- .footer -->
+
+</body>
+</html>

@@ -1,10 +1,79 @@
-﻿<!--
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+
+ <link rel="icon" type="image/vnd.microsoft.icon" href="../conemu.ico">
+
+ <link rel="canonical" href="http://conemu.github.io" />
+
+ <link rel="stylesheet" href="../main.css">
+
+ <title>ConEmu - эмулятор терминала Windows</title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9200434-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="maincol" id="wikimaincol">
+
+	<div class="header">
+		<div id="logo-block">
+			<div>
+				<h1><a href="http://conemu.github.io/ru/ConEmu.html">ConEmu</a></h1>
+				<div id="logo-descr"><a href="http://conemu.github.io/ru/ConEmu.html">эмулятор терминала</a></div>
+				<div id="social">
+					<a href="http://www.facebook.com/share.php?u=http://conemu.github.io/" rel="nofollow" target="_blank" title="FaceBook" id="soc-facebook"></a>
+					<a href="http://twitter.com/share?url=http://conemu.github.io/" rel="nofollow" target="_blank" title="Twitter" id="soc-twitter"></a>
+					<div id="soc-plus">
+						<div style="background: transparent; text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 124px; height: 26px;"
+							id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="background: transparent; position: static; top: 0px; width: 88px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%"
+							id="I0_1419983428828" name="I0_1419983428828" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;origin=http%3A%2F%2Fconemu.github.io&amp;url=http%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.j1QholfdnmY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCP1BSvtxoI3E2wzG7twjHbDrCUuHA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1419983428828&amp;parent=http%3A%2F%2Fconemu.github.io&amp;pfname=&amp;rpctoken=42383786" data-gapiattached="true"
+							title="+1"></iframe></div>
+					</div>
+				</div>
+			</div>
+			<div style="overflow: hidden; width:728px; height:90px; position: relative; left: 210px; top: -90px;">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- conemu.github.io -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-8810818700876198"
+				     data-ad-slot="5792850468"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		<div id="header-line"></div>
+	</div><!-- .header-->
+
+	<div class="middle">
+		<div class="container">
+			<div class="content">
+
+<!-- Content starts -->
+
+<!--
 <i>Tasks in ConEmu</i>
 -->
 <p>The ‘Task’ is one or more (tabbed or splitted) predefined commands (shells) which you may start anytime by name or hotkey. </p>
 <p><img src="../img/ConEmuStartTask.png" title="Start task dropdown menu" alt="ConEmu's tasks dropdown"> </p>
 <p>Tasks may be configured in the <a href="SettingsTasks.html">‘Settings’ dialog</a>. </p>
-<h2><a name="Creating_new_task"></a>Creating new task<a href="#Creating_new_task" class="section_anchor"></a></h2>
+<h2 id="h0"><a name="Creating_new_task"></a>Creating new task<a href="#Creating_new_task" class="section_anchor"></a></h2>
 <p>When you want to create new task absent in the default tasks list you need to know: </p>
 <ul><li>The shell name. For example: cmd, powershell, bash and so on. </li><li>The shell arguments. For example: `&quot;/k vcvarsall.bat x86&quot; </li><li>Shell working directory. That may be very significant. </li><li>In some cases you need to know environment variables. </li></ul><h3><a name="Where_you_may_get_this_information?"></a>Where you may get this information?<a href="#Where_you_may_get_this_information?" class="section_anchor"></a></h3>
 <p>In most cases you may open properties of shortcut created by any installer. Just find the shortcut, right-click it, and choose ‘Properties’. </p>
@@ -16,3 +85,45 @@
 <p>Sometimes, if the shell is started from another program you may use <a href="ProcessExplorer.html">ProcessExplorer</a> or <a href="ProcessMonitor.html">ProcessMonitor</a> to detect which command is started, arguments and the working directory. </p>
 <p>If you can&#x27;t do that, just google for alternatives. For example it is hard to find proper arguments for NuGet console started from Visual Studio because VS do not start <tt>powershell.exe</tt> but run powershell host internally. Just google! For example: </p>
 <ul><li><a href="http://headsigned.com/article/using-nuget-standalone-command-line" rel="nofollow">Using NuGet standalone command-line</a>; </li><li><a href="http://stackoverflow.com/a/13581202/1405560" rel="nofollow">Download Nuget Packages Without VS/NuGet Package Manager</a>; </li><li><a href="http://stackoverflow.com/a/15000559/1405560" rel="nofollow">Do an offline installation into Visual Studio</a>. </li></ul>
+
+<!-- Content ends -->
+
+			</div><!-- .content-->
+		</div><!-- .container-->
+
+		<div class="left-sidebar">
+			<div class="block">
+				<div class="blocktitle">Меню сайта</div>
+				<div class="blockcontent">
+					<ul>
+					<!-- Menu starts -->
+					<!-- Add ' class="MenuItemA" ' to current <a> item -->
+					<li><a href="../index.html"><span>На главную</span></a></li>
+					<li><a href="http://www.fosshub.com/ConEmu.html"><span>Скачать</span></a></li>
+					<li><a class="MenuItemA" href="./TableOfContents.html"><span>Документация</span></a></li>
+					<li><a href="./Screenshots.html"><span>Скриншоты</span></a></li>
+					<li><a href="./Settings.html"><span>Настройка</span></a></li>
+					<li><a href="../auto.html"><span>Автоматизация</span></a></li>
+					<li><a href="../donate.html"><span>Поддержать</span></a></li>
+					<li><a href="./AnsiEscapeCodes.html"><span>ANSI</span></a></li>
+					<li><a href="./Awards.html"><span>Awards</span></a></li>
+					<li><a href="./Delusions.html"><span>Заблуждения</span></a></li>
+					<li><a href="https://github.com/Maximus5/ConEmu"><span>Исходный код</span></a></li>
+					<!-- Menu ends -->
+					</ul>
+				</div>
+				<div class="blockbottom"></div>
+			</div>
+		</div><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- maincol -->
+</div>
+
+<div class="footer">
+	<div id="footertext">Copyright Maximus5 © 2015</div>
+</div><!-- .footer -->
+
+</body>
+</html>

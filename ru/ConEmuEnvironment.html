@@ -1,5 +1,74 @@
-﻿<p><ul><li><a href="#Список_переменных_окружения_устан?">Список переменных окружения устанавливаемых в ConEmu</a></li><li><a href="#Изменения_PATH">Изменения PATH</a></li><li><a href="#Debug_purposed_variables">Debug purposed variables</a></li><li><a href="#Export_variables">Export variables</a></li><ul><li><a href="#Full_syntax_of_Export_command">Full syntax of Export command</a></li></ul><li><a href="#Disabling_hooks_temporarily">Disabling hooks temporarily</a></li><li><a href="#Cheating_system_time">Cheating system time</a></li><li><a href="#"></a></li><li><a href="#"></a></li></ul> </p>
-<h1><a name="Список_переменных_окружения_устан?"></a>Список переменных окружения устанавливаемых в ConEmu<a href="#Список_переменных_окружения_устан?" class="section_anchor"></a></h1>
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+
+ <link rel="icon" type="image/vnd.microsoft.icon" href="../conemu.ico">
+
+ <link rel="canonical" href="http://conemu.github.io" />
+
+ <link rel="stylesheet" href="../main.css">
+
+ <title>ConEmu - эмулятор терминала Windows</title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9200434-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="maincol" id="wikimaincol">
+
+	<div class="header">
+		<div id="logo-block">
+			<div>
+				<h1><a href="http://conemu.github.io/ru/ConEmu.html">ConEmu</a></h1>
+				<div id="logo-descr"><a href="http://conemu.github.io/ru/ConEmu.html">эмулятор терминала</a></div>
+				<div id="social">
+					<a href="http://www.facebook.com/share.php?u=http://conemu.github.io/" rel="nofollow" target="_blank" title="FaceBook" id="soc-facebook"></a>
+					<a href="http://twitter.com/share?url=http://conemu.github.io/" rel="nofollow" target="_blank" title="Twitter" id="soc-twitter"></a>
+					<div id="soc-plus">
+						<div style="background: transparent; text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 124px; height: 26px;"
+							id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="background: transparent; position: static; top: 0px; width: 88px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%"
+							id="I0_1419983428828" name="I0_1419983428828" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;origin=http%3A%2F%2Fconemu.github.io&amp;url=http%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.j1QholfdnmY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCP1BSvtxoI3E2wzG7twjHbDrCUuHA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1419983428828&amp;parent=http%3A%2F%2Fconemu.github.io&amp;pfname=&amp;rpctoken=42383786" data-gapiattached="true"
+							title="+1"></iframe></div>
+					</div>
+				</div>
+			</div>
+			<div style="overflow: hidden; width:728px; height:90px; position: relative; left: 210px; top: -90px;">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- conemu.github.io -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-8810818700876198"
+				     data-ad-slot="5792850468"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		<div id="header-line"></div>
+	</div><!-- .header-->
+
+	<div class="middle">
+		<div class="container">
+			<div class="content">
+
+<!-- Content starts -->
+
+<p><ul><li><a href="#Список_переменных_окружения_устан?">Список переменных окружения устанавливаемых в ConEmu</a></li><li><a href="#Изменения_PATH">Изменения PATH</a></li><li><a href="#Debug_purposed_variables">Debug purposed variables</a></li><li><a href="#Export_variables">Export variables</a></li><ul><li><a href="#Full_syntax_of_Export_command">Full syntax of Export command</a></li></ul><li><a href="#Disabling_hooks_temporarily">Disabling hooks temporarily</a></li><li><a href="#Cheating_system_time">Cheating system time</a></li><li><a href="#"></a></li><li><a href="#"></a></li></ul> </p>
+<h1 id="h0"><a name="Список_переменных_окружения_устан?"></a>Список переменных окружения устанавливаемых в ConEmu<a href="#Список_переменных_окружения_устан?" class="section_anchor"></a></h1>
 <p><table class="wikitable"><tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Имя</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Пример</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Описание</strong> </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuDir </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>C:\ConEmu</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> папка, содержащая ConEmu.exe </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuDrive </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>C:</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> диск с двоеточием, содержащий <a href="ConEmu.html">ConEmu</a>.exe </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuBaseDir </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>C:\ConEmu\ConEmu</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> папка, содержащая ConEmuC.exe </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuWorkDir </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>C:\Users</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> рабочая папка, где был запущен ваш shell </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuWorkDrive </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>C:</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> диск с двоеточием, где был запущен ваш shell </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuArgs </td><td style="border: 1px solid #ccc; padding: 5px;"> <i>вариант</i> </td><td style="border: 1px solid #ccc; padding: 5px;"> аргументы, с которыми был запущен ConEmu.exe </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuConfig </td><td style="border: 1px solid #ccc; padding: 5px;"> <i>вариант</i> </td><td style="border: 1px solid #ccc; padding: 5px;"> имя активной конфигурации, читайте про ключ <tt>/config</tt> </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuBuild </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>141126c</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> текущий билд ConEmu </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuPID </td><td style="border: 1px solid #ccc; padding: 5px;"> <i>число</i> </td><td style="border: 1px solid #ccc; padding: 5px;"> PID (ИД процесса) ConEmu GUI </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuServerPID </td><td style="border: 1px solid #ccc; padding: 5px;"> <i>number</i> </td><td style="border: 1px solid #ccc; padding: 5px;"> PID (ИД процесса) ConEmuC сервера </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuHWND </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>0x8HEXDGTS</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> дескриптор главного окна ConEmu </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuDrawHWND </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>0x8HEXDGTS</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> дескриптор дескриптор окна виртуальной консоли (дочернее окно ConEmu), окно отрисовки текста консоли </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuBackHWND </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>0x8HEXDGTS</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> подложка для окна отрисовки, может быть больше окна отрисовки при наличии «padding» или «scrollbars» </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuIsAdmin </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>ADMIN</tt> или не задана </td><td style="border: 1px solid #ccc; padding: 5px;"> устанавливается для тех табов/сплитов, которые запущены с повышенными полномочиями (UAC) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuANSI </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>ON</tt> или <tt>OFF</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> установлено в <tt>ON</tt> если доступен «ANSI X3.64» </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="ConEmuEnvironment.html#Disabling_hooks_temporarily">ConEmuHooks</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>Enabled</tt>|<tt>OFF</tt>|<tt>NOARG</tt>|<tt>NOSTART</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> можно временно отключить установку inject-ов на время запуска длинных команд или инициализационных скриптов </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="ConEmuEnvironment.html#Cheating_system_time">ConEmuFakeDT</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>2014-12-31</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> that will cheat system and local current time for console processes </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="GuiMacro.html#Far3-pre-Lua">ConEmuMacroResult</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> <i>вариант</i> </td><td style="border: 1px solid #ccc; padding: 5px;"> устанавливается из плагина ConEmu&#x27;s Far Manager после выполнения <a href="GuiMacro.html">GUI Macro</a> </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="ConEmuEnvironment.html#ConEmuCpCvt">ConEmuCpCvt</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> perl.exe:1252:1251 </td><td style="border: 1px solid #ccc; padding: 5px;"> изменить кодовую страницу выводимого текста </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="ConEmuEnvironment.html#ConEmuDefaultCp">ConEmuDefaultCp</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> 1251 </td><td style="border: 1px solid #ccc; padding: 5px;"> установить кодовую страницу вместо использования chcp </td></tr> </table></p>
 <h1><a name="Изменения_PATH"></a>Изменения PATH<a href="#Изменения_PATH" class="section_anchor"></a></h1>
 <p><a href="SettingsComspec.html">Settings page ComSpec</a> has an options ‘Add %ConEmuDir% to %PATH%’ and ‘Add %ConEmuBaseDir% to %PATH%’. </p>
@@ -52,3 +121,44 @@ set ConEmuDefaultCp=866
 ConEmuC -fork -c App2.exe
 set ConEmuDefaultCp=</pre>
 
+<!-- Content ends -->
+
+			</div><!-- .content-->
+		</div><!-- .container-->
+
+		<div class="left-sidebar">
+			<div class="block">
+				<div class="blocktitle">Меню сайта</div>
+				<div class="blockcontent">
+					<ul>
+					<!-- Menu starts -->
+					<!-- Add ' class="MenuItemA" ' to current <a> item -->
+					<li><a href="../index.html"><span>На главную</span></a></li>
+					<li><a href="http://www.fosshub.com/ConEmu.html"><span>Скачать</span></a></li>
+					<li><a class="MenuItemA" href="./TableOfContents.html"><span>Документация</span></a></li>
+					<li><a href="./Screenshots.html"><span>Скриншоты</span></a></li>
+					<li><a href="./Settings.html"><span>Настройка</span></a></li>
+					<li><a href="../auto.html"><span>Автоматизация</span></a></li>
+					<li><a href="../donate.html"><span>Поддержать</span></a></li>
+					<li><a href="./AnsiEscapeCodes.html"><span>ANSI</span></a></li>
+					<li><a href="./Awards.html"><span>Awards</span></a></li>
+					<li><a href="./Delusions.html"><span>Заблуждения</span></a></li>
+					<li><a href="https://github.com/Maximus5/ConEmu"><span>Исходный код</span></a></li>
+					<!-- Menu ends -->
+					</ul>
+				</div>
+				<div class="blockbottom"></div>
+			</div>
+		</div><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- maincol -->
+</div>
+
+<div class="footer">
+	<div id="footertext">Copyright Maximus5 © 2015</div>
+</div><!-- .footer -->
+
+</body>
+</html>
