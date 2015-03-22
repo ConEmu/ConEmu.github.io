@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+
+ <link rel="icon" type="image/vnd.microsoft.icon" href="./conemu.ico">
+
+ <link rel="canonical" href="http://www.conemu.ru" />
+
+ <link rel="stylesheet" href="main.css">
+
+ <title>ConEmu - эмулятор терминала Windows</title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9200434-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="maincol" id="wikimaincol">
+
+	<div class="header">
+		<div id="logo-block">
+			<div>
+				<h1><a href="http://www.conemu.ru">ConEmu</a></h1>
+				<div id="logo-descr"><a href="http://www.conemu.ru">эмулятор терминала</a></div>
+				<div id="social">
+					<a href="http://www.facebook.com/share.php?u=http://www.conemu.ru/" rel="nofollow" target="_blank" title="FaceBook" id="soc-facebook"></a>
+					<a href="http://twitter.com/share?url=http://www.conemu.ru/" rel="nofollow" target="_blank" title="Twitter" id="soc-twitter"></a>
+					<div id="soc-plus">
+						<div style="background: transparent; text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 88px; height: 224px;"
+							id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="background: transparent; position: static; top: 0px; width: 88px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%"
+							id="I0_1419983428828" name="I0_1419983428828" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;origin=http%3A%2F%2Fwww.conemu.ru&amp;url=http%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.j1QholfdnmY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCP1BSvtxoI3E2wzG7twjHbDrCUuHA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1419983428828&amp;parent=http%3A%2F%2Fwww.conemu.ru&amp;pfname=&amp;rpctoken=42383786" data-gapiattached="true"
+							title="+1"></iframe></div>
+					</div>
+				</div>
+			</div>
+			<div style="overflow: hidden; width:728px; height:90px; position: relative; left: 210px; top: -90px;">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- conemu.github.io -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-8810818700876198"
+				     data-ad-slot="5792850468"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		<div id="header-line"></div>
+	</div><!-- .header-->
+
+	<div class="middle">
+		<div class="container">
+			<div class="content">
+
+<!-- Content starts -->
+
+<h1 id="h0">Два околоконсольных заблужения</h1>
+
+<ol>
+ <li>Называть PUTTY, mintty и др. консольными приложениями.</li>
+ <li>Называть стандартную консоль Windows - cmd.exe.</li>
+</ol>
+
+<p>Консольное приложение это специальным образом созданное приложение которое взаимодействует с &quot;пользователем&quot; только посредством ввода-вывода данных (например текста). По умолчанию КП не умеет ничего &quot;отрисовывать&quot;, у него вообще нет графического интерфейса. Оно работает ТОЛЬКО с потоками ввода-вывода (перенаправление, пайпы, волшебные символы ‘<b>&lt;</b>’, ‘<b>&gt;</b>’, ‘<b>|</b>’).</p>
+
+<code>cmd /? > cmd.log & type cmd.log | find "HKEY"</code>
+
+<p>При запуске такого приложения в Windows создается специальное консольное окно и именно оно занимается отрисовкой текста, выводимого КП, и перенаправлением нажимаемых пользователем клавиш в буфер ввода КП. Это консольное окно также называется терминалом.</p>
+
+<p>PUTTY, KITTY, mintty и другие терминалы НЕ являются консольными приложениями. Это графические приложения (имеющие свой графические интерфейс) умеющие либо подключаться к удаленным серверам для запуска консольных приложений удаленно, либо работают как локальные терминалы, предоставляя возможности ввода-вывода консольным приложениям на локальном компьютере. Вы не можете перенаправить &quot;вывод&quot; терминала в файл, т.к терминал работает с дисплеем и клавиатурой, а не с потоками ввода-вывода. Исключение - логирование, настраиваемое специально в самом терминале.</p>
+
+<p>В Windows есть встроенный терминал (или &quot;консольное окно&quot;) которое часто ошибочно называют &quot;cmd.exe&quot;. Нажмите Win+R и запустите, например, &quot;powershell.exe&quot;. Среди запущенных процессов не будет &quot;cmd.exe&quot;. В разных версиях Windows консольное окно создают разные процессы, в актуальных – это &quot;conhost.exe&quot;.</p>
+
+<!-- Content ends -->
+
+			</div><!-- .content-->
+		</div><!-- .container-->
+
+		<div class="left-sidebar">
+			<div class="block">
+				<div class="blocktitle">Меню сайта</div>
+				<div class="blockcontent">
+					<ul>
+					<!-- Menu starts -->
+					<li><a href="./index.html"><span>На главную</span></a></li>
+					<li><a href="http://www.fosshub.com/ConEmu.html"><span>Скачать</span></a></li>
+					<li><a href="./settings.html"><span>Настройка</span></a></li>
+					<li><a href="./auto.html"><span>Автоматизация</span></a></li>
+					<li><a href="./donate.html"><span>Поддержать</span></a></li>
+					<li><a href="./ansi.html"><span>ANSI</span></a></li>
+					<li><a href="./awards.html"><span>Awards</span></a></li>
+					<li><a class="MenuItemA" href="./delusions.html"><span>Заблуждения</span></a></li>
+					<li><a href="https://code.google.com/p/conemu-maximus5/wiki/TableOfContents?tm=6"><span>Документация</span></a></li>
+					<li><a href="https://github.com/Maximus5/ConEmu"><span>Исходный код</span></a></li>
+					<!-- Menu ends -->
+					</ul>
+				</div>
+				<div class="blockbottom"></div>
+			</div>
+		</div><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- maincol -->
+</div>
+
+<div class="footer">
+	<div id="footertext">Copyright Maximus5 © 2015</div>
+</div><!-- .footer -->
+
+</body>
+</html>

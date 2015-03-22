@@ -1,0 +1,30 @@
+<!--
+<i>Current vs Startup directory</i>
+-->
+<p><ul><li><a href="#About_directories">About directories</a></li><li><a href="#What_you_shall_do_to_get_CD_support">What you shall do to get CD support</a></li><ul><li><a href="#cmd_and_tcc">cmd and tcc</a></li><li><a href="#bash_and_other_cygwin_shells">bash and other cygwin shells</a></li><li><a href="#PowerShell">PowerShell</a></li></ul></ul>  </p>
+<h1><a name="About_directories"></a>About directories<a href="#About_directories" class="section_anchor"></a></h1>
+<p>When you run new console the shell is starting in the directory you specified. That is the ‘Startup directory’. </p>
+<p><img src="../img/ConEmuCreate.png" title="ConEmu confirmation of new console creation" alt="ConEmu new console"> </p>
+<p>When you work with shell and do some CD&#x27;s or run your scripts, its ‘Current directory’ may be (and will) changed. But directory is changed inside your <a href="TerminalVsShell.html">Shell</a> but not inside terminal. ConEmu does not handle your shell commands when your execute them. Moreover, some shells (PowerShell, bash, etc.) doesn&#x27;t even call Window API function ‘SetCurrentDirectory’, they handle their working directories internally. </p>
+<p>However, since ConEmu&#x27;s build 140818 you get full support of ‘Current directory’ (<strong>CD</strong>). </p>
+<ul><li>Automatic detection of <strong>CD</strong> in <tt>cmd.exe</tt> or <tt>tcc.exe</tt>; </li><li>Ability to inform ConEmu GUI about shell <strong>CD</strong> using <a href="AnsiEscapeCodes.html">ANSI</a> or <a href="ConEmuC.html">ConEmuC</a>; </li><li>Display <strong>CD</strong> in the tab title using <a href="SettingsTabBar.html">tab templates</a>; </li><li>Reuse <strong>CD</strong> in the <a href="RestartTab.html">Restart</a> and <a href="LaunchNewTab.html">Create new console</a> dialogs; </li><li>At last you may use &quot;<strong>%CD%</strong>&quot; variable with <a href="GuiMacro.html#List_of_functions">Shell</a> macro function in the <tt>Dir</tt> parameter. </li></ul><h1><a name="What_you_shall_do_to_get_CD_support"></a>What you shall do to get <strong>CD</strong> support<a href="#What_you_shall_do_to_get_CD_support" class="section_anchor"></a></h1>
+<h2><a name="cmd_and_tcc"></a>cmd and tcc<a href="#cmd_and_tcc" class="section_anchor"></a></h2>
+<p>Just enable ‘<a href="ConEmuHk.html">Inject ConEmuHk</a>’ feature. ConEmu will maintain <strong>CD</strong> for you automatically. </p>
+<h2><a name="bash_and_other_cygwin_shells"></a>bash and other cygwin shells<a href="#bash_and_other_cygwin_shells" class="section_anchor"></a></h2>
+<p>You need to tell bash to run <tt>&quot;ConEmuC -StoreCWD&quot;</tt> command each time its prompt executed. For example, add to your <tt>.bashrc</tt> </p>
+<pre class="prettyprint">PROMPT_COMMAND=&#x27;ConEmuC -StoreCWD&#x27;</pre>
+<h2><a name="PowerShell"></a>PowerShell<a href="#PowerShell" class="section_anchor"></a></h2>
+<p>You need to modify your profile to override prompt function. Just run in your PowerShell prompt: </p>
+<pre class="prettyprint">notepad $Profile</pre>
+<p>And change prompt as in the following example: </p>
+<pre class="prettyprint">function prompt {
+  # Just prettify the prompt
+  Write-Host -NoNewline -ForegroundColor Cyan &quot;PS &quot;
+  $dir = $(get-location).ProviderPath
+  Write-Host -NoNewline -ForegroundColor Yellow $dir
+  # You may use ANSI or direct ConEmuC call
+  # Write-Host -NoNewline (([char]27) + &quot;]9;9;`&quot;&quot; + $dir + &quot;`&quot;&quot; + ([char]27) + &quot;\&quot;)
+  &amp; ConEmuC -StoreCWD &quot;$dir&quot;
+  return &quot;&gt;&quot;
+}</pre>
+

@@ -1,0 +1,37 @@
+<p><a href="http://plugring.farmanager.com/plugin.php?pid=948" rel="nofollow">Download (Far3 x86/x64)</a> </p>
+<h3><a name="About"></a>About<a href="#About" class="section_anchor"></a></h3>
+<p>Resolve plugin for Far Manager 2.x and 3.x </p>
+<p>This plugin may be useful for developers, performs two functions: </p>
+<p>1. &#x27;Error lookup&#x27; analog - for Windows error code shows name, description, severity/facility, and so on... </p>
+<pre class="prettyprint">ã================== CPP Resolve ==================¬
+¦                                                 ¦
+¦ Expr:   0xC0000022                             v¦
+¦ Source: ntdll.dll                              v¦
+¦                       [ Resolve ]  [ ErrLook ]  ¦
+¦- ã================ Resolve =================¬ --¦
+¦  ¦ Name=STATUS_ACCESS_DENIED                ¦   ¦
+¦ T¦ Err=0xC0000022, Dec=-1073741790, Word=34 ¦   ¦
+¦ V¦ SEVERITY_ERROR, FACILITY_NULL            ¦   ¦
+¦  ¦                                          ¦   ¦
+L==¦ {Access Denied}                          ¦===-
+   ¦ A process has requested access to an ob… ¦                                                               
+   ¦                                          ¦
+   ¦------------------------------------------¦
+   ¦                  { OK }                  ¦
+   L==========================================-</pre>
+<p>2. &#x27;Resolve&#x27; - show Windows API macro value, i.e. values of WM_SIZE, CFSTR_FILECONTENTS and so on... </p>
+<pre class="prettyprint">ã================== CPP Resolve ==================¬
+¦                                                 ¦
+¦ Expr:   CFSTR_FILECONTENTS                     v¦
+¦ Source:                                        v¦
+¦                       [ Resolve ]  [ ErrLook ]  ¦
+¦-------------------------------------------------¦
+¦                                                 ¦
+¦ Type:   char const [13]                         ¦
+¦ Value:  FileContents                            ¦
+¦         [ 1 Copy ]  [ 2 Copy # ]  [ 3 Copy /* ] ¦
+L=================================================-</pre>
+<p>Plugin defaults assumes Visual Studio 9.0 and SDK 7.0. </p>
+<p>All PATH<tt>s, INCLUDE</tt>s and LIB`s may be changes in plugin settings. </p>
+<p>&#x27;Resolve&#x27; function requires &#x27;cl.exe&#x27; and &#x27;link.exe&#x27;. </p>
+<p>By Enter depress plugin choose function (Resolve/ErrLook) automatically. </p>
