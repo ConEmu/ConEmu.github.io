@@ -67,22 +67,41 @@
 
 <!-- Content starts -->
 
-<h1 id="h0">Два околоконсольных заблужения</h1>
+<h1 id="h0">Console-related delusions</h1>
 
-<ol>
- <li>Называть PUTTY, mintty и др. консольными приложениями.</li>
- <li>Называть стандартную консоль Windows - cmd.exe.</li>
-</ol>
 
-<p>Консольное приложение это специальным образом созданное приложение которое взаимодействует с &quot;пользователем&quot; только посредством ввода-вывода данных (например текста). По умолчанию КП не умеет ничего &quot;отрисовывать&quot;, у него вообще нет графического интерфейса. Оно работает ТОЛЬКО с потоками ввода-вывода (перенаправление, пайпы, волшебные символы ‘<b>&lt;</b>’, ‘<b>&gt;</b>’, ‘<b>|</b>’).</p>
+<h2>To treat PuTTY, mintty and others as ‘console applications’.</h2>
+
+<p>Simplifying, the ‘console application’ is an executable which interacts with user via data input/output (mainly text).
+‘Console application’ is not able to ‘draw’ anything, it has not graphical interface at all.
+It works with input/output streams only (redirection, pipes, magic symbols ‘<b>&lt;</b>’, ‘<b>&gt;</b>’, ‘<b>|</b>’). </p>
 
 <code>cmd /? > cmd.log & type cmd.log | find "HKEY"</code>
 
-<p>При запуске такого приложения в Windows создается специальное консольное окно и именно оно занимается отрисовкой текста, выводимого КП, и перенаправлением нажимаемых пользователем клавиш в буфер ввода КП. Это консольное окно также называется терминалом.</p>
+<p>When ‘console application’ starts in Windows the special console window is created and that very window do all text drawing,
+which ‘console application’ was printed, and that window redirects user keypresses into ‘console application’ input buffer.
+This console window is often called (local) terminal. </p>
 
-<p>PUTTY, KITTY, mintty и другие терминалы НЕ являются консольными приложениями. Это графические приложения (имеющие свой графические интерфейс) умеющие либо подключаться к удаленным серверам для запуска консольных приложений удаленно, либо работают как локальные терминалы, предоставляя возможности ввода-вывода консольным приложениям на локальном компьютере. Вы не можете перенаправить &quot;вывод&quot; терминала в файл, т.к терминал работает с дисплеем и клавиатурой, а не с потоками ввода-вывода. Исключение - логирование, настраиваемое специально в самом терминале.</p>
+<p>PuTTY, KiTTY, mintty and other terminals ARE NOT ‘console applications’.
+They are graphical applications (have their own graphical interfaces)
+able to connect to remote servers to run ‘console applications’ remotely,
+or they are working as local terminals allowing input/output ability to
+‘console applications’ on your local PC. </p>
 
-<p>В Windows есть встроенный терминал (или &quot;консольное окно&quot;) которое часто ошибочно называют &quot;cmd.exe&quot;. Нажмите Win+R и запустите, например, &quot;powershell.exe&quot;. Среди запущенных процессов не будет &quot;cmd.exe&quot;. В разных версиях Windows консольное окно создают разные процессы, в актуальных – это &quot;conhost.exe&quot;.</p>
+<p>You can't redirect terminal &quot;output&quot; into any local file because terminal is working with display and keyabord
+but not any input/output streams.
+The only exception is logging specially configured in that exact terminal. </p>
+
+
+<h2>To name standard Windows console - ‘cmd.exe’.</h2>
+
+<p>Windows has its own terminal (or ‘console window’) which is often erroneously called ‘cmd.exe’.
+Just press Win+R and run, for example, &quot;powershell.exe&quot;.
+You will not see &quot;cmd.exe&quot; in the started process tree.
+In different Windows versions different executables create console window,
+just now it is &quot;conhost.exe&quot;.</p>
+
+<p>Not ‘cmd.exe’, just a ‘console’! </p>
 
 <!-- Content ends -->
 
