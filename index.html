@@ -67,39 +67,104 @@
 
 <!-- Content starts -->
 
- <h2 id="h0"><a name="About_ConEmu"></a>About ConEmu <a href="#About_ConEmu" class="section_anchor"></a></h2>
- <p>ConEmu-Maximus5 is a Windows console emulator with tabs, which presents multiple consoles and simple GUI applications as one customizable GUI window with various features. </p>
- <p>Initially, the program was created as a companion to <a href="http://www.farmanager.com/download.php?l=en" rel="nofollow">Far Manager</a> (<a href="http://en.wikipedia.org/wiki/FAR_Manager" rel="nofollow">FAR in Wikipedia</a>), my favorite shell replacement - file and archive management, command history and completion, powerful editor. </p>
- <p>Today, ConEmu can be used with any other console application or simple GUI tools (like PuTTY for example). ConEmu is an active project, open to <a href="http://conemu.github.io/en/Issues.html">suggestions</a>. </p>
- <p><a href="http://www.fosshub.com/ConEmu.html" rel="nofollow"><img src="./img/Downloads.png" alt="Downloads" title="Download ConEmu"></img></a></p>
- <p>Take a look at <a href="http://dotnetsurfers.com/blog/2013/12/15/developer-tools-screencast-7-conemu/" rel="nofollow">screencast</a> about ConEmu. </p>
- <p><img alt="ConEmu 2x2" src="./img/ConEmuTransparency.png"></p>
- <p><a href="./en/Awards.html">Votes and awards</a> (vote for <a href="./en/Awards.html#Please,_vote_for_ConEmu">ConEmu</a>, if you please). </p>
- <h2>Disclaimer</h2>
- <p>ConEmu is not a shell, so it does not provide &quot;shell features&quot; like tab-completion, command history and others. ConEmu is advanced console window where you can run any shell of your choice. However, some of these features placed in <a href="./en/RoadMap.html">RoadMap</a>. Also you may try <a href="./en/ConEmu_Clink.html">Clink</a> for bash-style completion in cmd.exe and <a href="http://github.com/lzybkr/PSReadLine">PSReadLine</a> or <a href="http://powertab.codeplex.com/">PowerTab</a> in powershell.exe. </p>
- <!--
- <td width="230" valign="top" align="center"> <a href="http://code.google.com/p/conemu-maximus5/issues/list?can=1&amp;q=Type%3DDocumentation+&amp;sort=-modified"><img src="http://conemu-maximus5.googlecode.com/svn/files/ConEmu2013.png" title="Helping with documentation"></img></a><a
-	href="donate.html"><img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" alt="Donation" title="Donate ConEmu"></img></a> <a
-	href="http://flattr.com/thing/2002773/Maximus5ConEmu-on-GitHub" rel="nofollow"><img
-	src="./img/FlattrBadgeLarge.png" alt="Flattr ConEmu" title="Flattr ConEmu" border="0"></img></a>
- -->
- </p>
- <h2>History</h2>
- <p>This project grew up from <a href="http://xs.nm.ru/" rel="nofollow">ConEmu by Zoin</a>. </p>
+<h1 id="h0"><a name="About_ConEmu"></a>About ConEmu <a href="#About_ConEmu" class="section_anchor"></a></h1>
 
- <h2><a name="TableOfContents"></a><a href="./en/TableOfContents.html">Table of contents</a>, <a href="./en/Whats_New.html">What&#x27;s new</a>, <a href="./en/ConEmuFAQ.html">FAQ</a>, <a href="./en/Screenshots.html">Screenshots</a>, <a href="./en/Screencasts.html">Video</a>, <a href="./en/Reviews.html">Reviews</a><a href="#,_,_,_,_," class="section_anchor"></a></h2>
- <h2><a name="Description"></a>Description<a href="#Description" class="section_anchor"></a></h2>
- <p>ConEmu starts a console program in a hidden console window, and provides an alternative customizable GUI window with various features: </p>
- <ul><li>smooth and friendly window resizing; </li><li>tabs for editors, viewers, panels and consoles; </li><li>run simple GUI apps in tabs; </li><li>Windows 7 <a href="./en/Windows7Taskbar.html#Customizable_Jump_list">Jump Lists</a> and <a href="./en/Progress.html">Progress</a> on Taskbar buttons; </li><li>easily run old <a href="./en/DosBox.html">DOS applications</a> (games) in Windows 7 or 64-bit OS; </li><li>thumbnails and tiles in Far Manager; </li><li>normal, maximized and full screen graphical window modes; </li><li>window font anti-aliasing: standard, ClearType, disabled; </li><li>window fonts: family, height, width, bold, italic, etc.; </li><li>Chinese verions of Windows supported; </li><li>using <a href="http://code.google.com/p/conemu-maximus5/issues/detail?id=153" rel="nofollow">normal/bold/italic</a> fonts for different parts of the console simultaneously; </li><li>using 24-bit colors in Far Manager 3.x; </li><li><a href="./en/AnsiEscapeCodes.html">ANSI X3.64 and Xterm 256 colors</a>; </li><li>cursor: standard console (horizontal) or GUI (vertical); </li><li>optional per-application settings (e.g. palette); </li><li>vertical console buffer scrolling using the keyboard (BufferHeight mode); </li><li>show full output (1K+ lines) of last command in Far Manager&#x27;s editor/viewer; </li><li>customizable Far Manager right click behaviour (long click opens context menu); </li><li>drag and drop (explorer style) of files and folders in Far Manager; </li><li>limited support of BDF fonts; </li><li>user friendly text and block selection; </li><li>transparency and desktop mode; </li><li>customizable starting tabs; </li><li>configurable and clickable status bar; </li><li>and more, and more... take a look at the Settings dialog, <a href="./en/Whats_New.html">What&#x27;s New page</a> and Settings.reg </li></ul>
- <p>All settings are read from the registry or <a href="./en/Settings.html#ConEmu_.xml">ConEmu.xml</a> file (multiple named configurations are supported), after which the command line parameters are applied. Parameters /Config and /BufferHeight can only be specified on the command line. Most settings are configured using the Settings dialog, not from the command line. </p>
- <h2><a name="Requirements"></a>Requirements<a href="#Requirements" class="section_anchor"></a></h2>
- <ul><li>Windows 2000 or later. </li></ul>
- <h2><a name="Installation"></a>Installation<a href="#Installation" class="section_anchor"></a></h2>
- <ol><li> Unpack all files (from appropriate &quot;<tt>ConEmuPack.*.7z</tt>&quot; archive) to the folder, containing &quot;<tt>far.exe</tt>&quot;, or install the &quot;<tt>ConEmuSetup.*.exe</tt>&quot; package. </li><ul><li>If You <strong>are</strong> using Far Manager, please ensure that ConEmu plugins (&quot;<tt>Plugins\ConEmu\ConEmu.dll</tt>&quot; etc.) are installed to Far Manager&#x27;s Plugins folder. </li><li>If You are <strong>not</strong> using Far Manager, You may unpack the files to any folder, and delete the &quot;<tt>Plugins</tt>&quot; subfolder. </li><li><strong>Warning</strong>: because of frequent non-backwards-compatible API changes in Far 3, it is strongly recommended to use the latest <strong>developer</strong> build when using ConEmu with Far 3. </li></ul><li> Import ConEmu&#x27;s macros into Far Manager. Macro files are located in the ConEmu.Addons directory. Each macro file has a description in its header. </li><li> By default (when started without command-line parameters), ConEmu runs &quot;<tt>far.exe</tt>&quot; from its home folder, or &quot;cmd.exe&quot;/&quot;tcc.exe&quot; if Far Manager was not found. Alternatively, You may indicate any root command by specifying a &quot;<a href="./en/Command_Line.html">/Cmd &lt;App with params&gt;</a>&quot; argument in ConEmu&#x27;s shortcut or command line.  </li></ol>
- <h2><a name="Screenshots"></a>Screenshots<a href="#Screenshots" class="section_anchor"></a></h2>
- <!--<p><img src="http://conemu-maximus5.googlecode.com/svn/files/ConEmuSplits3.png" title="ConEmu splits and tabs"> <br><br>  </p>-->
- <p><img src="./img/ConEmuTransparency.png" title="ConEmu Alpha transparency"> <br><br>  </p>
- <p><a href="./en/Screenshots.html">More screenshots</a> and <a href="./en/Screencasts.html">screencasts</a> </p>
+<p>ConEmu-Maximus5 is a Windows console emulator with tabs, which presents multiple consoles and simple GUI applications as one customizable GUI window with various features. </p>
+
+<p>Initially, the program was created as a companion to <a href="http://www.farmanager.com/download.php?l=en" rel="nofollow">Far Manager</a> (<a href="http://en.wikipedia.org/wiki/FAR_Manager" rel="nofollow">FAR in Wikipedia</a>), my favorite shell replacement - file and archive management, command history and completion, powerful editor. </p>
+
+<p>Today, ConEmu can be used with any other console application or simple GUI tools (like PuTTY for example). ConEmu is an active project, open to <a href="http://conemu.github.io/en/Issues.html">suggestions</a>. </p>
+
+<p><a href="http://www.fosshub.com/ConEmu.html" rel="nofollow"><img src="./img/Downloads.png" alt="Downloads" title="Download ConEmu"></img></a></p>
+
+<p>Take a look at <a href="http://dotnetsurfers.com/blog/2013/12/15/developer-tools-screencast-7-conemu/" rel="nofollow">screencast</a> about ConEmu. </p>
+
+<p><img alt="ConEmu 2x2" src="./img/ConEmuTransparency.png"></p>
+
+<p><a href="./en/Awards.html">Votes and awards</a> (vote for <a href="./en/Awards.html#Please,_vote_for_ConEmu">ConEmu</a>, if you please). </p>
+
+
+<h2>Disclaimer</h2>
+
+<p>ConEmu is not a shell, so it does not provide &quot;shell features&quot; like tab-completion, command history and others.
+ConEmu is advanced console window where you can run any shell of your choice.
+However, some of these features placed in <a href="./en/RoadMap.html">RoadMap</a>.
+Also you may try <a href="./en/ConEmu_Clink.html">Clink</a> for bash-style completion in cmd.exe
+and <a href="http://github.com/lzybkr/PSReadLine">PSReadLine</a>
+or <a href="http://powertab.codeplex.com/">PowerTab</a> in powershell.exe. </p>
+<!--
+<td width="230" valign="top" align="center"> <a href="http://code.google.com/p/conemu-maximus5/issues/list?can=1&amp;q=Type%3DDocumentation+&amp;sort=-modified">
+<img src="http://conemu-maximus5.googlecode.com/svn/files/ConEmu2013.png" title="Helping with documentation"></img></a><a
+href="donate.html"><img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" alt="Donation" title="Donate ConEmu"></img></a> <a
+href="http://flattr.com/thing/2002773/Maximus5ConEmu-on-GitHub" rel="nofollow"><img
+src="./img/FlattrBadgeLarge.png" alt="Flattr ConEmu" title="Flattr ConEmu" border="0"></img></a>
+-->
+
+
+<h2>History</h2>
+
+<p>This project grew up from <a href="http://xs.nm.ru/" rel="nofollow">ConEmu by Zoin</a>. </p>
+
+
+<h2><a name="SomeLinks"></a><a href="./en/TableOfContents.html">Table of contents</a>, <a href="./en/Whats_New.html">What&#x27;s new</a>, <a href="./en/ConEmuFAQ.html">FAQ</a>, <a href="./en/Screenshots.html">Screenshots</a>, <a href="./en/Screencasts.html">Video</a>, <a href="./en/Reviews.html">Reviews</a><a href="#SomeLinks" class="section_anchor"></a></h2>
+
+
+<h2><a name="Description"></a>Description<a href="#Description" class="section_anchor"></a></h2>
+
+<p>ConEmu starts a console program in a hidden console window, and provides an alternative customizable GUI window with various features: </p>
+
+<ul><li>smooth and friendly window resizing; </li>
+	<li>tabs for editors, viewers, panels and consoles; </li>
+	<li>run simple GUI apps in tabs; </li>
+	<li>Windows 7 <a href="./en/Windows7Taskbar.html#Customizable_Jump_list">Jump Lists</a> and <a href="./en/Progress.html">Progress</a> on Taskbar buttons; </li>
+	<li>easily run old <a href="./en/DosBox.html">DOS applications</a> (games) in Windows 7 or 64-bit OS; </li>
+	<li>thumbnails and tiles in Far Manager; </li>
+	<li>normal, maximized and full screen graphical window modes; </li>
+	<li>window font anti-aliasing: standard, ClearType, disabled; </li>
+	<li>window fonts: family, height, width, bold, italic, etc.; </li>
+	<li>Chinese verions of Windows supported; </li>
+	<li>using <a href="http://code.google.com/p/conemu-maximus5/issues/detail?id=153" rel="nofollow">normal/bold/italic</a> fonts for different parts of the console simultaneously; </li>
+	<li>using 24-bit colors in Far Manager 3.x; </li>
+	<li><a href="./en/AnsiEscapeCodes.html">ANSI X3.64 and Xterm 256 colors</a>; </li>
+	<li>cursor: standard console (horizontal) or GUI (vertical); </li>
+	<li>optional per-application settings (e.g. palette); </li>
+	<li>vertical console buffer scrolling using the keyboard (BufferHeight mode); </li>
+	<li>show full output (1K+ lines) of last command in Far Manager&#x27;s editor/viewer; </li>
+	<li>customizable Far Manager right click behaviour (long click opens context menu); </li>
+	<li>drag and drop (explorer style) of files and folders in Far Manager; </li>
+	<li>limited support of BDF fonts; </li>
+	<li>user friendly text and block selection; </li>
+	<li>transparency and desktop mode; </li>
+	<li>customizable starting tabs; </li>
+	<li>configurable and clickable status bar; </li>
+	<li>and more, and more... take a look at the Settings dialog, <a href="./en/Whats_New.html">What&#x27;s New page</a> and Settings.reg </li>
+</ul>
+
+<p>All settings are read from the registry or <a href="./en/Settings.html#ConEmu_.xml">ConEmu.xml</a> file (multiple named configurations are supported),
+after which the command line parameters are applied. Parameters /Config and /BufferHeight can only be specified on the command line.
+Most settings are configured using the Settings dialog, not from the command line. </p>
+
+
+<h2><a name="Requirements"></a>Requirements<a href="#Requirements" class="section_anchor"></a></h2>
+
+<ul><li>Windows 2000 or later. </li></ul>
+
+
+<h2><a name="Installation"></a>Installation<a href="#Installation" class="section_anchor"></a></h2>
+
+<ol><li> Unpack all files (from appropriate &quot;<tt>ConEmuPack.*.7z</tt>&quot; archive) to the folder, containing &quot;<tt>far.exe</tt>&quot;, or install the &quot;<tt>ConEmuSetup.*.exe</tt>&quot; package. </li>
+	<ul><li>If You <strong>are</strong> using Far Manager, please ensure that ConEmu plugins (&quot;<tt>Plugins\ConEmu\ConEmu.dll</tt>&quot; etc.) are installed to Far Manager&#x27;s Plugins folder. </li>
+		<li>If You are <strong>not</strong> using Far Manager, You may unpack the files to any folder, and delete the &quot;<tt>Plugins</tt>&quot; subfolder. </li>
+		<li><strong>Warning</strong>: because of frequent non-backwards-compatible API changes in Far 3, it is strongly recommended to use the latest <strong>developer</strong> build when using ConEmu with Far 3. </li>
+	</ul>
+	<li> Import ConEmu&#x27;s macros into Far Manager. Macro files are located in the ConEmu.Addons directory. Each macro file has a description in its header. </li>
+	<li> By default (when started without command-line parameters), ConEmu runs &quot;<tt>far.exe</tt>&quot; from its home folder, or &quot;cmd.exe&quot;/&quot;tcc.exe&quot; if Far Manager was not found. Alternatively, You may indicate any root command by specifying a &quot;<a href="./en/Command_Line.html">/Cmd &lt;App with params&gt;</a>&quot; argument in ConEmu&#x27;s shortcut or command line.  </li>
+</ol>
+
+<!--<h2><a name="Screenshots"></a>Screenshots<a href="#Screenshots" class="section_anchor"></a></h2>-->
+<!--<p><img src="http://conemu-maximus5.googlecode.com/svn/files/ConEmuSplits3.png" title="ConEmu splits and tabs"> <br><br>  </p>-->
+<!--<p><img src="../img/ConEmuTransparency.png" title="ConEmu Alpha transparency"> <br><br>  </p>-->
+<!--<p><a href="https://code.google.com/p/conemu-maximus5/wiki/Screenshots">More screenshots</a> and <a href="https://code.google.com/p/conemu-maximus5/wiki/Screencasts">screencasts</a> </p>-->
 
 <!-- Content ends -->
 
