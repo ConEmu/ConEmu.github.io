@@ -109,7 +109,11 @@ ConEmuC /export[=CON|ALL] [Var1 [Var2 [...]]]
   /export=CON - export to all processes of current console only
   /export=GUI - export to ConEmu GUI only
   /export=ALL - export to all processes of opened tabs and ConEmu GUI</pre>
-<ul><li>Note! ‘Inject ConEmuHk’ required to set variables. </li><li>Some shells may ignores environment changes by <tt>/EXPORT=ALL</tt> because of their features. </li><li>Shells comments </li><ul><li>‘Far Manager’ &amp; ‘TCC/LE’ - OK; </li><li>‘cmd’ - fails partially (required to run smth from active cmd, for example &quot;cmd /k exit&quot;, to ‘apply’ changes); </li><li>‘bash’ - fails completely (seems, it does not support outside changing of env.vars). </li></ul></ul>
+<ul><li>Note! ‘Inject ConEmuHk’ required to set variables. </li>
+<li>Some shells may ignores environment changes by <tt>/EXPORT=ALL</tt> because of their features. </li>
+<li>Shells comments </li><ul><li>‘Far Manager’ &amp; ‘TCC/LE’ - OK; </li>
+<li>‘cmd’ - fails partially (required to run smth from active cmd, for example &quot;cmd /k exit&quot;, to ‘apply’ changes); </li>
+<li>‘bash’ - fails completely (seems, it does not support outside changing of env.vars). </li></ul></ul>
 
 <h2><a name="Disabling_hooks_temporarily"></a>Disabling hooks temporarily<a href="#Disabling_hooks_temporarily" class="section_anchor"></a></h2>
 <p>You may temporarily disable injects when running ‘long’ batches or initialization scripts: </p>

@@ -67,16 +67,29 @@
 
 <!-- Content starts -->
 
-<p><ul><li><a href="#Common">Common</a></li><ul><li><a href="#Text_selection_and_clipboard">Text selection and clipboard</a></li><li><a href="#Left_click_on_the_tab">Left click on the tab</a></li><li><a href="#Right_click_on_the_tab">Right click on the tab</a></li><li><a href="#Middle_click_or_Ctrl+Right_click_on_the_tab">Middle click or Ctrl+Right click on the tab</a></li><li><a href="#Right_click_on_Cross_button">Right click on Cross button</a></li><li><a href="#Double_click_on_left_or_right_window_edges">Double click on left or right window edges</a></li></ul><li><a href="#Far_Manager_related">Far Manager related</a></li><ul><li><a href="#Drag-n-Drop">Drag-n-Drop</a></li><li><a href="#Right_click_on_Far_Manager_panels">Right click on Far Manager panels</a></li><li><a href="#Resizing_Far_Manager_panels_with_mouse">Resizing Far Manager panels with mouse</a></li><li><a href="#Hyperlinks_and_compiler_errors">Hyperlinks and compiler errors</a></li><li><a href="#Right_click_on_KeyBar">Right click on KeyBar</a></li></ul></ul>  </p>
+<p><ul><li><a href="#Common">Common</a></li><ul><li><a href="#Text_selection_and_clipboard">Text selection and clipboard</a></li>
+<li><a href="#Left_click_on_the_tab">Left click on the tab</a></li>
+<li><a href="#Right_click_on_the_tab">Right click on the tab</a></li>
+<li><a href="#Middle_click_or_Ctrl+Right_click_on_the_tab">Middle click or Ctrl+Right click on the tab</a></li>
+<li><a href="#Right_click_on_Cross_button">Right click on Cross button</a></li>
+<li><a href="#Double_click_on_left_or_right_window_edges">Double click on left or right window edges</a></li></ul><li><a href="#Far_Manager_related">Far Manager related</a></li><ul><li><a href="#Drag-n-Drop">Drag-n-Drop</a></li>
+<li><a href="#Right_click_on_Far_Manager_panels">Right click on Far Manager panels</a></li>
+<li><a href="#Resizing_Far_Manager_panels_with_mouse">Resizing Far Manager panels with mouse</a></li>
+<li><a href="#Hyperlinks_and_compiler_errors">Hyperlinks and compiler errors</a></li>
+<li><a href="#Right_click_on_KeyBar">Right click on KeyBar</a></li></ul></ul>  </p>
 <h1 id="h0"><a name="Common"></a>Common<a href="#Common" class="section_anchor"></a></h1>
 <h2><a name="Text_selection_and_clipboard"></a>Text selection and clipboard<a href="#Text_selection_and_clipboard" class="section_anchor"></a></h2>
 <p>ConEmu allows marking console blocks and streams, copying marked text to Windows Clipboard, pasting from Clipboard to console. <a href="TextSelection.html">Read more...</a> </p>
 <h2><a name="Left_click_on_the_tab"></a>Left click on the tab<a href="#Left_click_on_the_tab" class="section_anchor"></a></h2>
-<p>ConEmu tries to activate corresponding Far window. This may fails when: <ul><li>Dialog is opens; </li><li>Modal editor/viewer is open and ConEmu does not detect this; </li><li>Macro is recording/playing. </li></ul></p>
+<p>ConEmu tries to activate corresponding Far window. This may fails when: <ul><li>Dialog is opens; </li>
+<li>Modal editor/viewer is open and ConEmu does not detect this; </li>
+<li>Macro is recording/playing. </li></ul></p>
 <h2><a name="Right_click_on_the_tab"></a>Right click on the tab<a href="#Right_click_on_the_tab" class="section_anchor"></a></h2>
-<p>When You right clicking on the Tab: <ul><li>Tab will be activated; </li><li>Popup menu will be shown. </li></ul></p>
+<p>When You right clicking on the Tab: <ul><li>Tab will be activated; </li>
+<li>Popup menu will be shown. </li></ul></p>
 <h2><a name="Middle_click_or_Ctrl+Right_click_on_the_tab"></a>Middle click or Ctrl+Right click on the tab<a href="#Middle_click_or_Ctrl+Right_click_on_the_tab" class="section_anchor"></a></h2>
-<p>When You right clicking on the Tab: <ul><li>Far panels, editor or viewer - ConEmu sends F10 key to console (You may redefine macro); </li><li>Other programs - ConEmu shows dialog with Restart/Terminate/Cancel buttons (same pressing Win-~). </li></ul></p>
+<p>When You right clicking on the Tab: <ul><li>Far panels, editor or viewer - ConEmu sends F10 key to console (You may redefine macro); </li>
+<li>Other programs - ConEmu shows dialog with Restart/Terminate/Cancel buttons (same pressing Win-~). </li></ul></p>
 <h2><a name="Right_click_on_Cross_button"></a>Right click on Cross button<a href="#Right_click_on_Cross_button" class="section_anchor"></a></h2>
 <p>Right clicking on the Cross button (window title) will minimize ConEmu window to the taskbar status area (hide window from screen). </p>
 <h2><a name="Double_click_on_left_or_right_window_edges"></a>Double click on left or right window edges<a href="#Double_click_on_left_or_right_window_edges" class="section_anchor"></a></h2>
@@ -87,10 +100,15 @@
 <p>On the <a href="Settings.html#Features">Features</a> page You may choose modifier (i.e. LeftCtrl or RightAlt) for each mouse button, which allows drag starting. Also, You may disable Right or Left (or both) button drag. </p>
 <p>Right button default behavoiur is to create link, Left button - copy. </p>
 <p>Behaviour can be changed holding Ctrl, Shift, or Alt when You drop items to the target. </p>
-<p>Drop to command line: <ul><li>Simple drop: paste full file or folder paths, space separated, autoquoted. </li><li>Ctrl: paste with «edit:» prefix </li><li>Alt: paste with «goto:» prefix </li><li>Shift: paste with «view:» prefix </li></ul></p>
+<p>Drop to command line: <ul><li>Simple drop: paste full file or folder paths, space separated, autoquoted. </li>
+<li>Ctrl: paste with «edit:» prefix </li>
+<li>Alt: paste with «goto:» prefix </li>
+<li>Shift: paste with «view:» prefix </li></ul></p>
 <h2><a name="Right_click_on_Far_Manager_panels"></a>Right click on Far Manager panels<a href="#Right_click_on_Far_Manager_panels" class="section_anchor"></a></h2>
 <p>You may choose right click behaviour: </p>
-<ul><li>Simple send right click to console; </li><li>Show context menu (via EMenu plugin); </li><li>Short click means simple right click, long click (depress, wait a while, release) means context menu. </li></ul><p><strong>Note</strong>. <i>EMenu</i> plugin must be installed in Far Manager. No macroses or hotkeys are required, but You may choose different way to display context menu, by specifying the macro in ConEmu settings. </p>
+<ul><li>Simple send right click to console; </li>
+<li>Show context menu (via EMenu plugin); </li>
+<li>Short click means simple right click, long click (depress, wait a while, release) means context menu. </li></ul><p><strong>Note</strong>. <i>EMenu</i> plugin must be installed in Far Manager. No macroses or hotkeys are required, but You may choose different way to display context menu, by specifying the macro in ConEmu settings. </p>
 <pre class="prettyprint">[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]
 ;; This example assume &#x27;e&#x27; hotkey for EMenu plugin
 &quot;RightClickMacro&quot;=&quot;@F11 e Enter Enter&quot;</pre>
@@ -98,7 +116,9 @@
 <p>This is simple now. Drag panels by bottom border, or by left border of the <strong>right</strong> panel. Option <a href="Settings.html#Features">Resize panels by mouse</a> must be checked. </p>
 <h2><a name="Hyperlinks_and_compiler_errors"></a>Hyperlinks and compiler errors<a href="#Hyperlinks_and_compiler_errors" class="section_anchor"></a></h2>
 <p>ConEmu can highlight hyperlinks (e.g. <tt>http://www.farmanager.com</tt>) and compiler errors (e.g. <tt>FarCtrl.pas(1002,49) Error: Identifier not found...</tt>). </p>
-<p>Turn on checkbox «Highlight and goto» and choose appropriate modifier (e.g. «Left Ctrl») on the <a href="Settings.html#settings">TextSelection</a> page. So, when you hold selected modifier (e.g. «Left Ctrl») ConEmu will underlines hyperlinks/errors detected under mouse cursor. LeftClick (with modifier) will open it: <ul><li>hyperlinks - in the default browser </li><li>e-mails - in the default Mail program </li><li>compiler errors - in the Far editor, positioned on row and column of the error </li></ul></p>
+<p>Turn on checkbox «Highlight and goto» and choose appropriate modifier (e.g. «Left Ctrl») on the <a href="Settings.html#settings">TextSelection</a> page. So, when you hold selected modifier (e.g. «Left Ctrl») ConEmu will underlines hyperlinks/errors detected under mouse cursor. LeftClick (with modifier) will open it: <ul><li>hyperlinks - in the default browser </li>
+<li>e-mails - in the default Mail program </li>
+<li>compiler errors - in the Far editor, positioned on row and column of the error </li></ul></p>
 <h2><a name="Right_click_on_KeyBar"></a>Right click on KeyBar<a href="#Right_click_on_KeyBar" class="section_anchor"></a></h2>
 <p>RClick on KeyBar pop up menu with F-key with possible modifiers. E.g., when you RClick on <tt>7Search</tt> in the Far Editor you can choose Ctrl-F7 to run Replace dialog. </p>
 <p><strong>Note</strong>. When you choose such menu item, ConEmu post «real» keypress to console. So, macro will be executed, when there is one associated with this keypress. </p>

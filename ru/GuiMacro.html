@@ -68,9 +68,22 @@
 <!-- Content starts -->
 
 <p>There is an easy way to control (a little) ConEmu window from console applications or additional hotkeys. It&#x27;s a GuiMacro. </p>
-<p><ul><ul><li><a href="#Abstract">Abstract</a></li><li><a href="#Syntax">Syntax</a></li><ul><li><a href="#Styles_of_arguments_specification">Styles of arguments specification</a></li><li><a href="#Specifying_more_that_a_one_argument">Specifying more that a one argument</a></li><li><a href="#Executing_several_functions_at_once">Executing several functions at once</a></li><li><a href="#Numerical_arguments">Numerical arguments</a></li><li><a href="#String_arguments">String arguments</a></li></ul><li><a href="#Command_line">Command line</a></li><li><a href="#Far_Manager_plugin">Far Manager plugin</a></li><li><a href="#List_of_functions">List of functions</a></li><li><a href="#SetOption">SetOption</a></li><li><a href="#Examples">Examples</a></li><ul><li><a href="#Far3-Lua">Far3-Lua</a></li><li><a href="#Far3-pre-Lua">Far3-pre-Lua</a></li><li><a href="#Far2">Far2</a></li><li><a href="#Far1">Far1</a></li></ul></ul></ul> </p>
+<p><ul><ul><li><a href="#Abstract">Abstract</a></li>
+<li><a href="#Syntax">Syntax</a></li><ul><li><a href="#Styles_of_arguments_specification">Styles of arguments specification</a></li>
+<li><a href="#Specifying_more_that_a_one_argument">Specifying more that a one argument</a></li>
+<li><a href="#Executing_several_functions_at_once">Executing several functions at once</a></li>
+<li><a href="#Numerical_arguments">Numerical arguments</a></li>
+<li><a href="#String_arguments">String arguments</a></li></ul><li><a href="#Command_line">Command line</a></li>
+<li><a href="#Far_Manager_plugin">Far Manager plugin</a></li>
+<li><a href="#List_of_functions">List of functions</a></li>
+<li><a href="#SetOption">SetOption</a></li>
+<li><a href="#Examples">Examples</a></li><ul><li><a href="#Far3-Lua">Far3-Lua</a></li>
+<li><a href="#Far3-pre-Lua">Far3-pre-Lua</a></li>
+<li><a href="#Far2">Far2</a></li>
+<li><a href="#Far1">Far1</a></li></ul></ul></ul> </p>
 <h2 id="h0"><a name="Abstract"></a>Abstract<a href="#Abstract" class="section_anchor"></a></h2>
-<p>You can execute ConEmu GUI macro from: <ul><li>ConEmu hotkey - set up ‘Macro 01’ … ‘Macro 32’ on ‘Keys’ page of ‘Settings’ dialog. </li><li><a href="GuiMacro.html#Command_line">command line</a> (or batch file), format is flexible, some examples: </li></p>
+<p>You can execute ConEmu GUI macro from: <ul><li>ConEmu hotkey - set up ‘Macro 01’ … ‘Macro 32’ on ‘Keys’ page of ‘Settings’ dialog. </li>
+<li><a href="GuiMacro.html#Command_line">command line</a> (or batch file), format is flexible, some examples: </li></p>
 <pre class="prettyprint">&quot;%ConEmuBaseDir%\ConEmuC.exe&quot; /GUIMACRO WindowMinimize
 ConEmuC -GuiMacro palette 1 &quot;&lt;Solarized&gt;&quot; -guimacro WindowMaximize
 ConEmuC -guimacro status 1 test
@@ -81,7 +94,9 @@ call SetEscChar.cmd
 echo %ESC%]9;6;&quot;IsConEmu&quot;%ESC%\
 if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 <li>via <a href="GuiMacro.html#Far_Manager_plugin">Far Manager plugin</a> (Far1/Far2/Far3 are supported): </li><pre class="prettyprint">F11 -&gt; ConEmu -&gt; Execute ConEmu macro</pre>
-<li>you can use Far Manager macros to forward commands for ConEmu GUI. </li><ul><li><strong>Far3-lua</strong>: <tt>Plugin.SyncCall(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</tt> </li><li><strong>Far3-pre-lua</strong>: <tt>Plugin.Call(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</tt>, <i>callplugin is alias of Plugin.Call</i> </li><li><strong>Far2</strong>: <tt>callplugin(0x43454D55,&quot;IsConEmu()&quot;)</tt> </li></ul></ul><h2><a name="Syntax"></a>Syntax<a href="#Syntax" class="section_anchor"></a></h2>
+<li>you can use Far Manager macros to forward commands for ConEmu GUI. </li><ul><li><strong>Far3-lua</strong>: <tt>Plugin.SyncCall(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</tt> </li>
+<li><strong>Far3-pre-lua</strong>: <tt>Plugin.Call(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</tt>, <i>callplugin is alias of Plugin.Call</i> </li>
+<li><strong>Far2</strong>: <tt>callplugin(0x43454D55,&quot;IsConEmu()&quot;)</tt> </li></ul></ul><h2><a name="Syntax"></a>Syntax<a href="#Syntax" class="section_anchor"></a></h2>
 <p>ConEmu GuiMacro parser is flexible and support different styles. </p>
 <h3><a name="Styles_of_arguments_specification"></a>Styles of arguments specification<a href="#Styles_of_arguments_specification" class="section_anchor"></a></h3>
 <ul><li>surrounded by brackets: </li><pre class="prettyprint">Function(Arguments)</pre>
@@ -95,7 +110,8 @@ if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 <ul><li>delimited by semicolons: </li><pre class="prettyprint">print(&quot;abc&quot;); keys(&quot;^_&quot;); print(&quot;def&quot;)</pre>
 <li>delimited by <tt>-GuiMacro</tt> when called from your shell prompt: </li><pre class="prettyprint">ConEmuC -GuiMacro print abc -GuiMacro keys &quot;^_&quot; -GuiMacro print def</pre>
 </ul><h3><a name="Numerical_arguments"></a>Numerical arguments<a href="#Numerical_arguments" class="section_anchor"></a></h3>
-<ul><li>decimal form with leading optional ‘+’ or ‘-’: <tt>FontSetSize(1,-1)</tt> </li><li>hexadecimal form with ‘0x’ or ‘0X’ prefix: <tt>MsgBox(&quot;Text&quot;,&quot;Title&quot;,0x132)</tt> </li></ul><h3><a name="String_arguments"></a>String arguments<a href="#String_arguments" class="section_anchor"></a></h3>
+<ul><li>decimal form with leading optional ‘+’ or ‘-’: <tt>FontSetSize(1,-1)</tt> </li>
+<li>hexadecimal form with ‘0x’ or ‘0X’ prefix: <tt>MsgBox(&quot;Text&quot;,&quot;Title&quot;,0x132)</tt> </li></ul><h3><a name="String_arguments"></a>String arguments<a href="#String_arguments" class="section_anchor"></a></h3>
 <p>It is recommended to put string arguments in doublequotes, but in fact that is not required for ‘one-word’ arguments. </p>
 <h4><a name="C-style_strings"></a>C-style strings<a href="#C-style_strings" class="section_anchor"></a></h4>
 <p>Backslashes and doublequotes must be escaped with backslashes. </p>
@@ -136,7 +152,8 @@ ConEmuC -GuiMacro[:PID|HWND][:T&lt;tab&gt;][:S&lt;split&gt;] &lt;GuiMacro comman
 ConEmuC -GuiMacro:8204 print &quot;This is sample text&quot;
 ConEmuC -GuiMacro:x140F32 WindowMinimize</pre>
 <h2><a name="Far_Manager_plugin"></a>Far Manager plugin<a href="#Far_Manager_plugin" class="section_anchor"></a></h2>
-<p>You may run GuiMacro from Far Plugin (<tt>ConEmu.dll</tt> / <tt>ConEmu64.dll</tt>) from: <ul><li>Using menu command: <tt>F11</tt> -&gt; <tt>ConEmu</tt> -&gt; <tt>Execute ConEmu macro</tt> </li><li>Using Far Manager macro language: </li><ul><li><strong>Far v3.x Lua</strong>: </li></p>
+<p>You may run GuiMacro from Far Plugin (<tt>ConEmu.dll</tt> / <tt>ConEmu64.dll</tt>) from: <ul><li>Using menu command: <tt>F11</tt> -&gt; <tt>ConEmu</tt> -&gt; <tt>Execute ConEmu macro</tt> </li>
+<li>Using Far Manager macro language: </li><ul><li><strong>Far v3.x Lua</strong>: </li></p>
 <pre class="prettyprint">Plugin.SyncCall(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</pre>
 <li><strong>Far v3.x pre Lua</strong>: </li><pre class="prettyprint">Plugin.Call(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</pre>
 <li><strong>Far v2.x</strong>: </li><pre class="prettyprint">callplugin(0x43454D55,&quot;IsConEmu()&quot;)</pre>

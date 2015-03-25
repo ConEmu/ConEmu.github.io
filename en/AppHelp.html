@@ -84,7 +84,11 @@ C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\lib\perl5\site_perl\5.8.8\msys\a
 3 [main] perl 8248 sync_with_child: *** child state child loading dlls</pre>
 <h2><a name="The_problem"></a>The problem<a href="#The_problem" class="section_anchor"></a></h2>
 <p>Digging the problem for some time I&#x27;ve found the reason of these errors on my PC (in perl&#x27;s case). </p>
-<ul><li>Address, where perl wants to load its libraries was used by <tt>C:\Windows\System32\uxtheme.dll</tt>. </li><li>This <tt>uxtheme.dll</tt> was loaded as static linked library by <tt>C:\Windows\apppatch\AcGenral.dll</tt>. </li><li>This <tt>AcGenral.dll</tt> was loaded (dynamically) by <tt>C:\Windows\System32\apphelp.dll</tt>. </li><li>And this <tt>apphelp.dll</tt> was loaded in the parent process of the <tt>ConEmu.exe</tt> (that was <tt>USBSafelyRemove.exe</tt> in my case). </li><li>Oops... </li></ul><h2><a name="The_check"></a>The check<a href="#The_check" class="section_anchor"></a></h2>
+<ul><li>Address, where perl wants to load its libraries was used by <tt>C:\Windows\System32\uxtheme.dll</tt>. </li>
+<li>This <tt>uxtheme.dll</tt> was loaded as static linked library by <tt>C:\Windows\apppatch\AcGenral.dll</tt>. </li>
+<li>This <tt>AcGenral.dll</tt> was loaded (dynamically) by <tt>C:\Windows\System32\apphelp.dll</tt>. </li>
+<li>And this <tt>apphelp.dll</tt> was loaded in the parent process of the <tt>ConEmu.exe</tt> (that was <tt>USBSafelyRemove.exe</tt> in my case). </li>
+<li>Oops... </li></ul><h2><a name="The_check"></a>The check<a href="#The_check" class="section_anchor"></a></h2>
 <p><i>The following examples shows msysgit x86</i> </p>
 <p>Almost all dll-s used by cygwin/msys must be loaded at high memory addresses (above 0x60000000). </p>
 <p>For example, if you call </p>

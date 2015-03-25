@@ -67,7 +67,30 @@
 
 <!-- Content starts -->
 
-<p><font size="5"><strong>ConEmu setup</strong></font> <ul><li><a href="#Where_settings_are_stored">Where settings are stored</a></li><ul><li><a href="#Registry">Registry</a></li><li><a href="#ConEmu_.xml">ConEmu .xml</a></li></ul><li><a href="#Manual_change_of_settings">Manual change of settings</a></li><ul><li><a href="#Using_registry">Using registry</a></li><li><a href="#Using_ConEmu_.xml">Using ConEmu .xml</a></li></ul><li><a href="#Settings_dialog">Settings dialog</a></li><ul><li><a href="#Main">Main</a></li><li><a href="#Size_and_Pos">Size and Pos</a></li><li><a href="#Appearance">Appearance</a></li><li><a href="#Task_bar">Task bar</a></li><li><a href="#Automatic_update">Automatic update</a></li><li><a href="#Startup">Startup</a></li><li><a href="#Tasks">Tasks</a></li><li><a href="#ComSpec">ComSpec</a></li><li><a href="#Features">Features</a></li><ul><li><a href="#RealConsole_font">RealConsole font</a></li></ul><li><a href="#Text_cursor">Text cursor</a></li><li><a href="#Colors">Colors</a></li><li><a href="#Transparency">Transparency</a></li><li><a href="#Tabs">Tabs</a></li><li><a href="#Status_bar">Status bar</a></li><li><a href="#Integration">Integration</a></li><li><a href="#App_distinct">App distinct</a></li><li><a href="#Keys_and_Macro">Keys and Macro</a></li><li><a href="#Controls">Controls</a></li><li><a href="#Mark_&amp;_Paste">Mark &amp; Paste</a></li><li><a href="#Far_Manager">Far Manager</a></li><li><a href="#Views">Views</a></li><li><a href="#Info">Info</a></li><li><a href="#Debug">Debug</a></li></ul><li><a href="#Alphabetical">Alphabetical</a></li></ul>  </p>
+<p><font size="5"><strong>ConEmu setup</strong></font> <ul><li><a href="#Where_settings_are_stored">Where settings are stored</a></li><ul><li><a href="#Registry">Registry</a></li>
+<li><a href="#ConEmu_.xml">ConEmu .xml</a></li></ul><li><a href="#Manual_change_of_settings">Manual change of settings</a></li><ul><li><a href="#Using_registry">Using registry</a></li>
+<li><a href="#Using_ConEmu_.xml">Using ConEmu .xml</a></li></ul><li><a href="#Settings_dialog">Settings dialog</a></li><ul><li><a href="#Main">Main</a></li>
+<li><a href="#Size_and_Pos">Size and Pos</a></li>
+<li><a href="#Appearance">Appearance</a></li>
+<li><a href="#Task_bar">Task bar</a></li>
+<li><a href="#Automatic_update">Automatic update</a></li>
+<li><a href="#Startup">Startup</a></li>
+<li><a href="#Tasks">Tasks</a></li>
+<li><a href="#ComSpec">ComSpec</a></li>
+<li><a href="#Features">Features</a></li><ul><li><a href="#RealConsole_font">RealConsole font</a></li></ul><li><a href="#Text_cursor">Text cursor</a></li>
+<li><a href="#Colors">Colors</a></li>
+<li><a href="#Transparency">Transparency</a></li>
+<li><a href="#Tabs">Tabs</a></li>
+<li><a href="#Status_bar">Status bar</a></li>
+<li><a href="#Integration">Integration</a></li>
+<li><a href="#App_distinct">App distinct</a></li>
+<li><a href="#Keys_and_Macro">Keys and Macro</a></li>
+<li><a href="#Controls">Controls</a></li>
+<li><a href="#Mark_&amp;_Paste">Mark &amp; Paste</a></li>
+<li><a href="#Far_Manager">Far Manager</a></li>
+<li><a href="#Views">Views</a></li>
+<li><a href="#Info">Info</a></li>
+<li><a href="#Debug">Debug</a></li></ul><li><a href="#Alphabetical">Alphabetical</a></li></ul>  </p>
 <h1 id="h0"><a name="Where_settings_are_stored"></a>Where settings are stored<a href="#Where_settings_are_stored" class="section_anchor"></a></h1>
 <p>ConEmu may store its settings in the Windows registry (HKCU), or in the ConEmu.xml file. </p>
 <h2><a name="Registry"></a>Registry<a href="#Registry" class="section_anchor"></a></h2>
@@ -84,11 +107,17 @@
 <h1><a name="Manual_change_of_settings"></a>Manual change of settings<a href="#Manual_change_of_settings" class="section_anchor"></a></h1>
 <p>So, You want to change setting, which is absent in the Settings dialog. List and description of each setting You may find in the <i>Settings-ConEmu.reg</i> file. </p>
 <h2><a name="Using_registry"></a>Using registry<a href="#Using_registry" class="section_anchor"></a></h2>
-<p>Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys: <ul><li><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt>, when <a href="Command_Line.html">/config</a> switch is not using; </li><li><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt>, when /config switch specified in the ConEmu command line. </li></ul></p>
+<p>Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys: <ul><li><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt>, when <a href="Command_Line.html">/config</a> switch is not using; </li>
+<li><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt>, when /config switch specified in the ConEmu command line. </li></ul></p>
 <h2><a name="Using_ConEmu_.xml"></a>Using ConEmu.xml<a href="#Using_ConEmu_.xml" class="section_anchor"></a></h2>
 <p>Open ConEmu.xml file using any text editor (Far Manager, Notepad, and so on) find appropriate value and change it. Usually, this file is located near to the <i>ConEmuC.exe</i>. </p>
 <h1><a name="Settings_dialog"></a>Settings dialog<a href="#Settings_dialog" class="section_anchor"></a></h1>
-<p>You may open settings dialog in several ways <ul><li>Choosing «Settings...» menu item in ConEmu <a href="SystemMenu.html">system menu</a>, which can be opened </li><ul><li>by right-clicking on the ‘Menu’ icon on the toolbar </li><li>by right-clicking on the window title </li><li>by left-clicking on the icon in the ConEmu title bar </li><li>by pressing Win+Alt+Space on the keyboard </li><li>by right-clicking on the ConEmu (running) icon in the taskbar (in Windows 7 you must hold down Shift key) </li><li>by right-clicking on the ConEmu icon in <a href="ConEmuTerms.html#TSA">TSA</a> (if you enable TSA feature) </li></ul><li>Or, you may press Win+Alt+P on the keyboard (predefined hotkey) </li></ul></p>
+<p>You may open settings dialog in several ways <ul><li>Choosing «Settings...» menu item in ConEmu <a href="SystemMenu.html">system menu</a>, which can be opened </li><ul><li>by right-clicking on the ‘Menu’ icon on the toolbar </li>
+<li>by right-clicking on the window title </li>
+<li>by left-clicking on the icon in the ConEmu title bar </li>
+<li>by pressing Win+Alt+Space on the keyboard </li>
+<li>by right-clicking on the ConEmu (running) icon in the taskbar (in Windows 7 you must hold down Shift key) </li>
+<li>by right-clicking on the ConEmu icon in <a href="ConEmuTerms.html#TSA">TSA</a> (if you enable TSA feature) </li></ul><li>Or, you may press Win+Alt+P on the keyboard (predefined hotkey) </li></ul></p>
 <h2><a name="Main"></a>Main<a href="#Main" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsMain.png" title="ConEmu settings, Main page" alt="ConEmu settings, Main page"> </p>
 <h2><a name="Size_and_Pos"></a>Size and Pos<a href="#Size_and_Pos" class="section_anchor"></a></h2>
@@ -103,7 +132,11 @@
 <p><img src="../img/SettingsStartup.png" title="ConEmu settings, Startup page" alt="ConEmu settings, Startup page"> </p>
 <h2><a name="Tasks"></a>Tasks<a href="#Tasks" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsTasks.png" title="ConEmu settings, Tasks page" alt="ConEmu settings, Tasks page"> </p>
-<p>Here you can configure a list of common tasks. In fact, this is an alias to run one or more applications in new tabs within <a href="ConEmu.html">ConEmu</a>. These can be configured in the &#x27;Tasks&#x27; page of the &#x27;Settings&#x27; dialog, and stored in the &quot;Tasks&quot; subkey of reg/xml settings. &#x27;Tasks&#x27; may be used as follows (as an example, we will use a task named {Shells}): <ul><li>when you start by specifying the properties of the shortcut: &quot;ConEmu.exe / cmd {Shells}&quot;; </li><li>specifying {Shells} in the &#x27;Command line&#x27; page &#x27;Main&#x27; of &#x27;Settings&#x27; dialog; </li><li>when you create a new console interface ConEmu (<tt>+</tt> on the toolbar, a list of Recreate-dialog); </li><li>from the command line (cmd.exe): &quot;%ConEmuBaseDir%\ConEmuC.exe&quot; / c {Shells} -new_console. </li><li>from the command line (far.exe): conemu:run:{Shells} -new_console </li></ul></p>
+<p>Here you can configure a list of common tasks. In fact, this is an alias to run one or more applications in new tabs within <a href="ConEmu.html">ConEmu</a>. These can be configured in the &#x27;Tasks&#x27; page of the &#x27;Settings&#x27; dialog, and stored in the &quot;Tasks&quot; subkey of reg/xml settings. &#x27;Tasks&#x27; may be used as follows (as an example, we will use a task named {Shells}): <ul><li>when you start by specifying the properties of the shortcut: &quot;ConEmu.exe / cmd {Shells}&quot;; </li>
+<li>specifying {Shells} in the &#x27;Command line&#x27; page &#x27;Main&#x27; of &#x27;Settings&#x27; dialog; </li>
+<li>when you create a new console interface ConEmu (<tt>+</tt> on the toolbar, a list of Recreate-dialog); </li>
+<li>from the command line (cmd.exe): &quot;%ConEmuBaseDir%\ConEmuC.exe&quot; / c {Shells} -new_console. </li>
+<li>from the command line (far.exe): conemu:run:{Shells} -new_console </li></ul></p>
 <p>The ConEmu Jump list is set here too. Set up a list of tasks in the field of «ConEmu arguments for Jump list» You can optionally specify the icon that is displayed in the Jump list, for example </p>
 <pre class="prettyprint">/icon &quot;cmd.exe&quot;</pre>
 <p>и рабочую папку, в которой будет запущен указанный процесс, например </p>
