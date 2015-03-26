@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+
+ <link rel="icon" type="image/vnd.microsoft.icon" href="/conemu.ico">
+
+ <meta name="author" content="@ConEmuMaximus5">
+ <link rel="canonical" href="{{page.canonical_url}}">
+
+ <link rel="stylesheet" href="/main.css">
+
+ <title>ConEmu - эмулятор терминала Windows</title>
+
+{% if site.url != 'local' %}{% include analytics.html %}{% endif %}
+
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="maincol" id="wikimaincol">
+
+	<div class="header">
+		<div id="logo-block">
+			<div>
+				<h1><a href="{{ site.url }}/ru/ConEmu.html">ConEmu</a></h1>
+				<div id="logo-descr"><a href="{{ site.url }}/ru/ConEmu.html">эмулятор терминала</a></div>
+				<div id="social">
+					<a href="http://www.facebook.com/share.php?u=http://conemu.github.io/" rel="nofollow" target="_blank" title="FaceBook" id="soc-facebook"></a>
+					<a href="http://twitter.com/share?url=http://conemu.github.io/" rel="nofollow" target="_blank" title="Twitter" id="soc-twitter"></a>
+					<div id="soc-plus">
+{% if site.url != 'local' %}{% include googleplus.html %}{% endif %}
+					</div>
+				</div>
+			</div>
+			<div style="overflow: hidden; width:728px; height:90px; position: relative; left: 210px; top: -90px;">
+{% if site.url != 'local' %}{% include googleads.html %}{% endif %}
+			</div>
+		</div>
+		<div id="header-line"></div>
+	</div><!-- .header-->
+
+	<div class="middle">
+		<div class="container">
+			<div class="content">
+
+{{ content }}
+
+<!-- BackToContents start -->
+				<div class="text stext"><a href="/ru/TableOfContents.html">Назад к оглавлению</a></div>
+<!-- BackToContents end -->
+
+			</div><!-- .content-->
+		</div><!-- .container-->
+
+		<div class="left-sidebar">
+{% include menu_ru.html %}
+		</div><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- maincol -->
+</div>
+
+<div class="footer">
+	<div id="footertext">Copyright Maximus5 © 2015</div>
+</div><!-- .footer -->
+
+</body>
+</html>
