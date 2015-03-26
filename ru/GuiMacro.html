@@ -96,22 +96,32 @@ if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 <li>via <a href="GuiMacro.html#Far_Manager_plugin">Far Manager plugin</a> (Far1/Far2/Far3 are supported): </li><pre class="prettyprint">F11 -&gt; ConEmu -&gt; Execute ConEmu macro</pre>
 <li>you can use Far Manager macros to forward commands for ConEmu GUI. </li><ul><li><strong>Far3-lua</strong>: <tt>Plugin.SyncCall(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</tt> </li>
 <li><strong>Far3-pre-lua</strong>: <tt>Plugin.Call(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</tt>, <i>callplugin is alias of Plugin.Call</i> </li>
-<li><strong>Far2</strong>: <tt>callplugin(0x43454D55,&quot;IsConEmu()&quot;)</tt> </li></ul></ul><h2><a name="Syntax"></a>Syntax<a href="#Syntax" class="section_anchor"></a></h2>
+<li><strong>Far2</strong>: <tt>callplugin(0x43454D55,&quot;IsConEmu()&quot;)</tt> </li></ul></ul>
+
+<h2><a name="Syntax"></a>Syntax<a href="#Syntax" class="section_anchor"></a></h2>
 <p>ConEmu GuiMacro parser is flexible and support different styles. </p>
 <h3><a name="Styles_of_arguments_specification"></a>Styles of arguments specification<a href="#Styles_of_arguments_specification" class="section_anchor"></a></h3>
 <ul><li>surrounded by brackets: </li><pre class="prettyprint">Function(Arguments)</pre>
 <li>delimited by space: </li><pre class="prettyprint">Function Arguments</pre>
 <li>delimited by colon (and space optionally): </li><pre class="prettyprint">Function: Arguments</pre>
 <ul><li><strong>Note</strong> Using this style you may easily pass <strong>one-string-argument</strong>. Other methods may require quotating, backslash-escaping or verbatim strings. Example: </li><pre class="prettyprint">print: C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32</pre>
-</ul></ul><h3><a name="Specifying_more_that_a_one_argument"></a>Specifying more that a one argument<a href="#Specifying_more_that_a_one_argument" class="section_anchor"></a></h3>
+</ul></ul>
+
+<h3><a name="Specifying_more_that_a_one_argument"></a>Specifying more that a one argument<a href="#Specifying_more_that_a_one_argument" class="section_anchor"></a></h3>
 <ul><li>delimited by commas: </li><pre class="prettyprint">Function(Arg1,Arg2,Arg3)</pre>
 <li>delimited by spaces: </li><pre class="prettyprint">Function Arg1 Arg2 Arg3</pre>
-</ul><h3><a name="Executing_several_functions_at_once"></a>Executing several functions at once<a href="#Executing_several_functions_at_once" class="section_anchor"></a></h3>
+</ul>
+
+<h3><a name="Executing_several_functions_at_once"></a>Executing several functions at once<a href="#Executing_several_functions_at_once" class="section_anchor"></a></h3>
 <ul><li>delimited by semicolons: </li><pre class="prettyprint">print(&quot;abc&quot;); keys(&quot;^_&quot;); print(&quot;def&quot;)</pre>
 <li>delimited by <tt>-GuiMacro</tt> when called from your shell prompt: </li><pre class="prettyprint">ConEmuC -GuiMacro print abc -GuiMacro keys &quot;^_&quot; -GuiMacro print def</pre>
-</ul><h3><a name="Numerical_arguments"></a>Numerical arguments<a href="#Numerical_arguments" class="section_anchor"></a></h3>
+</ul>
+
+<h3><a name="Numerical_arguments"></a>Numerical arguments<a href="#Numerical_arguments" class="section_anchor"></a></h3>
 <ul><li>decimal form with leading optional ‘+’ or ‘-’: <tt>FontSetSize(1,-1)</tt> </li>
-<li>hexadecimal form with ‘0x’ or ‘0X’ prefix: <tt>MsgBox(&quot;Text&quot;,&quot;Title&quot;,0x132)</tt> </li></ul><h3><a name="String_arguments"></a>String arguments<a href="#String_arguments" class="section_anchor"></a></h3>
+<li>hexadecimal form with ‘0x’ or ‘0X’ prefix: <tt>MsgBox(&quot;Text&quot;,&quot;Title&quot;,0x132)</tt> </li></ul>
+
+<h3><a name="String_arguments"></a>String arguments<a href="#String_arguments" class="section_anchor"></a></h3>
 <p>It is recommended to put string arguments in doublequotes, but in fact that is not required for ‘one-word’ arguments. </p>
 <h4><a name="C-style_strings"></a>C-style strings<a href="#C-style_strings" class="section_anchor"></a></h4>
 <p>Backslashes and doublequotes must be escaped with backslashes. </p>

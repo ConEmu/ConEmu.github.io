@@ -88,7 +88,9 @@ C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\lib\perl5\site_perl\5.8.8\msys\a
 <li>This <tt>uxtheme.dll</tt> was loaded as static linked library by <tt>C:\Windows\apppatch\AcGenral.dll</tt>. </li>
 <li>This <tt>AcGenral.dll</tt> was loaded (dynamically) by <tt>C:\Windows\System32\apphelp.dll</tt>. </li>
 <li>And this <tt>apphelp.dll</tt> was loaded in the parent process of the <tt>ConEmu.exe</tt> (that was <tt>USBSafelyRemove.exe</tt> in my case). </li>
-<li>Oops... </li></ul><h2><a name="The_check"></a>The check<a href="#The_check" class="section_anchor"></a></h2>
+<li>Oops... </li></ul>
+
+<h2><a name="The_check"></a>The check<a href="#The_check" class="section_anchor"></a></h2>
 <p><i>The following examples shows msysgit x86</i> </p>
 <p>Almost all dll-s used by cygwin/msys must be loaded at high memory addresses (above 0x60000000). </p>
 <p>For example, if you call </p>

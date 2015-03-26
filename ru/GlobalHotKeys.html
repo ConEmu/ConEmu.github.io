@@ -72,7 +72,9 @@
 <ul><li>You can&#x27;t use ‘Apps’ as modifier. </li>
 <li>Left and Right modifiers are indifferent. </li>
 <li>You can&#x27;t register hotkey already registered by any other application. </li>
-<li>The F12 key is <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms646309(v=vs.85).aspx" rel="nofollow">reserved for use by the debugger</a> at all times, so it should not be registered as a hot key. Even when you are not debugging an application, F12 is reserved in case a kernel-mode debugger or a just-in-time debugger is resident. </li></ul><h2 id="h0"><a name="Using_F12_as_global_hotkey"></a>Using F12 as global hotkey<a href="#Using_F12_as_global_hotkey" class="section_anchor"></a></h2>
+<li>The F12 key is <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms646309(v=vs.85).aspx" rel="nofollow">reserved for use by the debugger</a> at all times, so it should not be registered as a hot key. Even when you are not debugging an application, F12 is reserved in case a kernel-mode debugger or a just-in-time debugger is resident. </li></ul>
+
+<h2 id="h0"><a name="Using_F12_as_global_hotkey"></a>Using F12 as global hotkey<a href="#Using_F12_as_global_hotkey" class="section_anchor"></a></h2>
 <p>As <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms646309(v=vs.85).aspx" rel="nofollow">msdn</a> said, F12 is reserved for use by the debugger. </p>
 <pre class="prettyprint">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug]
 &quot;UserDebuggerHotKey&quot;=dword:00000000 ; The default, steal F12 global hotkey</pre>
