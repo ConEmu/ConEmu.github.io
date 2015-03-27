@@ -64,7 +64,7 @@ ConEmuC /ATTACH [/GHWND=NEW|&lt;HWND&gt;] /[FAR|CON|TRM]PID=&lt;PID&gt;
           Otherwise the file will be threated as ANSI</pre>
 <p>Both commands are able to process <a href="AnsiEscapeCodes.html">ANSI sequences</a>. But take into account, that <tt>&quot;ConEmuC -t ...&quot;</tt> does not do replacements with ASCII equivalents. </p>
 <pre class="prettyprint">ConEmuC -e &quot;^[[1;33;45mqwerty^[[m&quot;</pre>
-<p><strong>Debug and <a href="MiniDump.html">MiniDump</a></strong> </p>
+<p><strong>Debug and <a href="MemoryDump.html">MiniDump</a></strong> </p>
 <pre class="prettyprint">ConEmuC /DEBUGPID=&lt;Debugging PID&gt; [/DUMP | /MINI | /FULL]
     start debugger or create memory dump
 ConEmuC /DEBUGEXE &lt;command line&gt;
