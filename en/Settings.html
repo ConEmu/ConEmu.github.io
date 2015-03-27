@@ -35,7 +35,7 @@ layout: docs_en
 <h2><a name="Registry"></a>Registry<a href="#Registry" class="section_anchor"></a></h2>
 <p>All settings are stored in registry in the following key: </p>
 <p><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt> </p>
-<p>When You specify the <a href="Command_Line.html">/config</a> switch in the ConEmu.exe command line settings will be stored here: </p>
+<p>When You specify the <a href="ConEmuArgs.html">/config</a> switch in the ConEmu.exe command line settings will be stored here: </p>
 <p><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt> </p>
 
 <h2><a name="ConEmu_.xml"></a>ConEmu.xml<a href="#ConEmu_.xml" class="section_anchor"></a></h2>
@@ -45,14 +45,14 @@ layout: docs_en
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <tt>%ConEmuBaseDir%\ConEmu.xml</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Folder with <tt>ConEmuC.exe</tt> and <tt>ConEmuC64.exe</tt> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <tt>%APPDATA%\ConEmu.xml</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> I don&#x27;t think this is really «portable», but many users was asked about <tt>%APPDATA%</tt> </td></tr> </table></p>
 <p>On <a href="SettingsFast.html">first time ConEmu run</a>, you may choose «portable» mode and location of xml file. </p>
-<p>Or you may create manually a new empty <i>ConEmu.xml</i> or just rename <i>ConEmu_Sample.xml</i> to <i>ConEmu.xml</i> for engaging xml-mode. Template file <i>ConEmu_Sample.xml</i> is shipped with ConEmu. You may use <a href="Command_Line.html">named configuration (/config)</a> switch with xml-mode too. Also, there are switches <a href="Command_Line.html">/loadcfgfile and /safecfgfile</a> to use any special locations (not so useful for daily using, but available). </p>
+<p>Or you may create manually a new empty <i>ConEmu.xml</i> or just rename <i>ConEmu_Sample.xml</i> to <i>ConEmu.xml</i> for engaging xml-mode. Template file <i>ConEmu_Sample.xml</i> is shipped with ConEmu. You may use <a href="ConEmuArgs.html">named configuration (/config)</a> switch with xml-mode too. Also, there are switches <a href="ConEmuArgs.html">/loadcfgfile and /safecfgfile</a> to use any special locations (not so useful for daily using, but available). </p>
 <p>Note. You may rename/create <i>ConEmu.xml</i> file any time, even after ConEmu starts and loads its settings from registry. </p>
 
 <h1><a name="Manual_change_of_settings"></a>Manual change of settings<a href="#Manual_change_of_settings" class="section_anchor"></a></h1>
 <p>So, You want to change setting, which is absent in the Settings dialog. List and description of each setting You may find in the <i>Settings-ConEmu.reg</i> file. </p>
 
 <h2><a name="Using_registry"></a>Using registry<a href="#Using_registry" class="section_anchor"></a></h2>
-<p>Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys: <ul><li><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt>, when <a href="Command_Line.html">/config</a> switch is not using; </li>
+<p>Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys: <ul><li><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt>, when <a href="ConEmuArgs.html">/config</a> switch is not using; </li>
 <li><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt>, when /config switch specified in the ConEmu command line. </li></ul></p>
 
 <h2><a name="Using_ConEmu_.xml"></a>Using ConEmu.xml<a href="#Using_ConEmu_.xml" class="section_anchor"></a></h2>

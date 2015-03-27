@@ -35,7 +35,7 @@ layout: docs_ru
 <h2><a name="Registry"></a>Registry<a href="#Registry" class="section_anchor"></a></h2>
 <p>All settings are stored in registry in the following key: </p>
 <p><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt> </p>
-<p>When You specify the <a href="Command_Line.html">/config</a> switch in the ConEmu.exe command line settings will be stored here: </p>
+<p>When You specify the <a href="ConEmuArgs.html">/config</a> switch in the ConEmu.exe command line settings will be stored here: </p>
 <p><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt> </p>
 
 <h2><a name="ConEmu_.xml"></a>ConEmu.xml<a href="#ConEmu_.xml" class="section_anchor"></a></h2>
@@ -44,14 +44,14 @@ layout: docs_ru
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <tt>%APPDATA%\ConEmu.xml</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Я не считаю этот случай действительно «портабельным», но многие просили <tt>%APPDATA%</tt> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <tt>%ConEmuBaseDir%\ConEmu.xml</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Папка с файлами <tt>ConEmuC.exe</tt> и <tt>ConEmuC64.exe</tt> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <tt>%ConEmuDir%\ConEmu.xml</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Папка с файлами <tt>ConEmu.exe</tt> и <tt>ConEmu64.exe</tt> </td></tr> </table></p>
-<p>При <a href="SettingsFast.html">первом запуске ConEmu</a>, вы можете включить «портабельный» режим и выбрать расположение xml файла. Также вы можете создать новый пустой <i>ConEmu.xml</i> или просто переименовать <i>ConEmu_Sample.xml</i> в <i>ConEmu.xml</i> для включения xml-режима. Пример настроек <i>ConEmu_Sample.xml</i> поставляется с ConEmu. Ключ <a href="Command_Line.html">именованных конфигураций (/config)</a> также можно использовать в xml-режиме. И наконец, есть два ключа <a href="Command_Line.html">/loadcfgfile и /safecfgfile</a> для использования специально указанных файлов (может быть полезно в некоторых случаях). </p>
+<p>При <a href="SettingsFast.html">первом запуске ConEmu</a>, вы можете включить «портабельный» режим и выбрать расположение xml файла. Также вы можете создать новый пустой <i>ConEmu.xml</i> или просто переименовать <i>ConEmu_Sample.xml</i> в <i>ConEmu.xml</i> для включения xml-режима. Пример настроек <i>ConEmu_Sample.xml</i> поставляется с ConEmu. Ключ <a href="ConEmuArgs.html">именованных конфигураций (/config)</a> также можно использовать в xml-режиме. И наконец, есть два ключа <a href="ConEmuArgs.html">/loadcfgfile и /safecfgfile</a> для использования специально указанных файлов (может быть полезно в некоторых случаях). </p>
 <p>Примечание. Вы можете переименовать/создать файл <i>ConEmu.xml</i> в любое время, даже после загрузки настроек из реестра. </p>
 
 <h1><a name="Manual_change_of_settings"></a>Manual change of settings<a href="#Manual_change_of_settings" class="section_anchor"></a></h1>
 <p>So, You want to change setting, which is absent in the Settings dialog. List and description of each setting You may find in the <i>Settings-ConEmu.reg</i> file. </p>
 
 <h2><a name="Using_registry"></a>Using registry<a href="#Using_registry" class="section_anchor"></a></h2>
-<p>Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys: <ul><li><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt>, when <a href="Command_Line.html">/config</a> switch is not using; </li>
+<p>Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys: <ul><li><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt>, when <a href="ConEmuArgs.html">/config</a> switch is not using; </li>
 <li><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt>, when /config switch specified in the ConEmu command line. </li></ul></p>
 
 <h2><a name="Using_ConEmu_.xml"></a>Using ConEmu.xml<a href="#Using_ConEmu_.xml" class="section_anchor"></a></h2>
