@@ -1,106 +1,123 @@
 ---
 layout: docs_ru
+title: ConEmu - эмулятор консольного окна Windows
 ---
 
 <!-- Content starts -->
 
-<h1 id="h0"><a name="About_ConEmu"></a>About ConEmu <a href="#About_ConEmu" class="section_anchor"></a></h1>
+			<h1 id="h0">ConEmu - эмулятор консольного окна Windows</h1>
 
-<p>ConEmu-Maximus5 is a Windows console emulator with tabs, which presents multiple consoles and simple GUI applications as one customizable GUI window with various features. </p>
+			<p>ConEmu-Maximus5 это &laquo;графический хост&raquo; для консольных приложений Windows.<br />
+			При запуске нового консольного приложения в ConEmu реальное окно консоли не отображается, а весь вывод и ввод перехватывается и перенаправляется в ConEmu. Основное назначение - совместное использование с <a href="http://en.wikipedia.org/wiki/FAR_Manager">Far Manager</a>. Но в ConEmu можно запускать и другие приложения: cmd, powershell, dn, putty, notepad, и т.п.</p>
+			<a href="http://www.fosshub.com/ConEmu.html"><img alt="Загрузить" src="/img/Downloads.png" title="Загрузить ConEmu" /></a>
 
-<p>Initially, the program was created as a companion to <a href="http://www.farmanager.com/download.php?l=en" rel="nofollow">Far Manager</a> (<a href="http://en.wikipedia.org/wiki/FAR_Manager" rel="nofollow">FAR in Wikipedia</a>), my favorite shell replacement - file and archive management, command history and completion, powerful editor. </p>
+			<p><a href="http://dotnetsurfers.com/blog/2013/12/15/developer-tools-screencast-7-conemu/">Видео (English)</a> - кратко о возможностях ConEmu.</p>
+			&nbsp;
 
-<p>Today, ConEmu can be used with any other console application or simple GUI tools (like PuTTY for example). ConEmu is an active project, open to <a href="http://conemu.github.io/en/Issues.html">suggestions</a>. </p>
+			<div><img alt="ConEmu 2x2" src="/img/ConEmuTransparency.png"></div>
 
-<p><a href="http://www.fosshub.com/ConEmu.html" rel="nofollow"><img src="../img/Downloads.png" alt="Downloads" title="Download ConEmu"></img></a></p>
+			<h2>Бонусы, которые получает пользователь</h2>
 
-<p>Take a look at <a href="http://dotnetsurfers.com/blog/2013/12/15/developer-tools-screencast-7-conemu/" rel="nofollow">screencast</a> about ConEmu. </p>
+			<ul>
+				<li>Простой ресайз окна консоли, максимизация и полноэкранный режим (Alt+Enter), который не требует перевода видекарты в текстовый режим; отсутствие проблемы появления полос прокрутки в Far при блокировании (засыпании) компьютера;</li>
+				<li>Встроенная поддержка мультиконсоли (несколько приложений в одном окне ConEmu), возможность запускать новые приложения от имени администратора;</li>
+				<li><a href="/ru/DosBox.html">Простой запуск</a> DOS приложений в Windows 7 и 64битных OS через <a href="http://www.dosbox.com/">DosBox</a>;</li>
+				<li>Консоли, запущенные в режиме администратора помечаются значком &laquo;Щит&raquo;;</li>
+				<li>При выполнении консольных приложений, запущенных из Far, высота консольного буфера автоматически увеличивается. Просмотр полного вывода предыдущей команды - макрос на CtrlO;</li>
+				<li>Можно выбрать тип отображаемого консольного курсора (как в GUI, либо как в консоли), или отключить его мигание;</li>
+				<li>Улучшена работа плагина <a href="http://code.google.com/p/conemu-maximus5/wiki/PicView">PictureView</a>;</li>
+				<li>Встроенная поддержка Drag&amp;Drop (shell style) между панелями и другими приложениями;</li>
+				<li>Можно использовать и с другими консольными программами (например cmd.exe) с установкой высоты буфера и прокруткой окна с клавиатуры;</li>
+				<li>Возможность переключения между окнами Far (панели, редактор, вьювер) через закладки, отображаемые в верхней части окна ConEmu. Встроенная поддержка переключения между закладками (любых открытых консолей) в стиле RecentTabs;</li>
+				<li>Выбор типа сглаживания шрифтов, выбор шрифта и его размера + некоторые попытки поддержать немоноширинные шрифты;</li>
+				<li>Отображение юникодных символов - иероглифов и т.п. (естественно, в юникодной версии Фара и при выборе юникодного шрифта);</li>
+				<li>Все настройки загружаются из реестра (или XML файла). Допускается использование множества &laquo;конфигураций&raquo;, имя загружаемой конфигурации можно указать в параметрах запуска (ключ /config);</li>
+				<li>Изменения большинства опций применяются &laquo;на лету&raquo; и могут быть сразу сохранены в реестр/XML-файл (диалог &quot;Settings&quot; открывается через щелчок правой кнопкой по заголовку -&gt; Settings либо Alt+Space -&gt; Settings);</li>
+				<li>Поддерживаются нестандартные цвета консоли, несколько предопределенных цветовых схем;</li>
+				<li>Возможность использования 32 цветов текста вместо стандартных 16-и;</li>
+				<li>Возможность использования 24битных цветов (TrueColor) в Far3 вместо стандартных 16-и;</li>
+				<li>Короткий правый клик мышкой в Far - выделение файлов, длинный правый клик - вызов контекстного меню проводника для элемента. Контекстное меню работает &quot;из коробки&quot;, настройка не требуется. ;</li>
+				<li>Возможность повесить макрос Far на сочетание Alt+Enter (например, то же контекстное меню);</li>
+				<li>Умеет сворачивать программу в трей (к часикам) автоматически при минимизации, или при правом щелчке по крестику;</li>
+				<li>Улучшенное отображение псевдографических символов (прокрутки, progressbar, и пр.);</li>
+				<li>Поддержка прогресса на иконке в Win7 (ИИ определяет проценты выполнения как по заголовку, так и по содержимому консоли);</li>
+				<li>Окно можно делать прозрачным;</li>
+				<li>И многое другое... смотрите окно настроек, файлы WhatsNew-ConEmu.txt и Settings-ConEmu.reg.</li>
+			</ul>
 
-<p><img alt="ConEmu 2x2" src="../img/ConEmuTransparency.png"></p>
+			<!--
+			<h2>Screenshots</h2>
 
-<p><a href="./Awards.html">Votes and awards</a> (vote for <a href="./Awards.html#Please,_vote_for_ConEmu">ConEmu</a>, if you please). </p>
+			<table border="0" cellpadding="0" cellspacing="0" style="font-size: 10pt;">
+				<tbody>
+					<tr>
+						<td>
+						<h3 style="margin-bottom: 0">ConEmu + Far 3.0 Editor</h3>
+						</td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td><a class="ulightbox" data-fancybox-group="ultbx" href="/ConEmu03.png" title="ConEmu + Far 3.0 Editor"><img alt="ConEmu + Far Editor" height="240" src="/ConEmu03.png" style="margin:0;padding:0;border:0;" title="ConEmu + Far 3.0 Editor" width="320" /></a></td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td>
+						<h3 style="margin-bottom: 0">ConEmu и Aero Peek</h3>
+						</td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td><a class="ulightbox" data-fancybox-group="ultbx" href="/ConEmu05.png" title="ConEmu и Aero Peek"><img alt="ConEmu и Aero Peek" height="240" src="/ConEmu05.png" style="margin:0;padding:0;border:0;" title="ConEmu и Aero Peek" width="320" /></a></td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td>
+						<h3 style="margin-bottom: 0">ConEmu и прозрачность</h3>
+						</td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td><a class="ulightbox" data-fancybox-group="ultbx" href="/ConEmu04.png" title="ConEmu и прозрачность"><img alt="ConEmu и прозрачность" height="240" src="/ConEmu04.png" style="margin:0;padding:0;border:0;" title="ConEmu и прозрачность" width="320" /></a></td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>< !--<tr><td><h3 style="margin-bottom: 0">Диалог настроек ConEmu</h3></td><tr><br /><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;Наведите курсор на элемент диалога для просмотра его описания</td></tr><br /><tr><td><img src="/ConEmu_SetMain.png" alt="ConEmu Settings, Main page" usemap="#SettingsMain"><br /><map name="SettingsMain"><br /><area shape="rect" coords="30,50,131,425" title="Settings, Main page"><br /><area shape="rect" coords="139,56,349,173" title="Настройка основного шрифта"><br /><area shape="rect" coords="139,175,349,199" title="Зарезервировав несколько цветов фона консоли можно менять начертание шрифта. Например, если в консоли текст отображен на фиолетовом фоне (13) в ConEmu он может быть показан курсивом, а цвет фона заменен на указанный пользователем (15 - белый)."><br /><area shape="rect" coords="139,200,349,249" title="Шрифт, которым отрисовываются рамки. Может быть полезно, если рамки в основном шрифте отсутствую или не нравится их начертание. При отключении флажка «Fix Far borders» рамки будут отрисовываться основным шрифтом."><br /><area shape="rect" coords="353,57,624,91" title="Можно выбрать вид текстового курсора: вертикальный (как в обычных GUI приложениях) или горизонтальный (как в консоли Windows)"><br /><area shape="rect" coords="353,92,414,116" title="При включенном флажке «Color» курсор отрисовывается инверсией цветов в консоли, при выключенном - курсор будет черным или белым"><br /><area shape="rect" coords="415,92,478,116" title="Можно включить или отключить мигание курсора"><br /><area shape="rect" coords="479,92,624,116" title="Чтобы «на взгляд» было видно, в фокусе ли ConEmu - при потере фокуса вместо курсора может быть отрисован прямоугольник"><br /><area shape="rect" coords="353,117,624,154" title="Режим сглаживания шрифтов, выбирайте «по вкусу». Рамки (при включенном «Fix Far borders») отрисовываются без сглаживания."><br /><area shape="rect" coords="353,155,624,231" title="Координаты и размер окна ConEmu"><br /><area shape="rect" coords="353,232,624,253" title="Координаты и размер можно автоматически сохранять при закрытии ConEmu"><br /><area shape="rect" coords="139,258,624,304" title="Вместо скучного фона консоли можно выбрать картинку по вкусу"><br /><area shape="rect" coords="139,305,624,332" title="А если картинка слишком яркая и на ней не видно текста - картинку можно затемнить"><br /><area shape="rect" coords="139,333,335,370" title="Чтобы ConEmu знал какие фоновые цвета консоли можно заменять на фоновую картинку - задайте индексы цветов, или поставьте звездочку (*) для автовыбора"><br /><area shape="rect" coords="336,333,442,370" title="Фон может быть задан не только статической картинкой, но и плагинами в Far Manager (ConEmu Background, ConEmu Underlines). Флажок «Allow plugins» разрешает или запрещает отображения фона из плагинов."><br /><area shape="rect" coords="443,333,624,370" title="Для статической картинки (из файла) можно выбрать режим отрисовки: верхний-левый угол, растянуть, плитка"><br /><area shape="rect" coords="139,375,624,425" title="Можно указать приложение и его параметры, которое запускается при старте ConEmu"><br /><area shape="rect" coords="518,437,626,461" title="Все настройки применяются «на лету» для текущего сеанса ConEmu, а для сохранения из в реестр/xml-файл нажмите кнопку «Save settings»"><br /><area shape="rect" coords="0,0,518,473" title=""><br /></map><br /></td></tr><br /><tr><td><img src="/ConEmu_SetFeatures.png" alt="ConEmu Settings, Features page" usemap="#SettingsFeatures"><br /><map name="SettingsFeatures"><br /><area shape="rect" coords="30,50,131,425" title="Settings, Features page"><br /></map><br /></td></tr><br /><tr><td><img src="/ConEmu_SetKeys.png" alt="ConEmu Settings, Keys page" usemap="#SettingsKeys"><br /><map name="SettingsKeys"><br /><area shape="rect" coords="30,50,131,425" title="Settings, Keys page"><br /></map><br /></td></tr><br /><tr><td><img src="/ConEmu_SetTabs.png" alt="ConEmu Settings, Tabs page" usemap="#SettingsTabs"><br /><map name="SettingsTabs"><br /><area shape="rect" coords="30,50,131,425" title="Settings, Tabs page"><br /></map><br /></td></tr><br /><tr><td><img src="/ConEmu_SetColors.png" alt="ConEmu Settings, Colors page" usemap="#SettingsColors"><br /><map name="SettingsColors"><br /><area shape="rect" coords="30,50,131,425" title="Settings, Colors page"><br /></map><br /></td></tr><br /><tr><td><img src="/ConEmu_SetViews.png" alt="ConEmu Settings, Views page" usemap="#SettingsViews"><br /><map name="SettingsViews"><br /><area shape="rect" coords="30,50,131,425" title="Settings, Views page"><br /></map><br /></td></tr><br /><tr><td><img src="/ConEmu_SetInfo.png" alt="ConEmu Settings, Info page" usemap="#SettingsInfo"><br /><map name="SettingsInfo"><br /><area shape="rect" coords="30,50,131,425" title="Settings, Info page"><br /></map><br /></td></tr>-- >					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			-->
 
+			<h3>Как пользоваться ConEmu</h3>
 
-<h2>Disclaimer</h2>
+			<ul>
+				<li><a href="/ru/Settings.html">Настройка ConEmu</a></li>
+			</ul>
 
-<p>ConEmu is not a shell, so it does not provide &quot;shell features&quot; like tab-completion, command history and others.
-ConEmu is advanced console window where you can run any shell of your choice.
-However, some of these features placed in <a href="./en/RoadMap.html">RoadMap</a>.
-Also you may try <a href="./en/ConEmu_Clink.html">Clink</a> for bash-style completion in cmd.exe
-and <a href="http://github.com/lzybkr/PSReadLine">PSReadLine</a>
-or <a href="http://powertab.codeplex.com/">PowerTab</a> in powershell.exe. </p>
-<!--
-<td width="230" valign="top" align="center"> <a href="http://code.google.com/p/conemu-maximus5/issues/list?can=1&amp;q=Type%3DDocumentation+&amp;sort=-modified">
-<img src="http://conemu-maximus5.googlecode.com/svn/files/ConEmu2013.png" title="Helping with documentation"></img></a><a
-href="donate.html"><img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" alt="Donation" title="Donate ConEmu"></img></a> <a
-href="http://flattr.com/thing/2002773/Maximus5ConEmu-on-GitHub" rel="nofollow"><img
-src="./img/FlattrBadgeLarge.png" alt="Flattr ConEmu" title="Flattr ConEmu" border="0"></img></a>
--->
+			<h3>Скачать (Download)</h3>
 
+			<p>Последнюю версию ConEmu-Maximus5 можно скачать <a href="http://www.fosshub.com/ConEmu.html">здесь</a>.</p>
 
-<h2>History</h2>
+			<p>Документация <a href="/ru/TableOfContents.html">здесь</a>.</p>
 
-<p>This project grew up from <a href="http://xs.nm.ru/" rel="nofollow">ConEmu by Zoin</a>. </p>
-
-
-<h2><a name="SomeLinks"></a><a href="./TableOfContents.html">Table of contents</a>, <a href="./Whats_New.html">What&#x27;s new</a>, <a href="./ConEmuFAQ.html">FAQ</a>, <a href="./Screenshots.html">Screenshots</a>, <a href="./Screencasts.html">Video</a>, <a href="./Reviews.html">Reviews</a><a href="#SomeLinks" class="section_anchor"></a></h2>
-
-
-<h2><a name="Description"></a>Description<a href="#Description" class="section_anchor"></a></h2>
-
-<p>ConEmu starts a console program in a hidden console window, and provides an alternative customizable GUI window with various features: </p>
-
-<ul><li>smooth and friendly window resizing; </li>
-	<li>tabs for editors, viewers, panels and consoles; </li>
-	<li>run simple GUI apps in tabs; </li>
-	<li>Windows 7 <a href="./Windows7Taskbar.html#Customizable_Jump_list">Jump Lists</a> and <a href="./Progress.html">Progress</a> on Taskbar buttons; </li>
-	<li>easily run old <a href="./DosBox.html">DOS applications</a> (games) in Windows 7 or 64-bit OS; </li>
-	<li>thumbnails and tiles in Far Manager; </li>
-	<li>normal, maximized and full screen graphical window modes; </li>
-	<li>window font anti-aliasing: standard, ClearType, disabled; </li>
-	<li>window fonts: family, height, width, bold, italic, etc.; </li>
-	<li>Chinese verions of Windows supported; </li>
-	<li>using <a href="http://code.google.com/p/conemu-maximus5/issues/detail?id=153" rel="nofollow">normal/bold/italic</a> fonts for different parts of the console simultaneously; </li>
-	<li>using 24-bit colors in Far Manager 3.x; </li>
-	<li><a href="./AnsiEscapeCodes.html">ANSI X3.64 and Xterm 256 colors</a>; </li>
-	<li>cursor: standard console (horizontal) or GUI (vertical); </li>
-	<li>optional per-application settings (e.g. palette); </li>
-	<li>vertical console buffer scrolling using the keyboard (BufferHeight mode); </li>
-	<li>show full output (1K+ lines) of last command in Far Manager&#x27;s editor/viewer; </li>
-	<li>customizable Far Manager right click behaviour (long click opens context menu); </li>
-	<li>drag and drop (explorer style) of files and folders in Far Manager; </li>
-	<li>limited support of BDF fonts; </li>
-	<li>user friendly text and block selection; </li>
-	<li>transparency and desktop mode; </li>
-	<li>customizable starting tabs; </li>
-	<li>configurable and clickable status bar; </li>
-	<li>and more, and more... take a look at the Settings dialog, <a href="./Whats_New.html">What&#x27;s New page</a> and Settings.reg </li>
-</ul>
-
-<p>All settings are read from the registry or <a href="./Settings.html#ConEmu_.xml">ConEmu.xml</a> file (multiple named configurations are supported),
-after which the command line parameters are applied. Parameters /Config and /BufferHeight can only be specified on the command line.
-Most settings are configured using the Settings dialog, not from the command line. </p>
-
-
-<h2><a name="Requirements"></a>Requirements<a href="#Requirements" class="section_anchor"></a></h2>
-
-<ul><li>Windows 2000 or later. </li></ul>
-
-
-<h2><a name="Installation"></a>Installation<a href="#Installation" class="section_anchor"></a></h2>
-
-<ol><li> Unpack all files (from appropriate &quot;<tt>ConEmuPack.*.7z</tt>&quot; archive) to the folder, containing &quot;<tt>far.exe</tt>&quot;, or install the &quot;<tt>ConEmuSetup.*.exe</tt>&quot; package. </li>
-	<ul><li>If You <strong>are</strong> using Far Manager, please ensure that ConEmu plugins (&quot;<tt>Plugins\ConEmu\ConEmu.dll</tt>&quot; etc.) are installed to Far Manager&#x27;s Plugins folder. </li>
-		<li>If You are <strong>not</strong> using Far Manager, You may unpack the files to any folder, and delete the &quot;<tt>Plugins</tt>&quot; subfolder. </li>
-		<li><strong>Warning</strong>: because of frequent non-backwards-compatible API changes in Far 3, it is strongly recommended to use the latest <strong>developer</strong> build when using ConEmu with Far 3. </li>
-	</ul>
-	<li> Import ConEmu&#x27;s macros into Far Manager. Macro files are located in the ConEmu.Addons directory. Each macro file has a description in its header. </li>
-	<li> By default (when started without command-line parameters), ConEmu runs &quot;<tt>far.exe</tt>&quot; from its home folder, or &quot;cmd.exe&quot;/&quot;tcc.exe&quot; if Far Manager was not found. Alternatively, You may indicate any root command by specifying a &quot;<a href="./ConEmuArgs.html">/Cmd &lt;App with params&gt;</a>&quot; argument in ConEmu&#x27;s shortcut or command line.  </li>
-</ol>
-
-<!--<h2><a name="Screenshots"></a>Screenshots<a href="#Screenshots" class="section_anchor"></a></h2>-->
-<!--<p><img src="http://conemu-maximus5.googlecode.com/svn/files/ConEmuSplits3.png" title="ConEmu splits and tabs"> <br><br>  </p>-->
-<!--<p><img src="../img/ConEmuTransparency.png" title="ConEmu Alpha transparency"> <br><br>  </p>-->
-<!--<p><a href="https://code.google.com/p/conemu-maximus5/wiki/Screenshots">More screenshots</a> and <a href="https://code.google.com/p/conemu-maximus5/wiki/Screencasts">screencasts</a> </p>-->
 
 <!-- Content ends -->
