@@ -103,9 +103,15 @@ h1, h2 {
   margin-top: 0;
 }
 
-.text.stext {
+.stext {
   max-width: 450px;
   font-size: .8em;
+}
+
+.snote {
+  max-width: 650px;
+  font-size: .8em;
+  text-align: center;
 }
 
 .donatebox {
