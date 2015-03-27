@@ -16,33 +16,45 @@ layout: docs_en
 <li><a href="#Far_Manager_related">Far Manager related</a></li><ul><li><a href="#Icons_in_standard_Far_panels">Icons in standard Far panels</a></li></ul><li><a href="#Configurable_panels_and_toolbars">Configurable panels and toolbars</a></li>
 <li><a href="#RTL_languages">RTL languages</a></li>
 <li><a href="#History_in_cmd_and_powershell">History in cmd and powershell</a></li></ul></ul>  </p>
+
 <h2 id="h0"><a name="Documentation"></a>Documentation<a href="#Documentation" class="section_anchor"></a></h2>
 <p>Unfortunately, I don&#x27;t have enough time for maintaining documentation and screenshots. Also, my english is not very well :) </p>
+
 <h2><a name="Optimization"></a>Optimization<a href="#Optimization" class="section_anchor"></a></h2>
 <p>Some portions of code must be optimized or totally rewritten :( </p>
+
 <h2><a name="Portable_registry"></a>Portable registry<a href="#Portable_registry" class="section_anchor"></a></h2>
 <p>ConEmu can store itself settings in xml file already. However, it is possible to hook registry functions, so any (console or GUI) application, started in ConEmu tab become portable. </p>
 <p>This portion of code exists but not perfect. So, it is disabled in release versions. </p>
+
 <h2><a name="Tab_groups_and_themes"></a>Tab groups and themes<a href="#Tab_groups_and_themes" class="section_anchor"></a></h2>
 <p><a title="Themes, skins, tabs"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=294">Issue 294</a>, <a title="Double view / Split screen concept" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=194">&nbsp;Issue 194&nbsp;</a>. <ul><li>Tabs and toolbar themes </li>
 <li>Tabs reordering </li>
 <li>Tab groups (multiple visible consoles) </li>
 <li>Custom icons (icon of active process) in tabs </li></ul></p>
+
 <h2><a name="Advertising"></a>Advertising<a href="#Advertising" class="section_anchor"></a></h2>
 <p>I hope, ConEmu is stable enough and competitive with other console emulators. </p>
+
 <h2><a name="Virtual_console_buffer"></a>Virtual console buffer<a href="#Virtual_console_buffer" class="section_anchor"></a></h2>
 <p>In the current version, maximum buffer height (output history) is limited with 9999 lines (Windows console limit). </p>
 <p>I want to eliminate this limitation :) </p>
 <p>Also, restricting real console buffer to visible rect only greatly increase speed of command execution (e.g. ‘<tt>dir /s c:\windows</tt>’). </p>
+
 <h2><a name="Horizontal_scrolling"></a>Horizontal scrolling<a href="#Horizontal_scrolling" class="section_anchor"></a></h2>
 <p>Some programs use not only vertical, but horizontal console buffer. I think, support of it will be useful. </p>
+
 <h2><a name="Far_Manager_related"></a>Far Manager related<a href="#Far_Manager_related" class="section_anchor"></a></h2>
+
 <h3><a name="Icons_in_standard_Far_panels"></a>Icons in standard Far panels<a href="#Icons_in_standard_Far_panels" class="section_anchor"></a></h3>
 <p>Thumbnails and Tiles already works, but they are ConEmu windows which overlaps standard panels. </p>
+
 <h2><a name="Configurable_panels_and_toolbars"></a>Configurable panels and toolbars<a href="#Configurable_panels_and_toolbars" class="section_anchor"></a></h2>
 <p>Something like what is in TCMD or TC. </p>
+
 <h2><a name="RTL_languages"></a>RTL languages<a href="#RTL_languages" class="section_anchor"></a></h2>
 <p>RTL is beyond my comprehension :) If RTL users think ConEmu may be better - let me know. </p>
+
 <h2><a name="History_in_cmd_and_powershell"></a>History in cmd and powershell<a href="#History_in_cmd_and_powershell" class="section_anchor"></a></h2>
 <p>Some users asks about any way to get it to remember history from previous sessions. This is complicated (but possible). For now, I can recommend: <ul><li>Far Manager as framework for cmd.exe: <a href="http://stackoverflow.com/a/10921470/1405560" rel="nofollow">http://stackoverflow.com/a/10921470/1405560</a> </li>
 <li><a href="ConEmu_Clink.html">Clink</a> for bash-style completion in cmd.exe. </li></ul></p>

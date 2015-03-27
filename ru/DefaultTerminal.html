@@ -7,14 +7,17 @@ layout: docs_ru
 <!--
 <i>How to change the default terminal emulator on Windows</i>
 -->
+
 <h1 id="h0"><a name="Introduction"></a>Introduction<a href="#Introduction" class="section_anchor"></a></h1>
 <p>In fact, Windows does not provide official way to change default terminal application. That is because console subsystem is a part of Windows kernel (<tt>csrss.exe</tt> up to Vista and <tt>conhost.exe</tt> in Windows 7 and higher). </p>
 <p>Only use of hacking methods can ‘change’ default Windows terminal application. And <a href="ConEmu.html">ConEmu</a> can do it! </p>
 <p><strong>WARNING</strong>! Enabling ‘Default terminal’ feature may cause false alarms in some antiviral programs! </p>
+
 <h2><a name="Inspired_by_questions"></a>Inspired by questions<a href="#Inspired_by_questions" class="section_anchor"></a></h2>
 <ul><li><a href="http://superuser.com/q/509642/139371" rel="nofollow">How to change the default terminal emulator on Windows</a> </li>
 <li><a href="http://stackoverflow.com/q/12602411/1405560" rel="nofollow">Use custom console for Visual Studio console application debugging</a> </li>
 <li><a href="http://stackoverflow.com/q/19599107/1405560" rel="nofollow">C# debug log console app</a> </li></ul><p>ConEmu build 121124 introduced unique feature: ‘Replace default Windows terminal’. </p>
+
 <h1><a name="Description"></a>Description<a href="#Description" class="section_anchor"></a></h1>
 <p><img src="../img/Settings-DefTerm.png" title="ConEmu settings, DefTerm page" alt="ConEmu settings, DefTerm page"> </p>
 <p>Just turn on checkbox ‘Force ConEmu as default terminal for console applications’, optionally turn on checkbox ‘Register on OS startup’ and point ‘parent’ applications from you like to start console tools (for example <tt>explorer.exe|devenv.exe|totalcmd.exe</tt>) and voila. You may press <strong>Win</strong>+<strong>R</strong> type <tt>ipconfig /all</tt> and press <strong>Enter</strong>. It will starts in the new ConEmu tab. </p>
@@ -23,15 +26,18 @@ layout: docs_ru
 <p><strong>Note</strong>! To ensure that your console application will be seized, run <a href="ConEmu.html">ConEmu</a> <strong>before</strong> starting your consoles or debugging processes (from Visual Studio for example). However, that may be not required if you choose ‘Register on OS startup’. But in fact, ‘registering’ will affect, in most cases, only <tt>explorer.exe</tt> ‘parent’ process. So, recommendation is ‘run <a href="ConEmu.html">ConEmu</a> before...’ </p>
 <p>‘<a href="SettingsDefTerm.html">Default terminal</a>’ feature is more powerful than ‘Automatic attach of cmd’ (‘<a href="SettingsComspec.html">ComSpec</a>’ page). ‘Default terminal’ can seize starting of <strong>any</strong> console program, not only cmd.exe. For example, you may dblclick on <tt>ipconfig.exe</tt> in Total Commander panel and voila... Also there will be no flickering of real console window. </p>
 <p>Settings page wiki: <a href="DefaultTerminal.html">Default term</a>. </p>
+
 <h1><a name="Tech_info"></a>Tech info<a href="#Tech_info" class="section_anchor"></a></h1>
 <p>The only real way to ‘change’ default Windows terminal: </p>
 <ul><li>Hide <a href="RealConsole.html">RealConsole</a> when your console application is to be started; </li>
 <li>Run new <a href="ConEmu.html">ConEmu</a> window if no one instance was running before; </li>
 <li>Attach started console application into <a href="ConEmu.html">ConEmu</a> instance. </li></ul><p>Looks simple, right? But who can perform these actions? </p>
+
 <h2><a name="Hooks_must_be_installed"></a>Hooks must be installed<a href="#Hooks_must_be_installed" class="section_anchor"></a></h2>
 <p><a href="ConEmuHk.html">ConEmuHk</a> (<tt>ConEmuHk.dll</tt> or <tt>ConEmuHk64.dll</tt>) must be loaded into process space of ‘parent’ application <strong>from</strong> which you are starting new console application: Explorer (explorer.exe), Task manager (taskmgr.exe), Visual Studio (devenv.exe or WDExpress.exe), and so on... </p>
 <p>When <a href="ConEmuHk.html">ConEmuHk</a> is loaded into ‘parent’ application it will hook limited set of Windows API functions related to creating new processes. So, when you start console application from shortcut, <strong>Win</strong>+<strong>R</strong> or even from Visual Studio debugger, <a href="ConEmuHk.html">ConEmuHk</a> will change application startup procedure to the described above. </p>
 <p>Actually, startup procedure slightly differs when you start debugging session. </p>
+
 <h2><a name="Normal_console_application_startup"></a>Normal console application startup<a href="#Normal_console_application_startup" class="section_anchor"></a></h2>
 <p>To avoid flickering of <a href="RealConsole.html">RealConsole</a> window <a href="ConEmuHk.html">ConEmuHk</a> will change command line. </p>
 <p>When you run &quot;cmd&quot; from <strong>Win</strong>+<strong>R</strong> and no <a href="ConEmu.html">ConEmu</a> instance was runned: </p>
@@ -39,6 +45,7 @@ layout: docs_ru
 <p>And when <a href="ConEmu.html">ConEmu</a> window already exists: </p>
 <pre class="prettyprint">ConEmuC64.exe [many internal switched] /HIDE /NOCONFIRM /ROOT &quot;C:\Windows\system32\cmd.exe&quot; </pre>
 <p>That is safe because ‘parent’ does not really need to get started process handle (<tt>cmd.exe</tt> in example). </p>
+
 <h2><a name="Starting_debugging_session"></a>Starting debugging session<a href="#Starting_debugging_session" class="section_anchor"></a></h2>
 <p>When you start Visual Studio debugger of your ‘<tt>ConAppSample</tt>’, ‘parent’ process (devenv.exe or WDExpress.exe) need to get the handle of your ‘<tt>ConAppSample.exe</tt>’ to be able to call debugging routines. </p>
 <p>That is why <a href="RealConsole.html">RealConsole</a> window will flickers on screen before alternative attach procedure completes. </p>

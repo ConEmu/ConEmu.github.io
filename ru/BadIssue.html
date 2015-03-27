@@ -7,6 +7,7 @@ layout: docs_ru
 <!--
 <i>Why bad issues has no sense</i>
 -->
+
 <h1 id="h0"><a name="Be_verbose"></a>Be verbose<a href="#Be_verbose" class="section_anchor"></a></h1>
 <p>Appreciating yours reporting efforts, but <strong>only properly written issues are meaningful</strong>. </p>
 <p>Bad issues has no sense, developers can&#x27;t fix them and reporters waste their time (both reporters and developers). </p>
@@ -15,21 +16,27 @@ layout: docs_ru
 <li>‘I was doing something, do not remember what, and application crashes’ </li>
 <li>‘Crash’ </li></ul><p>Wondering, why some users do not even read what they posting? If reporter want to help developer make the application better, or reporter want some fix in the application, he must provide enough information to reproduce or locate the problem. </p>
 <p>Software has many-many lines of code and it is impossible to fix something abstract... </p>
+
 <h2><a name="Software_version"></a>Software version<a href="#Software_version" class="section_anchor"></a></h2>
 <p>One of the most significant information, omitted by many reporters. And do not say ‘I&#x27;m using last version’. Only numbers! </p>
 <p>ConEmu version is visible in the status bar, Settings or About dialogs. Just press <tt>Win+Alt+A</tt> to be sure (<a href="SystemMenu.html">SystemMenu</a> \ Help \ About). </p>
+
 <h3><a name="Update_your_installation"></a>Update your installation<a href="#Update_your_installation" class="section_anchor"></a></h3>
 <p>If you are using old build, there is big chance that your problem was fixed already. Why not to update? </p>
 <p>Note, if you are using third-party bundles (like cmder or chocolatey) you may not using latest build. There is <a href="ConEmu.html">ConEmu</a> <strong>internal</strong> updater. Just call it from <a href="SystemMenu.html">SystemMenu</a> \ Help \ Check for updates. Or visit download page at <a href="http://www.fosshub.com/ConEmu.html" rel="nofollow">FossHub</a>. </p>
 <p>Also, thanks to googlecode for stopping Download service, if you are using <strong>very old build</strong> (pre 140115) can be <strong>automatically</strong> updated in <strong>two steps</strong> only. </p>
+
 <h2><a name="OS_version"></a>OS version<a href="#OS_version" class="section_anchor"></a></h2>
 <p>The Windows version matter! From version to version Windows behavior differs. And there are serious <a href="MicrosoftBugs.html">MicrosoftBugs</a>, wich may be fixed my Microsoft only. Fortunaterly, in the most cases developer can create some workaround. </p>
+
 <h2><a name="Screenshot"></a>Screenshot<a href="#Screenshot" class="section_anchor"></a></h2>
 <p>Personally, I prefer <a href="http://getsharex.com/" rel="nofollow">ShareX</a> to make screenshots, but you may use any other program. Even pressing <tt>PrintScreen</tt>, running <tt>MSPaint</tt> from <tt>Win+R</tt> and pressing <tt>Ctrl+V</tt>. </p>
 <p>Fullsized screenshot may tell about the problem more than you can imagine. Reporter may omit something from the problem description, but screenshot will not omit anything. </p>
 <p>Do not cut them and status line visibility is strongly recommended. </p>
+
 <h2><a name="Text_of_the_error"></a>Text of the error<a href="#Text_of_the_error" class="section_anchor"></a></h2>
 <p>If the error message box appears, screenshot may helps, of course. But the text itself will be helpful. And reporter do not need to re-type the text! Just press <tt>Ctrl+C</tt> in the dialog box, and its message will be placed to the Windows clipboard. Tada... Just paste it to the issue text. </p>
+
 <h2><a name="Crash_dumps"></a>Crash dumps<a href="#Crash_dumps" class="section_anchor"></a></h2>
 <p>When crash or assertion occures, created <a href="MemoryDump.html">Memory Dump</a> will be very helpful! In most cases, Memory Dump may tell developer the exact location and conditions of the problem. </p>
 <p>Due to large size of created dumps, do not upload/attach them to the issues. Upload them to <a href="DropBox.html">DropBox</a> or any other hosting and post the link (via email if you do worry about availability to public). </p>

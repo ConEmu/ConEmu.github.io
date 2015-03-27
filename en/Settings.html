@@ -28,13 +28,16 @@ layout: docs_en
 <li><a href="#Views">Views</a></li>
 <li><a href="#Info">Info</a></li>
 <li><a href="#Debug">Debug</a></li></ul><li><a href="#Alphabetical">Alphabetical</a></li></ul>  </p>
+
 <h1 id="h0"><a name="Where_settings_are_stored"></a>Where settings are stored<a href="#Where_settings_are_stored" class="section_anchor"></a></h1>
 <p>ConEmu may store its settings in the Windows registry (HKCU), or in the ConEmu.xml file. </p>
+
 <h2><a name="Registry"></a>Registry<a href="#Registry" class="section_anchor"></a></h2>
 <p>All settings are stored in registry in the following key: </p>
 <p><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt> </p>
 <p>When You specify the <a href="Command_Line.html">/config</a> switch in the ConEmu.exe command line settings will be stored here: </p>
 <p><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt> </p>
+
 <h2><a name="ConEmu_.xml"></a>ConEmu.xml<a href="#ConEmu_.xml" class="section_anchor"></a></h2>
 <p>You may use ConEmu in «portable» mode, so all settings will be stored in the <i>ConEmu.xml</i> file. ConEmu search sequence of this file: </p>
 <p><table class="wikitable">
@@ -44,13 +47,17 @@ layout: docs_en
 <p>On <a href="SettingsFast.html">first time ConEmu run</a>, you may choose «portable» mode and location of xml file. </p>
 <p>Or you may create manually a new empty <i>ConEmu.xml</i> or just rename <i>ConEmu_Sample.xml</i> to <i>ConEmu.xml</i> for engaging xml-mode. Template file <i>ConEmu_Sample.xml</i> is shipped with ConEmu. You may use <a href="Command_Line.html">named configuration (/config)</a> switch with xml-mode too. Also, there are switches <a href="Command_Line.html">/loadcfgfile and /safecfgfile</a> to use any special locations (not so useful for daily using, but available). </p>
 <p>Note. You may rename/create <i>ConEmu.xml</i> file any time, even after ConEmu starts and loads its settings from registry. </p>
+
 <h1><a name="Manual_change_of_settings"></a>Manual change of settings<a href="#Manual_change_of_settings" class="section_anchor"></a></h1>
 <p>So, You want to change setting, which is absent in the Settings dialog. List and description of each setting You may find in the <i>Settings-ConEmu.reg</i> file. </p>
+
 <h2><a name="Using_registry"></a>Using registry<a href="#Using_registry" class="section_anchor"></a></h2>
 <p>Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys: <ul><li><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt>, when <a href="Command_Line.html">/config</a> switch is not using; </li>
 <li><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt>, when /config switch specified in the ConEmu command line. </li></ul></p>
+
 <h2><a name="Using_ConEmu_.xml"></a>Using ConEmu.xml<a href="#Using_ConEmu_.xml" class="section_anchor"></a></h2>
 <p>Open ConEmu.xml file using any text editor (Far Manager, Notepad, and so on) find appropriate value and change it. Usually, this file is located near to the <i>ConEmuC.exe</i>. </p>
+
 <h1><a name="Settings_dialog"></a>Settings dialog<a href="#Settings_dialog" class="section_anchor"></a></h1>
 <p>You may open settings dialog in several ways <ul><li>Choosing «Settings...» menu item in ConEmu <a href="SystemMenu.html">system menu</a>, which can be opened </li><ul><li>by right-clicking on the ‘Menu’ icon on the toolbar </li>
 <li>by right-clicking on the window title </li>
@@ -58,18 +65,25 @@ layout: docs_en
 <li>by pressing Win+Alt+Space on the keyboard </li>
 <li>by right-clicking on the ConEmu (running) icon in the taskbar (in Windows 7 you must hold down Shift key) </li>
 <li>by right-clicking on the ConEmu icon in <a href="ConEmuTerms.html#TSA">TSA</a> (if you enable TSA feature) </li></ul><li>Or, you may press Win+Alt+P on the keyboard (predefined hotkey) </li></ul></p>
+
 <h2><a name="Main"></a>Main<a href="#Main" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsMain.png" title="ConEmu settings, Main page" alt="ConEmu settings, Main page"> </p>
+
 <h2><a name="Size_and_Pos"></a>Size and Pos<a href="#Size_and_Pos" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsSizeAndPos.png" title="ConEmu settings, Size and position page" alt="ConEmu settings, Size and position page"> </p>
+
 <h2><a name="Appearance"></a>Appearance<a href="#Appearance" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsAppearance.png" title="ConEmu settings, Appearance page" alt="ConEmu settings, Appearance page"> </p>
+
 <h2><a name="Task_bar"></a>Task bar<a href="#Task_bar" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsTaskBar.png" title="ConEmu settings, Task bar page" alt="ConEmu settings, Task bar page"> </p>
+
 <h2><a name="Automatic_update"></a>Automatic update<a href="#Automatic_update" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsUpdate.png" title="ConEmu settings, Update page" alt="ConEmu settings, Update page"> </p>
+
 <h2><a name="Startup"></a>Startup<a href="#Startup" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsStartup.png" title="ConEmu settings, Startup page" alt="ConEmu settings, Startup page"> </p>
+
 <h2><a name="Tasks"></a>Tasks<a href="#Tasks" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsTasks.png" title="ConEmu settings, Tasks page" alt="ConEmu settings, Tasks page"> </p>
 <p>Here you can configure a list of common tasks. In fact, this is an alias to run one or more applications in new tabs within <a href="ConEmu.html">ConEmu</a>. These can be configured in the &#x27;Tasks&#x27; page of the &#x27;Settings&#x27; dialog, and stored in the &quot;Tasks&quot; subkey of reg/xml settings. &#x27;Tasks&#x27; may be used as follows (as an example, we will use a task named {Shells}): <ul><li>when you start by specifying the properties of the shortcut: &quot;ConEmu.exe / cmd {Shells}&quot;; </li>
@@ -82,44 +96,62 @@ layout: docs_en
 <p>и рабочую папку, в которой будет запущен указанный процесс, например </p>
 <pre class="prettyprint">/dir &quot;c:\Program Files&quot;</pre>
 <p>После настройки списка задач включите флажок «Add ConEmu tasks to taskbar» и (по желанию) «Add commands from history, too». Нажмите кнопку «Update Now!». В случае успеха вы увидите сообщение «Taskbar jump list was updated successfully», ну или сообщение об ошибке. Есть способ инициировать Jump list при запуске ConEmu (<a title="Jump Lists/Task window problem" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=576">&nbsp;Issue 576&nbsp;</a>, может кому еще понадобится для автоматизации установки, например) для этого запустите (однократно) ConEmu.exe с аргументом &quot;<tt>/updatejumplist</tt>&quot;. </p>
+
 <h2><a name="ComSpec"></a>ComSpec<a href="#ComSpec" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsComspec.png" title="ConEmu settings, Comspec page" alt="ConEmu settings, Comspec page"> </p>
+
 <h2><a name="Features"></a>Features<a href="#Features" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsFeatures.png" title="ConEmu settings, Features page" alt="ConEmu settings, Features page"> </p>
+
 <h3><a name="RealConsole_font"></a>RealConsole font<a href="#RealConsole_font" class="section_anchor"></a></h3>
 <p>Open this dialog from <a href="SettingsFeatures.html">Features page</a> <tt>-&gt;</tt> button ‘<tt>...</tt>’ on the right of ‘Show real console’<br> <img src="../img/SettingsMoreRealFont.png" title="ConEmu settings, RealConsole font" alt="ConEmu settings, RealConsole font"> </p>
+
 <h2><a name="Text_cursor"></a>Text cursor<a href="#Text_cursor" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsTextCursor.png" title="ConEmu settings, Text cursor page" alt="ConEmu settings, Text cursor page"> </p>
+
 <h2><a name="Colors"></a>Colors<a href="#Colors" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsColors.png" title="ConEmu settings, Colors page" alt="ConEmu settings, Colors page"> </p>
 <p><img src="../img/SettingsColors2.png" title="ConEmu settings, Colors page" alt="ConEmu settings, Colors page"> </p>
+
 <h2><a name="Transparency"></a>Transparency<a href="#Transparency" class="section_anchor"></a></h2>
 <p><a href="SettingsTransparency.html">Read more</a><br> <img src="../img/SettingsTransparency.png" title="ConEmu settings, Transparency page" alt="ConEmu settings, Transparency page"> </p>
+
 <h2><a name="Tabs"></a>Tabs<a href="#Tabs" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsTabs.png" title="ConEmu settings, Tabs page" alt="ConEmu settings, Tabs page"> </p>
+
 <h2><a name="Status_bar"></a>Status bar<a href="#Status_bar" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsStatus.png" title="ConEmu settings, Status bar page" alt="ConEmu settings, Status bar page"> </p>
+
 <h2><a name="Integration"></a>Integration<a href="#Integration" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsIntegration.png" title="ConEmu settings, Integration page" alt="ConEmu settings, Integration page"> </p>
+
 <h2><a name="App_distinct"></a>App distinct<a href="#App_distinct" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsDistinct.png" title="ConEmu settings, App distinct page" alt="ConEmu settings, App distinct page"> </p>
 <p><img src="../img/SettingsDistinct2.png" title="ConEmu settings, App distinct page" alt="ConEmu settings, App distinct page"> </p>
+
 <h2><a name="Keys_and_Macro"></a>Keys and Macro<a href="#Keys_and_Macro" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsKeys.png" title="ConEmu settings, Keys and Macro page" alt="ConEmu settings, Keys and Macro page"> </p>
+
 <h2><a name="Controls"></a>Controls<a href="#Controls" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsControls.png" title="ConEmu settings, Controls page" alt="ConEmu settings, Controls page"> </p>
+
 <h2><a name="Mark_&amp;_Paste"></a>Mark &amp; Paste<a href="#Mark_&amp;_Paste" class="section_anchor"></a></h2>
 <p><a href="TextSelection.html">Go to description</a> </p>
 <p><img src="../img/SettingsSelection.png" title="ConEmu settings, Text selection" alt="ConEmu settings, Text selection"> </p>
 <p><!-- ===Hide caption details===&lt;img src=&quot;http://conemu-maximus5.googlecode.com/svn/files/SettingsMoreHideCaption.png&quot; title=&quot;ConEmu settings, Hide caption details&quot; alt=&quot;ConEmu settings, Hide caption details&quot;&gt; --> </p>
+
 <h2><a name="Far_Manager"></a>Far Manager<a href="#Far_Manager" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsFarManager.png" title="ConEmu settings, Far Manager page" alt="ConEmu settings, Far Manager page"> </p>
+
 <h2><a name="Views"></a>Views<a href="#Views" class="section_anchor"></a></h2>
 <p>This is settings for &#x27;Panel Views&#x27; Far Manager plugin. <img src="../img/SettingsViews.png" title="ConEmu settings, Views page" alt="ConEmu settings, Views page"> </p>
+
 <h2><a name="Info"></a>Info<a href="#Info" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsInfo.png" title="ConEmu settings, Info page" alt="ConEmu settings, Info page"> </p>
+
 <h2><a name="Debug"></a>Debug<a href="#Debug" class="section_anchor"></a></h2>
 <p>Enables advanced logging of console processes creation. <img src="../img/SettingsDebug.png" title="ConEmu settings, Debug page" alt="ConEmu settings, Debug page"> </p>
+
 <h1><a name="Alphabetical"></a>Alphabetical<a href="#Alphabetical" class="section_anchor"></a></h1>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> lbLDragKey </td><td style="border: 1px solid #ccc; padding: 5px;"> Drag with left mouse button, only when pressed... </td></tr>

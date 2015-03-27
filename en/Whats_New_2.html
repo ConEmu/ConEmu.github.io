@@ -566,6 +566,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <li>AutoUpdate fixes. </li>
 <li>Don&#x27;t execute ‘ConEmu autorun’ when console window is minimized (AutoUpdate issue). </li>
 <li>‘Duplicate root’ fails sometimes with error code 0xC0000148. </li></ul><p>     </p>
+
 <h2><a name="Build_130220"></a>Build 130220<a href="#Build_130220" class="section_anchor"></a></h2>
 <ul><li><a title="cannot select text" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=949">&nbsp;Issue 949&nbsp;</a>: Selection failed with buffer and ‘Freeze console’ checked. </li></ul>
 
@@ -1000,6 +1001,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 
 <h2><a name="120830"></a>120830<a href="#120830" class="section_anchor"></a></h2>
 <p>Wikipedia page <a href="http://en.wikipedia.org/wiki/User:Maximus7792/ConEmu" rel="nofollow">User:Maximus7792/ConEmu</a> in progress. Any comments, suggestions or corrections? </p>
+
 <h2><a name="Build_120830"></a>Build 120830<a href="#Build_120830" class="section_anchor"></a></h2>
 <ul><li>Internal changes in child windows. </li>
 <li>Some fixes for DBCS. </li>
@@ -1283,6 +1285,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 
 <h2><a name="Long_time_ago?"></a>Long time ago?<a href="#Long_time_ago?" class="section_anchor"></a></h2>
 <p>Lifehacker published <a href="http://lifehacker.com/5857540/the-best-terminal-emulator-for-windows" rel="nofollow">an article about Console, PowerCmd, Take Command and Mintty</a>. Unfortunately, <a href="ConEmu.html">ConEmu</a>, once again, was not mentioned :( All my attempts to post comments and contact the article author were ignored :( </p>
+
 <h2><a name="Build_120608"></a>Build 120608<a href="#Build_120608" class="section_anchor"></a></h2>
 <ul><li>New wiki page: <a href="http://code.google.com/p/conemu-maximus5/wiki/RoadMap" rel="nofollow">http://code.google.com/p/conemu-maximus5/wiki/RoadMap</a> </li>
 <li>Refinement of console closing confirmation. </li>
@@ -1606,6 +1609,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <li>В 120115 для Far 3.x отвалился правый клик на keybar. </li>
 <li>Консольным программа разрешено &#x27;рисовать&#x27; в DC ConEmu функцией StretchDIBits (Far плагины ImageView и PicViewAdv). <strong>ТехИнфо</strong>. Из отрисовки в ConEmu исключается прямоугольник, указанный в последнем вызове StretchDIBits. Его отрисовка восстанавливается при изменении размеров окна или при изменении текста в консоли в этом прямоугольнике. </li>
 <li>Еще немного по пропорциональным шрифтам. </li></ul><p>     </p>
+
 <h2><a name="Build_120115a"></a>Build 120115a<a href="#Build_120115a" class="section_anchor"></a></h2>
 <ul><li>Параметр &quot;<tt>-cur_console[:n]</tt>&quot; можно указать после &quot;<tt>ConEmu.exe /cmd</tt>&quot; чтобы отключить &#x27;Press Enter or Esc to close console&#x27;. Пример для UserMenu в Far 3.x, открывает файл под курсором в hiew, запущенном в новом экземпляре ConEmu. </li><pre class="prettyprint">macro:post $If (Apanel.Folder || Apanel.Plugin &amp;&amp; !!(APanel.OPIFlags &amp; 0x20)) msgbox(&quot;Warning!!&quot;,&quot;Panel or current item type disallows Hiew execution&quot;,0) $Else print(@&quot;conemu.exe /config hiew /cmd T:\Utils\Files\Hiew32\hiew32.exe -cur_console:n &quot;) CtrlF Enter $End</pre>
 </ul>

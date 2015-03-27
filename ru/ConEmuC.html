@@ -9,12 +9,14 @@ layout: docs_ru
 <p>In the 32-bit operation systems only ConEmuC.exe (and ConEmuHk.dll library) is used. </p>
 <p>64-bit systems are more complicated, so both versions must exists in the ConEmu folder. ConEmuC.exe is used, when You run 32bit applications from started console, ConEmuC64.exe (and ConEmuHk64.dll) for 64bit applications. </p>
 <p>Root console process will be ConEmuC.exe, when You are using ConEmu.exe, and ConEmuC64.exe, when You are using ConEmu64.exe. </p>
+
 <h3 id="h0"><a name="Font_in_real_console"></a>Font in real console<a href="#Font_in_real_console" class="section_anchor"></a></h3>
 <p>ConEmu use small <i>Lucida console</i> font in real console by default, cause of this font is shipped with Windows and it is unicode (unicode font must be selected in real console to allow ConEmu retrieve unicode characters from real console). </p>
 <p>You may specify font face name and size to the real console. </p>
 <p><strong>Warning</strong>. <ul><li>This font must be preinstalled in the system. </li>
 <li>It <strong>must</strong> be <strong>unicode</strong> (means TTF). </li>
 <li>It <strong>must</strong> be smaller than main font (selected for ConEmu). </li></ul></p>
+
 <h3><a name="ConEmuC.exe_command_line_switches"></a>ConEmuC.exe command line switches<a href="#ConEmuC.exe_command_line_switches" class="section_anchor"></a></h3>
 <p><strong>Note</strong> From build 140106 you may use &#x27;-&#x27;style switches with ConEmuC too, for example, following commands acts the same. </p>
 <pre class="prettyprint">ConEmuC /IsConEmu
@@ -88,6 +90,7 @@ ConEmuC [switches] [/U | /A] [/Async | /Fork] /C &lt;command line&gt;
 <pre class="prettyprint">ConEmuC /Result /C &lt;command&gt;</pre>
 <p><strong>Return errorlevel = <tt>&lt;number&gt;</tt></strong> </p>
 <pre class="prettyprint">ConEmuC /ErrorLevel &lt;number&gt;</pre>
+
 <h3><a name="-new_console_and_-cur_console_switches"></a>-new_console and -cur_console switches<a href="#-new_console_and_-cur_console_switches" class="section_anchor"></a></h3>
 <p>When you run application from ConEmu console, you may use <strong><a href="NewConsole.html">-new_console</a></strong> or <strong><a href="NewConsole.html">-cur_console</a></strong> switches. </p>
 <p>Btw, this is one of the ways to start <strong>GUI</strong> application in ConEmu tab. </p>

@@ -9,6 +9,7 @@ layout: docs_ru
 -->
 <p><a href="ConEmu.html">ConEmu</a> provides full-featured support of Windows console functions. That means you may run here any console applications designed for <a href="WinApi.html">WinApi</a>. On the other hand, Windows console does not provide official way to print bold/italic/underlined text. </p>
 <p>However, when you are using <a href="ConEmu.html">ConEmu</a> you may use them. Here are some tricks. </p>
+
 <h1 id="h0"><a name="Extend_fonts_feature"></a>Extend fonts feature<a href="#Extend_fonts_feature" class="section_anchor"></a></h1>
 <p>You may choose two background color indexes to force <a href="ConEmu.html">ConEmu</a> to draw text using bold/italic outline. </p>
 <p>When you turn the feature <strong>On</strong> on the ‘Main’ page, by default, ‘Light red’ background will be replaced with bold outlined text, and ‘Magenta’ background will be replaced with italic outlined text. </p>
@@ -17,6 +18,7 @@ layout: docs_ru
 <p>The drawback. You lose two background indexes and you must choose the background color they would replaced with. In the following examples, black color (<tt>#0</tt>) was selected for using with <tt>cmd.exe</tt> prompt. </p>
 <p><strong>Extend fonts settings</strong><br> <img src="../img/ConEmuExtFonts1.png" title="ConEmu Settings: Extend fonts"> </p>
 <p><strong>Bold and italic in cmd prompt</strong><br> <img src="../img/ConEmuExtFonts2.png" title="ConEmu Settings: Bold and italic in cmd prompt"> </p>
+
 <h1><a name="Xterm-256_emulation"></a>Xterm-256 emulation<a href="#Xterm-256_emulation" class="section_anchor"></a></h1>
 <p>Another way is using xterm-256 ANSI sequences. For now, <a href="ConEmu.html">ConEmu</a> provides limited support for that feature, extended codes are processed in the bottom of the scroll buffer only. When you lines goes up - extended attributes will be lost. How to put your prompt at the bottom described here: <a href="PromptAtTheBottom.html">PromptAtTheBottom</a>. </p>
 <p>Anyway, if you choose <a href="AnsiEscapeCodes.html">SGR 38 or 48</a> you may use bold/italic/underlined after them. </p>

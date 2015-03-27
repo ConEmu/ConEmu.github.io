@@ -18,6 +18,7 @@ layout: docs_ru
 <li><a href="#Far3-pre-Lua">Far3-pre-Lua</a></li>
 <li><a href="#Far2">Far2</a></li>
 <li><a href="#Far1">Far1</a></li></ul></ul></ul> </p>
+
 <h2 id="h0"><a name="Abstract"></a>Abstract<a href="#Abstract" class="section_anchor"></a></h2>
 <p>You can execute ConEmu GUI macro from: <ul><li>ConEmu hotkey - set up ‘Macro 01’ … ‘Macro 32’ on ‘Keys’ page of ‘Settings’ dialog. </li>
 <li><a href="GuiMacro.html#Command_line">command line</a> (or batch file), format is flexible, some examples: </li></p>
@@ -37,6 +38,7 @@ if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 
 <h2><a name="Syntax"></a>Syntax<a href="#Syntax" class="section_anchor"></a></h2>
 <p>ConEmu GuiMacro parser is flexible and support different styles. </p>
+
 <h3><a name="Styles_of_arguments_specification"></a>Styles of arguments specification<a href="#Styles_of_arguments_specification" class="section_anchor"></a></h3>
 <ul><li>surrounded by brackets: </li><pre class="prettyprint">Function(Arguments)</pre>
 <li>delimited by space: </li><pre class="prettyprint">Function Arguments</pre>
@@ -60,6 +62,7 @@ if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 
 <h3><a name="String_arguments"></a>String arguments<a href="#String_arguments" class="section_anchor"></a></h3>
 <p>It is recommended to put string arguments in doublequotes, but in fact that is not required for ‘one-word’ arguments. </p>
+
 <h4><a name="C-style_strings"></a>C-style strings<a href="#C-style_strings" class="section_anchor"></a></h4>
 <p>Backslashes and doublequotes must be escaped with backslashes. </p>
 <p>Special symbols can be specified using escaped form: </p>
@@ -76,12 +79,15 @@ if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 \x044F --&gt; russian ‘я’ letter</pre>
 <p>Example: </p>
 <pre class="prettyprint">print(&quot;\eCD /d \&quot;C:\\Users\&quot;\n&quot;)</pre>
+
 <h4><a name="Verbatim_strings"></a>Verbatim strings<a href="#Verbatim_strings" class="section_anchor"></a></h4>
 <p>No ‘escaped’ symbols, with the only exception of doublequote - they must be doubled. </p>
 <pre class="prettyprint">print(@&quot;CD /d &quot;&quot;C:\Users&quot;&quot;&quot;)</pre>
+
 <h4><a name="Far_plugin_notes"></a>Far plugin notes<a href="#Far_plugin_notes" class="section_anchor"></a></h4>
 <p>When you run some GuiMacro&#x27;s from Far Manager macro and the string has backslashes (&quot;<tt>C:\\Users\\...</tt>&quot;) you need to use verbatim strings or double-double them because ConEmu GuiMacro parser always parse escaped symbols itself. The GuiMacro may be called from many places (from command line for example) and parser is the one for all inputs. </p>
 <pre class="prettyprint">Plugin.SyncCall(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;shell(\&quot;new_console\&quot;,@\&quot;&quot;..win.GetEnv(&quot;FARHOME&quot;)..&quot;\\far.exe\&quot;)&quot;)</pre>
+
 <h2><a name="Command_line"></a>Command line<a href="#Command_line" class="section_anchor"></a></h2>
 <p>Syntax (doesn&#x27;t matter <tt>ConEmuC.exe</tt> or <tt>ConEmuC64.exe</tt> you are using): </p>
 <pre class="prettyprint">ConEmuC /GuiMacro[:PID|HWND][:T&lt;tab&gt;][:S&lt;split&gt;] &lt;GuiMacro command&gt;
@@ -107,6 +113,7 @@ ConEmuC -GuiMacro[:PID|HWND][:T&lt;tab&gt;][:S&lt;split&gt;] &lt;GuiMacro comman
 <pre class="prettyprint">ConEmuC -GuiMacro:0 print: C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32
 ConEmuC -GuiMacro:8204 print &quot;This is sample text&quot;
 ConEmuC -GuiMacro:x140F32 WindowMinimize</pre>
+
 <h2><a name="Far_Manager_plugin"></a>Far Manager plugin<a href="#Far_Manager_plugin" class="section_anchor"></a></h2>
 <p>You may run GuiMacro from Far Plugin (<tt>ConEmu.dll</tt> / <tt>ConEmu64.dll</tt>) from: <ul><li>Using menu command: <tt>F11</tt> -&gt; <tt>ConEmu</tt> -&gt; <tt>Execute ConEmu macro</tt> </li>
 <li>Using Far Manager macro language: </li><ul><li><strong>Far v3.x Lua</strong>: </li></p>
@@ -115,6 +122,7 @@ ConEmuC -GuiMacro:x140F32 WindowMinimize</pre>
 <li><strong>Far v2.x</strong>: </li><pre class="prettyprint">callplugin(0x43454D55,&quot;IsConEmu()&quot;)</pre>
 </ul></ul><p>When you call plugin menu, result is show in the dialog field. </p>
 <p>When you use Far Manager macro - result is placed to the ‘<a href="ConEmuEnvironment.html">ConEmuMacroResult</a>’ environment variable. </p>
+
 <h2><a name="List_of_functions"></a>List of functions<a href="#List_of_functions" class="section_anchor"></a></h2>
 <p><!-- !!! when modifying - add same functions to &quot;src\ConEmu\About.h&quot; !!! --> </p>
 <pre class="prettyprint">    About([&quot;&lt;Page&gt;&quot;])
@@ -327,6 +335,7 @@ ConEmuC -GuiMacro:x140F32 WindowMinimize</pre>
        &quot;MPREV&quot;, &quot;MNEXT&quot; (move ConEmu to prev/next monitor)
     Zoom(N)
      - Set zoom value, 100 - original font size</pre>
+
 <h2><a name="SetOption"></a>SetOption<a href="#SetOption" class="section_anchor"></a></h2>
 <p>You may change some (or most) of <a href="ConEmu.html">ConEmu</a> settings using <tt>SetOption</tt> macro function. </p>
 <p>It may be used <strong>by name</strong> for several options, for example </p>
@@ -336,7 +345,9 @@ ConEmuC -GuiMacro:x140F32 WindowMinimize</pre>
 <pre class="prettyprint">ConEmuC -GuiMacro SetOption Check 2488 1</pre>
 <p>Turn Quake style activation off </p>
 <pre class="prettyprint">ConEmuC -GuiMacro SetOption Check 2333 0</pre>
+
 <h2><a name="Examples"></a>Examples<a href="#Examples" class="section_anchor"></a></h2>
+
 <h3><a name="Far3-Lua"></a>Far3-Lua<a href="#Far3-Lua" class="section_anchor"></a></h3>
 <pre class="prettyprint">local conemu = &quot;4B675D80-1D4A-4EA9-8436-FDC23F2FC14B&quot;
 
@@ -349,6 +360,7 @@ Plugin.SyncCall(conemu,cmd)
 
 local cmd = (&#x27;shell(&quot;new_console&quot;,@&quot;%s&quot;)&#x27;):format(win.GetEnv&quot;FARHOME&quot;..&quot;\\far.exe&quot;)
 Plugin.SyncCall(conemu,cmd)</pre>
+
 <h3><a name="Far3-pre-Lua"></a>Far3-pre-Lua<a href="#Far3-pre-Lua" class="section_anchor"></a></h3>
 <pre class="prettyprint">$if (callplugin(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)!=0 &amp;&amp; env(&quot;ConEmuMacroResult&quot;)==&quot;Yes&quot;)
   MsgBox(&quot;Macro&quot;, &quot;Far started under ConEmu&quot;)
@@ -357,10 +369,12 @@ $end
 callplugin(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;shell(\&quot;open\&quot;,@\&quot;&quot;+env(&quot;FARHOME&quot;)+&quot;\\Encyclopedia\\FarEncyclopedia.ru.chm\&quot;)&quot;)
 
 callplugin(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;shell(\&quot;new_console\&quot;,@\&quot;&quot;+env(&quot;FARHOME&quot;)+&quot;\\far.exe\&quot;)&quot;)</pre>
+
 <h3><a name="Far2"></a>Far2<a href="#Far2" class="section_anchor"></a></h3>
 <pre class="prettyprint">$if (callplugin(0x43454D55,&quot;IsConEmu()&quot;)!=0 &amp;&amp; env(&quot;ConEmuMacroResult&quot;)==&quot;Yes&quot;)
   MsgBox(&quot;Macro&quot;, &quot;Far started under ConEmu&quot;)
 $end</pre>
+
 <h3><a name="Far1"></a>Far1<a href="#Far1" class="section_anchor"></a></h3>
 <p>This is most complicated, cause of &#x27;callplugin&#x27; absence in the Far 1.x </p>
 <pre class="prettyprint">F11

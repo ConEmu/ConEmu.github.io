@@ -15,8 +15,10 @@ layout: docs_ru
 <li><a href="#Standard_ANSI_color_map">Standard ANSI color map</a></li></ul><li><a href="#sixteencolors.net">sixteencolors.net</a></li>
 <li><a href="#Подсветка_ошибок_компиляции">Подсветка ошибок компиляции</a></li>
 <li><a href="#Текстовый_Progressbar_в_cmd-файлах">Текстовый Progressbar в cmd-файлах</a></li></ul></ul>  </p>
+
 <h1><a name="Описание"></a>Описание<a href="#Описание" class="section_anchor"></a></h1>
 <p>Новая опция «ANSI X3.64 / xterm 256 colors» на вкладке «Features», по умолчанию включена. Адресуется консоль целиком (с прокруткой), но xterm 256 color влияет только на «рабочую» область (нижняя часть консоли, если есть прокрутка). Вне «рабочей» области 256 цветов аппроксимируются к стандартным 16-и консольным цветам. </p>
+
 <h2><a name="Для_обработки_ANSI_последовательнос?"></a>Для обработки ANSI последовательностей<a href="#Для_обработки_ANSI_последовательнос?" class="section_anchor"></a></h2>
 <ul><li>Должны быть включены флажки </li><ul><li>«ANSI X3.64 / xterm 256 colors» на вкладке <a href="Settings.html#Features">Features</a> </li>
 <li>«Inject ConEmuHk» на вкладке <a href="Settings.html#Features">Features</a> (требуется для обработки программ второго уровня) </li></ul></ul>
@@ -28,21 +30,27 @@ layout: docs_ru
 
 <h3><a name="Пример_1:_Vim"></a>Пример 1: Vim<a href="#Пример_1:_Vim" class="section_anchor"></a></h3>
 <pre class="prettyprint">vim.exe -cur_console:h0 &lt;Vim arguments here&gt;</pre>
+
 <h3><a name="Пример_2:_256colors2.pl"></a>Пример 2: 256colors2.pl<a href="#Пример_2:_256colors2.pl" class="section_anchor"></a></h3>
 <p>Скрипт <a href="http://www.frexx.de/xterm-256-notes/data/256colors2.pl" rel="nofollow">256colors2.pl</a> нужно запускать так: </p>
 <pre class="prettyprint">256colors2.pl -cur_console:h0</pre>
+
 <h3><a name="Пример_3:_прокрутить_консоль"></a>Пример 3: прокрутить консоль<a href="#Пример_3:_прокрутить_консоль" class="section_anchor"></a></h3>
 <p>Если приложение <strong>не</strong> «полноэкранное» (вроде Far/Vim/Hiew/...), можно прокрутить консоль в самый низ («^[» нужно заменить на ESC код - символ с кодом \x1B): </p>
 <pre class="prettyprint">echo ^[[9999;1H</pre>
+
 <h2><a name="TechInfo"></a>TechInfo<a href="#TechInfo" class="section_anchor"></a></h2>
 <p>Обработка ANSI escape последовательностей осуществляется в том случае, если консольная программа использует для вывода функции WriteConsoleA, WriteConsoleW или WriteFile. Например: </p>
 <pre class="prettyprint">cmd /c type &quot;Colors-256.ans&quot;</pre>
 <p>Вывод текста с текущими расширенными атрибутами (xterm 256 color) возможен также функциями WriteConsoleOutputCharacterA и WriteConsoleOutputCharacterW. </p>
+
 <h2><a name="Переменная_окружения"></a>Переменная окружения<a href="#Переменная_окружения" class="section_anchor"></a></h2>
 <p>Как проверить в cmd-файле или консольном приложении разрешено ли ANSI x3.64? Проверить значение переменной окружения «ConEmuANSI» </p>
 <pre class="prettyprint">if &quot;%ConEmuANSI%&quot;==&quot;ON&quot;  echo Разрешено
 if &quot;%ConEmuANSI%&quot;==&quot;OFF&quot; echo Запрещено</pre>
+
 <h1><a name="Список_поддерживаемых_кодов"></a>Список поддерживаемых кодов<a href="#Список_поддерживаемых_кодов" class="section_anchor"></a></h1>
+
 <h2><a name="CSI_(Control_Sequence_Initiator)_codes"></a>CSI (Control Sequence Initiator) codes<a href="#CSI_(Control_Sequence_Initiator)_codes" class="section_anchor"></a></h2>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <i>lines</i> A </td><td style="border: 1px solid #ccc; padding: 5px;"> Moves cursor up by <i>lines</i> lines (1 by default) </td></tr>
@@ -66,12 +74,14 @@ if &quot;%ConEmuANSI%&quot;==&quot;OFF&quot; echo Запрещено</pre>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ </i>a<i> ; </i>b<i> r </td><td style="border: 1px solid #ccc; padding: 5px;"> Set scrolling region from top=</i>a<i> to bottom=</i>b<i>. The values </i>a<i> and </i>b<i> are 1-based. Omit values to reset region. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ s </td><td style="border: 1px solid #ccc; padding: 5px;"> Save cursor position (can not be nested). </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ u </td><td style="border: 1px solid #ccc; padding: 5px;"> Restore cursor position. </td></tr> </table></i></p>
+
 <h3><a name="Terminal_modes"></a>Terminal modes<a href="#Terminal_modes" class="section_anchor"></a></h3>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 7 ; <i>col</i> h </td><td style="border: 1px solid #ccc; padding: 5px;"> Enables line wrapping at column position. If <i>col</i> (1-based) is absent, wrap at column 80. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 7 l </td><td style="border: 1px solid #ccc; padding: 5px;"> Disables line wrapping. Lines wraps at the end of screen buffer. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 25 h </td><td style="border: 1px solid #ccc; padding: 5px;"> Show text cursor. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 25 l </td><td style="border: 1px solid #ccc; padding: 5px;"> Hide text cursor. </td></tr> </table></p>
+
 <h3><a name="SGR_(Select_Graphic_Rendition)_parameters"></a>SGR (Select Graphic Rendition) parameters<a href="#SGR_(Select_Graphic_Rendition)_parameters" class="section_anchor"></a></h3>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 0 m </td><td style="border: 1px solid #ccc; padding: 5px;"> Reset current attributes </td></tr>
@@ -88,10 +98,12 @@ if &quot;%ConEmuANSI%&quot;==&quot;OFF&quot; echo Запрещено</pre>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 48 ; 5 ; <i>n</i> m </td><td style="border: 1px solid #ccc; padding: 5px;"> Set xterm background color, <i>n</i> is color index from 0 to 255 </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 48 ; 2 ; <i>r</i> ; <i>g</i> ; <i>b</i> m </td><td style="border: 1px solid #ccc; padding: 5px;"> Set xterm 24-bit background color, <i>r</i>, <i>g</i>, <i>b</i> are from 0 to 255 </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 49 m </td><td style="border: 1px solid #ccc; padding: 5px;"> Reset background color to defauls </td></tr> </table></p>
+
 <h2><a name="OSC_(Operating_system_commands)"></a>OSC (Operating system commands)<a href="#OSC_(Operating_system_commands)" class="section_anchor"></a></h2>
 <p><strong>Note</strong>. These codes may ends with «ESC\» (two symbols - ESC and BackSlash) or «BELL» (symbol with code \x07, same as «^a» in <tt>*</tt>nix). For simplifying, endings in the following table marked as «ST». </p>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC ] 2 ; &quot;<i>txt</i>&quot; ST </td><td style="border: 1px solid #ccc; padding: 5px;"> Set console window title to <i>txt</i>. </td></tr> </table></p>
+
 <h3><a name="ConEmu_specific_OSC"></a>ConEmu specific OSC<a href="#ConEmu_specific_OSC" class="section_anchor"></a></h3>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC ] 9 ; 1 ; <i>ms_ ST </td><td style="border: 1px solid #ccc; padding: 5px;"> Sleep. </i>ms<i> - number, milliseconds. </td></tr>
@@ -102,9 +114,12 @@ if &quot;%ConEmuANSI%&quot;==&quot;OFF&quot; echo Запрещено</pre>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC ] 9 ; 6 ; &quot;</i>txt<i>&quot; ST </td><td style="border: 1px solid #ccc; padding: 5px;"> Execute <a href="GuiMacro.html">GuiMacro</a> ( </i>txt<i> ). Set EnvVar &quot;ConEmuMacroResult&quot; on exit. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC ] 9 ; 7 ; &quot;</i>cmd<i>&quot; ST </td><td style="border: 1px solid #ccc; padding: 5px;"> Run some process with arguments. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC ] 9 ; 8 ; &quot;</i>env<i>&quot; ST </td><td style="border: 1px solid #ccc; padding: 5px;"> Output value of environment variable. </td></tr> </table></i></p>
+
 <h1><a name="Примеры"></a>Примеры<a href="#Примеры" class="section_anchor"></a></h1>
+
 <h2><a name="ANSI_and_xterm_color_maps"></a>ANSI and xterm color maps<a href="#ANSI_and_xterm_color_maps" class="section_anchor"></a></h2>
 <p><img src="../img/ConEmuAnsi.png" title="ANSI X3.64 and Xterm 256 colors in ConEmu"> </p>
+
 <h3><a name="Xterm_256_color_map"></a>Xterm 256 color map<a href="#Xterm_256_color_map" class="section_anchor"></a></h3>
 <p>Пример из файла: <tt>ConEmu\Addons\AnsiColors256.ans</tt>. </p>
 <pre class="prettyprint">^[[9999S^[[9999;1HSystem colors (0..15 from xterm palette):
@@ -121,21 +136,25 @@ Color cube, 6x6x6 (16..231 from xterm palette):
 Grayscale ramp (232..255 from xterm palette):
 ^[[48;5;232m  ^[[48;5;233m  ^[[48;5;234m  ^[[48;5;235m  ^[[48;5;236m  ^[[48;5;237m  ^[[48;5;238m  ^[[48;5;239m  ^[[48;5;240m  ^[[48;5;241m  ^[[48;5;242m  ^[[48;5;243m  ^[[48;5;244m  ^[[48;5;245m  ^[[48;5;246m  ^[[48;5;247m  ^[[48;5;248m  ^[[48;5;249m  ^[[48;5;250m  ^[[48;5;251m  ^[[48;5;252m  ^[[48;5;253m  ^[[48;5;254m  ^[[48;5;255m  ^[[0m</pre>
 <p><strong>Warning</strong> Перед использованием «^[» нужно заменить на ESC код (символ с кодом \x1B). </p>
+
 <h3><a name="Standard_ANSI_color_map"></a>Standard ANSI color map<a href="#Standard_ANSI_color_map" class="section_anchor"></a></h3>
 <p>Пример из файла: <tt>ConEmu\Addons\AnsiColors16.ans</tt>. </p>
 <pre class="prettyprint">System colors (Standard console 16 colors):
 ^[[0;30;40m  ^[[0;30;41m  ^[[0;30;42m  ^[[0;30;43m  ^[[0;30;44m  ^[[0;30;45m  ^[[0;30;46m  ^[[0;30;47m  ^[[0m
 ^[[0;30;4;40m  ^[[0;30;4;41m  ^[[0;30;4;42m  ^[[0;30;4;43m  ^[[0;30;4;44m  ^[[0;30;4;45m  ^[[0;30;4;46m  ^[[0;30;4;47m  ^[[0m</pre>
 <p><strong>Warning</strong> Перед использованием «^[» нужно заменить на ESC код (символ с кодом \x1B). </p>
+
 <h2><a name="sixteencolors.net"></a>sixteencolors.net<a href="#sixteencolors.net" class="section_anchor"></a></h2>
 <p>Большой архив <a href="http://en.wikipedia.org/wiki/ANSI_art" rel="nofollow">ANSI арта</a>: <a href="http://sixteencolors.net/" rel="nofollow">http://sixteencolors.net/</a> </p>
 <p>Скачать файл ans, и выполнить в консоли ConEmu, например <tt>type TK-FREES.ANS</tt>. Посмотреть и пролистать предыдущий вывод можно перейдя в альтернативный режим - Win+A. </p>
 <p><strong>Note</strong> Многие арты расчитаны на ширину консоли в <strong>80</strong> символов. </p>
+
 <h2><a name="Подсветка_ошибок_компиляции"></a>Подсветка ошибок компиляции<a href="#Подсветка_ошибок_компиляции" class="section_anchor"></a></h2>
 <pre class="prettyprint">nmake | sed -e &quot;s/.* : \bERR.*/^[[1;31;40m&amp;^[[0m/i&quot; -e &quot;s/.* : \bWARN.*/^[[1;36;40m&amp;^[[0m/i&quot;</pre>
 <p>или </p>
 <pre class="prettyprint">type &quot;Errors.log&quot; | sed -e &quot;s/.* : \bERR.*/^[[1;31;40m&amp;^[[0m/i&quot; -e &quot;s/.* : \bWARN.*/^[[1;36;40m&amp;^[[0m/i&quot;</pre>
 <p><strong>Warning</strong> Перед использованием «^[» нужно заменить на ESC код (символ с кодом \x1B). </p>
+
 <h2><a name="Текстовый_Progressbar_в_cmd-файлах"></a>Текстовый Progressbar в cmd-файлах<a href="#Текстовый_Progressbar_в_cmd-файлах" class="section_anchor"></a></h2>
 <p><a href="http://code.google.com/p/conemu-maximus5/issues/attachmentText?id=554&amp;aid=5540007000&amp;name=test_bar.cmd&amp;token=X1cvdOQjxnWPTGqFCrzyH1M0DCs%3A1337810139732" rel="nofollow">test_bar.cmd</a> @Artyom.Vorobets </p>
 

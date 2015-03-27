@@ -11,6 +11,7 @@ layout: docs_en
 <li><a href="#What_you_shall_do_to_get_CD_support">What you shall do to get CD support</a></li><ul><li><a href="#cmd_and_tcc">cmd and tcc</a></li>
 <li><a href="#bash_and_other_cygwin_shells">bash and other cygwin shells</a></li>
 <li><a href="#PowerShell">PowerShell</a></li></ul></ul>  </p>
+
 <h1 id="h0"><a name="About_directories"></a>About directories<a href="#About_directories" class="section_anchor"></a></h1>
 <p>When you run new console the shell is starting in the directory you specified. That is the ‘Startup directory’. </p>
 <p><img src="../img/ConEmuCreate.png" title="ConEmu confirmation of new console creation" alt="ConEmu new console"> </p>
@@ -23,11 +24,14 @@ layout: docs_en
 <li>At last you may use &quot;<strong>%CD%</strong>&quot; variable with <a href="GuiMacro.html#List_of_functions">Shell</a> macro function in the <tt>Dir</tt> parameter. </li></ul>
 
 <h1><a name="What_you_shall_do_to_get_CD_support"></a>What you shall do to get <strong>CD</strong> support<a href="#What_you_shall_do_to_get_CD_support" class="section_anchor"></a></h1>
+
 <h2><a name="cmd_and_tcc"></a>cmd and tcc<a href="#cmd_and_tcc" class="section_anchor"></a></h2>
 <p>Just enable ‘<a href="ConEmuHk.html">Inject ConEmuHk</a>’ feature. ConEmu will maintain <strong>CD</strong> for you automatically. </p>
+
 <h2><a name="bash_and_other_cygwin_shells"></a>bash and other cygwin shells<a href="#bash_and_other_cygwin_shells" class="section_anchor"></a></h2>
 <p>You need to tell bash to run <tt>&quot;ConEmuC -StoreCWD&quot;</tt> command each time its prompt executed. For example, add to your <tt>.bashrc</tt> </p>
 <pre class="prettyprint">PROMPT_COMMAND=&#x27;ConEmuC -StoreCWD&#x27;</pre>
+
 <h2><a name="PowerShell"></a>PowerShell<a href="#PowerShell" class="section_anchor"></a></h2>
 <p>You need to modify your profile to override prompt function. Just run in your PowerShell prompt: </p>
 <pre class="prettyprint">notepad $Profile</pre>

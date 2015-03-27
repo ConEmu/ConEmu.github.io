@@ -18,10 +18,12 @@ else
 fi</pre>
 <p>So, if you do not like that behaviour, read below for solutions. </p>
 <p><strong>Note</strong>. MinGW (at least version installed on my PC) does not have checking for <tt>CHERE_INVOKING</tt> environment variable. There is just <tt>cd &quot;$HOME&quot;</tt> at the end of <tt>/MinGW/msys/1.0/etc/profile</tt>. You may change that file yourself to get the same checks as cygwin. </p>
+
 <h1 id="h0"><a name="CHERE"></a>CHERE<a href="#CHERE" class="section_anchor"></a></h1>
 <p>Cygwin will not do ‘<tt>cd &quot;${HOME}&quot;</tt>’ if environment variable <tt>CHERE_INVOKING</tt> is defined. So, if you run your shell (bash) as following, shell will be started in proper working directory. </p>
 <pre class="prettyprint">set CHERE_INVOKING=1 &amp; c:\cygwin\bin\sh.exe --login -i</pre>
 <p>Thought, you can, but must not change the contents of your <tt>/etc/profile</tt> commenting ‘<tt>cd &quot;${HOME}&quot;</tt>’... Because you can change cygwin behaviour within <a href="ConEmu.html">ConEmu</a> tasks or command line. </p>
+
 <h1><a name="ConEmuWorkDir"></a>ConEmuWorkDir<a href="#ConEmuWorkDir" class="section_anchor"></a></h1>
 <p>Another workaround - do <tt>cd</tt> to the working folder in your shell profile (<tt>.bashrc</tt>, <tt>.zshrc</tt>, etc.) </p>
 <pre class="prettyprint">if [ -n &quot;${ConEmuWorkDir}&quot; ]; then
@@ -60,6 +62,7 @@ fi</pre>
  </p>
 <p>Note that in all situations described here, ${foobar+1} expands to 1 if and only if $foobar would cause an error under set -o nounset.
  --> </p>
+
 <h1><a name="cygdrive"></a>cygdrive<a href="#cygdrive" class="section_anchor"></a></h1>
 <p>Not related to working directory and <a href="ConEmu.html">ConEmu</a>, actually, but let it be here. </p>
 <p>If you want to remove annoying <tt>/cygdrive</tt>, just replace one line in your <tt>/etc/fstab</tt>. </p>

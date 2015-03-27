@@ -8,10 +8,13 @@ layout: docs_ru
 <i>The problem with apphelp.dll</i>
 -->
 <p><!-- https://bugs.php.net/bug.php?id=36055 https://bugzilla.mozilla.org/show_bug.cgi?id=939043 --> </p>
+
 <h2 id="h0"><a name="Abstract"></a>Abstract<a href="#Abstract" class="section_anchor"></a></h2>
 <p>Several times I&#x27;ve seen cygwin/msys errors when their subsystem had failed to create child processes. </p>
+
 <h3><a name="Example_from_cygwin&#x27;s_ls"></a>Example from cygwin&#x27;s ls<a href="#Example_from_cygwin&#x27;s_ls" class="section_anchor"></a></h3>
 <pre class="prettyprint">0 [main] us 0 init_cheap: VirtualAlloc pointer is null, Win32 error 487 AllocationBase 0x68520000, BaseAddress 0x68570000, RegionSize 0x218000, State 0x1000 C:\Program Files (x86)\Git\bin\ls.exe: *** Couldn&#x27;t reserve space for cygwin&#x27;s heap, Win32 error 487</pre>
+
 <h3><a name="Example_from_msys-git&#x27;s_perl"></a>Example from msys-git&#x27;s perl<a href="#Example_from_msys-git&#x27;s_perl" class="section_anchor"></a></h3>
 <pre class="prettyprint">C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\bin\libsvn_wc-1-0.dll to same address as parent -- 0x2190000
 1 [main] perl 8248 sync_with_child: child 5768(0xB60) died before initialization with status code 0x1
@@ -19,6 +22,7 @@ layout: docs_ru
 C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\lib\perl5\site_perl\5.8.8\msys\auto\SVN\_Delta\_Delta.dll to same address as parent -- 0x630000
 3 [main] perl 8248 sync_with_child: child 6632(0xB90) died before initialization with status code 0x6802752F
 3 [main] perl 8248 sync_with_child: *** child state child loading dlls</pre>
+
 <h2><a name="The_problem"></a>The problem<a href="#The_problem" class="section_anchor"></a></h2>
 <p>Digging the problem for some time I&#x27;ve found the reason of these errors on my PC (in perl&#x27;s case). </p>
 <ul><li>Address, where perl wants to load its libraries was used by <tt>C:\Windows\System32\uxtheme.dll</tt>. </li>
@@ -38,6 +42,7 @@ C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\lib\perl5\site_perl\5.8.8\msys\a
 <p>So, you you see that one of the cygwin/msys libraries is loaded in low memory address (below 0x5FFF0000) you have a problem most probably... The easies way to check is using <a href="ProcessExplorer.html">ProcessExplorer</a>. </p>
 <p>Press <tt>Ctrl+D</tt> (Menu <tt>-&gt;</tt> View <tt>-&gt;</tt> Lower pane view <tt>-&gt;</tt> DLLs) and look at ‘Base’ column in the lower pane. If it is not visible just right-click on the DLLs list header, choose ‘Select columns’ and turn on ‘Base address’ on the ‘DLL’ tab page. And use ‘dumpbin’ to ensure that required ‘image base’ differs. </p>
 <p>Scroll the DLLs list in the <a href="ProcessExplorer.html">ProcessExplorer</a> lower pane to find ‘Base+Size’ which covers desired address was shown by ‘dumpbin’. And who was loaded that dll? You may use <a href="DependencyWalker.html">DependencyWalker</a> or <a href="ImpEx.html">ImpEx</a> to check ‘Imports’ section of each dll loaded before. Yeah, that is not too simple but rather... </p>
+
 <h2><a name="The_solution"></a>The solution<a href="#The_solution" class="section_anchor"></a></h2>
 <p>1) You need to ‘rebase’ conflicting modules. </p>
 <p>2) Alternatively you need to run your shell in different way so process tree will not include DLLs raised the conflict. In my case, when I run ConEmu from TaskBar icon there is no <tt>apphelp.dll</tt> in the result process tree (from <tt>ConEmu.exe</tt> down to <tt>perl.exe</tt>). But when I run ConEmu from ‘USB Safe Remove’ tool (automatically on connecting USB flash), <tt>apphelp.dll</tt> appears in the process tree and perl is always failed... </p>

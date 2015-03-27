@@ -10,8 +10,10 @@ layout: docs_ru
 <p>ConEmu package contains (started from build 121028) batch file ‘%ConEmuBaseDir%\<a href="http://conemu-maximus5.googlecode.com/svn/trunk/ConEmu/Release/ConEmu/csudo.cmd" rel="nofollow">csudo.cmd</a>’. When checkbox ‘Add %ConEmuBaseDir% to %PATH%’ is On (‘ComSpec’ page), you may just type csudo in non-elevated prompt in your shell. </p>
 <p><strong>Note</strong> You may also rename ‘csudo.cmd’ to ‘sudo.cmd’ if you like simple ‘sudo’ notation. And you must rename it if you like to change its contents to avoid loosing your changes when new update of ConEmu arrives. </p>
 <p><strong>Note</strong> Elevated command will starts in new elevated ConEmu tab. </p>
+
 <h2><a name="Example"></a>Example<a href="#Example" class="section_anchor"></a></h2>
 <pre class="prettyprint">csudo dism /online /enable-feature /featurename:NetFX3 /All /Source:D:\sources\sxs /LimitAccess</pre>
+
 <h2><a name="Screenshots"></a>Screenshots<a href="#Screenshots" class="section_anchor"></a></h2>
 <p>Let type in command prompt ‘csudo diskpart’ </p>
 <p><img src="../img/ConEmuSuDo1.png" title="Running csudo command"> </p>
@@ -21,6 +23,7 @@ layout: docs_ru
 <p><img src="../img/ConEmuSuDo4.png" title="csudo UAC confirmation"> </p>
 <p>Here we are, diskpart started elevated in a split </p>
 <p><img src="../img/ConEmuSuDo3.png" title="Running csudo command"> </p>
+
 <h2><a name="Batch_file_contents"></a>Batch file contents<a href="#Batch_file_contents" class="section_anchor"></a></h2>
 <p>As you can see, batch contains two parameters, which you may redefine: ConEmuSplit and ConfirmClose. For example, if you want to start elevated command in new tab rather than in split - just change ‘<tt>set ConEmuSplit=VERT</tt>’ to ‘<tt>set ConEmuSplit=NO</tt>’. </p>
 <p><strong>csudo.cmd</strong> </p>

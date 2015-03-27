@@ -7,10 +7,13 @@ layout: docs_ru
 <!--
 <i>ConEmu log files</i>
 -->
+
 <h3 id="h0"><a name="Why_they_are_needed"></a>Why they are needed<a href="#Why_they_are_needed" class="section_anchor"></a></h3>
 <p>When user reports a problem, frequently, developer needs more information than user may tell. <a href="ConEmu.html">ConEmu</a> may write internal information in text form into log files. </p>
+
 <h3><a name="How_to_start_logging"></a>How to start logging<a href="#How_to_start_logging" class="section_anchor"></a></h3>
 <p>Run <tt>ConEmu.exe</tt> or <tt>ConEmu64.exe</tt> (whatever you are using) with special switch <tt>/log</tt>. How to do that? Simpliest way is to press <strong>Win+R</strong>, type (or browse) in edit field full path to <tt>ConEmu.exe</tt> or <tt>ConEmu64.exe</tt> and append <tt>/log</tt> switch. There are also <tt>/log2</tt>, <tt>/log3</tt> and <tt>/log4</tt> alternatives. Larger digit - more information will be written - <a href="ConEmu.html">ConEmu</a> will run slower. </p>
+
 <h3><a name="Where_log_files_are_created"></a>Where log files are created<a href="#Where_log_files_are_created" class="section_anchor"></a></h3>
 <p>This depends of when program folder is write-allowed. For example, running as normal user any program can&#x27;t write to <tt>C:\Program Files</tt>. </p>
 <p><strong>If program folder is locked</strong>, <a href="ConEmu.html">ConEmu</a> will create on your desktop new folder named <strong>ConEmuLogs</strong> and write information to <tt>ConEmu*.log</tt> files there. </p>
