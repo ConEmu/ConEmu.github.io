@@ -16,3 +16,26 @@ github_username:  Maximus5
 # Allow redirections
 gems:
   - jekyll-redirect-from
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "root"
+      title: "ConEmu - Windows terminal emulator"
+  -
+    scope:
+      path: "en"
+      type: "pages"
+    values:
+      layout: "docs_en"
+      title: "ConEmu - Documentation"
+  -
+    scope:
+      path: "ru"
+      type: "pages"
+    values:
+      layout: "docs_ru"
+      title: "ConEmu - эмулятор терминала Windows"
