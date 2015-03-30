@@ -5,6 +5,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
 
+<!-- *** viewport is not ready yet ***
+<meta name="viewport" content="width=device-width, initial-scale=1">
+-->
+
 {% if page.url == '/index.html' %}
 <meta name='yandex-verification' content='5bb2b6c69957dc18' />
 <meta name="msvalidate.01" content="C3DA7A77EADF40C2ABF460748978E8F9" />
@@ -20,6 +24,9 @@ This page was saved from: {{site.url}}{{page.url}}
 
 <!--<link rel="stylesheet" href="/normalize.css">-->
 <link rel="stylesheet" href="/main.css">
+{% if site.url == 'local' %}
+<link rel="stylesheet" href="/local.css">
+{% endif %}
 
 <title>{{page.title}}</title>
 
@@ -36,7 +43,7 @@ This page was saved from: {{site.url}}{{page.url}}
 		<div id="logo-block">
 			<div>
 				<h1><a href="http://conemu.github.io">ConEmu</a></h1>
-				<div id="logo-descr"><a href="http://conemu.github.io">Windows terminal</a></div>
+				<div id="logo-descr">{% if site.url != 'local' %}<a href="http://conemu.github.io">Windows terminal</a>{% else %}<span id="media-width"></span><span id="media-orient"></span>{% endif %}</div>
 				<div id="social">
 					<a href="http://www.facebook.com/share.php?u=http://conemu.github.io/" rel="nofollow" target="_blank" title="FaceBook" id="soc-facebook"></a>
 					<a href="http://twitter.com/share?url=http://conemu.github.io/" rel="nofollow" target="_blank" title="Twitter" id="soc-twitter"></a>

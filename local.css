@@ -1,0 +1,26 @@
+
+/* for layout debugging */
+
+@media (min-width: 980px) {
+  #media-width:after {
+    content: "wide";
+  }
+}
+
+@media (max-width: 980px) {
+  #media-width:after {
+    content: "narrow";
+  }
+}
+
+@media (orientation: landscape) {
+  #media-orient:after {
+    content: " land";
+  }
+}
+
+@media (orientation: portrait) {
+  #media-orient:after {
+    content: " port";
+  }
+}
