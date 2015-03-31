@@ -25,6 +25,7 @@ defaults:
     values:
       layout: "root"
       title: "ConEmu - Windows terminal emulator"
+      docfolder: /en
   -
     scope:
       path: "en"
@@ -32,6 +33,7 @@ defaults:
     values:
       layout: "docs_en"
       title: "ConEmu - Documentation"
+      docfolder: /en
   -
     scope:
       path: "ru"
@@ -39,3 +41,4 @@ defaults:
     values:
       layout: "docs_ru"
       title: "ConEmu - эмулятор терминала Windows"
+      docfolder: /ru
