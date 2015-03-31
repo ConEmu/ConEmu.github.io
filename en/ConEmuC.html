@@ -1,15 +1,31 @@
 ---
+title: ConEmuC - console part of ConEmu
+
+description: "ConEmuC implements full-featured console window.
+   Also it can be used from command line to do many jobs like
+   posting GuiMacro, downloading files, exporting environment and more."
 ---
 
 <!-- Content starts -->
 
-<p>This is console part of ConEmu. It serves all console requests. </p>
+<h1 id="h0">Console part of ConEmu</h1>
+
+<p>ConEmuC is a console part of ConEmu.
+It implements full-featured console window and serves all console requests.
+Also it can be used from command line to do many jobs like
+<a href="#GuiMacro">posting GuiMacro</a>, <a href="#Download">downloading files</a>,
+<a href="#Export">exporting environment</a> and much more. </p>
+
 <p>There are two versions - ConEmuC.exe and ConEmuC64.exe. </p>
+
 <p>In the 32-bit operation systems only ConEmuC.exe (and ConEmuHk.dll library) is used. </p>
+
 <p>64-bit systems are more complicated, so both versions must exists in the ConEmu folder. ConEmuC.exe is used, when You run 32bit applications from started console, ConEmuC64.exe (and ConEmuHk64.dll) for 64bit applications. </p>
+
 <p>Root console process will be ConEmuC.exe, when You are using ConEmu.exe, and ConEmuC64.exe, when You are using ConEmu64.exe. </p>
 
-<h3 id="h0"><a name="Font_in_real_console"></a>Font in real console<a href="#Font_in_real_console" class="section_anchor"></a></h3>
+
+<h3><a name="Font_in_real_console"></a>Font in real console<a href="#Font_in_real_console" class="section_anchor"></a></h3>
 <p>ConEmu use small <i>Lucida console</i> font in real console by default, cause of this font is shipped with Windows and it is unicode (unicode font must be selected in real console to allow ConEmu retrieve unicode characters from real console). </p>
 <p>You may specify font face name and size to the real console. </p>
 <p><strong>Warning</strong>. <ul><li>This font must be preinstalled in the system. </li>
@@ -17,19 +33,23 @@
 <li>It <strong>must</strong> be smaller than main font (selected for ConEmu). </li></ul></p>
 
 <h3><a name="ConEmuC.exe_command_line_switches"></a>ConEmuC.exe command line switches<a href="#ConEmuC.exe_command_line_switches" class="section_anchor"></a></h3>
+
 <p><strong>Note</strong> From build 140106 you may use &#x27;-&#x27;style switches with ConEmuC too, for example, following commands acts the same. </p>
 <pre class="prettyprint">ConEmuC /IsConEmu
 ConEmuC -IsConEmu</pre>
-<p><strong>Show help screen</strong> </p>
+
+<h4><a name="HelpScreen"></a>Show help screen<a href="#HelpScreen" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC /?</pre>
-<p><strong>Useful checks</strong> </p>
+
+<h4><a name="UsefulChecks"></a>Useful checks<a href="#UsefulChecks" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC /IsConEmu
     returns 1 as errorlevel if running in ConEmu tab, 2 if not
 ConEmuC /IsAnsi
     returns 1 as errorlevel if ANSI are processed, 2 if not
 ConEmuC /IsTerm
     returns 1 as errorlevel if running in telnet, 2 if not</pre>
-<p><strong>Attach consoles to ConEmu</strong> </p>
+
+<h4><a name="Attach"></a>Attach consoles to ConEmu<a href="#Attach" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC /AUTOATTACH [/GHWND=NEW|&lt;HWND&gt;]
     asynchronous attach to ConEmu GUI (for batches)
     always returns 0 as errorlevel on exit (Issue 1003)
@@ -43,9 +63,12 @@ ConEmuC /ATTACH [/GHWND=NEW|&lt;HWND&gt;] /[FAR|CON|TRM]PID=&lt;PID&gt;
     /FARPID=&lt;PID&gt; - for internal use from Far plugin
     /CONPID=&lt;PID&gt; - &#x27;soft&#x27; mode, don&#x27;t inject ConEmuHk into &lt;PID&gt;
     /TRMPID=&lt;PID&gt; - called from *.vshost.exe when &#x27;AllocConsole&#x27; just created</pre>
-<p><strong><a href="GuiMacro.html">ConEmu GUI macro command</a></strong> </p>
+
+<h4><a name="GuiMacro"></a><a href="GuiMacro.html">ConEmu GUI macro command</a><a href="#GuiMacro" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC /GUIMACRO Function([Arg1[,Arg2[,...]])</pre>
-<p><strong>Echo and Type</strong> These two was implemented for test purposed mostly. But may be useful. Use any of <tt>&quot;-e&quot;</tt>, <tt>&quot;-echo&quot;</tt>, <tt>&quot;/echo&quot;</tt> to echo. </p>
+
+<h4><a name="EchoAndType"></a>Echo and Type<a href="#EchoAndType" class="section_anchor"></a></h4>
+<p>These two was implemented for test purposed mostly. But may be useful. Use any of <tt>&quot;-e&quot;</tt>, <tt>&quot;-echo&quot;</tt>, <tt>&quot;/echo&quot;</tt> to echo. </p>
 <pre class="prettyprint">ConEmuC -e [-r] [-n] [-b] &quot;String to echo&quot;
   Switches
     -r  - do not replace &quot;^e^r^n^t^a^b&quot; with ASCII equivalents
@@ -63,21 +86,25 @@ ConEmuC /ATTACH [/GHWND=NEW|&lt;HWND&gt;] /[FAR|CON|TRM]PID=&lt;PID&gt;
           Otherwise the file will be threated as ANSI</pre>
 <p>Both commands are able to process <a href="AnsiEscapeCodes.html">ANSI sequences</a>. But take into account, that <tt>&quot;ConEmuC -t ...&quot;</tt> does not do replacements with ASCII equivalents. </p>
 <pre class="prettyprint">ConEmuC -e &quot;^[[1;33;45mqwerty^[[m&quot;</pre>
-<p><strong>Debug and <a href="MemoryDump.html">MiniDump</a></strong> </p>
+
+<h4><a name="Debug"></a>Debug and <a href="MemoryDump.html">MiniDump</a><a href="#Debug" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC /DEBUGPID=&lt;Debugging PID&gt; [/DUMP | /MINI | /FULL]
     start debugger or create memory dump
 ConEmuC /DEBUGEXE &lt;command line&gt;
     start &lt;command line&gt; under debugger
 ConEmuC /DEBUGTREE &lt;command line&gt;
     start &lt;command line&gt; under debugger, debug all children</pre>
-<p><strong><a href="ConEmuEnvironment.html#Export_variables">Export environment variables</a> to the parent processes</strong> </p>
+
+<h4><a name="Export"></a><a href="ConEmuEnvironment.html#Export_variables">Export environment variables</a> to the parent processes<a href="#Export" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC /EXPORT[=CON|ALL] [Var1 [Var2 [...]]]</pre>
-<p><strong>Download from http/https/ftp</strong> </p>
+
+<h4><a name="Download"></a>Download from http/https/ftp<a href="#Download" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC /download [-login &lt;name&gt; -password &lt;pwd&gt;]
     [-proxy &lt;address:port&gt; [-proxylogin &lt;name&gt; -proxypassword &lt;pwd&gt;]]
     [-async Y|N] [-otimeout &lt;ms&gt;] [-timeout &lt;ms&gt;]
     &quot;full_url_to_file&quot; &quot;local_path_name&quot;</pre>
-<p><strong>Execute commands and create tabs (Internal use!)</strong> </p>
+
+<h4><a name="Commands"></a>Execute commands and create tabs (use with caution!)<a href="#Commands" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC [switches] /ROOT &lt;program with arguments, far.exe for example&gt;
 ConEmuC [switches] [/U | /A] [/Async | /Fork] /C &lt;command line&gt;
   Switches
@@ -85,9 +112,11 @@ ConEmuC [switches] [/U | /A] [/Async | /Fork] /C &lt;command line&gt;
     /B{W|H|Z}    - define window width, height and buffer height
     /F{N|W|H}    - define console font name, width, height
     /LOG[N]      - create (debug) log file, N is number from 0 to 3</pre>
-<p><strong>Show errorlevel of <tt>&lt;command&gt;</tt></strong> </p>
+
+<h4><a name="ShowErrorlevel"></a>Show errorlevel of <tt>&lt;command&gt;</tt><a href="#ShowErrorlevel" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC /Result /C &lt;command&gt;</pre>
-<p><strong>Return errorlevel = <tt>&lt;number&gt;</tt></strong> </p>
+
+<h4><a name="ReturnErrorlevel"></a>Return errorlevel = <tt>&lt;number&gt;</tt><a href="#ReturnErrorlevel" class="section_anchor"></a></h4>
 <pre class="prettyprint">ConEmuC /ErrorLevel &lt;number&gt;</pre>
 
 <h3><a name="-new_console_and_-cur_console_switches"></a>-new_console and -cur_console switches<a href="#-new_console_and_-cur_console_switches" class="section_anchor"></a></h3>
