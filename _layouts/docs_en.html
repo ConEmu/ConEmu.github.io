@@ -16,6 +16,7 @@ This page was saved from: {{site.url}}{{page.url}}
 <link rel="stylesheet" href="/main.css">
 
 <title>{{page.title}}</title>
+{%if page.description != '' %}<meta name="description" content="{{page.description}}">{% endif %}
 
 {% if site.url != 'local' %}{% include analytics.html %}{% endif %}
 
