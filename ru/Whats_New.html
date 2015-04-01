@@ -1,13 +1,28 @@
 ---
 ---
 
+<h1>ConEmu changes log</h1>
+<p>New ConEmu builds arrives often, at least weekly.
+It's recommended to enable <a href="SettingsUpdate.html">Automatic Update</a>
+to get <a href="StableVsPreview.html">Preview or Alpha</a> builds as soon
+as they will be released.
+</p>
+
+<h2>Any contributions are appreciated</h2>
+<p>ConEmu-Maximus5 was brought to life and is supported by almost single developer efforts.
+The most valuable resource is time actually, hundreds of hours.
+You can show your appreciation and support further development and maintaining by contributing with
+<a href="Issues.html">bugreporting</a>,
+<a href="/donate.html#funding">funding</a>,
+<a href="https://github.com/ConEmu/ConEmu.github.io">helping with documentation</a>,
+<a href="https://github.com/Maximus5/ConEmu">coding</a>,
+<a href="Awards.html#Voting">voting</a>
+or anything else, spreading the word for example.
+</p>
+
 {% raw %}
 
 <!-- Content starts -->
-
-<p>Вы можете поддержать проект пожертвованием, кнопка <a href="http://conemu.github.io/donate.html" rel="nofollow">Donate</a> расположена на <a href="http://code.google.com/p/conemu-maximus5" rel="nofollow">главной странице</a> под превьюшкой ConEmu (справа-вверху страницы). </p>
-<p>Проголосуйте за ConEmu, если не жалко :) <a href="http://code.google.com/p/conemu-maximus5/wiki/Awards" rel="nofollow">http://code.google.com/p/conemu-maximus5/wiki/Awards</a> </p>
-
 
 <h2><a name="Build_150331"></a>Build 150331<a href="#Build_150331" class="section_anchor"></a></h2>
 <ul><li>gh#88: Allow ‘Apps’ key to use as single hotkey. </li>
@@ -39,7 +54,8 @@
 <h2><a name="Build_150319"></a>Build 150319<a href="#Build_150319" class="section_anchor"></a></h2>
 <ul><li>Some required switches were not used while creating jump lists (<tt>/FontDir</tt>, <tt>/FontFile</tt>, etc.) </li>
 <li><tt>PostPromptCmd</tt> was not working with Far 3. </li>
-<li>Added hotkey to activate ConEmu window and do ‘CD’ to the last (top in Z-order) Explorer window path. <a href="GuiMacro.html">GuiMacro</a> is available: </li><pre class="prettyprint">PasteExplorerPath (&lt;DoCd&gt;,&lt;SetFocus&gt;)
+<li>Added hotkey to activate ConEmu window and do ‘CD’ to the last (top in Z-order) Explorer window path. <a href="GuiMacro.html">GuiMacro</a> is available: </li>
+<pre class="prettyprint">PasteExplorerPath (&lt;DoCd&gt;,&lt;SetFocus&gt;)
   DoCd: 1 - ‘CD’, 0 - paste path only
   SetFocus: 1 - bring ConEmu to the top, 0 - don&#x27;t change active window</pre>
 </ul>
@@ -1270,10 +1286,10 @@ ConEmuC.exe -GuiMacro palette 1 &quot;&lt;Solarized&gt;&quot; -guimacro WindowMa
 <li>More information in &quot;ConEmuC /?&quot;. </li>
 <li>Allow &quot;ConEmuC /AUTOATTACH /GHWND=0x???&quot; - attach to exact ConEmu instance. </li></ul>
 
-<h2><a name="Более_старые_записи"></a>Более старые записи<a href="#Более_старые_записи" class="section_anchor"></a></h2>
+<h2><a name="Older_entries"></a>Older entries<a href="#Older_entries" class="section_anchor"></a></h2>
 <ul><li><a href="Whats_New_2.html">Builds 120101 .. 131225</a> </li>
-<li><a href="Whats_New_1.html">Builds 090707 .. 111220</a> </li>
-<li><a href="https://conemu-maximus5.googlecode.com/svn/trunk/ConEmu-alpha/Release/ConEmu/WhatsNew-ConEmu.txt" rel="nofollow">Полный лог изменений на SVN</a> </li></ul>
+<li><a href="http://translate.google.ru/translate?hl=ru&amp;sl=ru&amp;tl=en&amp;u=http%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FWhats_New%3Fshow%3Dcontent" rel="nofollow">WhatsNew autotranslated</a> </li>
+<li><a href="https://conemu-maximus5.googlecode.com/svn/trunk/ConEmu-alpha/Release/ConEmu/WhatsNew-ConEmu.txt" rel="nofollow">Full changelog on SVN</a> </li></ul>
 
 <!-- Content ends -->
 
