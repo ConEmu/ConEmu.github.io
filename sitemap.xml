@@ -104,7 +104,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/ConEmuC.html</loc>
-    <lastmod>2015-03-31</lastmod>
+    <lastmod>2015-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -332,7 +332,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/GuiMacro.html</loc>
-    <lastmod>2015-03-31</lastmod>
+    <lastmod>2015-04-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -356,7 +356,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/LaunchNewTab.html</loc>
-    <lastmod>2015-03-31</lastmod>
+    <lastmod>2015-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -715,6 +715,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://conemu.github.io/en/TabBar.html</loc>
+    <lastmod>2015-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://conemu.github.io/en/TableOfContents.html</loc>
     <lastmod>2015-03-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -728,12 +734,6 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/TabMenu.html</loc>
-    <lastmod>2015-03-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://conemu.github.io/en/Tabs.html</loc>
     <lastmod>2015-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
