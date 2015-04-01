@@ -9,6 +9,24 @@
 <p>Votes and awards (vote for ConEmu, if you please) <a href="http://code.google.com/p/conemu-maximus5/wiki/Awards" rel="nofollow">http://code.google.com/p/conemu-maximus5/wiki/Awards</a> </p>
 
 
+<h2><a name="Build_150331"></a>Build 150331<a href="#Build_150331" class="section_anchor"></a></h2>
+<ul><li>gh#88: Allow ‘Apps’ key to use as single hotkey. </li>
+	<li><a href="GuiMacro.html">GuiMacro</a>. Bugfixes and new function.
+	<ul><li>Function delimiter ‘;’ was ignored without brackets.
+		<li>Support escapes in C-strings with "ConEmu -GuiMacro ...".
+		<li>‘Shell’ function without args must create new console.
+		<li>Some functions will be postponed when RCon initialization finishes. To force postponing add ‘@’ prefix.
+		<li>Add ‘Recreate’ function (‘Create’ is an alias).
+			It can open ‘New console’ dialog, create default shell without confirmation,
+			restart current tab (pane), optionally as Administrator.
+			Following example shows ‘New console’ dialog, and inserts into started
+			command prompt: ‘echo "Hello world"’.
+
+		<code>ConEmu.exe -Detached -GuiMacro "Create(0,1); Context; print(\"echo \\\"Hello world\\\"\");"</code>
+	</ul>
+</ul>
+
+
 <h2><a name="Build_150327"></a>Build 150327<a href="#Build_150327" class="section_anchor"></a></h2>
 <ul><li>All links were updated to ‘http://conemu.github.io’. </li>
 <li>Default StatusBar columns were changed. </li>
