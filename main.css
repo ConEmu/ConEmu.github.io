@@ -85,40 +85,32 @@ h1.intro {
   margin: 0;
 }
 
-code {
+/* boxed inverted region mainly for code */
+pre {
   width: 95%;
-  font: .8em 'andale mono', 'lucida console', monospace;
-  line-height: 1.462em;
+  font-size: .8em;
+  /*line-height: 1.462em;*/
+  line-height: 1.5em;
+  padding: .7em;
+  color: #eee8d5;
   background-color: #002b36;
   border: 4px solid #93a1a1;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   box-shadow: 2px 2px 3px #839496;
-  color: #eee8d5;
   display: block;
-  line-height: 1.5em;
   overflow: auto;
-  padding: .7em;
+}
+
+code {
+  font-family: 'andale mono', 'lucida console', monospace;
   white-space: pre;
 }
 
 /* exactly same as "code" */
 pre.prettyprint {
-  width: 95%;
-  font: .8em 'andale mono', 'lucida console', monospace;
-  line-height: 1.462em;
-  background-color: #002b36;
-  border: 4px solid #93a1a1;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  box-shadow: 2px 2px 3px #839496;
-  color: #eee8d5;
-  display: block;
-  line-height: 1.5em;
-  overflow: auto;
-  padding: .7em;
+  font-family: 'andale mono', 'lucida console', monospace;
   white-space: pre;
 }
 

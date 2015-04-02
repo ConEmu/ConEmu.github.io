@@ -208,28 +208,27 @@ and prints into the created console <tt>echo "Hello world"</tt>.</p>
 or returned via string result if you are using Far 3.0 with Lua. </p>
 
 <h2><a name="List_of_functions"></a>List of functions<a href="#List_of_functions" class="section_anchor"></a></h2>
+
 <!-- !!! when modifying - add same functions to &quot;src\ConEmu\About.h&quot; !!! -->
 <div>
-
-
 <!-- ***************** List of functions ***************** -->
 
 <h4><a name="About"></a>Show ‘About’ dialog with selected page activated<a href="#About" class="section_anchor"></a></h4>
-<code>About([&quot;&lt;Page&gt;&quot;])
-  - Show ‘About’ dialog with page activated, e.g. ‘About(&quot;-new_console&quot;)’</code>
+<pre><code>About([&quot;&lt;Page&gt;&quot;])
+  - Show ‘About’ dialog with page activated, e.g. ‘About(&quot;-new_console&quot;)’</code></pre>
 
 <h4><a name="Attach"></a>Attach external console or <a href="ChildGui.html">ChildGui</a> by PID<a href="#Attach" class="section_anchor"></a></h4>
-<code>Attach([&lt;PID&gt;[,&lt;Alternative&gt;]])
-  - Attach console or ChildGui by PID</code>
+<pre><code>Attach([&lt;PID&gt;[,&lt;Alternative&gt;]])
+  - Attach console or ChildGui by PID</code></pre>
 
 <h4><a name="Break"></a>Generate CTRL+C or CTRL+BREAK signals<a href="#Break" class="section_anchor"></a></h4>
-<code>Break([&lt;Event&gt;[,&lt;ProcessGroupId&gt;]])
+<pre><code>Break([&lt;Event&gt;[,&lt;ProcessGroupId&gt;]])
   - Event==0: Generates a CTRL+C signal
     Event==1: Generates a CTRL+BREAK signal
-    More info in GenerateConsoleCtrlEvent WinAPI function</code>
+    More info in GenerateConsoleCtrlEvent WinAPI function</code></pre>
 
 <h4><a name="Close"></a>Close or kill active tab, group or window<a href="#Close" class="section_anchor"></a></h4>
-<code>Close(&lt;What&gt;[,&lt;Flags&gt;])
+<pre><code>Close(&lt;What&gt;[,&lt;Flags&gt;])
   - Close current console (0), without confirmation (0,1),
     terminate active process (1), without confirmation (1,1)
     close ConEmu window (2)
@@ -238,10 +237,10 @@ or returned via string result if you are using Far 3.0 with Lua. </p>
     close all tabs but active (5)
     close active tab or group (6)
     close all active processes of the active group (7)
-    close all tabs (8)</code>
+    close all tabs (8)</code></pre>
 
 <h4><a name="Copy"></a>Copy console contents or selection, plain text or HTML<a href="#Copy" class="section_anchor"></a></h4>
-<code>Copy(&lt;What&gt;[,&lt;Format&gt;[,&quot;&lt;File&gt;&quot;]])
+<pre><code>Copy(&lt;What&gt;[,&lt;Format&gt;[,&quot;&lt;File&gt;&quot;]])
   - Copy active console contents
     What==0: current selection
     What==1: all buffer contents
@@ -249,84 +248,84 @@ or returned via string result if you are using Far 3.0 with Lua. </p>
     Format==0: plain text, not formatting
     Format==1: copy HTML format
     Format==2: copy as HTML
-    File: if specified - save to file instead of clipboard</code>
+    File: if specified - save to file instead of clipboard</code></pre>
 
 <h4><a name="FindEditor"></a>Find and activate Far Manager window, used in macro ‘ConEmu.Editor.lua’<a href="#FindEditor" class="section_anchor"></a></h4>
-<code>FindEditor(&quot;&lt;FullEditFileName&gt;&quot;),
+<pre><code>FindEditor(&quot;&lt;FullEditFileName&gt;&quot;),
 FindViewer(&quot;&lt;FullViewerFileName&gt;&quot;),
 FindFarWindow(&lt;WindowType&gt;,&quot;&lt;WindowTitle&gt;&quot;)
  - Returns &quot;Found:&lt;index of RealConsole&gt;&quot;, &quot;Active:&lt;Far window number&gt;&quot;, &quot;Blocked&quot;, or &quot;NotFound&quot;
-   &lt;WindowType&gt; is number from Far Manager enum WINDOWINFO_TYPE</code>
+   &lt;WindowType&gt; is number from Far Manager enum WINDOWINFO_TYPE</code></pre>
 
 <h4><a name="Flash"></a>Flash taskbar icon or window caption<a href="#Flash" class="section_anchor"></a></h4>
-<code>Flash(&lt;Cmd&gt;[,&lt;Flags&gt;[,&lt;Count&gt;]])
+<pre><code>Flash(&lt;Cmd&gt;[,&lt;Flags&gt;[,&lt;Count&gt;]])
   - Allows to flash taskbar icon and/or window caption
     Flash(0) - Stop all flashing
     Flash(0,1) - Simple flashing (see MSDN FlashWindow)
 Flash(1,&lt;Flags&gt;,&lt;Count&gt;)
   - Special flashing (see MSDN FlashWindowEx)
     Flags: 0 - stop, 1 - caption, 2 - taskbar, 3 - caption+taskbar, etc.
-    Count: the number of times to flash the window</code>
+    Count: the number of times to flash the window</code></pre>
 
 <h4><a name="FontSetName"></a>Change font face name and (optionally) height/width<a href="#FontSetName" class="section_anchor"></a></h4>
-<code>FontSetName(&quot;&lt;FontFaceName&gt;&quot;[,FontHeight[,FontWidth]])
- - Change font face name and (optionally) height/width.</code>
+<pre><code>FontSetName(&quot;&lt;FontFaceName&gt;&quot;[,FontHeight[,FontWidth]])
+ - Change font face name and (optionally) height/width.</code></pre>
 
 <h4><a name="FontSetSize"></a>Change font height in the ConEmu window<a href="#FontSetSize" class="section_anchor"></a></h4>
-<code>FontSetSize(Relative,N)
+<pre><code>FontSetSize(Relative,N)
  - Change font height in the ConEmu window
    Relative==0: N - required font height in points
    Relative==1: N (+-1, +-2) - increase/decrease font height
    Relative==2: N (per cents) - alias for Zoom(N)
-   returns - &quot;OK&quot;, or &quot;InvalidArg&quot;</code>
+   returns - &quot;OK&quot;, or &quot;InvalidArg&quot;</code></pre>
 
 <h4><a name="GetOption"></a>Returns value of some ConEmu options<a href="#GetOption" class="section_anchor"></a></h4>
-<code>GetOption(&quot;&lt;Name&gt;&quot;)
- - Returns value of some ConEmu options (the set is limited)</code>
+<pre><code>GetOption(&quot;&lt;Name&gt;&quot;)
+ - Returns value of some ConEmu options (the set is limited)</code></pre>
 
 <h4><a name="GroupInput"></a>Group keyboard input for visible splits<a href="#GroupInput" class="section_anchor"></a></h4>
-<code>GroupInput([&lt;Cmd&gt;])
+<pre><code>GroupInput([&lt;Cmd&gt;])
  - Group keyboard input for visible splits
    Cmd==0: switch mode (default)
    Cmd==1: group
-   Cmd==2: un-group</code>
+   Cmd==2: un-group</code></pre>
 
 <h4><a name="HighlightMouse"></a>Switch highlighting under mouse cursor<a href="#HighlightMouse" class="section_anchor"></a></h4>
-<code>HighlightMouse(0)
+<pre><code>HighlightMouse(0)
  - Switch highlight under mouse cursor (off/row/col/row+col/...)
 HighlightMouse(&lt;What&gt;,&lt;Act&gt;)
  - What: 1 - row, 2 - col, 3 - row+col
-   Act:  0 - off, 1 - on,  2 - switch (default)</code>
+   Act:  0 - off, 1 - on,  2 - switch (default)</code></pre>
 
 <h4><a name="IsConEmu"></a>Check if console is started under ConEmu (check <a href="ConEmuC.html#UsefulChecks">ConEmuC alternative</a>)<a href="#IsConEmu" class="section_anchor"></a></h4>
-<code>IsConEmu
+<pre><code>IsConEmu
  - Returns &quot;Yes&quot; when console was started under ConEmu
-   Alternative is &quot;ConEmuC.exe -IsConEmu&quot; and checking errorlevel</code>
+   Alternative is &quot;ConEmuC.exe -IsConEmu&quot; and checking errorlevel</code></pre>
 
 
 <h4><a name="IsConsoleActive"></a>Check if tab (<a href="RealConsole.html">RealConsole</a>) is active or not<a href="#IsConsoleActive" class="section_anchor"></a></h4>
-<code>IsConsoleActive
- - Check, is RealConsole active or not, &quot;Yes&quot;/&quot;No&quot;</code>
+<pre><code>IsConsoleActive
+ - Check, is RealConsole active or not, &quot;Yes&quot;/&quot;No&quot;</code></pre>
 
 <h4><a name="IsRealVisible"></a>Check if <a href="RealConsole.html">RealConsole</a> is visible or not<a href="#IsRealVisible" class="section_anchor"></a></h4>
-<code>IsRealVisible
- - Check, is RealConsole visible or not, &quot;Yes&quot;/&quot;No&quot;</code>
+<pre><code>IsRealVisible
+ - Check, is RealConsole visible or not, &quot;Yes&quot;/&quot;No&quot;</code></pre>
 
 <h4><a name="Keys"></a>Post special keystrokes to the console (AutoHotKey syntax)<a href="#Keys" class="section_anchor"></a></h4>
-<code>Keys(&quot;&lt;Combo1&gt;&quot;[,&quot;&lt;Combo2&gt;&quot;[,...]])
+<pre><code>Keys(&quot;&lt;Combo1&gt;&quot;[,&quot;&lt;Combo2&gt;&quot;[,...]])
  - Post special keystrokes to the console (AutoHotKey syntax)
    &quot;[Mod1[Mod2[Mod3]]]Key&quot;
    Mod: ^ - LCtrl, &gt;^ - RCtrl, ! - LAlt, &gt;! - RAlt, + - Shift
-   Example: Keys(&quot;^_&quot;) will post ‘Ctrl+_’</code>
+   Example: Keys(&quot;^_&quot;) will post ‘Ctrl+_’</code></pre>
 
 <h4><a name="MsgBox"></a>Show modal GUI MessageBox, returns clicked button name<a href="#MsgBox" class="section_anchor"></a></h4>
-<code>MsgBox(&quot;&lt;Text&gt;&quot;,&quot;&lt;Title&gt;&quot;,&lt;ButtonType&gt;)
+<pre><code>MsgBox(&quot;&lt;Text&gt;&quot;,&quot;&lt;Title&gt;&quot;,&lt;ButtonType&gt;)
  - Show modal GUI MessageBox, returns clicked button name
    (&quot;Ok&quot;, &quot;Cancel&quot;, &quot;Retry&quot;, etc.),
-   ButtonType (number) is from Windows SDK.</code>
+   ButtonType (number) is from Windows SDK.</code></pre>
 
 <h4><a name="Paste"></a>Paste specified text or Windows clipboard contents<a href="#Paste" class="section_anchor"></a></h4>
-<code>Paste(&lt;Cmd&gt;[,&quot;&lt;Text&gt;&quot;[,&quot;&lt;Text2&gt;&quot;[...]]])
+<pre><code>Paste(&lt;Cmd&gt;[,&quot;&lt;Text&gt;&quot;[,&quot;&lt;Text2&gt;&quot;[...]]])
  - When &lt;Text&gt; is omitted - paste from Windows clipboard,
    otherwise - paste specified text
    Cmd==0: paste all lines
@@ -339,10 +338,10 @@ HighlightMouse(&lt;What&gt;,&lt;Act&gt;)
    Cmd==7: select and parse cygwin folder pathname, Text - default
    Cmd==8: paste path from clipboard converted to CygWin style
    Cmd==9: paste all lines space-separated
-   Cmd==10: paste all lines space-separated, without confirmations</code>
+   Cmd==10: paste all lines space-separated, without confirmations</code></pre>
 
 <h4><a name="PasteFile"></a>Paste specified or selected file contents<a href="#PasteFile" class="section_anchor"></a></h4>
-<code>PasteFile(&lt;Cmd&gt;[,&quot;&lt;File&gt;&quot;[,&quot;&lt;CommentMark&gt;&quot;]])
+<pre><code>PasteFile(&lt;Cmd&gt;[,&quot;&lt;File&gt;&quot;[,&quot;&lt;CommentMark&gt;&quot;]])
  - Paste &lt;File&gt; contents, omit &lt;File&gt; to show selection dialog
    Cmd==0: paste all lines
    Cmd==1: paste first line
@@ -350,60 +349,60 @@ HighlightMouse(&lt;What&gt;,&lt;Act&gt;)
    Cmd==3: paste first line, without confirmations
    Cmd==9: paste all lines space-separated
    Cmd==10: paste all lines space-separated, without confirmations
-   If &quot;&lt;CommentMark&gt;&quot; specified - skip all lines starting with prefix</code>
+   If &quot;&lt;CommentMark&gt;&quot; specified - skip all lines starting with prefix</code></pre>
 
 <h4><a name="Print"></a>Print (paste) specified text<a href="#Print" class="section_anchor"></a></h4>
-<code>Print([&quot;&lt;Text&gt;&quot;[,&quot;&lt;Text2&gt;&quot;[...]]])
- - Alias for Paste(2,&quot;&lt;Text&gt;&quot;)</code>
+<pre><code>Print([&quot;&lt;Text&gt;&quot;[,&quot;&lt;Text2&gt;&quot;[...]]])
+ - Alias for Paste(2,&quot;&lt;Text&gt;&quot;)</code></pre>
 
 <h4><a name="Progress"></a>Set progress state on taskbar and ConEmu title<a href="#Progress" class="section_anchor"></a></h4>
-<code>Progress(&lt;Type&gt;[,&lt;Value&gt;])
+<pre><code>Progress(&lt;Type&gt;[,&lt;Value&gt;])
  - Set progress state on taskbar and ConEmu title
    Type=0: remove progress
    Type=1: set progress value to &lt;Value&gt; (0-100)
    Type=2: set error state in progress
-   Type=3: set indeterminate state in progress</code>
+   Type=3: set indeterminate state in progress</code></pre>
 
 <h4><a name="Recreate"></a>Create new or restart active tab or pane<a href="#Recreate" class="section_anchor"></a></h4>
-<code>Recreate(&lt;Action&gt;[,&lt;Confirm&gt;[,&lt;AsAdmin&gt;]]), alias "Create"
+<pre><code>Recreate(&lt;Action&gt;[,&lt;Confirm&gt;[,&lt;AsAdmin&gt;]]), alias "Create"
  - Create new tab or restart existing one
     Action: 0 - create tab, 1 - restart tab, 2 - create window
     Confirm: 1 - show ‘Create new console’ dialog, 0 - don't show
-    AsAdmin: 1 - start elevated tab</code>
+    AsAdmin: 1 - start elevated tab</code></pre>
 
 <h4><a name="Rename"></a>Rename active tab or console title<a href="#Rename" class="section_anchor"></a></h4>
-<code>Rename(&lt;Type&gt;,[&quot;&lt;Title&gt;&quot;])
- - Rename tab (Type=0) or console title (Type=1)</code>
+<pre><code>Rename(&lt;Type&gt;,[&quot;&lt;Title&gt;&quot;])
+ - Rename tab (Type=0) or console title (Type=1)</code></pre>
 
 <h4><a name="Scroll"></a>Scroll console contents<a href="#Scroll" class="section_anchor"></a></h4>
-<code>Scroll(&lt;Type&gt;,&lt;Direction&gt;,&lt;Count=1&gt;)
+<pre><code>Scroll(&lt;Type&gt;,&lt;Direction&gt;,&lt;Count=1&gt;)
  - Do buffer scrolling actions
    Type: 0; Value: ‘-1’=Up, ‘+1’=Down
    Type: 1; Value: ‘-1’=PgUp, ‘+1’=PgDown
    Type: 2; Value: ‘-1’=HalfPgUp, ‘+1’=HalfPgDown
    Type: 3; Value: ‘-1’=Top, ‘+1’=Bottom
-   Type: 4; No arguments; Go to cursor line</code>
+   Type: 4; No arguments; Go to cursor line</code></pre>
 
 <h4><a name="Select"></a>Start or change console selection<a href="#Select" class="section_anchor"></a></h4>
-<code>Select(&lt;Type&gt;,&lt;DX&gt;,&lt;DY&gt;,&lt;HE&gt;)
+<pre><code>Select(&lt;Type&gt;,&lt;DX&gt;,&lt;DY&gt;,&lt;HE&gt;)
  - Used internally for text selection
    Type: 0 - Text, 1 - Block
    DX: select text horizontally: -1/+1
    DY: select text vertically: -1/+1
-   HE: to-home(-1)/to-end(+1) with text selection</code>
+   HE: to-home(-1)/to-end(+1) with text selection</code></pre>
 
 <h4><a name="SetDpi"></a>Change used DPI for ConEmu window (debug purposes)<a href="#SetDpi" class="section_anchor"></a></h4>
-<code>SetDpi(&lt;DPI&gt;)
- - Change effective dpi for ConEmu window: 96, 120, 144, 192</code>
+<pre><code>SetDpi(&lt;DPI&gt;)
+ - Change effective dpi for ConEmu window: 96, 120, 144, 192</code></pre>
 
 <h4><a name="SetOption"></a>Change setting by numeric ID of the checkbox<a href="#SetOption" class="section_anchor"></a></h4>
-<code>SetOption(&quot;Check&quot;,&lt;ID&gt;,&lt;Value&gt;)
+<pre><code>SetOption(&quot;Check&quot;,&lt;ID&gt;,&lt;Value&gt;)
    ID: numeric identifier of checkbox (ConEmu.rc, resource.h)
    Value: 0 - off, 1 - on, 2 - third state
-   Read about SetOption below</code>
+   Read about SetOption below</code></pre>
 
 <h4><a name="SetOption"></a>Change some setting by name<a href="#SetOption" class="section_anchor"></a></h4>
-<code>SetOption(&quot;&lt;Name&gt;&quot;,&lt;Value&gt;[,&lt;IsRelative&gt;])
+<pre><code>SetOption(&quot;&lt;Name&gt;&quot;,&lt;Value&gt;[,&lt;IsRelative&gt;])
  - Name=one of allowed for changing ConEmu options
    IsRelative=1 to use relative instead of absolute for some options
    &quot;AlphaValue&quot;: set transparency level of active window
@@ -419,43 +418,43 @@ HighlightMouse(&lt;What&gt;,&lt;Act&gt;)
    &quot;FarGotoEditorPath&quot;: path to the highlight/error editor
      Value: path to the executable with arguments (Issue 1704)
    &quot;QuakeAutoHide&quot;: auto hide on focus lose, Quake mode
-     Value: 2 - switch auto-hide, 1 - enable, 0 - disable</code>
+     Value: 2 - switch auto-hide, 1 - enable, 0 - disable</code></pre>
 
 <h4><a name="Settings"></a>Show ‘Settings’ dialog with specified (optionally) page activated<a href="#Settings" class="section_anchor"></a></h4>
-<code>Settings([&lt;PageResourceId&gt;])
+<pre><code>Settings([&lt;PageResourceId&gt;])
  - Show ‘Settings’ dialog with specified page activated (optionally)
-     PageResourceId: integer DialogID from ‘resource.h’</code>
+     PageResourceId: integer DialogID from ‘resource.h’</code></pre>
 
 <h4><a name="Shell"></a>Start any process inside or outside of ConEmu window<a href="#Shell" class="section_anchor"></a></h4>
-<code>Shell(&quot;&lt;Verb&gt;&quot;,&quot;&lt;File&gt;&quot;[,&quot;&lt;Parms&gt;&quot;[,&quot;&lt;Dir&gt;&quot;[,&lt;ShowCmd&gt;]]])
+<pre><code>Shell(&quot;&lt;Verb&gt;&quot;,&quot;&lt;File&gt;&quot;[,&quot;&lt;Parms&gt;&quot;[,&quot;&lt;Dir&gt;&quot;[,&lt;ShowCmd&gt;]]])
  - Verb can be &quot;open&quot;, &quot;print&quot; and so on, or special value &quot;new_console&quot;,
    which starts File in the new tab of ConEmu window. Examples:
      Shell(&quot;open&quot;,&quot;cmd.exe&quot;,&quot;/k&quot;)
      Shell(&quot;&quot;,&quot;&quot;,&quot;cmd.exe /k -new_console:b&quot;),
      Shell(&quot;new_console:b&quot;,&quot;&quot;,&quot;cmd.exe /k&quot;)
      Shell(&quot;new_console:sV&quot;)
-     Shell(&quot;new_console:Ibn&quot;,&quot;cmd&quot;,&quot;/k start explorer \&quot;%CD%\&quot; &amp;&amp; exit&quot;)</code>
+     Shell(&quot;new_console:Ibn&quot;,&quot;cmd&quot;,&quot;/k start explorer \&quot;%CD%\&quot; &amp;&amp; exit&quot;)</code></pre>
 
 <h4><a name="Sleep"></a>Do some sleeping<a href="#Sleep" class="section_anchor"></a></h4>
-<code>Sleep(&lt;Milliseconds&gt;)
- - Milliseconds: max 10000 (10 seconds)</code>
+<pre><code>Sleep(&lt;Milliseconds&gt;)
+ - Milliseconds: max 10000 (10 seconds)</code></pre>
 
 <h4><a name="Split"></a>Create and control splitting of active group<a href="#Split" class="section_anchor"></a></h4>
-<code>Split(&lt;Cmd&gt;,&lt;Horz&gt;,&lt;Vert&gt;)
+<pre><code>Split(&lt;Cmd&gt;,&lt;Horz&gt;,&lt;Vert&gt;)
  - Cmd=0, Horz=1..99, Vert=0: Duplicate active ‘shell’ split to right, same as Shell(&quot;new_console:s50Hn&quot;)
    Cmd=0, Horz=0, Vert=1..99: Duplicate active ‘shell’ split to bottom, same as Shell(&quot;new_console:s50Vn&quot;)
    Cmd=1, Horz=-1..1, Vert=-1..1: Move splitter between panes (aka resize panes)
    Cmd=2, Horz=-1..1, Vert=-1..1: Put cursor to the nearest pane (preferred direction may be choosed)
-   Cmd=3, Maximize/restore active pane</code>
+   Cmd=3, Maximize/restore active pane</code></pre>
 
 <h4><a name="Status"></a>Show/Hide <a href="StatusBar.html">StatusBar</a> or set its text<a href="#Status" class="section_anchor"></a></h4>
-<code>Status(0[,&lt;Parm&gt;])
+<pre><code>Status(0[,&lt;Parm&gt;])
  - Show/Hide status bar, Parm=1 - Show, Parm=2 - Hide
 Status(1[,&quot;&lt;Text&gt;&quot;])
- - Set status bar text</code>
+ - Set status bar text</code></pre>
 
 <h4><a name="Tab"></a>Control ConEmu <a href="TabBar.html">TabBar</a><a href="#Tab" class="section_anchor"></a></h4>
-<code>Tab(&lt;Cmd&gt;[,&lt;Parm&gt;])
+<pre><code>Tab(&lt;Cmd&gt;[,&lt;Parm&gt;])
  - Control ConEmu tabs
    Cmd==0:  show/hide tabs
    Cmd==1:  commit lazy changes
@@ -467,29 +466,29 @@ Status(1[,&quot;&lt;Text&gt;&quot;])
    Cmd==7:  activate console by number, Parm=(1-based console index)
    Cmd==8:  show tabs list menu (indiffirent Far/Not Far)
    Cmd==9:  close active tab, same as Close(3)
-   Cmd==10: switches visible split-panes, Parm=(1,-1)</code>
+   Cmd==10: switches visible split-panes, Parm=(1,-1)</code></pre>
 
 <h4><a name="Task"></a>Start specified <a href="Tasks.html">Task</a><a href="#Task" class="section_anchor"></a></h4>
-<code>Task(Index[,&quot;Dir&quot;])
+<pre><code>Task(Index[,&quot;Dir&quot;])
  - start task with 1-based index
 Task(&quot;Name&quot;[,&quot;Dir&quot;])
- - start task with specified name</code>
+ - start task with specified name</code></pre>
 
 <h4><a name="Transparency"></a>Change ConEmu window transparency level<a href="#Transparency" class="section_anchor"></a></h4>
-<code>Transparency(&lt;Cmd&gt;,&lt;Value&gt;)
+<pre><code>Transparency(&lt;Cmd&gt;,&lt;Value&gt;)
  - Change ConEmu window transparency level
    Cmd = 0, Value = 40..255 (255==Opaque)
    Cmd = 1, Value = &lt;relative inc/dec&gt;
    Cmd = 2, Value = 0..255 (255==Opaque) - for inactive window
    Cmd = 3, Value = &lt;relative inc/dec&gt; - for inactive window
-   Cmd = 4, Value = &lt;0/1&gt; - AlphaValueSeparate</code>
+   Cmd = 4, Value = &lt;0/1&gt; - AlphaValueSeparate</code></pre>
 
 <h4><a name="Wiki"></a>Open online documentation<a href="#Wiki" class="section_anchor"></a></h4>
-<code>Wiki([&quot;PageName&quot;])
- - Open online documentation</code>
+<pre><code>Wiki([&quot;PageName&quot;])
+ - Open online documentation</code></pre>
 
 <h4><a name="WindowMode"></a>Change ConEmu window mode<a href="#WindowMode" class="section_anchor"></a></h4>
-<code>WindowFullscreen()
+<pre><code>WindowFullscreen()
  - Switch fullscreen window mode
    returns previous window mode
 WindowMaximize([&lt;Cmd&gt;])
@@ -502,11 +501,14 @@ WindowMode([\&quot;&lt;Mode&gt;\&quot;])
  - Returns or set current window mode
    &quot;NOR&quot;, &quot;MAX&quot;, &quot;FS&quot; (fullscreen), &quot;MIN&quot;, &quot;TSA&quot;
    &quot;TLEFT&quot;, &quot;TRIGHT&quot; (tile to left/right), &quot;THEIGHT&quot;,
-   &quot;MPREV&quot;, &quot;MNEXT&quot; (move ConEmu to prev/next monitor)</code>
+   &quot;MPREV&quot;, &quot;MNEXT&quot; (move ConEmu to prev/next monitor)</code></pre>
 
 <h4><a name="Zoom"></a>Change font zoom value<a href="#Zoom" class="section_anchor"></a></h4>
-<code>Zoom(N)
- - Set zoom value, 100 - original font size</code>
+<pre><code>Zoom(N)
+ - Set zoom value, 100 - original font size</code></pre>
+
+
+<!-- *************** List of functions ends *************** -->
 </div>
 
 <h2><a name="SetOption"></a>SetOption<a href="#SetOption" class="section_anchor"></a></h2>

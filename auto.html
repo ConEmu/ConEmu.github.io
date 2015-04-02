@@ -23,7 +23,7 @@ setup ConEmu via PowerShell with single command. Internet connection required.</
 
 <div class="text">Just copy the following command, press ‘Win+R’, paste command and press ‘Enter’.</div>
 
-<code>powershell -NoProfile -ExecutionPolicy Unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install.ps1'))"</code>
+<pre><code>powershell -NoProfile -ExecutionPolicy Unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install.ps1'))"</code></pre>
 
 
 
@@ -42,7 +42,7 @@ setup ConEmu via PowerShell with single command. Internet connection required.</
 
 <div class="text">Paste the following command to your box startup script (cmd-file for example) and change arguments to desired values.</div>
 
-<code>powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set ver 'alpha'; set dst 'C:\ConEmu'; set lnk $TRUE; set run $TRUE; set xml 'https://conemu.github.io/ConEmu.xml'; iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install2.ps1'))"</code>
+<pre><code>powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set ver 'alpha'; set dst 'C:\ConEmu'; set lnk $TRUE; set run $TRUE; set xml 'https://conemu.github.io/ConEmu.xml'; iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install2.ps1'))"</code></pre>
 
 
 <!-- ******************************* -->
@@ -52,7 +52,7 @@ setup ConEmu via PowerShell with single command. Internet connection required.</
 When you have Chocolatey installed on your PC you can install ConEmu with one command.
 ConEmu will be installed in your ‘Program Files’ folder using actual version of ‘ConEmuSetup.exe’.</div>
 
-<code>choco install conemu</code>
+<pre><code>choco install conemu</code></pre>
 
 
 

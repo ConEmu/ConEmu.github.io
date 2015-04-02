@@ -12,7 +12,7 @@
 ‘Console application’ is not able to ‘draw’ anything, it has not graphical interface at all.
 It works with input/output streams only (redirection, pipes, magic symbols ‘<b>&lt;</b>’, ‘<b>&gt;</b>’, ‘<b>|</b>’). </p>
 
-<code>cmd /? > cmd.log & type cmd.log | find "HKEY"</code>
+<pre><code>cmd /? > cmd.log & type cmd.log | find "HKEY"</code></pre>
 
 <p>When ‘console application’ starts in Windows the special console window is created and that very window do all text drawing,
 which ‘console application’ was printed, and that window redirects user keypresses into ‘console application’ input buffer.
