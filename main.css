@@ -128,7 +128,12 @@ h1, h2 {
   margin-bottom: 5pt;
 }
 
+/* deprecation --> header h1 */
 #h0 {
+  margin-top: 0;
+}
+
+header h1 {
   margin-top: 0;
 }
 
