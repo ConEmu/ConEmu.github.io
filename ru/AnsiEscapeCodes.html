@@ -99,7 +99,7 @@ if &quot;%ConEmuANSI%&quot;==&quot;OFF&quot; echo Запрещено</pre>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 49 m </td><td style="border: 1px solid #ccc; padding: 5px;"> Reset background color to defauls </td></tr> </table></p>
 
 <h2><a name="OSC_(Operating_system_commands)"></a>OSC (Operating system commands)<a href="#OSC_(Operating_system_commands)" class="section_anchor"></a></h2>
-<p><strong>Note</strong>. These codes may ends with «ESC\» (two symbols - ESC and BackSlash) or «BELL» (symbol with code \x07, same as «^a» in <tt>*</tt>nix). For simplifying, endings in the following table marked as «ST». </p>
+<p><strong>Note</strong>. These codes may ends with «ESC\» (two symbols - ESC and BackSlash) or «BELL» (symbol with code \x07, same as «^a» in <code>*</code>nix). For simplifying, endings in the following table marked as «ST». </p>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC ] 2 ; &quot;<i>txt</i>&quot; ST </td><td style="border: 1px solid #ccc; padding: 5px;"> Set console window title to <i>txt</i>. </td></tr> </table></p>
 
@@ -120,7 +120,7 @@ if &quot;%ConEmuANSI%&quot;==&quot;OFF&quot; echo Запрещено</pre>
 <p><img src="../img/ConEmuAnsi.png" title="ANSI X3.64 and Xterm 256 colors in ConEmu"> </p>
 
 <h3><a name="Xterm_256_color_map"></a>Xterm 256 color map<a href="#Xterm_256_color_map" class="section_anchor"></a></h3>
-<p>Пример из файла: <tt>ConEmu\Addons\AnsiColors256.ans</tt>. </p>
+<p>Пример из файла: <code>ConEmu\Addons\AnsiColors256.ans</code>. </p>
 <pre class="prettyprint">^[[9999S^[[9999;1HSystem colors (0..15 from xterm palette):
 ^[[48;5;0m  ^[[48;5;1m  ^[[48;5;2m  ^[[48;5;3m  ^[[48;5;4m  ^[[48;5;5m  ^[[48;5;6m  ^[[48;5;7m  ^[[0m
 ^[[48;5;8m  ^[[48;5;9m  ^[[48;5;10m  ^[[48;5;11m  ^[[48;5;12m  ^[[48;5;13m  ^[[48;5;14m  ^[[48;5;15m  ^[[0m
@@ -137,7 +137,7 @@ Grayscale ramp (232..255 from xterm palette):
 <p><strong>Warning</strong> Перед использованием «^[» нужно заменить на ESC код (символ с кодом \x1B). </p>
 
 <h3><a name="Standard_ANSI_color_map"></a>Standard ANSI color map<a href="#Standard_ANSI_color_map" class="section_anchor"></a></h3>
-<p>Пример из файла: <tt>ConEmu\Addons\AnsiColors16.ans</tt>. </p>
+<p>Пример из файла: <code>ConEmu\Addons\AnsiColors16.ans</code>. </p>
 <pre class="prettyprint">System colors (Standard console 16 colors):
 ^[[0;30;40m  ^[[0;30;41m  ^[[0;30;42m  ^[[0;30;43m  ^[[0;30;44m  ^[[0;30;45m  ^[[0;30;46m  ^[[0;30;47m  ^[[0m
 ^[[0;30;4;40m  ^[[0;30;4;41m  ^[[0;30;4;42m  ^[[0;30;4;43m  ^[[0;30;4;44m  ^[[0;30;4;45m  ^[[0;30;4;46m  ^[[0;30;4;47m  ^[[0m</pre>
@@ -145,7 +145,7 @@ Grayscale ramp (232..255 from xterm palette):
 
 <h2><a name="sixteencolors.net"></a>sixteencolors.net<a href="#sixteencolors.net" class="section_anchor"></a></h2>
 <p>Большой архив <a href="http://en.wikipedia.org/wiki/ANSI_art" rel="nofollow">ANSI арта</a>: <a href="http://sixteencolors.net/" rel="nofollow">http://sixteencolors.net/</a> </p>
-<p>Скачать файл ans, и выполнить в консоли ConEmu, например <tt>type TK-FREES.ANS</tt>. Посмотреть и пролистать предыдущий вывод можно перейдя в альтернативный режим - Win+A. </p>
+<p>Скачать файл ans, и выполнить в консоли ConEmu, например <code>type TK-FREES.ANS</code>. Посмотреть и пролистать предыдущий вывод можно перейдя в альтернативный режим - Win+A. </p>
 <p><strong>Note</strong> Многие арты расчитаны на ширину консоли в <strong>80</strong> символов. </p>
 
 <h2><a name="Подсветка_ошибок_компиляции"></a>Подсветка ошибок компиляции<a href="#Подсветка_ошибок_компиляции" class="section_anchor"></a></h2>

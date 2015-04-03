@@ -16,11 +16,11 @@
 <p><img src="../img/ConEmuCreate.png" title="ConEmu confirmation of new console creation" alt="ConEmu new console"> </p>
 <p>When you work with shell and do some CD&#x27;s or run your scripts, its ‘Current directory’ may be (and will) changed. But directory is changed inside your <a href="TerminalVsShell.html">Shell</a> but not inside terminal. ConEmu does not handle your shell commands when your execute them. Moreover, some shells (PowerShell, bash, etc.) doesn&#x27;t even call Window API function ‘SetCurrentDirectory’, they handle their working directories internally. </p>
 <p>However, since ConEmu&#x27;s build 140818 you get full support of ‘Current directory’ (<strong>CD</strong>). </p>
-<ul><li>Automatic detection of <strong>CD</strong> in <tt>cmd.exe</tt> or <tt>tcc.exe</tt>; </li>
+<ul><li>Automatic detection of <strong>CD</strong> in <code>cmd.exe</code> or <code>tcc.exe</code>; </li>
 <li>Ability to inform ConEmu GUI about shell <strong>CD</strong> using <a href="AnsiEscapeCodes.html">ANSI</a> or <a href="ConEmuC.html">ConEmuC</a>; </li>
 <li>Display <strong>CD</strong> in the tab title using <a href="SettingsTabBar.html">tab templates</a>; </li>
 <li>Reuse <strong>CD</strong> in the <a href="RestartTab.html">Restart</a> and <a href="LaunchNewTab.html">Create new console</a> dialogs; </li>
-<li>At last you may use &quot;<strong>%CD%</strong>&quot; variable with <a href="GuiMacro.html#List_of_functions">Shell</a> macro function in the <tt>Dir</tt> parameter. </li></ul>
+<li>At last you may use &quot;<strong>%CD%</strong>&quot; variable with <a href="GuiMacro.html#List_of_functions">Shell</a> macro function in the <code>Dir</code> parameter. </li></ul>
 
 <h1><a name="What_you_shall_do_to_get_CD_support"></a>What you shall do to get <strong>CD</strong> support<a href="#What_you_shall_do_to_get_CD_support" class="section_anchor"></a></h1>
 
@@ -28,7 +28,7 @@
 <p>Just enable ‘<a href="ConEmuHk.html">Inject ConEmuHk</a>’ feature. ConEmu will maintain <strong>CD</strong> for you automatically. </p>
 
 <h2><a name="bash_and_other_cygwin_shells"></a>bash and other cygwin shells<a href="#bash_and_other_cygwin_shells" class="section_anchor"></a></h2>
-<p>You need to tell bash to run <tt>&quot;ConEmuC -StoreCWD&quot;</tt> command each time its prompt executed. For example, add to your <tt>.bashrc</tt> </p>
+<p>You need to tell bash to run <code>&quot;ConEmuC -StoreCWD&quot;</code> command each time its prompt executed. For example, add to your <code>.bashrc</code> </p>
 <pre class="prettyprint">PROMPT_COMMAND=&#x27;ConEmuC -StoreCWD&#x27;</pre>
 
 <h2><a name="PowerShell"></a>PowerShell<a href="#PowerShell" class="section_anchor"></a></h2>

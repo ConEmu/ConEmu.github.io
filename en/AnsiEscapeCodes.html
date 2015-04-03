@@ -68,19 +68,19 @@ if &quot;%ConEmuANSI%&quot;==&quot;OFF&quot; echo Disabled</pre>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <i>lines</i> S </td><td style="border: 1px solid #ccc; padding: 5px;"> Scroll screen (whole buffer) up by <i>lines</i>. New lines are added at the bottom. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <i>lines</i> T </td><td style="border: 1px solid #ccc; padding: 5px;"> Scroll screen (whole buffer) down by <i>lines</i>. New lines are added at the top. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <i>n</i> X </td><td style="border: 1px solid #ccc; padding: 5px;"> Erase <i>n</i> (default 1) characters from cursor (fill with spaces and default attributes). </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <tt>&gt;</tt> c </td><td style="border: 1px solid #ccc; padding: 5px;"> Report <tt>&quot;ESC &gt; 67 ; build ; 0 c&quot;</tt> </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ c </td><td style="border: 1px solid #ccc; padding: 5px;"> Report <tt>&quot;ESC [ ? 1 ; 2 c&quot;</tt> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <code>&gt;</code> c </td><td style="border: 1px solid #ccc; padding: 5px;"> Report <code>&quot;ESC &gt; 67 ; build ; 0 c&quot;</code> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ c </td><td style="border: 1px solid #ccc; padding: 5px;"> Report <code>&quot;ESC [ ? 1 ; 2 c&quot;</code> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <i>row</i> ; <i>col</i> f </td><td style="border: 1px solid #ccc; padding: 5px;"> Set cursor position (same as H). The values <i>row</i> and <i>col</i> are 1-based. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <i>a</i> ; <i>b</i> h </td><td style="border: 1px solid #ccc; padding: 5px;"> Set mode (<a href="AnsiEscapeCodes.html#Terminal_modes">see below</a>). </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <i>a</i> ; <i>b</i> l </td><td style="border: 1px solid #ccc; padding: 5px;"> Reset mode (<a href="AnsiEscapeCodes.html#Terminal_modes">see below</a>). </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ <i>a_ ; </i>b_ ; <i>c_ m </td><td style="border: 1px solid #ccc; padding: 5px;"> Set SGR attributes (<a href="AnsiEscapeCodes.html#SGR_(Select_Graphic_Rendition)_parameters">see below</a>). </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 5 n </td><td style="border: 1px solid #ccc; padding: 5px;"> Report status as &quot;<tt>CSI 0 n</tt>&quot; (OK) </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 6 n </td><td style="border: 1px solid #ccc; padding: 5px;"> Report Cursor Position as <tt>&quot;ESC [ row ; col R&quot;</tt> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 5 n </td><td style="border: 1px solid #ccc; padding: 5px;"> Report status as &quot;<code>CSI 0 n</code>&quot; (OK) </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 6 n </td><td style="border: 1px solid #ccc; padding: 5px;"> Report Cursor Position as <code>&quot;ESC [ row ; col R&quot;</code> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ </i>a<i> ; </i>b<i> r </td><td style="border: 1px solid #ccc; padding: 5px;"> Set scrolling region from top=</i>a<i> to bottom=</i>b<i>. The values </i>a<i> and </i>b<i> are 1-based. Omit values to reset region. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ s </td><td style="border: 1px solid #ccc; padding: 5px;"> Save cursor position (can not be nested). </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 1 8 t </td><td style="border: 1px solid #ccc; padding: 5px;"> Report the size of the text area in characters as <tt>&quot;ESC [ 8 ; height ; width t&quot;</tt> </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 1 9 t </td><td style="border: 1px solid #ccc; padding: 5px;"> Report the size of the screen in characters as <tt>&quot;ESC [ 9 ; height ; width t&quot;</tt> </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 2 1 t </td><td style="border: 1px solid #ccc; padding: 5px;"> Report window’s title as <tt>&quot;ESC ] l title ESC \&quot;</tt> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 1 8 t </td><td style="border: 1px solid #ccc; padding: 5px;"> Report the size of the text area in characters as <code>&quot;ESC [ 8 ; height ; width t&quot;</code> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 1 9 t </td><td style="border: 1px solid #ccc; padding: 5px;"> Report the size of the screen in characters as <code>&quot;ESC [ 9 ; height ; width t&quot;</code> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 2 1 t </td><td style="border: 1px solid #ccc; padding: 5px;"> Report window’s title as <code>&quot;ESC ] l title ESC \&quot;</code> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ u </td><td style="border: 1px solid #ccc; padding: 5px;"> Restore cursor position. </td></tr> </table></i></p>
 
 <h3><a name="Terminal_modes"></a>Terminal modes<a href="#Terminal_modes" class="section_anchor"></a></h3>
@@ -112,7 +112,7 @@ if &quot;%ConEmuANSI%&quot;==&quot;OFF&quot; echo Disabled</pre>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC [ 30…37 m </td><td style="border: 1px solid #ccc; padding: 5px;"> Set ANSI text color </td></tr> </table></p>
 
 <h2><a name="OSC_(Operating_system_commands)"></a>OSC (Operating system commands)<a href="#OSC_(Operating_system_commands)" class="section_anchor"></a></h2>
-<p><strong>Note</strong>. These codes may ends with ‘ESC\’ (two symbols - ESC and BackSlash) or ‘BELL’ (symbol with code \x07, same as ‘^a’ in <tt>*</tt>nix). For simplifying, endings in the following table marked as ‘ST’. </p>
+<p><strong>Note</strong>. These codes may ends with ‘ESC\’ (two symbols - ESC and BackSlash) or ‘BELL’ (symbol with code \x07, same as ‘^a’ in <code>*</code>nix). For simplifying, endings in the following table marked as ‘ST’. </p>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ESC ] 2 ; &quot;<i>txt</i>&quot; ST </td><td style="border: 1px solid #ccc; padding: 5px;"> Set console window title to <i>txt</i>. </td></tr> </table></p>
 
@@ -133,7 +133,7 @@ if &quot;%ConEmuANSI%&quot;==&quot;OFF&quot; echo Disabled</pre>
 <p><img src="../img/ConEmuAnsi.png" title="ANSI X3.64 and Xterm 256 colors in ConEmu"> </p>
 
 <h3><a name="Xterm_256_color_map"></a>Xterm 256 color map<a href="#Xterm_256_color_map" class="section_anchor"></a></h3>
-<p>Example from file: <tt>ConEmu\Addons\AnsiColors256.ans</tt>. </p>
+<p>Example from file: <code>ConEmu\Addons\AnsiColors256.ans</code>. </p>
 <pre class="prettyprint">^[[9999S^[[9999;1HSystem colors (0..15 from xterm palette):
 ^[[48;5;0m  ^[[48;5;1m  ^[[48;5;2m  ^[[48;5;3m  ^[[48;5;4m  ^[[48;5;5m  ^[[48;5;6m  ^[[48;5;7m  ^[[0m
 ^[[48;5;8m  ^[[48;5;9m  ^[[48;5;10m  ^[[48;5;11m  ^[[48;5;12m  ^[[48;5;13m  ^[[48;5;14m  ^[[48;5;15m  ^[[0m
@@ -150,7 +150,7 @@ Grayscale ramp (232..255 from xterm palette):
 <p><strong>Warning</strong> You need to change ‘^[’ to ESC code before using this script (char with code \x1B). </p>
 
 <h3><a name="Standard_ANSI_color_map"></a>Standard ANSI color map<a href="#Standard_ANSI_color_map" class="section_anchor"></a></h3>
-<p>This example is from file: <tt>ConEmu\Addons\AnsiColors16.ans</tt>. </p>
+<p>This example is from file: <code>ConEmu\Addons\AnsiColors16.ans</code>. </p>
 <pre class="prettyprint">System colors (Standard console 16 colors):
 ^[[0;30;40m  ^[[0;30;41m  ^[[0;30;42m  ^[[0;30;43m  ^[[0;30;44m  ^[[0;30;45m  ^[[0;30;46m  ^[[0;30;47m  ^[[0m
 ^[[0;30;4;40m  ^[[0;30;4;41m  ^[[0;30;4;42m  ^[[0;30;4;43m  ^[[0;30;4;44m  ^[[0;30;4;45m  ^[[0;30;4;46m  ^[[0;30;4;47m  ^[[0m</pre>
@@ -158,7 +158,7 @@ Grayscale ramp (232..255 from xterm palette):
 
 <h2><a name="sixteencolors.net"></a>sixteencolors.net<a href="#sixteencolors.net" class="section_anchor"></a></h2>
 <p>Large <a href="http://en.wikipedia.org/wiki/ANSI_art" rel="nofollow">ANSI art</a> archive: <a href="http://sixteencolors.net/" rel="nofollow">http://sixteencolors.net/</a> </p>
-<p>Download ans file and execute it in ConEmu console, e.g. <tt>type TK-FREES.ANS</tt>. You can view and scroll last output switching into alternative mode - Win+A. </p>
+<p>Download ans file and execute it in ConEmu console, e.g. <code>type TK-FREES.ANS</code>. You can view and scroll last output switching into alternative mode - Win+A. </p>
 <p><strong>Note</strong> Many arts was written for 80-chars console width. </p>
 
 <h2><a name="Compiler_error_highlighting"></a>Compiler error highlighting<a href="#Compiler_error_highlighting" class="section_anchor"></a></h2>

@@ -24,10 +24,10 @@ C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\lib\perl5\site_perl\5.8.8\msys\a
 
 <h2><a name="The_problem"></a>The problem<a href="#The_problem" class="section_anchor"></a></h2>
 <p>Digging the problem for some time I&#x27;ve found the reason of these errors on my PC (in perl&#x27;s case). </p>
-<ul><li>Address, where perl wants to load its libraries was used by <tt>C:\Windows\System32\uxtheme.dll</tt>. </li>
-<li>This <tt>uxtheme.dll</tt> was loaded as static linked library by <tt>C:\Windows\apppatch\AcGenral.dll</tt>. </li>
-<li>This <tt>AcGenral.dll</tt> was loaded (dynamically) by <tt>C:\Windows\System32\apphelp.dll</tt>. </li>
-<li>And this <tt>apphelp.dll</tt> was loaded in the parent process of the <tt>ConEmu.exe</tt> (that was <tt>USBSafelyRemove.exe</tt> in my case). </li>
+<ul><li>Address, where perl wants to load its libraries was used by <code>C:\Windows\System32\uxtheme.dll</code>. </li>
+<li>This <code>uxtheme.dll</code> was loaded as static linked library by <code>C:\Windows\apppatch\AcGenral.dll</code>. </li>
+<li>This <code>AcGenral.dll</code> was loaded (dynamically) by <code>C:\Windows\System32\apphelp.dll</code>. </li>
+<li>And this <code>apphelp.dll</code> was loaded in the parent process of the <code>ConEmu.exe</code> (that was <code>USBSafelyRemove.exe</code> in my case). </li>
 <li>Oops... </li></ul>
 
 <h2><a name="The_check"></a>The check<a href="#The_check" class="section_anchor"></a></h2>
@@ -39,11 +39,11 @@ C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\lib\perl5\site_perl\5.8.8\msys\a
 <pre class="prettyprint">OPTIONAL HEADER VALUES
         6F1C0000 image base (6F1C0000 to 6F2E7FFF)</pre>
 <p>So, you you see that one of the cygwin/msys libraries is loaded in low memory address (below 0x5FFF0000) you have a problem most probably... The easies way to check is using <a href="ProcessExplorer.html">ProcessExplorer</a>. </p>
-<p>Press <tt>Ctrl+D</tt> (Menu <tt>-&gt;</tt> View <tt>-&gt;</tt> Lower pane view <tt>-&gt;</tt> DLLs) and look at ‘Base’ column in the lower pane. If it is not visible just right-click on the DLLs list header, choose ‘Select columns’ and turn on ‘Base address’ on the ‘DLL’ tab page. And use ‘dumpbin’ to ensure that required ‘image base’ differs. </p>
+<p>Press <code>Ctrl+D</code> (Menu <code>-&gt;</code> View <code>-&gt;</code> Lower pane view <code>-&gt;</code> DLLs) and look at ‘Base’ column in the lower pane. If it is not visible just right-click on the DLLs list header, choose ‘Select columns’ and turn on ‘Base address’ on the ‘DLL’ tab page. And use ‘dumpbin’ to ensure that required ‘image base’ differs. </p>
 <p>Scroll the DLLs list in the <a href="ProcessExplorer.html">ProcessExplorer</a> lower pane to find ‘Base+Size’ which covers desired address was shown by ‘dumpbin’. And who was loaded that dll? You may use <a href="DependencyWalker.html">DependencyWalker</a> or <a href="ImpEx.html">ImpEx</a> to check ‘Imports’ section of each dll loaded before. Yeah, that is not too simple but rather... </p>
 
 <h2><a name="The_solution"></a>The solution<a href="#The_solution" class="section_anchor"></a></h2>
 <p>1) You need to ‘rebase’ conflicting modules. </p>
-<p>2) Alternatively you need to run your shell in different way so process tree will not include DLLs raised the conflict. In my case, when I run ConEmu from TaskBar icon there is no <tt>apphelp.dll</tt> in the result process tree (from <tt>ConEmu.exe</tt> down to <tt>perl.exe</tt>). But when I run ConEmu from ‘USB Safe Remove’ tool (automatically on connecting USB flash), <tt>apphelp.dll</tt> appears in the process tree and perl is always failed... </p>
+<p>2) Alternatively you need to run your shell in different way so process tree will not include DLLs raised the conflict. In my case, when I run ConEmu from TaskBar icon there is no <code>apphelp.dll</code> in the result process tree (from <code>ConEmu.exe</code> down to <code>perl.exe</code>). But when I run ConEmu from ‘USB Safe Remove’ tool (automatically on connecting USB flash), <code>apphelp.dll</code> appears in the process tree and perl is always failed... </p>
 
 <!-- Content ends -->

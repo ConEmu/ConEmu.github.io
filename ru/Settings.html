@@ -33,16 +33,16 @@
 
 <h2><a name="Registry"></a>Registry<a href="#Registry" class="section_anchor"></a></h2>
 <p>All settings are stored in registry in the following key: </p>
-<p><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt> </p>
+<p><code>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</code> </p>
 <p>When You specify the <a href="ConEmuArgs.html">/config</a> switch in the ConEmu.exe command line settings will be stored here: </p>
-<p><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt> </p>
+<p><code>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</code> </p>
 
 <h2><a name="ConEmu_.xml"></a>ConEmu.xml<a href="#ConEmu_.xml" class="section_anchor"></a></h2>
 <p>Вы можете включить в ConEmu «портабельный» режим, в котором все настройки будут храниться в файле <i>ConEmu.xml</i>. ConEmu ищет этот файл в следующем порядке: </p>
 <p><table class="wikitable">
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> <tt>%APPDATA%\ConEmu.xml</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Я не считаю этот случай действительно «портабельным», но многие просили <tt>%APPDATA%</tt> </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> <tt>%ConEmuBaseDir%\ConEmu.xml</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Папка с файлами <tt>ConEmuC.exe</tt> и <tt>ConEmuC64.exe</tt> </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> <tt>%ConEmuDir%\ConEmu.xml</tt> </td><td style="border: 1px solid #ccc; padding: 5px;"> Папка с файлами <tt>ConEmu.exe</tt> и <tt>ConEmu64.exe</tt> </td></tr> </table></p>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> <code>%APPDATA%\ConEmu.xml</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> Я не считаю этот случай действительно «портабельным», но многие просили <code>%APPDATA%</code> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> <code>%ConEmuBaseDir%\ConEmu.xml</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> Папка с файлами <code>ConEmuC.exe</code> и <code>ConEmuC64.exe</code> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> <code>%ConEmuDir%\ConEmu.xml</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> Папка с файлами <code>ConEmu.exe</code> и <code>ConEmu64.exe</code> </td></tr> </table></p>
 <p>При <a href="SettingsFast.html">первом запуске ConEmu</a>, вы можете включить «портабельный» режим и выбрать расположение xml файла. Также вы можете создать новый пустой <i>ConEmu.xml</i> или просто переименовать <i>ConEmu_Sample.xml</i> в <i>ConEmu.xml</i> для включения xml-режима. Пример настроек <i>ConEmu_Sample.xml</i> поставляется с ConEmu. Ключ <a href="ConEmuArgs.html">именованных конфигураций (/config)</a> также можно использовать в xml-режиме. И наконец, есть два ключа <a href="ConEmuArgs.html">/loadcfgfile и /safecfgfile</a> для использования специально указанных файлов (может быть полезно в некоторых случаях). </p>
 <p>Примечание. Вы можете переименовать/создать файл <i>ConEmu.xml</i> в любое время, даже после загрузки настроек из реестра. </p>
 
@@ -50,8 +50,8 @@
 <p>So, You want to change setting, which is absent in the Settings dialog. List and description of each setting You may find in the <i>Settings-ConEmu.reg</i> file. </p>
 
 <h2><a name="Using_registry"></a>Using registry<a href="#Using_registry" class="section_anchor"></a></h2>
-<p>Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys: <ul><li><tt>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</tt>, when <a href="ConEmuArgs.html">/config</a> switch is not using; </li>
-<li><tt>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</tt>, when /config switch specified in the ConEmu command line. </li></ul></p>
+<p>Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys: <ul><li><code>[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]</code>, when <a href="ConEmuArgs.html">/config</a> switch is not using; </li>
+<li><code>[HKEY_CURRENT_USER\Software\ConEmu\«configname»]</code>, when /config switch specified in the ConEmu command line. </li></ul></p>
 
 <h2><a name="Using_ConEmu_.xml"></a>Using ConEmu.xml<a href="#Using_ConEmu_.xml" class="section_anchor"></a></h2>
 <p>Open ConEmu.xml file using any text editor (Far Manager, Notepad, and so on) find appropriate value and change it. Usually, this file is located near to the <i>ConEmuC.exe</i>. </p>
@@ -86,14 +86,14 @@
 <p><img src="../img/SettingsTasks.png" title="ConEmu settings, Tasks page" alt="ConEmu settings, Tasks page"> </p>
 <p>Здесь вы можете настроить список часто выполняемых задач. Задача - это алиас для запуска одного или более приложений в новых вкладках ConEmu. Задачи сохраняются в настройке (reg/xml) в подключе &quot;Tasks&quot;. Их можно использовать (на примере задачи {Shells}): <ul><li>при запуске, указав в свойствах ярлыка: &quot;ConEmu.exe /cmd {Shells}&quot;; </li>
 <li>указав {Shells} в поле &#x27;Command line&#x27; страницы &#x27;Main&#x27; окна &#x27;Settings&#x27;; </li>
-<li>при создании новой консоли через интерфейс ConEmu (<tt>+</tt> на тулбаре, список в Recreate-диалоге); </li>
+<li>при создании новой консоли через интерфейс ConEmu (<code>+</code> на тулбаре, список в Recreate-диалоге); </li>
 <li>из командной строки cmd.exe: &quot;%ConEmuBaseDir%\ConEmuC.exe&quot; /c {Shells} -new_console. </li>
 <li>из командной строки far.exe: conemu:run:{Shells} -new_console </li></ul></p>
 <p>ConEmu Jump list настраивается тоже здесь. Настройте список задач, в поле «ConEmu arguments for Jump list» можно дополнительно указать иконку, которая будет отображаться в Jump list, например </p>
 <pre class="prettyprint">/icon &quot;cmd.exe&quot;</pre>
 <p>и рабочую папку, в которой будет запущен указанный процесс, например </p>
 <pre class="prettyprint">/dir &quot;c:\Program Files&quot;</pre>
-<p>После настройки списка задач включите флажок «Add ConEmu tasks to taskbar» и (по желанию) «Add commands from history, too». Нажмите кнопку «Update Now!». В случае успеха вы увидите сообщение «Taskbar jump list was updated successfully», ну или сообщение об ошибке. Есть способ инициировать Jump list при запуске ConEmu (<a title="Jump Lists/Task window problem" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=576">&nbsp;Issue 576&nbsp;</a>, может кому еще понадобится для автоматизации установки, например) для этого запустите (однократно) ConEmu.exe с аргументом &quot;<tt>/updatejumplist</tt>&quot;. </p>
+<p>После настройки списка задач включите флажок «Add ConEmu tasks to taskbar» и (по желанию) «Add commands from history, too». Нажмите кнопку «Update Now!». В случае успеха вы увидите сообщение «Taskbar jump list was updated successfully», ну или сообщение об ошибке. Есть способ инициировать Jump list при запуске ConEmu (<a title="Jump Lists/Task window problem" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=576">&nbsp;Issue 576&nbsp;</a>, может кому еще понадобится для автоматизации установки, например) для этого запустите (однократно) ConEmu.exe с аргументом &quot;<code>/updatejumplist</code>&quot;. </p>
 
 <h2><a name="ComSpec"></a>ComSpec<a href="#ComSpec" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsComspec.png" title="ConEmu settings, Comspec page" alt="ConEmu settings, Comspec page"> </p>
@@ -199,7 +199,7 @@
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> cbVisible </td><td style="border: 1px solid #ccc; padding: 5px;"> Show real console on startup </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> cbNewConfirm </td><td style="border: 1px solid #ccc; padding: 5px;"> Confirm new console creation.<br>You may change cmd line for it, or turn on &#x27;Run as...&#x27; feature.<br>Even if unchecked, You may hold &#x27;Shift&#x27; to display dialog. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> cbDragImage </td><td style="border: 1px solid #ccc; padding: 5px;"> Create and display overlay transparent snapshoot of files are dragged </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> cbAutoRegFonts </td><td style="border: 1px solid #ccc; padding: 5px;"> Search, register for process, and use first <tt>*.ttf</tt> file in conemu folder </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> cbAutoRegFonts </td><td style="border: 1px solid #ccc; padding: 5px;"> Search, register for process, and use first <code>*.ttf</code> file in conemu folder </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> cbDebugSteps </td><td style="border: 1px solid #ccc; padding: 5px;"> Show some debug information in <a href="ConEmu.html">ConEmu</a> title<br>I.e. plugin communication steps. </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> hkCloseConsole </td><td style="border: 1px solid #ccc; padding: 5px;"> Hotkey for recreating (or closing)<br>active console </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> bRealConsoleSettings </td><td style="border: 1px solid #ccc; padding: 5px;"> You may change font face and size in the Real console. Console restart required. </td></tr>

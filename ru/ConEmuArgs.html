@@ -52,7 +52,7 @@ redirect_from: /ru/Command_Line.html
 	<tr><td style="border: 1px solid #ccc; padding: 5px;"> /NoUpdate </td>
 		<td style="border: 1px solid #ccc; padding: 5px;"> Disable automatic checking for updates on startup </td>
 	</tr>
-	<tr><td style="border: 1px solid #ccc; padding: 5px;"> /CT<tt>[0|1]</tt> </td>
+	<tr><td style="border: 1px solid #ccc; padding: 5px;"> /CT<code>[0|1]</code> </td>
 		<td style="border: 1px solid #ccc; padding: 5px;"> Anti-aliasing: /ct0 - off, /ct1 - standard, /ct - clear type </td>
 	</tr>
 	<tr><td style="border: 1px solid #ccc; padding: 5px;"> /Font <i>fontname</i> </td>
@@ -98,10 +98,10 @@ redirect_from: /ru/Command_Line.html
 		<td style="border: 1px solid #ccc; padding: 5px;"> This <strong>special</strong> switches may be specified after <strong>/cmd</strong> switch. Read more about <a href="NewConsole.html">-new_console and -cur_console</a> switches </td>
 	</tr>
 	<tr><td style="border: 1px solid #ccc; padding: 5px;"> /cmd <i>commandline</i> <br> /cmd @<i>taskfile</i> <br> /cmd <i>{taskname}</i> </td>
-		<td style="border: 1px solid #ccc; padding: 5px;"> Command line to start. This must be the last used switch (excepting -new_console and -cur_console). You may use &quot;&gt;&quot; and &quot;<tt>*</tt>&quot; modifiers in <i>taskfile</i> and /BufferHeight argument. <br> <i>taskname</i> is one of the tasks specified on the &quot;Tasks&quot; page of &quot;Settings&quot; dialog. </td>
+		<td style="border: 1px solid #ccc; padding: 5px;"> Command line to start. This must be the last used switch (excepting -new_console and -cur_console). You may use &quot;&gt;&quot; and &quot;<code>*</code>&quot; modifiers in <i>taskfile</i> and /BufferHeight argument. <br> <i>taskname</i> is one of the tasks specified on the &quot;Tasks&quot; page of &quot;Settings&quot; dialog. </td>
 	</tr>
 	<tr><td style="border: 1px solid #ccc; padding: 5px;"> /cmdlist <i>commands</i> </td>
-		<td style="border: 1px solid #ccc; padding: 5px;"> Run several tabs on startup. This must be the last used switch (excepting -new_console and -cur_console). Use the same syntax and abilities as on the &quot;Tasks&quot; page of &quot;Settings&quot; dialog. Delimit commands (tabs) with &quot;<tt>|</tt><tt>|</tt><tt>|</tt>&quot;. Note, that you must escape delimiter &quot;<tt>^|^|^|</tt>&quot; when running from cmd-files. </td>
+		<td style="border: 1px solid #ccc; padding: 5px;"> Run several tabs on startup. This must be the last used switch (excepting -new_console and -cur_console). Use the same syntax and abilities as on the &quot;Tasks&quot; page of &quot;Settings&quot; dialog. Delimit commands (tabs) with &quot;<code>|</code><code>|</code><code>|</code>&quot;. Note, that you must escape delimiter &quot;<code>^|^|^|</code>&quot; when running from cmd-files. </td>
 	</tr>
 </table>
 
@@ -124,9 +124,9 @@ redirect_from: /ru/Command_Line.html
 
 <h3><a name="Example4"></a>Example 4<a href="#Example4" class="section_anchor"></a></h3>
 <p>Starts with four tabs: Far Manager, CMD, PowerShell and Bash. <ul><li>Far.exe will be active console; </li>
-<li>Cmd.exe will be started with 400 lines buffer height in the <tt>%ALLUSERSPROFILE%</tt> directory and special color 4F (white on red); </li>
-<li>PowerShell will be started as Administrator with 1000 lines buffer height in the <tt>%USERPROFILE%</tt> directory; </li>
-<li>Bash (MinGW) will be started in the <tt>C:\Source</tt> directory. </li></ul></p>
+<li>Cmd.exe will be started with 400 lines buffer height in the <code>%ALLUSERSPROFILE%</code> directory and special color 4F (white on red); </li>
+<li>PowerShell will be started as Administrator with 1000 lines buffer height in the <code>%USERPROFILE%</code> directory; </li>
+<li>Bash (MinGW) will be started in the <code>C:\Source</code> directory. </li></ul></p>
 
 <p><strong>Win+R</strong> or <strong>shortcut</strong> syntax (following is <strong>one-line</strong> command, splitted for clearness) </p>
 <pre class="prettyprint">ConEmu.exe /cmdlist
@@ -154,8 +154,8 @@ C:\MinGW\msys\1.0\bin\sh.exe --login -i &quot;-cur_console:d:C:\Source&quot;</pr
 
 <h3><a name="Example5"></a>Example 5<a href="#Example5" class="section_anchor"></a></h3>
 <p>Following example is for use within cmd's batch files or from cmd.exe prompt itself.
-Starts with three cmd tabs, set different bg/fg color (<tt>color</tt> command after <tt>/k</tt> switch)
-and different working directory (<tt>C:\</tt>, <tt>D:\</tt>, <tt>E:\</tt>).
+Starts with three cmd tabs, set different bg/fg color (<code>color</code> command after <code>/k</code> switch)
+and different working directory (<code>C:\</code>, <code>D:\</code>, <code>E:\</code>).
 Following is <strong>one-line</strong> command, splitted for clearness. </p>
 <pre class="prettyprint">start "Three tabs" "C:\Program Files\ConEmu\ConEmu.exe" /cmdlist
   ^> cmd /k color 4C -cur_console:d:C:\

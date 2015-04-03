@@ -100,20 +100,20 @@
 
 <h3><a name="Q._How_to_launch_an_application_in_a_new_ConEmu_tab?"></a>Q. How to launch an application in a new ConEmu tab?<a href="#Q._How_to_launch_an_application_in_a_new_ConEmu_tab?" class="section_anchor"></a></h3>
 <p>A. Indicate the application in the &#x27;Create new console&#x27; field of the new console creation dialog. This dialog can be opened by using the &#x27;New console...&#x27; item from ConEmu&#x27;s system menu, or by using the corresponding keyboard shortcut (Win-W or Win-Shift-W by default). </p>
-<p>A. A new tab can be opened from an existing tab (e.g. from Far) by adding a &#x27;-new_console&#x27; parameter to the application&#x27;s command line. Example: <tt>putty.exe -new_console</tt>. </p>
+<p>A. A new tab can be opened from an existing tab (e.g. from Far) by adding a &#x27;-new_console&#x27; parameter to the application&#x27;s command line. Example: <code>putty.exe -new_console</code>. </p>
 
 <h3><a name="Q._How_to_use_the_&#x27;-new_console&#x27;_parameter?"></a>Q. How to use the &#x27;-new_console&#x27; parameter?<a href="#Q._How_to_use_the_&#x27;-new_console&#x27;_parameter?" class="section_anchor"></a></h3>
 <p>A. The setting &#x27;Inject ConEmuHk&#x27; must be enabled in ConEmu&#x27;s configuration. Afterwards, if ConEmu sees the &#x27;-new_console&#x27; parameter in a launched application&#x27;s command line, it is removed from the command line, and the application/command is ran in a new ConEmu tab. </p>
-<p>A. Additional launch options are available: <tt>-new_console[:bh[N]caru[:user:pwd]]</tt> <ul><li><tt>b</tt> - Create background tab </li>
-<li><tt>h&lt;height&gt;</tt> - Set buffer height: e.g., h0 - disable buffer, h9999 - enable buffer with 9999 lines </li>
-<li><tt>n</tt> - Disable &#x27;Press Enter or Esc to close console&#x27; message </li>
-<li><tt>c</tt> - Explicitly enable &#x27;Press Enter or Esc to close console&#x27; (default) </li>
-<li><tt>a</tt> - RunAs shell verb (as Admin on Vista+, login/password in Win2k and WinXP) </li>
-<li><tt>r</tt> - Run as restricted user </li>
-<li><tt>u</tt> - Open ConEmu choose user dialog </li>
-<li><tt>u:&lt;user&gt;:&lt;pwd&gt;</tt> - specify user/pwd in args. MUST BE THE LAST OPTION. </li></ul><strong>Example:</strong> «<tt>&quot;%ConEmuBaseDir%\ConEmuC.exe&quot; /c dir &quot;-new_console:bh9999c&quot; c:\ /s</tt>». Note that when launching from Far Manager, «<tt>&quot;%ConEmuBaseDir%\ConEmuC.exe&quot; /c </tt>» can be omitted. </p>
+<p>A. Additional launch options are available: <code>-new_console[:bh[N]caru[:user:pwd]]</code> <ul><li><code>b</code> - Create background tab </li>
+<li><code>h&lt;height&gt;</code> - Set buffer height: e.g., h0 - disable buffer, h9999 - enable buffer with 9999 lines </li>
+<li><code>n</code> - Disable &#x27;Press Enter or Esc to close console&#x27; message </li>
+<li><code>c</code> - Explicitly enable &#x27;Press Enter or Esc to close console&#x27; (default) </li>
+<li><code>a</code> - RunAs shell verb (as Admin on Vista+, login/password in Win2k and WinXP) </li>
+<li><code>r</code> - Run as restricted user </li>
+<li><code>u</code> - Open ConEmu choose user dialog </li>
+<li><code>u:&lt;user&gt;:&lt;pwd&gt;</code> - specify user/pwd in args. MUST BE THE LAST OPTION. </li></ul><strong>Example:</strong> «<code>&quot;%ConEmuBaseDir%\ConEmuC.exe&quot; /c dir &quot;-new_console:bh9999c&quot; c:\ /s</code>». Note that when launching from Far Manager, «<code>&quot;%ConEmuBaseDir%\ConEmuC.exe&quot; /c </code>» can be omitted. </p>
 <p>A. For comfort, when using Far, one can configure a macro bound to ShiftEnter (see example in the distribution package). </p>
-<p>A. Pay attention to the parameter <tt>-cur_console:h[N]</tt>, which allows controlling long output of commands or applications when running them from <a href="ConEmuFAQ.html#Far_Manager">Far Manager</a>. </p>
+<p>A. Pay attention to the parameter <code>-cur_console:h[N]</code>, which allows controlling long output of commands or applications when running them from <a href="ConEmuFAQ.html#Far_Manager">Far Manager</a>. </p>
 
 <h3><a name="Q._Which_environment_variables_does_ConEmu_set?"></a>Q. Which environment variables does ConEmu set?<a href="#Q._Which_environment_variables_does_ConEmu_set?" class="section_anchor"></a></h3>
 <p>A. Read wiki page <a href="ConEmuEnvironment.html">ConEmu Environment</a>. </p>
@@ -129,7 +129,7 @@
 
 <h2><a name="Distribution_package"></a>Distribution package<a href="#Distribution_package" class="section_anchor"></a></h2>
 
-<h3><a name="Q._What_is_the_purpose_of_«_ConEmuSetup.*.exe_»?"></a>Q. What is the purpose of «<tt>ConEmuSetup.*.exe</tt>»?<a href="#Q._What_is_the_purpose_of_«_ConEmuSetup.*.exe_»?" class="section_anchor"></a></h3>
+<h3><a name="Q._What_is_the_purpose_of_«_ConEmuSetup.*.exe_»?"></a>Q. What is the purpose of «<code>ConEmuSetup.*.exe</code>»?<a href="#Q._What_is_the_purpose_of_«_ConEmuSetup.*.exe_»?" class="section_anchor"></a></h3>
 <p>A. Using the installer is recommended on computers with UAC enabled (Vista and higher), if you intend to install ConEmu to &quot;Program Files&quot;. </p>
 <p>A. The installer also contains some additional files, e.g. KeyEvents.exe. </p>
 
@@ -147,7 +147,7 @@
 
 <h3><a name="Q._What_is_the_purpose_of_ConEmuHk_.dll_(_ConEmuHk64_.dll)?"></a>Q. What is the purpose of ConEmuHk.dll (ConEmuHk64.dll)?<a href="#Q._What_is_the_purpose_of_ConEmuHk_.dll_(_ConEmuHk64_.dll)?" class="section_anchor"></a></h3>
 <p>A. This module is injected into applications ran in ConEmu. It is required to implement certain options, as well as work around multiple problems manifesting both with and without ConEmu. <ul><li>Z-order of GUI dialogues (without it, dialogues will appear behind ConEmu&#x27;s window); </li>
-<li>Proper function of Far Manager GUI-EMenu (without ConEmuHk<tt>*</tt>.dll it refuses to close by mouse click); </li>
+<li>Proper function of Far Manager GUI-EMenu (without ConEmuHk<code>*</code>.dll it refuses to close by mouse click); </li>
 <li>Implements the flags &quot;No zone check&quot;, &quot;Ascii sort...&quot;, &quot;Hourglass if not responding&quot;; </li>
 <li>Implements the &quot;-new_console&quot; parameter; </li>
 <li>Works around ShellExecute problems (when batch file output does not appear in the console); </li>
@@ -181,13 +181,13 @@
 <p>A. You can configure updates however you like it. <ul><li>Proxy support. </li>
 <li>Selection between «stable» or «alpha» builds. </li>
 <li>In the presence of a new version, ConEmu can ask for confirmation before downloading the package (archive or installer). </li>
-<li>If ConEmu was installed using the installer, and the install path for ConEmu.exe (or ConEmu64.exe) coincides with the current process, updating is done using the installer («<tt>ConEmuSetup.*.exe</tt>»). </li>
+<li>If ConEmu was installed using the installer, and the install path for ConEmu.exe (or ConEmu64.exe) coincides with the current process, updating is done using the installer («<code>ConEmuSetup.*.exe</code>»). </li>
 <li>Otherwise, updating is done using the 7-zip archive. </li>
 <li>Updating from the archive requires that file compression software (<a href="http://www.7-zip.org/" rel="nofollow">7-Zip</a> or <a href="http://www.rarlab.com/" rel="nofollow">WinRAR</a>) is installed. </li>
 <li>By default, packages are downloaded to %TEMP% and deleted after installation is complete. </li>
 <li>However, you can indicate any directory, and choose not to delete installed packages. </li>
-<li>The installation command is ran from a temporary .cmd-file, launched in the directory containing ConEmu.exe. The .cmd-file is created in %TEMP%. </li><ul><li>The default installer command is: <tt>&quot;%1&quot; /p:%3 /qr</tt>. It launches the corresponding (x86/x64) MSI package with the <tt>/qr</tt> parameter (silent update). </li>
-<li>The default archiver command is: <tt>&lt;archiver&gt; x -y &quot;%1&quot;</tt>. <tt>&lt;archiver&gt;</tt> is substituted with the full path to any file compression software, capable of unpacking 7-Zip archives: <a href="http://www.7-zip.org/" rel="nofollow">7zg.exe, 7z.exe</a>, <a href="http://www.rarlab.com/" rel="nofollow">Unrar.exe, WinRar.exe</a>, etc. </li></ul><li>Launching the update script (.cmd-file) is done after ConEmu closes (all tabs are closed), if the user consents. </li>
+<li>The installation command is ran from a temporary .cmd-file, launched in the directory containing ConEmu.exe. The .cmd-file is created in %TEMP%. </li><ul><li>The default installer command is: <code>&quot;%1&quot; /p:%3 /qr</code>. It launches the corresponding (x86/x64) MSI package with the <code>/qr</code> parameter (silent update). </li>
+<li>The default archiver command is: <code>&lt;archiver&gt; x -y &quot;%1&quot;</code>. <code>&lt;archiver&gt;</code> is substituted with the full path to any file compression software, capable of unpacking 7-Zip archives: <a href="http://www.7-zip.org/" rel="nofollow">7zg.exe, 7z.exe</a>, <a href="http://www.rarlab.com/" rel="nofollow">Unrar.exe, WinRar.exe</a>, etc. </li></ul><li>Launching the update script (.cmd-file) is done after ConEmu closes (all tabs are closed), if the user consents. </li>
 <li>Before launching the update script, ConEmu checks that no other ConEmu windows are open. </li>
 <li>After a successful update, you can run any command or script (via cmd.exe). For example, you can copy the new files to other directories, if you have multiple ConEmu installations on your computer. By default, the file ConEmuUpdate.info is created in the same directory as ConEmu.exe, containing a timestamp of the last update. </li>
 <li>New versions are polled from <a href="http://conemu-maximus5.googlecode.com/svn/trunk/ConEmu/version.ini" rel="nofollow">this URL</a>. This address can be configured in the registry or XML using the &quot;Update.VerLocation&quot;, should the need arise (e.g. centralized updating in a networked environment?). </li></ul></p>
@@ -195,7 +195,7 @@
 <h2><a name="x64_issues"></a>x64 issues<a href="#x64_issues" class="section_anchor"></a></h2>
 
 <h3><a name="Q._What_is_the_purpose_of_the_files_ConEmuC.exe,_ConEmuCD.dll_an"></a>Q. What is the purpose of the files ConEmuC.exe, ConEmuCD.dll and ConEmuHk.dll in 64-bit OS?<a href="#Q._What_is_the_purpose_of_the_files_ConEmuC.exe,_ConEmuCD.dll_an" class="section_anchor"></a></h3>
-<p>A. These files are required for launching 32-bit applications, as well as functioning of the 32-bit version of ConEmu. You will likely at some point need to run a 32-bit console application from ConEmu - without these files, it would not be possible. Out of principle, one can use the 64-bit ConEmu64.exe, which is available in the «<tt>ConEmuSetup.*.exe</tt>» package - it launches ConEmuC64.exe as the root console process. </p>
+<p>A. These files are required for launching 32-bit applications, as well as functioning of the 32-bit version of ConEmu. You will likely at some point need to run a 32-bit console application from ConEmu - without these files, it would not be possible. Out of principle, one can use the 64-bit ConEmu64.exe, which is available in the «<code>ConEmuSetup.*.exe</code>» package - it launches ConEmuC64.exe as the root console process. </p>
 
 <h3><a name="Q._What_is_the_purpose_of_the_files_ConEmuC64_.exe,_ConEmuCD64.d"></a>Q. What is the purpose of the files ConEmuC64.exe, ConEmuCD64.dll and ConEmuHk64.dll in the 32-bit version of ConEmu?<a href="#Q._What_is_the_purpose_of_the_files_ConEmuC64_.exe,_ConEmuCD64.d" class="section_anchor"></a></h3>
 <p>A. These files are required to run 64-bit applications in 64-bit OS. </p>
@@ -218,7 +218,7 @@
 /BufferHeight 1000 powershell</pre>
 <p>and run ConEmu like this: </p>
 <pre class="prettyprint">conemu.exe /cmd @startfile.txt</pre>
-<p>Each line in the file corresponds to a launched command. You may specify the console buffer height using the /BufferHeight parameter. If the line starts with &quot;<tt>&gt;</tt>&quot;, this tab will be active on startup. If the line starts with &quot;<tt>*</tt>&quot;, this command will be ran with administrator privileges. </p>
+<p>Each line in the file corresponds to a launched command. You may specify the console buffer height using the /BufferHeight parameter. If the line starts with &quot;<code>&gt;</code>&quot;, this tab will be active on startup. If the line starts with &quot;<code>*</code>&quot;, this command will be ran with administrator privileges. </p>
 
 <h3><a name="Q._Duplicate_Far_Manager_windows"></a>Q. Duplicate Far Manager windows<a href="#Q._Duplicate_Far_Manager_windows" class="section_anchor"></a></h3>
 <p>A. The real console was not hidden. Check the &#x27;Visible&#x27; flag on the &#x27;Features&#x27; tab in the &#x27;Settings&#x27; dialog, or this registry value: </p>
@@ -229,7 +229,7 @@
 <p>A. The bitmap fonts selectable in the standard console&#x27;s properties are actually the Terminal font. For example, the bitmap &#x27;8 x 12&#x27; font is &#x27;Terminal 12 x 8&#x27; in ConEmu, &#x27;12 x 16&#x27; -&gt; &#x27;Terminal 16 x 12&#x27;, etc. <blockquote>Take note: The &#x27;Charset&#x27; field must be set to &#x27;OEM&#x27;. 
 Personally, I prefer &#x27;Fixedsys 16 x 8&#x27;, which is absent in the standard console. 
 </blockquote></p>
-<p>A. In the font list you may directly select e.g. <tt>[Raster Fonts 8x12]</tt>. </p>
+<p>A. In the font list you may directly select e.g. <code>[Raster Fonts 8x12]</code>. </p>
 
 <h3><a name="Q._Why_are_horizontal_lines_(drawn_using_box_drawing_characters)"></a>Q. Why are horizontal lines (drawn using box drawing characters) discontinuous?<a href="#Q._Why_are_horizontal_lines_(drawn_using_box_drawing_characters)" class="section_anchor"></a></h3>
 <p>A. In some fonts, the width of the corresponding box drawing characters is shorter than the font&#x27;s declared average character width, which ConEmu uses to determine the size of box drawing characters. To get rid of the artifacts, enable the checkbox «Fix Far borders» and increase the width of the &quot;frames&quot; font. The corresponding settings are on the &#x27;Main&#x27; tab in the &#x27;Settings&#x27; dialog. </p>
@@ -276,7 +276,7 @@ cmd -cur_console:s2THn</pre>
 <p>A. A simple right-click will activate the tab and display the context menu, from which you may select &#x27;Close&#x27;. </p>
 
 <h3><a name="Q._Mouse_events_(clicks,_wheel)_are_not_sent_to_Far"></a>Q. Mouse events (clicks, wheel) are not sent to Far<a href="#Q._Mouse_events_(clicks,_wheel)_are_not_sent_to_Far" class="section_anchor"></a></h3>
-<p>A. In Far, check the setting Options -&gt; Interface settings -&gt; <tt>[x]</tt> Mouse. </p>
+<p>A. In Far, check the setting Options -&gt; Interface settings -&gt; <code>[x]</code> Mouse. </p>
 <p>A. If Far is launched with «far /w» (System\WindowMode=1), the presence of the ConEmu.dll (ConEmu.x64.dll) plugin is required, otherwise ConEmu will consider Far as a simple console application (like cmd.exe) which does not need mouse events. </p>
 
 <h3><a name="Q._Why_doesn&#x27;t_the_FarHints_plugin_work?"></a>Q. Why doesn&#x27;t the FarHints plugin work?<a href="#Q._Why_doesn&#x27;t_the_FarHints_plugin_work?" class="section_anchor"></a></h3>
@@ -290,7 +290,7 @@ cmd -cur_console:s2THn</pre>
 <p>A. For some reason, ConEmu did not detect the &#x27;panels&#x27; state in Far. The ConEmu.dll (ConEmu.x64.dll) plugin may not be installed. If it is installed, please send screenshots of ConEmu (&#x27;Info&#x27; tab from &#x27;Settings&#x27; dialog) and a screen dump file (ConEmu system menu -&gt; Debug -&gt; Dump screen...). </p>
 
 <h3><a name="Q._Right_mouse_clicks_invoke_a_graphical_context_menu,_whereas_a"></a>Q. Right mouse clicks invoke a graphical context menu, whereas a text one is desired.<a href="#Q._Right_mouse_clicks_invoke_a_graphical_context_menu,_whereas_a" class="section_anchor"></a></h3>
-<p>A. Configure the corresponding macro in the &#x27;Far Manager&#x27; tab of the &#x27;Settings&#x27; window. Example: <tt>F11 e Enter 2</tt> (assumes that the &#x27;e&#x27; hotkey is assigned to the EMenu plugin). </p>
+<p>A. Configure the corresponding macro in the &#x27;Far Manager&#x27; tab of the &#x27;Settings&#x27; window. Example: <code>F11 e Enter 2</code> (assumes that the &#x27;e&#x27; hotkey is assigned to the EMenu plugin). </p>
 
 <h2><a name="Windows_Vista"></a>Windows Vista<a href="#Windows_Vista" class="section_anchor"></a></h2>
 
@@ -308,7 +308,7 @@ cmd -cur_console:s2THn</pre>
 <p>A. One possible cause is when the program destroys its own import table. The proper solution would be to contact the application developer. For a precise verdict, send me a <a href="MemoryDump.html">minidump</a>. </p>
 
 <h3><a name="Q._ConEmu_or_console_application_hangs_on_exit"></a>Q. ConEmu or console application hangs on exit<a href="#Q._ConEmu_or_console_application_hangs_on_exit" class="section_anchor"></a></h3>
-<p>A. No issues for this problem have been filed so far. Nevertheless, if hang occures on exit, create <a href="MemoryDump.html">minidumps</a> for the processes ConEmu<tt>*</tt>.exe, ConEmuC<tt>*</tt>.exe and all console processes (far.exe, cmd.exe...) See below for instructions. Pack up and submit the <a href="MemoryDump.html">minidumps</a> to the developer. To correctly create a <a href="MemoryDump.html">minidump</a> of a 32-bit application in a 64-bit OS, you must use ConEmu. </p>
+<p>A. No issues for this problem have been filed so far. Nevertheless, if hang occures on exit, create <a href="MemoryDump.html">minidumps</a> for the processes ConEmu<code>*</code>.exe, ConEmuC<code>*</code>.exe and all console processes (far.exe, cmd.exe...) See below for instructions. Pack up and submit the <a href="MemoryDump.html">minidumps</a> to the developer. To correctly create a <a href="MemoryDump.html">minidump</a> of a 32-bit application in a 64-bit OS, you must use ConEmu. </p>
 
 <h3><a name="Q._How_to_create_a_minidump"></a>Q. How to create a minidump<a href="#Q._How_to_create_a_minidump" class="section_anchor"></a></h3>
 <p>A. Windows XP and above. <blockquote>Press <strong>Win+R</strong> and run the following command, it will create a full process memory dump (it may be large enough). 
@@ -335,7 +335,7 @@ Or, create a small process memory dump. Yes, it will be small, but may contains 
 <p>A. Press <strong>Ctrl+Shift+Esc</strong> or right click on taskbar and choose menu item «Task Manager». </p>
 
 <h3><a name="Q._ConEmuC:_CreateFile_(CONOUT$)_failed,_ErrCode_=0x00000005"></a>Q. ConEmuC: CreateFile(CONOUT$) failed, ErrCode=0x00000005<a href="#Q._ConEmuC:_CreateFile_(CONOUT$)_failed,_ErrCode_=0x00000005" class="section_anchor"></a></h3>
-<p>A. The launched program created and set up its own console buffer created using <tt>CreateConsoleScreenBuffer(..., 0/*No sharing*/, ...)</tt>. Ask the program author to create the buffer with the correct access flags: </p>
+<p>A. The launched program created and set up its own console buffer created using <code>CreateConsoleScreenBuffer(..., 0/*No sharing*/, ...)</code>. Ask the program author to create the buffer with the correct access flags: </p>
 <pre class="prettyprint">(GENERIC_READ|GENERIC_WRITE, FILE_SHARE_READ|FILE_SHARE_WRITE,...)</pre>
 
 <h2><a name="Unsorted"></a>Unsorted<a href="#Unsorted" class="section_anchor"></a></h2>
@@ -372,7 +372,7 @@ Or, create a small process memory dump. Yes, it will be small, but may contains 
 <h3><a name="Q._How_to_disable_&#x27;Press_Enter_to_close_console...&#x27;?"></a>Q. How to disable &#x27;Press Enter to close console...&#x27;?<a href="#Q._How_to_disable_&#x27;Press_Enter_to_close_console...&#x27;?" class="section_anchor"></a></h3>
 <p>A. The confirmation is disabled automatically, if: <ul><li>the root console command runs for more than 10 seconds, or </li>
 <li>Far Manager is the root process, and the ConEmu plugin is loaded. </li></ul></p>
-<p>A. Add the parameter <tt>-new_console:n</tt> to the launched command. </p>
+<p>A. Add the parameter <code>-new_console:n</code> to the launched command. </p>
 
 <h3><a name="Q._FAR_is_the_root_process,_the_plugin_is_installed,_yet_&#x27;P"></a>Q. FAR is the root process, the plugin is installed, yet &#x27;Press Enter to close console...&#x27; still appears<a href="#Q._FAR_is_the_root_process,_the_plugin_is_installed,_yet_&#x27;P" class="section_anchor"></a></h3>
 <p>A. Make sure that the root process is indeed Far, and not cmd.exe. Check the process list in the &#x27;Info&#x27; tab of the &#x27;Settings&#x27; window. The cause is an incorrect command-line (/cmd argument in ConEmu), possibly incorrect quoting. </p>

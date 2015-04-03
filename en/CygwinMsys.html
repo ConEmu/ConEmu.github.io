@@ -42,8 +42,8 @@
 <p>What I want to say. Windows console is powerful subsystem. Just run there proper shell. If you like bash - just run it! </p>
 
 <h1><a name="Problems_with_cygwin"></a>Problems with cygwin<a href="#Problems_with_cygwin" class="section_anchor"></a></h1>
-<p>Before reporting cygwin-related problem to me, please check it first in the standard Windows console. Just run your shell from <tt>Win+R</tt>, for example <tt>C:\cygwin\bin\sh.exe -l -i</tt>, ensure your console window has the same buffer and window sizes (right click on the console caption, choose ‘Properties’ and change sizes), and try to reproduce your problem. </p>
-<p>I believe, your problem will repeats in standard Windows console (many users erroneously call it ‘cmd.exe’). At the moment, only one reported bug really relates to <a href="ConEmu.html">ConEmu</a>: <a title="Alternative screen and clearing screen (Ctrl+L)" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1549">&nbsp;Issue 1549&nbsp;</a> (clearing screen with <tt>Ctrl+L</tt>). </p>
+<p>Before reporting cygwin-related problem to me, please check it first in the standard Windows console. Just run your shell from <code>Win+R</code>, for example <code>C:\cygwin\bin\sh.exe -l -i</code>, ensure your console window has the same buffer and window sizes (right click on the console caption, choose ‘Properties’ and change sizes), and try to reproduce your problem. </p>
+<p>I believe, your problem will repeats in standard Windows console (many users erroneously call it ‘cmd.exe’). At the moment, only one reported bug really relates to <a href="ConEmu.html">ConEmu</a>: <a title="Alternative screen and clearing screen (Ctrl+L)" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1549">&nbsp;Issue 1549&nbsp;</a> (clearing screen with <code>Ctrl+L</code>). </p>
 <p>But in most of cases, your problem will repeats outside of <a href="ConEmu.html">ConEmu</a>. That means, you should contact cygwin team, because ‘console application must work properly in the console’. But in your case, cygwin acts properly only under certain terminal emulators (mintty), which are not real consoles in fact. </p>
 
 <h1><a name="Report_examples"></a>Report examples<a href="#Report_examples" class="section_anchor"></a></h1>
@@ -63,7 +63,7 @@
 <p>Read more in wiki <a href="CygwinAnsi.html">CygwinAnsi</a>. </p>
 
 <h2><a name="Startup_directory"></a>Startup directory<a href="#Startup_directory" class="section_anchor"></a></h2>
-<p>Cygwin shell always starts in your <tt>&quot;${HOME}&quot;</tt> instead of specified working folder. </p>
+<p>Cygwin shell always starts in your <code>&quot;${HOME}&quot;</code> instead of specified working folder. </p>
 <p>How to change that behaviour - read in wiki <a href="CygwinStartDir.html">CygwinStartDir</a>. </p>
 
 <h1><a name="Resume"></a>Resume<a href="#Resume" class="section_anchor"></a></h1>

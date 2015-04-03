@@ -17,20 +17,20 @@
 <p>But it is yours responsibility (on most of OS versions) to provide some free space in your Explorer. For example, turn on ‘View page’ or ‘Details pane’ in Win8&#x27;s before calling one of ConEmu Inside items. </p>
 <p>In that mode, ConEmu can automatically sync directory (change folder in Explorer window and ConEmu will automatically ‘cd’ to this folder in your shell). To enable this mode - click on the ‘Sync’ item in the ConEmu status bar. </p>
 <p>To pop up ConEmu system menu - right click on the leftmost part of the ConEmu status bar. </p>
-<p>To pop up ConEmu ‘Tab’ menu - right click on the <tt>[+]</tt> item in the ConEmu status bar. </p>
+<p>To pop up ConEmu ‘Tab’ menu - right click on the <code>[+]</code> item in the ConEmu status bar. </p>
 
 <h2><a name="‘Integration’_page_items_description"></a>‘Integration’ page items description<a href="#‘Integration’_page_items_description" class="section_anchor"></a></h2>
 <p><img src="../img/SettingsIntegration2.png" title="Integration page items description"> </p>
 
 <h3><a name="Menu_item"></a>Menu item<a href="#Menu_item" class="section_anchor"></a></h3>
-<p>What you will see in the Explorer popup menu. You can use <tt>&amp;</tt> sign to set hotkey for the menu item. For example, register <tt>ConEmu &amp;Here</tt> and you can press Alt+H to run it from keyboard. Of course, you need to pop up menu first. There is no way to register ‘global’ shortcut for these methods. </p>
+<p>What you will see in the Explorer popup menu. You can use <code>&amp;</code> sign to set hotkey for the menu item. For example, register <code>ConEmu &amp;Here</code> and you can press Alt+H to run it from keyboard. Of course, you need to pop up menu first. There is no way to register ‘global’ shortcut for these methods. </p>
 
 <h3><a name="Configuration"></a>Configuration<a href="#Configuration" class="section_anchor"></a></h3>
 <p>Especially for Inside mode. Allows to set different font, palette and other settings for your <a href="ConEmu.html">ConEmu</a> instance. </p>
 
 <h3><a name="Command"></a>Command<a href="#Command" class="section_anchor"></a></h3>
 <p>Specify your shell here (cmd, powershell, Far Manager, etc.) </p>
-<p>Use <tt>%1</tt> macro for ‘clicked’ item (this may be folder or file!) </p>
+<p>Use <code>%1</code> macro for ‘clicked’ item (this may be folder or file!) </p>
 <p>If you need to pass directory instead of right-clicked file, you can use ‘ConEmuWorkDir!’ macro, example: </p>
 <pre class="prettyprint">&quot;C:\Program Files\Far Manager\Far.exe&quot; &quot;!ConEmuWorkDir!&quot;</pre>
 <p>Want to run shell in the existing window instead of creating new one? Use ‘/single’ switch with following ‘/cmd’, example: </p>

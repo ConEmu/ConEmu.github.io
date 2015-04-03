@@ -18,7 +18,7 @@
 </p>
 
 <h2><a name=""></a><a href="ConEmuArgs.html">Using ConEmu switches</a></h2>
-<p>When you run something from <tt>Win+R</tt> or shortcut from your Desktop, you may use <tt>-cmd</tt> or <tt>-cmdlist</tt> to run your application. Remember, <tt>-cmd</tt> or <tt>-cmdlist</tt> will be the last <a href="ConEmu.html">ConEmu</a>&#x27;s GUI interpreted switch. The rest of command line will be used to start your application. Read more in the <a href="ConEmuArgs.html">wiki</a>. Example: </p>
+<p>When you run something from <code>Win+R</code> or shortcut from your Desktop, you may use <code>-cmd</code> or <code>-cmdlist</code> to run your application. Remember, <code>-cmd</code> or <code>-cmdlist</code> will be the last <a href="ConEmu.html">ConEmu</a>&#x27;s GUI interpreted switch. The rest of command line will be used to start your application. Read more in the <a href="ConEmuArgs.html">wiki</a>. Example: </p>
 <blockquote><a href="ConEmu.html">ConEmu</a> -reuse -dir &quot;c:\projects&quot; -cmd &quot;set PATH=C:\MinGW\bin;%PATH%&quot; &amp; chcp 65001 &amp; sh -l -i 
 </blockquote>
 
@@ -35,7 +35,7 @@
 <p>Well, what you can do with this dialog? <ul><li>Choose command line and startup directory for new process. You may use environment variables in both fields. Also, you may choose from drop down list either any of predefined <a href="Tasks.html">tasks</a> or any command from history. </li>
 <li>Choose another user name and password, ‘Restricted current user’ account or ‘Run as administrator’ feature. </li>
 <li>You may split active tab vertically or horizontally (you need last alpha versions for this feature). </li>
-<li>And it is possible to start new tab in the new ConEmu window (new <tt>ConEmu.exe</tt> process will be started). </li>
+<li>And it is possible to start new tab in the new ConEmu window (new <code>ConEmu.exe</code> process will be started). </li>
 <li>Dialog&#x27;s system menu contains ‘Reset command history’ menu item. </li></ul></p>
 <p>Similar dialog may be opened when you <a href="RestartTab.html">‘Restart current console’</a>. </p>
 
@@ -54,7 +54,7 @@
 <p><strong>Note</strong>. Option ‘Inject ConEmuHk’ must be turned on (Settings -&gt; Features). </p>
 
 <h2><a name="Duplicate_root"></a>Duplicate root<a href="#Duplicate_root" class="section_anchor"></a></h2>
-<p>Well, this interesting feature offers a way to duplicate shell (root process of current tab) state to the new ConEmu tab. For example, you have started <tt>cmd.exe</tt>, set up environment variables, cd somewhere, run any program (vim for example) and call ‘Duplicate root’ from tab popup menu. This will create ‘copy’ of <tt>cmd.exe</tt> at most recent state (when possible). </p>
+<p>Well, this interesting feature offers a way to duplicate shell (root process of current tab) state to the new ConEmu tab. For example, you have started <code>cmd.exe</code>, set up environment variables, cd somewhere, run any program (vim for example) and call ‘Duplicate root’ from tab popup menu. This will create ‘copy’ of <code>cmd.exe</code> at most recent state (when possible). </p>
 
 <h2><a name="Default_terminal_feature"></a>Default terminal feature<a href="#Default_terminal_feature" class="section_anchor"></a></h2>
 <p>This allows to seize creation of console processes from many (selected by user) applications. For example, when you run ‘Command prompt’ shortcut from ‘Start menu’ cmd.exe may start in the new ConEmu tab. Read more about <a href="DefaultTerminal.html">Default terminal feature</a>. </p>

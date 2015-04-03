@@ -10,13 +10,13 @@
 <p>As usual, ConEmu provides more than a one way to do any action. </p>
 
 <h3><a name="options_in_‘Create_new_console’_dialog"></a><a href="SplitScreen.html">SplitScreen</a> options in ‘Create new console’ dialog<a href="#options_in_‘Create_new_console’_dialog" class="section_anchor"></a></h3>
-<p>Open ‘Create new console’ dialog by pressing Win+W or <tt>[+]</tt> toolbar button (note, if you have disabled ‘Create confirmation’ press Win+Shift+W or Shift+<tt>[+]</tt>) and set up ‘New console split’ options. </p>
+<p>Open ‘Create new console’ dialog by pressing Win+W or <code>[+]</code> toolbar button (note, if you have disabled ‘Create confirmation’ press Win+Shift+W or Shift+<code>[+]</code>) and set up ‘New console split’ options. </p>
 
 <h3><a name="From_your_shell_prompt"></a>From your shell prompt<a href="#From_your_shell_prompt" class="section_anchor"></a></h3>
-<p>You may use <tt>-new_console:s[&lt;SplitTab&gt;T][&lt;Percents&gt;](H|V)</tt> switch appended to any command typed in your prompt. Option ‘Inject <a href="ConEmuHk.html">ConEmuHk</a>’ must be enabled to use this feature. Examples: <ul><li><tt>cmd -new_console:s</tt> - split current pane, run <tt>cmd</tt> shell, new pane and old (current) pane become 50% width of current pane. </li>
-<li><tt>cmd -new_console:s50H</tt> - same as <tt>cmd -new_console:s</tt>. </li>
-<li><tt>powershell -NoProfile -new_console:sV</tt> - split current pane, run <tt>powershell -NoProfile</tt>, create new pane to the bottom. </li>
-<li><tt>sh --login -i -new_console:s3T30H</tt> - split 3-d pane, create new pane to the right with 30% width. </li></ul></p>
+<p>You may use <code>-new_console:s[&lt;SplitTab&gt;T][&lt;Percents&gt;](H|V)</code> switch appended to any command typed in your prompt. Option ‘Inject <a href="ConEmuHk.html">ConEmuHk</a>’ must be enabled to use this feature. Examples: <ul><li><code>cmd -new_console:s</code> - split current pane, run <code>cmd</code> shell, new pane and old (current) pane become 50% width of current pane. </li>
+<li><code>cmd -new_console:s50H</code> - same as <code>cmd -new_console:s</code>. </li>
+<li><code>powershell -NoProfile -new_console:sV</code> - split current pane, run <code>powershell -NoProfile</code>, create new pane to the bottom. </li>
+<li><code>sh --login -i -new_console:s3T30H</code> - split 3-d pane, create new pane to the right with 30% width. </li></ul></p>
 
 <h3><a name="Default_hotkeys"></a>Default hotkeys<a href="#Default_hotkeys" class="section_anchor"></a></h3>
 <p>Split key macros (default as Ctrl+Shift+O &amp; Ctrl+Shift+E) works now like ‘Duplicate root...’ menu item. These macros will duplicate shell from your active pane! </p>
@@ -31,6 +31,6 @@ putty -load mysrv -cur_console:s2THn</pre>
 <h2><a name="Working_with_splits"></a>Working with splits<a href="#Working_with_splits" class="section_anchor"></a></h2>
 <ul><li>Cycle switche visible split-panes: Apps+Tab, Apps+Shift+Tab {<a href="GuiMacro.html">GuiMacro</a>: Tab(10,...)}. </li>
 <li>Put focus to nearest pane: Apps+Up, Apps+Down, Apps+Left, Apps+Right {<a href="GuiMacro.html">GuiMacro</a>: Split(2,...)}. </li>
-<li>Move splitter (resize panes): Apps+Shift+Up, Apps+Shift+Down, Apps+Shift+Left, Apps+Shift+Right {<a href="GuiMacro.html">GuiMacro</a>: Split(1,...)}. </li></ul><p>Wondering what is the ‘Apps’ key? This key usually located between RightWin and RightCtrl, defined as <tt>VK_APPS</tt> in <tt>WinUser.h</tt> ;) </p>
+<li>Move splitter (resize panes): Apps+Shift+Up, Apps+Shift+Down, Apps+Shift+Left, Apps+Shift+Right {<a href="GuiMacro.html">GuiMacro</a>: Split(1,...)}. </li></ul><p>Wondering what is the ‘Apps’ key? This key usually located between RightWin and RightCtrl, defined as <code>VK_APPS</code> in <code>WinUser.h</code> ;) </p>
 
 <!-- Content ends -->

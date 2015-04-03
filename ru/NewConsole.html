@@ -22,19 +22,19 @@
 <p>Or, if you need to run some script with disabled ‘<a href="ConEmuHk.html">Inject ConEmuHk</a>’ from your shell prompt running in the ConEmu tab, you may use ‘-cur_console:i’ switch. </p>
 <pre class="prettyprint">cmd /c -cur_console:i MyBatch.cmd BatchArg1 ... BatchArgN</pre>
 <p>Switches may be used in the: </p>
-<ul><li>ConEmu command line (<tt>/cmd</tt> or <tt>/cmdlist</tt> from <a href="ConEmuArgs.html">ConEmu.exe arguments</a> or ‘Command line’ from the <a href="Settings.html#Startup">Settings</a>); </li>
+<ul><li>ConEmu command line (<code>/cmd</code> or <code>/cmdlist</code> from <a href="ConEmuArgs.html">ConEmu.exe arguments</a> or ‘Command line’ from the <a href="Settings.html#Startup">Settings</a>); </li>
 <li>ConEmu <a href="Settings.html#Tasks">Tasks</a> (commands area); </li>
 <li>your shell prompt started in ConEmu (‘<a href="ConEmuHk.html">Inject ConEmuHk</a>’ must be enabled in the <a href="Settings.html#Features">Settings</a>); </li>
-<li>and at last within switches of console application running with Default terminal feature. </li></ul><p>You must <strong>not</strong> specify them as ConEmu(64).exe or ConEmuC(64).exe arguments. Specify them AFTER <tt>/cmd</tt> or <tt>/cmdlist</tt> (ConEmu.exe) and <tt>/c</tt> or <tt>/k</tt> (ConEmuC.exe) if you need to use them with ConEmu&#x27;s executables command line. </p>
+<li>and at last within switches of console application running with Default terminal feature. </li></ul><p>You must <strong>not</strong> specify them as ConEmu(64).exe or ConEmuC(64).exe arguments. Specify them AFTER <code>/cmd</code> or <code>/cmdlist</code> (ConEmu.exe) and <code>/c</code> or <code>/k</code> (ConEmuC.exe) if you need to use them with ConEmu&#x27;s executables command line. </p>
 <pre class="prettyprint">ConEmu.exe /cmdlist cmd ||| powershell -new_console:sV</pre>
 
 <h1><a name="Exclusions"></a>Exclusions<a href="#Exclusions" class="section_anchor"></a></h1>
-<p>Sometimes, you may need to disable processing of ‘-new_console’ and ‘-cur_console’ switches at all. For example, you need to create git commit with <tt>-new_console</tt> in the commit message, or create string value in the registry, using <tt>reg.exe</tt> tool. There are several ways to disable or skip processing of these switches. </p>
+<p>Sometimes, you may need to disable processing of ‘-new_console’ and ‘-cur_console’ switches at all. For example, you need to create git commit with <code>-new_console</code> in the commit message, or create string value in the registry, using <code>reg.exe</code> tool. There are several ways to disable or skip processing of these switches. </p>
 <ul><li>Option ‘Process -new_console and -cur_console switches’ on the <a href="Settings.html#Features">Features</a> Settings page. When you disable that option swithes will not be processed when you run something from your shell prompt or scripts (inside ConEmu tabs). </li>
 <li>Using single quotes or backslashes, examples below. </li><pre class="prettyprint">git commit -m &quot;Fix behavior of the &#x27;-new_console&#x27; switches&quot;
 reg.exe add &quot;HKCU\command&quot; /ve /t REG_EXPAND_SZ /d &quot;\&quot;C:\ConEmu\ConEmuPortable.exe\&quot; /Dir \&quot;%V\&quot; /cmd \&quot;cmd.exe\&quot; \&quot;-new_console:nC:cmd.exe\&quot; \&quot;-cur_console:d:%V\&quot;&quot; /f</pre>
-<li>Switches will not be processed <strong>after</strong> the one of the ConEmu&#x27;s executables: <tt>ConEmu(64).exe</tt>, <tt>ConEmuC(64).exe</tt> or <tt>ConEmuPortable.exe</tt>. For example, when you run <tt>ConEmu.exe</tt> from your shell prompt, switch ‘-new_console’ will be applied to the tab started in the <strong>new</strong> ConEmu window, and doesn&#x27;t create new tab with one ConEmu window <strong>inside</strong> another ConEmu window. <strong>Note</strong> This behavior first introduced in the build 140220. </li><pre class="prettyprint">ConEmu /cmd PowerShell.exe -new_console:h9999</pre>
-<li>Using <a href="ConEmuEnvironment.html">environment</a> shell variable <tt>ConEmuHooks</tt> within your scripts (<tt>rungit.cmd</tt> for example). </li><pre class="prettyprint">rem Call &quot;setlocal&quot; to restrict environment change to that batch only
+<li>Switches will not be processed <strong>after</strong> the one of the ConEmu&#x27;s executables: <code>ConEmu(64).exe</code>, <code>ConEmuC(64).exe</code> or <code>ConEmuPortable.exe</code>. For example, when you run <code>ConEmu.exe</code> from your shell prompt, switch ‘-new_console’ will be applied to the tab started in the <strong>new</strong> ConEmu window, and doesn&#x27;t create new tab with one ConEmu window <strong>inside</strong> another ConEmu window. <strong>Note</strong> This behavior first introduced in the build 140220. </li><pre class="prettyprint">ConEmu /cmd PowerShell.exe -new_console:h9999</pre>
+<li>Using <a href="ConEmuEnvironment.html">environment</a> shell variable <code>ConEmuHooks</code> within your scripts (<code>rungit.cmd</code> for example). </li><pre class="prettyprint">rem Call &quot;setlocal&quot; to restrict environment change to that batch only
 setlocal
 rem Disable processing of the -new_console switch
 set ConEmuHooks=NOARG
@@ -85,7 +85,7 @@ git -am &quot;Commit message with -new_console argument&quot;</pre>
 <li>While you create new tab from ConEmu GUI interface, ‘-new_console’ and ‘-cur_console’ have the same effect. </li>
 <li>These are NOT a switches of ConEmuC, specify them as application (far, vim, putty, etc.) switches. </li>
 <li>You may put multiple simple or quoted string switches delimited with colon, example: </li><pre class="prettyprint">cmd -new_console:a:bc:d:&quot;c:\users\Pete&quot;:u:&quot;Pete:password&quot;`</pre>
-<li>You may need to escape special symbols <strong><tt>&lt;&gt;()&amp;|^&quot;</tt></strong> with <tt>^</tt> symbol, example: </li><pre class="prettyprint">cmd -new_console:P:&quot;^&lt;PowerShell^&gt;&quot;</pre>
+<li>You may need to escape special symbols <strong><code>&lt;&gt;()&amp;|^&quot;</code></strong> with <code>^</code> symbol, example: </li><pre class="prettyprint">cmd -new_console:P:&quot;^&lt;PowerShell^&gt;&quot;</pre>
 </ul><p><!-- ==If you need to pass same name argument to console program==Hm, in this really rare case (I have not know any program at that moment) you may use following form
  </p>
 <pre class="prettyprint">program.exe -new_console:- -new_console ‘other arguments’</pre>
@@ -102,15 +102,15 @@ git -am &quot;Commit message with -new_console argument&quot;</pre>
 <pre class="prettyprint">&quot;%ConEmuBaseDir%\ConEmuC.exe&quot; /c dir &quot;-new_console:bh9999c&quot; c:\ /s</pre>
 
 <h2><a name="Example_2"></a>Example 2<a href="#Example_2" class="section_anchor"></a></h2>
-<p>Starts &quot;<tt>vim.exe c:\sources\1.cpp</tt>&quot; in new ConEmu tab, disable buffer scrolling (buffer height will be equal to window height), do not show &#x27;Press Enter or Esc to close console&#x27; after exiting vim. </p>
+<p>Starts &quot;<code>vim.exe c:\sources\1.cpp</code>&quot; in new ConEmu tab, disable buffer scrolling (buffer height will be equal to window height), do not show &#x27;Press Enter or Esc to close console&#x27; after exiting vim. </p>
 <pre class="prettyprint">vim.exe -new_console:nh0 c:\sources\1.cpp</pre>
 
 <h2><a name="Example_3"></a>Example 3<a href="#Example_3" class="section_anchor"></a></h2>
-<p>Starts &quot;<tt>cmd.exe</tt>&quot; in specified directory with specified login/username (Nick) and password (pwd). </p>
+<p>Starts &quot;<code>cmd.exe</code>&quot; in specified directory with specified login/username (Nick) and password (pwd). </p>
 <pre class="prettyprint">cmd.exe &quot;-new_console:d:C:\Users\Nick&quot; &quot;-new_console:u:Nick:pwd&quot;</pre>
 
 <h2><a name="Example_4_(Far_Manager_related)"></a>Example 4 (Far Manager related)<a href="#Example_4_(Far_Manager_related)" class="section_anchor"></a></h2>
-<p>Starts &quot;<tt>hiew.exe c:\tools\app.exe</tt>&quot; in <strong>current</strong> ConEmu tab, do not enabling buffer scrolling (buffer height will be equal to window height). </p>
+<p>Starts &quot;<code>hiew.exe c:\tools\app.exe</code>&quot; in <strong>current</strong> ConEmu tab, do not enabling buffer scrolling (buffer height will be equal to window height). </p>
 <pre class="prettyprint">hiew.exe -cur_console:h0 c:\tools\app.exe</pre>
 
 <h2><a name="Example_5"></a>Example 5<a href="#Example_5" class="section_anchor"></a></h2>

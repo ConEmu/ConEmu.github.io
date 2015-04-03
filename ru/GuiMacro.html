@@ -93,7 +93,7 @@ ConEmuC -GuiMacro:0 print: C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroR
 <li><a href="#Gui_args">From shortcut (ConEmu and ConEmu64)</a>. </li>
 <pre class="prettyprint">ConEmu.exe -Detached -GuiMacro "Create(0,1); Context; print(\"echo \\\"Hello world\\\"\");"</pre>
 
-<li><a href="AnsiEscapeCodes.html">ANSI X3.64</a> OSC code. The following example, is an example only (if you need to check ‘<a href="ConEmuC.html">IsConEmu</a>’ it is better to call &quot;<tt>ConEmuC -IsConEmu</tt>&quot; and check %errorlevel%). </li>
+<li><a href="AnsiEscapeCodes.html">ANSI X3.64</a> OSC code. The following example, is an example only (if you need to check ‘<a href="ConEmuC.html">IsConEmu</a>’ it is better to call &quot;<code>ConEmuC -IsConEmu</code>&quot; and check %errorlevel%). </li>
 <pre class="prettyprint">rem We need real ESC code (symbol with ASCII \x1B) in cmd scripts
 call SetEscChar.cmd
 echo %ESC%]9;6;&quot;IsConEmu&quot;%ESC%\
@@ -103,9 +103,9 @@ if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 <pre class="prettyprint">F11 -&gt; ConEmu -&gt; Execute ConEmu macro</pre>
 
 <li>Via Far Manager macros. </li>
-	<ul><li><strong>Far3-lua</strong>: <tt>Plugin.SyncCall(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</tt> </li>
-		<li><strong>Far3-pre-lua</strong>: <tt>Plugin.Call(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</tt>, <i>callplugin is alias of Plugin.Call</i> </li>
-		<li><strong>Far2</strong>: <tt>callplugin(0x43454D55,&quot;IsConEmu()&quot;)</tt> </li>
+	<ul><li><strong>Far3-lua</strong>: <code>Plugin.SyncCall(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</code> </li>
+		<li><strong>Far3-pre-lua</strong>: <code>Plugin.Call(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</code>, <i>callplugin is alias of Plugin.Call</i> </li>
+		<li><strong>Far2</strong>: <code>callplugin(0x43454D55,&quot;IsConEmu()&quot;)</code> </li>
 	</ul>
 </ul>
 
@@ -127,12 +127,12 @@ if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 
 <h3><a name="Executing_several_functions_at_once"></a>Executing several functions at once<a href="#Executing_several_functions_at_once" class="section_anchor"></a></h3>
 <ul><li>delimited by semicolons: </li><pre class="prettyprint">print(&quot;abc&quot;); keys(&quot;^_&quot;); print(&quot;def&quot;)</pre>
-<li>delimited by <tt>-GuiMacro</tt> when called from your shell prompt: </li><pre class="prettyprint">ConEmuC -GuiMacro print abc -GuiMacro keys &quot;^_&quot; -GuiMacro print def</pre>
+<li>delimited by <code>-GuiMacro</code> when called from your shell prompt: </li><pre class="prettyprint">ConEmuC -GuiMacro print abc -GuiMacro keys &quot;^_&quot; -GuiMacro print def</pre>
 </ul>
 
 <h3><a name="Numerical_arguments"></a>Numerical arguments<a href="#Numerical_arguments" class="section_anchor"></a></h3>
-<ul><li>decimal form with leading optional ‘+’ or ‘-’: <tt>FontSetSize(1,-1)</tt> </li>
-<li>hexadecimal form with ‘0x’ or ‘0X’ prefix: <tt>MsgBox(&quot;Text&quot;,&quot;Title&quot;,0x132)</tt> </li></ul>
+<ul><li>decimal form with leading optional ‘+’ or ‘-’: <code>FontSetSize(1,-1)</code> </li>
+<li>hexadecimal form with ‘0x’ or ‘0X’ prefix: <code>MsgBox(&quot;Text&quot;,&quot;Title&quot;,0x132)</code> </li></ul>
 
 <h3><a name="String_arguments"></a>String arguments<a href="#String_arguments" class="section_anchor"></a></h3>
 <p>It is recommended to put string arguments in doublequotes, but in fact that is not required for ‘one-word’ arguments. </p>
@@ -148,7 +148,7 @@ if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 \b  --&gt; Backspace (ASCII 8)
 \e  --&gt; Escape (ASCII 27)
 \a  --&gt; Alert (ASCII 7)</pre>
-<p>And hexadecimal form <tt>&quot;\xNNNN&quot;</tt> (up to 4 digits) may be used to specify exact unicode character: </p>
+<p>And hexadecimal form <code>&quot;\xNNNN&quot;</code> (up to 4 digits) may be used to specify exact unicode character: </p>
 <pre class="prettyprint">\x1B   --&gt; same as \e (ASCII 27)
 \x044F --&gt; russian ‘я’ letter</pre>
 <p>Example: </p>
@@ -159,46 +159,46 @@ if &quot;%ConEmuMacroResult%&quot;==&quot;Yes&quot; echo ConEmu found!</pre>
 <pre class="prettyprint">print(@&quot;CD /d &quot;&quot;C:\Users&quot;&quot;&quot;)</pre>
 
 <h4><a name="Far_plugin_notes"></a>Far plugin notes<a href="#Far_plugin_notes" class="section_anchor"></a></h4>
-<p>When you run some GuiMacro&#x27;s from Far Manager macro and the string has backslashes (&quot;<tt>C:\\Users\\...</tt>&quot;) you need to use verbatim strings or double-double them because ConEmu GuiMacro parser always parse escaped symbols itself. The GuiMacro may be called from many places (from command line for example) and parser is the one for all inputs. </p>
+<p>When you run some GuiMacro&#x27;s from Far Manager macro and the string has backslashes (&quot;<code>C:\\Users\\...</code>&quot;) you need to use verbatim strings or double-double them because ConEmu GuiMacro parser always parse escaped symbols itself. The GuiMacro may be called from many places (from command line for example) and parser is the one for all inputs. </p>
 <pre class="prettyprint">Plugin.SyncCall(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;shell(\&quot;new_console\&quot;,@\&quot;&quot;..win.GetEnv(&quot;FARHOME&quot;)..&quot;\\far.exe\&quot;)&quot;)</pre>
 
 <h2><a name="Command_line"></a>Command line (ConEmuC and ConEmuC64)<a href="#Command_line" class="section_anchor"></a></h2>
-<p>Syntax (doesn&#x27;t matter <tt>ConEmuC.exe</tt> or <tt>ConEmuC64.exe</tt> you are using): </p>
+<p>Syntax (doesn&#x27;t matter <code>ConEmuC.exe</code> or <code>ConEmuC64.exe</code> you are using): </p>
 <pre class="prettyprint">ConEmuC /GuiMacro[:PID|HWND][:T&lt;tab&gt;][:S&lt;split&gt;] &lt;GuiMacro command&gt;
 or
 ConEmuC -GuiMacro[:PID|HWND][:T&lt;tab&gt;][:S&lt;split&gt;] &lt;GuiMacro command&gt;</pre>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>PID</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <i>‘Process ID’, decimal number</i> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> 0 </td><td style="border: 1px solid #ccc; padding: 5px;"> Special value means ‘Use active tab/split of the first found ConEmu window </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmu GUI PID </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>ConEmu.exe</tt> or <tt>ConEmu64.exe</tt>, macro will be executed in the <strong>active</strong> tab/split </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> Console server PID </td><td style="border: 1px solid #ccc; padding: 5px;"> <tt>ConEmuC.exe</tt> or <tt>ConEmuC64.exe</tt> started with <tt>/ROOT</tt> argument </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>HWND</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <i>Window descriptor, hexadecimal number with <tt>x</tt> prefix</i> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmu GUI PID </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>ConEmu.exe</code> or <code>ConEmu64.exe</code>, macro will be executed in the <strong>active</strong> tab/split </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> Console server PID </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>ConEmuC.exe</code> or <code>ConEmuC64.exe</code> started with <code>/ROOT</code> argument </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>HWND</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <i>Window descriptor, hexadecimal number with <code>x</code> prefix</i> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmu GUI HWND </td><td style="border: 1px solid #ccc; padding: 5px;"> Main ConEmu window, macro will be executed in the <strong>active</strong> tab/split </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> Console server HWND </td><td style="border: 1px solid #ccc; padding: 5px;"> The hidden real console window </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>T<tt>&lt;</tt>tab<tt>&gt;</tt></strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> Changes affected <a href="RealConsole.html">RealConsole</a>, <i>‘tab’, decimal 1-based tab index</i> </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>S<tt>&lt;</tt>split<tt>&gt;</tt></strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> Changes affected <a href="RealConsole.html">RealConsole</a>, <i>‘split’, decimal 1-based pane index of selected/active group of panes</i> </td></tr> </table></p>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>T<code>&lt;</code>tab<code>&gt;</code></strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> Changes affected <a href="RealConsole.html">RealConsole</a>, <i>‘tab’, decimal 1-based tab index</i> </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>S<code>&lt;</code>split<code>&gt;</code></strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> Changes affected <a href="RealConsole.html">RealConsole</a>, <i>‘split’, decimal 1-based pane index of selected/active group of panes</i> </td></tr> </table></p>
 <p>When GUI macro executed, ConEmuC.exe set errorlevel to 0 and write result to StdOut. </p>
-<p>When you execute macro without <tt>PID</tt> or <tt>HWND</tt>, </p>
+<p>When you execute macro without <code>PID</code> or <code>HWND</code>, </p>
 <pre class="prettyprint">ConEmuC -GuiMacro print abc</pre>
 <p>your macro will be executed in the <strong>current</strong> console (tab/split), if it was started in ConEmu. On the other hand, if you try to call that <strong>outside</strong> of ConEmu - execution will fails with ‘%errorlevel% == 134’, because your console (where you are trying to execute macro) is <strong>not</strong> a ConEmu console. </p>
-<p>So, if you need to execute macro from any external application (Visual Studio, Sublime text, even from <tt>Win+R</tt>) you may specify exact instance with <tt>PID</tt> or <tt>HWND</tt>.  </p>
-<p><tt>PID</tt> must be decimal number. <tt>HWND</tt> must be specified as hexadecimal number (window descriptor) with ‘x’ prefix. Exact value you may see in the ConEmu status bar, in the Windows Task Manager, or find yourself using Windows API. </p>
+<p>So, if you need to execute macro from any external application (Visual Studio, Sublime text, even from <code>Win+R</code>) you may specify exact instance with <code>PID</code> or <code>HWND</code>.  </p>
+<p><code>PID</code> must be decimal number. <code>HWND</code> must be specified as hexadecimal number (window descriptor) with ‘x’ prefix. Exact value you may see in the ConEmu status bar, in the Windows Task Manager, or find yourself using Windows API. </p>
 <p>Few examples: </p>
 <pre class="prettyprint">ConEmuC -GuiMacro:0 print: C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32
 ConEmuC -GuiMacro:8204 print &quot;This is sample text&quot;
 ConEmuC -GuiMacro:x140F32 WindowMinimize</pre>
 
 <h2><a name="Gui_args"></a>Run from shortcut (ConEmu and ConEmu64)<a href="#Gui_args" class="section_anchor"></a></h2>
-<p>If you need to run some GuiMacro(s) after ConEmu starts user may use ‘<tt>-GuiMacro</tt>’ switch with <tt>ConEmu.exe</tt> or <tt>ConEmu64.exe</tt>.
-Only one ‘<tt>-GuiMacro</tt>’ switch may be specified, but you may delimit functions with semicolon.
+<p>If you need to run some GuiMacro(s) after ConEmu starts user may use ‘<code>-GuiMacro</code>’ switch with <code>ConEmu.exe</code> or <code>ConEmu64.exe</code>.
+Only one ‘<code>-GuiMacro</code>’ switch may be specified, but you may delimit functions with semicolon.
 Also, double quotes and backslashes must be properly escaped within string arguments. </p>
 <p>The following example will start ConEmu window without tabs,
 show ‘<a href="LaunchNewTab.html#Create_new_console_dialog">Create new console</a>’ dialog
-and prints into the created console <tt>echo "Hello world"</tt>.</p>
+and prints into the created console <code>echo "Hello world"</code>.</p>
 <pre class="prettyprint">ConEmu.exe -Detached -GuiMacro "Create(0,1); Context; print(\"echo \\\"Hello world\\\"\");"</pre>
 
 <h2><a name="Far_Manager_plugin"></a>Far Manager plugin<a href="#Far_Manager_plugin" class="section_anchor"></a></h2>
-<p>You may run GuiMacro from Far Plugin (<tt>ConEmu.dll</tt> / <tt>ConEmu64.dll</tt>) from: <ul><li>Using menu command: <tt>F11</tt> -&gt; <tt>ConEmu</tt> -&gt; <tt>Execute ConEmu macro</tt> </li>
+<p>You may run GuiMacro from Far Plugin (<code>ConEmu.dll</code> / <code>ConEmu64.dll</code>) from: <ul><li>Using menu command: <code>F11</code> -&gt; <code>ConEmu</code> -&gt; <code>Execute ConEmu macro</code> </li>
 <li>Using Far Manager macro language: </li><ul><li><strong>Far v3.x Lua</strong>: </li></p>
 <pre class="prettyprint">Plugin.SyncCall(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</pre>
 <li><strong>Far v3.x pre Lua</strong>: </li><pre class="prettyprint">Plugin.Call(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,&quot;IsConEmu()&quot;)</pre>
@@ -512,10 +512,10 @@ WindowMode([\&quot;&lt;Mode&gt;\&quot;])
 </div>
 
 <h2><a name="SetOption"></a>SetOption<a href="#SetOption" class="section_anchor"></a></h2>
-<p>You may change some (or most) of <a href="ConEmu.html">ConEmu</a> settings using <tt>SetOption</tt> macro function. </p>
+<p>You may change some (or most) of <a href="ConEmu.html">ConEmu</a> settings using <code>SetOption</code> macro function. </p>
 <p>It may be used <strong>by name</strong> for several options, for example </p>
 <pre class="prettyprint">SetOption(&quot;FarGotoEditorPath&quot;,&quot;far.exe /e%1:%2 \&quot;%3\&quot;&quot;)</pre>
-<p>Or <strong>by CheckBox/RadioButton ID</strong>. Of course you must know that number-ID. Look up the control by its label in the <a href="https://github.com/Maximus5/ConEmu/blob/master/src/ConEmu/ConEmu.rc" rel="nofollow">ConEmu.rc</a> (don&#x27;t forget about possible ‘<tt>&amp;</tt>’) and then look up the exact number-ID by its string-ID in the <a href="https://github.com/Maximus5/ConEmu/blob/master/src/ConEmu/resource.h" rel="nofollow">resource.h</a>. </p>
+<p>Or <strong>by CheckBox/RadioButton ID</strong>. Of course you must know that number-ID. Look up the control by its label in the <a href="https://github.com/Maximus5/ConEmu/blob/master/src/ConEmu/ConEmu.rc" rel="nofollow">ConEmu.rc</a> (don&#x27;t forget about possible ‘<code>&amp;</code>’) and then look up the exact number-ID by its string-ID in the <a href="https://github.com/Maximus5/ConEmu/blob/master/src/ConEmu/resource.h" rel="nofollow">resource.h</a>. </p>
 <p>Turn scrollbar on: </p>
 <pre class="prettyprint">ConEmuC -GuiMacro SetOption Check 2488 1</pre>
 <p>Turn Quake style activation off </p>

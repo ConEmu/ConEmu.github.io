@@ -14,7 +14,7 @@
 <p>As <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms646309(v=vs.85).aspx" rel="nofollow">msdn</a> said, F12 is reserved for use by the debugger. </p>
 <pre class="prettyprint">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug]
 &quot;UserDebuggerHotKey&quot;=dword:00000000 ; The default, steal F12 global hotkey</pre>
-<p>However, <a href="http://technet.microsoft.com/en-us/library/cc786263.aspx" rel="nofollow">technet</a> describes a way how to choose another key via registry. For example, change the value to <tt>0x13</tt> to use <tt>Pause</tt> key for debugger. </p>
+<p>However, <a href="http://technet.microsoft.com/en-us/library/cc786263.aspx" rel="nofollow">technet</a> describes a way how to choose another key via registry. For example, change the value to <code>0x13</code> to use <code>Pause</code> key for debugger. </p>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;">Code</td><td style="border: 1px solid #ccc; padding: 5px;">Name</td><td style="border: 1px solid #ccc; padding: 5px;">Code</td><td style="border: 1px solid #ccc; padding: 5px;">Name</td><td style="border: 1px solid #ccc; padding: 5px;">Code</td><td style="border: 1px solid #ccc; padding: 5px;">Name</td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> 0x00 </td><td style="border: 1px solid #ccc; padding: 5px;"> F12         </td><td style="border: 1px solid #ccc; padding: 5px;"> 0x15 </td><td style="border: 1px solid #ccc; padding: 5px;"> VK_KANA, ...   </td><td style="border: 1px solid #ccc; padding: 5px;"> 0x25      </td><td style="border: 1px solid #ccc; padding: 5px;"> VK_LEFT     </td></tr>
