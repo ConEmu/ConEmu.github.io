@@ -256,163 +256,57 @@ table, th, td {
   margin: 10px 6px 0px 0px;
 }
 
-/* Menu
+/* Menu and Search
 -----------------------------------------------------------------------------*/
 .block {
-  float: left;
-  /*-webkit-background-clip: border-box;
-  -webkit-background-origin: padding-box;
-  -webkit-background-size: auto;*/
-  background-attachment: scroll;
-  background-clip: border-box;
-  /*
+  margin: 10px 0px 20px 0px;
+  width: 180px;
   background-color: #fdf6e3;
-  border-left: 1px solid #93a1a1;
-  border-right: 1px solid #93a1a1;
-  */
-  /*background-color: rgba(0, 0, 0, 0);*/
-  background-image: url('./img/22.gif');
-  background-repeat: repeat-y;
-  background-origin: padding-box;
-  background-size: auto;
-  /*color: rgb(0, 0, 0);*/
+  box-shadow: 0 0 4px 1px #93a1a1;
+  -webkit-box-shadow: 0 0 4px 1px #93a1a1;
+  -moz-box-shadow: 0 0 4px 1px #93a1a1;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: .5em;
+
   display: block;
   font-family: Tahoma, Arial;
-  /*font-size: 12px;
+  font-size: 90%;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  height: 359px;
-  line-height: normal;*/
-  margin: 5px 0px 0px 0px;
+  line-height: normal;
+  position: relative;
   text-align: left;
-  width: 100%;
 }
+
 .blocktitle {
-  -webkit-background-clip: border-box;
-  -webkit-background-origin: padding-box;
-  -webkit-background-size: auto;
-  background-attachment: scroll;
-  background-clip: border-box;
-  /*background-color: #fdf6e3;*/
-  /*background-color: rgba(0, 0, 0, 0);*/
-  background-image: url('./img/23.gif');
-  background-repeat: no-repeat;
-  background-origin: padding-box;
-  background-size: auto;
-  color: rgb(77, 66, 78);
-  display: block;
-  font-family: Tahoma;
-  font-size: 14px;
+  font-family: Tahoma, Arial;
+  font-size: 110%;
   font-stretch: normal;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  height: 17px;
-  line-height: normal;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+  padding: 0 0 5px 0;
   text-align: left;
   text-transform: uppercase;
-  width: 180px;
 }
-.blockcontent {
-  color: rgb(0, 0, 0);
-  display: block;
-  font-family: Tahoma, Arial;
-  font-size: 12px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  height: 310px;
-  line-height: normal;
-  margin-bottom: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 0px;
-  position: relative;
-  text-align: left;
-  width: 180px;
-}
-.blockbottom {
-  -webkit-background-clip: border-box;
-  -webkit-background-origin: padding-box;
-  -webkit-background-size: auto;
-  background-attachment: scroll;
-  background-clip: border-box;
-  /*background-color: rgba(0, 0, 0, 0);*/
-  background-image: url('./img/24.gif');
-  background-origin: padding-box;
-  background-size: auto;
-  /*color: rgb(0, 0, 0);*/
-  display: block;
-  font-family: Tahoma, Arial;
-  font-size: 12px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  height: 12px;
-  line-height: normal;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  text-align: left;
-  width: 200px;
-}
-.blockcontent ul {
+
+.block ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.blockcontent li {
+
+.block li {
   line-height: 1.5em !important;
 }
-.blockcontent .MenuItemA {
+
+.block .MenuItemA {
   text-decoration: none !important;
 }
-/*
-.blockcontent li {
-  list-style: none;
-  margin: 0;
-  background: #eee8d5 url('./img/25.gif') repeat-x;
-  border-bottom: 1px solid #839496;
-  line-height: 14px !important;
-}
-*/
-/*
-.blockcontent li a {
-  font: 12px/12px 'Tahoma';
-  margin: 0;
-  display: block;
-  padding: 9px 0px;
-}
-*/
-/*
-.blockcontent li a:hover, .blockcontent .MenuItemA {
-  color: #6196da;
-  text-decoration: none !important;
-}
-*/
-/*
-.blockcontent li span {
-  padding: 0px 0px 2px 20px;
-  margin-left: 10px;
-}
-*/
-/*
-.blockcontent a {
-  text-decoration: none !important;
-  background: url('./img/26.png') 8px 9px no-repeat;
-  padding: 0px 0px 2px 20px;
-  margin-left: 10px;
-}
-*/
-/*
-.blockcontent .MenuItemA {
-  background: url('./img/27.png') 8px 9px no-repeat;
-}
-*/
+
 
 /* Header
 -----------------------------------------------------------------------------*/
