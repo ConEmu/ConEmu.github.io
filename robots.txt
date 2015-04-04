@@ -7,4 +7,7 @@ Disallow: /test.html
 Disallow: /README.html
 Disallow: /en/Awards.html
 Disallow: /ru/Awards.html
+Disallow: /en/TableOfContents.html
+Disallow: /ru/TableOfContents.html
+Disallow: /en/ConEmu.html
 Sitemap: http://conemu.github.io/sitemap.xml
