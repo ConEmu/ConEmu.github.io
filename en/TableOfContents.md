@@ -131,7 +131,6 @@ h1_title: ConEmu Documentation Table of Contents
       * [Acknowledgements](Acknowledgement.html)
       * [ConEmu Reviews](Reviews.html)
       * [ConEmu Road Map](RoadMap.html)
-      * [PVS-Studio](PVSStudio.html)
       * [DropBox](DropBox.html)
       * [Named pipes](NamedPipes.html)
       * [Process Explorer](ProcessExplorer.html)

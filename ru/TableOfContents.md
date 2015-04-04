@@ -131,7 +131,6 @@ h1_title: Оглавление документации по ConEmu
     * [Acknowledgements](Acknowledgement.html)
     * [ConEmu Reviews](Reviews.html)
     * [Планы на будущее](RoadMap.html)
-    * [PVS-Studio](PVSStudio.html)
     * [DropBox](DropBox.html)
     * [Named pipes](NamedPipes.html)
     * [Process Explorer](ProcessExplorer.html)
