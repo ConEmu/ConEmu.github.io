@@ -24,3 +24,12 @@
     content: " port";
   }
 }
+
+/*
+== Deprecated, ignored ==
+@media handheld {
+  #media-orient:after {
+    content: " HH";
+  }
+}
+*/

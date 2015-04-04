@@ -5,9 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
 
-<!-- *** viewport is not ready yet ***
 <meta name="viewport" content="width=device-width, initial-scale=1">
--->
 
 {% if page.url == '/index.html' %}
 <meta name='yandex-verification' content='5bb2b6c69957dc18' />
@@ -53,7 +51,7 @@ This page was saved from: {{site.url}}{{page.url}}
 					</div>
 				</div>
 			</div>
-			<div style="overflow: hidden; width:728px; height:90px; position: relative; left: 210px; top: -90px;">
+			<div id="header-google">
 {% if site.url != 'local' %}{% include googleads.html %}{% endif %}
 			</div>
 		</div>
