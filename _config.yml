@@ -36,9 +36,25 @@ defaults:
       docfolder: /en
   -
     scope:
+      path: "en-w"
+      type: "pages"
+    values:
+      layout: "docs_en"
+      title: "ConEmu - Documentation"
+      docfolder: /en-w
+  -
+    scope:
       path: "ru"
       type: "pages"
     values:
       layout: "docs_ru"
       title: "ConEmu - эмулятор терминала Windows"
       docfolder: /ru
+  -
+    scope:
+      path: "ru-w"
+      type: "pages"
+    values:
+      layout: "docs_ru"
+      title: "ConEmu - эмулятор терминала Windows"
+      docfolder: /ru-w
