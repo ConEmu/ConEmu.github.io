@@ -65,6 +65,13 @@ This page was saved from: {{site.url}}{{page.url}}
 
 <article>
 
+{% if page.force_header or (page.h1_title != nil and page.h1_title != '') %}
+	<header>
+	<h1>{% if page.h1_title %}{{ page.h1_title }}{% else %}{{ page.title }}{% endif %}</h1>{% if page.h1_content != '' and page.h1_content != nil %}
+	<p>{{ page.h1_content }}</p>{% endif %}
+	</header>
+{% endif %}
+
 {{ content }}
 
 </article>
