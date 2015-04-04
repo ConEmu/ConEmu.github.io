@@ -20,6 +20,11 @@ This page was saved from: {{site.url}}{{page.url}}
 <title>{{page.title}}</title>
 {% if page.description != '' and page.description != nil %}<meta name="description" content="{{page.description}}">{% endif %}
 
+<meta property="og:url" content="{{page.canonical_url}}">
+<meta property="og:title" content="{{page.title}}">{% if page.description != '' and page.description != nil %}
+<meta property="og:description" content="{{page.description}}">{% endif %}{% if page.og_image != '' and page.og_image != nil %}
+<meta property="og:image" content="{{page.og_image}}">{% endif %}
+
 {% if site.url != 'local' %}{% include analytics.html %}{% endif %}
 
 </head>
