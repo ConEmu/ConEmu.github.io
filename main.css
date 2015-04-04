@@ -307,6 +307,9 @@ table, th, td {
   text-decoration: none !important;
 }
 
+#search-results {
+  margin-top: 10px;
+}
 
 /* Header
 -----------------------------------------------------------------------------*/
