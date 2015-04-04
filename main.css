@@ -437,8 +437,14 @@ table, th, td {
 
 @media (max-width: 980px) {
   #header-google {
+    /*
     width: 100%;
     left: 0;
+    */
+    display: none;
+  }
+  #header-google:after {
+    content: " ";
   }
 }
 
