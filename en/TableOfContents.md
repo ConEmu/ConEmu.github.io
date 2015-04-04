@@ -80,7 +80,7 @@ h1_title: ConEmu Documentation Table of Contents
       * [Windows 7 taskbar](Windows7Taskbar.html)
       * [Hyperlinks and files](FileLineDetector.html)
       * [ConEmu Inside](InsideParent.html)
-      * [Bash completion](ConEmu_Clink.html)
+      * [Bash completion in cmd.exe](ConEmuClink.html)
       * [Environment variables](ConEmuEnvironment.html)
     * Controls
       * [Tabs](Tabs.html)

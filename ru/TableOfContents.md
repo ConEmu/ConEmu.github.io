@@ -80,7 +80,7 @@ h1_title: Оглавление документации по ConEmu
     * [Таскбар Windows 7](Windows7Taskbar.html)
     * [Гиперссылки и файлы](FileLineDetector.html)
     * [ConEmu Inside](InsideParent.html)
-    * [Автодополнение](ConEmu_Clink.html)
+    * [Автодополнение в cmd.exe](ConEmuClink.html)
     * [Переменные окружения](ConEmuEnvironment.html)
   * Управление
     * [Закладки (табы)](Tabs.html)
