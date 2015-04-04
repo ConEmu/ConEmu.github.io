@@ -1,0 +1,19 @@
+			<div class="block">
+				<div class="blocktitle">{% if page.docfolder != '/ru' %}Site search{% else %}Поиск по сайту{% endif %}</div>
+				<div class="blockcontent">
+					<script>
+					  (function() {
+					    var cx = '014346213573456449829:mmq1_nge2xw';
+					    var gcse = document.createElement('script');
+					    gcse.type = 'text/javascript';
+					    gcse.async = true;
+					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+					        '//www.google.com/cse/cse.js?cx=' + cx;
+					    var s = document.getElementsByTagName('script')[0];
+					    s.parentNode.insertBefore(gcse, s);
+					  })();
+					</script>
+					<gcse:searchbox-only></gcse:searchbox-only>
+				</div>
+				<div class="blockbottom"></div>
+			</div>

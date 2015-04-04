@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /donate.html
 Disallow: /search.html
-Disallow: /search_results.html
 Disallow: /test.html
 Disallow: /README.html
 Disallow: /en/Awards.html
