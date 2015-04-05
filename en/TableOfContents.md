@@ -144,6 +144,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Microsoft Bugs](MicrosoftBugs.html)
   * [Old builds](OldBuild.html)
   * [Sources](Source.html)
+  * [How you may help](ConEmuHelping.html)
 
 <h3 id="extras">Extras</h3>
 
@@ -157,7 +158,6 @@ h1_title: ConEmu Documentation Table of Contents
   * [Process Explorer](ProcessExplorer.html)
   * [Process Monitor](ProcessMonitor.html)
   * [Dependency Walker](DependencyWalker.html)
-  * [How you may help](ConEmuHelping.html)
 
 <h2 id="far-manager">Far Manager</h2>
 
