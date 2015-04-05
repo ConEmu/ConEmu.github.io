@@ -11,7 +11,11 @@ twitter_username: ConEmuMaximus5
 github_username:  Maximus5
 
 # Build settings
-# markdown: kramdown
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 # Allow redirections
 gems:
