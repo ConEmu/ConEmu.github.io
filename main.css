@@ -110,6 +110,15 @@ pre {
 }
 
 code {
+  color: #fdf6e3;
+  background-color: #073642;
+  font-family: 'andale mono', 'lucida console', monospace;
+  white-space: pre;
+}
+
+pre code {
+  color: #eee8d5;
+  background-color: #002b36;
   font-family: 'andale mono', 'lucida console', monospace;
   white-space: pre;
 }
