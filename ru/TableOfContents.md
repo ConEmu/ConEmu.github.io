@@ -132,6 +132,7 @@ h1_title: Оглавление документации по ConEmu
     * [ConEmu Reviews](Reviews.html)
     * [Планы на будущее](RoadMap.html)
     * [DropBox](DropBox.html)
+    * [KeyEvents](KeyEvents.html)
     * [Named pipes](NamedPipes.html)
     * [Process Explorer](ProcessExplorer.html)
     * [Process Monitor](ProcessMonitor.html)

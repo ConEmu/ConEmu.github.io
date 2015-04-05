@@ -132,6 +132,7 @@ h1_title: ConEmu Documentation Table of Contents
       * [ConEmu Reviews](Reviews.html)
       * [ConEmu Road Map](RoadMap.html)
       * [DropBox](DropBox.html)
+      * [KeyEvents](KeyEvents.html)
       * [Named pipes](NamedPipes.html)
       * [Process Explorer](ProcessExplorer.html)
       * [Process Monitor](ProcessMonitor.html)
