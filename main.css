@@ -114,6 +114,7 @@ code {
   background-color: #073642;
   font-family: 'andale mono', 'lucida console', monospace;
   white-space: pre;
+  padding: .1em .2em .1em .2em;
 }
 
 code.plus {
@@ -127,6 +128,7 @@ pre code {
   background-color: #002b36;
   font-family: 'andale mono', 'lucida console', monospace;
   white-space: pre;
+  padding: 0; /* padding is defined in 'pre' already */
 }
 
 /* exactly same as "code" */
