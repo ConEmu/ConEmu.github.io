@@ -8,8 +8,8 @@ h1_title: Оглавление документации по ConEmu
 
   * General
     * [ConEmu]({{page.docfolder}}/)
-      * [x64 или x86](x64_or_x86.html)
-      * [Stable или Preview](StableVsPreview.html)
+      * [x64 или x86](VersionComparison.html#x64-or-x86)
+      * [Stable или Preview](VersionComparison.html#release-stages)
       * [Что такое «Сертификат»?](Certificate.html)
       * [Папки/файлы](ConEmuFolders.html)
       * [Скриншоты](Screenshots.html)

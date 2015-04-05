@@ -8,8 +8,8 @@ h1_title: ConEmu Documentation Table of Contents
 
   * General
       * [ConEmu]({{page.docfolder}}/)
-        * [x64 or x86](x64_or_x86.html)
-        * [Stable or Preview](StableVsPreview.html)
+        * [x64 or x86](VersionComparison.html#x64-or-x86)
+        * [Stable or Preview](VersionComparison.html#release-stages)
         * [What is «Certificate»?](Certificate.html)
         * [Folders](ConEmuFolders.html)
         * [Screenshots](Screenshots.html)
