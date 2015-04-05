@@ -271,8 +271,8 @@ Also, you may call &quot;/GUIMACRO:0&quot; to affect first found instance.</pre>
 <li><a title="support copying to clipboard as HTML" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=714">Issue 714&nbsp;</a>: Copying text to clipboard using CF_HTML formatting. May be disabled from Edit submenu (Copy HTML format). </li></ul>
 
 <h2><a name="Build_130923"></a>Build 130923<a href="#Build_130923" class="section_anchor"></a></h2>
-<ul><li><a title="Do not create submenu for command group with only one command" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1234">Issue 1234&nbsp;</a>: Tasks menu changes (Win+N, button <code>[+]</code>) </li><ul><li>by default - does not expand to submenus, RClick on task - show submenu with task commands; </li>
-<li>Shift+Click on <code>[+]</code> arrow - creates submenus for tasks, RClick on task - run all task commands; </li>
+<ul><li><a title="Do not create submenu for command group with only one command" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1234">Issue 1234&nbsp;</a>: Tasks menu changes (Win+N, button <code class="plus">[+]</code>) </li><ul><li>by default - does not expand to submenus, RClick on task - show submenu with task commands; </li>
+<li>Shift+Click on <code class="plus">[+]</code> arrow - creates submenus for tasks, RClick on task - run all task commands; </li>
 <li>also, user may set new hotkey for ‘Show create new console popup menu with task submenus’. </li></ul><li><a title="Tasks don't obey /dir parameter anymore" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1238">Issue 1238&nbsp;</a>: Running particular command from task submenus - was ignored ‘/dir ...’ switch. </li>
 <li>Vista and higher: Default console font - ‘Consolas’ (if ClearType is enabled in system). </li>
 <li>Vista and higher: Default tab and status bars font - ‘Segoe UI’. </li>
@@ -831,7 +831,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <ul><li>New option: Settings -&gt; Status bar -&gt; System colors. </li>
 <li><a title="Admin Tasks cannot be run with build 121028" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=791">Issue 791&nbsp;</a>: Rollback changes in ‘Run As Administrator’. </li>
 <li><a title="abd.exe (Android Debug Bridge) shell history bug" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=700">Issue 700&nbsp;</a>: Forcing ConEmu&#x27;s console to larger history buffer count. Small count causes ‘Up arrow don&#x27;t work in prompt’ for long console trees, for example: ‘cmd -&gt; Far -&gt; ConEmuC -&gt; cmd -&gt; vim -&gt; cmd -&gt; ...’ Forcing values in <code>HKEY_CURRENT_USER\Console\ConEmu</code>: History buffer size - min=16, default=50; Count - min=16, default=32. </li>
-<li>In the Tasks popup menu (Win+N or down arrow near to <code>[+]</code>) you may RClick on the task and get submenu with task contents. You may click task command to start particular command. </li>
+<li>In the Tasks popup menu (Win+N or down arrow near to <code class="plus">[+]</code>) you may RClick on the task and get submenu with task contents. You may click task command to start particular command. </li>
 <li><a title="Names of renamed tabs should appear in Win7 Jump List windows." class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=794">Issue 794&nbsp;</a>: Names of renamed tabs should appear on taskbar. </li></ul>
 
 <h2><a name="Build_121028"></a>Build 121028<a href="#Build_121028" class="section_anchor"></a></h2>
@@ -1008,7 +1008,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <li><a href="GuiMacro.html">GuiMacro</a>. Changes in Shell function. All following examples runs &quot;cmd&quot; in new tab: ‘<code>Shell(&quot;new_console&quot;,&quot;cmd&quot;)</code>’ or ‘<code>Shell(&quot;&quot;,&quot;cmd&quot;)</code>’ or ‘<code>Shell(&quot;&quot;,&quot;&quot;,&quot;cmd&quot;)</code>’. <strong>Memorial</strong>. Other verbs, like ‘<code>Shell(&quot;open&quot;,&quot;cmd&quot;)</code>’ runs &quot;cmd&quot; outside of ConEmu window. </li>
 <li>Safe Far close. From current build, this option may be used for ‘Unsafe’ console closing. Type &quot;<code>#Close(1,1)</code>&quot; (without quotas) in Safe Far close macro field and turn on checkbox. Now, click on the cross-button in ConEmu title provokes ‘Terminate active process’ in all opened consoles, regardless of ‘Far’ it is or not. <strong>Warning!</strong> Use on your own responsibility, this method may damage console applications data! </li>
 <li>Far Manager &amp; <a href="TabletPC.html">TabletPC</a>. Tap on clock+1row (upper-right corner) show/hide panels. </li>
-<li>DoubleClick on TabBar free area acts as click on <code>[+]</code> button. </li></ul>
+<li>DoubleClick on TabBar free area acts as click on <code class="plus">[+]</code> button. </li></ul>
 
 <h2><a name="Build_120826"></a>Build 120826<a href="#Build_120826" class="section_anchor"></a></h2>
 <ul><li><a href="GuiMacro.html">GuiMacro</a>. </li><pre class="prettyprint">    Print([&quot;&lt;Text&gt;&quot;])
@@ -1413,7 +1413,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <li>Shell Drop allowed to Far editor and dialogs. Drop as pasting dragged file path names. </li>
 <li>Once more &#x27;Sleep in background&#x27; bugfix. </li>
 <li>&#x27;Command line&#x27; option moved to new &#x27;Startup&#x27; page of &#x27;Settings&#x27; dialog. </li>
-<li>New items &#x27;New console dialog&#x27; and &#x27;Setup tasks&#x27; in popup menu (<code>[+]</code> button on toolbar). </li></ul>
+<li>New items &#x27;New console dialog&#x27; and &#x27;Setup tasks&#x27; in popup menu (<code class="plus">[+]</code> button on toolbar). </li></ul>
 
 <h2><a name="Build_120510"></a>Build 120510<a href="#Build_120510" class="section_anchor"></a></h2>
 <ul><li>ConEmu internal paste locks clipboard (Shift+Ins, Ctrl+V). </li>
@@ -1494,7 +1494,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <li><a title="ConEmu: Сохранение пользовательской цветовой схемы в файл" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=248">Issue 248&nbsp;</a> : Added ability to save / load custom color palette. Сolor palette contains 32 (16+16) colors and setting &#x27;Extend foreground colors&#x27;. Named palettes are stored in the &quot;Colors&quot; subkey of reg/xml settings. </li>
 <li><a title="Configure launch new session menu" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=445">Issue 445&nbsp;</a> : Added ability to create custom &#x27;Tasks&#x27;. In fact, this is an alias to run one or more applications in new tabs ConEmu. May be configured in &#x27;Tasks&#x27; page of &#x27;Settings&#x27; dialog, and stored in &quot;Tasks&quot; subkey subkey of reg/xml settings. &#x27;Task&#x27; may be used (for example of the {Shells}): </li><ul><li>when you start by specifying the properties of the shortcut: &quot;ConEmu.exe / cmd {Shells}&quot;; </li>
 <li>specifying {Shells} in the &#x27;Command line&#x27; page &#x27;Main&#x27; of &#x27;Settings&#x27; dialog; </li>
-<li>when you create a new console interface ConEmu (<code>[+]</code> on the toolbar, a list of Recreate-dialog); </li>
+<li>when you create a new console interface ConEmu (<code class="plus">[+]</code> on the toolbar, a list of Recreate-dialog); </li>
 <li>from the command line (cmd.exe): &quot;%ConEmuBaseDir%\ConEmuC.exe&quot; / c {Shells} -new_console. </li>
 <li>from the command line (far.exe): conemu:run:{Shells} -new_console  </li></ul><li>Minor fix in debug switch &quot;/ detached&quot;. </li>
 <li>Vista+: When the console is set detache acceptable to the user font size.  </li></ul>

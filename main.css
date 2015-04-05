@@ -116,6 +116,12 @@ code {
   white-space: pre;
 }
 
+code.plus {
+  color: white;
+  background-color: green;
+  padding: .2em .05em .2em .05em;
+}
+
 pre code {
   color: #eee8d5;
   background-color: #002b36;

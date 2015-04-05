@@ -216,9 +216,9 @@ set ConEmuDefaultCp=</pre>
 <li>Switch &quot;-noquake&quot; implies &quot;-nosingle&quot;. </li>
 <li>TaskBar jump list was created without directly specified xml configuration file. </li>
 <li>Button ‘Save’ instead of ‘Start’ was shown if bad startup Task was detected. </li>
-<li>The menu item ‘Clear history...’ was not working (the one in the <code>[+]</code> drop-down menu). </li>
+<li>The menu item ‘Clear history...’ was not working (the one in the <code class="plus">[+]</code> drop-down menu). </li>
 <li>Sometimes ‘Console script are not supported here’ error appeared after running a task from <a href="NewConsole.html">NewConsole</a> dialog. </li>
-<li>Tasks may be organized with folders. Delimit task name from folder name with &quot;<code>::</code>&quot;. For example, type &quot;<code>Shells::PowerShell</code>&quot; instead of &quot;<code>PowerShell</code>&quot;, and so on. Only one level of folders is allowed. No need to reorder tasks of one folder continuously, folders are filled by name. Generally this was implemented for drop-down <code>[+]</code> menu. </li>
+<li>Tasks may be organized with folders. Delimit task name from folder name with &quot;<code>::</code>&quot;. For example, type &quot;<code>Shells::PowerShell</code>&quot; instead of &quot;<code>PowerShell</code>&quot;, and so on. Only one level of folders is allowed. No need to reorder tasks of one folder continuously, folders are filled by name. Generally this was implemented for drop-down <code class="plus">[+]</code> menu. </li>
 <li>Create default tasks with folders (Shells, Bash, SDK, and so on). </li>
 <li>Find task by name with or without folder part (Startup page). </li>
 <li>Button &#x27;Add default tasks&#x27; will not create task duplicates (checking by task name). </li>
@@ -228,9 +228,9 @@ set ConEmuDefaultCp=</pre>
 <h2><a name="Build_150203"></a>Build 150203<a href="#Build_150203" class="section_anchor"></a></h2>
 <ul><li><a title="Mouse cursor selection breaks with PSReadline in Profile" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1886">Issue 1886&nbsp;</a>: Change text cursor position with ‘LeftClick’ was not working when PSReadLine was loaded in your <code>$profile</code>. Look at <code>RevokeMouseInput.ps1</code>. </li>
 <li>github#20: ‘Ctrl-Left’ and ‘Ctrl-Right’ was not working in Vim/xterm. </li>
-<li>Create new console confirmation now if disabled by default. So ‘Win+W’ or ‘LClick’ on the <code>[+]</code> button creates new default task. The default task may be choosed in the ‘Tasks’ settings page. New console dialog (command, directory, as admin, and so on) may be shown with: </li><ul><li>‘Win+Shift+W’; </li>
-<li>‘Shift+LClick’, ‘RClick’ or ‘LongTap’ on the <code>[+]</code>; </li>
-<li>‘New console dialog...’ menu item (down arrow about <code>[+]</code>). </li></ul><li>Window and tab closing confirmations now are disabled by default. But if there are more than a two user processes running in the console - close confirmation may be shown. So, there are thee checkboxes now: </li><ul><li>Confirm window closing (unchecked); </li>
+<li>Create new console confirmation now if disabled by default. So ‘Win+W’ or ‘LClick’ on the <code class="plus">[+]</code> button creates new default task. The default task may be choosed in the ‘Tasks’ settings page. New console dialog (command, directory, as admin, and so on) may be shown with: </li><ul><li>‘Win+Shift+W’; </li>
+<li>‘Shift+LClick’, ‘RClick’ or ‘LongTap’ on the <code class="plus">[+]</code>; </li>
+<li>‘New console dialog...’ menu item (down arrow about <code class="plus">[+]</code>). </li></ul><li>Window and tab closing confirmations now are disabled by default. But if there are more than a two user processes running in the console - close confirmation may be shown. So, there are thee checkboxes now: </li><ul><li>Confirm window closing (unchecked); </li>
 <li>Confirm tab closing (unchecked); </li>
 <li>When running process was detected (checked). </li></ul></ul>
 
