@@ -7,7 +7,7 @@ h1_title: ConEmu Documentation Table of Contents
 ---
 
   * General
-      * [ConEmu](ConEmu.html)
+      * [ConEmu]({{page.docfolder}}/)
       * [x64 or x86](x64_or_x86.html)
       * [Stable or Preview](StableVsPreview.html)
       * [What is «Certificate»?](Certificate.html)
