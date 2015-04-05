@@ -32,14 +32,14 @@ redirect_from: /ru/Whats_New_1.html
 <li><code>c</code> - принудительно включить &quot;Press Enter or Esc to close console&quot; </li>
 <li><code>a</code> - RunAs shell verb (as admin on Vista+, login/password in Win2k and WinXP) </li>
 <li><code>r</code> - Run as restricted user </li>
-<li><code>u</code> - <a href="ConEmu.html">ConEmu</a> choose user dialog </li>
+<li><code>u</code> - ConEmu choose user dialog </li>
 <li><code>u:&lt;user&gt;:&lt;pwd&gt;</code> - specify user/pwd in args, MUST BE LAST OPTION </li></ul></ul>
 
 <h2><a name="Build_111206"></a>Build 111206<a href="#Build_111206" class="section_anchor"></a></h2>
 <ul><li>Продолжение GUI приложений во вкладках. </li>
 <li>Sources: класс CRealConsole разделен на два объекта. </li>
 <li>Правки в запускаторе. </li>
-<li>Исходники <a href="ConEmu.html">ConEmu</a> проверены анализатором PVS-Studio. </li>
+<li>Исходники ConEmu проверены анализатором PVS-Studio. </li>
 <li>При включении &quot;Shell and processes&quot; в логе отображается содержимое bat/cmd/tmp файлов длинной менее 32K. Можно использовать для отлова ошибок параметров компиляции/линковки программ. </li>
 <li>Не мигаем курсором если Far занят (выполняет длинный макрос, ищет по сети, грузит файлы и т.п.) </li>
 <li><a title="ConEmu 20111120: обработка клавиши Win" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=459">Issue 459&nbsp;</a>: обработка клавиши Win. </li></ul>
@@ -208,7 +208,7 @@ redirect_from: /ru/Whats_New_1.html
 <h4><a name="Bugfixes"></a>Bugfixes<a href="#Bugfixes" class="section_anchor"></a></h4>
 <ul><li>Far3 build 2184. </li>
 <li>Изменения в модуле <a href="ConEmuHk.html">ConEmuHk</a>. </li>
-<li>Плагин &#x27;<a href="ConEmu.html">ConEmu</a> Underlines&#x27; валил Far. </li></ul>
+<li>Плагин &#x27;ConEmu Underlines&#x27; валил Far. </li></ul>
 
 <h2><a name="Build_110826"></a>Build 110826<a href="#Build_110826" class="section_anchor"></a></h2>
 
@@ -307,7 +307,7 @@ redirect_from: /ru/Whats_New_1.html
 <li>В заголовке дебаггера отображается PID отлаживаемого процесса. </li></ul><li>Доработки для Far3 build 2082. </li>
 <li>В сообщении &#x27;ConEmu received old version packet&#x27; отображается полный путь процесса или модуля, приславшего пакет некорректной версии. </li>
 <li>В шаблонах заголовков табов (Tab templates) можно использовать макроподстановки: %s - заголовок консоли, %i - номер окна в Far (0-based), %p - PID активного процесса в консоли, %c - номер консоли (1-based). </li>
-<li>Если какая-то другая программа скрыла окно <a href="ConEmu.html">ConEmu</a> - в TSA отображается иконка и всплывающее сообщение об этом безобразии. </li></ul>
+<li>Если какая-то другая программа скрыла окно ConEmu - в TSA отображается иконка и всплывающее сообщение об этом безобразии. </li></ul>
 
 <h2><a name="Build_110629"></a>Build 110629<a href="#Build_110629" class="section_anchor"></a></h2>
 
@@ -366,7 +366,7 @@ redirect_from: /ru/Whats_New_1.html
 <li>Интеграция с <a href="DosBox.html">DosBox</a>. Теперь можно запускать старые DOS-приложения в 64-битных ОС прямо из Far или батников. </li><ul><li><a href="DosBox.html">DosBox</a> брать здесь: <a href="http://www.dosbox.com" rel="nofollow">http://www.dosbox.com</a> (DirectLink: <a href="http://sourceforge.net/projects/dosbox/files/dosbox/0.74/DOSBox0.74-win32-installer.exe/download" rel="nofollow">http://sourceforge.net/projects/dosbox/files/dosbox/0.74/DOSBox0.74-win32-installer.exe/download</a> ) </li>
 <li>Ставить сюда: %ConEmuBaseDir%\DosBox </li>
 <li>Создать (или переименовать) файл конфигурации: %ConEmuBaseDir%\DosBox\DosBox.conf </li>
-<li>Дописать в конец файла команды монтирования дисков, смысл в том, что при запуске приложений в <a href="DosBox.html">DosBox</a> из <a href="ConEmu.html">ConEmu</a> пути должны совпадать. Если на вашем NTFS диске отключены короткие имена Dos-приложение может и не запуститься. Для возможности запуска Dos-приложений из батников требуется включение флажка &#x27;Use ConEmuHk injects&#x27;. </li>
+<li>Дописать в конец файла команды монтирования дисков, смысл в том, что при запуске приложений в <a href="DosBox.html">DosBox</a> из ConEmu пути должны совпадать. Если на вашем NTFS диске отключены короткие имена Dos-приложение может и не запуститься. Для возможности запуска Dos-приложений из батников требуется включение флажка &#x27;Use ConEmuHk injects&#x27;. </li>
 <li><strong>Перезапустить</strong> ConEmu, флажок &#x27;DosBox (DOS apps)&#x27; должен включиться (<a href="Settings.html#Features">вкладка Features</a>). </li>
 <li><strong>Внимание</strong>: Диск Z: в <a href="DosBox.html">DosBox</a> зарезервирован под эмулятор. </li></ul><li>Через системное меню ConEmu можно было вызвать несколько экземпляров диалога свойств <a href="ConEmuTerms.html#RealConsole">RealConsole</a>. При закрытии одного из них валился conhost. /исправлено уже давно/ </li>
 <li>&#x27;Extend foreground colors...&#x27; и &#x27;Extend fonts&#x27; работают только для Far. </li></ul>
@@ -742,7 +742,7 @@ redirect_from: /ru/Whats_New_1.html
 <li>Far начинал реагировать на &#x27;No zone check&#x27; только после перещелкивания флажка. </li></ul>
 
 <h4><a name="Changes"></a>Changes<a href="#Changes" class="section_anchor"></a></h4>
-<ul><li>Достало виндовое окошко &#x27;End program&#x27;, поэтому все-таки добавлен флажок &#x27;Safe Far Close&#x27;. По умолчанию включен. Если включить - при закрытии <a href="ConEmu.html">ConEmu</a> крестиком в плагин Far&#x27;а посылается макрос: </li><pre class="prettyprint">    @$while (Dialog||Editor||Viewer||Menu||Disks||MainMenu||UserMenu||Other||Help)
+<ul><li>Достало виндовое окошко &#x27;End program&#x27;, поэтому все-таки добавлен флажок &#x27;Safe Far Close&#x27;. По умолчанию включен. Если включить - при закрытии ConEmu крестиком в плагин Far&#x27;а посылается макрос: </li><pre class="prettyprint">    @$while (Dialog||Editor||Viewer||Menu||Disks||MainMenu||UserMenu||Other||Help)
       $if (Editor) ShiftF10 $else Esc $end
     $end
     Esc
@@ -762,7 +762,7 @@ redirect_from: /ru/Whats_New_1.html
 <ul><li>Добавлена визуальная настройка шрифта для <a href="ConEmuTerms.html#RealConsole">RealConsole</a>. Запускается с вкладки &#x27;Features&#x27;, кнопочка рядом с &#x27;Show real console&#x27;. </li>
 <li>Перед запуском консоли ConEmu проверяет корректность шрифта указанного в настройке для <a href="ConEmuTerms.html#RealConsole">RealConsole</a>. Если шрифт не установлен в системе, не является юникодным (.ttf), или не зарегистрирован в реестре - отображается диалог настройки шрифта. </li>
 <li>Добавлен флажок &#x27;Lock real console pos&#x27;. При его включении невидимая реальная коноль не двигается (не &#x27;убегает&#x27; от курсора мыши). </li>
-<li>В <a href="ConEmu.html">ConEmu</a> Panel Views добавлен самостоятельный модуль ico (иконки в gdi+ больше не отдаются). </li></ul>
+<li>В ConEmu Panel Views добавлен самостоятельный модуль ico (иконки в gdi+ больше не отдаются). </li></ul>
 
 <h2><a name="Build_100627"></a>Build 100627<a href="#Build_100627" class="section_anchor"></a></h2>
 
@@ -1009,7 +1009,7 @@ redirect_from: /ru/Whats_New_1.html
 <h2><a name="Build_100223"></a>Build 100223<a href="#Build_100223" class="section_anchor"></a></h2>
 
 <h4><a name="Bugfixes"></a>Bugfixes<a href="#Bugfixes" class="section_anchor"></a></h4>
-<ul><li><a title="ConEmu 100222a: Остаются части диалоговых окон" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=196">Issue 196&nbsp;</a>: <a href="ConEmu.html">ConEmu</a> вызывал ошибки отрисовки в FAR. </li></ul>
+<ul><li><a title="ConEmu 100222a: Остаются части диалоговых окон" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=196">Issue 196&nbsp;</a>: ConEmu вызывал ошибки отрисовки в FAR. </li></ul>
 
 <h4><a name="Changes"></a>Changes<a href="#Changes" class="section_anchor"></a></h4>
 <ul><li>Форматированный вывод настроек в XML (для новых ключей и значений). </li></ul>
@@ -1034,7 +1034,7 @@ redirect_from: /ru/Whats_New_1.html
 <li>Немного ускорена передача клавиатурного и мышиного ввода в консоль. </li>
 <li>Возможность настроить &#x27;Host-клавишу&#x27; для горячих клавиш мультиконсоли. Ранее были жестко выбраны правый или левый Win. Теперь можно выбрать Win, Apps, и [правый|левый|любой] Shift/Ctrl/Alt. Можно выбрать комбинацию до 3-х модификаторов.  Включение в диалоге настройки &#x27;Hotkey settings&#x27; обоих флажка модификатора (например LCtrl &amp; RCtrl) означает &#x27;любой&#x27;.  Не рекомендуется использовать Apps в сочетании с другими модификаторами - Apps провалится в консоль. </li>
 <li>Доработана прозрачность «User screen». Место под приподнятыми панелями считается прозрачным. CtrlAltShift показывает «User screen» (временно отменяет прозрачность). </li>
-<li>В поставку добавлен файл &#x27;<a href="ConEmu.html">ConEmu</a>.Addons\CallPlugin.txt&#x27;. В нем перечислены возможные коды команд callplugin (макросы FAR2). </li>
+<li>В поставку добавлен файл &#x27;ConEmu.Addons\CallPlugin.txt&#x27;. В нем перечислены возможные коды команд callplugin (макросы FAR2). </li>
 <li>Доработан ресайз панелей мышкой. В FAR2 можно перед началом ресайза высоты зажать Shift, тогда будет меняться высота правой или левой панели (той, по рамке которой щелкнули). </li>
 <li><a title="Предложение" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=160">Issue 160&nbsp;</a>: Разрешен драг элемента &#x27;..&#x27;. При этом перетаскивается текущая папка (не ее содержимое!). <strong>Внимание</strong>: допустимость такого драга НЕ проверяется и остается на совести пользователя.  При дропе на соседнюю панель предварительно выполняется макрос: <code>$If (APanel.SelCount==0 &amp;&amp; APanel.Current==&quot;..&quot;) CtrlPgUp $End</code> </li></ul>
 
@@ -1050,7 +1050,7 @@ redirect_from: /ru/Whats_New_1.html
 
 <h4><a name="Changes"></a>Changes<a href="#Changes" class="section_anchor"></a></h4>
 <ul><li>Когда ConEmu не в фокусе - курсор (если он видим в консоли) отображается прямоугольником. </li>
-<li>Fade-effect содержимого консоли когда <a href="ConEmu.html">ConEmu</a> не в фокусе. </li>
+<li>Fade-effect содержимого консоли когда ConEmu не в фокусе. </li>
 <li>Доработано проявляение скрытой рамки с заголовком. Задержку можно настроить. </li>
 <li>В Desktop режиме отключены Cascade &amp; FullScreen. </li>
 <li>Щелчок правой кнопкой по рамке больше не сворачивает в трей. Только щелчок по крестику. </li></ul>

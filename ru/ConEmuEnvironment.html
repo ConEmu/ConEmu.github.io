@@ -25,7 +25,7 @@ description: "Список переменных окружения исполь�
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Имя</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Пример</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Описание</strong> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuDir </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>C:\ConEmu</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> папка, содержащая ConEmu.exe </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuDrive </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>C:</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> диск с двоеточием, содержащий <a href="ConEmu.html">ConEmu</a>.exe </td></tr>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuDrive </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>C:</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> диск с двоеточием, содержащий ConEmu.exe </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuBaseDir </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>C:\ConEmu\ConEmu</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> папка, содержащая ConEmuC.exe </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuWorkDir </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>C:\Users</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> рабочая папка, где был запущен ваш shell </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> ConEmuWorkDrive </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>C:</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> диск с двоеточием, где был запущен ваш shell </td></tr>
@@ -47,7 +47,7 @@ description: "Список переменных окружения исполь�
 
 <h2><a name="PATH_modifications"></a>Изменения PATH<a href="#PATH_modifications" class="section_anchor"></a></h2>
 <p><a href="SettingsComspec.html">Settings page ComSpec</a> has an options ‘Add %ConEmuDir% to %PATH%’ and ‘Add %ConEmuBaseDir% to %PATH%’. </p>
-<p>They are turned on by default and allows to easily run executables and scripts and macros from <a href="ConEmu.html">ConEmu</a>&#x27;s folders. For example: </p>
+<p>They are turned on by default and allows to easily run executables and scripts and macros from ConEmu&#x27;s folders. For example: </p>
 <pre class="prettyprint">ConEmuC -GuiMacro Progress 3
 
 or
@@ -58,7 +58,7 @@ csudo dism.exe /online /enable-feature /featurename:NetFX3 /All /Source:D:\sourc
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Name</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Example</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Description</strong> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <code>ConEmuSleepIndicator</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>TITLE</code>, <code>NUM</code> or <code>OFF</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> Turns on monitoring feature of ‘Sleep in background’, when <code>ConEmuSleepIndicator=NUM</code> ConEmu will turn off NumLock when going sleep and turn on NumLock when full active back, when <code>ConEmuSleepIndicator=TITLE</code> - state will be shown in the TabBar or window title. </td></tr>
-<tr><td style="border: 1px solid #ccc; padding: 5px;"> <code>ConEmuReportExe</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>perl.exe</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> Shows message box like ‘perl.exe loaded’ when <code>perl.exe</code> started inside <a href="ConEmu.html">ConEmu</a> tab; option ‘Inject <a href="ConEmuHk.html">ConEmuHk</a>’ must be enabled </td></tr> </table></p>
+<tr><td style="border: 1px solid #ccc; padding: 5px;"> <code>ConEmuReportExe</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> <code>perl.exe</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> Shows message box like ‘perl.exe loaded’ when <code>perl.exe</code> started inside ConEmu tab; option ‘Inject <a href="ConEmuHk.html">ConEmuHk</a>’ must be enabled </td></tr> </table></p>
 
 <h2><a name="Export_variables"></a>Export variables<a href="#Export_variables" class="section_anchor"></a></h2>
 <p>When you start new console - it inherits environment strings (<code>%PATH%</code> also) from parent process (ConEmu GUI). </p>

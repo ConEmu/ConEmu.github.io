@@ -22,14 +22,14 @@ fi</pre>
 <h1 id="h0"><a name="CHERE"></a>CHERE<a href="#CHERE" class="section_anchor"></a></h1>
 <p>Cygwin will not do ‘<code>cd &quot;${HOME}&quot;</code>’ if environment variable <code>CHERE_INVOKING</code> is defined. So, if you run your shell (bash) as following, shell will be started in proper working directory. </p>
 <pre class="prettyprint">set CHERE_INVOKING=1 &amp; c:\cygwin\bin\sh.exe --login -i</pre>
-<p>Thought, you can, but must not change the contents of your <code>/etc/profile</code> commenting ‘<code>cd &quot;${HOME}&quot;</code>’... Because you can change cygwin behaviour within <a href="ConEmu.html">ConEmu</a> tasks or command line. </p>
+<p>Thought, you can, but must not change the contents of your <code>/etc/profile</code> commenting ‘<code>cd &quot;${HOME}&quot;</code>’... Because you can change cygwin behaviour within ConEmu tasks or command line. </p>
 
 <h1><a name="ConEmuWorkDir"></a>ConEmuWorkDir<a href="#ConEmuWorkDir" class="section_anchor"></a></h1>
 <p>Another workaround - do <code>cd</code> to the working folder in your shell profile (<code>.bashrc</code>, <code>.zshrc</code>, etc.) </p>
 <pre class="prettyprint">if [ -n &quot;${ConEmuWorkDir}&quot; ]; then
   cd &quot;$ConEmuWorkDir&quot;
 fi</pre>
-<p><a href="ConEmu.html">ConEmu</a> set <code>ConEmuWorkDir</code> to the console startup directory, so you may use it in your scripts. Read more about <a href="ConEmuEnvironment.html">ConEmuEnvironment</a> in wiki. </p>
+<p>ConEmu set <code>ConEmuWorkDir</code> to the console startup directory, so you may use it in your scripts. Read more about <a href="ConEmuEnvironment.html">ConEmuEnvironment</a> in wiki. </p>
 <p><!-- Portable to all POSIX shells:
  </p>
 <p>if [ -n &quot;${foobar+1}&quot; ]; then
@@ -64,7 +64,7 @@ fi</pre>
  --> </p>
 
 <h1><a name="cygdrive"></a>cygdrive<a href="#cygdrive" class="section_anchor"></a></h1>
-<p>Not related to working directory and <a href="ConEmu.html">ConEmu</a>, actually, but let it be here. </p>
+<p>Not related to working directory and ConEmu, actually, but let it be here. </p>
 <p>If you want to remove annoying <code>/cygdrive</code>, just replace one line in your <code>/etc/fstab</code>. </p>
 <pre class="prettyprint">#none /cygdrive cygdrive binary,posix=0,user 0 0
 none / cygdrive binary 0 0</pre>

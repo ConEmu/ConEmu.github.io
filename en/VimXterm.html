@@ -4,7 +4,7 @@ redirect_from: /ru/VimXterm.html
 
 <!-- Content starts -->
 
-<h2 id="h0"><a name="How_to_enable_256-color_console_Vim_syntax_highlight_in"></a>How to enable 256-color console Vim syntax highlight in <a href="ConEmu.html">ConEmu</a><a href="#How_to_enable_256-color_console_Vim_syntax_highlight_in" class="section_anchor"></a></h2>
+<h2 id="h0"><a name="How_to_enable_256-color_console_Vim_syntax_highlight_in"></a>How to enable 256-color console Vim syntax highlight in ConEmu<a href="#How_to_enable_256-color_console_Vim_syntax_highlight_in" class="section_anchor"></a></h2>
 <p><img src="../img/ConEmuVimXterm.png" title="256-colors vim in ConEmu"> </p>
 <p><a href="http://stackoverflow.com/a/14434531/1405560" rel="nofollow">StackOverflow answer</a> </p>
 <ul><li>Vim&#x27;s executable must be named ‘vim.exe’; </li>
@@ -20,8 +20,8 @@ endif</pre>
 <p>You may also check environment variable <a href="ConEmuEnvironment.html">ConEmuANSI</a> but I&#x27;m not sure how to do that properly. </p>
 <p><strong>Note</strong>. GIT&#x27;s Vim and ‘Original’ Vim (from gvim73_46.exe) are passed tests. MinGW&#x27;s Vim fails to switch to using Ansi sequences. </p>
 
-<h2><a name="How_to_enable_Vim_scrolling_using_mouse_Wheel_in"></a>How to enable Vim scrolling using mouse Wheel in <a href="ConEmu.html">ConEmu</a><a href="#How_to_enable_Vim_scrolling_using_mouse_Wheel_in" class="section_anchor"></a></h2>
-<p>When <a href="ConEmu.html">ConEmu</a> emulates xterm it translates mouse wheel to the following sequences: </p>
+<h2><a name="How_to_enable_Vim_scrolling_using_mouse_Wheel_in"></a>How to enable Vim scrolling using mouse Wheel in ConEmu<a href="#How_to_enable_Vim_scrolling_using_mouse_Wheel_in" class="section_anchor"></a></h2>
+<p>When ConEmu emulates xterm it translates mouse wheel to the following sequences: </p>
 <p><table class="wikitable">
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Event</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Sequence</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Description</strong> </td></tr>
 <tr><td style="border: 1px solid #ccc; padding: 5px;"> <code>&lt;WheelDown&gt;</code> </td><td style="border: 1px solid #ccc; padding: 5px;"> &quot;<code>\e[62~</code>&quot; </td><td style="border: 1px solid #ccc; padding: 5px;"> toward the user </td></tr>

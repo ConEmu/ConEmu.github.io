@@ -64,7 +64,7 @@ or anything else, spreading the word for example.
 <h2><a name="Build_150316"></a>Build 150316<a href="#Build_150316" class="section_anchor"></a></h2>
 <ul><li><a title="изображение в окне conemu зависает" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1931">Issue 1931&nbsp;</a>: Fix crash and broken Far frames after resize (regression). </li>
 <li>Inform user about some project events using TaskBar status area notification. Click on the icon or information balloon will show extended information dialog where user may stop showing this notification. </li>
-<li>Translate mouse wheel into escape sequences when <a href="ConEmu.html">ConEmu</a> emulates xterm (vim especially). If you want to use mouse wheel in Vim (official version was tested), just add to vimrc: </li><pre class="prettyprint">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+<li>Translate mouse wheel into escape sequences when ConEmu emulates xterm (vim especially). If you want to use mouse wheel in Vim (official version was tested), just add to vimrc: </li><pre class="prettyprint">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
 &quot; let mouse wheel scroll file contents
 &quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
 if !has(&quot;gui_running&quot;)
@@ -94,7 +94,7 @@ endif</pre>
 <li>150309 regression. &quot;<code>ConEmu.ico</code>&quot; was looked in wrong folder. </li>
 <li>Overlay icon on Win7 TaskBar was not shown in some cases. </li>
 <li>Name checkbox ‘Alternative font ...’ instead of ‘... pseudographics font’. </li>
-<li>TaskBar aero thumbnail of active console was not live-updated if <a href="ConEmu.html">ConEmu</a> was minimized. </li>
+<li>TaskBar aero thumbnail of active console was not live-updated if ConEmu was minimized. </li>
 <li>Don&#x27;t use ‘Enhance progressbars and scrollbars’ for cells with <code>bg==gf</code> unless it is <code>100%</code> filled block. </li>
 <li>Search panel was too small in some cases. </li>
 <li><a title="tab bar height too big since version 150307" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1939">Issue 1939&nbsp;</a>: Tab bar height too big since version 150307. </li></ul>
@@ -102,10 +102,10 @@ endif</pre>
 <h2><a name="Build_150309"></a>Build 150309<a href="#Build_150309" class="section_anchor"></a></h2>
 <ul><li><a title="feature show &quot;admin shield&quot; is broken" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1937">Issue 1937&nbsp;</a>: ‘Admin shield’ in TabBar was broken. </li>
 <li>Only use &quot;<code>ConEmu.ico</code>&quot; name as possible external icon. </li>
-<li>Logging. Log <a href="ConEmu.html">ConEmu</a> icon loading, created startup consoles, overlay icon actions. </li></ul>
+<li>Logging. Log ConEmu icon loading, created startup consoles, overlay icon actions. </li></ul>
 
 <h2><a name="Build_150307a"></a>Build 150307a<a href="#Build_150307a" class="section_anchor"></a></h2>
-<ul><li><a title="изображение в окне conemu зависает" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1931">Issue 1931&nbsp;</a>, gh#67: <a href="ConEmu.html">ConEmu</a>&#x27;s output was blocked after maximizing window. </li></ul>
+<ul><li><a title="изображение в окне conemu зависает" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1931">Issue 1931&nbsp;</a>, gh#67: ConEmu&#x27;s output was blocked after maximizing window. </li></ul>
 
 <h2><a name="Build_150307"></a>Build 150307<a href="#Build_150307" class="section_anchor"></a></h2>
 <ul><li>gh#65: Min size for active cursor changes were not saved. </li>
@@ -118,7 +118,7 @@ endif</pre>
 <h2><a name="Build_150305"></a>Build 150305<a href="#Build_150305" class="section_anchor"></a></h2>
 <ul><li>Wrong tab was activated sometimes by mouse click if there was a scroll buttons on the TabBar. </li>
 <li>Do not do tab flickering while switching them by mouse clicks. </li>
-<li>White background flickering was occured sometimes during <a href="ConEmu.html">ConEmu</a> startup. </li>
+<li>White background flickering was occured sometimes during ConEmu startup. </li>
 <li>Default tasks were created sometimes not properly quoted. </li>
 <li>Add ‘Ranges’ drop-down list to pseudographics font settings with some predefines. </li>
 <li><a title="Key-Up event not posted for 'space' and 'return' keys" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1927">Issue 1927&nbsp;</a>: Key-Up event for ‘Space’ and ‘Enter’ in ReadConsoleInputA. </li>
@@ -134,9 +134,9 @@ endif</pre>
 <li>Far Tasks. Sort default Far tasks by version. </li>
 <li>When dropping files in the Far Manager prompt, show ‘+ Enter’ menu items first. </li>
 <li>TCC tasks were not created by default. </li>
-<li><a title="[use clink in prompt] options is not working"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1923">Issue 1923</a>: ‘ConEmu here’ was forced to &quot;<code>%USERPROFILE%</code>&quot; from certain folders. If user starts ‘ConEmu here’ from &quot;<code>%ConEmuDir%</code>&quot;, &quot;<code>%windir%</code>&quot; or &quot;<code>%windir%\system32</code>&quot; <a href="ConEmu.html">ConEmu</a> was switched to &quot;<code>%USERPROFILE%</code>&quot;. That&#x27;s because these folders may be used if user starts <a href="ConEmu.html">ConEmu</a> (or just cmd as <a href="DefTerm.html">DefTerm</a>) from bare Win+R. So, the switch &quot;<code>/here</code>&quot; was implemented, it&#x27;s not shown in the Settings dialog. User needs to re-register ‘ConEmu here’ existing commands. </li>
+<li><a title="[use clink in prompt] options is not working"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1923">Issue 1923</a>: ‘ConEmu here’ was forced to &quot;<code>%USERPROFILE%</code>&quot; from certain folders. If user starts ‘ConEmu here’ from &quot;<code>%ConEmuDir%</code>&quot;, &quot;<code>%windir%</code>&quot; or &quot;<code>%windir%\system32</code>&quot; ConEmu was switched to &quot;<code>%USERPROFILE%</code>&quot;. That&#x27;s because these folders may be used if user starts ConEmu (or just cmd as <a href="DefTerm.html">DefTerm</a>) from bare Win+R. So, the switch &quot;<code>/here</code>&quot; was implemented, it&#x27;s not shown in the Settings dialog. User needs to re-register ‘ConEmu here’ existing commands. </li>
 <li>Process ‘<code>ConEmu[64].exe</code>’ returns exit code of last terminated shell. </li>
-<li>Switch &quot;<code>/QuitOnClose</code>&quot; forces <a href="ConEmu.html">ConEmu</a> window closing with last tab. </li></ul>
+<li>Switch &quot;<code>/QuitOnClose</code>&quot; forces ConEmu window closing with last tab. </li></ul>
 
 <h2><a name="Build_150302a"></a>Build 150302a<a href="#Build_150302a" class="section_anchor"></a></h2>
 <ul><li><a title="conemu падает после выхода из последней вкладки Far" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1921">Issue 1921&nbsp;</a>: Regression: Fix a crash on last tab close (WinXP). </li></ul>
@@ -161,7 +161,7 @@ endif</pre>
 <li>Pseudographics font was incorrectly sized on some dpi-s. </li>
 <li>HotKeys. Implemented ‘Kill all but shell’ function. Default hotkey Win+Shift+Delete for new configs. Also it is accessible from <a href="TabMenu.html">TabMenu</a> or <a href="SystemMenu.html">SystemMenu</a> and <a href="GuiMacro.html">GuiMacro</a>: terminate all but shell process <code>Close(10)</code>, no confirm <code>Close(10,1)</code>. <strong>Note</strong>. If there is a shell only - confirm user to kill the shell. </li>
 <li>Don&#x27;t do &quot;ConEmuCpCvt&quot; conversion if some chars were failed. </li>
-<li>Ability to change ‘processor affinity’ and ‘process priority’ for all running processes. The function affects all running processes in the current console (tab/pane). Available from <a href="TabMenu.html">TabMenu</a> and <a href="SystemMenu.html">SystemMenu</a> item ‘Affinity/priority...’, HotKey and <a href="GuiMacro.html">GuiMacro</a> <code>AffinityPriority([Affinity,Priority])</code>. Unless you specify ‘Affinity’ or ‘Priority’ in <a href="GuiMacro.html">GuiMacro</a> function <a href="ConEmu.html">ConEmu</a> will show dialog with affinity/priority options. </li>
+<li>Ability to change ‘processor affinity’ and ‘process priority’ for all running processes. The function affects all running processes in the current console (tab/pane). Available from <a href="TabMenu.html">TabMenu</a> and <a href="SystemMenu.html">SystemMenu</a> item ‘Affinity/priority...’, HotKey and <a href="GuiMacro.html">GuiMacro</a> <code>AffinityPriority([Affinity,Priority])</code>. Unless you specify ‘Affinity’ or ‘Priority’ in <a href="GuiMacro.html">GuiMacro</a> function ConEmu will show dialog with affinity/priority options. </li>
 <li><a title="Feature Request When searching for Text not able to copy at that position" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1911">Issue 1911&nbsp;</a>: Do not scroll out of found position after clicking in the console to allow select text there. </li>
 <li>Option ‘Skip click on activation’ was not working sometimes. </li>
 <li>Allow physical scroll down of the console until the cursor remains visible. </li>
@@ -196,7 +196,7 @@ ConEmuC -GuiMacro WindowPosSize 0 0 800px 600px</pre>
 <li>Use bitmap resource for ‘Search’ icon. </li></ul>
 
 <h2><a name="Build_150209"></a>Build 150209<a href="#Build_150209" class="section_anchor"></a></h2>
-<ul><li><a title="ConEmu периодически закрывается и закрывает все, что в нем запущено"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1897">Issue 1897</a>: Tear off started &quot;<a href="ConEmu.html">ConEmu</a>.exe&quot; from &quot;taskeng.exe&quot; (switch /demote). Let process created from task sheduler runs indefinitely. </li>
+<ul><li><a title="ConEmu периодически закрывается и закрывает все, что в нем запущено"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1897">Issue 1897</a>: Tear off started &quot;ConEmu.exe&quot; from &quot;taskeng.exe&quot; (switch /demote). Let process created from task sheduler runs indefinitely. </li>
 <li>Auto save window size &amp; pos is turned on by default. </li>
 <li>Add test batch &quot;utf-8-test.cmd&quot; (check console unicode capabilities). </li>
 <li>Suggest <a href="ConEmuXml.html">ConEmuXml</a> storage for new configurations by default. </li>
@@ -236,8 +236,8 @@ set ConEmuDefaultCp=</pre>
 
 <h2><a name="Build_150128"></a>Build 150128<a href="#Build_150128" class="section_anchor"></a></h2>
 <ul><li>Add missed <a href="GuiMacro.html">GuiMacro</a> GetOption description. </li>
-<li>Debug. Show <a href="ConEmu.html">ConEmu</a> build number in the <code>_ASSERT</code> dialog </li>
-<li><a title="Возможно ли получить PID Conemu посредством GuiMacro?" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1878">Issue 1878&nbsp;</a>: <a href="GuiMacro.html">GuiMacro</a>. Add ability to get some environment from <a href="ConEmu.html">ConEmu</a>. </li><pre class="prettyprint">GetInfo(&quot;PID&quot;[,&quot;HWND&quot;[,...]])
+<li>Debug. Show ConEmu build number in the <code>_ASSERT</code> dialog </li>
+<li><a title="Возможно ли получить PID Conemu посредством GuiMacro?" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1878">Issue 1878&nbsp;</a>: <a href="GuiMacro.html">GuiMacro</a>. Add ability to get some environment from ConEmu. </li><pre class="prettyprint">GetInfo(&quot;PID&quot;[,&quot;HWND&quot;[,...]])
   - Returns values of some ConEmu environment variables
     GetInfo(&quot;PID&quot;) returns %ConEmuPID% and so on
     It&#x27;s processed in GUI so the result may differs from RealConsole</pre>
@@ -275,10 +275,10 @@ Add &quot;-new_console:n&quot; suffix to suppress &quot;Press Enter or Esc to cl
 <li><a title="Escape sequence and device CON"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1865">Issue 1865</a>: Allow ANSI escape sequences when redirecting to device CON. </li></ul>
 
 <h2><a name="Build_150111"></a>Build 150111<a href="#Build_150111" class="section_anchor"></a></h2>
-<ul><li>New <a href="ConEmu.html">ConEmu</a> icon. </li>
+<ul><li>New ConEmu icon. </li>
 <li>HighDpi fixes (if primary mon is 192dpi and secondary is 96dpi). </li><ul><li>Search icon size on secondary monitor was huge. </li>
 <li>Settings dialog controls were sized too large. </li></ul><li><a href="DefTerm.html">DefTerm</a>. Aggressive mode was not be able to disabled actually. </li>
-<li><a href="GuiMacro.html">GuiMacro</a>. Allow to execute some <a href="GuiMacro.html">GuiMacro</a> after <a href="ConEmu.html">ConEmu</a> window creation. Example: </li><pre class="prettyprint">ConEmu -Detached -GuiMacro &quot;Task(&quot;&quot;{cmd}&quot;&quot;); Settings&quot;</pre>
+<li><a href="GuiMacro.html">GuiMacro</a>. Allow to execute some <a href="GuiMacro.html">GuiMacro</a> after ConEmu window creation. Example: </li><pre class="prettyprint">ConEmu -Detached -GuiMacro &quot;Task(&quot;&quot;{cmd}&quot;&quot;); Settings&quot;</pre>
 <li><a title="Gui Macro doesn't print in active pane"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1861">Issue 1861</a>: <a href="GuiMacro.html">GuiMacro</a>. <code>Context([&lt;Tab&gt;[,&lt;Split&gt;]])</code>. </li>
 <li>Don&#x27;t try to start clink if cmd is started just for single command execution. </li>
 <li>Fix incorrect buffer address passed when getting AutoRun reg key value. </li>
@@ -288,7 +288,7 @@ Add &quot;-new_console:n&quot; suffix to suppress &quot;Press Enter or Esc to cl
 <ul><li><a title="&quot;Console script are not supported here! Can't create new virtual console!&quot;"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1846">Issue 1846</a>: Script is not supported here (5909d9f regression). </li>
 <li>Split options set in the ‘Create new console’ dialog not take precedence of any specified in the Task itself (first task&#x27;s command actually). </li>
 <li>CmdInit.cmd: Print Windows version while initializing. </li>
-<li>Add &quot;<code>ConEmuC /EXPORT=GUI [Var1 [Var2 [...]]]</code>&quot; for exporting vars to <a href="ConEmu.html">ConEmu</a> GUI only. </li>
+<li>Add &quot;<code>ConEmuC /EXPORT=GUI [Var1 [Var2 [...]]]</code>&quot; for exporting vars to ConEmu GUI only. </li>
 <li>DefaultTasks. Use registry&#x27;s ‘App Paths’ while searching for exe files. </li>
 <li>Let Git bash use git.ico and try to find it using registry. </li>
 <li>In some cases <a href="ConEmuHk.html">ConEmuHk</a> was not properly deinitialized within cygwin/msys. </li>
@@ -345,7 +345,7 @@ Add &quot;-new_console:n&quot; suffix to suppress &quot;Press Enter or Esc to cl
 <li>Sleep in background: don&#x27;t force inactive tabs to high activity state on startup. </li>
 <li>More server-side logging of ‘sleep in background’. </li>
 <li>Fix multiple Sleep-s appeared in tabs (ConEmuSleepIndicator=TITLE). </li>
-<li>In some cases wrong installer bitness was used with autoupdate. If <a href="ConEmu.html">ConEmu</a>.exe was started but both x86 and x64 versions were installed. </li>
+<li>In some cases wrong installer bitness was used with autoupdate. If ConEmu.exe was started but both x86 and x64 versions were installed. </li>
 <li><a title="Vertical scroll bar has disappeared." class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1812">Issue 1812&nbsp;</a>: Bypass Windows 10 bug with GetConsoleDisplayMode. </li>
 <li>Changes in the setting ‘tab flash count’ field were ignored. </li>
 <li><a title="Agressive mode can't be disabled" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1826">Issue 1826&nbsp;</a>: Changes of the checkbox ‘Aggressive mode’ were ignored. </li>
@@ -362,9 +362,9 @@ Add &quot;-new_console:n&quot; suffix to suppress &quot;Press Enter or Esc to cl
 <li>Some controls on the ‘Features’ page were overlapped. </li></ul>
 
 <h2><a name="Build_141125"></a>Build 141125<a href="#Build_141125" class="section_anchor"></a></h2>
-<ul><li><a title="the new behavior of build 141117 forces start cmd into new ConEmu tab" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1821">Issue 1821&nbsp;</a>: Don&#x27;t force &quot;start /min ...&quot; to be new <a href="ConEmu.html">ConEmu</a> tab. </li>
-<li><a title="непрошенный attach консольной программы" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1822">Issue 1822&nbsp;</a>: Option to disable forcing &quot;start&quot; to be new <a href="ConEmu.html">ConEmu</a> tab. </li>
-<li>Don&#x27;t block row/col highlight updating if mouse is inside VCon even if <a href="ConEmu.html">ConEmu</a> is not a foreground window. </li>
+<ul><li><a title="the new behavior of build 141117 forces start cmd into new ConEmu tab" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1821">Issue 1821&nbsp;</a>: Don&#x27;t force &quot;start /min ...&quot; to be new ConEmu tab. </li>
+<li><a title="непрошенный attach консольной программы" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1822">Issue 1822&nbsp;</a>: Option to disable forcing &quot;start&quot; to be new ConEmu tab. </li>
+<li>Don&#x27;t block row/col highlight updating if mouse is inside VCon even if ConEmu is not a foreground window. </li>
 <li>Let switch and update row/col highlight simultaneously for all panes in group. </li>
 <li>Don&#x27;t flash tab created in background. </li>
 <li>Don&#x27;t flash just deactivated tab. </li>
@@ -387,21 +387,21 @@ Add &quot;-new_console:n&quot; suffix to suppress &quot;Press Enter or Esc to cl
 <li><a title="TC8 current dir tracking" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1807">Issue 1807&nbsp;</a>: Allow <a href="GuiMacro.html">GuiMacro</a> execution in specified tab or split. </li><pre class="prettyprint">ConEmuC /GUIMACRO[:PID|HWND][:T&lt;tab&gt;][:S&lt;split&gt;] &lt;GuiMacro command&gt;
 &lt;tab&gt; is 1-based tab index
 &lt;split&gt; is 1-based pane index of selected/active group of panes</pre>
-<li><a title="ConEmu breaks Cygwin's pipeline" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1819">Issue 1819&nbsp;</a>: <a href="ConEmu.html">ConEmu</a> broke cygwin&#x27;s pipeline in some rare cases. </li>
+<li><a title="ConEmu breaks Cygwin's pipeline" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1819">Issue 1819&nbsp;</a>: ConEmu broke cygwin&#x27;s pipeline in some rare cases. </li>
 <li><a title="Inactive tab activity flash request" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1809">Issue 1809&nbsp;</a>: Inactive (invisible) tab flash on activity. </li><ul><li>Setting &quot;<code>TabFlashChanged</code>&quot;. 0 - disabled, &gt;0 - infinite, ODD - leave highlighted, EVEN - turn off after flashing. </li>
 <li>Setting &quot;<code>TabModified</code>&quot; set template for those modified tabs. </li>
-<li>Both settings are available on ‘Tabs’ settings page. </li></ul><li>Use keyboard hooks to process ‘Switch focus between <a href="ConEmu.html">ConEmu</a> and <a href="ChildGui.html">ChildGui</a>’. </li>
-<li>Use Win+Z (by default) for ‘Switch focus between <a href="ConEmu.html">ConEmu</a> and <a href="ChildGui.html">ChildGui</a>’. </li>
-<li>Was not able to set focus into <a href="ConEmu.html">ConEmu</a> after <code>CtrlWinAltSpace</code> with <a href="ChildGui.html">ChildGui</a>. </li></ul>
+<li>Both settings are available on ‘Tabs’ settings page. </li></ul><li>Use keyboard hooks to process ‘Switch focus between ConEmu and <a href="ChildGui.html">ChildGui</a>’. </li>
+<li>Use Win+Z (by default) for ‘Switch focus between ConEmu and <a href="ChildGui.html">ChildGui</a>’. </li>
+<li>Was not able to set focus into ConEmu after <code>CtrlWinAltSpace</code> with <a href="ChildGui.html">ChildGui</a>. </li></ul>
 
 <h2><a name="Build_141117"></a>Build 141117<a href="#Build_141117" class="section_anchor"></a></h2>
 <ul><li>Default color scheme set back to <code>&lt;Solarized&gt;</code>. To get git&#x27;s proper colored output for <code>&lt;Solarized&gt;</code> scheme run: </li><pre class="prettyprint">git config --global color.diff.new &quot;green bold&quot;</pre>
 <li>Extend fonts listboxes were not enabled properly. </li>
 <li>Esc was not working in the ‘Commands’ field on the ‘Tasks’ settings page. </li>
 <li>Apply button on ‘Size &amp; Pos’ page was not working, size fields were rolled back after ‘Apply’ was pressed. </li>
-<li>Command &quot;start cmd&quot; from <a href="ConEmu.html">ConEmu</a> tab must start new tab. </li>
-<li><a title="specify startup coords, et al" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=653">Issue 653&nbsp;</a>: New <a href="ConEmu.html">ConEmu</a>.exe switches: <code>-Wnd{X|Y|W|H} &lt;Value&gt;</code>. This will force <a href="ConEmu.html">ConEmu</a> window to position/size. Size supports cells (<code>-WndW 80</code>), percents (<code>-WndW 50%</code>) and pixels (<code>-WndW 100px</code>). </li>
-<li><a title="ConEmu panel views plugin does not respect app-distinct color palette overrides" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1815">Issue 1815&nbsp;</a>: <a href="ConEmu.html">ConEmu</a> panel view plugin does not despect AppDistinct palette overrides. </li></ul>
+<li>Command &quot;start cmd&quot; from ConEmu tab must start new tab. </li>
+<li><a title="specify startup coords, et al" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=653">Issue 653&nbsp;</a>: New ConEmu.exe switches: <code>-Wnd{X|Y|W|H} &lt;Value&gt;</code>. This will force ConEmu window to position/size. Size supports cells (<code>-WndW 80</code>), percents (<code>-WndW 50%</code>) and pixels (<code>-WndW 100px</code>). </li>
+<li><a title="ConEmu panel views plugin does not respect app-distinct color palette overrides" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1815">Issue 1815&nbsp;</a>: ConEmu panel view plugin does not despect AppDistinct palette overrides. </li></ul>
 
 <h2><a name="Build_141116"></a>Build 141116<a href="#Build_141116" class="section_anchor"></a></h2>
 <ul><li><a title="Vertical scroll bar has disappeared." class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1812">Issue 1812&nbsp;</a>: Vertical scroll bar disappeared in latest Win10 build. </li>
@@ -553,7 +553,7 @@ Add &quot;-new_console:n&quot; suffix to suppress &quot;Press Enter or Esc to cl
 <h2><a name="Build_141022"></a>Build 141022<a href="#Build_141022" class="section_anchor"></a></h2>
 <ul><li>Correct snap/tile ConEmu window to left/right/by-width/by-height. </li>
 <li>Show snap/tile status on the Settings/Info page. </li>
-<li>Rename maximize/tile hotkeys&#x27; descriptions. ‘Maximize height / width’ <code>-&gt;</code> ‘Snap .. to top/bottom / left/right edges ...’ and ‘Tile <a href="ConEmu.html">ConEmu</a> ...’ <code>-&gt;</code> ‘Snap ConEmu ...’ </li>
+<li>Rename maximize/tile hotkeys&#x27; descriptions. ‘Maximize height / width’ <code>-&gt;</code> ‘Snap .. to top/bottom / left/right edges ...’ and ‘Tile ConEmu ...’ <code>-&gt;</code> ‘Snap ConEmu ...’ </li>
 <li>Update Far3/lua headers to build 4040. </li>
 <li>Let <code>Plugin.SyncCall(&quot;4B675D80-1D4A-4EA9-8436-FDC23F2FC14B&quot;,&quot;...&quot;)</code> returns result as string if succeeded. </li><pre class="prettyprint">lua:=Plugin.SyncCall(&quot;4B675D80-1D4A-4EA9-8436-FDC23F2FC14B&quot;,&quot;IsConEmu&quot;)
 lua:=Plugin.SyncCall(&quot;4B675D80-1D4A-4EA9-8436-FDC23F2FC14B&quot;,&quot;FindEditor: C:\\autoexec.bat&quot;)</pre>
@@ -572,7 +572,7 @@ end</pre>
 <li><a title="ConEmu hangs after termination of a specific Python script with &quot;Waiting...&quot; in the status bar" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=660">Issue 660&nbsp;</a>: Switch &quot;<code>/AUTOATTACH</code>&quot; was not run asynchronously in some cases. </li>
 <li>Attach: Switch &quot;<code>/GHWND=NEW</code>&quot; may create garbaged command line. </li>
 <li>Attach: If &quot;<code>/AUTOATTACH</code>&quot; is specified, run server of same bitness as root/parent process. </li>
-<li>Scroll. Changing scrolling style. All scrollings in <a href="ConEmu.html">ConEmu</a> are now processed virtually, <a href="RealConsole.html">RealConsole</a> is not touched anymore. </li>
+<li>Scroll. Changing scrolling style. All scrollings in ConEmu are now processed virtually, <a href="RealConsole.html">RealConsole</a> is not touched anymore. </li>
 <li>Add <a href="StatusBar.html">StatusBar</a> column: Visible region lock. </li>
 <li>Favor first and grip status columns to be fully visible. </li>
 <li>Log tab activation errors (Far windows). </li></ul>
@@ -589,7 +589,7 @@ end</pre>
 <li>Hyperlinks: If clicked file was not found, try to find it in subfolders. </li>
 <li>Hyperlinks: Try to make file path properly cased before opening (<code>realconsole.cpp</code> <code>-&gt;</code> <code>RealConsole.cpp</code>). </li>
 <li><a title="Не cрабатывают команды, вызванные из меню." class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1754">Issue 1754&nbsp;</a>: <a href="SystemMenu.html">SystemMenu</a> was opened by RClick on the title bar was not working on some XP machines. </li>
-<li><a title="ConEmu.Maximus5.100129a: некорректный переход по вкладкам плагином" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=166">Issue 166&nbsp;</a>: Tab switch was not working from ‘<a href="ConEmu.html">ConEmu</a> plugin <code>-&gt;</code> T’. </li>
+<li><a title="ConEmu.Maximus5.100129a: некорректный переход по вкладкам плагином" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=166">Issue 166&nbsp;</a>: Tab switch was not working from ‘ConEmu plugin <code>-&gt;</code> T’. </li>
 <li>Do not turn on ‘Long console output’ during &quot;<code>edit:&lt;command</code>&quot; operations. </li>
 <li>Tabs. SetTabs may fails for new Editor if it was opened from &quot;<code>edit:&lt;command</code>&quot;. </li>
 <li>Mouse wheel logging. </li>
@@ -643,8 +643,8 @@ end</pre>
 <li><a title="Auto save/restore opened tabs does not restore tab names" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1717">Issue 1717&nbsp;</a>: Auto save/restore opened tabs renamed labels. </li>
 <li><a href="AnsiEscapeCodes.html">AnsiEscapeCodes</a>: &#x27;ESC [ 90..97 m&#x27; high intensity foreground color, &#x27;ESC [ 100..107&#x27; high intensity background color. </li>
 <li><a title="'New console': 'Run as administrator' is ignored if 'New window' is checked" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1715">Issue 1715&nbsp;</a>: &#x27;New window&#x27;+&#x27;Run as administrator&#x27; was created non-elevated window. </li>
-<li>Don&#x27;t autoshow scrollbar on mouse hover while <a href="ConEmu.html">ConEmu</a> is not in foreground. </li>
-<li>Far plugin. F11 -&gt; &#x27;<a href="ConEmu.html">ConEmu</a>&#x27; -&gt; &#x27;Show all panels list&#x27;. Press enter to &#x27;print&#x27; selected path into current Far window. </li><pre class="prettyprint">Use macro (ConEmu.PanelsList.lua) to simplify menu call.
+<li>Don&#x27;t autoshow scrollbar on mouse hover while ConEmu is not in foreground. </li>
+<li>Far plugin. F11 -&gt; &#x27;ConEmu&#x27; -&gt; &#x27;Show all panels list&#x27;. Press enter to &#x27;print&#x27; selected path into current Far window. </li><pre class="prettyprint">Use macro (ConEmu.PanelsList.lua) to simplify menu call.
 Plugin.Call(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,11)</pre>
 <li><a title="Slow input response on startup with more than one open tab"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1590">Issue 1590</a>: (workaround) Parameter &#x27;StartCreateDelay&#x27; may be changed via settings (xml/reg). DWORD 10..10000, default 100. </li>
 <li>Debug. Some improvement in showing CP and console modes. </li>
@@ -657,7 +657,7 @@ Plugin.Call(&quot;4b675d80-1d4a-4ea9-8436-fdc23f2fc14b&quot;,11)</pre>
 
 <h2><a name="Build_140922"></a>Build 140922<a href="#Build_140922" class="section_anchor"></a></h2>
 <ul><li>Internal: CSettings decomposition. </li>
-<li><a href="GuiMacro.html">GuiMacro</a> may be used for changing Checkbox/Radio <a href="ConEmu.html">ConEmu</a>&#x27;s options. </li><pre class="prettyprint">SetOption(&quot;Check&quot;,&lt;ID&gt;,&lt;Value&gt;)
+<li><a href="GuiMacro.html">GuiMacro</a> may be used for changing Checkbox/Radio ConEmu&#x27;s options. </li><pre class="prettyprint">SetOption(&quot;Check&quot;,&lt;ID&gt;,&lt;Value&gt;)
   ID: numeric identifier of checkbox (ConEmu.rc, resource.h)
   Value: 0 - off, 1 - on, 2 - third state
 Example, turn scrollbar on: ConEmuC -GuiMacro SetOption Check 2488 1</pre>
@@ -688,7 +688,7 @@ conemuc -guimacro setoption FarGotoEditorPath @&quot;#notepad &quot;&quot;%3&quo
 <ul><li>Verbose tab activation error information. </li>
 <li>Wrong hotkey was <strong>displayed</strong> on Tasks page. </li>
 <li>Debug log was not disabled on Settings window closing. </li>
-<li><a href="ConEmu.html">ConEmu</a> frame was not set to inactive state with <a href="ChildGui.html">ChildGui</a> in the active tab. </li>
+<li>ConEmu frame was not set to inactive state with <a href="ChildGui.html">ChildGui</a> in the active tab. </li>
 <li>Log current session state changes (<code>/log</code> switch, <a title="A small window appear on corner after unlock from lock screen (Win+L)"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1689">Issue 1689</a> related). </li>
 <li>Wrong dpi value may be used in some cases (dialog sizes, etc.) </li>
 <li>If <a href="ChildGui.html">ChildGui</a> was in focus, cross clicking was not closed all ConEmu tabs but only active <a href="ChildGui.html">ChildGui</a>. </li>
@@ -730,10 +730,10 @@ conemuc -guimacro setoption FarGotoEditorPath @&quot;#notepad &quot;&quot;%3&quo
 <ul><li>New status bar columns are available: Zoom and DPI. Zoom is clickable. </li>
 <li>Let statusbar columns Focus/Foreground show process information. </li>
 <li>Ctrl+WheelClick reset font size to 100, same as <a href="GuiMacro.html">GuiMacro</a> Zoom(100). </li>
-<li>Make all <a href="ConEmu.html">ConEmu</a>&#x27;s dialogs per-monitor dpi aware. </li>
-<li>Fix console recreation and termination. If user cancel the UAC dialog during console recreation <a href="ConEmu.html">ConEmu</a> fails to close the window by cross-click. </li>
+<li>Make all ConEmu&#x27;s dialogs per-monitor dpi aware. </li>
+<li>Fix console recreation and termination. If user cancel the UAC dialog during console recreation ConEmu fails to close the window by cross-click. </li>
 <li>Implement ‘%CD%’ maintaining in the RCon. </li><ul><li>Automatic detection of ‘%CD%’ in &quot;cmd.exe&quot; or &quot;tcc.exe&quot;; </li>
-<li>Ability to inform <a href="ConEmu.html">ConEmu</a> GUI about shell ‘CD’ using ANSI (\e]9;9;&quot;CD&quot;\e\\) or &quot;ConEmuC -StoreCWD dir&quot;; </li>
+<li>Ability to inform ConEmu GUI about shell ‘CD’ using ANSI (\e]9;9;&quot;CD&quot;\e\\) or &quot;ConEmuC -StoreCWD dir&quot;; </li>
 <li>Display <strong>CD</strong> in the tab title using ‘%d’ tab template; </li>
 <li>Reuse <strong>CD</strong> in the Restart and Create new console dialogs; </li>
 <li>At last you may use &quot;<strong>%CD%</strong>&quot; variable with Shell macro function in the <code>Dir</code> parameter. Example, start new &#x27;cmd&#x27; session: </li><pre class="prettyprint">Shell(&quot;&quot;, &quot;cmd&quot;, &quot;&quot;, &quot;%CD%&quot;)</pre>
@@ -770,12 +770,12 @@ conemuc -guimacro setoption FarGotoEditorPath @&quot;#notepad &quot;&quot;%3&quo
 </ul>
 
 <h2><a name="Build_140810"></a>Build 140810<a href="#Build_140810" class="section_anchor"></a></h2>
-<ul><li>With courtesy of Certum, <a href="ConEmu.html">ConEmu</a>&#x27;s binaries now are signed as ‘Open Source Developer, <a href="ConEmu.html">ConEmu</a>-Maximus5’. </li>
+<ul><li>With courtesy of Certum, ConEmu&#x27;s binaries now are signed as ‘Open Source Developer, ConEmu-Maximus5’. </li>
 <li>Per-monitor dpi awareness implemented (Windows 8.1). The checkbox ‘Admit monitor dpi with font size’ is turned on by default. It will affect the height of Tabs, Status and Main console fonts. </li>
 <li>Ability to ‘Treat font height as device units’ implemented. The checkbox is turned OFF by default for existing configs, but it is turned ON by default for new configs and after config reset. </li>
 <li>Releases builded via VisualStudio projects was not dpi-aware. </li>
-<li><a title="Directory handle not released/disposed after console exit" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1653">Issue 1653&nbsp;</a>: In some rare cases <a href="ConEmu.html">ConEmu</a>.exe was locking shell working directory. </li>
-<li>New <a href="ConEmu.html">ConEmu</a>.exe switches: -quake, -quakeauto (autohide on focus lose) and -noquake. </li>
+<li><a title="Directory handle not released/disposed after console exit" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1653">Issue 1653&nbsp;</a>: In some rare cases ConEmu.exe was locking shell working directory. </li>
+<li>New ConEmu.exe switches: -quake, -quakeauto (autohide on focus lose) and -noquake. </li>
 <li>Checkbox ‘New window’ was ignored if dialog was started from tasks menu with Shift+Click. </li>
 <li>Ensure that console started in the ‘New window’ will not be Quake-moded. </li>
 <li>Ctrl+Wheel changes the zoom value but not a font height from the ‘Main’ settings page. </li></ul>
@@ -796,17 +796,17 @@ conemuc -guimacro setoption FarGotoEditorPath @&quot;#notepad &quot;&quot;%3&quo
 
 <h2><a name="Build_140707"></a>Build 140707<a href="#Build_140707" class="section_anchor"></a></h2>
 <ul><li>Show <a href="SystemMenu.html">SystemMenu</a> button on the toolbar (RClick opens Settings dialog). </li>
-<li><a title="cmd.exe in adminstrator mode are not automatically attached to ConEmu" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1125">Issue 1125&nbsp;</a>: ‘Run as’ was hooked in <a href="DefTerm.html">DefTerm</a> if <a href="ConEmu.html">ConEmu</a> window is already opened only. </li>
+<li><a title="cmd.exe in adminstrator mode are not automatically attached to ConEmu" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1125">Issue 1125&nbsp;</a>: ‘Run as’ was hooked in <a href="DefTerm.html">DefTerm</a> if ConEmu window is already opened only. </li>
 <li><a title="Детач Far с последующим аттачем к тому же экземпляру Conemu глючит" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1628">Issue 1628&nbsp;</a>: Detach/Re-Attach was failed. </li>
 <li>Option to disable console detach confirmation. </li>
-<li>Fix <code>[App Path]</code> search sequence (<code>far</code> was not started from <a href="ConEmu.html">ConEmu</a> folder). </li>
+<li>Fix <code>[App Path]</code> search sequence (<code>far</code> was not started from ConEmu folder). </li>
 <li>Error was occured while starting admin console (32779f4 regression). </li>
 <li>Internal changes. </li></ul>
 
 <h2><a name="Build_140703"></a>Build 140703<a href="#Build_140703" class="section_anchor"></a></h2>
 <ul><li>Support tabs dragging (reordering). </li>
 <li>Highlight&amp;Goto: <a title="highlight with # run editor outside of conemu error dialog" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1624">Issue 1624&nbsp;</a>: Don&#x27;t warn after starting external editor successfully. </li>
-<li>Highlight&amp;Goto: External editor may fails if located in system32 while <a href="ConEmu.html">ConEmu</a> is 32bit on 64bit OS. </li>
+<li>Highlight&amp;Goto: External editor may fails if located in system32 while ConEmu is 32bit on 64bit OS. </li>
 <li>Highlight&amp;Goto: Start editor after <code>LButtonUp</code>. </li>
 <li>Highlight&amp;Goto: Ensure started external editor get focus. </li>
 <li>New settings page ‘Confirm’, some confirmation options moved here. </li>
@@ -815,9 +815,9 @@ conemuc -guimacro setoption FarGotoEditorPath @&quot;#notepad &quot;&quot;%3&quo
 <h2><a name="Build_140701"></a>Build 140701<a href="#Build_140701" class="section_anchor"></a></h2>
 <ul><li>Wrong deinitialization <a href="ConEmuHk.html">ConEmuHk</a> sequence may cause crash on application exit. </li>
 <li>HTML format copy: Eliminate line spacing and try to match font height. </li>
-<li>Stack overflow may occurs sometimes on <a href="ConEmu.html">ConEmu</a> dialog popup. </li>
+<li>Stack overflow may occurs sometimes on ConEmu dialog popup. </li>
 <li>New switch: <code>ConEmuC /IsAdmin</code> - returns 1 as errorlevel if current user has elevated privileges, 2 if not. </li>
-<li><a title="Slightly incompatibilities between Conemu and Private Shell" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1626">Issue 1626&nbsp;</a>: Fix focus restore with some <a href="ChildGui.html">ChildGui</a> on <a href="ConEmu.html">ConEmu</a> window activation. </li>
+<li><a title="Slightly incompatibilities between Conemu and Private Shell" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1626">Issue 1626&nbsp;</a>: Fix focus restore with some <a href="ChildGui.html">ChildGui</a> on ConEmu window activation. </li>
 <li><a title="Падает производительность дочернего процесса при запуске из-под ConEmu…" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1617">Issue 1617&nbsp;</a>: Fix performance drawback on GetSystemTime. </li></ul>
 
 <h2><a name="Build_140628"></a>Build 140628<a href="#Build_140628" class="section_anchor"></a></h2>
@@ -866,8 +866,8 @@ Cmd==10: paste all lines space-separated, without confirmations</pre>
 <li><a title="relative inc/dec of bgImageDarker macro" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1611">Issue 1611&nbsp;</a>: <a href="GuiMacro.html">GuiMacro</a>. Optional <code>&lt;IsRelative&gt;</code> argument in <code>SetOption</code> function. Set <code>IsRelative=1</code> to use relative instead of absolute for some options, for example, <code>SetOption(&quot;bgImageDarker&quot;,-10,1)</code> to make background darker. </li>
 <li>Add search ability to the About dialog. </li><ul><li>Do not autoselect text in the About dialog (on Tab press). </li></ul><li>New design of search control in the Settings dialog. </li><ul><li>Add ability to search within hotkeys in the Settings dialog. </li>
 <li>Display found-hint in place of listbox/listview item. </li>
-<li>Add ‘(Quake-style hotkey also)’ to ‘Minimize/Restore’ hotkey description. </li></ul><li><a href="DefTerm.html">DefTerm</a>. Unchecked option ‘Use existing <a href="ConEmu.html">ConEmu</a> window if available’ was ignored in C# VS debugger. </li>
-<li><a href="DefTerm.html">DefTerm</a>. Fix external console attach (Win+G) from <a href="ConEmu.html">ConEmu</a> window. </li>
+<li>Add ‘(Quake-style hotkey also)’ to ‘Minimize/Restore’ hotkey description. </li></ul><li><a href="DefTerm.html">DefTerm</a>. Unchecked option ‘Use existing ConEmu window if available’ was ignored in C# VS debugger. </li>
+<li><a href="DefTerm.html">DefTerm</a>. Fix external console attach (Win+G) from ConEmu window. </li>
 <li><a href="DefTerm.html">DefTerm</a>. Hook ‘Command prompt (Administrator)’ too. </li>
 <li>Admin sign was not shown after auto-attach of external console. </li>
 <li>Show version state in the About dialog (stable/preview/alpha/obsolete). </li>
@@ -890,7 +890,7 @@ Cmd==10: paste all lines space-separated, without confirmations</pre>
 
 <h2><a name="Build_140529"></a>Build 140529<a href="#Build_140529" class="section_anchor"></a></h2>
 <ul><li>Hide tab error tooltip after receiving tabs from Far plugin. </li>
-<li>Active tab was not changed if Far window was switched from <a href="ConEmu.html">ConEmu</a> plugin (F12 macro). </li></ul>
+<li>Active tab was not changed if Far window was switched from ConEmu plugin (F12 macro). </li></ul>
 
 <h2><a name="Build_140528"></a>Build 140528<a href="#Build_140528" class="section_anchor"></a></h2>
 <ul><li><a title="Crash when setting Settings > Main > Cell = -1" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1588">Issue 1588&nbsp;</a>: Crash when setting ‘Settings &gt; Main &gt; Cell = -1’. </li>
@@ -1008,7 +1008,7 @@ powershell -new_console:C:twice.ico</pre>
 /single</pre>
 <li>RClick on Close button - minimize to TSA again (02bf905 regression). </li>
 <li>Don&#x27;t hook LoadLibraryW if possible. Till now LoadLibrary will be hooked in: </li><ul><li>Windows2k, WindowsXP - all processes </li>
-<li>Far Manager (far.exe, far32.exe, far64.exe) </li></ul><li>Vim xterm arrow key lags happen sometimes. When Vim was switched to xterm mode, <a href="ConEmu.html">ConEmu</a> sends corresponding xterm ESC-sequences instead of simple VK_xxx keypresses. Sometimes Vim don&#x27;t catch whole sequence before any other event occures. For example, you press Right arrow and Vim does nothing before you just move mouse over console. </li>
+<li>Far Manager (far.exe, far32.exe, far64.exe) </li></ul><li>Vim xterm arrow key lags happen sometimes. When Vim was switched to xterm mode, ConEmu sends corresponding xterm ESC-sequences instead of simple VK_xxx keypresses. Sometimes Vim don&#x27;t catch whole sequence before any other event occures. For example, you press Right arrow and Vim does nothing before you just move mouse over console. </li>
 <li><a title="Clickable URLs" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1511">Issue 1511&nbsp;</a>: Url was not detected after ‘port’: &quot;<a href="http://example:8080/TestTest/test?test=test" rel="nofollow">http://example:8080/TestTest/test?test=test</a>&quot;. </li>
 <li><a title="ConEmu fails to duplicate root when cmd.exe was catched as default terminal by hook"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1516">Issue 1516</a>: Duplicate root failed for consoles started from TaskMgr via Default terminal feature. </li>
 <li>Consider console is to be started hidden if start X/Y==32767 (Hooks). </li>

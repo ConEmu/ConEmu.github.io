@@ -9,14 +9,14 @@ redirect_from: /ru/CygwinStartCmd.html
 -->
 <p>One of the most asked questions related to bash is ‘How to run some command on startup and leave bash run interactively?’ </p>
 <p>The simplest thing with cmd.exe - /k switch, but the bash has no equivalent. </p>
-<p>Of course, the question is not related to <a href="ConEmu.html">ConEmu</a>, but let it be here. The example lines were copied from <a href="http://superuser.com/a/344486/139371" rel="nofollow">SU question</a>. </p>
+<p>Of course, the question is not related to ConEmu, but let it be here. The example lines were copied from <a href="http://superuser.com/a/344486/139371" rel="nofollow">SU question</a>. </p>
 <p>You need to modify your <code>~/.bashrc</code> profile script adding at the end: </p>
 <pre class="prettyprint">[[ $startup_cmd ]] &amp;&amp; {
   declare +x startup_cmd
   eval &quot;$startup_cmd&quot;
 }</pre>
 
-<p>And configure your <a href="ConEmu.html">ConEmu</a>&#x27;s task like following: </p>
+<p>And configure your ConEmu&#x27;s task like following: </p>
 <pre class="prettyprint">  set &quot;startup_cmd=echo &#x27;This is sample command&#x27; &amp;&amp; echo &#x27;And this is another command&#x27;&quot; &amp;&amp; bash -l -i</pre>
 
 <!-- Content ends -->
