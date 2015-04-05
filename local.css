@@ -1,7 +1,13 @@
 
 /* for layout debugging */
 
-@media (min-width: 980px) {
+@media (min-width: 1080px) {
+  #media-width:after {
+    content: "swide";
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1080px) {
   #media-width:after {
     content: "wide";
   }
@@ -12,6 +18,7 @@
     content: "narrow";
   }
 }
+
 
 @media (orientation: landscape) {
   #media-orient:after {
