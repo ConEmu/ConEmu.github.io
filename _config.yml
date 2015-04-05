@@ -7,6 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   automation and more.
 # baseurl: "/"
 url: "http://conemu.github.io"
+site_name: "conemu.github.io"
 twitter_username: ConEmuMaximus5
 github_username:  Maximus5
 
