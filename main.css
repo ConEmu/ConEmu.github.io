@@ -110,17 +110,25 @@ pre {
 }
 
 code {
-  color: #fdf6e3;
-  background-color: #073642;
+  /*color: #fdf6e3;
+  background-color: #073642;*/
+  border: 1px solid #93a1a1;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   font-family: 'andale mono', 'lucida console', monospace;
   white-space: pre;
-  padding: .1em .2em .1em .2em;
+  padding: .05em .2em .05em .2em;
 }
 
 code.plus {
   color: white;
   background-color: green;
   padding: .2em .05em .2em .05em;
+  border: 0;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
 }
 
 pre code {
@@ -129,6 +137,11 @@ pre code {
   font-family: 'andale mono', 'lucida console', monospace;
   white-space: pre;
   padding: 0; /* padding is defined in 'pre' already */
+  border: 0;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  line-height: 1.5em;
 }
 
 /* exactly same as "code" */
