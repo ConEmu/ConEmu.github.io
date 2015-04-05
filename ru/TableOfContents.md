@@ -90,7 +90,7 @@ h1_title: Оглавление документации по ConEmu
   * [Гиперссылки и файлы](FileLineDetector.html)
   * [ConEmu Inside](InsideParent.html)
   * [Автодополнение в cmd.exe](ConEmuClink.html)
-  * [Переменные окружения](ConEmuEnvironment.html)
+  * [Переменные окружения ConEmu](ConEmuEnvironment.html)
 
 <h3 id="controls">Управление</h3>
 
@@ -133,7 +133,7 @@ h1_title: Оглавление документации по ConEmu
   * [Task bar bug](TaskBarBug.html)
   * [TCC Вставка/Замена](TccInsertOverwrite.html)
   * [Vim 256-color](VimXterm.html)
-  * [Переменные окружения](WindowsEnvironment.html)
+  * [Переменные окружения Windows](WindowsEnvironment.html)
 
 <h3 id="feedback"><a href="Issues.html">Обратная связь</a></h3>
 

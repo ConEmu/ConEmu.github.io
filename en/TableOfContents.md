@@ -90,7 +90,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Hyperlinks and files](FileLineDetector.html)
   * [ConEmu Inside](InsideParent.html)
   * [Bash completion in cmd.exe](ConEmuClink.html)
-  * [Environment variables](ConEmuEnvironment.html)
+  * [ConEmu Environment variables](ConEmuEnvironment.html)
 
 <h3 id="controls">Controls</h3>
 
@@ -132,7 +132,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Task bar bug](TaskBarBug.html)
   * [TCC Insert/Overwrite](TccInsertOverwrite.html)
   * [Vim 256-color](VimXterm.html)
-  * [Environment variables](WindowsEnvironment.html)
+  * [Windows Environment variables](WindowsEnvironment.html)
 
 <h3 id="feedback"><a href="Issues.html">Feedback and contacts</a></h3>
 
