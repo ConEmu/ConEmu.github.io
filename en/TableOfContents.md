@@ -6,7 +6,7 @@ description: ConEmu Documentation Table of Contents
 h1_title: ConEmu Documentation Table of Contents
 ---
 
-### [ConEmu]({{page.docfolder}}/)
+<h3 id="conemu"><a href="{{page.docfolder}}/">ConEmu</a></h3>
 
   * [Distros comparison](VersionComparison.html)
     * [x64 or x86](VersionComparison.html#x64-or-x86)
@@ -18,7 +18,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [FAQ](ConEmuFAQ.html)
   * [Whats new](Whats_New.html)
 
-### [ConEmu Terms](ConEmuTerms.html)
+<h3 id="terms"><a href="ConEmuTerms.html">ConEmu Terms</a></h3>
 
   * [Active process](ActiveProcess.html)
   * [Alternative buffer](AlternativeBuffer.html)
@@ -32,7 +32,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [VirtualConsole](VirtualConsole.html)
   * [WinApi](WinApi.html)
 
-### Launch apps
+<h3 id="launch-apps">Launch apps</h3>
 
   * [Launch new tab](LaunchNewTab.html)
   * [Restart tab](RestartTab.html)
@@ -46,7 +46,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [-new\_console switch](NewConsole.html)
   * [DOS applications](DosBox.html)
 
-### Settings
+<h3 id="settings">Settings</h3>
 
   * [First start](SettingsFast.html)
   * [ConEmu.xml](ConEmuXml.html)
@@ -80,7 +80,7 @@ h1_title: ConEmu Documentation Table of Contents
       * [Debug](SettingsDebug.html)
   * [Fonts](Fonts.html)
 
-### Features
+<h3 id="features">Features</h3>
 
   * [ExtendedConsole](ExtendedConsole.html)
   * [ANSI X3.64 / 256 color](AnsiEscapeCodes.html)
@@ -92,7 +92,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Bash completion in cmd.exe](ConEmuClink.html)
   * [Environment variables](ConEmuEnvironment.html)
 
-### Controls
+<h3 id="controls">Controls</h3>
 
   * [Tabs](Tabs.html)
   * [Splits (panes)](SplitScreen.html)
@@ -105,7 +105,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [GUI Macros](GuiMacro.html)
   * [Far and touchscreen](TabletPC.html)
 
-### [Cygwin & Msys](CygwinMsys.html)
+<h3 id="cygwin-and-msys"><a href="CygwinMsys.html">Cygwin and Msys</a></h3>
   * [Cygwin & ${HOME}](CygwinStartDir.html)
   * [Cygwin & startup cmd](CygwinStartCmd.html)
   * [Cygwin & Ansi](CygwinAnsi.html)
@@ -113,12 +113,12 @@ h1_title: ConEmu Documentation Table of Contents
   * [Cygwin heap error](CygwinHeap.html)
   * [AppHelp problem](AppHelp.html)
 
-### ConEmu and Far Manager
+<h3 id="conemu-and-far">ConEmu and Far Manager</h3>
 
   * [Far & ConEmu plugins](ConEmuFarPlugin.html)
   * [Far Macros](FarMacro.html)
 
-### [Tips and Tweaks](TipsAndTweaks.html)
+<h3 id="tips-and-tweaks"><a href="TipsAndTweaks.html">Tips and Tweaks</a></h3>
 
   * [Unicode issues](CheckUnicode.html)
   * [Bold/Italic/Underlined](FaqBoldItalic.html)
@@ -134,7 +134,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Vim 256-color](VimXterm.html)
   * [Environment variables](WindowsEnvironment.html)
 
-### [Feedback](Issues.html)
+<h3 id="feedback"><a href="Issues.html">Feedback and contacts</a></h3>
 
   * [Bad issues](BadIssue.html)
   * [CrashDump](CrashDump.html)
@@ -145,7 +145,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Old builds](OldBuild.html)
   * [Sources](Source.html)
 
-### Extras
+<h3 id="extras">Extras</h3>
 
   * [ConEmu Awards](Awards.html)
   * [Acknowledgements](Acknowledgement.html)
@@ -159,6 +159,6 @@ h1_title: ConEmu Documentation Table of Contents
   * [Dependency Walker](DependencyWalker.html)
   * [How you may help](ConEmuHelping.html)
 
-## Far Manager
+<h2 id="far-manager">Far Manager</h2>
 
   * [About Far Manager](FarManager.html)
