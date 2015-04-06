@@ -17,6 +17,7 @@ h1_title: Оглавление документации по ConEmu
     * [Папки/файлы](ConEmuFolders.html)
   * [Скриншоты](Screenshots.html)
   * [Видео](Screencasts.html)
+  * [Зублуждения](Delusions.html)
   * [FAQ](ConEmuFAQ.html)
   * [Whats new](Whats_New.html)
 

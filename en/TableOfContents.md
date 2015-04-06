@@ -17,6 +17,7 @@ h1_title: ConEmu Documentation Table of Contents
     * [Folders](ConEmuFolders.html)
   * [Screenshots](Screenshots.html)
   * [Screencasts](Screencasts.html)
+  * [Delusions](Delusions.html)
   * [FAQ](ConEmuFAQ.html)
   * [Whats new](Whats_New.html)
 
