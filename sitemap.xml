@@ -193,12 +193,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://conemu.github.io/en/CygwinCurDir.html</loc>
-    <lastmod>2015-04-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://conemu.github.io/en/CygwinHeap.html</loc>
     <lastmod>2015-04-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -218,12 +212,6 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/CygwinStartDir.html</loc>
-    <lastmod>2015-04-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://conemu.github.io/en/CygwinWorkDir.html</loc>
     <lastmod>2015-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -355,6 +343,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://conemu.github.io/en/InsideParent.html</loc>
+    <lastmod>2015-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://conemu.github.io/en/Installation.html</loc>
     <lastmod>2015-04-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -422,12 +416,6 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/OldBuild.html</loc>
-    <lastmod>2015-04-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://conemu.github.io/en/PerMonitorDpi.html</loc>
     <lastmod>2015-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -571,6 +559,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://conemu.github.io/en/SettingsFast.html</loc>
+    <lastmod>2015-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://conemu.github.io/en/SettingsFeatures.html</loc>
     <lastmod>2015-04-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -703,12 +697,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://conemu.github.io/en/stackoverflow.html</loc>
-    <lastmod>2015-04-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://conemu.github.io/en/StartupDir.html</loc>
     <lastmod>2015-04-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -734,6 +722,12 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/TableOfContents.html</loc>
+    <lastmod>2015-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://conemu.github.io/en/TabletPC.html</loc>
     <lastmod>2015-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
