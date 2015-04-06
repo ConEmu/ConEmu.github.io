@@ -26,8 +26,8 @@ You can see *Active Process* name, bitness and PID in the [StatusBar](StatusBar.
 or in the [TabBar](TabBar.html) if you choose appropriate [Tab template](SettingsTabBar.html).
 For example template `%s {%p}` will show `timeout {21564}`.
 
-**Note** *Active Process* is **console** process or
-[ChildGui](ChildGui.html) application,
+**Note** *Active Process* is [console shell or tool](ConsoleApplication.html)
+or [ChildGui](ChildGui.html) application,
 but is neither `ConEmu[64].exe` nor `ConEmuC[64].exe`.
 
 {% endraw %}
