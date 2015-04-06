@@ -25,6 +25,19 @@ or anything else, spreading the word for example.
 
 <!-- Content starts -->
 
+<h2><a name="Build_150405"></a>Build 150405<a href="#Build_150405" class="section_anchor"></a></h2>
+<ul><li>Redesign ‘Fast configuration’ dialog. Add ‘Start command’, ‘Palette’, ‘Quake style with HotKey’. </li>
+	<li>Choose preferred startup Task for new configs (Far -> TCC -> NYAOS -> cmd). </li>
+	<li>Fix wrong position of duplicate hotkey warning balloon. </li>
+	<li>Detect console buffer corruption and log it. </li>
+		Sometimes during kmk build script execution something very bad happens
+		with console buffer and lines like following were written to log
+		<pre><code>RefrThread CurSize={-18544x31} :ReadConsoleInfo (skipped=1)</code></pre>
+		After that an assertion appears like
+		<pre><code>nNewWidth>0 && nNewHeight>0 at RealBuffer.cpp:1784</code></pre> </li>
+</ul>
+
+
 <h2><a name="Build_150331"></a>Build 150331<a href="#Build_150331" class="section_anchor"></a></h2>
 <ul><li>gh#88: Allow ‘Apps’ key to use as single hotkey. </li>
 	<li><a href="GuiMacro.html">GuiMacro</a>. Bugfixes and new function.
