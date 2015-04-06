@@ -4,7 +4,7 @@ title: ConEmu | Console-related delusions
 description: "There are several delusions frequently said by users.
    This article explains few of them."
 
-bc1_url: /TableOfContents.html#conemu
+bc1_url: TableOfContents.html#conemu
 bc1_title: ConEmu
 
 sa1_url: TableOfContents.html#terms

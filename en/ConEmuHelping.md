@@ -5,7 +5,7 @@ description: "Have you seen spelling error in the program interface or documenta
    Can you suggest better translation or add some text to the documentation?
    Any suggestions are appreciated!"
 
-bc1_url: /TableOfContents.html#feedback
+bc1_url: TableOfContents.html#feedback
 bc1_title: Feedback and contacts
 ---
 

@@ -5,7 +5,7 @@ title: ConEmu | Installation
 
 description: How to properly install ConEmu
 
-bc1_url: /TableOfContents.html#conemu
+bc1_url: TableOfContents.html#conemu
 bc1_title: ConEmu
 
 sa1_url: VersionComparison.html

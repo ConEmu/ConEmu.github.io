@@ -3,7 +3,7 @@ redirect_from: /ru/csudo.html
 
 title: "ConEmu | csudo - Unix like sudo command on Windows"
 
-bc1_url: /TableOfContents.html#launch-apps
+bc1_url: TableOfContents.html#launch-apps
 bc1_title: Launch apps
 
 sa1_url: NewConsole.html
