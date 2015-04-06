@@ -9,4 +9,7 @@ Disallow: /ru/Awards.html
 Disallow: /en/TableOfContents.html
 Disallow: /ru/TableOfContents.html
 Disallow: /en/ConEmu.html
+Disallow: /en/License_by_Zoin.html
+Disallow: /en/Issues2.html
+Disallow: /en/ExportEnvVar.html
 Sitemap: http://conemu.github.io/sitemap.xml
