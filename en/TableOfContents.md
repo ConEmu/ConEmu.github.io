@@ -21,6 +21,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Delusions](Delusions.html)
   * [FAQ](ConEmuFAQ.html)
   * [Whats new](Whats_New.html)
+  * [Donate](/donate.html)
 
 <h3 id="terms"><a href="ConEmuTerms.html">ConEmu Terms</a></h3>
 

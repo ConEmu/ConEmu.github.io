@@ -8,14 +8,16 @@ redirect_from: /en/StableVsPreview.html
 title: ConEmu | Version Comparison
 
 description: "The difference between ConEmu versions.
-   Which version to download: Alpha, Preview or Stable.
-   Which version to run: x86 (32bit) or x64 (64bit)."
+   Which version to download. Which version to run."
 
 h1_title: Which version to choose
 
 h1_content: "What is the difference between ConEmu versions? <br/>
    Which version to download: ‘Alpha’, ‘Preview’ or ‘Stable’? <br/>
    Which version to run: ‘x86 (32bit)’ or ‘x64 (64bit)’?"
+
+bc1_url: TableOfContents.html#conemu
+bc1_title: ConEmu
 ---
 
 ## Contents
