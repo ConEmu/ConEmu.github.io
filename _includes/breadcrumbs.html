@@ -1,26 +1,14 @@
 <div>
   <span id="a" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemref="b">
-    <a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}{{ page.docfolder }}/" itemprop="url"><span itemprop="title">{{ site.site_name }}</span></a>
+    <a href="{{ page.docfolder }}/" itemprop="url"><span itemprop="title">{{ site.site_name }}</span></a>
     ›
   </span>
-  <span id="b" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if page.bc1_url != nil %} itemref="c" {% endif %}>
-    <a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}{{ page.docfolder }}/TableOfContents.html"><span itemprop="title">{% if page.docfolder == '/ru' %}Содержание{% else %}Table of Contents{% endif %}</span></a>
+  <span id="b" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if page.breadcrumbs %} itemref="c" {% endif %}>
+    <a href="{{ page.docfolder }}/TableOfContents.html"><span itemprop="title">{% if page.pagelang == 'ru' %}Содержание{% else %}Table of Contents{% endif %}</span></a>
     ›
-  </span>{% if page.bc1_url != nil %}
-  <span id="c" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if page.bc2_url != nil %} itemref="d" {% endif %}>
-    <a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}{{ page.docfolder }}/{{ page.bc1_url }}"><span itemprop="title">{{ page.bc1_title }}</span></a>
+  </span>{% for bc in page.breadcrumbs %}
+  <span id="{{ bc.id }}" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if bc.next %} itemref="{{ bc.next }}" {% endif %}>
+    <a href="{{ page.docfolder }}/{{ bc.url }}"><span itemprop="title">{{ bc.title }}</span></a>
     ›
-  </span>{% endif %}{% if page.bc2_url != nil %}
-  <span id="d" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if page.bc3_url != nil %} itemref="e" {% endif %}>
-    <a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}{{ page.docfolder }}/{{ page.bc2_url }}"><span itemprop="title">{{ page.bc2_title }}</span></a>
-    ›
-  </span>{% endif %}{% if page.bc3_url != nil %}
-  <span id="e" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if page.bc4_url != nil %} itemref="f" {% endif %}>
-    <a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}{{ page.docfolder }}/{{ page.bc3_url }}"><span itemprop="title">{{ page.bc3_title }}</span></a>
-    ›
-  </span>{% endif %}{% if page.bc4_url != nil %}
-  <span id="f" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
-    <a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}{{ page.docfolder }}/{{ page.bc4_url }}"><span itemprop="title">{{ page.bc4_title }}</span></a>
-    ›
-  </span>{% endif %}
+  </span>{% endfor %}
 </div>

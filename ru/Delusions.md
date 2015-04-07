@@ -4,8 +4,10 @@ title: ConEmu | Околоконсольные заблужения
 description: "Частые заблуждения пользователей
    относительно консольных приложений"
 
-bc1_url: TableOfContents.html#conemu
-bc1_title: ConEmu
+breadcrumbs:
+ - id: c
+   url: TableOfContents.html#conemu
+   title: ConEmu
 
 readalso:
  - url: TableOfContents.html#terms

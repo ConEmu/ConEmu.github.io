@@ -16,8 +16,10 @@ h1_content: "What is the difference between ConEmu versions? <br/>
    Which version to download: ‘Alpha’, ‘Preview’ or ‘Stable’? <br/>
    Which version to run: ‘x86 (32bit)’ or ‘x64 (64bit)’?"
 
-bc1_url: TableOfContents.html#conemu
-bc1_title: ConEmu
+breadcrumbs:
+ - id: c
+   url: TableOfContents.html#conemu
+   title: ConEmu
 ---
 
 ## Contents

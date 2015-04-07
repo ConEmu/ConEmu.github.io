@@ -5,11 +5,14 @@ title: "ConEmu | Active Process"
 
 description: "Active Process is a shell or current console tool"
 
-bc1_url: TableOfContents.html#terms
-bc1_title: ConEmu
-
-bc2_url: ConEmuTerms.html
-bc2_title: Terms
+breadcrumbs:
+ - id: c
+   url: TableOfContents.html#terms
+   title: ConEmu
+   next: d
+ - id: d
+   url: ConEmuTerms.html
+   title: Terms
 ---
 
 {% raw %}
