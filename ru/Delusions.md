@@ -7,11 +7,11 @@ description: "Частые заблуждения пользователей
 bc1_url: TableOfContents.html#conemu
 bc1_title: ConEmu
 
-sa1_url: TableOfContents.html#terms
-sa1_title: Термины ConEmu
-
-sa2_url: ConEmuFAQ.html
-sa2_title: Частые вопросы
+readalso:
+ - url: TableOfContents.html#terms
+   title: Термины ConEmu
+ - url: ConEmuFAQ.html
+   title: Частые вопросы
 ---
 
 # Околоконсольные заблужения

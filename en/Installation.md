@@ -8,17 +8,15 @@ description: How to properly install ConEmu
 bc1_url: TableOfContents.html#conemu
 bc1_title: ConEmu
 
-sa1_url: VersionComparison.html
-sa1_title: "Version comparison: distros, bitness, stages"
-
-sa2_url: SettingsFast.html
-sa2_title: "First start: Fast Configuration Dialog"
-
-sa3_url: Settings.html
-sa3_title: "ConEmu Settings"
-
-sa4_url: Tasks.html
-sa4_title: "Set up your favourite shells - Tasks"
+readalso:
+ - url: VersionComparison.html
+   title: "Comparison: distros, bitness, stages"
+ - url: SettingsFast.html
+   title: "First start: Fast Configuration Dialog"
+ - url: Settings.html
+   title: "ConEmu Settings"
+ - url: Tasks.html
+   title: "Tasks: Set up your favourite shells"
 ---
 
 # ConEmu Installation

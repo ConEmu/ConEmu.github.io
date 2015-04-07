@@ -1,0 +1,6 @@
+{% if page.readalso %}<footer class="read-also">
+  <h2 id="read-also">{% if page.pagelang == 'ru' %}Читайте также{% else %}Read also{% endif %}</h2>
+  <ul>{% for artcl in page.readalso %}
+    <li><a href="{{ page.docfolder }}/{{ artcl.url }}">{{ artcl.title }}</a></li>{% endfor %}
+  </ul>
+</footer>{% endif %}

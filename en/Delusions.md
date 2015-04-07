@@ -7,11 +7,11 @@ description: "There are several delusions frequently said by users.
 bc1_url: TableOfContents.html#conemu
 bc1_title: ConEmu
 
-sa1_url: TableOfContents.html#terms
-sa1_title: ConEmu terms
-
-sa2_url: ConEmuFAQ.html
-sa2_title: Frequently Asked Questions
+readalso:
+ - url: TableOfContents.html#terms
+   title: ConEmu terms
+ - url: ConEmuFAQ.html
+   title: Frequently Asked Questions
 ---
 
 # Console-related delusions

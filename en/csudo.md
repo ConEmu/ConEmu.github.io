@@ -6,14 +6,13 @@ title: "ConEmu | csudo - Unix like sudo command on Windows"
 bc1_url: TableOfContents.html#launch-apps
 bc1_title: Launch Apps
 
-sa1_url: NewConsole.html
-sa1_title: ‘-new_console’ and ‘-cur_console’ switches
-
-sa2_url: AnsiEscapeCodes.html
-sa2_title: ANSI X3.64 and Xterm-256 Support
-
-sa3_url: SplitScreen.html
-sa3_title: Split Screen or Panes
+readalso:
+ - url: NewConsole.html
+   title: ‘-new_console’ and ‘-cur_console’ switches
+ - url: AnsiEscapeCodes.html
+   title: ANSI X3.64 and Xterm-256 Support
+ - url: SplitScreen.html
+   title: Split Screen or Panes
 ---
 
 # Unix like sudo command on Windows
