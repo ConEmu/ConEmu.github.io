@@ -6,8 +6,7 @@ description: "Видите ошибку в интерфейсе или доку�
    Любые предложения приветствуются!"
 
 breadcrumbs:
- - id: c
-   url: TableOfContents.html#feedback
+ - url: TableOfContents.html#feedback
    title: Обратная связь
 ---
 

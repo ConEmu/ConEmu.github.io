@@ -5,8 +5,7 @@ description: "Частые заблуждения пользователей
    относительно консольных приложений"
 
 breadcrumbs:
- - id: c
-   url: TableOfContents.html#conemu
+ - url: TableOfContents.html#conemu
    title: ConEmu
 
 readalso:

@@ -5,8 +5,7 @@ description: "There are several delusions frequently said by users.
    This article explains few of them."
 
 breadcrumbs:
- - id: c
-   url: TableOfContents.html#conemu
+ - url: TableOfContents.html#conemu
    title: ConEmu
 
 readalso:

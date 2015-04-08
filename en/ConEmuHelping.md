@@ -6,8 +6,7 @@ description: "Have you seen spelling error in the program interface or documenta
    Any suggestions are appreciated!"
 
 breadcrumbs:
- - id: c
-   url: TableOfContents.html#feedback
+ - url: TableOfContents.html#feedback
    title: Feedback and contacts
 ---
 

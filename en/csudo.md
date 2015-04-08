@@ -4,8 +4,7 @@ redirect_from: /ru/csudo.html
 title: "ConEmu | csudo - Unix like sudo command on Windows"
 
 breadcrumbs:
- - id: c
-   url: TableOfContents.html#launch-apps
+ - url: TableOfContents.html#launch-apps
    title: Launch Apps
 
 readalso:

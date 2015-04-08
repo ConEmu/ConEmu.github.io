@@ -6,12 +6,9 @@ title: "ConEmu | Active Process"
 description: "Active Process is a shell or current console tool"
 
 breadcrumbs:
- - id: c
-   url: TableOfContents.html#terms
+ - url: TableOfContents.html#terms
    title: ConEmu
-   next: d
- - id: d
-   url: ConEmuTerms.html
+ - url: ConEmuTerms.html
    title: Terms
 ---
 

@@ -6,8 +6,7 @@ title: ConEmu | Installation
 description: How to properly install ConEmu
 
 breadcrumbs:
- - id: c
-   url: TableOfContents.html#conemu
+ - url: TableOfContents.html#conemu
    title: ConEmu
 
 readalso:
