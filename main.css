@@ -380,6 +380,20 @@ table.no-border tr, table.no-border th, table.no-border td {
   margin-top: 10px;
 }
 
+#search-field-div, #search-button-div {
+  display: inline-block;
+}
+#search-field {
+  max-width: 120px;
+  height: 13pt;
+}
+#search-button {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  height: 17pt;
+}
+
+
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
