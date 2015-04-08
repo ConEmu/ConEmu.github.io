@@ -2,11 +2,11 @@
   <span  id="a"  itemscope itemtype="http://data-vocabulary.org/Breadcrumb"  itemref="b" >
     <a href="{{ page.docfolder }}/" itemprop="url"><span itemprop="title">{{ site.site_name }}</span></a>
   </span>
-  <span  id="b"  itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if page.breadcrumbs %} itemref="c" {% endif %}>
+  <span  id="b"  itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if page.breadcrumbs %} itemref="c0" {% endif %}>
     ›
     <a href="{{ page.docfolder }}/TableOfContents.html" itemprop="url"><span itemprop="title">{% if page.pagelang == 'ru' %}Содержание{% else %}Table of Contents{% endif %}</span></a>
   </span>{% for bc in page.breadcrumbs %}
-  <span id="{{ bc.id }}" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if bc.next %} itemref="{{ bc.next }}" {% endif %}>
+  <span id="c{{ forloop.index0 }}" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% unless forloop.last %} itemref="c{{ forloop.index }}" {% endunless %}>
     ›
     <a href="{{ page.docfolder }}/{{ bc.url }}" itemprop="url"><span itemprop="title">{{ bc.title }}</span></a>
   </span>{% endfor %}
