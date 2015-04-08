@@ -4,7 +4,7 @@
   </span>
   <span  id="a"  itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% if page.breadcrumbs %} itemref="c0" {% endif %}>
     ›
-    <a href="{{ page.docfolder }}/TableOfContents.html" itemprop="url"><span itemprop="title">{% if page.pagelang == 'ru' %}Содержание{% else %}Table of Contents{% endif %}</span></a>
+    <a href="{{ page.docfolder }}/TableOfContents.html" itemprop="url"><span itemprop="title">{% if page.pagelang == 'ru' %}Документация{% else %}Documentation{% endif %}</span></a>
   </span>{% for bc in page.breadcrumbs %}
   <span id="c{{ forloop.index0 }}" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child" {% unless forloop.last %} itemref="c{{ forloop.index }}" {% endunless %}>
     ›
