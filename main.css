@@ -286,10 +286,13 @@ table.no-border tr, table.no-border th, table.no-border td {
 .footer {
   margin-top: .6em;
   font-size: .8em;
+  color: #fdf6e3;
 }
 #footertext {
   text-align: center;
-  color: #fdf6e3;
+}
+#footermap {
+  text-align: right;
 }
 
 /* Social
