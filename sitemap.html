@@ -1,0 +1,14 @@
+---
+title: ConEmu | SiteMap
+description: List of all ConEmu website pages
+---
+
+<h1>List of all ConEmu website pages</h1>
+
+<table>
+
+<tr><th> URL </th><th> Description </th></tr>
+
+{% for p in site.pages %}{% if p.docfolder == '/en' %}<tr><td> <a href="{{ p.url }}" title="{{ p.title }}"> {{ p.url }} </a> </td><td> {{ p.title }} </td></tr>
+{% endif %}{% endfor %}
+</table>

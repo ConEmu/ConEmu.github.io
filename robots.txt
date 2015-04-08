@@ -12,4 +12,5 @@ Disallow: /en/ConEmu.html
 Disallow: /en/License_by_Zoin.html
 Disallow: /en/Issues2.html
 Disallow: /en/ExportEnvVar.html
+Disallow: /sitemap.html
 Sitemap: http://conemu.github.io/sitemap.xml
