@@ -29,6 +29,8 @@ This page was saved from: {{site.url}}{{page.url}}
 <link rel="stylesheet" href="/main.css">
 {% if site.url == 'local' %}
 <link rel="stylesheet" href="/local.css">
+{% endif %}{% if page.url == '/search.html' %}
+<link rel="stylesheet" href="/searchresults.css">
 {% endif %}
 
 <title>{{page.title}}</title>
