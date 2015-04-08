@@ -137,7 +137,8 @@ code {
   -webkit-border-radius: 3px;
   font-family: 'andale mono', 'lucida console', monospace;
   white-space: pre;
-  padding: .05em .2em .05em .2em;
+  padding: .05em .2em;
+  margin: 0.1em 0.1em;
 }
 
 code.plus {
@@ -218,16 +219,26 @@ h1 {
   padding: .5em;
 }
 
-table {
+table, tr, th, td {
   border-collapse: collapse;
-}
-
-/*
--- мешает на главной, переделать на div-ы
-table, th, td {
   border: 1px solid black;
 }
-*/
+
+th, td {
+  padding: 0.2em;
+}
+
+table.no-border {
+  border: 0;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table.no-border tr, table.no-border th, table.no-border td {
+  border: 0;
+  border-spacing: 0;
+  padding: 0;
+}
 
 /* Middle
 -----------------------------------------------------------------------------*/
