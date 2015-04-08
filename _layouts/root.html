@@ -19,6 +19,8 @@
 
 <meta name="author" content="@ConEmuMaximus5">
 
+{% if page.canonical and page.canonical != '' %}
+<link rel="canonical" href="{{page.canonical}}">{% endif %}
 <!--
 This page was saved from: {{site.url}}{{page.url}}
 -->
