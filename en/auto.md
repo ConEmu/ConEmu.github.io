@@ -28,6 +28,7 @@ setup ConEmu via PowerShell with single command. Internet connection required.
 <!-- ******************************* -->
 <h2 id="default">Default automatic installation</h2>
 
+| | |
 |:---------------------------|:----------|
 | ConEmu version             | Latest    |
 | Destination folder         | C:\ConEmu |
@@ -75,6 +76,7 @@ with one command.
 ConEmu will be installed in your `Program Files` folder using actual
 version of `ConEmuSetup.exe`.
 
+| | |
 |:---------------------------|:------------------------|
 | ConEmu version             | Preview or Latest       |
 | Destination folder         | C:\Program Files\ConEmu |
@@ -92,7 +94,8 @@ choco install conemu
 <!-- ******************************* -->
 <h2 id="manual">Manual installation</h2>
 
-Just choose preferred format (7-zip, installer or PortableApps.com),
-download and unpack or install ConEmu.
+Just choose [preferred format](VersionComparison.html)
+(7-zip, installer or PortableApps.com),
+download and [unpack or install](Installation.html) ConEmu.
 
-<a href="/en/Downloads.html"><img src="./img/Downloads.png" alt="Download mirrors" title="Choose ConEmu download mirrors"/></a>
+<a href="/en/Downloads.html"><img src="/img/Downloads.png" alt="Download mirrors" title="Choose ConEmu download mirrors"></a>
