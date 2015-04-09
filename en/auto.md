@@ -1,6 +1,7 @@
 ---
-redirect_from: /auto.html
-redirect_from: /ru/auto.html
+redirect_from:
+ - /auto.html
+ - /ru/auto.html
 
 title: ConEmu | Automate Installation
 

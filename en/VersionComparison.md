@@ -1,9 +1,10 @@
 ---
-redirect_from: /ru/VersionComparison.md
-redirect_from: /ru/x64_or_x86.html
-redirect_from: /en/x64_or_x86.html
-redirect_from: /ru/StableVsPreview.html
-redirect_from: /en/StableVsPreview.html
+redirect_from:
+ - /ru/VersionComparison.md
+ - /ru/x64_or_x86.html
+ - /en/x64_or_x86.html
+ - /ru/StableVsPreview.html
+ - /en/StableVsPreview.html
 
 title: ConEmu | Version Comparison
 
