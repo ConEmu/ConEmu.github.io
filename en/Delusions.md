@@ -13,6 +13,8 @@ readalso:
    title: ConEmu terms
  - url: ConEmuFAQ.html
    title: Frequently Asked Questions
+ - url: TerminalVsShell.html
+   title: Terminal vs Shell
 ---
 
 # Console-related delusions
