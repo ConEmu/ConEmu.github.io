@@ -13,6 +13,8 @@ readalso:
    title: Термины ConEmu
  - url: ConEmuFAQ.html
    title: Частые вопросы
+ - url: TerminalVsShell.html
+   title: Terminal или Shell
 ---
 
 # Околоконсольные заблужения
