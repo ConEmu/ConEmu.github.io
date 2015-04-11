@@ -7,10 +7,13 @@ description: "ConEmu-Maximus5 is a full-featured local terminal for Windows deve
 og_image: http://conemu.github.io/img/ConEmu-Maximus5.png
 ---
 
+{% comment %}
+Don't forget to copy the content changes to the /en/index.html
+{% endcomment %}
 
-<!-- Content starts -->
 
-<h1 id="h0"><a name="About_ConEmu"></a>About ConEmu <a href="#About_ConEmu" class="section_anchor"></a></h1>
+
+<h1 id="About"> About ConEmu </h1>
 
 <p>ConEmu-Maximus5 is a Windows console emulator with tabs,
 which presents multiple consoles and simple GUI applications
@@ -29,7 +32,7 @@ as one customizable GUI window with various features. </p>
 <p><a href="{{page.docfolder}}/Awards.html">Votes and awards</a> (vote for <a href="{{page.docfolder}}/Awards.html#Please,_vote_for_ConEmu">ConEmu</a>, if you please). </p>
 
 
-<h2>Disclaimer</h2>
+<h2 id="Disclaimer"> Disclaimer </h2>
 
 <p>ConEmu is not a shell, so it does not provide &quot;shell features&quot; like tab-completion, command history and others.
 ConEmu is advanced console window where you can run any shell of your choice.
@@ -37,21 +40,21 @@ However, some of these features placed in <a href="{{page.docfolder}}/RoadMap.ht
 Also you may try <a href="{{page.docfolder}}/ConEmuClink.html">Clink</a> for bash-style completion in cmd.exe
 and <a href="http://github.com/lzybkr/PSReadLine">PSReadLine</a>
 or <a href="http://powertab.codeplex.com/">PowerTab</a> in powershell.exe. </p>
-<!--
-<td width="230" valign="top" align="center"> <a href="http://code.google.com/p/conemu-maximus5/issues/list?can=1&amp;q=Type%3DDocumentation+&amp;sort=-modified">
-<img src="http://conemu-maximus5.googlecode.com/svn/files/ConEmu2013.png" title="Helping with documentation"></img></a><a
-href="donate.html"><img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" alt="Donation" title="Donate ConEmu"></img></a> <a
-href="http://flattr.com/thing/2002773/Maximus5ConEmu-on-GitHub" rel="nofollow"><img
-src="./img/FlattrBadgeLarge.png" alt="Flattr ConEmu" title="Flattr ConEmu" border="0"></img></a>
--->
+
+<p>Or even choose bash or any other unix-like shell from
+<a href="https://www.cygwin.com/" rel="nofollow">cygwin</a>,
+<a href="https://msysgit.github.io/" rel="nofollow">msysgit</a>,
+<a href="https://sourceforge.net/projects/msys2/" rel="nofollow">msys2</a>,
+<a href="http://www.mingw.org/" rel="nofollow">mingw</a>
+and others. </p>
 
 
-<h2>History</h2>
+<h2 id="History"> History </h2>
 
 <p>This project grew up from <a href="http://xs.nm.ru/" rel="nofollow">ConEmu by Zoin</a>. </p>
 
 
-<h2><a name="SomeLinks"></a>Documentation and links<a href="#SomeLinks" class="section_anchor"></h2>
+<h2 id="Links"> Documentation and links </h2>
 <ul><li><a href="{{page.docfolder}}/TableOfContents.html">Table of contents</a></li>
 	<li><a href="{{page.docfolder}}/Whats_New.html">What&#x27;s new</a></li>
 	<li><a href="{{page.docfolder}}/ConEmuFAQ.html">FAQ</a></li>
@@ -61,7 +64,7 @@ src="./img/FlattrBadgeLarge.png" alt="Flattr ConEmu" title="Flattr ConEmu" borde
 </ul>
 
 
-<h2><a name="Description"></a>Description<a href="#Description" class="section_anchor"></a></h2>
+<h2 id="Description"> Description </h2>
 
 <p>ConEmu starts a console program in a hidden console window, and provides an alternative customizable GUI window with various features: </p>
 
@@ -97,23 +100,14 @@ after which the command line parameters are applied. Parameters /Config and /Buf
 Most settings are configured using the Settings dialog, not from the command line. </p>
 
 
-<h2><a name="Requirements"></a>Requirements<a href="#Requirements" class="section_anchor"></a></h2>
+<h2 id="Requirements"> Requirements </h2>
 
 <ul><li>Windows 2000 or later. </li></ul>
 
 
-<h2><a name="Installation"></a>Installation<a href="#Installation" class="section_anchor"></a></h2>
+<h2 id="Installation"> Installation </h2>
 
-<ol><li> Unpack all files (from appropriate &quot;<code>ConEmuPack.*.7z</code>&quot; archive) to the folder, containing &quot;<code>far.exe</code>&quot;, or install the &quot;<code>ConEmuSetup.*.exe</code>&quot; package. </li>
-	<ul><li>If You <strong>are</strong> using Far Manager, please ensure that ConEmu plugins (&quot;<code>Plugins\ConEmu\ConEmu.dll</code>&quot; etc.) are installed to Far Manager&#x27;s Plugins folder. </li>
-		<li>If You are <strong>not</strong> using Far Manager, You may unpack the files to any folder, and delete the &quot;<code>Plugins</code>&quot; subfolder. </li>
-		<li><strong>Warning</strong>: because of frequent non-backwards-compatible API changes in Far 3, it is strongly recommended to use the latest <strong>developer</strong> build when using ConEmu with Far 3. </li>
-	</ul>
-	<li> Import ConEmu&#x27;s macros into Far Manager. Macro files are located in the ConEmu.Addons directory. Each macro file has a description in its header. </li>
-	<li> By default (when started without command-line parameters), ConEmu runs &quot;<code>far.exe</code>&quot; from its home folder, or &quot;cmd.exe&quot;/&quot;tcc.exe&quot; if Far Manager was not found. Alternatively, You may indicate any root command by specifying a &quot;<a href="{{page.docfolder}}/ConEmuArgs.html">/Cmd &lt;App with params&gt;</a>&quot; argument in ConEmu&#x27;s shortcut or command line.  </li>
-</ol>
+<p>In general, ConEmu installation is easy.
+Just unpack or install to any folder and run `ConEmu.exe`. </p>
 
-<!--<h2><a name="Screenshots"></a>Screenshots<a href="#Screenshots" class="section_anchor"></a></h2>-->
-<!--<p><img src="http://conemu-maximus5.googlecode.com/svn/files/ConEmuSplits3.png" title="ConEmu splits and tabs"> <br><br>  </p>-->
-<!--<p><img src="../img/ConEmuTransparency.png" title="ConEmu Alpha transparency"> <br><br>  </p>-->
-<!--<p><a href="https://code.google.com/p/conemu-maximus5/wiki/Screenshots">More screenshots</a> and <a href="https://code.google.com/p/conemu-maximus5/wiki/Screencasts">screencasts</a> </p>-->
+<p>For more information about installation options refer to <a href="/en/Installation.html">Installation</a> page. </p>
