@@ -10,7 +10,9 @@ breadcrumbs:
 
 <!-- Content starts -->
 
-<p><font size="5"><strong>-new_console and -cur_console switches</strong></font> <ul><li><a href="#Purpose">Purpose</a></li>
+<h1>-new_console and <span style="white-space:nowrap;">-cur_console</span> switches</h1>
+
+<ul><li><a href="#Purpose">Purpose</a></li>
 <li><a href="#Exclusions">Exclusions</a></li>
 <li><a href="#The_difference">The difference</a></li>
 <li><a href="#Syntax">Syntax</a></li><ul><li><a href="#Important_notes">Important notes</a></li></ul><li><a href="#Examples">Examples</a></li><ul><li><a href="#Example_1">Example 1</a></li>
@@ -18,9 +20,9 @@ breadcrumbs:
 <li><a href="#Example_3">Example 3</a></li>
 <li><a href="#Example_4_(Far_Manager_related)">Example 4 (Far Manager related)</a></li>
 <li><a href="#Example_5">Example 5</a></li>
-<li><a href="#Example_6_(Split_Screen)">Example 6 (Split Screen)</a></li></ul></ul>  </p>
+<li><a href="#Example_6_(Split_Screen)">Example 6 (Split Screen)</a></li></ul></ul>
 
-<h1 id="h0"><a name="Purpose"></a>Purpose<a href="#Purpose" class="section_anchor"></a></h1>
+<h2 id="Purpose"> Purpose </h2>
 <p>‘-new_console’ and ‘-cur_console’ switches used to modify behavior of the ConEmu tabs and splits (new or existing). Few examples below. </p>
 <p>Within ConEmu Tasks you may explicitly set color palette for creating tab: </p>
 <pre class="prettyprint">sh.exe --login -i -new_console:P:&quot;Palette&quot;</pre>
@@ -35,7 +37,7 @@ breadcrumbs:
 <li>and at last within switches of console application running with Default terminal feature. </li></ul><p>You must <strong>not</strong> specify them as ConEmu(64).exe or ConEmuC(64).exe arguments. Specify them AFTER <code>/cmd</code> or <code>/cmdlist</code> (ConEmu.exe) and <code>/c</code> or <code>/k</code> (ConEmuC.exe) if you need to use them with ConEmu&#x27;s executables command line. </p>
 <pre class="prettyprint">ConEmu.exe /cmdlist cmd ||| powershell -new_console:sV</pre>
 
-<h1><a name="Exclusions"></a>Exclusions<a href="#Exclusions" class="section_anchor"></a></h1>
+<h2><a name="Exclusions"></a>Exclusions<a href="#Exclusions" class="section_anchor"></a></h2>
 <p>Sometimes, you may need to disable processing of ‘-new_console’ and ‘-cur_console’ switches at all. For example, you need to create git commit with <code>-new_console</code> in the commit message, or create string value in the registry, using <code>reg.exe</code> tool. There are several ways to disable or skip processing of these switches. </p>
 <ul><li>Option ‘Process -new_console and -cur_console switches’ on the <a href="Settings.html#Features">Features</a> Settings page. When you disable that option swithes will not be processed when you run something from your shell prompt or scripts (inside ConEmu tabs). </li>
 <li>Using single quotes or backslashes, examples below. </li><pre class="prettyprint">git commit -m &quot;Fix behavior of the &#x27;-new_console&#x27; switches&quot;
@@ -49,13 +51,13 @@ rem And now you are safe to run your command
 git -am &quot;Commit message with -new_console argument&quot;</pre>
 </ul>
 
-<h1><a name="The_difference"></a>The difference<a href="#The_difference" class="section_anchor"></a></h1>
+<h2><a name="The_difference"></a>The difference<a href="#The_difference" class="section_anchor"></a></h2>
 <p>What is the difference between ‘-new_console’ and ‘-cur_console’? </p>
 <p>‘-new_console’ always creates new tab in ConEmu, while ‘-cur_console’ not. </p>
 <p>So, some of switches used with ‘-cur_console’ does not have any effect. </p>
 <p>On the other hand, using them in ConEmu&#x27;s tasks or command line, both ‘-new_console’ and ‘-cur_console’ has the same effect. </p>
 
-<h1><a name="Syntax"></a>Syntax<a href="#Syntax" class="section_anchor"></a></h1>
+<h2><a name="Syntax"></a>Syntax<a href="#Syntax" class="section_anchor"></a></h2>
 <p>When you run application from existing ConEmu tab, or starting new tab from ConEmu interface, you may use ‘-new_console’ or ‘-cur_console’ switches. </p>
 <p><strong>Warning</strong> ‘-new_console’, ‘-cur_console’ and all subswitches are <strong>case sensitive</strong>. </p>
 <pre class="prettyprint">  -new_console[:switches]
@@ -101,30 +103,30 @@ git -am &quot;Commit message with -new_console argument&quot;</pre>
 <pre class="prettyprint">program.exe -new_console ‘other arguments’</pre>
 <p>--> </p>
 
-<h1><a name="Examples"></a>Examples<a href="#Examples" class="section_anchor"></a></h1>
+<h2><a name="Examples"></a>Examples<a href="#Examples" class="section_anchor"></a></h2>
 <p><strong>Note</strong>. In some cases ‘-new_console’ can not be intercepted (e.g. starting batches or internal commands from command processor itself). In this cases you owe to use the ‘prefix’ before actual command! </p>
 
-<h2><a name="Example_1"></a>Example 1<a href="#Example_1" class="section_anchor"></a></h2>
+<h3><a name="Example_1"></a>Example 1<a href="#Example_1" class="section_anchor"></a></h3>
 <p>Starts &quot;`dir c:\ /s&quot; in new background ConEmu tab, set buffer height to 9999 lines, do not close tab after &quot;dir&quot; completion. </p>
 <pre class="prettyprint">&quot;%ConEmuBaseDir%\ConEmuC.exe&quot; /c dir &quot;-new_console:bh9999c&quot; c:\ /s</pre>
 
-<h2><a name="Example_2"></a>Example 2<a href="#Example_2" class="section_anchor"></a></h2>
+<h3><a name="Example_2"></a>Example 2<a href="#Example_2" class="section_anchor"></a></h3>
 <p>Starts &quot;<code>vim.exe c:\sources\1.cpp</code>&quot; in new ConEmu tab, disable buffer scrolling (buffer height will be equal to window height), do not show &#x27;Press Enter or Esc to close console&#x27; after exiting vim. </p>
 <pre class="prettyprint">vim.exe -new_console:nh0 c:\sources\1.cpp</pre>
 
-<h2><a name="Example_3"></a>Example 3<a href="#Example_3" class="section_anchor"></a></h2>
+<h3><a name="Example_3"></a>Example 3<a href="#Example_3" class="section_anchor"></a></h3>
 <p>Starts &quot;<code>cmd.exe</code>&quot; in specified directory with specified login/username (Nick) and password (pwd). </p>
 <pre class="prettyprint">cmd.exe &quot;-new_console:d:C:\Users\Nick&quot; &quot;-new_console:u:Nick:pwd&quot;</pre>
 
-<h2><a name="Example_4_(Far_Manager_related)"></a>Example 4 (Far Manager related)<a href="#Example_4_(Far_Manager_related)" class="section_anchor"></a></h2>
+<h3><a name="Example_4_(Far_Manager_related)"></a>Example 4 (Far Manager related)<a href="#Example_4_(Far_Manager_related)" class="section_anchor"></a></h3>
 <p>Starts &quot;<code>hiew.exe c:\tools\app.exe</code>&quot; in <strong>current</strong> ConEmu tab, do not enabling buffer scrolling (buffer height will be equal to window height). </p>
 <pre class="prettyprint">hiew.exe -cur_console:h0 c:\tools\app.exe</pre>
 
-<h2><a name="Example_5"></a>Example 5<a href="#Example_5" class="section_anchor"></a></h2>
+<h3><a name="Example_5"></a>Example 5<a href="#Example_5" class="section_anchor"></a></h3>
 <p>Starts PuTTY in new ConEmu tab. </p>
 <pre class="prettyprint">putty -new_console</pre>
 
-<h2><a name="Example_6_(Split_Screen)"></a>Example 6 (Split Screen)<a href="#Example_6_(Split_Screen)" class="section_anchor"></a></h2>
+<h3><a name="Example_6_(Split_Screen)"></a>Example 6 (Split Screen)<a href="#Example_6_(Split_Screen)" class="section_anchor"></a></h3>
 <p>Split current tab, new tab will be created to the right, both tabs becomes 50% width of active tab. </p>
 <pre class="prettyprint">cmd -new_console:s</pre>
 <p>or </p>
