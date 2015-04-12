@@ -28,7 +28,6 @@ setup ConEmu via PowerShell with single command. Internet connection required.
 <!-- ******************************* -->
 <h2 id="default">Default automatic installation</h2>
 
-| | |
 |:---------------------------|:----------|
 | ConEmu version             | Latest    |
 | Destination folder         | C:\ConEmu |
@@ -76,7 +75,6 @@ with one command.
 ConEmu will be installed in your `Program Files` folder using actual
 version of `ConEmuSetup.exe`.
 
-| | |
 |:---------------------------|:------------------------|
 | ConEmu version             | Preview or Latest       |
 | Destination folder         | C:\Program Files\ConEmu |
