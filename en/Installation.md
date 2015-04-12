@@ -12,6 +12,8 @@ breadcrumbs:
 readalso:
  - url: VersionComparison.html
    title: "Comparison: distros, bitness, stages"
+ - url: auto.html
+   title: "Automate your box installation"
  - url: SettingsFast.html
    title: "First start: Fast Configuration Dialog"
  - url: Settings.html
