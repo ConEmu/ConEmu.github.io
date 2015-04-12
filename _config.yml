@@ -11,6 +11,7 @@ site_name: "conemu.github.io"
 twitter_username: ConEmuMaximus5
 github_username:  Maximus5
 
+
 # Build settings
 markdown: kramdown
 
@@ -30,6 +31,7 @@ defaults:
     values:
       layout: "root"
       title: "ConEmu - Windows terminal emulator"
+      site_label: "Windows terminal"
       docfolder: /en
       pagelang: en
   -
@@ -39,6 +41,7 @@ defaults:
     values:
       layout: "docs_en"
       title: "ConEmu - Documentation"
+      site_label: "Windows terminal"
       docfolder: /en
       pagelang: en
   -
@@ -48,6 +51,7 @@ defaults:
     values:
       layout: "docs_en"
       title: "ConEmu - Documentation"
+      site_label: "Windows terminal"
       docfolder: /en-w
       pagelang: en
   -
@@ -57,6 +61,7 @@ defaults:
     values:
       layout: "docs_ru"
       title: "ConEmu - эмулятор терминала Windows"
+      site_label: "терминал Windows"
       docfolder: /ru
       pagelang: ru
   -
@@ -66,5 +71,6 @@ defaults:
     values:
       layout: "docs_ru"
       title: "ConEmu - эмулятор терминала Windows"
+      site_label: "терминал Windows"
       docfolder: /ru-w
       pagelang: ru

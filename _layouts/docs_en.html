@@ -37,25 +37,7 @@ This page was saved from: {{site.url}}{{page.url}}
 <div class="wrapper">
 <div class="maincol" id="wikimaincol">
 
-	<div class="header">
-		<div id="logo-block">
-			<div>
-				<div id="logo-title"><a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/">ConEmu</a></div>
-				<div id="logo-descr"><a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/">Windows terminal</a></div>
-				<div id="social">
-					<a href="http://www.facebook.com/share.php?u=http://conemu.github.io/" rel="nofollow" target="_blank" title="FaceBook" id="soc-facebook"></a>
-					<a href="http://twitter.com/share?url=http://conemu.github.io/" rel="nofollow" target="_blank" title="Twitter" id="soc-twitter"></a>
-					<div id="soc-plus">
-{% if site.url != 'local' %}{% include googleplus.html %}{% endif %}
-					</div>
-				</div>
-			</div>
-			<div id="header-google">
-{% if site.url != 'local' %}{% include googleads.html %}{% endif %}
-			</div>
-		</div>
-		<div id="header-line"></div>
-	</div><!-- .header-->
+{% include header.html %}
 
 	<div class="middle">
 
