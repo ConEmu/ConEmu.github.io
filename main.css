@@ -44,38 +44,12 @@ div {
     width: 960px;
     min-width: 760px;
   }
-  /*
-  #media-width:after {
-    content: "wide";
-  }
-  */
 }
 
 @media (max-width: 980px) {
   .wrapper {
     width: 100%;
   }
-  /*
-  #media-width:after {
-    content: "narrow";
-  }
-  */
-}
-
-@media (orientation: landscape) {
-  /*
-  #media-orient:after {
-    content: " land";
-  }
-  */
-}
-
-@media (orientation: portrait) {
-  /*
-  #media-orient:after {
-    content: " port";
-  }
-  */
 }
 
 .maincol {
@@ -295,34 +269,106 @@ table.no-border tr, table.no-border th, table.no-border td {
   text-align: right;
 }
 
-/* Social
+/* Header and Social
 -----------------------------------------------------------------------------*/
-#social {
-  height: 44px;
+.header {
+  height: 90px;
 }
-#social a {
+.header-left {
+  float: left;
+}
+#header-line {
+  background: #002b36;
+  width: 100%;
+  height: 1px;
+  clear: both;
+  float: left;
+  margin-top: 10px;
+}
+#header-google {
+  overflow: hidden;
+  width:728px;
+  height:90px;
+  float: right;
+  /* *
+  background-color: blue;
+  * */
+}
+
+@media (max-width: 980px) {
+  #header-google {
+    /*
+    max-width: 100%;
+    */
+    float: left;
+    margin-top: 0.5em;
+  }
+}
+
+div.h-logo {
+  border: 0;
+  width: 48px; height: 48px;
+  float: left;
+  margin-right: 0.5em;
+}
+
+div.h-title-desc {
+  float: left;
+  font: 28px 'Tahoma';
+  min-width: 4em;
+}
+
+div.h-title {
+  border: 0; /* 1px solid red; */
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  line-height: 100%;
+  text-shadow: 0px 1px 0px #fff;
+  text-align: center;
+  min-width: 100%;
+}
+
+div.h-desc {
+  border: 0; /* 1px solid red; */
+  margin: 0;
+  padding: 0px;
+  font: 12px 'Tahoma';
+  color: #000000;
+  text-shadow: 0px 1px 0px #fff;
+  text-align: center;
+  min-width: 100%;
+}
+
+div.h-social {
+  border: 0; /*1px solid red;*/
+  display: block;
+  clear: both;
+  min-height: 32px;
+  padding-top: 6px;
+}
+
+div.h-social a {
+  border: 0;
   display: block;
   width: 32px;
   height: 32px;
   float: left;
-  margin: 6px 6px 0px 0px;
+  margin-right: 6px; /*6px 6px 0px 0px;*/
 }
-#social a:hover {
+
+.h-facebook {
+  background: url('/img/fb.png');
+}
+.h-twitter {
+  background: url('/img/tw.png');
+}
+.h-gplus {
+  background: url('/img/gp.png');
+}
+.h-facebook:hover, .h-twitter:hover, .h-gplus:hover {
   background-position: 0px -32px;
-}
-#soc-facebook {
-  background: url('./img/fb.png');
-}
-#soc-twitter {
-  background: url('./img/tw.png');
-}
-#soc-plus {
-  background: #fdf6e3;
-  display: block;
-  width: 124px;
-  height: 26px;
-  float: left;
-  margin: 10px 6px 0px 0px;
 }
 
 /* Menu and Search
@@ -394,72 +440,6 @@ table.no-border tr, table.no-border th, table.no-border td {
 }
 
 
-/* Header
------------------------------------------------------------------------------*/
-.header {
-  height: 90px;
-}
-#header-line {
-  background: #002b36;
-  width: 100%;
-  height: 1px;
-  float: left;
-  margin-top: 10px;
-}
-#header-google {
-  overflow: hidden;
-  width:728px;
-  height:90px;
-  position: relative;
-  left: 210px;
-  top: -90px;
-}
-
-@media (max-width: 980px) {
-  #header-google {
-    /*
-    width: 100%;
-    left: 0;
-    */
-    display: none;
-  }
-  #header-google:after {
-    content: " ";
-  }
-}
-
-/* Logo
------------------------------------------------------------------------------*/
-#logo-block {
-  float: left;
-  margin: 0;
-  background: url('./img/logo.png') no-repeat;
-  width: 270px;
-  height: 90px;
-}
-#logo-title {
-  margin: 0px 0px 0px 55px;
-  padding: 0px;
-  font: 28px 'Tahoma';
-  color: #000000;
-  text-shadow: 0px 1px 0px #fff;
-}
-#logo-block a {
-  text-decoration: none;
-}
-#logo-block a:hover {
-  text-decoration: underline;
-}
-#logo-block a:visited {
-  color: #000000;
-}
-#logo-descr {
-  margin: 0px 0px 0px 58px;
-  padding: 0px;
-  font: 12px 'Tahoma';
-  color: #000000;
-  text-shadow: 0px 1px 0px #fff;
-}
 
 article img {
   max-width: 100%;

@@ -1,22 +1,20 @@
-	<div class="header">
-		<div id="logo-block">
-			<div>
-				<div id="logo-title"><a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/">ConEmu</a></div>
-				<div id="logo-descr"><a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/">{{ page.site_label }}</a></div>
-				<!--
-				<div id="logo-descr">{% if site.url != 'local' %}<a href="http://conemu.github.io/">Windows terminal</a>{% else %}<span id="media-width"></span><span id="media-orient"></span>{% endif %}</div>
-				-->
-				<div id="social">
-					<a href="http://www.facebook.com/share.php?u=http://conemu.github.io/" rel="nofollow" target="_blank" title="FaceBook" id="soc-facebook"></a>
-					<a href="http://twitter.com/share?url=http://conemu.github.io/" rel="nofollow" target="_blank" title="Twitter" id="soc-twitter"></a>
-					<div id="soc-plus">
-{% if site.url != 'local' %}{% include googleplus.html %}{% endif %}
-					</div>
-				</div>
-			</div>
-			<div id="header-google">
+<!-- header -->{% comment %} ‘UTF-8’ {% endcomment %}
+<div class="header">
+  <div class="header-left">
+    <div class="h-logo"><a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/"><img src="/img/logo.png"></a></div>
+    <div class="h-title-desc">
+      <div class="h-title"><a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/">ConEmu</a></div>
+      <div class="h-desc">{% if site.url != 'local' %}<a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/">{{ page.site_label }}</a>{% else %}<span id="media-width"></span><span id="media-orient"></span>{% endif %}</div>
+    </div>
+    <div class="h-social">
+      <a class="h-twitter" href="https://twitter.com/intent/tweet?text=ConEmu%3A%20Handy%20Windows%20terminal&url=http%3A%2F%2Fconemu.github.io" target="_blank" title="Share ConEmu on Twitter"></a>
+      <a class="h-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fconemu.github.io" target="_blank" title="Share ConEmu on FaceBook"></a>
+      <a class="h-gplus" href="https://plus.google.com/share?url=http%3A%2F%2Fconemu.github.io" target="_blank" title="Share ConEmu on Google+"></a>
+    </div>
+  </div>
+  <div id="header-google">
 {% if site.url != 'local' %}{% include googleads.html %}{% endif %}
-			</div>
-		</div>
-		<div id="header-line"></div>
-	</div><!-- .header-->
+  </div>
+  <div id="header-line"></div>
+</div>
+<!-- /header -->
