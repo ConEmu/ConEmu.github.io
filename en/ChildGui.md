@@ -15,6 +15,8 @@ breadcrumbs:
 realalso:
  - url: LaunchNewTab.html
    title: Launch New Tab
+ - url: TableOfContents.html#cygwin-and-msys
+   title: Cygwin and MSys issues
  - url: KeyboardShortcuts.html
    title: Keyboard Shortcuts
  - url: Delusions.html
