@@ -14,7 +14,7 @@ h1_title: Оглавление документации по ConEmu
     * [Stable или Preview](VersionComparison.html#release-stages)
   * [Что такое «Сертификат»?](Certificate.html)
   * [Installation](Installation.html)
-    * [Auto install](/auto.html)
+    * [Auto install](AutoInstall.html)
     * [Папки/файлы](ConEmuFolders.html)
   * [Скриншоты](Screenshots.html)
   * [Видео](Screencasts.html)

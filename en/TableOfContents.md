@@ -14,7 +14,7 @@ h1_title: ConEmu Documentation Table of Contents
     * [Stable or Preview](VersionComparison.html#release-stages)
   * [What is «Certificate»?](Certificate.html)
   * [Installation](Installation.html)
-    * [Auto install](auto.html)
+    * [Auto install](AutoInstall.html)
     * [Folders](ConEmuFolders.html)
   * [Screenshots](Screenshots.html)
   * [Screencasts](Screencasts.html)
