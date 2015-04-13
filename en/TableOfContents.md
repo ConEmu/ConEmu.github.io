@@ -129,7 +129,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Unicode issues](CheckUnicode.html)
   * [Bold/Italic/Underlined](FaqBoldItalic.html)
   * [Run shell naked](FaqPlainShell.html)
-  * [Tab or Console title](FaqTabVsTitle.html)
+  * [Tab or Console title](TabVsTitle.html)
   * [Powershell Prompt](PowershellPrompt.html)
   * [Prompt at the bottom](PromptAtTheBottom.html)
   * [ShellWorkDir](ShellWorkDir.html)
