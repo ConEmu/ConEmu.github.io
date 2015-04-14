@@ -318,6 +318,16 @@ div.h-title-desc {
   min-width: 4em;
 }
 
+div.h-title-desc a {
+  text-decoration: none;
+}
+div.h-title-desc a:hover {
+  text-decoration: underline;
+}
+div.h-title-desc a:visited {
+  color: #002b36;
+}
+
 div.h-title {
   border: 0; /* 1px solid red; */
   display: block;
