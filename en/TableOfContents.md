@@ -16,6 +16,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Installation](Installation.html)
     * [Auto install](AutoInstall.html)
     * [Folders](ConEmuFolders.html)
+    * [Speedup update with installer](UpdateSpeedup.html)
   * [Screenshots](Screenshots.html)
   * [Screencasts](Screencasts.html)
   * [Delusions](Delusions.html)

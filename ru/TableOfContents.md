@@ -16,6 +16,7 @@ h1_title: Оглавление документации по ConEmu
   * [Installation](Installation.html)
     * [Auto install](AutoInstall.html)
     * [Папки/файлы](ConEmuFolders.html)
+    * [Скорость обновления инсталлятором](UpdateSpeedup.html)
   * [Скриншоты](Screenshots.html)
   * [Видео](Screencasts.html)
   * [Зублуждения](Delusions.html)
