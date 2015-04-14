@@ -220,6 +220,7 @@ table.no-border tr, table.no-border th, table.no-border td {
   width: 100%;
   padding: 0;
   position: relative;
+  clear: both;
 }
 .middle:after {
   display: table;
@@ -293,16 +294,6 @@ table.no-border tr, table.no-border th, table.no-border td {
   /* *
   background-color: blue;
   * */
-}
-
-@media (max-width: 980px) {
-  #header-google {
-    /*
-    max-width: 100%;
-    */
-    float: left;
-    margin-top: 0.5em;
-  }
 }
 
 div.h-logo {
@@ -379,6 +370,25 @@ div.h-social a {
 }
 .h-facebook:hover, .h-twitter:hover, .h-gplus:hover {
   background-position: 0px -32px;
+}
+
+@media (max-width: 980px) {
+  #header-google {
+    /*
+    max-width: 100%;
+    */
+    float: left;
+    margin-top: 0.5em;
+  }
+  .header-left {
+    width: 100%;
+  }
+  div.h-social {
+    clear: none;
+  }
+  div.h-title-desc {
+    margin-right: 0.6em;
+  }
 }
 
 /* Menu and Search
