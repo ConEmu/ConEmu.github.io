@@ -127,7 +127,7 @@ h1_title: Оглавление документации по ConEmu
 
 <h3 id="tips-and-tweaks"><a href="TipsAndTweaks.html">Советы и хитрости</a></h3>
 
-  * [Проблемы с Unicode](CheckUnicode.html)
+  * [Поддержка Unicode](UnicodeSupport.html)
   * [Жирный/Курсив/Подчеркнутый](FaqBoldItalic.html)
   * [Шелл без аргументов](FaqPlainShell.html)
   * [Заголовок таба или консоли](FaqTabVsTitle.html)

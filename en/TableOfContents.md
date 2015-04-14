@@ -126,7 +126,7 @@ h1_title: ConEmu Documentation Table of Contents
 
 <h3 id="tips-and-tweaks"><a href="TipsAndTweaks.html">Tips and Tweaks</a></h3>
 
-  * [Unicode issues](CheckUnicode.html)
+  * [Unicode support](UnicodeSupport.html)
   * [Bold/Italic/Underlined](FaqBoldItalic.html)
   * [Run shell naked](FaqPlainShell.html)
   * [Tab or Console title](TabVsTitle.html)
