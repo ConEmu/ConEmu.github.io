@@ -290,6 +290,7 @@ table.no-border tr, table.no-border th, table.no-border td {
   overflow: hidden;
   width:728px;
   height:90px;
+  max-width: 100%;
   float: right;
   /* *
   background-color: blue;
