@@ -45,7 +45,7 @@ But if you are sure that you don't need ‘Restore points’ you may disable the
 * Change contents of the edit field under ‘Installer’ checkbox
   from `"%1" /p:%3 /qr` to `"%1" /p:%3,adm /qn`.
 
-Switch `/qn` tells `msiexec` show no installer interface at all.
+Switch `/qn` tells `msiexec` to show no installer interface at all.
 Side effect of this will be disabling ‘Restore points’ creation.
 
 Note that `,adm` suffix is required because when no installer interface
