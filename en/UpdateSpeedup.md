@@ -24,13 +24,17 @@ readalso:
 
 # Speedup update with installer
 
-If you've installed ConEmu with [installer](VersionComparison.html#installer) `ConEmuSetup.*.exe`
-automatic [updates](SettingsUpdate.html) will be processed with installer too.
+On some computer configurations automatic update via
+[installer](VersionComparison.html#installer)
+may last few minutes. How to speed up update process?
 
+If you've installed ConEmu with [installer](VersionComparison.html#installer),
+automatic [updates](SettingsUpdate.html) will be processed with installer too.
 ConEmu installers are x86 and x64 msi-packets packaged into one executable file `ConEmuSetup.*.exe`.
 
 When you update or change ConEmu installation Windows will create new ‘Restore point’.
-The creation of ‘Restore point’ may last few minutes depending of you computer configuration.
+The creation of ‘Restore point’ is the heaviest part of update process
+and may last up to few minutes depending of you computer configuration.
 
 These ‘Restore points’ may be very useful if something bad happens with your installed software,
 you will be able to rollback to selected ‘Restore point’ to heal you PC.
