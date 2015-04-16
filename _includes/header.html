@@ -1,5 +1,6 @@
-<header>{% comment %} ‘UTF-8’ {% endcomment %}
+{% comment %} ‘UTF-8’ {% endcomment %}
 <div class="header">
+<header>
   <div class="header-left">
     <div class="h-logo"><a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/"><img src="/img/logo.png" alt="ConEmu-Maximus5 logo"></a></div>
     <div class="h-title-desc">
@@ -16,5 +17,5 @@
 {% if site.url != 'local' %}{% include googleads.html %}{% endif %}
   </div>
   <div id="header-line"></div>
-</div>
 </header>
+</div>
