@@ -50,7 +50,7 @@ Few examples: [Powershell](http://en.wikipedia.org/wiki/Windows_PowerShell), [cm
 [iPython](http://en.wikipedia.org/wiki/IPython).
 
 These applications and many others all are
-[command-line interpreters or ‘shells’](http://en.wikipedia.org/wiki/List_of_command-line_interpreters).
+[command-line interpreters (CLI) or ‘shells’](http://en.wikipedia.org/wiki/List_of_command-line_interpreters).
 They do ‘read-evaluate-print’ cycle, aka command execution.
 
 
