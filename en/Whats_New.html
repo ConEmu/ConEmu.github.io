@@ -33,6 +33,18 @@ or anything else, spreading the word for example.
 
 <!-- Content starts -->
 
+<h2 id="Build_150416">Build 150416</h2>
+<ul><li>gh#96: DefTerm was failed to hook VS Debugging console applications. Avoid deadlocks. </li>
+	<li>Issue 1965: Correct 3rd state condition for ‘Change prompt text cursor position with LClick’. </li>
+	<li>gh#99: Make Update confirmation dialog a child of main ConEmu window. </li>
+	<li>Show in the update confirmation dialog the type of action: x86/x64 for installer or (7-Zip). </li>
+	<li>Allow using tasks in ‘Recreate’ dialog. </li>
+	<li>Let's create default tasks {Bash::Msys2-64} and {Bash::Msys2-32} in new configs. </li>
+	<li>Add tab icon to default tasks: {Bash::MinGW bash}, {Bash::CygWin bash}, {SDK::WinSDK x.x}. </li>
+	<li>Use "CmdInit.cmd" instead of direct "set PROMPT=..." in default cmd's tasks. </li>
+</ul>
+
+
 <h2 id="Build_150409">Build 150409</h2>
 <ul><li>gh#63: Option ‘Auto save/restore tabs’ was conflicted with unchecked ‘Quit on close’. </li>
 	<li>Some of GuiMacro functions must be executed in the main thread only. </li>
