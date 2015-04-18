@@ -178,6 +178,10 @@ h1 {
   font-size: .8em;
 }
 
+.rtext {
+  text-align: right;
+}
+
 .snote {
   max-width: 650px;
   font-size: .8em;
