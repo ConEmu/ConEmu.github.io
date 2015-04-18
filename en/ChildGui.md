@@ -29,8 +29,10 @@ readalso:
 
 # PuTTY, mintty and others ChildGui inside ConEmu
 
-‘ChildGui’ or ‘windowed applications’ are GUI applications
-which are drawing their contents themselves using [WinApi](WinApi.html).
+‘Child Graphical User Interface’ or ‘ChildGui’ or ‘windowed applications’ are
+[GUI applications](https://en.wikipedia.org/wiki/Graphical_user_interface)
+which may be started in ConEmu [Tabs](TabBar.html) or [Splits](SplitScreen.html).
+They are drawing their contents themselves using [WinApi](WinApi.html).
 
 Few examples: PuTTY, mintty, notepad, GViM and so on.
 
@@ -44,15 +46,39 @@ because they are running in the ConEmu ‘native’ mode.
 
 ![PuTTY and Notepad in ConEmu](/img/ConEmuChildGui.png "ConEmu with two ChildGui started in splits")
 
+
+
+<h2 id="limitations"> There are several limitations </h2>
+
 Don't confuse ChildGui with [ConsoleApplication](ConsoleApplication.html)s
 which are specially developed and compiled.
 ChildGui applications, even they have their own console-like interfaces,
 are not [ConsoleApplication](ConsoleApplication.html)s.
 This is one of the most common [console-related delusions](Delusions.html).
+ConEmu acts as simple holder for these ChildGui-s.
+
+
+<h3 id="process"> Single process, single window </h3>
+
+ChildGui support was developed for simple applications.
+It will not be working with those ones which runs several
+windows from single process ([PID](https://en.wikipedia.org/wiki/Process_identifier)),
+runs bunch of child processes or reuses single process for new windows.
 
 
 
-<h2 id="limitations"> Must be resizeable </h2>
+<h3 id="not-controlled"> Can't be controlled by ConEmu </h3>
+
+These application process all mouse and keyboard events, draw the contents
+including selection areas internally. ConEmu can't control or customize them.
+
+From time to time somebody asks why PuTTY colors do not match ConEmu palette.
+That is because PuTTY colors must be configured in PuTTY itself.
+
+
+
+<h3 id="resizeable"> ChildGui Must be resizeable </h3>
+
 **Note** To be able to ‘integrate’ ChildGui into ConEmu, your application window must be **resizeable**!
 For example, if your PuTTY settings locks its window size to certain ‘rows x cols’ values,
 its window is non-resizeable, and ConEmu will not integrate it into ConEmu's tabs.
@@ -62,7 +88,7 @@ That will look weird, small framed child window with caption inside ConEmu works
 
 
 
-<h2 id="limitations"> Hotkeys limitations </h2>
+<h3 id="hotkeys"> Hotkeys limitations </h3>
 
 One more note about **hotkeys**. When you are running ChildGui, all keypressed must be passed to that application.
 That's why most of ConEmu hotkeys will be inaccessible.
@@ -71,7 +97,7 @@ if option ‘Install keyboard hooks’ is **enabled**.
 
 
 
-<h3 id="hotkey-workaround"> Hotkey workaround </h3>
+<h4 id="hotkey-workaround"> Hotkey workaround </h4>
 
 One of most asked question is ‘Why Ctrl-Tab is not working with PuTTY?’
 
