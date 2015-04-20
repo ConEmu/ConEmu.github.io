@@ -1,15 +1,7 @@
 ---
 ---
-## Please VOTE! - ConEmu has been selected to be on the ballot for the May 2015 Community Choice SourceForge project of the Month!
-
-Voting will end on will end on 2015 April 15. User must be registered at SourceForge.net to vote.
-
-Just post in the voting thread (https://sourceforge.net/p/potm/discussion/vote/thread/ca38c9ae/):
-
-    VOTE: conemu
-
 ## About ConEmu
-ConEmu-Maximus5 is a Windows console emulator with tabs, which represents
+[ConEmu-Maximus5](https://conemu.github.io) is a Windows console emulator with tabs, which represents
 multiple consoles as one customizable GUI window with various features.
 
 Initially, the program was created as a companion to
@@ -19,7 +11,7 @@ command history and completion, powerful editor.
 
 Today, ConEmu can be used with any other console application or simple GUI tools
 (like PuTTY for example). ConEmu is an active project, open to
-[suggestions](http://code.google.com/p/conemu-maximus5/issues/list).
+[suggestions](https://github.com/Maximus5/ConEmu/issues).
 
 <a href="http://www.fosshub.com/ConEmu.html">![Fosshub.com ConEmu mirror](https://github.com/Maximus5/ConEmu/wiki/Downloads.png)</a>
 
@@ -33,14 +25,14 @@ This fork grew up from ConEmu by Zoin.
     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
     OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
 
-Full text of license is here: [https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/License.txt](Release/ConEmu/License.txt)
+See [Release/ConEmu/License.txt](https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/License.txt) for the full license text.
 
 
 ## Some links
-Release stages: http://conemu.github.io/en/StableVsPreview.html  
-Wiki: http://conemu.github.io/en/TableOfContents.html  
-What's new: http://conemu.github.io/en/Whats_New.html  
-Donate this project: http://conemu.github.io/donate.html
+Wiki: https://conemu.github.io/en/TableOfContents.html  
+What's new: https://conemu.github.io/en/Whats_New.html  
+Release stages: https://conemu.github.io/en/StableVsPreview.html  
+Donate this project: <a ref="https://conemu.github.io/donate.html" rel="nofollow">https://conemu.github.io/donate.html</a>
 
 
 
@@ -55,7 +47,7 @@ an alternative customizable GUI window with various features:
   * window font anti-aliasing: standard, clear type, disabled;
   * window fonts: family, height, width, bold, italic, etc.;
   * using normal/bold/italic fonts for different parts of console simultaneously;
-  * cursor: standard console (horisontal) or GUI (vertical);
+  * cursor: standard console (horizontal) or GUI (vertical);
   * and more, and more...
 
 ### Far Manager related features
@@ -67,7 +59,7 @@ an alternative customizable GUI window with various features:
   * and more, and more...
 
 All settings are read from the registry or ConEmu.xml file, after which the
-[command line parameters](http://conemu.github.io/en/Command_Line.html)
+[command line parameters](https://conemu.github.io/en/CommandLine.html)
 are applied. You may easily use several named configurations (for different PCs for example).
 
 
@@ -76,26 +68,12 @@ are applied. You may easily use several named configurations (for different PCs 
 
 
 ## Installation
+In general, ConEmu installation is easy.
+Just unpack or install to any folder and run `ConEmu.exe`.
 
-### If you are NOT a Far Manager user
-* Unpack all files (from appropriate `ConEmuPack.\*.7z`)
-	or install `ConEmuSetup.\*.exe` package to any folder your choice.
- 	Subfolder `plugins` (Far Manager related) is not required in your case.
-*  Run ConEmu.exe or ConEmu64.exe.
+Read [Installation wiki](https://conemu.github.io/en/Installation.html)
+about release stages, distro packets, some warnings and much more...
 
-### If you ARE a Far Manager user
-* Use of `ConEmuPack.\*.7z` and `ConEmuSetup.\*.exe` are slightly different
-  * `ConEmuPack.\*.7z`: Unpack all files to the folder, containing `far.exe`
-  * `ConEmuSetup.\*.exe`: On the `Features` page you must select destination
-	for `Far Manager plugins` to the folder, containing `far.exe`.
-* Import to the registry Far Manager macroses, related to ConEmu. Macro `*.reg`
-	files are located in `ConEmu.Addons` directory. Each macro file (`*.reg`) has
-	description in header. Just doubleclick chosen files in Windows Explorer
-	to import them.
-* By default (started without command line params), ConEmu runs `far.exe` from
-	it's home folder, or `cmd.exe` if Far Manager not found.
-	Alternatively, You may run any root command, specifying `/Cmd \<App with params\>`
-	argument in ConEmu shortcut or command line.
 
 ## Building from sources
 https://github.com/Maximus5/ConEmu/blob/master/src/HowToBuild.txt
@@ -106,4 +84,4 @@ https://github.com/Maximus5/ConEmu/blob/master/src/HowToBuild.txt
 
 ![ConEmu+Powershell inside Windows Explorer pane](https://github.com/Maximus5/ConEmu/wiki/ConEmuInside.png)
 
-[More screenshots](http://conemu.github.io/en/Screenshots.html)
+[More screenshots](https://conemu.github.io/en/Screenshots.html)
