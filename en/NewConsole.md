@@ -166,7 +166,7 @@ you may use `-new_console` or `-cur_console` switches.
     if you want to use these switches in your shell prompt (CLI).
   * These switches are shown in ConEmu ‘About’ dialog (Win+Alt+A).
   * The `s` sub-switch is complicated, look at examples below.
-  * The `-new_console` is one of the ways to start **[GUI](ChildGui.md)** application from existing tab in the new ConEmu tab.
+  * The `-new_console` is one of the ways to start **[GUI](ChildGui.html)** application from existing tab in the new ConEmu tab.
   * Several switches in one command may be used:
     `-new_console:b -new_console:h9999` and `-new_console:bh9999` are equal.
   * While you create new tab from ConEmu GUI interface, `-new_console` and `-cur_console` have the same effect.
