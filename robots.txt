@@ -1,14 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /donate.html
-Disallow: /search.html
-Disallow: /test.html
-Disallow: /README.html
-Disallow: /en/Awards.html
-Disallow: /ru/Awards.html
-Disallow: /en/ConEmu.html
-Disallow: /en/License_by_Zoin.html
-Disallow: /en/Issues2.html
-Disallow: /en/ExportEnvVar.html
-Disallow: /sitemap.html
 Sitemap: http://conemu.github.io/sitemap.xml

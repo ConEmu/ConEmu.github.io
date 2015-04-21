@@ -1,4 +1,5 @@
 ---
+noindex: true
 ---
 ## About ConEmu
 [ConEmu-Maximus5](https://conemu.github.io) is a Windows console emulator with tabs, which represents
