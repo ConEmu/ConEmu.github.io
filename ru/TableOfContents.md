@@ -136,6 +136,7 @@ h1_title: Оглавление документации по ConEmu
   * [Prompt внизу окна](PromptAtTheBottom.html)
   * [ShellWorkDir](ShellWorkDir.html)
   * [Solarized схема](SolarizedColors.html)
+  * [Git For Windows](GitForWindows.html)
   * [ssh agent](SshAgent.html)
   * [Task bar bug](TaskBarBug.html)
   * [TCC Вставка/Замена](TccInsertOverwrite.html)

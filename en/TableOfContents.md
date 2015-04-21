@@ -135,6 +135,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Prompt at the bottom](PromptAtTheBottom.html)
   * [ShellWorkDir](ShellWorkDir.html)
   * [Solarized colors](SolarizedColors.html)
+  * [Git For Windows](GitForWindows.html)
   * [ssh agent](SshAgent.html)
   * [Task bar bug](TaskBarBug.html)
   * [TCC Insert/Overwrite](TccInsertOverwrite.html)
