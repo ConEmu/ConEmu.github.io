@@ -1,6 +1,6 @@
 ---
 redirect_from:
- - /ru/VersionComparison.md
+ - /ru/VersionComparison.html
  - /ru/x64_or_x86.html
  - /en/x64_or_x86.html
  - /ru/StableVsPreview.html
