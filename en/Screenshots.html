@@ -6,23 +6,58 @@ title: "ConEmu | Screenshots"
 breadcrumbs:
  - url: TableOfContents.html#conemu
    title: ConEmu
+
+screenshots:
+ - title: "ConEmu splits with cmd and powershell"
+   src:    ConEmu-Maximus5.png
+ - title: "ConEmu and Solarized Git"
+   src:    SolarizedGit.png
+ - title: "Far, cmd, Notepad and PUTTY started in ConEmu"
+   rc:    ConEmuAero.png
+ - title: "PuTTY and notepad in ConEmu splits"
+   src:    ConEmuChildGui.png
+ - title: "CJK support in ConEmu"
+   src:    ConEmuCJK.png
+ - title: "Splits with logo background"
+   src:    ConEmuSplits2.png
+ - title: "ANSI, xterm-256 and 24bit colors, Vim"
+   src:    ConEmuSplits3.png
+ - title: "ConEmu Alpha transparency"
+   src:    ConEmuTransparency2.png
+ - title: "Fonts"
+   group:
+   - alt: "ConEmu with ClearType enabled"
+     src:    ConEmuFontClearType.png
+   - alt: "ConEmu with standard Anti-aliasing"
+     src:    ConEmuFontStandard.png
+   - alt: "ConEmu with Anti-aliasing disabled"
+     src:    ConEmuFontNon.png
+   - alt: "ConEmu with Raster font"
+     src:    ConEmuFontRaster.png
+ - title: "IME input in ConEmu"
+   src:  ConEmuSuDo1.png
 ---
 
 <!-- Content starts -->
 
+<noindex>
 <p>Take a look at <a href="Screencasts.html">screencasts</a>. </p>
+</noindex>
 
-<h3 id="h0"><a name="Far,_cmd,_Notepad_and_PUTTY_started_in_ConEmu"></a>Far, cmd, Notepad and PUTTY started in ConEmu<a href="#Far,_cmd,_Notepad_and_PUTTY_started_in_ConEmu" class="section_anchor"></a></h3>
-<p><img src="../img/ConEmuAero.png" title="Far, cmd, Notepad and PUTTY started in ConEmu"> </p>
+<h1>ConEmu screenshots</h1>
 
-<h3><a name="ConEmu_Alpha_transparency"></a>ConEmu Alpha transparency<a href="#ConEmu_Alpha_transparency" class="section_anchor"></a></h3>
-<p><img src="../img/ConEmuTransparency2.png" title="ConEmu Alpha transparency"> </p>
 
-<h3><a name="Fonts"></a>Fonts<a href="#Fonts" class="section_anchor"></a></h3>
-<p><img src="../img/ConEmuFontClearType.png" title="ConEmu with ClearType enabled"> </p>
-<p><img src="../img/ConEmuFontStandard.png" title="ConEmu with standard Anti-aliasing"> </p>
-<p><img src="../img/ConEmuFontNon.png" title="ConEmu with Anti-aliasing disabled"> </p>
-<p><img src="../img/ConEmuFontRaster.png" title="ConEmu with Raster font"> </p>
+{% for img in page.screenshots %}
+<h3>{{ img.title }}</h2>
+{% if img.group %}
+  {% for i in img.group %}
+  <p><img src="/img/{{ i.src }}" alt="{{ i.alt }}"> </p>
+  {% endfor %}
+{% else %}
+  <p><img src="/img/{{ img.src }}" alt="{{ img.title }}"> </p>
+{% endif %}
+{% endfor %}
+
 
 <h3><a name="ConEmu_(simple_console_mode)"></a>ConEmu (simple console mode)<a href="#ConEmu_(simple_console_mode)" class="section_anchor"></a></h3>
 <p><img src="../img/ConEmuVanilla.png" title="ConEmu (simple console mode)"> </p>
