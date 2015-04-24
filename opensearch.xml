@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>ConEmu Search</ShortName>
+<Description>Search ConEmu Documentation</Description>
+<Url type="text/html" method="GET" template="http://conemu.github.io/search.html?q={searchTerms}">
+  <Param name="key/value pairs" value="{searchTerms}"/>
+</Url>
+<Image width="16" height="16" type="image/vnd.microsoft.icon">http://conemu.github.io/conemu.ico</Image>
+<InputEncoding>UTF-8</InputEncoding>
+<moz:SearchForm>http://conemu.github.io/search.html</moz:SearchForm>
+</OpenSearchDescription>
