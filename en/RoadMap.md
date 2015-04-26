@@ -2,9 +2,19 @@
 redirect_from: /ru/RoadMap.html
 
 title: "ConEmu | RoadMap"
+
+description: "There are a lot of interesting suggestions waiting to be implemented.
+  Here are a short list. Any help will be very much appreciated!"
+
+breadcrumbs:
+ - url: TableOfContents.html#extras
+   title: Extras
 ---
 
 # ConEmu road map
+
+There are a lot of interesting suggestions waiting to be implemented.
+Here are a short list.
 
 Any help will be very much appreciated!
 
