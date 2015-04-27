@@ -9,6 +9,12 @@ description: "There are a lot of interesting suggestions waiting to be implement
 breadcrumbs:
  - url: TableOfContents.html#extras
    title: Extras
+
+readalso:
+ - url: /donate.html
+   title: Support ConEmu development
+ - url: Issues.html
+   title: Contacts, Feedbacks, Suggestions
 ---
 
 # ConEmu road map
