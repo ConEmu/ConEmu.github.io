@@ -9,6 +9,10 @@ description: "Don't waste your time reporting problems of OldBuilds.
 breadcrumbs:
  - url: TableOfContents.html#feedback
    title: Feedback
+
+readalso:
+ - url: Installation.html
+   title: Installation
 ---
 
 # Update your installation
