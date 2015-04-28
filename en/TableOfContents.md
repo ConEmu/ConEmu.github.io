@@ -101,7 +101,7 @@ h1_title: ConEmu Documentation Table of Contents
 <h3 id="controls">Controls</h3>
 
   * [Tab bar](TabBar.html)
-  * [Tool bar](ToolBar.md)
+  * [Tool bar](ToolBar.html)
   * [Splits (panes)](SplitScreen.html)
   * [System menu](SystemMenu.html)
   * [Tab menu](TabMenu.html)

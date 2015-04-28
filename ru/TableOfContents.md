@@ -101,7 +101,7 @@ h1_title: Оглавление документации по ConEmu
 <h3 id="controls">Управление</h3>
 
   * [Закладки (табы)](TabBar.html)
-  * [Панель инструментов](ToolBar.md)
+  * [Панель инструментов](ToolBar.html)
   * [Splits (panes)](SplitScreen.html)
   * [Системное меню](SystemMenu.html)
   * [Меню таба](TabMenu.html)
