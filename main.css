@@ -88,7 +88,8 @@ h1.intro {
 pre {
   width: 95%;
   font-size: .8em;
-  /*line-height: 1.462em;*/
+  font-family: 'andale mono', 'lucida console', monospace;
+  white-space: pre;
   line-height: 1.5em;
   padding: .7em;
   color: #eee8d5;
