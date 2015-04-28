@@ -33,6 +33,20 @@ or anything else, spreading the word for example.
 
 <!-- Content starts -->
 
+<h2 id="Build_150427">Build 150427</h2>
+<ul>
+	<li>gh#112: Python with Tk: rightclick menu window not showing. </li>
+	<li>Set <code>FARHOME</code> env.var in default created Far tasks.
+	    That is because otherwise FARHOME may hold wrong value
+	    and plugins may be loaded from wrong place.
+	    So, the example task <code>{Far Manager::Far 3.0 x64}</code> will be:
+	    <pre>set "FARHOME=C:\Program Files\Far Manager" & "%FARHOME%\far.exe" /w /p"%ConEmuDir%\Plugins\ConEmu;%FARHOME%\Plugins"</pre> </li>
+	<li>Show link to ConEmuArgs.html on bad switch using. </li>
+	<li>If tab is renamed manually or via <code>-new_console:t:???</code> new name will be shown in ConEmu window title.
+	    Now it's possible to create some AHK scripts checking ConEmu title. </li>
+	<li>xterm keys: <code>Ctrl+Home</code>, <code>Ctrl+End</code>, <code>Ctrl+Ins</code>, <code>Ctrl+Del</code>, <code>Ctrl+PgUp</code>, <code>Ctrl+PgDn</code>. </li>
+</ul>
+
 <h2 id="Build_150420">Build 150420</h2>
 <ul>
 	<li>Warn if MacType hookers are loaded in ConEmuC/ConEmuC64. User have to exclude these processes in the MacType configuration. </li>
