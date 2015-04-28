@@ -1,7 +1,8 @@
 ---
-redirect_from: /ru/UnicodeSupport.html
-redirect_from: /ru/CheckUnicode.html
-redirect_from: /en/CheckUnicode.html
+redirect_from:
+ - /ru/UnicodeSupport.html
+ - /ru/CheckUnicode.html
+ - /en/CheckUnicode.html
 
 title: "ConEmu | Unicode Support"
 

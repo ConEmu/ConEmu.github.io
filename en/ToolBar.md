@@ -1,7 +1,8 @@
 ---
-redirect_from: /ru/ToolBar.html
-redirect_from: /ru/SearchBar.html
-redirect_from: /en/SearchBar.html
+redirect_from:
+ - /ru/ToolBar.html
+ - /ru/SearchBar.html
+ - /en/SearchBar.html
 
 title: ConEmu | ToolBar
 
