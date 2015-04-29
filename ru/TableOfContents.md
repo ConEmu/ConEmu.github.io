@@ -22,7 +22,7 @@ h1_title: Оглавление документации по ConEmu
   * [Зублуждения](Delusions.html)
   * [FAQ](ConEmuFAQ.html)
   * [Whats new](Whats_New.html)
-  * [Поддержать](/donate.html)
+  * [Поддержать]({{site.mirror_ru}}/donate.html)
 
 <h3 id="terms"><a href="ConEmuTerms.html">Термины</a></h3>
 

@@ -3,11 +3,18 @@
 # used in layouts and header
 url: "http://conemu.github.io"
 
-# used with breadcrumbs
+# used with breadcrumbs and socials
 site_name: "conemu.github.io"
+twit_text: "ConEmu%3A%20Handy%20Windows%20terminal"
 
 # main mirror location
-mirror: ""
+mirror: "" # leave it empty for main site
+mirror_en: "http://conemu.github.io"
+mirror_ru: "http://www.conemu.ru"
+# mirror: "http://conemu.github.io"
+# used with conjunction with
+# page.docfolder: "/en"
+# sort of: href="{{ site.mirror }}{{ page.docfolder }}/VersionComparison.html"
 
 
 # ### Build settings ###
