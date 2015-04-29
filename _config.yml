@@ -1,18 +1,17 @@
-# Site settings
-title: ConEmu - Windows Console Emulator
-# email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Official site of ConEmu.
-  Handy Windows terminal with tabs, splits, fast access to favourite shells,
-  automation and more.
-# baseurl: "/"
+# ### Site settings ###
+
+# used in layouts and header
 url: "http://conemu.github.io"
+
+# used with breadcrumbs
 site_name: "conemu.github.io"
-twitter_username: ConEmuMaximus5
-github_username:  Maximus5
+
+# main mirror location
+mirror: ""
 
 
-# Build settings
+# ### Build settings ###
+
 markdown: kramdown
 
 kramdown:
@@ -22,6 +21,9 @@ kramdown:
 # Allow redirections
 gems:
   - jekyll-redirect-from
+
+
+# ### Page defaults ###
 
 defaults:
   -
