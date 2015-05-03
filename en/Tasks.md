@@ -1,6 +1,4 @@
 ---
-redirect_from: /ru/Tasks.html
-
 title: "ConEmu | Tasks"
 
 description: "ConEmu's Tasks are simple way to store oft-used shells,
@@ -13,8 +11,48 @@ breadcrumbs:
 
 # ConEmu's Tasks
 
-The ‘Task’ is one or more (tabbed or splitted) predefined commands
-(shells) which you may start anytime by name or hotkey.
+ConEmu-Maximus5 is a terminal or a kind of container
+for whatever programs you might want to run inside it:
+[console applications](ConsoleApplication.html)
+or simple programs with self graphical interface
+([ChildGui](ChildGui.html)).
+They are typically a [shells](TerminalVsShell.html)
+like cmd.exe, bash.exe, powershell.exe,
+editors like notepad++ or even another terminals
+like mintty.exe or PuTTY.exe.
+
+And ConEmu has [tabs](TabBar.html) and [splittings](SplitScreen.html)
+(à la screen/tmux, but handled at the GUI level).
+So you can have different programs running in each of those ‘slots’.
+
+A ‘task’ is an instruction what and how ConEmu must run in ‘slots’.
+Each ‘task’ has a ‘name’, one or more actual commands to run,
+‘hotkey’ to run task which is available when ConEmu has focus,
+some optional switches like startup directory or icon.
+
+| Value    | Example |
+|:---------|:--------|
+| task name | {Git Bash}, {WinSDK v7.0}, ... |
+| name or full path to [program](https://wikipedia.org/wiki/Executable) | bash.exe |
+| program arguments | --login -i |
+| [-new_console](NewConsole.html) switch(es) | -new_console:t:"Bash" -new_console:d:"C:\Projects" |
+| several [tabs](TabBar.html) or [splits](SplitScreen.html) | cmd <br/> powershell -new_console:sV |
+
+When you need to [create a tab](LaunchNewTab.html)
+you may type may be long and full command line like
+
+```
+set "FARHOME=" & C:\Far\Far.exe /w /x /p%ConEmuDir%\Plugins\ConEmu;%FARHOME%\Plugins;C:\Far\Plugins.My
+```
+
+Or just run task named `{Far}`.
+
+At last, Tasks are the only easy way to run several [tabs](TabBar.html)
+or preconfigured [splits](SplitScreen.html) at once.
+
+### Bottom line
+
+Use ‘Tasks’ to run predefined commands anytime by name or hotkey.
 
 ![ConEmu's tasks dropdown](/img/ConEmuStartTask.png "Start task dropdown menu")
 
