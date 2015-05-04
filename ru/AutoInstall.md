@@ -16,17 +16,17 @@ readalso:
  - url: Installation.html
    title: Installation
  - url: VersionComparison.html
-   title: "Comparison: distros, bitness, stages"
+   title: "Сравнение версий: distros, bitness, stages"
 ---
 
-# Automate your box installation
-If you need to automate your box installation, this page describes how to
-setup ConEmu via PowerShell with single command.
-Internet connection is required.
+# Автоматизация установки системы
+Если нужно автоматизировать установку вашей системы,
+здесь вы можете узнать как установить ConEmu с помощью одной команды PowerShell.
+Для установки требуется подключение к Internet.
 
 
 <!-- ******************************* -->
-<h2 id="default"> Default automatic installation </h2>
+<h2 id="default"> Автоматическая установка по умолчанию </h2>
 
 |:---------------------------|:----------|
 | ConEmu version             | Latest    |
@@ -34,7 +34,7 @@ Internet connection is required.
 | Create shortcut on desktop | Yes       |
 | Run after installation     | No        |
 
-Just copy the following command, press `Win+R`, paste command and press `Enter`.
+Просто выполните следующую команду в диалоге `Win+R`.
 
 ~~~
 powershell -NoProfile -ExecutionPolicy Unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install.ps1'))"
@@ -43,22 +43,22 @@ powershell -NoProfile -ExecutionPolicy Unrestricted -Command "iex ((new-object n
 
 
 <!-- ******************************* -->
-<h2 id="params"> Automatic installation with parameters </h2>
+<h2 id="params"> Автоматическая установка с параметрами </h2>
 
-If you need to customize parameters (folder, default xml file, etc.)
-you may use another syntax.
+Если вам нужно настроить параметры установки (путь, xml-файл, и т.п.)
+можно использовать другой синтаксис.
 
-**Note**, ‘install2.ps1’ is used here instead of ‘install.ps1’.
+**Внимание**, здесь используется файл ‘install2.ps1’, а не ‘install.ps1’.
 
-| Description | Name | Values |
+| Описание | Имя | Примеры значений |
 |:---|:---|:---|
 | Destination folder | dst | Full path to desired location <br/> C:\Tools\ConEmu |
 | ConEmu version | ver | • 'alpha' <br/> • 'preview' <br/> • 'stable' |
 | Create shortcut on desktop | lnk | • $TRUE <br/> • $FALSE <br/> • 'Desired link name' |
 | Run after installation | run | • $TRUE <br/> • $FALSE |
 
-Paste the command (see example below) to your box startup script
-(cmd-file for example) and change arguments to desired values.
+Вставьте команду (пример ниже) в ваш скрипт установки
+(cmd-file например) и измените требуемые значения.
 
 ~~~
 powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set ver 'alpha'; set dst 'C:\ConEmu'; set lnk $TRUE; set run $TRUE; set xml 'https://conemu.github.io/ConEmu.xml'; iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install2.ps1'))"
@@ -66,16 +66,16 @@ powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set ver 'alpha'; s
 
 
 <!-- ******************************* -->
-<h2 id="cinst"> Using chocolatey </h2>
+<h2 id="cinst"> chocolatey.org </h2>
 
-[Chocolatey](https://chocolatey.org/) is a Machine Package Manager,
-somewhat like apt-get, but built with Windows in mind.
+[Chocolatey](https://chocolatey.org/) это ‘менеджер пакетов’,
+что-то вроде apt-get в Linux, но созданный для Windows.
 
-When you have Chocolatey installed on your PC you can install
-ConEmu (and many other programs) with one command.
+Если на вашей машине установлен Chocolatey то установка
+ConEmu (как и многих других программ) выполняется одной командой.
 
-ConEmu will be installed in your `Program Files` folder using actual
-version of `ConEmuSetup.exe`.
+ConEmu будет установлен в папку `Program Files` посредством
+последней версии `ConEmuSetup.exe`.
 
 |:---------------------------|:------------------------|
 | ConEmu version             | Preview or Latest       |
@@ -83,7 +83,7 @@ version of `ConEmuSetup.exe`.
 | Create shortcut on desktop | Yes                     |
 | Run after installation     | No                      |
 
-Just run the following command from any terminal.
+Просто выполните команду в вашем терминале.
 
 ~~~
 choco install conemu
