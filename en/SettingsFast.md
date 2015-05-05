@@ -133,7 +133,7 @@ with arguments.
 
 This option is required for ability to process certain
 keyboard hotkeys.
-For example, Windows 7 utilizes Win+*цифра* (Win+*1*, Win+*2*, etc.)
+For example, Windows 7 utilizes Win+*Number* (Win+*1*, Win+*2*, etc.)
 for switching programs on the TaskBar.
 But these hotkeys may be handy to switch [tabs](TabBar.html) in the ConEmu window.
 Enabling ‘Install keyboard hooks’ does not mean that ConEmu will block
