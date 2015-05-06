@@ -1,8 +1,8 @@
 ---
 title: "ConEmu | Tasks"
 
-description: "ConEmu's Tasks are simple way to store oft-used shells,
-  start several shells in tabs or splits."
+description: "ConEmu's Tasks are simple way to store oft-used commands
+  and start several shells in tabs or splits."
 
 breadcrumbs:
  - url: TableOfContents.html#launch-apps
@@ -10,6 +10,20 @@ breadcrumbs:
 ---
 
 # ConEmu's Tasks
+
+ConEmu's ‘Tasks’ are used to store predefined commands
+or [shell's](TerminalVsShell.html) command lines.
+Run them anytime later by name or hotkey.
+
+Also it's a simple way to start several shells
+in [tabs](TabBar.html) or [splits](SplitScreen.html).
+
+![ConEmu's tasks dropdown](/img/ConEmuStartTask.png "Start task dropdown menu")
+
+Tasks may be configured in the [‘Settings’ dialog](SettingsTasks.html).
+
+
+<h2 id="about-tasks"> Tasks in details </h2>
 
 ConEmu-Maximus5 is a terminal or a kind of container
 for whatever programs you might want to run inside it:
@@ -32,11 +46,11 @@ some optional switches like startup directory or icon.
 
 | Value    | Example |
 |:---------|:--------|
-| task name | {Git Bash}, {WinSDK v7.0}, ... |
-| name or full path to [program](https://wikipedia.org/wiki/Executable) | bash.exe |
-| program arguments | --login -i |
-| [-new_console](NewConsole.html) switch(es) | -new_console:t:"Bash" -new_console:d:"C:\Projects" |
-| several [tabs](TabBar.html) or [splits](SplitScreen.html) | cmd <br/> powershell -new_console:sV |
+| task name | `{Git Bash}`, `{WinSDK v7.0}`, ... |
+| name or full path to [program](https://wikipedia.org/wiki/Executable) | `bash.exe` |
+| program arguments | `--login -i` |
+| [-new_console](NewConsole.html) switch(es) | `-new_console:t:"Bash" -new_console:d:"C:\Projects"` |
+| several [tabs](TabBar.html) or [splits](SplitScreen.html) | `cmd` <br/> `powershell -new_console:sV` |
 
 When you need to [create a tab](LaunchNewTab.html)
 you may type may be long and full command line like
@@ -50,13 +64,6 @@ Or just run task named `{Far}`.
 At last, Tasks are the only easy way to run several [tabs](TabBar.html)
 or preconfigured [splits](SplitScreen.html) at once.
 
-### Bottom line
-
-Use ‘Tasks’ to run predefined commands anytime by name or hotkey.
-
-![ConEmu's tasks dropdown](/img/ConEmuStartTask.png "Start task dropdown menu")
-
-Tasks may be configured in the [‘Settings’ dialog](SettingsTasks.html).
 
 
 <h2 id="create-new-task"> Creating new task </h2>

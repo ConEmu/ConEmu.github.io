@@ -11,6 +11,20 @@ breadcrumbs:
 
 # ConEmu's Tasks
 
+«Task-и» или «Задачи» используются в ConEmu для сохранения предопределенных команд
+или параметров запуска [оболочке (shell)](TerminalVsShell.html).
+Доступны для запуска по имени или горячей клавише.
+
+Это также простой способ запуска нескольких shell
+в [табах (tabs)](TabBar.html) или [сплитах (splittings)](SplitScreen.html).
+
+![ConEmu's tasks dropdown](/img/ConEmuStartTask.png "Start task dropdown menu")
+
+Tasks may be configured in the [‘Settings’ dialog](SettingsTasks.html).
+
+
+<h2 id="about-tasks"> Подробнее о Задачах </h2>
+
 ConEmu-Maximus5 это терминал, своего рода контейнер,
 в котором вы запускаете
 [консольные приложения](ConsoleApplication.html)
@@ -32,11 +46,11 @@ ConEmu-Maximus5 это терминал, своего рода контейне�
 
 | Значение | Пример  |
 |:---------|:--------|
-| имя Task-а | {Git Bash}, {WinSDK v7.0}, ... |
-| имя или полный путь к [исполняемому файлу](https://wikipedia.org/wiki/Executable) | bash.exe |
-| аргументы программы | --login -i |
-| ключи [-new_console](NewConsole.html) | -new_console:t:"Bash" -new_console:d:"C:\Projects" |
-| несколько [табов](TabBar.html) или [сплитов](SplitScreen.html) | cmd <br/> powershell -new_console:sV |
+| имя Task-а | `{Git Bash}`, `{WinSDK v7.0}`, ... |
+| имя или полный путь к [исполняемому файлу](https://wikipedia.org/wiki/Executable) | `bash.exe` |
+| аргументы программы | `--login -i` |
+| ключи [-new_console](NewConsole.html) | `-new_console:t:"Bash" -new_console:d:"C:\Projects"` |
+| несколько [табов](TabBar.html) или [сплитов](SplitScreen.html) | `cmd` <br/> `powershell -new_console:sV` |
 
 Когда вам нужно [запустить новый таб](LaunchNewTab.html)
 вы можете вводить возможно очень длинную команду запуска вроде
@@ -50,13 +64,6 @@ set "FARHOME=" & C:\Far\Far.exe /w /x /p%ConEmuDir%\Plugins\ConEmu;%FARHOME%\Plu
 Также «Task-и» это единственный простой способ запуска нескольких [табов](TabBar.html)
 или предопределенной конфигурации [сплитов](SplitScreen.html).
 
-### Итого
-
-Используйте «Task-и» для запуска предопределенных команд по имени или горячей клавише.
-
-![ConEmu's tasks dropdown](/img/ConEmuStartTask.png "Start task dropdown menu")
-
-Tasks may be configured in the [‘Settings’ dialog](SettingsTasks.html).
 
 
 <h2 id="create-new-task"> Creating new task </h2>
