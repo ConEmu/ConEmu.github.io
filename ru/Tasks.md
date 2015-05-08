@@ -20,7 +20,7 @@ breadcrumbs:
 
 ![ConEmu's tasks dropdown](/img/ConEmuStartTask.png "Start task dropdown menu")
 
-Tasks may be configured in the [‘Settings’ dialog](SettingsTasks.html).
+Задачи настраиваются на вкладке [Tasks](SettingsTasks.html) диалога настроек.
 
 
 <h2 id="about-tasks"> Подробнее о Задачах </h2>
@@ -63,6 +63,44 @@ set "FARHOME=" & C:\Far\Far.exe /w /x /p%ConEmuDir%\Plugins\ConEmu;%FARHOME%\Plu
 
 Также «Task-и» это единственный простой способ запуска нескольких [табов](TabBar.html)
 или предопределенной конфигурации [сплитов](SplitScreen.html).
+
+
+
+<h3 id="from-settings"> Немного из настроек </h3>
+
+![ConEmu settings, Tasks page](/img/Settings-Tasks.png "ConEmu settings, Tasks page")
+
+Здесь вы можете настроить список часто выполняемых задач.
+Задача - это алиас для запуска одного или более приложений в новых вкладках ConEmu.
+Задачи настраиваются на странице 'Tasks' диалога настроек
+и сохраняются в настройке (reg/xml) в подключе "Tasks".
+Их можно использовать (на примере задачи {Shells}):
+
+* при запуске, указав в свойствах ярлыка: "ConEmu.exe /cmd {Shells}";
+* указав {Shells} в поле 'Command line' страницы 'Main' окна 'Settings';
+* при создании новой консоли через интерфейс ConEmu (<code class="plus">[+]</code> на тулбаре, список в Recreate-диалоге);
+* из командной строки cmd.exe: "%ConEmuBaseDir%\ConEmuC.exe" /c {Shells} -new_console.
+* из командной строки far.exe: conemu:run:{Shells} -new_console
+
+ConEmu Jump list настраивается тоже здесь.
+Настройте список задач, в поле «ConEmu arguments for Jump list»
+можно дополнительно указать иконку, которая будет отображаться в Jump list, например
+
+~~~
+/icon "cmd.exe"
+~~~
+
+и рабочую папку, в которой будет запущен указанный процесс, например
+
+~~~
+/dir "c:\Program Files"
+~~~
+
+После настройки списка задач включите флажок «Add ConEmu tasks to taskbar» и (по желанию)
+«Add commands from history, too». Нажмите кнопку «Update Now!».
+В случае успеха вы увидите сообщение «Taskbar jump list was updated successfully», ну или сообщение об ошибке.
+Есть способ инициировать Jump list при запуске ConEmu (<a title="Jump Lists/Task window problem" href="http://code.google.com/p/conemu-maximus5/issues/detail?id=576"> Issue 576 </a>,
+может кому еще понадобится для автоматизации установки, например) для этого запустите (однократно) ConEmu.exe с аргументом `/updatejumplist`.
 
 
 

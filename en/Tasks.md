@@ -66,6 +66,44 @@ or preconfigured [splits](SplitScreen.html) at once.
 
 
 
+<h3 id="from-settings"> A little from Settings </h3>
+
+![ConEmu settings, Tasks page](/img/Settings-Tasks.png "ConEmu settings, Tasks page")
+
+Here you can configure a list of common tasks.
+In fact, this is an alias to run one or more applications in new tabs within ConEmu.
+These can be configured in the 'Tasks' page of the 'Settings' dialog,
+and stored in the "Tasks" subkey of reg/xml settings.
+'Tasks' may be used as follows (as an example, we will use a task named {Shells}):
+
+* when you start by specifying the properties of the shortcut: "ConEmu.exe / cmd {Shells}";
+* specifying {Shells} in the 'Command line' page 'Main' of 'Settings' dialog;
+* when you create a new console interface ConEmu (<code class="plus">[+]</code> on the toolbar, a list of Recreate-dialog);
+* from the command line (cmd.exe): "%ConEmuBaseDir%\ConEmuC.exe" / c {Shells} -new_console.
+* from the command line (far.exe): conemu:run:{Shells} -new_console
+
+The ConEmu Jump list is set here too.
+Set up a list of tasks in the field of «ConEmu arguments for Jump list»
+You can optionally specify the icon that is displayed in the Jump list, for example
+
+~~~
+/icon "cmd.exe"
+~~~
+
+и рабочую папку, в которой будет запущен указанный процесс, например
+
+~~~
+/dir "c:\Program Files"
+~~~
+
+После настройки списка задач включите флажок «Add ConEmu tasks to taskbar» и (по желанию)
+«Add commands from history, too». Нажмите кнопку «Update Now!».
+В случае успеха вы увидите сообщение «Taskbar jump list was updated successfully», ну или сообщение об ошибке.
+Есть способ инициировать Jump list при запуске ConEmu (<a title="Jump Lists/Task window problem" href="http://code.google.com/p/conemu-maximus5/issues/detail?id=576"> Issue 576 </a>,
+может кому еще понадобится для автоматизации установки, например) для этого запустите (однократно) ConEmu.exe с аргументом `/updatejumplist`.
+
+
+
 <h2 id="create-new-task"> Creating new task </h2>
 
 When you want to create new task absent in the default tasks list you need to know:
