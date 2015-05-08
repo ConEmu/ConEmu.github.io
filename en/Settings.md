@@ -63,34 +63,18 @@ When You specify the [/config](ConEmuArgs.html) switch in the ConEmu.exe command
 
 <h3 id="ConEmu_.xml"> ConEmu.xml </h3>
 
-You may use ConEmu in ‘portable’ mode,
-so all settings will be stored in the *ConEmu.xml* file
-or its dotted variant *.ConEmu.xml*.
-File without leading dot has priority.
+Any ConEmu [installation](VersionComparison.html) may be ‘portable’,
+i.e. it may store settings in the xml files.
+But it may use Windows registry too.
 
-ConEmu search sequence of this file:
+In most cases you will choose settings storage location at the [first start](SettingsFast.html).
 
-|:---|:---|
-| `%ConEmuDir%\` | Folder with `ConEmu.exe` and `ConEmu64.exe` |
-| `%ConEmuBaseDir%\` | Folder with `ConEmuC.exe` and `ConEmuC64.exe` |
-| `%APPDATA%\` | I don't think this is really ‘portable’, but many users was asked about `%APPDATA%` |
-| Windows registry | If the xml file does not exist in any of the specified folders ConEmu will use Windows registry |
+Read more about settings storage options:
 
-On [first time ConEmu run](SettingsFast.html),
-you may choose ‘portable’ mode and location of xml file.
-
-Or you may create manually a new empty `ConEmu.xml`
-or just rename `ConEmu_Sample.xml` to `ConEmu.xml` for engaging xml-mode.
-Template file `ConEmu_Sample.xml` is shipped with ConEmu.
-
-You may use [named configuration (/config)](ConEmuArgs.html) switch with xml-mode too.
-
-Also, there are switches [/loadcfgfile and /safecfgfile](ConEmuArgs.html)
-to use any special locations (may be not so useful for daily using, but available).
-
-
-**Note**. You may rename/create `ConEmu.xml` file any time,
-even after ConEmu starts and loads its settings from registry.
+* [ConEmu.xml search sequence](ConEmuXml.html#search-sequence)
+* [Switching from registry to xml and back](ConEmuXml.html#switch-location)
+* [Using specially defined xml files](ConEmuXml.html#special-xml-files)
+* [How to send settings when reporting issues](ConEmuXml.html#send-to-developer)
 
 
 <h2 id="Manual_change_of_settings"> Manual change of settings </h2>
@@ -132,186 +116,150 @@ You may open settings dialog in several ways
 
 <h3 id="Main"> Main </h3>
 
-![ConEmu settings, Main page](/img/Settings-Main.png "ConEmu settings, Main page")
+[![ConEmu settings, Main page](/img/Settings-Main.png "Click to open description")](SettingsMain.html)
 
 
 <h3 id="Size_and_Pos"> Size and Pos </h3>
 
-![ConEmu settings, Size and position page](/img/Settings-SizePos.png "ConEmu settings, Size and position page")
+[![ConEmu settings, Size and position page](/img/Settings-SizePos.png "Click to open description")](SettingsSizePos.html)
 
 
 <h3 id="Appearance"> Appearance </h3>
 
-![ConEmu settings, Appearance page](/img/Settings-Appearance.png "ConEmu settings, Appearance page")
+[![ConEmu settings, Appearance page](/img/Settings-Appearance.png "Click to open description")](SettingsAppearance.html)
 
 
 <h3 id="Background"> Background </h3>
 
-![ConEmu settings, Background page](/img/Settings-Background.png "ConEmu settings, Background page")
+[![ConEmu settings, Background page](/img/Settings-Background.png "Click to open description")](SettingsBackground.html)
 
 
 <h3 id="Tabs"> Tabs </h3>
 
-![ConEmu settings, Tabs page](/img/Settings-TabBar.png "ConEmu settings, Tabs page")
+[![ConEmu settings, Tabs page](/img/Settings-TabBar.png "Click to open description")](SettingsTabBar.html)
 
 
 <h3 id="Confirm"> Confirm </h3>
 
-![ConEmu settings, Confirm page](/img/Settings-Confirm.png "ConEmu settings, Confirm page")
+[![ConEmu settings, Confirm page](/img/Settings-Confirm.png "Click to open description")](SettingsConfirm.html)
 
 
 <h3 id="Task_bar"> Task bar </h3>
 
-![ConEmu settings, Task bar page](/img/Settings-TaskBar.png "ConEmu settings, Task bar page")
+[![ConEmu settings, Task bar page](/img/Settings-TaskBar.png "Click to open description")](SettingsTaskBar.html)
 
 
 <h3 id="Automatic_update"> Automatic update </h3>
 
-![ConEmu settings, Update page](/img/Settings-Update.png "ConEmu settings, Update page")
+[![ConEmu settings, Update page](/img/Settings-Update.png "Click to open description")](SettingsUpdate.html)
 
 
 <h3 id="Startup"> Startup </h3>
 
-![ConEmu settings, Startup page](/img/Settings-Startup.png "ConEmu settings, Startup page")
+[![ConEmu settings, Startup page](/img/Settings-Startup.png "Click to open description")](SettingsStartup.html)
 
 
 <h3 id="Tasks"> Tasks </h3>
 
-![ConEmu settings, Tasks page](/img/Settings-Tasks.png "ConEmu settings, Tasks page")
+* [Simple way to store oft-used commands](Tasks.html) and run them in [tabs](TabBar.html) or [splits](SplitScreen.html)
+* [Using tasks from TaskBar Jump Lists](Windows7Taskbar.html#Customizable_Jump_list)
 
-
-Here you can configure a list of common tasks.
-In fact, this is an alias to run one or more applications in new tabs within ConEmu.
-These can be configured in the 'Tasks' page of the 'Settings' dialog,
-and stored in the "Tasks" subkey of reg/xml settings.
-'Tasks' may be used as follows (as an example, we will use a task named {Shells}):
-
-* when you start by specifying the properties of the shortcut: "ConEmu.exe / cmd {Shells}";
-* specifying {Shells} in the 'Command line' page 'Main' of 'Settings' dialog;
-* when you create a new console interface ConEmu (<code class="plus">[+]</code> on the toolbar, a list of Recreate-dialog);
-* from the command line (cmd.exe): "%ConEmuBaseDir%\ConEmuC.exe" / c {Shells} -new_console.
-* from the command line (far.exe): conemu:run:{Shells} -new_console
-
-The ConEmu Jump list is set here too.
-Set up a list of tasks in the field of «ConEmu arguments for Jump list»
-You can optionally specify the icon that is displayed in the Jump list, for example
-
-~~~
-/icon "cmd.exe"
-~~~
-
-и рабочую папку, в которой будет запущен указанный процесс, например
-
-~~~
-/dir "c:\Program Files"
-~~~
-
-После настройки списка задач включите флажок «Add ConEmu tasks to taskbar» и (по желанию)
-«Add commands from history, too». Нажмите кнопку «Update Now!».
-В случае успеха вы увидите сообщение «Taskbar jump list was updated successfully», ну или сообщение об ошибке.
-Есть способ инициировать Jump list при запуске ConEmu (<a title="Jump Lists/Task window problem" href="http://code.google.com/p/conemu-maximus5/issues/detail?id=576"> Issue 576 </a>,
-может кому еще понадобится для автоматизации установки, например) для этого запустите (однократно) ConEmu.exe с аргументом `/updatejumplist`.
+[![ConEmu settings, Tasks page](/img/Settings-Tasks.png "ConEmu settings, Tasks page")](SettingsTasks.html)
 
 
 <h3 id="ComSpec"> ComSpec </h3>
 
-![ConEmu settings, Comspec page](/img/Settings-Comspec.png "ConEmu settings, Comspec page")
+[![ConEmu settings, Comspec page](/img/Settings-Comspec.png "Click to open description")](SettingsComspec.html)
 
 
 <h3 id="Features"> Features </h3>
 
-![ConEmu settings, Features page](/img/Settings-Features.png "ConEmu settings, Features page")
+[![ConEmu settings, Features page](/img/Settings-Features.png "Click to open description")](SettingsFeatures.html)
 
 
 <h4 id="RealConsole_font"> RealConsole font </h4>
 
-![ConEmu settings, RealConsole font](/img/Settings-More-RealFont.png "ConEmu settings, RealConsole font")
+* [RealConsole](RealConsole.html)
+* [Unicode support](UnicodeSupport.html)
+
+[![ConEmu settings, RealConsole font](/img/Settings-More-RealFont.png "Click to open description")](RealConsole.html)
 
 
 <h3 id="Text_cursor"> Text cursor </h3>
 
-![ConEmu settings, Text cursor page](/img/Settings-TextCursor.png "ConEmu settings, Text cursor page")
+[![ConEmu settings, Text cursor page](/img/Settings-TextCursor.png "Click to open description")](SettingsTextCursor.html)
 
 
 <h3 id="Colors"> Colors </h3>
 
-![ConEmu settings, Colors page](/img/Settings-Colors.png "ConEmu settings, Colors page")
+[![ConEmu settings, Colors page](/img/Settings-Colors.png "Click to open description")](SettingsColors.html)
 
-
-![ConEmu settings, Predefines palettes](/img/Settings-Colors2.png "ConEmu settings, Predefines palettes")
+[![ConEmu settings, Predefines palettes](/img/Settings-Colors2.png "Click to open description")](SettingsColors2.html)
 
 
 <h3 id="Transparency"> Transparency </h3>
 
-[Read more](SettingsTransparency.html)
-
-
-![ConEmu settings, Transparency page](/img/Settings-Transparency.png "ConEmu settings, Transparency page")
+[![ConEmu settings, Transparency page](/img/Settings-Transparency.png "Click to open description")](SettingsTransparency.html)
 
 
 <h3 id="Status_bar"> Status bar </h3>
 
-![ConEmu settings, Status bar page](/img/Settings-StatusBar.png "ConEmu settings, Status bar page")
+[![ConEmu settings, Status bar page](/img/Settings-StatusBar.png "Click to open description")](SettingsStatusBar.html)
 
 
 <h3 id="App_distinct"> App distinct </h3>
 
-![ConEmu settings, App distinct page](/img/Settings-AppDistinct.png "ConEmu settings, App distinct page")
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct.png "Click to open description")](SettingsAppDistinct.html)
 
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct2.png "Click to open description")](SettingsAppDistinct2.html)
 
-![ConEmu settings, App distinct page](/img/Settings-AppDistinct2.png "ConEmu settings, App distinct page")
-
-
-![ConEmu settings, App distinct page](/img/Settings-AppDistinct3.png "ConEmu settings, App distinct page")
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct3.png "Click to open description")](SettingsAppDistinct3.html)
 
 
 <h3 id="Integration"> Integration </h3>
 
-![ConEmu settings, Integration page](/img/Settings-Integration.png "ConEmu settings, Integration page")
+[![ConEmu settings, Integration page](/img/Settings-Integration.png "Click to open description")](SettingsIntegration.html)
 
 
 <h3 id="Default_term"> Default Terminal </h3>
 
-[Go to description](DefaultTerminal.html)
+* [Set up ConEmu as Default Windows Terminal](DefaultTerminal.html)
 
-
-![ConEmu settings, DefTerm page](/img/Settings-DefTerm.png "ConEmu settings, DefTerm page")
+[![ConEmu settings, DefTerm page](/img/Settings-DefTerm.png "Click to open description")](SettingsDefTerm.html)
 
 
 <h3 id="Keys_and_Macro"> Keys and Macro </h3>
 
-![ConEmu settings, Keys and Macro page](/img/Settings-Hotkeys.png "ConEmu settings, Keys and Macro page")
+[![ConEmu settings, Keys and Macro page](/img/Settings-Hotkeys.png "Click to open description")](SettingsHotkeys.html)
 
-
-![ConEmu settings, Few GuiMacros](/img/Settings-Hotkeys2.png "ConEmu settings, Few GuiMacros")
+[![ConEmu settings, Few GuiMacros](/img/Settings-Hotkeys2.png "Click to open description")](SettingsHotkeys2.html)
 
 
 <h3 id="Controls"> Controls </h3>
 
-![ConEmu settings, Controls page](/img/Settings-Controls.png "ConEmu settings, Controls page")
+[![ConEmu settings, Controls page](/img/Settings-Controls.png "Click to open description")](SettingsControls.html)
 
 
 <h3 id="Mark_and_Copy"> Mark and Copy </h3>
 
-[Go to description](TextSelection.html)
+* [Text mark up, copy and paste](TextSelection.html)
 
-
-![ConEmu settings, Text selection](/img/Settings-MarkCopy.png "ConEmu settings, Text selection")
+[![ConEmu settings, Text selection](/img/Settings-MarkCopy.png "Click to open description")](SettingsMarkCopy.html)
 
 
 <h3 id="Paste"> Paste </h3>
 
-![ConEmu settings, Paste page](/img/Settings-Paste.png "ConEmu settings, Paste page")
+[![ConEmu settings, Paste page](/img/Settings-Paste.png "Click to open description")](SettingsPaste.html)
 
 
 <h3 id="Highlight"> Highlight </h3>
 
-![ConEmu settings, Highlight page](/img/Settings-Highlight.png "ConEmu settings, Highlight page")
+[![ConEmu settings, Highlight page](/img/Settings-Highlight.png "Click to open description")](SettingsHighlight.html)
 
 
 <h3 id="Far_Manager"> Far Manager </h3>
 
-![ConEmu settings, Far Manager page](/img/Settings-Far.png "ConEmu settings, Far Manager page")
+[![ConEmu settings, Far Manager page](/img/Settings-Far.png "Click to open description")](SettingsFar.html)
 
 
 <h3 id="Far_macros"> Far macros </h3>
@@ -329,11 +277,11 @@ This is settings for ‘Panel Views’ Far Manager plugin.
 
 <h3 id="Info"> Info </h3>
 
-![ConEmu settings, Info page](/img/Settings-Info.png "ConEmu settings, Info page")
+[![ConEmu settings, Info page](/img/Settings-Info.png "Click to open description")](SettingsInfo.html)
 
 
 <h3 id="Debug"> Debug </h3>
 
 Enables advanced logging of console processes creation, ANSI output and keypresses.
 
-![ConEmu settings, Debug page](/img/Settings-Debug.png "ConEmu settings, Debug page")
+[![ConEmu settings, Debug page](/img/Settings-Debug.png "Click to open description")](SettingsDebug.html)
