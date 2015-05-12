@@ -73,7 +73,7 @@ h1_title: ConEmu Documentation Table of Contents
       * [Status bar](SettingsStatusBar.html)
       * [App distinct](SettingsAppDistinct.html)
     * [Integration](SettingsIntegration.html)
-      * [Default term](SettingsDefTerm.html)
+      * [Default terminal](SettingsDefTerm.html)
     * [Keys & Macro](SettingsHotkeys.html)
       * [Controls](SettingsControls.html)
       * [Mark/Copy](SettingsMarkCopy.html)
