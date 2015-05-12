@@ -30,7 +30,7 @@ Turn on ‘Inject ConEmuHk’ option.
 * [Issue 1146: Crash when doing "git diff"](http://code.google.com/p/conemu-maximus5/issues/detail?id=1146)
 * [Issue 1190: ConEmu crashes](http://code.google.com/p/conemu-maximus5/issues/detail?id=1190)
 * [Issue 1203: Occasional crash when vim.exe is started](http://code.google.com/p/conemu-maximus5/issues/detail?id=1203)
-* [Issue 1204: Ошибка ConEmu при автозапуске после обновления Far с помощью UpDateEx](http://code.google.com/p/conemu-maximus5/issues/detail?id=1204)
+* [Issue 1204: Fail after updating Far with UpDateEx](http://code.google.com/p/conemu-maximus5/issues/detail?id=1204)
 * and others...
 
 
