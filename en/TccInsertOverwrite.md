@@ -2,6 +2,14 @@
 redirect_from: /ru/TccInsertOverwrite.html
 
 title: "ConEmu | TCC/LE and Insert/Overwrite Mode"
+
+breadcrumbs:
+ - url: TableOfContents.html#tips-and-tweaks
+   title: Tips and Tweaks
+
+readalso:
+ - url: InsertOverwrite.html
+   title: Using Insert/Overwrite mode in ConEmu's consoles
 ---
 
 # Change tcc prompt to insert mode by default

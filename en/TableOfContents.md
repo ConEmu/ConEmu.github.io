@@ -138,7 +138,8 @@ h1_title: ConEmu Documentation Table of Contents
   * [Git For Windows](GitForWindows.html)
   * [ssh agent](SshAgent.html)
   * [Task bar bug](TaskBarBug.html)
-  * [TCC Insert/Overwrite](TccInsertOverwrite.html)
+  * [Insert/Overwrite](InsertOverwrite.html)
+    * [TCC Insert/Overwrite](TccInsertOverwrite.html)
   * [Vim 256-color](VimXterm.html)
   * [Windows Environment variables](WindowsEnvironment.html)
 

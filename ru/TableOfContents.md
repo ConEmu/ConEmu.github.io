@@ -139,7 +139,8 @@ h1_title: Оглавление документации по ConEmu
   * [Git For Windows](GitForWindows.html)
   * [ssh agent](SshAgent.html)
   * [Task bar bug](TaskBarBug.html)
-  * [TCC Вставка/Замена](TccInsertOverwrite.html)
+  * [Вставка/Замена](InsertOverwrite.html)
+    * [TCC Вставка/Замена](TccInsertOverwrite.html)
   * [Vim 256-color](VimXterm.html)
   * [Переменные окружения Windows](WindowsEnvironment.html)
 
