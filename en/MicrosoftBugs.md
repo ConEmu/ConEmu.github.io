@@ -79,7 +79,9 @@ Turn on ‘Inject ConEmuHk’ option.
 <h2 id="Insert-Overwrite-Indicator"> Insert/Overwrite indication </h2>
 
 It is not possible to determine the state of ReadConsole procedure.
-ConEmu do not know if it's an ‘Insert’ or ‘Overwrite’ mode.
+ConEmu do not know if it's in the ‘Insert’ or ‘Overwrite’ mode.
+
+Wny not? Description is [here](InsertOverwrite.html).
 
 ### Workaround
 
