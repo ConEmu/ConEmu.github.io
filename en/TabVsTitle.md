@@ -6,6 +6,10 @@ redirect_from:
 
 title: "ConEmu | Tab or Title"
 
+breadcrumbs:
+ - url: TableOfContents.html#tips-and-tweaks
+   title: Tips and Tweaks
+
 readalso:
  - url: NewConsole.html
    title: "-new_console and -cur_console switches"
