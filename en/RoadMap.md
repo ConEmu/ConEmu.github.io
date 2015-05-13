@@ -11,8 +11,9 @@ breadcrumbs:
    title: Extras
 
 readalso:
- - url: /donate.html
+ - url: donate.html
    title: Support ConEmu development
+   root: true
  - url: Issues.html
    title: Contacts, Feedbacks, Suggestions
 ---
