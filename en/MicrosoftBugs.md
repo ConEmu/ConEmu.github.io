@@ -78,8 +78,11 @@ Turn on ‘Inject ConEmuHk’ option.
 
 <h2 id="Insert-Overwrite-Indicator"> Insert/Overwrite indication </h2>
 
-It is not possible to determine the state of ReadConsole procedure.
-ConEmu do not know if it's in the ‘Insert’ or ‘Overwrite’ mode.
+It is not possible to determine the state of
+[ReadConsole](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684958.aspx)
+procedure.
+ConEmu do not know if the [RealConsole](RealConsole.html)
+is in the ‘Insert’ or ‘Overwrite’ mode.
 
 Wny not? Description is [here](InsertOverwrite.html).
 

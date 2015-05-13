@@ -40,8 +40,8 @@ Why not? Read below.
 Simplitying, there are two ways in [Windows Api](WinApi.html)
 allowing to read input from keyboard:
 
-* ReadConsole or ReadFile
-* ReadConsoleInput
+* [ReadConsole](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684958.aspx) or [ReadFile](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365467.aspx)
+* [ReadConsoleInput](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684961.aspx)
 
 All others functions like PowerShell's Read-Host, C's getc or gets,
 or actually any other [command line interpreter](TerminalVsShell.html) prompts
