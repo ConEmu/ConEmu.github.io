@@ -76,7 +76,7 @@ ConEmu can run [Cygwin and MSys](CygwinMsys.html) applications without problems
 if they were properly written. However their developers, perhaps due to required
 Unix compatibility, are limited in some cases to [Windows API](WinApi.html).
 These are not ConEmu limitations, for example official Vim can use
-[VimXterm.html](xterm-256) color schemes, but cygwin or msys Vim builds can't.
+[xterm-256](VimXterm.html) color schemes, but cygwin or msys Vim builds can't.
 
 
 <h2 id="optimization"> Optimization </h2>
