@@ -98,6 +98,7 @@ h1_title: ConEmu Documentation Table of Contents
   * [Bash completion in cmd.exe](ConEmuClink.html)
   * [ConEmu Environment variables](ConEmuEnvironment.html)
   * [ConEmu Icons](ConEmuIcons.html)
+  * [Grab Explorer path](ExplorerPath.html)
 
 <h3 id="controls">Controls</h3>
 

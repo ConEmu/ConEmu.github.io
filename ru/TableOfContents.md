@@ -98,6 +98,7 @@ h1_title: Оглавление документации по ConEmu
   * [Автодополнение в cmd.exe](ConEmuClink.html)
   * [Переменные окружения ConEmu](ConEmuEnvironment.html)
   * [Иконки ConEmu](ConEmuIcons.html)
+  * [Взятие пути из окна Проводника](ExplorerPath.html)
 
 <h3 id="controls">Управление</h3>
 
