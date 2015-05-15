@@ -1,7 +1,11 @@
 ---
 redirect_from: /ru/SettingsDefTerm.html
 
-title: "ConEmu | Settings › DefTerm page"
+title: "ConEmu | Settings › Default Term page"
+
+readalso:
+ - url: DefaultTerminal.html
+   title: The only way to replace default Windows terminal
 ---
 
 # Settings: Default term

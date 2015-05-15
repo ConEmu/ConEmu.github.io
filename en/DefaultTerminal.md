@@ -6,11 +6,17 @@ redirect_from:
 
 title: "ConEmu | DefaultTerminal"
 
-description: "The only way to replace default Windows terminal"
+description: "The only way to replace default Windows terminal with ConEmu"
 
 breadcrumbs:
  - url: TableOfContents.html#launch-apps
    title: Launch Apps
+
+readalso:
+ - url: SettingsDefTerm.html
+   title: "Settings › Default Term page"
+ - url: NewConsole.html
+   title: "-new_console switch"
 ---
 
 # How to change the default terminal emulator on Windows
