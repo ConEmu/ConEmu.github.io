@@ -1,9 +1,8 @@
 ---
 title: "ConEmu | Inside Parent"
 
-description: "Функция ‘Inside’ позволяет запустить ConEmu внутри другого окна,
-   например в ‘области сведений’ внутри окна ‘Проводника’ по контекстному
-   меню ‘ConEmu Inside’. Похоже на режим ‘ConEmu Here’."
+description: "Feature ‘ConEmu Inside’ allows to run it inside any other window,
+   for example inside Windows' Explorer's details pane. Like ‘ConEmu Here’."
 
 breadcrumbs:
  - url: TableOfContents.html#features
@@ -40,8 +39,12 @@ readalso:
 ‘<a href="http://superuser.com/a/441531/139371" rel="nofollow"
  >How to embed PowerShell into Explorer or Explorer-like tool</a>’?
 
+Add item ‘ConEmu Inside’ into Windows ‘Explorer’ context menu,
+it will open ConEmu as child window inside ‘Explorer’ window.
+It's similar to ‘ConEmu Here’ - working folder will be current folder from ‘Explorer’ window.
+
 В ‘Проводник’ Windows добавляется пункт контекстного меню ‘ConEmu Inside’,
-при выборе которого ConEmu запускается в ‘области сведений’, внутри окна ‘Проводника’.
+при выборе которого ConEmu запускается в ‘области переходов’, внутри окна ‘Проводника’.
 Похож на режим ‘ConEmu Here’ - текущей папкой в ConEmu устанавливается папка из ‘Проводника’.
 
 Все на вкладке [Integration](SettingsIntegration.html) окна [Settings](Settings.html).
