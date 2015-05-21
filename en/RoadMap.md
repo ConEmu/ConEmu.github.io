@@ -63,6 +63,8 @@ Some programs use not only vertical, but horizontal console buffer.
 One of most asked questions is a TabBar theming.
 [Issue 294](http://code.google.com/p/conemu-maximus5/issues/detail?id=294) shows some details.
 
+However it's not possible yet. ConEmu uses standard Windows TabBar control which do not allow theming.
+
 
 <h2 id="direct-write"> DirectWrite suport </h2>
 
