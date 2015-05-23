@@ -74,7 +74,7 @@ However it's not possible yet. ConEmu uses standard Windows TabBar control which
 
 There were some
 [requests](https://github.com/Maximus5/ConEmu/issues/74)
-about DirectWrite font rendering.
+about DirectWrite font rendering. This also relates to opaque fonts on transparent background.
 
 
 <h2 id="cygwin-terminal"> Better Cygwin/MSys support </h2>
