@@ -57,6 +57,10 @@ But of course there is a lot of to do yet.
 
 Some programs use not only vertical, but horizontal console buffer.
 
+Current ConEmu version allows neither horizontal scrolling nor setting horizontal buffer size.
+
+Your console application can change horizontal buffer size itself (run `wmic` for example) however scrolling is not possible. You can only reveal [RealConsole](RealConsole.html) window by pressing `Ctrl-Win-Alt-Space`.
+
 
 <h2 id="tab-theming"> TabBar theming</h2>
 
