@@ -7,6 +7,10 @@ description: "ConEmu's Tasks are simple way to store oft-used commands
 breadcrumbs:
  - url: TableOfContents.html#launch-apps
    title: Launch Apps
+
+readalso:
+ - url: NewConsole.html
+   title: Using -new_console switch to change palette, icon, background image, etc.
 ---
 
 # ConEmu's Tasks

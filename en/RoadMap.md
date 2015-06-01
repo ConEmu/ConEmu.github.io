@@ -57,18 +57,24 @@ But of course there is a lot of to do yet.
 
 Some programs use not only vertical, but horizontal console buffer.
 
+Current ConEmu version allows neither horizontal scrolling nor setting horizontal buffer size.
+
+Your console application can change horizontal buffer size itself (run `wmic` for example) however scrolling is not possible. You can only reveal [RealConsole](RealConsole.html) window by pressing `Ctrl-Win-Alt-Space`.
+
 
 <h2 id="tab-theming"> TabBar theming</h2>
 
 One of most asked questions is a TabBar theming.
 [Issue 294](http://code.google.com/p/conemu-maximus5/issues/detail?id=294) shows some details.
 
+However it's not possible yet. ConEmu uses standard Windows TabBar control which do not allow theming.
+
 
 <h2 id="direct-write"> DirectWrite suport </h2>
 
 There were some
 [requests](https://github.com/Maximus5/ConEmu/issues/74)
-about DirectWrite font rendering.
+about DirectWrite font rendering. This also relates to opaque fonts on transparent background.
 
 
 <h2 id="cygwin-terminal"> Better Cygwin/MSys support </h2>

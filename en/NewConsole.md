@@ -172,13 +172,11 @@ you may use `-new_console` or `-cur_console` switches.
   * While you create new tab from ConEmu GUI interface, `-new_console` and `-cur_console` have the same effect.
   * These are NOT ConEmuC switches, specify them as application (far, vim, putty, etc.) switches.
   * You may put multiple simple or quoted string switches delimited with colon, example:
-~~~
-cmd -new_console:a:bc:d:"c:\users\Pete":u:"Pete:password"
-~~~
+<pre>cmd -new_console:a:bc:d:"c:\users\Pete":u:"Pete:password"
+</pre>
   * You may need to escape special symbols `<>()&|^"` with `^` symbol, example:
-~~~
-cmd -new_console:P:"^<PowerShell^>"
-~~~
+<pre>cmd -new_console:P:"^<PowerShell^>"
+</pre>
 
 
 
