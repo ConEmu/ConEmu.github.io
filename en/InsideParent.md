@@ -1,8 +1,8 @@
 ---
-title: "ConEmu | Inside Parent"
+title: "ConEmu | Inside Parent (Embedding)"
 
-description: "Feature ‘ConEmu Inside’ allows to run it inside any other window,
-   for example inside Windows' Explorer's details pane. Like ‘ConEmu Here’."
+description: "Feature ‘ConEmu Inside’ or ‘Embedding’ allows to run it inside any
+   other window, for example inside Windows' Explorer's details pane. Like ‘ConEmu Here’."
 
 breadcrumbs:
  - url: TableOfContents.html#features
@@ -19,7 +19,7 @@ readalso:
    title: "ConEmu.exe Command Line Switches"
 ---
 
-# ConEmu Inside
+# ConEmu Inside or Embedding
 
 Функция ‘Inside’ позволяет запустить ConEmu-Maximus5 внутри какого-либо другого окна.
 
@@ -27,7 +27,7 @@ readalso:
   в контекстном меню для диска/папки/файла пункт ‘ConEmu Inside’
   и внутри окна проводника появится настроенный вами shell
   (cmd/powershell/bash) в текущей папке Проводника.
-* В качестве дочернего окна в любом выбранном вами окне.
+* [В качестве дочернего окна в любом выбранном вами окне](#inside-switches).
   Пример сейчас не придумаю, но может кому-то пригодится такой способ
   интеграции удобной консоли в свое приложение.
 
@@ -100,10 +100,10 @@ It's similar to ‘ConEmu Here’ - working folder will be current folder from �
 
 
 
-<h2 id="inside-switches"> Параметры запуска ConEmu </h2>
+<h2 id="inside-switches"> ConEmu command line switches </h2>
 
 | | |
 |:----|:----|
-| `/inside` | Автоматический режим. Используется для запуска в панели проводника. <br/> ConEmu ищет подходящее для внедрения окно принадлежащее родительскому процессу. |
+| `/inside` | Automatic mode. Used to run ConEmu in the Explorer window. <br/> ConEmu will search for appropriate parent process window suitable to embed into. |
 | `/insidepid PID` | То же что и ‘/inside’ но с явным указанием PID процесса, в окно которого нужно внедриться. <br/> *PID* - ИД процесса (dec). |
-| `/insidewnd 0xHWND` | Явно указанное окно, в которое нужно внедриться. В отличие от автоматического режима - ConEmu займет всю клиентскую область этого окна. <br/> *HWND* - дескриптор окна (hex). |
+| `/insidewnd 0xHWND` | Directly specified window handle (HWND) to embed into. Unlike automatic mode ConEmu will cover all client area of this HWND. <br/> *HWND* - window descriptor (hex). |
