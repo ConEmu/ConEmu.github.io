@@ -2,6 +2,14 @@
 redirect_from: /ru/SettingsIntegration.html
 
 title: "ConEmu | Settings › Integration page"
+
+readalso:
+ - url: StartupDir.html
+   title: "ConEmu Startup Directory"
+ - url: CygwinStartDir.html
+   title: "Cygwin Startup Directory"
+ - url: InsideParent.html
+   title: "Inside Parent (Embedding)"
 ---
 
 # Integration
