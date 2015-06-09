@@ -31,6 +31,32 @@ or anything else, spreading the word for example.
 
 <!-- Content starts -->
 
+<h2 id="Build_150608">Build 150608</h2>
+	<li>Quake mode enabled by `-quake` command line switch was not shown in Fast Configuration dialog. </li>
+	<li>Suggest the task user specified by `ConEmu.exe -cmd {cmd}` in Fast Configuration dialog. </li>
+	<li>Don't set default task in Fast Configuration dialog, use exact `-cmd ...` command specified by user. </li>
+	<li>gh#151: Do (quake) animation after starting RealConsole creation. </li>
+	<li>Add `-here` switch description in the About dialog. </li>
+	<li>Ensure all default bash tasks names will be unique. </li>
+	<li>Always reset FARHOME env.var when creating default Far tasks. </li>
+	<li>Move checkboxes ‘Add ConEmu??? to PATH’ to separate page ‘Environment’. </li>
+	<li>gh#171, Issue 1655: Add option to skip ‘... brought ConEmu OnTop. Revert?’ confirmation. </li>
+	<li>gh#173: Attach of detached console ignored new ConEmu instance. </li>
+	<li>gh#173: Implement Unfasten of console tabs (ChildGui not yet). Tab menu item, hotkey and GuiMacro. </li>
+	<li>Implement ‘Settings\Environment’ page.
+		User may define here multiple "set varname=varvalue" commands
+		or set default console code page with "chcp utf-8", "chcp 866" and so on.
+		Environment %variables% in 'varvalue' are allowed and would be expanded before do set.
+		One line - one command (set or chcp). </li>
+	<li>Create folder "ConEmu\Scripts" by installer.
+		May be useful for storing user scripts (bat-files and so on).
+		It would/may be added to PATH in the Settings\Environment page. </li>
+	<li>Git-For-Windows: Search for xml in /share/conemu while ConEmu.exe is intended to be in /opt/bin. </li>
+	<li>Log and warn (debug assertion) long alternative buffer loading. </li>
+	<li>Many MINGW-build related fixes from @Alexpux. </li>
+</ul>
+
+
 <h2 id="Build_150513">Build 150513</h2>
 <ul>
 	<li>Don't show [reg] or [xml] in Fast Configuration dialog because there is the storage location field. </li>
