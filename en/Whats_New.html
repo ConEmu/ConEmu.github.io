@@ -31,6 +31,45 @@ or anything else, spreading the word for example.
 
 <!-- Content starts -->
 
+<h2 id="Build_150610">Build 150610</h2>
+<ul>
+	<li>Simplify <code>set</code> usage in Settings\Environment. </li>
+	<li>gh#179: Fix broken environment inheritance (ca9e31a regression). </li>
+	<li>Ensure that <code>set</code> commands in the task/command line will override ConEmu's default environment (settings page). </li>
+	<li>GuiMacro: Make Task and Shell functions synchronous to be able to use Context function after it. </li>
+	<li>GuiMacro: Return more information about wrong macro. </li>
+	<li>GuiMacro: Easify calling functions with int arguments. "Sleep 500;" was not working. </li>
+	<li>GuiMacro: Sleep function have not returned "OK" on success. </li>
+	<li>Allow using <code>-new_console</code> and <code>-cur_console</code> switches to set DosKey aliases. </li>
+	<li>Support aliases set up on the ConEmu Settings/Environment page. <br/>
+
+    <strong>Note!</strong> These console aliases are processed by <code>cmd.exe</code> and <code>far.exe</code> only.
+    If you need to set up aliases for other shells (PowerShell, bash, etc.)
+    please refer to their manuals. <br/>
+
+    Defining aliases are similar to <code>doskey.exe</code>. Actually, you may define:
+
+      <pre>alias alias=doskey $*</pre>
+
+    After that you can use <code>alias</code> in the <code>cmd.exe</code> prompt started in ConEmu:
+
+      <pre>alias sudo=ConEmuC -c $* -new_console:an</pre>
+
+    That is just an example. It's more handy to add <code>sudo</code> definition into
+    ConEmu Settings/Environment page.
+    And when <code>sudo</code> is defined you may run from <code>cmd.exe</code> prompt, for example:
+
+      <pre>sudo diskpart</pre>
+    </li>
+	<li>gh#176: Avoid creating two tabs while starting:
+	  <pre>git-bash.exe --command=usr/bin/bash.exe -l -i</pre>
+    However, preferred way to start Git-For-Windows in ConEmu tab is:
+      <pre>git-cmd.exe --command=usr/bin/bash.exe -l -i</pre>
+    </li>
+	<li>Update ConEmuPortable.ini with Environment information. </li>
+</ul>
+
+
 <h2 id="Build_150608">Build 150608</h2>
 	<li>Quake mode enabled by `-quake` command line switch was not shown in Fast Configuration dialog. </li>
 	<li>Suggest the task user specified by `ConEmu.exe -cmd {cmd}` in Fast Configuration dialog. </li>
