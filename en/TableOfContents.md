@@ -65,6 +65,7 @@ h1_title: ConEmu Documentation Table of Contents
     * [Startup](SettingsStartup.html)
       * [Tasks](SettingsTasks.html)
       * [ComSpec](SettingsComspec.html)
+      * [Environment](SettingsEnvironment.html)
     * [Features](SettingsFeatures.html)
       * [Text cursor](SettingsTextCursor.html)
       * [Colors](SettingsColors.html)

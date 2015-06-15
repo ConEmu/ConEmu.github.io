@@ -2,11 +2,19 @@
 redirect_from: /ru/SettingsComspec.html
 
 title: "ConEmu | Settings › Comspec page"
+
+readalso:
+ - url: SettingsEnvironment.html
+   title: "Settings › Environment page"
+ - url: TerminalVsShell.html
+   title: "Terminal vs Shell"
 ---
 
 # Settings: ComSpec
 
-*This page was generated automatically from ConEmu sources*
+{% comment %}
+*This page was manually edited automatically generated from ConEmu sources)*
+{% endcomment %}
 {% comment %} IDD_SPG_COMSPEC {% endcomment %}
 
 ![ConEmu Settings: ComSpec](/img/Settings-Comspec.png)
@@ -14,9 +22,6 @@ title: "ConEmu | Settings › Comspec page"
 
 
 ## Used command processor
-
-
-
 
 * **Auto (tcc - if installed, %ComSpec% - otherwise)** Start tcc - if installed, %ComSpec% - otherwise (used for ‘Create new ‘cmd.exe’ console’)
 * **%ComSpec% (env.var.)** Use %ComSpec% environment variable (used for ‘Create new ‘cmd.exe’ console’)
@@ -48,31 +53,10 @@ title: "ConEmu | Settings › Comspec page"
 
 **Support UNC paths in cmd.exe (\\server\share\folder)** 
 
-## Add to %PATH% environment variable
-
-**Add %ConEmuDir% to %PATH%** 
-
-**Add %ConEmuBaseDir% to %PATH%** 
-
-
-
-
-
-## Choose preferred command processor platform (bits)
-
-
-
-
-
-## Add to %PATH% environment variable
-
-
 
 
 
 ## Automatic attach of cmd & Tcc/Le to ConEmu (new window will be started if not found)
-
-
 
 **[HKEY_CURRENT_USER\Software\Microsoft\Command Processor] Current command stored in registry ‘AutoRun’ (HKLM value is not processed here)** 
 

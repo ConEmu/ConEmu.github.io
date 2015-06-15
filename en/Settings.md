@@ -25,6 +25,7 @@ description: "Where the settings are stored, Settings dialog description,
   * [Startup](#Startup)
   * [Tasks](#Tasks)
   * [ComSpec](#ComSpec)
+  * [Environment](#Environment)
   * [Features](#Features)
     * [RealConsole font](#RealConsole_font)
   * [Text cursor](#Text_cursor)
@@ -176,6 +177,11 @@ You may open settings dialog in several ways
 <h3 id="ComSpec"> ComSpec </h3>
 
 [![ConEmu settings, Comspec page](/img/Settings-Comspec.png "Click to open description")](SettingsComspec.html)
+
+
+<h3 id="Environment"> Environment </h3>
+
+[![ConEmu settings, Environment page](/img/Settings-Environment.png "Click to open description")](SettingsEnvironment.html)
 
 
 <h3 id="Features"> Features </h3>

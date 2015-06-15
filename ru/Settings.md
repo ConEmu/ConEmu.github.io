@@ -25,6 +25,7 @@ description: "Где хранятся настройки, описание ди�
   * [Startup](#Startup)
   * [Tasks](#Tasks)
   * [ComSpec](#ComSpec)
+  * [Environment](#Environment)
   * [Features](#Features)
     * [RealConsole font](#RealConsole_font)
   * [Text cursor](#Text_cursor)
@@ -176,6 +177,11 @@ find appropriate value and change it.
 <h3 id="ComSpec"> ComSpec </h3>
 
 [![ConEmu settings, Comspec page](/img/Settings-Comspec.png "Щелкните чтобы открыть описание")](SettingsComspec.html)
+
+
+<h3 id="Environment"> Environment </h3>
+
+[![ConEmu settings, Environment page](/img/Settings-Environment.png "Щелкните чтобы открыть описание")](SettingsEnvironment.html)
 
 
 <h3 id="Features"> Features </h3>
