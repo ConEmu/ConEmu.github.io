@@ -11,6 +11,10 @@ breadcrumbs:
 readalso:
  - url: NewConsole.html
    title: "Using -new_console switch to change palette, icon, background image, etc."
+
+otherlang:
+   eng: /en/Tasks.html
+   rus: /ru/Tasks.html
 ---
 
 # ConEmu's Tasks

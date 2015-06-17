@@ -3,6 +3,10 @@ title: "ConEmu | Settings"
 
 description: "Где хранятся настройки, описание диалога настроек,
   конвертация из реестра в xml."
+
+otherlang:
+   eng: /en/Settings.html
+   rus: /ru/Settings.html
 ---
 
 # Настройка ConEmu

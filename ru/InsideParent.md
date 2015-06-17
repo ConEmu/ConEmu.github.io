@@ -18,6 +18,10 @@ readalso:
    title: "ConEmu Startup Directory"
  - url: ConEmuArgs.html
    title: "ConEmu.exe Command Line Switches"
+
+otherlang:
+   eng: /en/InsideParent.html
+   rus: /ru/InsideParent.html
 ---
 
 # ConEmu Inside или Embedding

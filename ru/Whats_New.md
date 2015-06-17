@@ -11,6 +11,10 @@ breadcrumbs:
    title: ConEmu
  - url: WhatsNew.html
    title: WhatsNew
+
+otherlang:
+   eng: /en/Whats_New.html
+   rus: /ru/Whats_New.html
 ---
 
 # Новые версии ConEmu

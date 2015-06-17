@@ -16,6 +16,10 @@ readalso:
    title: "Program and Documentation Sources"
  - url: TableOfContents.html
    title: "Documentation"
+
+otherlang:
+   eng: /en/Issues.html
+   rus: /ru/Issues.html
 ---
 
 {% comment %} ‘UTF-8’ {% endcomment %}

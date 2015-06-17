@@ -98,6 +98,11 @@ This page was saved from: {{site.url}}{{page.url}}
 		<div class="left-sidebar">
 {% include search.html %}
 		</div>
+{% if page.otherlang != nil %}
+		<div class="left-sidebar">
+{% include otherlang.html %}
+		</div>
+{% endif %}
 	</div><!-- .middle-->
 
 </div><!-- .maincol -->

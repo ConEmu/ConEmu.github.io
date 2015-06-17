@@ -17,6 +17,10 @@ readalso:
    title: "Исходники программы и документации"
  - url: TableOfContents.html
    title: "Документация"
+
+otherlang:
+   eng: /en/Issues.html
+   rus: /ru/Issues.html
 ---
 
 # Контакты, Отзывы, Предложения

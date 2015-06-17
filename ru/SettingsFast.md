@@ -20,6 +20,10 @@ readalso:
    title: "ЧаВо (на русском)"
  - url: TableOfContents.html
    title: "Остальная документация"
+
+otherlang:
+   eng: /en/SettingsFast.html
+   rus: /ru/SettingsFast.html
 ---
 
 # Первый запуск ConEmu

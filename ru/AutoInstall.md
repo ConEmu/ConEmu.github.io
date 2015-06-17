@@ -17,6 +17,10 @@ readalso:
    title: Installation
  - url: VersionComparison.html
    title: "Сравнение версий: distros, bitness, stages"
+
+otherlang:
+   eng: /en/AutoInstall.html
+   rus: /ru/AutoInstall.html
 ---
 
 # Автоматизация установки системы

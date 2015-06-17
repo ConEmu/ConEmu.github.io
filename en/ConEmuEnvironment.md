@@ -13,6 +13,10 @@ breadcrumbs:
 readalso:
   - url: WindowsEnvironment.html
     title: Windows Environment Variables
+
+otherlang:
+   eng: /en/ConEmuEnvironment.html
+   rus: /ru/ConEmuEnvironment.html
 ---
 
 # ConEmu Environment variables

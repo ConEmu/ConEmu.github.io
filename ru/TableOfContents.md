@@ -5,6 +5,10 @@ description: "Оглавление документации по ConEmu:
    Описание, Установка, Термины, Запуск приложений, Настройка, Функции и др."
 
 h1_title: Оглавление документации по ConEmu
+
+otherlang:
+   eng: /en/TableOfContents.html
+   rus: /ru/TableOfContents.html
 ---
 
 <h3 id="conemu"><a href="{{page.docfolder}}/">ConEmu</a></h3>

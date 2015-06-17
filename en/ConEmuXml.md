@@ -3,6 +3,10 @@ title: "ConEmu | xml or registry settings storage"
 
 description: "Where ConEmu settings are stored
   and how to send your config to developer if report problems."
+
+otherlang:
+   eng: /en/ConEmuXml.html
+   rus: /ru/ConEmuXml.html
 ---
 
 # ConEmu settings storage

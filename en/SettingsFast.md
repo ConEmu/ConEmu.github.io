@@ -18,6 +18,10 @@ readalso:
    title: "Frequently Asked Questions"
  - url: TableOfContents.html
    title: "Documentation"
+
+otherlang:
+   eng: /en/SettingsFast.html
+   rus: /ru/SettingsFast.html
 ---
 
 # ConEmu first start

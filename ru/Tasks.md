@@ -11,6 +11,10 @@ breadcrumbs:
 readalso:
  - url: NewConsole.html
    title: "Смена палитры, иконки, фонового изображения с помощью -new_console"
+
+otherlang:
+   eng: /en/Tasks.html
+   rus: /ru/Tasks.html
 ---
 
 # ConEmu's Tasks

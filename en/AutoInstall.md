@@ -17,6 +17,10 @@ readalso:
    title: Installation
  - url: VersionComparison.html
    title: "Comparison: distros, bitness, stages"
+
+otherlang:
+   eng: /en/AutoInstall.html
+   rus: /ru/AutoInstall.html
 ---
 
 # Automate your box installation

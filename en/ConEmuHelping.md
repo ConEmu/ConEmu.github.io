@@ -8,6 +8,10 @@ description: "Have you seen spelling error in the program interface or documenta
 breadcrumbs:
  - url: TableOfContents.html#feedback
    title: Feedback and contacts
+
+otherlang:
+   eng: /en/ConEmuHelping.html
+   rus: /ru/ConEmuHelping.html
 ---
 
 <h2 id="documentation">Documentation</h2>

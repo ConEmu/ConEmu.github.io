@@ -15,6 +15,10 @@ readalso:
    title: Частые вопросы
  - url: TerminalVsShell.html
    title: Terminal или Shell
+
+otherlang:
+   eng: /en/Delusions.html
+   rus: /ru/Delusions.html
 ---
 
 # Околоконсольные заблужения

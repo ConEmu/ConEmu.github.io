@@ -15,6 +15,10 @@ readalso:
    title: Frequently Asked Questions
  - url: TerminalVsShell.html
    title: Terminal vs Shell
+
+otherlang:
+   eng: /en/Delusions.html
+   rus: /ru/Delusions.html
 ---
 
 # Console-related delusions

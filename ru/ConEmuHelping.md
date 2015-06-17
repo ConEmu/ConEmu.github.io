@@ -8,6 +8,10 @@ description: "Видите ошибку в интерфейсе или доку�
 breadcrumbs:
  - url: TableOfContents.html#feedback
    title: Обратная связь
+
+otherlang:
+   eng: /en/ConEmuHelping.html
+   rus: /ru/ConEmuHelping.html
 ---
 
 <h2 id="documentation">Документация</h2>
