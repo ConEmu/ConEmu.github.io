@@ -4,8 +4,6 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
-{% if page.noindex == true %}<meta name="robots" content="noindex">{% endif %}
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% if page.url == '/index.html' %}
 <meta name='yandex-verification' content='5bb2b6c69957dc18' />
@@ -14,6 +12,8 @@
 {% include schema_info.html %}
 {% endif %}
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.noindex == true %}<meta name="robots" content="noindex">{% endif %}
 <link rel="icon" type="image/vnd.microsoft.icon" href="/conemu.ico">
 <link rel="icon apple-touch-icon" type="image/png" href="/img/logo-114.png" sizes="144x144">
 <!--OpenSearch-->
@@ -75,11 +75,25 @@ This page was saved from: {{site.url}}{{page.url}}
 
 {% include readalso.html %}
 
+{% if page.isroot == false %}
+<!-- Some footer links -->
+				<footer id="footer-links">
+				<!-- Back to the table of contents -->
+				<span class="text stext"><a href="{{ page.docfolder }}/TableOfContents.html">{{ page.toctitle }}</a></span>
+				<!-- Suggest better edit -->
+				<span class="text stext"> | <a href="https://github.com/ConEmu/ConEmu.github.io/blob/master/{{page.path}}" rel="nofollow">{{ page.suggedit }}</a></span>
+				</footer>
+<!-- Some footer links end -->
+{% endif %}
 			</div><!-- .content-->
 		</div><!-- .container-->
 
 		<div class="left-sidebar">
+{% if page.pagelang == 'ru' %}
+{% include menu_ru.html %}
+{% else %}
 {% include menu_en.html %}
+{% endif %}
 {% include search.html %}
 		</div><!-- .left-sidebar -->
 

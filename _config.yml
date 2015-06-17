@@ -38,48 +38,37 @@ defaults:
       path: ""
       type: "pages"
     values:
+      isroot: true
       layout: "root"
       title: "ConEmu - Windows terminal emulator"
       site_label: "Windows terminal"
       docfolder: /en
       pagelang: en
+      toctitle: "Back to the table of contents"
+      suggedit: "Suggest better edit"
   -
     scope:
       path: "en"
       type: "pages"
     values:
-      layout: "docs_en"
+      isroot: false
+      layout: "root"
       title: "ConEmu - Documentation"
       site_label: "Windows terminal"
       docfolder: /en
       pagelang: en
-  -
-    scope:
-      path: "en-w"
-      type: "pages"
-    values:
-      layout: "docs_en"
-      title: "ConEmu - Documentation"
-      site_label: "Windows terminal"
-      docfolder: /en-w
-      pagelang: en
+      toctitle: "Back to the table of contents"
+      suggedit: "Suggest better edit"
   -
     scope:
       path: "ru"
       type: "pages"
     values:
-      layout: "docs_ru"
+      isroot: false
+      layout: "root"
       title: "ConEmu - эмулятор терминала Windows"
       site_label: "терминал Windows"
       docfolder: /ru
       pagelang: ru
-  -
-    scope:
-      path: "ru-w"
-      type: "pages"
-    values:
-      layout: "docs_ru"
-      title: "ConEmu - эмулятор терминала Windows"
-      site_label: "терминал Windows"
-      docfolder: /ru-w
-      pagelang: ru
+      toctitle: "Назад к оглавлению"
+      suggedit: "Предложить правку"
