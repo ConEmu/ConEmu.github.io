@@ -3,8 +3,9 @@
 # used in layouts and header
 url: "http://conemu.github.io"
 
-# used with breadcrumbs and socials
+# used with breadcrumbs
 site_name: "conemu.github.io"
+# used with socials
 twit_text: "ConEmu%3A%20Handy%20Windows%20terminal"
 
 # main mirror location
