@@ -7,6 +7,10 @@ description: "Tasks в ConEmu это простой способ запуска 
 breadcrumbs:
  - url: TableOfContents.html#launch-apps
    title: Запуск приложений
+
+readalso:
+ - url: NewConsole.html
+   title: "Смена палитры, иконки, фонового изображения с помощью -new_console"
 ---
 
 # ConEmu's Tasks
