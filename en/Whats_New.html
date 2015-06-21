@@ -35,6 +35,34 @@ or anything else, spreading the word for example.
 
 <!-- Content starts -->
 
+<h2 id="Build_150621">Build 150621</h2>
+<ul>
+	<li>Use recommended launcher for Git-For-Windows bash (default tasks). </li>
+	<li>Try to create default task for GitSDK bash. </li>
+	<li>Let Settings\Environment page use one line for one command.
+
+    This will make concrete set commands with quotation marks.
+    Following two commands are equal.
+
+      <pre>set "PATH=C:\Program Files\ConEmu;%PATH%"
+      set PATH=C:\Program Files\ConEmu;%PATH%</pre>
+
+    But you still have to use quotations to keep trailing spaces
+
+      <pre>set "VarName=This is my value   "</pre>
+    </li>
+	<li>Support empty lines and comments on the Settings\Environment page.
+    You may comment lines with <code>#</code>, <code>//</code>, <code>--</code> or <code>REM </code>. </li>
+	<li>gh187: Highlight and goto did not work when filename not finished by :[space] or :[number]. </li>
+	<li>Improve default task names unification and sorting. </li>
+	<li>The arrow char was inserted into Far Manager prompt after selecting text with Alt+Mouse. </li>
+	<li>Fix xml search path for Git-For-Windows package.
+    Correct one is <code>/opt/share/conemu/ConEmu.xml</code> while <code>ConEmu.exe</code> is placed
+    in <code>/opt/bin</code> folder. </li>
+	<li>Error code was not shown properly if DefTerm inject fails. </li>
+</ul>
+
+
 <h2 id="Build_150610">Build 150610</h2>
 <ul>
 	<li>Simplify <code>set</code> usage in Settings\Environment. </li>
