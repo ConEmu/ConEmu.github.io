@@ -1,7 +1,7 @@
 ---
 pagelang: ru
 
-title: "ConEmu | Fast Configuration Dialog"
+title: "ConEmu | Диалог быстрой конфигурации"
 
 description: "При первом запуске ConEmu покажет диалог быстрой конфигурации
    с минимальным набором опций (Fast Configuration Dialog).
