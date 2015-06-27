@@ -502,6 +502,10 @@ toc:
         rus: "Cygwin & startup cmd"
         url: "CygwinStartCmd.html"
       -
+        eng: "ssh agent"
+        rus: "ssh agent"
+        url: "SshAgent.html"
+      -
         eng: "Cygwin & Ansi"
         rus: "Cygwin & Ansi"
         url: "CygwinAnsi.html"
@@ -573,10 +577,6 @@ toc:
         eng: "Git For Windows"
         rus: "Git For Windows"
         url: "GitForWindows.html"
-      -
-        eng: "ssh agent"
-        rus: "ssh agent"
-        url: "SshAgent.html"
       -
         eng: "Task bar bug"
         rus: "Task bar bug"
