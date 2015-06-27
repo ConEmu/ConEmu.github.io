@@ -2,9 +2,9 @@
 redirect_from:
  - /auto.html
 
-title: ConEmu | Automate Installation
+title: ConEmu | Автоматизация установки
 
-description: "How to use PowerShell or Chocolatey to automate ConEmu installation."
+description: "PowerShell и Chocolatey упрощают установку ConEmu на новую машину."
 
 breadcrumbs:
  - url: TableOfContents.html#conemu

@@ -1,8 +1,8 @@
 ---
-title: "ConEmu | хранение настроек в xml или реестре"
+title: "ConEmu | Хранение настроек в xml или реестре"
 
-description: "Where ConEmu settings are stored
-  and how to send your config to developer if report problems."
+description: "Где хранятся настройки и как подготовить их
+  для пересылки разработчику при сообщениях о проблеме."
 
 otherlang:
    eng: /en/ConEmuXml.html
