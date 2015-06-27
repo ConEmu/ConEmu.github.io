@@ -6,7 +6,7 @@ title: "ConEmu | SshAgent"
 description: "Some hints about using ssh-agent in ConEmu consoles"
 
 breadcrumbs:
- - url: CygwinMsys.html
+ - url: TableOfContents.html#cygwin-and-msys
    title: Cygwin and Msys
 ---
 
