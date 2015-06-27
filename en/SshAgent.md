@@ -12,53 +12,83 @@ breadcrumbs:
 
 # ConEmu, cygwin/msys and ssh-agent
 
-Article is under construction, you may find following links useful.
+Article is under construction, you may find following links and paragraphs useful.
 
-* <a href="https://twitter.com/rootpd/status/428600352229687296" rel="nofollow">Tweet #1</a>
-* <a href="http://superuser.com/a/230872/234747" rel="nofollow">SuperUser answer</a>
-* <a href="https://twitter.com/factormystic/status/428610122001432576" rel="nofollow">Tweet #2</a>
-* [Exporting environment variables](ConEmuEnvironment.html#Export_variables)
+## The key
+
+When `ssh-agent` starts it defines two [environment](WindowsEnvironment.md) variables,
+`SSH_AGENT_PID` and `SSH_AUTH_SOCK`, which must be exported to your
+[shell](TerminalVsShell.md).
+
+On Unix systems or in cygwin ssh-agent may be started as follows:
+
+~~~
+eval $(ssh-agent)   # Create agent and environment variables
+~~~
+
+That would be nice if you are working in the single-tab console environment,
+but what about ConEmu?
+
+The answer is simple.
+Just [export these variables](ConEmuEnvironment.html#Export_variables)
+to the ConEmu GUI and all running consoles
+([Tabs](Tabs.html) and [Panes](Panes.html)).
+
+~~~
+eval $(ssh-agent)           # Create agent and environment variables
+ConEmuC -export=ALL SSH_*   # Export variables to ConEmu and all its tabs
+~~~
+
+The only drawback is a [limitation](ConEmuEnvironment.html#Export_variables)
+of the implemented export method - existing cygwin tabs will not get these variables,
+only new cygwin consoles will get them.
 
 
+## Some other links
 
-{% comment %}
+### <a href="https://twitter.com/rootpd/status/428600352229687296" rel="nofollow">Tweet #1</a>
+
 SSH agent working with @ConEmuMaximus5 and Git Bash. For multiple
 tabs. Load your keys just once, use everywhere.
-http://superuser.com/a/230872/234747
-{% endcomment %}
+
+
+### <a href="http://superuser.com/a/141241/139371" rel="nofollow">SuperUser answer</a>
+
+Using the [bash script](http://superuser.com/a/141241/139371) and an alias `sagent`.
+
+
+### <a href="http://www.cygwin.com/ml/cygwin/2001-06/msg00537.html">CygWin profile modification</a>
+
+This solution does not relates to ConEmu at first glance but may be useful anyway.
+
+
 
 {% comment %}
-Here's a pretty nice one that works in Cygwin as well:
-SSH_ENV=$HOME/.ssh/environment
+You may want to use ssh-agent and ssh-add to load the key into memory.
+ssh will try identities from ssh-agent automatically if it can find them.
+Commands would be
 
-function start_agent {
-     echo "Initialising new SSH agent..."
-     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > ${SSH_ENV}
-     echo succeeded
-     chmod 600 ${SSH_ENV}
-     . ${SSH_ENV} > /dev/null
-     /usr/bin/ssh-add;
-}
+eval $(ssh-agent) # Create agent and environment variables
+ssh-add ~/.ssh/1234-identity
+ssh-agent is a user daemon which holds unencrypted ssh keys in memory. ssh finds it based on environment variables which ssh-agent outputs when run. Using eval to evaluate this output creates the environment variables.  ssh-add is the command which manages the keys memory. The agent can be locked using ssh-add. A default lifetime for a key can be specified when ssh-agent is started, and or specified for a key when it is added.
 
-# Source SSH settings, if applicable
+You might also want to setup a ~/.ssh/config file to supply the port and key definition. (See `man ssh_config for more options.)
 
-if [ -f "${SSH_ENV}" ]; then
-     . ${SSH_ENV} > /dev/null
-     #ps ${SSH_AGENT_PID} doesn't work under cywgin
-     ps -efp ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-         start_agent;
-     }
-else
-     start_agent;
-fi
-
-
-Add it to your .bash_profile or .bashrc
-
-Source: http://www.cygwin.com/ml/cygwin/2001-06/msg00537.html
+host 22.33.44.55
+    IdentityFile ~/.ssh/1234-identity
+    Port 1234
+Single quoting the ssh command will prevent shell expansion which is needed for ~ or $HOME. You could use the full or relative path to the key in single quotes.
 {% endcomment %}
 
 
 {% comment %}
-@rootpd @ConEmuMaximus5 or tell git to use plink, then use pageant.
+
+** without use of ssh-agent
+
+   rsync -avz -e "ssh -p1234  -i $HOME/.ssh/1234-identity" ...
+or full path to the key:
+
+  rsync -avz -e "ssh -p1234  -i /home/username/.ssh/1234-identity" ...
+Tested with rsync 3.0.9 on Ubuntu
+
 {% endcomment %}
