@@ -4,7 +4,7 @@ title: "ConEmu | What's New"
 description: "Версии ConEmu выходят часто, обычно не реже раза в неделю.
   Список изменений ведется только на английском."
 
-noindex: true
+#noindex: true
 
 breadcrumbs:
  - url: TableOfContents.html#conemu
