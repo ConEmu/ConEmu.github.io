@@ -558,6 +558,10 @@ toc:
         rus: "Заголовок таба или консоли"
         url: "TabVsTitle.html"
       -
+        eng: "Cmd Prompt"
+        rus: "Cmd Prompt"
+        url: "CmdPrompt.html"
+      -
         eng: "Powershell Prompt"
         rus: "Powershell Prompt"
         url: "PowershellPrompt.html"
