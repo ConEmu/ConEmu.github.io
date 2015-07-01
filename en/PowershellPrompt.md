@@ -6,6 +6,12 @@ title: "ConEmu | Extending Powershell Prompt"
 breadcrumbs:
  - url: TableOfContents.html#tips-and-tweaks
    title: Tips and Tweaks
+
+readalso:
+ - url: CmdPrompt.html
+   title: "Configuring Cmd Prompt"
+ - url: PromptAtTheBottom.html
+   title: "Hold Shell Prompt at the Bottom"
 ---
 
 # Extending the Powershell Prompt
