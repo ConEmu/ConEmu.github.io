@@ -83,6 +83,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://conemu.github.io/en/CmdPrompt.html</loc>
+    <lastmod>2015-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://conemu.github.io/en/CommandLine.html</loc>
     <lastmod>2015-04-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -448,7 +454,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/PowershellPrompt.html</loc>
-    <lastmod>2015-05-12</lastmod>
+    <lastmod>2015-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -472,7 +478,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/PromptAtTheBottom.html</loc>
-    <lastmod>2015-05-12</lastmod>
+    <lastmod>2015-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -740,7 +746,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SshAgent.html</loc>
-    <lastmod>2015-06-28</lastmod>
+    <lastmod>2015-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -886,7 +892,7 @@
     <loc>http://conemu.github.io/en/Whats_New.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/Whats_New.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/Whats_New.html" />
-    <lastmod>2015-06-28</lastmod>
+    <lastmod>2015-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
