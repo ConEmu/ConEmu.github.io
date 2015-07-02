@@ -35,6 +35,22 @@ or anything else, spreading the word for example.
 
 <!-- Content starts -->
 
+<h2 id="Build_150701">Build 150701</h2>
+<ul>
+	<li>Add optional '/Silent' switch to suppress environment exporting messages.
+		<pre>ConEmuC [/SILENT] /EXPORT[=CON|GUI|ALL] [Var1 [Var2 [...]]]</pre>
+    </li>
+	<li>gh#193: Fix wrong condition: ‘Warn if MacType hookers are loaded’. </li>
+	<li>Omit ConEmuC export variables message in GitShowBranch.cmd. </li>
+	<li>gh#174: Let paste to all ‘grouped input’ consoles at once. </li>
+	<li>Show actual hotkey instead of default Ctrl+BackSpace in Settings. </li>
+	<li>Vert/Horz text cursor was displayed in wrong position especially on DBCS systems. </li>
+	<li>Ctrl+BackSpace feature was not working on DBCS systems. </li>
+	<li>Redirect chocolatey downloads to github. </li>
+	<li>gh#204: ConEmu hung on startup in some cases while initializing default tasks. </li>
+</ul>
+
+
 <h2 id="Build_150629">Build 150629</h2>
 <ul>
 	<li>Attach (Win+G) was not succeeded if ConEmu has different bitness. </li>
