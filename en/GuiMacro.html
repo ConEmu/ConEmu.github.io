@@ -57,8 +57,8 @@ GuiMacro may be triggered from many places, for example from command line or <a 
 	<li><a href="#Scroll">Scroll(&lt;Type&gt;,&lt;Direction&gt;,&lt;Count=1&gt;)</a></li>
 	<li><a href="#Select">Select(&lt;Type&gt;,&lt;DX&gt;,&lt;DY&gt;,&lt;HE&gt;)</a></li>
 	<li><a href="#SetDpi">SetDpi(&lt;DPI&gt;)</a></li>
-	<li><a href="#SetOption">SetOption(&quot;Check&quot;,&lt;ID&gt;,&lt;Value&gt;)</a></li>
-	<li><a href="#SetOption">SetOption(&quot;&lt;Name&gt;&quot;,&lt;Value&gt;[,&lt;IsRelative&gt;])</a></li>
+	<li><a href="SetOption">SetOption(&quot;Check&quot;,&lt;ID&gt;,&lt;Value&gt;)</a></li>
+	<li><a href="SetOptionName">SetOption(&quot;&lt;Name&gt;&quot;,&lt;Value&gt;[,&lt;IsRelative&gt;])</a></li>
 	<li><a href="#Settings">Settings([&lt;PageResourceId&gt;])</a></li>
 	<li><a href="#Shell">Shell(&quot;&lt;Verb&gt;&quot;,&quot;&lt;File&gt;&quot;[,&quot;&lt;Parms&gt;&quot;[,&quot;&lt;Dir&gt;&quot;[,&lt;ShowCmd&gt;]]])</a></li>
 	<li><a href="#Sleep">Sleep(&lt;Milliseconds&gt;)</a></li>
@@ -73,7 +73,7 @@ GuiMacro may be triggered from many places, for example from command line or <a 
 	<li><a href="#Zoom">Zoom(N)</a></li>
 	</ul>
 
-<li><a href="#SetOption">SetOption</a></li>
+<li><a href="#SetOptionExample">SetOption</a></li>
 <li><a href="#Examples">Examples</a></li>
 	<ul><li><a href="#Far3-Lua">Far3-Lua</a></li>
 	<li><a href="#Far3-pre-Lua">Far3-pre-Lua</a></li>
@@ -401,13 +401,13 @@ HighlightMouse(&lt;What&gt;,&lt;Act&gt;)
 <pre><code>SetDpi(&lt;DPI&gt;)
  - Change effective dpi for ConEmu window: 96, 120, 144, 192</code></pre>
 
-<h4><a name="SetOption"></a>Change setting by numeric ID of the checkbox<a href="#SetOption" class="section_anchor"></a></h4>
+<h4 id="SetOptionID"> Change setting by numeric ID of the checkbox </h4>
 <pre><code>SetOption(&quot;Check&quot;,&lt;ID&gt;,&lt;Value&gt;)
    ID: numeric identifier of checkbox (ConEmu.rc, resource.h)
    Value: 0 - off, 1 - on, 2 - third state
    Read about SetOption below</code></pre>
 
-<h4><a name="SetOption"></a>Change some setting by name<a href="#SetOption" class="section_anchor"></a></h4>
+<h4 id="SetOptionName"> Change some setting by name </h4>
 <pre><code>SetOption(&quot;&lt;Name&gt;&quot;,&lt;Value&gt;[,&lt;IsRelative&gt;])
  - Name=one of allowed for changing ConEmu options
    IsRelative=1 to use relative instead of absolute for some options
@@ -517,8 +517,8 @@ WindowMode([\&quot;&lt;Mode&gt;\&quot;])
 <!-- *************** List of functions ends *************** -->
 </div>
 
-<h2><a name="SetOption"></a>SetOption<a href="#SetOption" class="section_anchor"></a></h2>
-<p>You may change some (or most) of ConEmu settings using <code>SetOption</code> macro function. </p>
+<h2 id="SetOptionExample"> SetOption </h2>
+<p>You may change some (or most) of ConEmu settings using <a href="#SetOption">SetOption</a> macro function. </p>
 <p>It may be used <strong>by name</strong> for several options, for example </p>
 <pre class="prettyprint">SetOption(&quot;FarGotoEditorPath&quot;,&quot;far.exe /e%1:%2 \&quot;%3\&quot;&quot;)</pre>
 <p>Or <strong>by CheckBox/RadioButton ID</strong>. Of course you must know that number-ID. Look up the control by its label in the <a href="https://github.com/Maximus5/ConEmu/blob/master/src/ConEmu/ConEmu.rc" rel="nofollow">ConEmu.rc</a> (don&#x27;t forget about possible ‘<code>&amp;</code>’) and then look up the exact number-ID by its string-ID in the <a href="https://github.com/Maximus5/ConEmu/blob/master/src/ConEmu/resource.h" rel="nofollow">resource.h</a>. </p>
