@@ -47,7 +47,9 @@ title: "ConEmu | Settings › Confirm page"
 
 ## Miscellaneous
 
-**Show ‘was hidden’ warning** Show ‘ConEmu was hidden from some program’ message in TSA
+**Show ‘... was hidden’ warning in TSA** Show ‘ConEmu was hidden from some program’ message in TSA
+
+**Show ‘... brought ConEmu OnTop. Revert?’ confirmation box** Show ‘Some external program brought ConEmu OnTop. Revert?’ confirmation box
 
 
 

@@ -63,7 +63,7 @@ title: "ConEmu | Settings › Controls page"
 
 
 
-**Delete word leftward to the cursor (default Ctrl+BackSpace)** Delete word leftward to the cursor (does not work in Far), 3rd-state means ‘try to detect if console is in ReadConsole’, if you want to use this with bash - turn checkbox to ‘On’ (don't use third state)
+**Ctrl+BackSpace - delete word leftward to the text cursor** Delete word leftward to the cursor (does not work in Far), 3rd-state means ‘try to detect if console is in ReadConsole’, if you want to use this with bash - turn checkbox to ‘On’ (don't use third state)
 
 
 
