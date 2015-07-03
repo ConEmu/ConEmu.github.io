@@ -20,6 +20,12 @@ readalso:
 
 # ConEmu keyboard shortcuts
 
+* [Non configurable hotkeys](#Non_configurable_hotkeys)
+* [Configurable hotkeys](#Configurable_hotkeys)
+* [Host key](#Host_key)
+* [Full list of hotkeys](#Full_list)
+
+
 <h2 id="Please_note"> Please note! </h2>
 
 These shortcuts are only defaults!
@@ -51,6 +57,8 @@ for ‘Start text selection (like text editors)’,
 
 <h2 id="Configurable_hotkeys"> Configurable hotkeys </h2>
 
+The list below is very brief. [Full list of hotkeys](#Full_list) is located at the botom of the article.
+
 | *Hotkey* | *Description* |
 |:---|:---|
 | **Multiconsole** | |
@@ -77,7 +85,7 @@ Note, **Win** is default ‘[Host key](ConEmuTerms.html#Host_key)’,
 keys combination is [configurable](Settings.html#Tabs).
 
 
-<h3> Full list of hotkeys and notes </h3>
+<h3 id="Full_list"> Full list of hotkeys </h3>
 
 Take a look at full list of keyboard shortcuts below
 and notes about [global hotkeys](GlobalHotKeys.html).
