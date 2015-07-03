@@ -393,6 +393,10 @@ toc:
     url: ""
     children:
       -
+        eng: "Quake/Tilda style"
+        rus: "Quake/Tilda style"
+        url: "ConEmuQuake.html"
+      -
         eng: "ExtendedConsole"
         rus: "ExtendedConsole"
         url: "ExtendedConsole.html"
