@@ -210,7 +210,7 @@ find appropriate value and change it.
 
 [![ConEmu settings, Colors page](/img/Settings-Colors.png "Щелкните чтобы открыть описание")](SettingsColors.html)
 
-[![ConEmu settings, Predefines palettes](/img/Settings-Colors2.png "Щелкните чтобы открыть описание")](SettingsColors2.html)
+[![ConEmu settings, Predefines palettes](/img/Settings-Colors2.png "Щелкните чтобы открыть описание")](SettingsColors.html)
 
 
 <h3 id="Transparency"> Transparency </h3>
@@ -227,9 +227,9 @@ find appropriate value and change it.
 
 [![ConEmu settings, App distinct page](/img/Settings-AppDistinct.png "Щелкните чтобы открыть описание")](SettingsAppDistinct.html)
 
-[![ConEmu settings, App distinct page](/img/Settings-AppDistinct2.png "Щелкните чтобы открыть описание")](SettingsAppDistinct2.html)
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct2.png "Щелкните чтобы открыть описание")](SettingsAppDistinct.html)
 
-[![ConEmu settings, App distinct page](/img/Settings-AppDistinct3.png "Щелкните чтобы открыть описание")](SettingsAppDistinct3.html)
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct3.png "Щелкните чтобы открыть описание")](SettingsAppDistinct.html)
 
 
 <h3 id="Integration"> Integration </h3>
@@ -248,7 +248,7 @@ find appropriate value and change it.
 
 [![ConEmu settings, Keys and Macro page](/img/Settings-Hotkeys.png "Щелкните чтобы открыть описание")](SettingsHotkeys.html)
 
-[![ConEmu settings, Few GuiMacros](/img/Settings-Hotkeys2.png "Щелкните чтобы открыть описание")](SettingsHotkeys2.html)
+[![ConEmu settings, Few GuiMacros](/img/Settings-Hotkeys2.png "Щелкните чтобы открыть описание")](SettingsHotkeys.html)
 
 
 <h3 id="Controls"> Controls </h3>
