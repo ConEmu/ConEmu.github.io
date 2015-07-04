@@ -31,7 +31,7 @@ readalso:
 These shortcuts are only defaults!
 You may redefine almost all combinations
 and define up to 32 [GuiMacro](GuiMacro.html) hotkeys
-on the [Keys](/SettingsHotkeys.html#Hotkeys_list) page.
+on the [Keys](SettingsHotkeys.html#Hotkeys_list) page.
 
 Moreover, many actions have no default hotkeys.
 
