@@ -9,7 +9,7 @@ breadcrumbs:
    title: Extras
 
 readalso:
- - url: http://conemu.github.io/en/SettingsFeatures.html#cpu-consuming
+ - url: SettingsFeatures.html#cpu-consuming
    title: CPU consuming features
  - url: RealConsole.html
    title: RealConsole
