@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsTextCursor.html
+redirect_from:
+ - /ru/SettingsTextCursor.html
 
 title: "ConEmu | Settings › TextCursor page"
 ---

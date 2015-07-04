@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsUpdate.html
+redirect_from:
+ - /ru/SettingsUpdate.html
 
 title: "ConEmu | Settings › Update page"
 ---

@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsDebug.html
+redirect_from:
+ - /ru/SettingsDebug.html
 
 title: "ConEmu | Settings › Debug page"
 ---

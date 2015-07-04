@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsPaste.html
+redirect_from:
+ - /ru/SettingsPaste.html
 
 title: "ConEmu | Settings › Paste page"
 ---

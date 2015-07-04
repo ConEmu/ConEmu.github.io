@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsAppDistinct.html
+redirect_from:
+ - /ru/SettingsAppDistinct.html
 
 title: "ConEmu | Settings › AppDistinct page"
 ---

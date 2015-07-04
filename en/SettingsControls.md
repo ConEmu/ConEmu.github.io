@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsControls.html
+redirect_from:
+ - /ru/SettingsControls.html
 
 title: "ConEmu | Settings › Controls page"
 ---

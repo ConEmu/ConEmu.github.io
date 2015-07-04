@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsIntegration.html
+redirect_from:
+ - /ru/SettingsIntegration.html
 
 title: "ConEmu | Settings › Integration page"
 

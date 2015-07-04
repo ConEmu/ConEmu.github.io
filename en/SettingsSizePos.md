@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsSizePos.html
+redirect_from:
+ - /ru/SettingsSizePos.html
 
 title: "ConEmu | Settings › SizePos page"
 ---

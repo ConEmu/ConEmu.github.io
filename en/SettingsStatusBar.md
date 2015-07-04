@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsStatusBar.html
+redirect_from:
+ - /ru/SettingsStatusBar.html
 
 title: "ConEmu | Settings › StatusBar page"
 ---

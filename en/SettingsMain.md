@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsMain.html
+redirect_from:
+ - /ru/SettingsMain.html
 
 title: "ConEmu | Settings › Main page"
 ---

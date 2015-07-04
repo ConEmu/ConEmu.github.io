@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsDefTerm.html
+redirect_from:
+ - /ru/SettingsDefTerm.html
 
 title: "ConEmu | Settings › Default Term page"
 

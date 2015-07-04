@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsConfirm.html
+redirect_from:
+ - /ru/SettingsBackground.html
 
 title: "ConEmu | Settings › Background page"
 ---

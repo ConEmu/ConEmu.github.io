@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsConfirm.html
+redirect_from:
+ - /ru/SettingsConfirm.html
 
 title: "ConEmu | Settings › Confirm page"
 ---

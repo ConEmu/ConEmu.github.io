@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsFeatures.html
+redirect_from:
+ - /ru/SettingsFeatures.html
 
 title: "ConEmu | Settings › Features page"
 ---

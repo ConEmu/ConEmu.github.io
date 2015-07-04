@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsFar.html
+redirect_from:
+ - /ru/SettingsFar.html
 
 title: "ConEmu | Settings › Far page"
 ---

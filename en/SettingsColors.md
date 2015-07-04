@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsColors.html
+redirect_from:
+ - /ru/SettingsColors.html
 
 title: "ConEmu | Settings › Colors page"
 

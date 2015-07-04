@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsTaskBar.html
+redirect_from:
+ - /ru/SettingsTaskBar.html
 
 title: "ConEmu | Settings › TaskBar page"
 ---

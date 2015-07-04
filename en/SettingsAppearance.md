@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsAppearance.html
+redirect_from:
+ - /ru/SettingsAppearance.html
 
 title: "ConEmu | Settings › Appearance page"
 ---

@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsMarkCopy.html
+redirect_from:
+ - /ru/SettingsMarkCopy.html
 
 title: "ConEmu | Settings › MarkCopy page"
 ---

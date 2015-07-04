@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsHotkeys.html
+redirect_from:
+ - /ru/SettingsHotkeys.html
 
 title: "ConEmu | Settings › Keys & Macro page"
 

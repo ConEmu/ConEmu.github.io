@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsStartup.html
+redirect_from:
+ - /ru/SettingsStartup.html
 
 title: "ConEmu | Settings › Startup page"
 ---

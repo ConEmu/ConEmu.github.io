@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsTransparency.html
+redirect_from:
+ - /ru/SettingsTransparency.html
 
 title: "ConEmu | Settings › Transparency page"
 ---

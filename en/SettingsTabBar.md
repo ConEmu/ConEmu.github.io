@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsTabBar.html
+redirect_from:
+ - /ru/SettingsTabBar.html
 
 title: "ConEmu | Settings › TabBar page"
 ---

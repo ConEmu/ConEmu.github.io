@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsTasks.html
+redirect_from:
+ - /ru/SettingsTasks.html
 
 title: "ConEmu | Settings › Tasks page"
 ---

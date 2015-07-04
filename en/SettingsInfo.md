@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsInfo.html
+redirect_from:
+ - /ru/SettingsInfo.html
 
 title: "ConEmu | Settings › Info page"
 ---

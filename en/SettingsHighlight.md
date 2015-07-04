@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsHighlight.html
+redirect_from:
+ - /ru/SettingsHighlight.html
 
 title: "ConEmu | Settings › Highlight page"
 ---

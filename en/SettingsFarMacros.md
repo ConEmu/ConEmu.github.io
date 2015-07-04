@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsFarMacros.html
+redirect_from:
+ - /ru/SettingsFarMacros.html
 
 title: "ConEmu | Settings › FarMacros page"
 ---

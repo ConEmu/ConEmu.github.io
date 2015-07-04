@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsEnvironment.html
+redirect_from:
+ - /ru/SettingsEnvironment.html
 
 title: "ConEmu | Settings › Environment page"
 

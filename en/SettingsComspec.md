@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/SettingsComspec.html
+redirect_from:
+ - /ru/SettingsComspec.html
 
 title: "ConEmu | Settings › Comspec page"
 
