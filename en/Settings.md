@@ -210,7 +210,7 @@ You may open settings dialog in several ways
 
 [![ConEmu settings, Colors page](/img/Settings-Colors.png "Click to open description")](SettingsColors.html)
 
-[![ConEmu settings, Predefines palettes](/img/Settings-Colors2.png "Click to open description")](SettingsColors2.html)
+[![ConEmu settings, Predefines palettes](/img/Settings-Colors2.png "Click to open description")](SettingsColors.html)
 
 
 <h3 id="Transparency"> Transparency </h3>
@@ -227,9 +227,9 @@ You may open settings dialog in several ways
 
 [![ConEmu settings, App distinct page](/img/Settings-AppDistinct.png "Click to open description")](SettingsAppDistinct.html)
 
-[![ConEmu settings, App distinct page](/img/Settings-AppDistinct2.png "Click to open description")](SettingsAppDistinct2.html)
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct2.png "Click to open description")](SettingsAppDistinct.html)
 
-[![ConEmu settings, App distinct page](/img/Settings-AppDistinct3.png "Click to open description")](SettingsAppDistinct3.html)
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct3.png "Click to open description")](SettingsAppDistinct.html)
 
 
 <h3 id="Integration"> Integration </h3>
@@ -248,7 +248,7 @@ You may open settings dialog in several ways
 
 [![ConEmu settings, Keys and Macro page](/img/Settings-Hotkeys.png "Click to open description")](SettingsHotkeys.html)
 
-[![ConEmu settings, Few GuiMacros](/img/Settings-Hotkeys2.png "Click to open description")](SettingsHotkeys2.html)
+[![ConEmu settings, Few GuiMacros](/img/Settings-Hotkeys2.png "Click to open description")](SettingsHotkeys.html)
 
 
 <h3 id="Controls"> Controls </h3>
