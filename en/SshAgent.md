@@ -16,9 +16,9 @@ Article is under construction, you may find following links and paragraphs usefu
 
 ## The key
 
-When `ssh-agent` starts it defines two [environment](WindowsEnvironment.md) variables,
+When `ssh-agent` starts it defines two [environment](WindowsEnvironment.html) variables,
 `SSH_AGENT_PID` and `SSH_AUTH_SOCK`, which must be exported to your
-[shell](TerminalVsShell.md).
+[shell](TerminalVsShell.html).
 
 On Unix systems or in cygwin ssh-agent may be started as follows:
 

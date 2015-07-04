@@ -26,7 +26,7 @@ for processes running inside ConEmu
 ([tabs](Tabs.html) and [splits](SplitScreen.html)).
 
 **Add %ConEmuDir% to %PATH%**. If checked you may run `ConEmu.exe` and `ConEmu64.exe`
-from your [command-line interpreter](TerminalVsShell.md).
+from your [command-line interpreter](TerminalVsShell.html).
 Example below.
 
 ~~~
@@ -34,7 +34,7 @@ ConEmu -basic -noquake -nosingle -startTSA -cmd <build your project command line
 ~~~
 
 **Add %ConEmuBaseDir% to %PATH%**. If checked you may run `ConEmuC.exe` and `ConEmuC64.exe`
-from your [command-line interpreter](TerminalVsShell.md).
+from your [command-line interpreter](TerminalVsShell.html).
 `ConEmuC` is used generally to do some checks (`-IsConEmu` switch)
 and execute [GuiMacro](GuiMacro.html). Example below.
 
