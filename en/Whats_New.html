@@ -35,6 +35,22 @@ or anything else, spreading the word for example.
 
 <!-- Content starts -->
 
+<h2 id="Build_150707">Build 150707</h2>
+<ul>
+	<li>This build changes the download procedure used within automatic updates.
+    ConEmu.exe (GUI) do not call WinInet functions anymore, instead it calls
+    the downloader tool (ConEmuC.exe is an only option at the moment).
+    This will eliminate accidental crashes of GUI after resume from sleep. </li>
+	<li>The downloader itself has new options.
+	<ul>
+        <li>If user omit dst file name - try to get it from Url. </li>
+        <li>If "-" was specified as dst file name or output is redirected - just write contents to stdout. </li>
+        <li>New switch ‘-agent <name>’ was implemented. </li>
+    </ul>
+    </li>
+</ul>
+
+
 <h2 id="Build_150705">Build 150705</h2>
 <ul>
 	<li>Script <code>ConEmu/GitShowBranch.cmd</code> was improved. </li>
