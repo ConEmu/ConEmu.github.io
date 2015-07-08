@@ -29,6 +29,14 @@ To avoid typing the passphrase each time you connect any remote system
 you may run [ssh-agent](https://en.wikipedia.org/wiki/Ssh-agent)
 which will ‘cache’ your keys in memory for use in the current session.
 
+By the way, if you need to run some command after logging into remote system
+you may append it to `ssh` arguments. For example you may set startup (working)
+directory for the remote ssh session as follows.
+
+~~~
+ssh your.server.com "cd /path/to/directory ; bash --login"
+~~~
+
 
 ## The key
 
