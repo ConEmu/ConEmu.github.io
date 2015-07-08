@@ -52,7 +52,7 @@ You may choose folder for in-console log files (affect new consoles only)
 
 **Process '-new_console' and '-cur_console' switches** Enable processing of '-new_console' and '-cur_console' switches in your shell prompt, scripts etc. started in ConEmu tabs
 
-**Process 'start'** 
+**Process 'start'** Hook 'start' command in your cmd's prompt and batches started in ConEmu tabs to run console applications in new ConEmu tabs
 
 
 
