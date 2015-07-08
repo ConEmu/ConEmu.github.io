@@ -14,6 +14,22 @@ breadcrumbs:
 
 Article is under construction, you may find following links and paragraphs useful.
 
+When you ssh into remote computer you may use your ‘Public key’ for authentication.
+Private and public keys are usually stored in the user's home directory and are
+often encrypted with passphrase to be more secure.
+
+Some tools may pick up public keys automatically, some others require special switch
+to select key authentication mode. The example is shown below.
+
+~~~
+ssh -i $HOME/.ssh/id_rsa your.server.com
+~~~
+
+To avoid typing the passphrase each time you connect any remote system
+you may run [ssh-agent](https://en.wikipedia.org/wiki/Ssh-agent)
+which will ‘cache’ your keys in memory for use in the current session.
+
+
 ## The key
 
 When `ssh-agent` starts it defines two [environment](WindowsEnvironment.html) variables,
