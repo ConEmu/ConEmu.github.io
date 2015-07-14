@@ -1,8 +1,10 @@
 ---
 redirect_from:
+ - /ru/CpuIoConsumption.html
+ - /en/NamedPipes.html
  - /ru/NamedPipes.html
 
-title: "ConEmu | Named Pipes"
+title: "ConEmu | CPU Consumption and I/O Rate"
 
 breadcrumbs:
  - url: TableOfContents.html#extras
@@ -17,7 +19,7 @@ readalso:
    title: ConEmuC - Console Part of ConEmu
 ---
 
-# High ConEmu I/O rate
+# High ConEmu I/O rate and CPU consumption
 
 Some process monitoring tools (Process Hacker or Anvir for example)
 may show high I/O rate of `ConEmuC[64].exe` and `ConEmu[64].exe` processes.

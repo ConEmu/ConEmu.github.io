@@ -699,9 +699,9 @@ toc:
         rus: "KeyEvents"
         url: "KeyEvents.html"
       -
-        eng: "Named pipes"
-        rus: "Named pipes"
-        url: "NamedPipes.html"
+        eng: "CPU and I/O consumption"
+        rus: "Загрузка CPU и ввод/вывод"
+        url: "CpuIoConsumption.html"
       -
         eng: "Process Explorer"
         rus: "Process Explorer"
