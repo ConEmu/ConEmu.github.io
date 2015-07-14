@@ -39,7 +39,7 @@ Well, most of I/O transfer actually consists of two parts (types):
 
 We can't decrease throughput of first part without decreasing the responsiveness
 of ConEmu but there are two options on the
-[Features](http://conemu.github.io/en/SettingsFeatures.html#cpu-consuming)
+[Features](SettingsFeatures.html#cpu-consuming)
 settings page allowing to dramatically descrease I/O rate of the **inactive**
 consoles ([Tabs](Tabs.html) or [Panes](Panes.html)) notably
 ‘Sleep in background’ and ‘Retard inactive panes’.
