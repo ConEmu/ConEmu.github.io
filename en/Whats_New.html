@@ -35,6 +35,25 @@ or anything else, spreading the word for example.
 
 <!-- Content starts -->
 
+<h2 id="Build_150715">Build 150715</h2>
+<ul>
+	<li>Now user may use any external downloader tool if ConEmu's internal does not suite. </li>
+	<li>Implement new switch `-update` to force automatic update procedure. </li>
+	<li>Describe switch `-LoadRegistry` in ConEmu's About dialog. </li>
+	<li>Force Win7 TaskBar to use different taskbar buttons for different configs
+    selected by one of the following switches:
+    <code>-config &lt;name&gt;</code>, <code>-loadcfgfile &lt;file&gt;</code>, <code>-loadregistry</code>, <code>-basic</code>. </li>
+	<li>Allow to delete several tasks at once, just select them with Shift or Ctrl pressed. </li>
+	<li>Button ‘Add default tasks’ behavior was changed. Confirmation dialog suggests to
+    either to add absent tasks or add and recreate all default tasks.
+    Recreation will affect tasks' commands and parameters. </li>
+	<li>gh#213: Improve update error reporting, more logging. </li>
+	<li>Switch processor refactoring (code moved to CConEmuStart class). </li>
+	<li>Internal changes in threads creating/killing. </li>
+	<li>Some more logging for toolbar buttons and window resizing. </li>
+</ul>
+
+
 <h2 id="Build_150707">Build 150707</h2>
 <ul>
 	<li>This build changes the download procedure used within automatic updates.
