@@ -407,9 +407,9 @@ div.h-social a {
   }
 }
 
-div.post_navigation {
+div.post_navigation, div.build_download {
   font-size: .8em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* Menu and Search
