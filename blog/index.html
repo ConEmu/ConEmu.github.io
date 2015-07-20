@@ -1,0 +1,53 @@
+---
+category: blog
+---
+
+{% comment %}
+<!--
+<p>
+page: {{ paginator.page }} ;
+total_pages: {{ paginator.total_pages }} ;
+previous_page: {{ paginator.previous_page }} ;
+previous_page_path: {{ paginator.previous_page_path }} ;
+next_page: {{ paginator.next_page }} ;
+next_page_path: {{ paginator.next_page_path }} ;
+</p>
+
+<p>
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</p>
+-->
+{% endcomment %}
+
+{% for post in paginator.posts %}
+<article>
+<h2 class="h0" id="Build_{{ post.build }}"><a href="{{ post.url }}"> Build {{ post.build }} </a></h2>
+{{ post.content }}
+</article>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+

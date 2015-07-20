@@ -174,6 +174,10 @@ h1 {
   margin-top: 0;
 }
 
+.h0 {
+  margin-top: 0;
+}
+
 .stext {
   max-width: 450px;
   font-size: .8em;
@@ -401,6 +405,11 @@ div.h-social a {
   div.h-title-desc {
     margin-right: 0.6em;
   }
+}
+
+div.post_navigation {
+  font-size: .8em;
+  margin-bottom: 2em;
 }
 
 /* Menu and Search

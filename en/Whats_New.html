@@ -31,87 +31,16 @@ You can show your appreciation and support further development and maintaining b
 or anything else, spreading the word for example.
 </p>
 
+{% for post in site.posts %}{%if post.build %}
+<article>
+<h2 id="Build_{{ post.build }}"><a href="{{ post.url }}"> Build {{ post.build }} </a></h2>
+{{ post.content }}
+</article>
+{% endif %}{% endfor %}
+
 {% raw %}
 
 <!-- Content starts -->
-
-<h2 id="Build_150715">Build 150715</h2>
-<ul>
-	<li>Now user may use any external downloader tool if ConEmu's internal does not suite. </li>
-	<li>Implement new switch `-update` to force automatic update procedure. </li>
-	<li>Describe switch `-LoadRegistry` in ConEmu's About dialog. </li>
-	<li>Force Win7 TaskBar to use different taskbar buttons for different configs
-    selected by one of the following switches:
-    <code>-config &lt;name&gt;</code>, <code>-loadcfgfile &lt;file&gt;</code>, <code>-loadregistry</code>, <code>-basic</code>. </li>
-	<li>Allow to delete several tasks at once, just select them with Shift or Ctrl pressed. </li>
-	<li>Button ‘Add default tasks’ behavior was changed. Confirmation dialog suggests to
-    either to add absent tasks or add and recreate all default tasks.
-    Recreation will affect tasks' commands and parameters. </li>
-	<li>gh#213: Improve update error reporting, more logging. </li>
-	<li>Switch processor refactoring (code moved to CConEmuStart class). </li>
-	<li>Internal changes in threads creating/killing. </li>
-	<li>Some more logging for toolbar buttons and window resizing. </li>
-</ul>
-
-
-<h2 id="Build_150707">Build 150707</h2>
-<ul>
-	<li>This build changes the download procedure used within automatic updates.
-    ConEmu.exe (GUI) do not call WinInet functions anymore, instead it calls
-    the downloader tool (ConEmuC.exe is an only option at the moment).
-    This will eliminate accidental crashes of GUI after resume from sleep. </li>
-	<li>The downloader itself has new options.
-	<ul>
-        <li>If user omit dst file name - try to get it from Url. </li>
-        <li>If "-" was specified as dst file name or output is redirected - just write contents to stdout. </li>
-        <li>New switch ‘-agent &lt;name&gt;’ was implemented. </li>
-    </ul>
-    </li>
-</ul>
-
-
-<h2 id="Build_150705">Build 150705</h2>
-<ul>
-	<li>Script <code>ConEmu/GitShowBranch.cmd</code> was improved. </li>
-	<li>Highlight & goto was broken at least for powershell scripts (c8c386a regression).
-    Only file name (path) was highlighted without following line number. </li>
-	<li>Highlight & goto detector was failed if mouse was before first backslash of the path. </li>
-	<li>gh#205: TabBar was not shown on startup in some monitor configurations (bacc66d regression). </li>
-</ul>
-
-
-<h2 id="Build_150701">Build 150701</h2>
-<ul>
-	<li>Add optional '/Silent' switch to suppress environment exporting messages.
-		<pre>ConEmuC [/SILENT] /EXPORT[=CON|GUI|ALL] [Var1 [Var2 [...]]]</pre>
-    </li>
-	<li>gh#193: Fix wrong condition: ‘Warn if MacType hookers are loaded’. </li>
-	<li>Omit ConEmuC export variables message in GitShowBranch.cmd. </li>
-	<li>gh#174: Let paste to all ‘grouped input’ consoles at once. </li>
-	<li>Show actual hotkey instead of default Ctrl+BackSpace in Settings. </li>
-	<li>Vert/Horz text cursor was displayed in wrong position especially on DBCS systems. </li>
-	<li>Ctrl+BackSpace feature was not working on DBCS systems. </li>
-	<li>Redirect chocolatey downloads to github. </li>
-	<li>gh#204: ConEmu hung on startup in some cases while initializing default tasks. </li>
-</ul>
-
-
-<h2 id="Build_150629">Build 150629</h2>
-<ul>
-	<li>Attach (Win+G) was not succeeded if ConEmu has different bitness. </li>
-	<li>Grab palette from Win+G attached consoles (Vista+) and create new
-    if matching one was not found. These palettes ‘#Attached:XX’ are not
-    saved automatically, but will be when user presses ‘Save settings’ button
-    in the settings dialog. </li>
-	<li>gh#193: Show hookers warning once per day. </li>
-	<li>Show real names for ‘Win+Number’ and ‘Win+Arrows’ on the Controls page. </li>
-	<li>Search for static text control in the Settings dialog was failed. </li>
-	<li>Issue 1977: Don't change RealConsole height on tabs auto-show/hide,
-    resize ConEmu window height instead. </li>
-	<li>Add some urls to ConEmu.nuspec (chocolatey). </li>
-	<li>When tabs are auto shown icon was not loaded for the first tab. </li>
-	<li>Environment variables export was improved (some internal fixes). </li>
-</ul>
 
 <h2 id="Build_150621">Build 150621</h2>
 <ul>

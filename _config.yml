@@ -31,6 +31,12 @@ gems:
   - jekyll-redirect-from
 
 
+# How many news (builds) show per page
+paginate: 10
+paginate_path: "/blog/page:num/"
+#excerpt_separator: "\n---\n"
+excerpt_separator: ""
+
 # ### Page defaults ###
 
 defaults:
@@ -74,3 +80,15 @@ defaults:
       toctitle: "Назад к оглавлению"
       suggedit: "Предложить правку"
   -
+    scope:
+      type: "posts"
+    values:
+      category: "blog"
+      isroot: false
+      layout: "root"
+      title: "ConEmu News"
+      site_label: "Windows terminal"
+      docfolder: /en
+      pagelang: en
+      toctitle: "Back to the table of contents"
+      suggedit: "Suggest better edit"

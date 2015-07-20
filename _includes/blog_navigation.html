@@ -1,0 +1,15 @@
+<div class="post_navigation">{% for post in site.posts %}{% if post.url == page.url %}
+<span>{% if forloop.first == false %}
+<a href="{{ prev_post.url }}">{{prev_post.title}}</a>
+{% else %}
+The newest build
+{% endif %}</span>
+<span> | </span>{% comment %}<span> [ {{ forloop.index }} or {{ forloop.length }} ] </span>{% endcomment %}
+<span>{% if forloop.last == false %}
+<a href="{{ site.posts[forloop.index].url }}">{{site.posts[forloop.index].title}}</a>
+{% else %}
+The oldest build
+{% endif %}</span>
+{% break %}
+{% endif %}{% assign prev_post = post %}{% endfor %}
+</div>
