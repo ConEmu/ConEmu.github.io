@@ -17,6 +17,26 @@ ConEmu has several required files (`exe` and `dll`) for normal operation.
 This page describes possible variants of files layouts.
 
 
+<h2 id="Required_files"> Required files </h2>
+
+ConEmu distro contains several ‘parts’.
+
+* Graphical interface (32bit or 64bit): `ConEmu.exe` or `ConEmu64.exe`;
+* 32bit console services: `ConEmuC.exe`, `ConEmuHk.dll`, `ConEmuCD.dll`;
+* 64bit console services: `ConEmuC64.exe`, `ConEmuHk64.dll`, `ConEmuCD64.dll`;
+* [Far Manager](FarManager.html) plugins are located in the `plugins` folder and are required for Far's users only.
+
+**Note**, both ‘32bit console services’ **and** ‘64bit console services’ **are required**
+for proper functioning on 64bit OS!
+Regardless of which bitness of graphical interface you are using!
+
+The reason is simple and obvious. If you have only one bitness of console services
+you will not be able to run application of this bitness in ConEmu. At all!
+Do you really think you'll never run this bitness?
+You will waste much more nerves, energy and time when you face
+disability to run something somedays.
+
+
 <h2 id="Standard_structure"> Standard structure </h2>
 
 | File | Description |
