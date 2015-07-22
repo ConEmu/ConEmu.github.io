@@ -1,7 +1,7 @@
 ---
 title: "ConEmu | Working with touchscreen"
 
-description: "Using ConEmu on TabletPC, gestures and taps."
+description: "If you have touch-sensitive screen, you may use ‘taps’ and ‘gestures’ in ConEmu-Maximus5"
 
 breadcrumbs:
  - url: TableOfContents.html#controls
@@ -16,7 +16,7 @@ otherlang:
 
 If you have touch-sensitive screen, you may use ‘taps’ and ‘gestures’ in ConEmu-Maximus5.
 
-[Far Manager](FarManager.html) users have [longer](#FarManager) gesture list.
+[Far Manager](FarManager.html) users may use [extended](#FarManager) gesture list.
 
 This article describes Windows 8 gestures.
 

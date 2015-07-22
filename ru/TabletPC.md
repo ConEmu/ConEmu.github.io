@@ -1,7 +1,7 @@
 ---
 title: "ConEmu | Работа с тачскрином"
 
-description: "Использование жестов и тапов для работы с ConEmu"
+description: "Если у вас сенсорный экран, то в ConEmu-Maximus5 можно использовать «жесты» и «тапы»"
 
 breadcrumbs:
  - url: TableOfContents.html#controls
