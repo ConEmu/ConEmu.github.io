@@ -20,6 +20,12 @@ h1_content: "What is the difference between ConEmu versions? <br/>
 breadcrumbs:
  - url: TableOfContents.html#conemu
    title: ConEmu
+
+readalso:
+ - url: ConEmuFolders.html
+   title: "Installation Folders Structure"
+ - url: Installation.md
+   title: "Installation"
 ---
 
 ## Contents

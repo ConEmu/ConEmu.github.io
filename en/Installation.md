@@ -12,6 +12,8 @@ breadcrumbs:
 readalso:
  - url: VersionComparison.html
    title: "Comparison: distros, bitness, stages"
+ - url: ConEmuFolders.html
+   title: "Installation Folders Structure"
  - url: AutoInstall.html
    title: "Automate your box installation"
  - url: SettingsFast.html
