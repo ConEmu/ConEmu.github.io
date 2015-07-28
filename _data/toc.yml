@@ -37,6 +37,10 @@
           rus: "Папки/файлы"
           url: "ConEmuFolders.html"
         -
+          eng: "Automatic update modes"
+          rus: "Автоматическое обновление"
+          url: "UpdateModes.html"
+        -
           eng: "Speedup update with installer"
           rus: "Скорость обновления инсталлятором"
           url: "UpdateSpeedup.html"

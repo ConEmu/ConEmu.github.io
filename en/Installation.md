@@ -16,6 +16,8 @@ readalso:
    title: "Installation Folders Structure"
  - url: AutoInstall.html
    title: "Automate your box installation"
+ - url: UpdateModes.html
+   title: "Automatic update modes"
  - url: SettingsFast.html
    title: "First start: Fast Configuration Dialog"
  - url: Settings.html

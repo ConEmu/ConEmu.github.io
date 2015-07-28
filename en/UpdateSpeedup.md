@@ -14,6 +14,8 @@ breadcrumbs:
 readalso:
  - url: SettingsUpdate.html
    title: "Settings › Update page"
+ - url: UpdateModes.html
+   title: "Automatic update modes"
  - url: VersionComparison.html
    title: "Comparison: distros, bitness, stages"
  - url: Installation.html
