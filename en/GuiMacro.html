@@ -29,50 +29,6 @@ GuiMacro may be triggered from many places, for example from command line or <a 
 <li><a href="#Gui_args">Run from shortcut (ConEmu and ConEmu64)</a></li>
 <li><a href="#Far_Manager_plugin">Far Manager plugin</a></li>
 <li><a href="#List_of_functions">List of functions</a></li>
-	<ul>
-	<li><a href="#About">About([&quot;&lt;Page&gt;&quot;])</a></li>
-	<li><a href="#Attach">Attach([&lt;PID&gt;[,&lt;Alternative&gt;]])</a></li>
-	<li><a href="#Break">Break([&lt;Event&gt;[,&lt;ProcessGroupId&gt;]])</a></li>
-	<li><a href="#Close">Close(&lt;What&gt;[,&lt;Flags&gt;])</a></li>
-	<li><a href="#Copy">Copy(&lt;What&gt;[,&lt;Format&gt;[,&quot;&lt;File&gt;&quot;]])</a></li>
-	<li><a href="#Recreate">Create(&lt;Action&gt;[,&lt;Confirm&gt;[,&lt;AsAdmin&gt;]])</a></li>
-	<li><a href="#FindEditor">FindEditor, FindViewer, FindFarWindow(&lt;WindowType&gt;,&quot;&lt;WindowTitle&gt;&quot;)</a></li>
-	<li><a href="#Flash">Flash(&lt;Cmd&gt;[,&lt;Flags&gt;[,&lt;Count&gt;]])</a></li>
-	<li><a href="#FontSetName">FontSetName(&quot;&lt;FontFaceName&gt;&quot;[,FontHeight[,FontWidth]])</a></li>
-	<li><a href="#FontSetSize">FontSetSize(Relative,N)</a></li>
-	<li><a href="#GetOption">GetOption(&quot;&lt;Name&gt;&quot;)</a></li>
-	<li><a href="#GroupInput">GroupInput([&lt;Cmd&gt;])</a></li>
-	<li><a href="#HighlightMouse">HighlightMouse(&lt;What&gt;,&lt;Act&gt;)</a></li>
-	<li><a href="#IsConEmu">IsConEmu</a></li>
-	<li><a href="#IsConsoleActive">IsConsoleActive</a></li>
-	<li><a href="#IsRealVisible">IsRealVisible</a></li>
-	<li><a href="#Keys">Keys(&quot;&lt;Combo1&gt;&quot;[,&quot;&lt;Combo2&gt;&quot;[,...]])</a></li>
-	<li><a href="#MsgBox">MsgBox(&quot;&lt;Text&gt;&quot;,&quot;&lt;Title&gt;&quot;,&lt;ButtonType&gt;)</a></li>
-	<li><a href="#Paste">Paste(&lt;Cmd&gt;[,&quot;&lt;Text&gt;&quot;[,&quot;&lt;Text2&gt;&quot;[...]]])</a></li>
-	<li><a href="#PasteFile">PasteFile(&lt;Cmd&gt;[,&quot;&lt;File&gt;&quot;[,&quot;&lt;CommentMark&gt;&quot;]])</a></li>
-	<li><a href="#Print">Print([&quot;&lt;Text&gt;&quot;[,&quot;&lt;Text2&gt;&quot;[...]]])</a></li>
-	<li><a href="#Progress">Progress(&lt;Type&gt;[,&lt;Value&gt;])</a></li>
-	<li><a href="#Recreate">Recreate(&lt;Action&gt;[,&lt;Confirm&gt;[,&lt;AsAdmin&gt;]])</a></li>
-	<li><a href="#Rename">Rename(&lt;Type&gt;,[&quot;&lt;Title&gt;&quot;])</a></li>
-	<li><a href="#Scroll">Scroll(&lt;Type&gt;,&lt;Direction&gt;,&lt;Count=1&gt;)</a></li>
-	<li><a href="#Select">Select(&lt;Type&gt;,&lt;DX&gt;,&lt;DY&gt;,&lt;HE&gt;)</a></li>
-	<li><a href="#SetDpi">SetDpi(&lt;DPI&gt;)</a></li>
-	<li><a href="#SetOption">SetOption(&quot;Check&quot;,&lt;ID&gt;,&lt;Value&gt;)</a></li>
-	<li><a href="#SetOptionName">SetOption(&quot;&lt;Name&gt;&quot;,&lt;Value&gt;[,&lt;IsRelative&gt;])</a></li>
-	<li><a href="#Settings">Settings([&lt;PageResourceId&gt;])</a></li>
-	<li><a href="#Shell">Shell(&quot;&lt;Verb&gt;&quot;,&quot;&lt;File&gt;&quot;[,&quot;&lt;Parms&gt;&quot;[,&quot;&lt;Dir&gt;&quot;[,&lt;ShowCmd&gt;]]])</a></li>
-	<li><a href="#Sleep">Sleep(&lt;Milliseconds&gt;)</a></li>
-	<li><a href="#Split">Split(&lt;Cmd&gt;,&lt;Horz&gt;,&lt;Vert&gt;)</a></li>
-	<li><a href="#Status">Status(0[,&lt;Parm&gt;]), Status(1[,&quot;&lt;Text&gt;&quot;])</a></li>
-	<li><a href="#Tab">Tab(&lt;Cmd&gt;[,&lt;Parm&gt;])</a></li>
-	<li><a href="#Task">Task(Index[,&quot;Dir&quot;]), Task(&quot;Name&quot;[,&quot;Dir&quot;])</a></li>
-	<li><a href="#Transparency">Transparency(&lt;Cmd&gt;,&lt;Value&gt;)</a></li>
-	<li><a href="#Wiki">Wiki([&quot;PageName&quot;])</a></li>
-	<li><a href="#WindowMode">WindowFullscreen, WindowMaximize, WindowMinimize</a></li>
-	<li><a href="#WindowMode">WindowMode([\&quot;&lt;Mode&gt;\&quot;])</a></li>
-	<li><a href="#Zoom">Zoom(N)</a></li>
-	</ul>
-
 <li><a href="#SetOptionExample">SetOption</a></li>
 <li><a href="#Examples">Examples</a></li>
 	<ul><li><a href="#Far3-Lua">Far3-Lua</a></li>
@@ -216,6 +172,50 @@ or returned via string result if you are using Far 3.0 with Lua. </p>
 <h2><a name="List_of_functions"></a>List of functions<a href="#List_of_functions" class="section_anchor"></a></h2>
 
 <!-- !!! when modifying - add same functions to &quot;src\ConEmu\About.h&quot; !!! -->
+<p><ul>
+	<li><a href="#About">About([&quot;&lt;Page&gt;&quot;])</a></li>
+	<li><a href="#Attach">Attach([&lt;PID&gt;[,&lt;Alternative&gt;]])</a></li>
+	<li><a href="#Break">Break([&lt;Event&gt;[,&lt;ProcessGroupId&gt;]])</a></li>
+	<li><a href="#Close">Close(&lt;What&gt;[,&lt;Flags&gt;])</a></li>
+	<li><a href="#Copy">Copy(&lt;What&gt;[,&lt;Format&gt;[,&quot;&lt;File&gt;&quot;]])</a></li>
+	<li><a href="#Recreate">Create(&lt;Action&gt;[,&lt;Confirm&gt;[,&lt;AsAdmin&gt;]])</a></li>
+	<li><a href="#FindEditor">FindEditor, FindViewer, FindFarWindow(&lt;WindowType&gt;,&quot;&lt;WindowTitle&gt;&quot;)</a></li>
+	<li><a href="#Flash">Flash(&lt;Cmd&gt;[,&lt;Flags&gt;[,&lt;Count&gt;]])</a></li>
+	<li><a href="#FontSetName">FontSetName(&quot;&lt;FontFaceName&gt;&quot;[,FontHeight[,FontWidth]])</a></li>
+	<li><a href="#FontSetSize">FontSetSize(Relative,N)</a></li>
+	<li><a href="#GetOption">GetOption(&quot;&lt;Name&gt;&quot;)</a></li>
+	<li><a href="#GroupInput">GroupInput([&lt;Cmd&gt;])</a></li>
+	<li><a href="#HighlightMouse">HighlightMouse(&lt;What&gt;,&lt;Act&gt;)</a></li>
+	<li><a href="#IsConEmu">IsConEmu</a></li>
+	<li><a href="#IsConsoleActive">IsConsoleActive</a></li>
+	<li><a href="#IsRealVisible">IsRealVisible</a></li>
+	<li><a href="#Keys">Keys(&quot;&lt;Combo1&gt;&quot;[,&quot;&lt;Combo2&gt;&quot;[,...]])</a></li>
+	<li><a href="#MsgBox">MsgBox(&quot;&lt;Text&gt;&quot;,&quot;&lt;Title&gt;&quot;,&lt;ButtonType&gt;)</a></li>
+	<li><a href="#Paste">Paste(&lt;Cmd&gt;[,&quot;&lt;Text&gt;&quot;[,&quot;&lt;Text2&gt;&quot;[...]]])</a></li>
+	<li><a href="#PasteFile">PasteFile(&lt;Cmd&gt;[,&quot;&lt;File&gt;&quot;[,&quot;&lt;CommentMark&gt;&quot;]])</a></li>
+	<li><a href="#Print">Print([&quot;&lt;Text&gt;&quot;[,&quot;&lt;Text2&gt;&quot;[...]]])</a></li>
+	<li><a href="#Progress">Progress(&lt;Type&gt;[,&lt;Value&gt;])</a></li>
+	<li><a href="#Recreate">Recreate(&lt;Action&gt;[,&lt;Confirm&gt;[,&lt;AsAdmin&gt;]])</a></li>
+	<li><a href="#Rename">Rename(&lt;Type&gt;,[&quot;&lt;Title&gt;&quot;])</a></li>
+	<li><a href="#Scroll">Scroll(&lt;Type&gt;,&lt;Direction&gt;,&lt;Count=1&gt;)</a></li>
+	<li><a href="#Select">Select(&lt;Type&gt;,&lt;DX&gt;,&lt;DY&gt;,&lt;HE&gt;)</a></li>
+	<li><a href="#SetDpi">SetDpi(&lt;DPI&gt;)</a></li>
+	<li><a href="#SetOption">SetOption(&quot;Check&quot;,&lt;ID&gt;,&lt;Value&gt;)</a></li>
+	<li><a href="#SetOptionName">SetOption(&quot;&lt;Name&gt;&quot;,&lt;Value&gt;[,&lt;IsRelative&gt;])</a></li>
+	<li><a href="#Settings">Settings([&lt;PageResourceId&gt;])</a></li>
+	<li><a href="#Shell">Shell(&quot;&lt;Verb&gt;&quot;,&quot;&lt;File&gt;&quot;[,&quot;&lt;Parms&gt;&quot;[,&quot;&lt;Dir&gt;&quot;[,&lt;ShowCmd&gt;]]])</a></li>
+	<li><a href="#Sleep">Sleep(&lt;Milliseconds&gt;)</a></li>
+	<li><a href="#Split">Split(&lt;Cmd&gt;,&lt;Horz&gt;,&lt;Vert&gt;)</a></li>
+	<li><a href="#Status">Status(0[,&lt;Parm&gt;]), Status(1[,&quot;&lt;Text&gt;&quot;])</a></li>
+	<li><a href="#Tab">Tab(&lt;Cmd&gt;[,&lt;Parm&gt;])</a></li>
+	<li><a href="#Task">Task(Index[,&quot;Dir&quot;]), Task(&quot;Name&quot;[,&quot;Dir&quot;])</a></li>
+	<li><a href="#Transparency">Transparency(&lt;Cmd&gt;,&lt;Value&gt;)</a></li>
+	<li><a href="#Wiki">Wiki([&quot;PageName&quot;])</a></li>
+	<li><a href="#WindowMode">WindowFullscreen, WindowMaximize, WindowMinimize</a></li>
+	<li><a href="#WindowMode">WindowMode([\&quot;&lt;Mode&gt;\&quot;])</a></li>
+	<li><a href="#Zoom">Zoom(N)</a></li>
+</ul></p>
+
 <div>
 <!-- ***************** List of functions ***************** -->
 
