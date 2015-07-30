@@ -28,4 +28,4 @@ You may pop up tab menu in several ways:
 * by pressing Apps+Space.
 
 Also, active tab menu items are accessible from the [system menu](SystemMenu.html)
-under the ‘Active console’ menu item.
+under the â€˜Active consoleâ€™ menu item.
