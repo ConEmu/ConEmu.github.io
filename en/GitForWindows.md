@@ -16,19 +16,11 @@ readalso:
 
 # Using Git for Windows
 
-## cygwin_exception in less.exe
+Native and full-featured set of [Git SCM](http://git-scm.com/) tools.
 
-Just updated my git to `PortableGit-2.3.5.8-dev-preview-32-bit.7z.exe` and bumped into strange exception.
+* [Version 2.x.x](https://git-for-windows.github.io/)
+* [Version 1.9.5](https://msysgit.github.io/)
 
-~~~
-2 [main] less 3872 cygwin_exception::open_stackdumpfile: Dumping stack trace to less.exe.stackdump
-~~~
-
-The exception actually happens at `msys-ncursesw6.dll!664465b1`.
-
-After some investigations found how to fix that.
-The problem was in `TERM` environment variable, it was set to `msys`.
-After removing that variable (clearing it) git's less begins to work normally.
 
 
 ## My personal preferences
@@ -48,3 +40,20 @@ to simplify call of `far.exe`.
 ~~~
 git config --global core.editor "farrun -e1:1"
 ~~~
+
+
+
+## cygwin_exception in less.exe
+
+When updated my git to `PortableGit-2.3.5.8-dev-preview-32-bit.7z.exe` (obsolete build),
+bumped into strange exception.
+
+~~~
+2 [main] less 3872 cygwin_exception::open_stackdumpfile: Dumping stack trace to less.exe.stackdump
+~~~
+
+The exception actually happens at `msys-ncursesw6.dll!664465b1`.
+
+After some investigations found how to fix that.
+The problem was in `TERM` environment variable, it was set to `msys`.
+After removing that variable (clearing it) git's less begins to work normally.
