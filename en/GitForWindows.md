@@ -29,3 +29,22 @@ The exception actually happens at `msys-ncursesw6.dll!664465b1`.
 After some investigations found how to fix that.
 The problem was in `TERM` environment variable, it was set to `msys`.
 After removing that variable (clearing it) git's less begins to work normally.
+
+
+## My personal preferences
+
+Fix for [Solarized color scheme](SolarizedColors.html).
+
+~~~
+git config --global color.diff.new "green bold"
+git config --global color.status.updated "green bold"
+git config --global color.branch.current "green bold"
+~~~
+
+Using Far Manager as editor (commit texts). I'm using
+[FarRun](https://github.com/Maximus5/FarPlugins/tree/master/FarRun/Release)
+to simplify call of `far.exe`.
+
+~~~
+git config --global core.editor "farrun -e1:1"
+~~~
