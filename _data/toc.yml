@@ -351,9 +351,9 @@
       rus: "ConEmu Inside"
       url: "InsideParent.html"
     -
-      eng: "Bash completion in cmd.exe"
-      rus: "Автодополнение в cmd.exe"
-      url: "ConEmuClink.html"
+      eng: "Better Tab-completion"
+      rus: "Улучшение автодополнения"
+      url: "TabCompletion.html"
     -
       eng: "ConEmu Environment variables"
       rus: "Переменные окружения ConEmu"
