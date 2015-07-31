@@ -20,7 +20,7 @@ The ConEmu's disclaimer sais: ‘ConEmu is not a shell, so it does not provide
 That means user have to ‘upgrade’ the shell itself to improve its behavior.
 
 * [cmd.exe](#ConEmu_and_clink)
-* [powershell.exe](#PowerShell]
+* [powershell.exe](#PowerShell)
 * [zsh.exe](#zsh)
 
 
