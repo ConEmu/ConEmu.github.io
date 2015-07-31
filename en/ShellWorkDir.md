@@ -66,6 +66,13 @@ For example, add to your `.bashrc`
 PROMPT_COMMAND='ConEmuC -StoreCWD'
 ~~~
 
+<h3 id="zsh"> zsh </h3>
+
+~~~
+prmptcmd() { eval "$PROMPT_COMMAND" }
+precmd_functions=(prmptcmd)
+PROMPT_COMMAND='ConEmuC -StoreCWD'
+~~~
 
 <h3 id="PowerShell"> PowerShell </h3>
 
