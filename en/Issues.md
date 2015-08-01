@@ -32,7 +32,7 @@ Here are links to places where you may ask questions, report problems, suggest n
 ## View existing issues
 
 * [Issue tracker on GitHub](https://github.com/Maximus5/ConEmu/issues)
-* [Old issues, deprecated](http://code.google.com/p/conemu-maximus5/issues/list?can=1&q=&sort=-id)
+* [Old issues, deprecated](https://github.com/Maximus5/conemu-old-issues/issues?utf8=%E2%9C%93&q=)
 
 
 ## How to use bugtracker
