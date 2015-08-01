@@ -47,7 +47,8 @@ But user has to [configure shells they are using](What_you_shall_do_to_get_CD_su
 <h2 id="What_you_shall_do_to_get_CD_support"> What you shall do to get **CD** support </h2>
 
 * [cmd and tcc](#cmd_and_tcc)
-* [bash and other cygwin shells](#bash_and_other_cygwin_shells)
+* [bash and some other cygwin shells](#bash_and_other_cygwin_shells)
+* [zsh](#zsh)
 * [PowerShell](#PowerShell)
 
 <h3 id="cmd_and_tcc"> cmd and tcc </h3>
@@ -56,7 +57,7 @@ Just enable [Inject ConEmuHk](ConEmuHk.html) feature.
 ConEmu will maintain **CD** for you automatically.
 
 
-<h3 id="bash_and_other_cygwin_shells"> bash and other cygwin shells </h3>
+<h3 id="bash_and_other_cygwin_shells"> bash and some other cygwin shells </h3>
 
 You need to tell bash to run `ConEmuC -StoreCWD` command
 each time its prompt executed.
@@ -66,6 +67,7 @@ For example, add to your `.bashrc`
 PROMPT_COMMAND='ConEmuC -StoreCWD'
 ~~~
 
+
 <h3 id="zsh"> zsh </h3>
 
 ~~~
@@ -73,6 +75,7 @@ prmptcmd() { eval "$PROMPT_COMMAND" }
 precmd_functions=(prmptcmd)
 PROMPT_COMMAND='ConEmuC -StoreCWD'
 ~~~
+
 
 <h3 id="PowerShell"> PowerShell </h3>
 
