@@ -300,22 +300,54 @@ System colors (Standard console 16 colors):
 
 
 
-<h3 id="Compiler_error_highlighting"> Подсветка ошибок компиляции </h3>
+<h3 id="Compiler_error_highlighting">
+Подсветка ошибок компиляции
+</h3>
+
+#### Подсветка вывода Microsoft NMAKE
 
 ~~~
-nmake | sed -e "s/.* : \bERR.*/^[[1;31;40m&^[[0m/i" -e "s/.* : \bWARN.*/^[[1;36;40m&^[[0m/i"
+nmake | sed -e "s/.* : \bERR.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.* : \bWARN.*/\x1B[1;36;40m&\x1B[0m/i"
+
+type "Errors.log" | sed -e "s/.* : \bERR.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.* : \bWARN.*/\x1B[1;36;40m&\x1B[0m/i"
 ~~~
 
-или
+**Warning** 
+
+#### Подсветка вывода MinGW MAKE errors, warnings and notes
+
+Пример ниже показывает, как вызывается сборка ConEmu в GCC.
+Обратите внимание на `2> Errors.log` при вызове make,
+это потому что вывод ошибок идет на `STDERR`, а не на `STDOUT`. 
 
 ~~~
-type "Errors.log" | sed -e "s/.* : \bERR.*/^[[1;31;40m&^[[0m/i" -e "s/.* : \bWARN.*/^[[1;36;40m&^[[0m/i"
+mingw32-make.exe -f makefile_gcc DIRBIT=64 2> Errors.log
+type "Errors.log" | sed -e "s/.*: \berror\b:.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.*: \bwarning\b: .*/\x1B[1;36;40m&\x1B[0m/i" -e "s/.*: \bnote\b: .*/\x1B[1;32;40m&\x1B[0m/i"
 ~~~
 
-**Warning** Перед использованием `^[` нужно заменить на ESC код (символ с ASCII кодом \x1B).
+#### Некоторые версии SED требуют использования «реального» символа ESC
+
+Иногда может потребоваться заменить `\x1B` на реальный ESC символ
+(ASCII код \x1B).
+Можно использовать `SetEscChar.cmd` в bat-файлах, как в примере.
+
+~~~
+call SetEscChar.cmd
+mingw32-make.exe -f makefile_gcc DIRBIT=64 2> Errors.log
+type "Errors.log" | sed -e "s/.*: \berror\b:.*/%ESC%[1;31;40m&%ESC%[0m/i" -e "s/.*: \bwarning\b: .*/%ESC%[1;36;40m&%ESC%[0m/i" -e "s/.*: \bnote\b: .*/%ESC%[1;32;40m&%ESC%[0m/i"
+~~~
+
+Или для bash-скриптов.
+
+~~~
+esc=$(printf '\033')
+cat "Errors.log" | sed -e "s/.*: \berror\b:.*/${esc}[1;31;40m&${esc}[0m/i" -e "s/.*: \bwarning\b: .*/${esc}[1;36;40m&${esc}[0m/i" -e "s/.*: \bnote\b: .*/${esc}[1;32;40m&${esc}[0m/i"
+~~~
 
 
-<h3 id="Text_Progressbar_in_cmd-files"> Text Progressbar in cmd-files </h3>
+<h3 id="Text_Progressbar_in_cmd-files">
+Text Progressbar in cmd-files
+</h3>
 
 From googlecode Issue#554
 [test_bar.cmd](/misc/test_bar.cmd]

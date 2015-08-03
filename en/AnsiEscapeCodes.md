@@ -296,22 +296,52 @@ You can view and scroll last output switching into alternative mode - `Win+A`.
 **Note** Many arts was written for 80-chars console width.
 
 
-<h3 id="Compiler_error_highlighting">Compiler error highlighting</h3>
+<h3 id="Compiler_error_highlighting">
+Compiler error highlighting
+</h3>
+
+#### To highlight Microsoft NMAKE errors and warnings
 
 ~~~
-nmake | sed -e "s/.* : \bERR.*/^[[1;31;40m&^[[0m/i" -e "s/.* : \bWARN.*/^[[1;36;40m&^[[0m/i"
+nmake | sed -e "s/.* : \bERR.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.* : \bWARN.*/\x1B[1;36;40m&\x1B[0m/i"
+
+type "Errors.log" | sed -e "s/.* : \bERR.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.* : \bWARN.*/\x1B[1;36;40m&\x1B[0m/i"
 ~~~
 
-or
+#### To highlight MinGW MAKE errors, warnings and notes
+
+The example below from scripts used to build ConEmu with GCC.
+Take note of `2> Errors.log` while calling make, this is because
+all errors and warnings are printed to `STDERR` but `STDOUT`.
 
 ~~~
-type "Errors.log" | sed -e "s/.* : \bERR.*/^[[1;31;40m&^[[0m/i" -e "s/.* : \bWARN.*/^[[1;36;40m&^[[0m/i"
+mingw32-make.exe -f makefile_gcc DIRBIT=64 2> Errors.log
+type "Errors.log" | sed -e "s/.*: \berror\b:.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.*: \bwarning\b: .*/\x1B[1;36;40m&\x1B[0m/i" -e "s/.*: \bnote\b: .*/\x1B[1;32;40m&\x1B[0m/i"
 ~~~
 
-**Warning** Before execution replace `^[` with real ESC character (symbol with ASCII code of \x1B).
+#### Some installations require ‘real’ ESC character
+
+On some installations you have to replace `\x1B` with real ESC character
+(symbol with ASCII code of \x1B).
+You may use `SetEscChar.cmd` in bat-files as in following example.
+
+~~~
+call SetEscChar.cmd
+mingw32-make.exe -f makefile_gcc DIRBIT=64 2> Errors.log
+type "Errors.log" | sed -e "s/.*: \berror\b:.*/%ESC%[1;31;40m&%ESC%[0m/i" -e "s/.*: \bwarning\b: .*/%ESC%[1;36;40m&%ESC%[0m/i" -e "s/.*: \bnote\b: .*/%ESC%[1;32;40m&%ESC%[0m/i"
+~~~
+
+Or from bash-scripts.
+
+~~~
+esc=$(printf '\033')
+cat "Errors.log" | sed -e "s/.*: \berror\b:.*/${esc}[1;31;40m&${esc}[0m/i" -e "s/.*: \bwarning\b: .*/${esc}[1;36;40m&${esc}[0m/i" -e "s/.*: \bnote\b: .*/${esc}[1;32;40m&${esc}[0m/i"
+~~~
 
 
-<h3 id="Text_Progressbar_in_cmd-files"> Text Progressbar in cmd-files </h3>
+<h3 id="Text_Progressbar_in_cmd-files">
+Text Progressbar in cmd-files
+</h3>
 
 From googlecode Issue#554
 [test_bar.cmd](/misc/test_bar.cmd]
