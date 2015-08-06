@@ -223,6 +223,28 @@ table.no-border tr, table.no-border th, table.no-border td {
   padding: 0;
 }
 
+@media (max-width: 980px) {
+  /* reflow tables to ensure all columns will be visible on narrow devices */
+  table, thead, tbody, tr, td {
+    display: block;
+  }
+  thead tr th {
+    border: 0;
+  }
+  td {
+    border: 0;
+    border-top: 1px dotted;
+  }
+  th {
+    padding-right: 2em;
+  }
+  td:first-child {
+    font-weight: bold;
+    border: 0;
+  }
+}
+
+
 /* Middle
 -----------------------------------------------------------------------------*/
 .middle {
