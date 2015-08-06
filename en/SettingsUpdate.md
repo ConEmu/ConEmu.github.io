@@ -16,11 +16,15 @@ title: "ConEmu | Settings › Update page"
 
 ## Update settings
 
-**Check on startup** 
+
+
+**Startup** *(Do automatic check on)* 
 
 **Hourly** 
 
-**Show TSA balloon** 
+**TSA notification only** 
+
+**Preferred release type**
 
 
 * **Stable**
@@ -28,11 +32,11 @@ title: "ConEmu | Settings › Update page"
 * **Latest**
 
 
+**External downloader** 
 
 
-## Use proxy
 
-
+**Proxy** 
 
 **Server:port** 
 
@@ -40,19 +44,13 @@ title: "ConEmu | Settings › Update page"
 
 **Password** 
 
-
-
-## Download path
-
-
-
 **Leave downloaded packages** 
 
 
 
-## Update command (%1 - package, %2 - ConEmu.exe folder, %3 - x86/x64, %4 - PID)
 
 
+**Update command (%1 - package, %2 - ConEmu.exe folder, %3 - x86/x64, %4 - PID)**
 
 
 * **Installer (ConEmuSetup.exe /p:%s)**
@@ -68,17 +66,9 @@ title: "ConEmu | Settings › Update page"
 
 
 
+**Post-update command, don't forget ‘call’ for batches** 
 
-
-## Post-update command, don't forget ‘call’ for batches
-
-
-
-
-
-## ConEmu latest version location info
-
-
+**ConEmu latest version location info** 
 
 
 
