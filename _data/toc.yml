@@ -566,6 +566,10 @@
       rus: "Bad issues"
       url: "BadIssue.html"
     -
+      eng: "Search before post"
+      rus: "Используйте поиск"
+      url: "SearchBeforePost.html"
+    -
       eng: "CrashDump"
       rus: "CrashDump"
       url: "CrashDump.html"

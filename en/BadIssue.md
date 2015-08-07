@@ -9,6 +9,8 @@ breadcrumbs:
    title: Feedback
 
 readalso:
+ - url: SearchBeforePost.html
+   title: Search before post
  - url: OldBuild.html
    title: Old Builds
 ---
