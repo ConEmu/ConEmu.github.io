@@ -10,5 +10,5 @@ description: "ConEmu About dialog is not only version information,
 There are several ways to show ‘About’ dialog.
 
 * [Hotkey](KeyboardShortcuts.html#Non_configurable_hotkeys) `Win+Alt+A`.
-* [System menu](SystemMenu.html)'s Help -> About.
+* [System menu](SystemMenu.html)'s Help \ About.
 * [Command line switch](ConEmuArgs.html) `ConEmu -?`.
