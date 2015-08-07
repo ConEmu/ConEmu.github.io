@@ -57,6 +57,10 @@
       rus: "Зублуждения"
       url: "Delusions.html"
     -
+      eng: "About dialog"
+      rus: "About - диалог «О Программе»"
+      url: "AboutDialog.html"
+    -
       eng: "FAQ"
       rus: "FAQ"
       url: "ConEmuFAQ.html"
