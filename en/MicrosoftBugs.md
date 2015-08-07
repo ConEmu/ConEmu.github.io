@@ -2,6 +2,10 @@
 redirect_from: /ru/MicrosoftBugs.html
 
 title: "ConEmu | Some Windows Bugs and Workarounds"
+
+breadcrumbs:
+ - url: TableOfContents.html#feedback
+   title: Feedback
 ---
 
 # Some Windows Bugs and Workarounds

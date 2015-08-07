@@ -13,6 +13,10 @@ breadcrumbs:
 readalso:
  - url: Installation.html
    title: Installation
+ - url: UpdateModes.html
+   title: Automatic update modes
+ - url: BadIssue.html
+   title: Bad issues has no value
 ---
 
 # Update your installation
