@@ -7,16 +7,16 @@ title: "ConEmu | Drag & Drop"
 
 # Shell style drag & drop
 
-ConEmu-Maximus5 supports ‘drag & drop’ of files and folders
+ConEmu-Maximus5 supports â€˜drag & dropâ€™ of files and folders
 between ConEmu and other applications supporting this feature.
 
 If you use [Far Manager](FarManager.html) you will be able to
 drag files and folders from Far's panels outside and drop them
 into panels. Modificators `Ctrl`, `Shift` and `Alt` forces
-‘Copy’, ‘Move’ and ‘Link’ actions respectively.
+â€˜Copyâ€™, â€˜Moveâ€™ and â€˜Linkâ€™ actions respectively.
 
-When you use other shells (‘cmd’, ‘bash’, ‘powershell’ ...)
-ConEmu will support only ‘drop’.
+When you use other shells (â€˜cmdâ€™, â€˜bashâ€™, â€˜powershellâ€™ ...)
+ConEmu will support only â€˜dropâ€™.
 So, when you drop files or folders, they paths will be just
 pasted into console as simple text.
 
