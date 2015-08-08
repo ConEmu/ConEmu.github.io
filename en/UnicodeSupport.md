@@ -176,3 +176,11 @@ cmd /c '%ConEmuBaseDir%\Addons\utf-8-test.cmd'
 ~~~
 
 ![‘utf-8-test.cmd’ output](/img/ConEmuUnicodeTest2.png)
+
+
+
+<h2 id="some-hints"> Some hints </h2>
+
+For Python 2 and 3 you may use
+[win-unicode-console](http://stackoverflow.com/questions/31846091/python-unicode-console-support-under-windows#comment51688033_31846091)
+
