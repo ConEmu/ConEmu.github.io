@@ -4,6 +4,7 @@ redirect_from:
  - /ru/ConEmu_Clink.html
  - /en/ConEmuClink.html
  - /ru/ConEmuClink.html
+ - /ru/TabCompletion.html
 
 title: "ConEmu | Better tab-completion in Windows consoles"
 
