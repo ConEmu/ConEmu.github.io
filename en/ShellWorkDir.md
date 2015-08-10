@@ -40,7 +40,7 @@ However, since ConEmu's build 140818 you got full support of ‘**Current direct
 * At last you may use `%CD%` variable with [Shell](GuiMacro.html#List_of_functions)
   macro function in the `Dir` parameter.
   
-But user has to [configure shells they are using](What_you_shall_do_to_get_CD_support).
+But user has to [configure shells they are using](#What_you_shall_do_to_get_CD_support).
 
 
 
