@@ -644,6 +644,10 @@
       rus: "KeyEvents"
       url: "KeyEvents.html"
     -
+      eng: "High-DPI support"
+      rus: "High-DPI"
+      url: "DpiAware.html"
+    -
       eng: "CPU and I/O consumption"
       rus: "Загрузка CPU и ввод/вывод"
       url: "CpuIoConsumption.html"
