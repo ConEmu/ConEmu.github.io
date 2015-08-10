@@ -18,7 +18,7 @@ readalso:
 
 <h2 id="Softpedia_guarantee"> Softpedia guarantee </h2>
 
-<a href="http://www.softpedia.com/get/System/System-Miscellaneous/ConEmu.shtml" rel="nofollow"><img border="0" src="http://s1.softpedia-static.com/base_img/softpedia_free_award_f.gif"></img></a>
+<a href="http://www.softpedia.com/get/System/System-Miscellaneous/ConEmu.shtml" rel="nofollow"><img border="0" src="http://s1.softpedia-static.com/base_img/softpedia_free_award_f.gif"/></a>
 
 
 <h2 id="Related_issues"> Related issues </h2>
