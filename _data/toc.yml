@@ -586,6 +586,10 @@
       rus: "FalseAlarms"
       url: "FalseAlarms.html"
     -
+      eng: "Zone identifier"
+      rus: "Zone identifier"
+      url: "ZoneId.html"
+    -
       eng: "Log files"
       rus: "Log файлы"
       url: "LogFiles.html"
