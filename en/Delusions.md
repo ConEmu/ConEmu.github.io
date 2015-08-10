@@ -23,7 +23,13 @@ otherlang:
 
 # Console-related delusions
 
-## To treat PuTTY, mintty and others as ‘console applications’.
+* [Not a console application](#delusion-1)
+* [Not a console window](#delusion-2)
+
+
+<h2 id="delusion-1">
+To treat PuTTY, mintty and others as ‘console applications’.
+</h2>
 
 Simplifying, the ‘console application’ is an executable which
 interacts with user via data input/output (mainly text). ‘Console
@@ -51,7 +57,9 @@ terminal is working with display and keyabord but not any
 input/output streams. The only exception is logging specially
 configured in that exact terminal.
 
-## To name standard Windows console - ‘cmd.exe’.
+<h2 id="delusion-2">
+To name standard Windows console - ‘cmd.exe’.
+</h2>
 
 Windows has its own terminal (or ‘console window’) which is often
 erroneously called ‘cmd.exe’. Just press Win+R and run, for example,
