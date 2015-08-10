@@ -10,9 +10,9 @@ breadcrumbs:
 
 # Restart one of ConEmu's consoles
 
-You run [consoles](ConsoleApplication.md) in [tabs](TabBar.md) or [panes](SplitScreen.html),
+You run [consoles](ConsoleApplication.html) in [tabs](TabBar.html) or [panes](SplitScreen.html),
 and if you need to rerun (recreate) active console you may do this
-by hotkey (default is `Win`+`~` and you may choose any on [Keys & Macro page](SettingsHotkeys.md))
+by hotkey (default is `Win`+`~` and you may choose any on [Keys & Macro page](SettingsHotkeys.html))
 or from [tab popup menu](TabMenu.html) by ‘Restart...’ menu item.
 
 If you don't have [tab bar](TabBar.html) visible,
