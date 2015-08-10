@@ -24,7 +24,7 @@ breadcrumbs:
 readalso:
  - url: ConEmuFolders.html
    title: "Installation Folders Structure"
- - url: Installation.md
+ - url: Installation.html
    title: "Installation"
 ---
 
