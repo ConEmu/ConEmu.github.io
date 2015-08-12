@@ -26,5 +26,5 @@ Also, it can show all loaded dll-files in your process.
 
 ![Loaded dynamic libraries](/img/ProcessExplorer.png)
 
-BTW, [Far Manager](FarManager.html) plugin ‘Process list’
+BTW, [Far Manager](FarManager.html) plugin â€˜Process listâ€™
 can do same things.
