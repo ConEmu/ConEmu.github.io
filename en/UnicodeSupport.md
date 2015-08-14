@@ -157,7 +157,7 @@ has TrueType font selected in the console properties.
 This font may be configured from ConEmu's [Features setting page](SettingsFeatures.html)
 with button `...` on the right of ‘Show real console’.
 
-![ConEmu settings, RealConsole font](/img/SettingsMoreRealFont.png)
+![ConEmu settings, RealConsole font](/img/Settings-More-RealFont.png)
 
 
 
