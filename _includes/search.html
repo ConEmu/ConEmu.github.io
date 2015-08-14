@@ -13,7 +13,7 @@
 					var results = regex.exec( location.href );
 						if (results != null) {
 						var e = document.getElementById('search-field');
-						e.value = results[1];
+						e.value = results[1].replace(/\+/g, ' ');
 					}
 				};
 				</script>
