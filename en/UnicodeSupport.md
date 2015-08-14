@@ -29,7 +29,7 @@ if the console application (cmd, java, perl, powershell,
 bash and so on) can produce unicode output.
 
 
-<h2 id="utf-8"> UTF-8 </h2>
+<h2 id="utf-8"> UTF-8 (UTF8) </h2>
 
 On Windows, unlike Unix, the console itself is not a stream of
 ‘bytes’ but a spreadsheet of cells, each of which contains an UTF-16
@@ -51,6 +51,26 @@ able to output data using UTF-8. Refer to your application manual.
 chcp 65001 & cmd
 ~~~
 
+By the way, you may set UTF8 as default encoding for all consoles
+starting in ConEmu. You you **really** like to do that, go to
+[Settings / Environment](SettingsEnvironment.html) page
+and add following line:
+
+~~~
+chcp utf8
+~~~
+
+At last, there is an environment variable for ‘hacking’ purposes:
+[ConEmuDefaultCp](ConEmuEnvironment.html#ConEmuDefaultCp).
+You may use it if `chcp` is not suitable for some reasons.
+
+~~~
+set ConEmuDefaultCp=65001
+~~~
+
+**Note** [ConEmuHk](ConEmuHk.html) must be enabled.
+
+
 
 
 <h2 id="on-the-fly_conversion"> On-the-fly conversion </h2>
@@ -61,13 +81,16 @@ and your sources have some national encoding (Russian 1251 cp for example).
 Perl prints chunks using codepage 1252
 and I failed to find a simple way to force it using proper codepage.
 That why the environment variable
-[ConEmuCpCvt](ConEmuEnvironment.html) was created. Run the following
-to fix broken output.
+[ConEmuCpCvt](ConEmuEnvironment.html#ConEmuCpCvt) was created.
+Run the following to fix broken output.
 
 ~~~
 set ConEmuCpCvt=perl.exe:1252:1251
 git app -p
 ~~~
+
+**Note** [ConEmuHk](ConEmuHk.html) must be enabled.
+
 
 
 
