@@ -6,4 +6,15 @@
 						<div id="search-button-div"><input id="search-button" type="submit" value="Search"></div>
 					</form>
 				</div>
+				<script>
+				{
+					var regexS = "[\\?&]q=([^&#]*)";
+					var regex = new RegExp( regexS );
+					var results = regex.exec( location.href );
+						if (results != null) {
+						var e = document.getElementById('search-field');
+						e.value = results[1];
+					}
+				};
+				</script>
 			</div>
