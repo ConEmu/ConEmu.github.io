@@ -194,12 +194,38 @@ h1 {
 }
 
 .donatebox {
-  width: 300px;
+  width: 20em;
+  max-width: 90%;
   background-color: #fdf6e3;
   -webkit-box-shadow: 0 0 8px 3px #93a1a1;
   -moz-box-shadow: 0 0 8px 3px #93a1a1;
   box-shadow: 0 0 8px 3px #93a1a1;
   padding: .5em;
+  margin: 1em 0 1em 5px;
+  overflow: auto;
+}
+
+div.donate-Ylabel {
+  width: 12em;
+  margin-bottom: .2em;
+}
+
+div.donate-Yfield {
+  width: 18em;
+}
+
+div.donate-Yfield input {
+  margin-bottom: .5em;
+  width: 18em;
+}
+
+div.donate-Yradio1, div.donate-Yradio2 {
+  width: 12em;
+  margin-right: .2em;
+}
+
+div.donate-Ybutton {
+  margin: .5em 0 .2em 0;
 }
 
 table, tr, th, td {
