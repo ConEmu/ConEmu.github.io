@@ -74,17 +74,5 @@ Well, submit your report with [MiniDump](MemoryDump.html) attached. All reports 
 
 <h3 id="How_to_create_required_dump"> How to create required dump </h3>
 
-Run in your cmd prompt started in ConEmu tab (example shows `ls.exe` hooking):
-
-~~~
-set ConEmuReportExe=ls.exe
-ls
-~~~
-
-Message box must appears "ls.exe loaded". At this time, call
-ConEmu [System menu](SystemMenu.html) > Debug > Active process memory dump. Save the dump.
-
-Upload [MiniDump](MemoryDump.html) (full dump is not required) to [DropBox](DropBox.html)
-or send **Zipped** dump to developer.
-
-After pressing OK in "loaded" message box your error message expected.
+Description with examples:
+[CrashDump.html#How_to_create_required_dump](CrashDump.html#How_to_create_required_dump).
