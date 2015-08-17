@@ -26,7 +26,7 @@ readalso:
 * [Conemu getting removed by Norton antivirus as suspcious file](http://superuser.com/q/782279/139371)
 
 * [Issue 1343: FALSE Alarm - ConEmuC reported as trojan](https://github.com/Maximus5/conemu-old-issues/issues/1343)
-* [Issue 1119: Release ‘stable’ builds more frequently](href="https://github.com/Maximus5/conemu-old-issues/issues/1119)
+* [Issue 1119: Release ‘stable’ builds more frequently](https://github.com/Maximus5/conemu-old-issues/issues/1119)
 * [Issue 729: FALSE Alarm - Symantec reports trojan in setup file](https://github.com/Maximus5/conemu-old-issues/issues/729)
 * [Issue 712: FALSE Alarm - Symantec Endpoint Protection hissyfit](https://github.com/Maximus5/conemu-old-issues/issues/712)
 * [Issue 597: FALSE Alarm - Antivirus Avira found trojan virus inside package ConEmuSetup.xxxxxx.exe](https://github.com/Maximus5/conemu-old-issues/issues/597)
