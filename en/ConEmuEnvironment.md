@@ -82,7 +82,7 @@ csudo dism.exe /online /enable-feature /featurename:NetFX3 /All /Source:D:\sourc
 | **Name** | **Example** | **Description** |
 |:---------|:------------|:----------------|
 | `ConEmuSleepIndicator` | `TITLE`, `NUM` or `OFF` | Turns on monitoring feature of ‘Sleep in background’, when `ConEmuSleepIndicator=NUM` ConEmu will turn off NumLock when going sleep and turn on NumLock when full active back, when `ConEmuSleepIndicator=TITLE` - state will be shown in the TabBar or window title. |
-| `ConEmuReportExe` | `perl.exe` | Shows message box like ‘perl.exe loaded’ when `perl.exe` started inside ConEmu tab; option ‘Inject [ConEmuHk](ConEmuHk.html)’ must be enabled |
+| `ConEmuReportExe` | `perl.exe` | Shows message box like ‘perl.exe loaded’ when `perl.exe` started inside ConEmu tab; option ‘Inject [ConEmuHk](ConEmuHk.html)’ must be enabled. This may be used for [crash dump creation](CrashDump.html#How_to_create_required_dump). |
 
 
 <h2 id="Export_variables"> Export variables </h2>
