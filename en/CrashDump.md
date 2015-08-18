@@ -64,13 +64,13 @@ You have to set [environment variable](ConEmuEnvironment.html#Debug_purposed_var
 This may be done via:
 
 * [Settings / Environment page](SettingsEnvironment.html)
-        ~~~
-        set ConEmuReportExe=ls.exe
-        ~~~
+~~~
+set ConEmuReportExe=ls.exe
+~~~
 * [New console dialog](NewConsole.html). Example below sets `ConEmuReportExe` variable and starts `cmd.exe` as shell.
-        ~~~
-        set ConEmuReportExe=ls.exe & cmd.exe
-        ~~~
+~~~
+set ConEmuReportExe=ls.exe & cmd.exe
+~~~
 * In **some** shells (`cmd`, `tcc`, `far`) you may call `set` directly from prompt.
 
 Than, you may run you command from started [console](VirtualConsole.html):
