@@ -17,7 +17,7 @@ in the ‘Windows Registry’ and in the xml files (`ConEmu.xml` usually).
 By default, ConEmu uses `ConEmu.xml` on Windows XP or higher.
 Windows 2000 is limited to using Registry.
 
-* [ConEmu.xml search sequence](#ConEmu_.xml)
+* [ConEmu.xml search sequence](#search-sequence)
   * [Note for PortableApps.com format](#PortableApps-format)
 * [How to send your config to developer](#send-to-developer)
 

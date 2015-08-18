@@ -17,13 +17,13 @@ in the ‘Windows Registry’ and in the xml files (`ConEmu.xml` usually).
 By default, ConEmu uses `ConEmu.xml` on Windows XP or higher.
 Windows 2000 is limited to using Registry.
 
-* [Порядок поиска ConEmu.xml](#ConEmu_.xml)
+* [Порядок поиска ConEmu.xml](#search-sequence)
   * [Примечание для формата PortableApps.com](#PortableApps-format)
 * [Послать конфигурацию разработчику](#send-to-developer)
 
 
 
-<h2 id="ConEmu_.xml"> Порядок поиска ConEmu.xml </h2>
+<h2 id="search-sequence"> Порядок поиска ConEmu.xml </h2>
 
 Вы можете включить в ConEmu «портабельный» режим,
 в котором все настройки будут храниться в файле `ConEmu.xml`,
