@@ -116,7 +116,7 @@
     <loc>http://conemu.github.io/en/ConEmuEnvironment.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/ConEmuEnvironment.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/ConEmuEnvironment.html" />
-    <lastmod>2015-06-17</lastmod>
+    <lastmod>2015-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -200,7 +200,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/CrashDump.html</loc>
-    <lastmod>2015-08-08</lastmod>
+    <lastmod>2015-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/CygwinHeap.html</loc>
-    <lastmod>2015-06-17</lastmod>
+    <lastmod>2015-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -310,7 +310,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/FalseAlarms.html</loc>
-    <lastmod>2015-08-12</lastmod>
+    <lastmod>2015-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -442,7 +442,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/MemoryDump.html</loc>
-    <lastmod>2015-08-08</lastmod>
+    <lastmod>2015-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
