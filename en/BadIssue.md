@@ -127,12 +127,22 @@ but screenshot will not omit anything.
 
 
 
-<h2 id="LogFiles"> Log Files </h2>
+<h2 id="LogFiles"><a href="LogFiles.html">Log Files</a></h2>
 
 How to create log files is described thoroughly [here](LogFiles.html).
+
 In brief, you have to run `ConEmu -log`, reproduce the problem,
 **Zip** logs and upload them into [DropBox](DropBox.html) for example.
 Post your links to the issue.
+
+1. Please, don't post huge log files to issues comments!
+   A great deal of lines with debug information makes
+   your issue unintelligible. Moreover, your log files
+   will be trimmed most probably!
+2. Please, don't concatenate all files to single one!
+   Developer needs all files created by application,
+   they are written simultaneously and concatenating them
+   will make them unreadable.
 
 
 
