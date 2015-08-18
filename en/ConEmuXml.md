@@ -14,17 +14,16 @@ otherlang:
 ConEmu settings [may be stored](Settings.html#Where_settings_are_stored)
 in the ‘Windows Registry’ and in the xml files (`ConEmu.xml` usually).
 
-By default, ConEmu uses `%USERPROFILE%\ConEmu.xml` on Windows XP or higher.
+By default, ConEmu uses `ConEmu.xml` on Windows XP or higher.
 Windows 2000 is limited to using Registry.
 
-
-<h2 id="PortableApps-format"> Note for PortableApps.com format </h2>
-
-When you are running ConEmu installed with ‘paf’ bundle, your settings will be stored
-in `<app>/Data/settings/ConEmu.xml`.
+* [ConEmu.xml search sequence](#ConEmu_.xml)
+  * [Note for PortableApps.com format](#PortableApps-format)
+* [How to send your config to developer](#send-to-developer)
 
 
-<h3 id="search-sequence"> ConEmu.xml search sequence </h3>
+
+<h2 id="search-sequence"> ConEmu.xml search sequence </h2>
 
 You may use ConEmu in ‘portable’ mode,
 so all settings will be stored in the *ConEmu.xml* file
@@ -54,6 +53,13 @@ to use any special locations (may be not so useful for daily using, but availabl
 
 **Note**. You may rename/create `ConEmu.xml` file any time,
 even after ConEmu starts and loads its settings from registry.
+
+
+
+<h3 id="PortableApps-format"> Note for PortableApps.com format </h3>
+
+When you are running ConEmu installed with ‘paf’ bundle, your settings will be stored
+in `<app>/Data/settings/ConEmu.xml`.
 
 
 
