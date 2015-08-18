@@ -13,6 +13,8 @@ readalso:
    title: Search before post
  - url: OldBuild.html
    title: Old Builds
+ - url: LogFiles.html
+   title: Log Files
 ---
 
 # Bad issues has no value
@@ -32,6 +34,7 @@ it is impossible to fix something abstract...
   * [Update your installation](#Update_your_installation)
 * [OS version](#OS_version)
 * [Screenshot](#Screenshot)
+* [Log files](#LogFiles)
 * [Text of the error](#Text_of_the_error)
 * [Crash dumps](#Crash_dumps)
 
@@ -115,7 +118,21 @@ Full-sized screenshot may tell about the problem more than you can imagine.
 Reporter may omit something from the problem description,
 but screenshot will not omit anything.
 
-Do not cut them and [status bar](StatusBar.html) visibility is strongly recommended.
+### Requirements
+
+* Do not cut them!
+* Do not downscale (resize) them!
+* Do not hide [status bar](StatusBar.html)!
+
+
+
+
+<h2 id="LogFiles"> Log Files </h2>
+
+How to create log files is described thoroughly [here](LogFiles.html).
+In brief, you have to run `ConEmu -log`, reproduce the problem,
+**Zip** logs and upload them into [DropBox](DropBox.html) for example.
+Post your links to the issue.
 
 
 
