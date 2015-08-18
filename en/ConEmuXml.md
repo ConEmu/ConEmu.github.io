@@ -26,8 +26,8 @@ Windows 2000 is limited to using Registry.
 <h2 id="search-sequence"> ConEmu.xml search sequence </h2>
 
 You may use ConEmu in ‘portable’ mode,
-so all settings will be stored in the *ConEmu.xml* file
-or its dotted variant *.ConEmu.xml*.
+so all settings will be stored in the `ConEmu.xml` file
+or its dotted variant `.ConEmu.xml`.
 File without leading dot has priority.
 
 ConEmu search sequence of this file:
