@@ -18,6 +18,7 @@ This article describes ‘high dpi’, ‘high resulution’, ‘dpi awareness�
   * [Per system DPI-aware](#system-dpi-aware)
   * [Per monitor DPI-aware](#per-monitor-dpi-aware)
 * [Some more examples](#Some-more-examples)
+  * [Dialogs downscale issues](#Dialog-downscale-issue)
   * [Very old build without dpi-awareness causes blurred text](#Very_old_build_without_dpi-awareness_causes_blurred_text)
   * [New dpi-aware build shows clean picture](#New_dpi-aware_build_shows_clean_picture)
 
@@ -60,14 +61,14 @@ Its sample output is below.
 
 ~~~
 Process DPI-Awareness checker. (C) 2014 Maximus5
-                            
-PID     Awareness       Process name                                              
----     ---------       ------------                                              
+
+PID     Awareness       Process name
+---     ---------       ------------
 3540    !PerMonitor     ApplicationFrameHost  Microsoft Edge
-884     !PerMonitor     ConEmu.exe            CheckDpiAwareness.exe - Far 3....   
+884     !PerMonitor     ConEmu.exe            CheckDpiAwareness.exe - Far 3....
 1992    !PerMonitor     explorer.exe          <Shell_TrayWnd>
-10820   !PerMonitor     iexplore.exe          ConEmu - Windows Console Emula...                     
-11464   SystemAware     MarkdownPad2.exe      ReadMe.md - MarkdownPad 2           
+10820   !PerMonitor     iexplore.exe          ConEmu - Windows Console Emula...
+11464   SystemAware     MarkdownPad2.exe      ReadMe.md - MarkdownPad 2
 2880    Unaware         odbcad32.exe          ODBC Data Source Administrator...
 ~~~
 
@@ -119,6 +120,17 @@ by `Win+Shift+Left` and `Win+Shift+Right`.
 
 
 <h2 id="Some-more-examples"> Some more examples </h2>
+
+<h3 id="Dialog-downscale-issue"> Dialogs downscale issues </h3>
+
+If your primary monitor has larger scaling percentage
+than secondary one, you may notice some dialog drawing artefacts.
+ConEmu tries to do its best to deal with monitor scaling levels,
+but dialog controls are painted by Windows kernel and without
+owner-drawn implementation of all standard controls it's impossible
+to make them look fine.
+
+![Dialog downscale issue](/img/dpi-downscaled.png)
 
 <h3 id="Very_old_build_without_dpi-awareness_causes_blurred_text"> Very old build without dpi-awareness causes blurred text </h3>
 
