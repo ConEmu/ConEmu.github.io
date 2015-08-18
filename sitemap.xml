@@ -72,7 +72,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/BadIssue.html</loc>
-    <lastmod>2015-08-18</lastmod>
+    <lastmod>2015-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -182,7 +182,7 @@
     <loc>http://conemu.github.io/en/ConEmuXml.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/ConEmuXml.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/ConEmuXml.html" />
-    <lastmod>2015-06-17</lastmod>
+    <lastmod>2015-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -274,7 +274,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/DpiAware.html</loc>
-    <lastmod>2015-08-11</lastmod>
+    <lastmod>2015-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -436,7 +436,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/LogFiles.html</loc>
-    <lastmod>2015-08-18</lastmod>
+    <lastmod>2015-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
