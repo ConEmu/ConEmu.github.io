@@ -432,6 +432,9 @@ div.h-social a {
 .h-gplus {
   background: url('/img/gp.png');
 }
+.h-github {
+  background: url('/img/GitHub-Mark-32px.png');
+}
 .h-facebook:hover, .h-twitter:hover, .h-gplus:hover {
   background-position: 0px -32px;
 }
