@@ -12,7 +12,7 @@ breadcrumbs:
 
 # Pause and Alternative Buffer
 
-ConEmu is able to ‘pause’ console output in two ways.
+ConEmu is able to â€˜pauseâ€™ console output in two ways.
 
 * [Alternative Buffer](#alternative-buffer)
 * [Pause console applications](#pause)
@@ -20,8 +20,8 @@ ConEmu is able to ‘pause’ console output in two ways.
 
 <h2 id="alternative-buffer"> Alternative Buffer </h2>
 
-ConEmu may ‘freeze’ your [console application](ConsoleApplication.html) output.
-Just press Win+A or press the ‘lock’ button on the [ToolBar](ToolBar.html).
+ConEmu may â€˜freezeâ€™ your [console application](ConsoleApplication.html) output.
+Just press Win+A or press the â€˜lockâ€™ button on the [ToolBar](ToolBar.html).
 
 Your console application will not be paused or freezed actually,
 it will continue its work.
@@ -39,5 +39,5 @@ AlternativeBuffer by pressing Esc or Win+A.
 <h2 id="pause"> Pause console applications </h2>
 
 Also, you may press `Pause` key.
-It will pause most console applications (who just print text to ‘StdOut’).
+It will pause most console applications (who just print text to â€˜StdOutâ€™).
 Press `Pause` key again to release.
