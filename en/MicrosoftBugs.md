@@ -10,6 +10,23 @@ breadcrumbs:
 
 # Some Windows Bugs and Workarounds
 
+* [Broken desktop coordinate system in Windows 10](#SetWindowPos-10)
+* [Exception in ReadConsoleOutput](#Exception_in_ReadConsoleOutput)
+* [Console screen buffer corrupts from other console application](#Console_screen_buffer_corrupts_from_other_console_application)
+* [chcp hung](#chcp_hung)
+* [Insert/Overwrite indication](#Insert-Overwrite-Indicator)
+* [Conclusion](#Conclusion)
+
+
+<h2 id="SetWindowPos-10"> Broken desktop coordinate system in Windows 10 </h2>
+
+[insider/forum/insider_wintp-insider_desktop/desktop-coordinate-system-is-broken](http://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_desktop/desktop-coordinate-system-is-broken/9e6fd9ab-6d27-45e0-bb55-4c868cd6ac45)
+
+| Appears | Fixed |
+|:--------|:------|
+| Windows 10 | ? |
+
+
 <h2 id="Exception_in_ReadConsoleOutput"> Exception in ReadConsoleOutput </h2>
 
 [social.msdn.microsoft.com/Forums/en-US/40c8e395-cca9-45c8-b9b8-2fbe6782ac2b](http://social.msdn.microsoft.com/Forums/en-US/40c8e395-cca9-45c8-b9b8-2fbe6782ac2b)
