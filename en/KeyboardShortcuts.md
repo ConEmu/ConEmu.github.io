@@ -39,6 +39,9 @@ For example, you may choose hotkey
 for ‘Start text selection (like text editors)’,
 ‘Switch Always on top window mode’ and so on.
 
+There are also several [global hotkeys](GlobalHotKeys.html)
+available even ConEmu has not focus.
+
 
 <h2 id="Non_configurable_hotkeys"> Non configurable hotkeys </h2>
 
@@ -59,19 +62,25 @@ for ‘Start text selection (like text editors)’,
 
 The list below is very brief. [Full list of hotkeys](#Full_list) is located at the botom of the article.
 
+<h3 id="multiconsole-hotkeys"> Multiconsole </h3>
+
 | *Hotkey* | *Description* |
 |:---|:---|
-| **Multiconsole** | |
 | Win+W | Create new console tab. [Confirmation dialog](Screenshots.html#Confirmation_of_new_console_creation_(Win-W)) will be displayed, when ‘[Create confirmation](Settings.html#Tabs)’ setting is enabled. **W** is default, [configurable](Settings.html#Tabs). |
 | Win+Shift+W | Create new console tab with [confirmation dialog](Screenshots.html#Confirmation_of_new_console_creation_(Win-W)), regardless of ‘[Create confirmation](Settings.html#Tabs)’ setting. **W** is default, [configurable](Settings.html#Tabs). |
 | [Win+~](Screenshots.html#Confirmation_of_restarting_console_(Win-%7E)) | Restart current console, all applications running in the current console will be terminated. **~** is default, [configurable](Settings.html#Tabs). |
 | Win+Q, Win+Shift+Q | Activate next/previous console tab. **Q** is default, [configurable](Settings.html#Tabs). |
 | Win+Del | Terminate current console. This hotkey is **disabled** by default! You may enable it in the [ConEmu Settings](Settings.html#Manual_change_of_settings) |
 | Win+A | Show alternative console buffer (last command output). This is sort of ‘Pause’ for the console. **A** is default. |
-| Win+S | **Ignored in Windows 7**. Turns [BufferHeight](ConEmuTerms.html#BufferHeight) mode on/off. **S** is default. |
-| **Unsorted** | |
-| Win+C | Minimize or Restore ConEmu window. **C** is default, [configurable](Settings.html#Manual_change_of_settings). This is **global** hotkey, it works even ConEmu has no focus. |
-| Win+X | Create new console tab with <code>cmd.exe</code>. **X** is default, [configurable](Settings.html#Manual_change_of_settings). |
+| Win+S | Duplicate tab with current state of [root process](RootProcess.html). |
+| *Unset* | Turns [BufferHeight](ConEmuTerms.html#BufferHeight) mode on/off. **Ignored in Windows 7**. |
+
+<h3 id="selected-hotkeys"> Some selected hotkeys </h3>
+
+| *Hotkey* | *Description* |
+|:---|:---|
+| Ctrl+~ | Minimize or Restore ConEmu window. **C** is default, [configurable](Settings.html#Manual_change_of_settings). This is [global hotkey](GlobalHotKeys.html), it works even ConEmu has no focus. |
+| Win+X | Create new console tab with [cmd.exe or some selected task](SettingsTasks.html). [configurable](Settings.html#Manual_change_of_settings). |
 | Ctrl+Up, Ctrl+Down,<br/>Ctrl+PgUp, Ctrl+PgDn | [Buffer](ConEmuTerms.html#BufferHeight) scrolling |
 | Ctrl+Alt | Drag ConEmu window with mouse by client area |
 | Win+Alt+Left, Win+Alt+Right | Move active tab leftward/rightward (aka reorder ConEmu tabs) |
