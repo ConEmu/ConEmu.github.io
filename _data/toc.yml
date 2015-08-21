@@ -556,8 +556,8 @@
           rus: "TCC Вставка/Замена"
           url: "TccInsertOverwrite.html"
     -
-      eng: "Vim 256-color"
-      rus: "Vim 256-color"
+      eng: "Vim: Set up 256-colors and mouse wheel"
+      rus: "Vim: Настройка 256-цветов и колеса мышки"
       url: "VimXterm.html"
     -
       eng: "Windows Environment variables"

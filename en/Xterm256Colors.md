@@ -9,6 +9,8 @@ breadcrumbs:
    title: Features
 
 readalso:
+ - url: VimXterm.html
+   title: "Configuring Vim"
  - url: AnsiEscapeCodes.html
    title: "X3.64 and Xterm-256 Support"
  - url: CygwinAnsi.html
