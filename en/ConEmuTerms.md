@@ -17,6 +17,7 @@ title: "ConEmu | Terms"
 * [Tab or TabBar](#Tab)
 * [Split or Pane](#Pane)
 * [Tab completion](#TabCompletion)
+* [Windows API](WinApi.html)
 
 
 
