@@ -127,7 +127,7 @@ Option [Resize panels by mouse](Settings.html#Features) must be checked.
 
 
 
-<h3 id="Hyperlinks_and_compiler_errors"> Hyperlinks and compiler errors </h3>
+<h3 id="Hyperlinks_and_compiler_errors"> <a href="FileLineDetector.html">Hyperlinks and compiler errors</a> </h3>
 
 ConEmu can highlight hyperlinks (e.g. `http://www.farmanager.com`) and compiler errors
 (e.g. `FarCtrl.pas(1002,49) Error: Identifier not found...`).
