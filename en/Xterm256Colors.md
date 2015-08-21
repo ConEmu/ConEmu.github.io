@@ -15,6 +15,8 @@ readalso:
    title: "X3.64 and Xterm-256 Support"
  - url: CygwinAnsi.html
    title: "Cygwin and Ansi"
+ - url: ExtendedConsole.html
+   title: "Far Manager ExtendedConsole"
 ---
 
 # How to enable xterm 256 colors in ConEmu

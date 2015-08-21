@@ -15,6 +15,8 @@ readalso:
    title: "Cygwin and Ansi"
  - url: AnsiEscapeCodes.html
    title: "X3.64 and Xterm-256 Support"
+ - url: ExtendedConsole.html
+   title: "Far Manager ExtendedConsole"
 ---
 
 # How to enable 256-color console Vim syntax highlight in ConEmu
