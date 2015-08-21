@@ -83,6 +83,10 @@
       rus: "Active process"
       url: "ActiveProcess.html"
     -
+      eng: "Root process"
+      rus: "Root process"
+      url: "RootProcess.html"
+    -
       eng: "Alternative buffer"
       rus: "Alternative buffer"
       url: "AlternativeBuffer.html"

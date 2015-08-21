@@ -1,5 +1,6 @@
 ---
-redirect_from: /ru/ActiveProcess.html
+redirect_from:
+ - /ru/ActiveProcess.html
 
 title: "ConEmu | Active Process"
 
@@ -10,8 +11,13 @@ breadcrumbs:
    title: ConEmu
  - url: ConEmuTerms.html
    title: Terms
+
+readalso:
+ - url: RootProcess.html
+   title: "Root process"
 ---
 
+{% comment %} The page contains ‘per cent’ signs {% endcomment %}
 {% raw %}
 
 # Active Process
