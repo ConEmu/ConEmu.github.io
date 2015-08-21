@@ -73,7 +73,7 @@ ConEmuC /ATTACH [/GHWND=NEW|&lt;HWND&gt;] /[FAR|CON|TRM]PID=&lt;PID&gt;
     /TRMPID=&lt;PID&gt; - called from *.vshost.exe when &#x27;AllocConsole&#x27; just created</pre>
 
 <h4><a name="GuiMacro"></a><a href="GuiMacro.html">ConEmu GUI macro command</a><a href="#GuiMacro" class="section_anchor"></a></h4>
-<pre class="prettyprint">ConEmuC /GUIMACRO Function([Arg1[,Arg2[,...]])</pre>
+<pre class="prettyprint">ConEmuC [/SILENT] /GUIMACRO[:PID|HWND][:T<tab>][:S<split>] Function([Arg1[,Arg2[,...]])</pre>
 
 <h4><a name="EchoAndType"></a>Echo and Type<a href="#EchoAndType" class="section_anchor"></a></h4>
 <p>These two was implemented for test purposed mostly. But may be useful. Use any of <code>&quot;-e&quot;</code>, <code>&quot;-echo&quot;</code>, <code>&quot;/echo&quot;</code> to echo. </p>
