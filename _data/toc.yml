@@ -652,6 +652,10 @@
       rus: "Загрузка CPU и ввод/вывод"
       url: "CpuIoConsumption.html"
     -
+      eng: "AutoHotKey"
+      rus: "AutoHotKey"
+      url: "AutoHotKey.html"
+    -
       eng: "Process Explorer"
       rus: "Process Explorer"
       url: "ProcessExplorer.html"
