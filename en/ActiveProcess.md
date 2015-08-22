@@ -17,7 +17,7 @@ readalso:
    title: "Root process"
 ---
 
-{% comment %} The page contains ‘per cent’ signs {% endcomment %}
+{% comment %} The page contains â€˜per centâ€™ signs {% endcomment %}
 {% raw %}
 
 # Active Process
