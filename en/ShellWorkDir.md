@@ -96,8 +96,10 @@ function prompt {
   $dir = $(get-location).ProviderPath
   Write-Host -NoNewline -ForegroundColor Yellow $dir
   # You may use ANSI or direct ConEmuC call
+  if ($env:ConEmuBaseDir -ne $null) {
   # Write-Host -NoNewline (([char]27) + "]9;9;`"" + $dir + "`"" + ([char]27) + "\")
-  & ConEmuC -StoreCWD "$dir"
+  & ConEmuC.exe -StoreCWD "$dir"
+  }
   return ">"
 }
 ~~~
