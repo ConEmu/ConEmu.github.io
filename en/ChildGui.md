@@ -29,6 +29,20 @@ readalso:
 
 # PuTTY, mintty and others ChildGui inside ConEmu
 
+* [Definitions](#definition)
+* [Limitations](#limitations)
+  * [Single process, single window](#process)
+  * [Child window must be resizeable](#resizeable)
+  * [Can't be controlled by ConEmu](#not-controlled)
+  * [Hotkeys limitations](#hotkeys)
+    * [Hotkey workaround](#hotkey-workaround)
+* [How to run ChildGui in ConEmu](#run-childgui)
+* [ChildGui title bar, window and system menu](#child-system-menu)
+
+
+
+<h2 id="definition"> Definitions </h2>
+
 ‘Child Graphical User Interface’ or ‘ChildGui’ or ‘windowed applications’ are
 [GUI applications](https://en.wikipedia.org/wiki/Graphical_user_interface)
 which may be started in ConEmu [Tabs](TabBar.html) or [Splits](SplitScreen.html).
@@ -67,17 +81,7 @@ runs bunch of child processes or reuses single process for new windows.
 
 
 
-<h3 id="not-controlled"> Can't be controlled by ConEmu </h3>
-
-These application process all mouse and keyboard events, draw the contents
-including selection areas internally. ConEmu can't control or customize them.
-
-From time to time somebody asks why PuTTY colors do not match ConEmu palette.
-That is because PuTTY colors must be configured in PuTTY itself.
-
-
-
-<h3 id="resizeable"> ChildGui Must be resizeable </h3>
+<h3 id="resizeable"> Child window must be resizeable </h3>
 
 **Note** To be able to ‘integrate’ ChildGui into ConEmu, your application window must be **resizeable**!
 For example, if your PuTTY settings locks its window size to certain ‘rows x cols’ values,
@@ -85,6 +89,16 @@ its window is non-resizeable, and ConEmu will not integrate it into ConEmu's tab
 Because it is not ‘possible’ to resize that ChildGui when ConEmu window has to be resized!
 For example, you maximize ConEmu window but child application remains its small size.
 That will look weird, small framed child window with caption inside ConEmu workspace.
+
+
+
+<h3 id="not-controlled"> Can't be controlled by ConEmu </h3>
+
+These application process all mouse and keyboard events, draw the contents
+including selection areas internally. ConEmu can't control or customize them.
+
+From time to time somebody asks why PuTTY colors do not match ConEmu palette.
+That is because PuTTY colors must be configured in PuTTY itself.
 
 
 
