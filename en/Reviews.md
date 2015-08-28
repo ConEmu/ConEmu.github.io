@@ -16,6 +16,13 @@ breadcrumbs:
 Here are some excerpts from ConEmu reviews found over internet.
 
 
+## Project of the month on Sourceforge.net
+Sourceforge community elected ConEmu as Project of the Month (May 2015).
+
+Read about
+[project’s history, purpose, and direction](https://sourceforge.net/blog/may-2015-community-choice-project-of-the-month-conemu/)
+
+
 ## by Scott Hanselman
 A kick ass terminal is exactly what Windows needs. I'm not talking
 about PowerShell, which many agree is crazy powerful, but rather the
