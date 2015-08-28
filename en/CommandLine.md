@@ -1,8 +1,6 @@
 ---
 redirect_from:
  - /ru/CommandLine.html
- - /en/commandline.html
- - /ru/commandline.html
 
 title: "ConEmu | CommandLine - GUI, Console and Shells switches"
 

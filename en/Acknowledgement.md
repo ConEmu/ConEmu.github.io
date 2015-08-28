@@ -1,8 +1,6 @@
 ---
 redirect_from:
  - /ru/Acknowledgement.html
- - /en/acknowledgement.html
- - /ru/acknowledgement.html
 
 title: "ConEmu | Acknowledgement"
 

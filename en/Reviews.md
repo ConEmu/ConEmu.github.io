@@ -1,8 +1,6 @@
 ---
 redirect_from:
  - /ru/Reviews.html
- - /en/reviews.html
- - /ru/reviews.html
 
 title: "ConEmu | Reviews"
 
