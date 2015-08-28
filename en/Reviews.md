@@ -9,6 +9,12 @@ title: "ConEmu | Reviews"
 breadcrumbs:
  - url: TableOfContents.html#extras
    title: Extras
+
+readalso:
+ - url: Awards.html
+   title: ConEmu Awards
+ - url: Acknowledgement.html
+   title: ConEmu Acknowledgement
 ---
 
 # ConEmu Reviews
