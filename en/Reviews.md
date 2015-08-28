@@ -33,7 +33,7 @@ in the flexibility.
 Read [full article](http://www.hanselman.com/blog/ConEmuTheWindowsTerminalConsolePromptWeveBeenWaitingFor.aspx)
 
 
-## by Elena Opris (Softpedia.com)
+## by Elena Opris (www.softpedia.com)
 ConEmu is a comprehensive software utility designed for users who
 prefer working with multiple console programs at the same time...
 
@@ -41,7 +41,8 @@ prefer working with multiple console programs at the same time...
 console programs in a tabbed window, backed by rich and advanced
 customization preferences.
 
-Read [full review](http://www.softpedia.com/get/System/System-Miscellaneous/ConEmu.shtml)
+Read full review on
+[www.softpedia.com](http://www.softpedia.com/get/System/System-Miscellaneous/ConEmu.shtml)
 
 
 ## by FossHub.com
@@ -52,7 +53,20 @@ ways: chances are that most of the features that you need are
 already there (settings area is really overwhelming). You will
 probably end up in making ConEmu your default terminal for Windows.
 
-Read [full review](http://www.fosshub.com/ConEmu.html)
+Read full review on
+[www.fosshub.com](http://www.fosshub.com/ConEmu.html)
+
+
+## by Greg Steen (technet.microsoft.com)
+One of my favorite ConEmu features is the ability to add custom
+predefined tasks or command groups to the quick-access menus. These
+provide customized actions with all the parameters and options you
+need in one or two clicks. You can then add these tasks to the
+Windows taskbar (Jump Lists) for easy reuse. ConEmu will also store
+commands from your usage history if you so choose.
+
+Read full review on
+[technet.microsoft.com](http://technet.microsoft.com/en-us/magazine/jj649372.aspx#ctl00_MTContentSelector1_mainContentContainer_ctl02)
 
 
 ## by Nikel
@@ -74,17 +88,6 @@ tabbing experience supported with shortcuts.
 Read full post on [blog.codeleak.pl](http://blog.codeleak.pl/2014/10/conemu-windows-console-emulator-with.html)
 
 
-## by Greg Steen
-One of my favorite ConEmu features is the ability to add custom
-predefined tasks or command groups to the quick-access menus. These
-provide customized actions with all the parameters and options you
-need in one or two clicks. You can then add these tasks to the
-Windows taskbar (Jump Lists) for easy reuse. ConEmu will also store
-commands from your usage history if you so choose.
-
-Read  [full review](http://technet.microsoft.com/en-us/magazine/jj649372.aspx#ctl00_MTContentSelector1_mainContentContainer_ctl02)
-
-
 ## by Charles Roper
 As a long-time user of Console 2, I switched to ConEmu recently and
 have not looked back. This is so much better than anything that has
@@ -97,7 +100,7 @@ emulator on Windows.
 Read more on [stackoverflow.com](http://stackoverflow.com/a/10904494/1405560)
 
 
-## by Bill Morefield
+## by Bill Morefield (AppStorm.net)
 ConEmu feels like a terminal designed for those who really use the
 command line often.
 
