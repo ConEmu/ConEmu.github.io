@@ -4,6 +4,10 @@ redirect_from:
  - /en/PerMonitorDpi.html
 
 title: "ConEmu | High DPI Awareness"
+
+breadcrumbs:
+ - url: TableOfContents.html#extras
+   title: Extras
 ---
 
 # High DPI Awareness

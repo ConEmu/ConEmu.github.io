@@ -10,6 +10,10 @@ h1_title: KeyEvents Tool
 
 h1_content: "KeyEvents tool is a keyboard and mouse console events logging utility.
   It may be useful for troubleshooting console keyboard and mouse input."
+
+breadcrumbs:
+ - url: TableOfContents.html#extras
+   title: Extras
 ---
 
 This tool utilizes [ReadConsoleInput](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684961%28v=vs.85%29.aspx)
