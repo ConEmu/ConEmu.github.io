@@ -123,5 +123,29 @@ This page was saved from: {{site.url}}{{page.url}}
 
 {% include copyright.html %}
 
+<!-- Auto select text in preformatted elements on click. -->
+<script>
+	if(document.addEventListener) document.addEventListener('DOMContentLoaded', function() {
+		function selectText() {
+			var sel = document.getSelection();
+			var rng = document.createRange();
+
+			sel.removeAllRanges();
+			rng.selectNodeContents(this);
+			sel.addRange(rng);
+		}
+
+		var snippets = document.querySelectorAll('.content pre');
+
+		for(var i = 0; i < snippets.length; ++i) {
+			var child = snippets[i].querySelector('code');
+			var target = child ? child : snippets[i];
+
+			target.innerHTML = target.innerHTML.trim();
+			snippets[i].addEventListener('click', selectText);
+		}
+	});
+</script>
+
 </body>
 </html>
