@@ -31,7 +31,7 @@ div {
 }
 
 .wrapper {
-  margin: 0 auto; 
+  margin: 0 auto;
   min-height: 100%;
   background-color: #fdf6e3;
   -webkit-box-shadow: 0 0 8px 3px #93a1a1;
@@ -148,6 +148,40 @@ pre.prettyprint {
 code.install {
   width: 50em;
   white-space: normal;
+}
+
+/* Scaffolding for text auto-selection in preformatted elements */
+.pre-text-selection-helper {
+  display: block;
+  position: relative;
+  margin-top: 2.5em;
+  cursor: pointer;
+}
+
+.pre-text-selection-helper::after {
+  content: 'Select All';
+  position: absolute;
+  z-index: 0;
+  background-color: #93a1a1;
+  color: #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  top: -26px;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  font-size: 0.875em;
+  box-shadow: 2px 2px 3px #839496;
+}
+
+.pre-text-selection-helper:hover::after {
+  color: #fafafa;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.pre-text-selection-helper + pre {
+  border-top-left-radius: 0;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 980px) {
