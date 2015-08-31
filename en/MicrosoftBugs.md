@@ -10,12 +10,46 @@ breadcrumbs:
 
 # Some Windows Bugs and Workarounds
 
+* [Broken WM_MOUSEWHEEL's mouse cursor position in Windows 10](#WM_MOUSEWHEEL-10)
 * [Broken desktop coordinate system in Windows 10](#SetWindowPos-10)
 * [Exception in ReadConsoleOutput](#Exception_in_ReadConsoleOutput)
 * [Console screen buffer corrupts from other console application](#Console_screen_buffer_corrupts_from_other_console_application)
 * [chcp hung](#chcp_hung)
 * [Insert/Overwrite indication](#Insert-Overwrite-Indicator)
 * [Conclusion](#Conclusion)
+
+
+
+
+<h2 id="WM_MOUSEWHEEL-10"> Broken WM_MOUSEWHEEL's mouse cursor position in Windows 10 </h2>
+
+[MSDN says](https://msdn.microsoft.com/en-us/library/windows/desktop/ms645617.aspx)
+that WM_MOUSEWHEEL/lParam contains X and Y coordinates of the mouse pointer,
+relative to the upper-left corner of the screen.
+
+But that is not true in Windows 10 anymore.
+Seems like the bug relates to several monitors, larger than 100% scale,
+and focused child window.
+Than, your window will receive larger coordinates than they would be.
+
+| Appeared | Fixed |
+|:--------|:------|
+| Windows 10 | ? |
+
+### Workaround
+
+There is no proper workaround, because mouse pointer may be moved,
+after WM_MOUSEWHEEL was posted.
+
+However, in most cases, retrieving mouse coordinates using
+[GetCursorPos](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648390.aspx),
+instead of relying on message's lParam, will be suitable.
+
+### Related issues
+
+* [Issue 216: Mouse wheel only works on first console in split window](https://github.com/Maximus5/ConEmu/issues/216)
+
+
 
 
 <h2 id="SetWindowPos-10"> Broken desktop coordinate system in Windows 10 </h2>
