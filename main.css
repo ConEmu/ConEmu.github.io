@@ -399,12 +399,14 @@ div.h-logo {
   width: 48px; height: 48px;
   float: left;
   margin-right: 0.5em;
+  margin: 0 4px 0 0;
 }
 
 div.h-title-desc {
   float: left;
   font: 28px 'Tahoma';
-  min-width: 4em;
+  margin: 0 4px 0 0;
+  min-height: 48px;
 }
 
 div.h-title-desc a {
@@ -432,7 +434,7 @@ div.h-title {
 div.h-desc {
   border: 0; /* 1px solid red; */
   margin: 0;
-  padding: 0px;
+  padding: 0;
   font: 12px 'Tahoma';
   color: #000000;
   text-shadow: 0px 1px 0px #fff;
@@ -443,9 +445,10 @@ div.h-desc {
 div.h-social {
   border: 0; /*1px solid red;*/
   display: block;
-  clear: both;
+  float: left;
   min-height: 32px;
   padding-top: 6px;
+  margin: 0;
 }
 
 div.h-social a {
@@ -454,7 +457,7 @@ div.h-social a {
   width: 32px;
   height: 32px;
   float: left;
-  margin-right: 6px; /*6px 6px 0px 0px;*/
+  margin: 0 6px 6px 0;
 }
 
 .h-facebook {
