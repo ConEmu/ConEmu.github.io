@@ -56,7 +56,7 @@ instead of relying on message's lParam, will be suitable.
 
 [insider/forum/insider_wintp-insider_desktop/desktop-coordinate-system-is-broken](http://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_desktop/desktop-coordinate-system-is-broken/9e6fd9ab-6d27-45e0-bb55-4c868cd6ac45)
 
-| Appears | Fixed |
+| Appeared | Fixed |
 |:--------|:------|
 | Windows 10 | ? |
 
@@ -72,7 +72,7 @@ instead of relying on message's lParam, will be suitable.
 [social.msdn.microsoft.com/Forums/en-US/40c8e395-cca9-45c8-b9b8-2fbe6782ac2b](http://social.msdn.microsoft.com/Forums/en-US/40c8e395-cca9-45c8-b9b8-2fbe6782ac2b)
 
 
-| Appears | Fixed |
+| Appeared | Fixed |
 |:--------|:------|
 | Windows 7 | Windows 10 |
 
@@ -119,12 +119,13 @@ Turn on ‘Inject ConEmuHk’ option. Workaround was first created in ConEmu bui
 
 
 
+
 <h2 id="chcp_hung"> chcp hung </h2>
 
 Console code page change (`chcp.com`, `SetConsoleCP`, `SetConsoleOutputCP`) hungs.
 
 
-| Appears | Fixed |
+| Appeared | Fixed |
 |:--------|:------|
 | Windows XP | ? |
 
@@ -135,6 +136,7 @@ Console code page change (`chcp.com`, `SetConsoleCP`, `SetConsoleOutputCP`) hung
 ### Workaround
 
 Turn on ‘Inject ConEmuHk’ option.
+
 
 
 
@@ -151,6 +153,7 @@ Wny not? Description is [here](InsertOverwrite.html).
 ### Workaround
 
 Doesn't exists.
+
 
 
 
