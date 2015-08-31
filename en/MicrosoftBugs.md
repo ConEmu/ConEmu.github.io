@@ -86,13 +86,14 @@ Turn on ‘Inject ConEmuHk’ option.
 
 ### Related issues
 
-* [Issue 1060: git rebase using vim as an editor crashes conemu](http://code.google.com/p/conemu-maximus5/issues/detail?id=1060)
-* [Issue 1061: interactive git rebasing causes ConEmu to crash](http://code.google.com/p/conemu-maximus5/issues/detail?id=1061)
-* [Issue 1146: Crash when doing "git diff"](http://code.google.com/p/conemu-maximus5/issues/detail?id=1146)
-* [Issue 1190: ConEmu crashes](http://code.google.com/p/conemu-maximus5/issues/detail?id=1190)
-* [Issue 1203: Occasional crash when vim.exe is started](http://code.google.com/p/conemu-maximus5/issues/detail?id=1203)
-* [Issue 1204: Fail after updating Far with UpDateEx](http://code.google.com/p/conemu-maximus5/issues/detail?id=1204)
+* [Issue 1060: git rebase using vim as an editor crashes conemu](https://github.com/Maximus5/conemu-old-issues/issues/1060)
+* [Issue 1061: interactive git rebasing causes ConEmu to crash](https://github.com/Maximus5/conemu-old-issues/issues/1061)
+* [Issue 1146: Crash when doing "git diff"](https://github.com/Maximus5/conemu-old-issues/issues/1146)
+* [Issue 1190: ConEmu crashes](https://github.com/Maximus5/conemu-old-issues/issues/1190)
+* [Issue 1203: Occasional crash when vim.exe is started](https://github.com/Maximus5/conemu-old-issues/issues/1203)
+* [Issue 1204: Fail after updating Far with UpDateEx](https://github.com/Maximus5/conemu-old-issues/issues/1204)
 * and others...
+
 
 
 
@@ -100,16 +101,16 @@ Turn on ‘Inject ConEmuHk’ option.
 
 [social.msdn.microsoft.com/Forums/en-US/ec363615-397c-42a8-84d2-38a70e4f8ae2](http://social.msdn.microsoft.com/Forums/en-US/ec363615-397c-42a8-84d2-38a70e4f8ae2)
 
-| Appears | Fixed |
+| Appeared | Fixed |
 |:--------|:------|
 | Windows 7 | Windows 8 |
 
 ### Related issues
 
-* [Issue 65: Telnet.exe is not working](http://code.google.com/p/conemu-maximus5/issues/detail?id=65)
-* [Issue 107: 32-bit console applications](http://code.google.com/p/conemu-maximus5/issues/detail?id=107)
-* [Issue 529: Tunnelier stermc.exe hangs under Win7](http://code.google.com/p/conemu-maximus5/issues/detail?id=529)
-* [Issue 669: text editor Aurora is working](http://code.google.com/p/conemu-maximus5/issues/detail?id=669)
+* [Issue 65: Telnet.exe is not working](https://github.com/Maximus5/conemu-old-issues/issues/65)
+* [Issue 107: 32-bit console applications](https://github.com/Maximus5/conemu-old-issues/issues/107)
+* [Issue 529: Tunnelier stermc.exe hangs under Win7](https://github.com/Maximus5/conemu-old-issues/issues/529)
+* [Issue 669: text editor Aurora is working](https://github.com/Maximus5/conemu-old-issues/issues/669)
 
 
 ### Workaround
@@ -129,7 +130,7 @@ Console code page change (`chcp.com`, `SetConsoleCP`, `SetConsoleOutputCP`) hung
 
 ### Related issues
 
-* [Issue 60: hung while running chcp 1251 on win2003](http://code.google.com/p/conemu-maximus5/issues/detail?id=60)
+* [Issue 60: hung while running chcp 1251 on win2003](https://github.com/Maximus5/conemu-old-issues/issues/60)
 
 ### Workaround
 
