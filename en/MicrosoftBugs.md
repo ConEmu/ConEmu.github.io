@@ -60,6 +60,12 @@ instead of relying on message's lParam, will be suitable.
 |:--------|:------|
 | Windows 10 | ? |
 
+### Related issues
+
+* [Issue 284: Conemu does not "snap" properly](https://github.com/Maximus5/ConEmu/issues/284)
+
+
+
 
 <h2 id="Exception_in_ReadConsoleOutput"> Exception in ReadConsoleOutput </h2>
 
