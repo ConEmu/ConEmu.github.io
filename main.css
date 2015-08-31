@@ -491,7 +491,13 @@ div.h-social a {
     clear: none;
   }
   div.h-title-desc {
-    margin-right: 0.6em;
+    margin-right: 0.4em;
+  }
+}
+
+@media (min-width: 980px) {
+  div.h-social {
+    clear: left;
   }
 }
 
