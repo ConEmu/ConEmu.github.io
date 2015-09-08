@@ -66,5 +66,5 @@ and replace [simple cmd or powershell window](Delusions.html#delusion-2).
 My accounts on the network.
 
 * [Maximus5/github.com](https://github.com/Maximus5)
-* <a href="http://stackexchange.com/users/1500841/maximus" rel="nofollow"><img src="http://stackexchange.com/users/flair/1500841.png" width="208" height="58" alt="profile for Maximus on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Maximus on Stack Exchange, a network of free, community-driven Q&amp;A sites"></img></a>
+* <a href="http://stackexchange.com/users/1500841/maximus" rel="nofollow"><img src="http://stackexchange.com/users/flair/1500841.png" width="208" height="58" alt="profile for Maximus on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Maximus on Stack Exchange, a network of free, community-driven Q&amp;A sites"/></a>
 * [Maximus5/www.openhub.net](https://www.openhub.net/accounts/Maximus5/kudos)
