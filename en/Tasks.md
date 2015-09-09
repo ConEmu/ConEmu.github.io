@@ -31,6 +31,14 @@ in [tabs](TabBar.html) or [splits](SplitScreen.html).
 Tasks may be configured in the [‘Settings’ dialog](SettingsTasks.html).
 
 
+* [Tasks in details](#about-tasks)
+  * [A little from Settings](#from-settings)
+* [Creating new task](#create-new-task)
+  * [Where you may get required information?](#find-required-information)
+  * [If there is no shortcut for that shell](#if-no-shell-shortcut)
+
+
+
 <h2 id="about-tasks"> Tasks in details </h2>
 
 ConEmu-Maximus5 is a terminal or a kind of container

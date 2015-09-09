@@ -31,6 +31,14 @@ otherlang:
 Задачи настраиваются на вкладке [Tasks](SettingsTasks.html) диалога настроек.
 
 
+* [Подробнее о Задачах](#about-tasks)
+  * [Немного из настроек](#from-settings)
+* [Creating new task](#create-new-task)
+  * [Where you may get required information?](#find-required-information)
+  * [If there is no shortcut for that shell](#if-no-shell-shortcut)
+
+
+
 <h2 id="about-tasks"> Подробнее о Задачах </h2>
 
 ConEmu-Maximus5 это терминал, своего рода контейнер,
