@@ -69,6 +69,8 @@ Simple background plugin.
 
 ![ConEmu Underlines](/img/ConEmuFarLn.png)
 
+![ConEmu Underlines in Far Editor](/img/ConEmuFarLn2.png)
+
 
 
 
