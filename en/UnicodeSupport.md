@@ -18,6 +18,10 @@ readalso:
    title: Using tasks to run your shells
  - url: CommandLine.html
    title: CommandLine - GUI, Console and Shells switches
+ - url: ConEmuEnvironment.html#ConEmuCpCvt
+   title: ConEmuCpCvt - hack to force output CP conversion
+ - url: ConEmuEnvironment.html#ConEmuDefaultCp
+   title: ConEmuDefaultCp - hack to change output CP if you don’t want to use ‘chcp’
 ---
 
 # Unicode Support
@@ -27,6 +31,22 @@ ConEmu is a unicode application.
 That means ConEmu is able to show unicode (e.g. UTF-8 or UTF-16)
 if the console application (cmd, java, perl, powershell,
 bash and so on) can produce unicode output.
+
+
+* [UTF-8 (UTF8)](#utf-8)
+* [On-the-fly conversion (ConEmuCpCvt)](#on-the-fly_conversion)
+* [Font charset](#font-charset)
+* [Troubleshooting](#troubleshooting)
+* [Check if the font used in ConEmu has proper glyphs](#check-proper-glyphs)
+  * [What font you are using](#what-font-you-are-using)
+  * [Check font glyphs](#Check_font_glyphs)
+* [Check if RealConsole is capable to accept unicode](#Check_if_is_capable_to_accept_unicode)
+* [Check if your console application is Unicode-aware](#check-your-console-application)
+* [ConEmu provide some tests you may run](#some-tests)
+  * [CheckUnicode test](#checkunicode-test)
+  * [UTF-8 test](#utf-8-test)
+* [Some hints](#some-hints)
+
 
 
 <h2 id="utf-8"> UTF-8 (UTF8) </h2>
@@ -91,6 +111,9 @@ git app -p
 
 **Note** [ConEmuHk](ConEmuHk.html) must be enabled.
 
+There is also [ConEmuDefaultCp](ConEmuEnvironment.html#ConEmuDefaultCp),
+hack to change output CP if you don’t want to use ‘chcp’.
+
 
 
 
@@ -142,7 +165,7 @@ Check if the font has proper glyphs: run from `Win+R` the
 `charmap.exe` tool and examine your font.
 
 
-<h2 id="Check_if_is_capable_to_accept_unicode"> Check if [RealConsole](RealConsole.html) is capable to accept unicode </h2>
+<h2 id="Check_if_is_capable_to_accept_unicode"> Check if <a href="RealConsole.html">RealConsole</a> is capable to accept unicode </h2>
 
 Press ‘Ctrl+Win+Alt+Space’ to reveal [RealConsole](RealConsole.html)
 and check its contents. Actually, it may fails for hieroglyphs and
