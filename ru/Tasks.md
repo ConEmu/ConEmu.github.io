@@ -115,7 +115,7 @@ ConEmu Jump list настраивается тоже здесь.
 После настройки списка задач включите флажок «Add ConEmu tasks to taskbar» и (по желанию)
 «Add commands from history, too». Нажмите кнопку «Update Now!».
 В случае успеха вы увидите сообщение «Taskbar jump list was updated successfully», ну или сообщение об ошибке.
-Есть способ инициировать Jump list при запуске ConEmu (<a title="Jump Lists/Task window problem" href="http://code.google.com/p/conemu-maximus5/issues/detail?id=576"> Issue 576 </a>,
+Есть способ инициировать Jump list при запуске ConEmu (<a title="Jump Lists/Task window problem" href="http://github.com/Maximus5/conemu-old-issues/issues/576"> Issue 576 </a>,
 может кому еще понадобится для автоматизации установки, например) для этого запустите (однократно) ConEmu.exe с аргументом `/updatejumplist`.
 
 

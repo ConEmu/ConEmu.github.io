@@ -98,7 +98,7 @@ and it does not draw any text on graphical canvas at all.
 
 <h2 id="java">Java issues</h2>
 
-There is an [Issue 1899](https://code.google.com/p/conemu-maximus5/issues/detail?id=1899)
+There is an [Issue 1899](https://github.com/Maximus5/conemu-old-issues/issues/1899)
 with Java version 7.x if it was installed in symlinked folder.
 You can get java exception like:
 

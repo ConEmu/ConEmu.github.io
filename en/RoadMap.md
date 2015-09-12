@@ -65,7 +65,7 @@ Your console application can change horizontal buffer size itself (run `wmic` fo
 <h2 id="tab-theming"> TabBar theming</h2>
 
 One of most asked questions is a TabBar theming.
-[Issue 294](http://code.google.com/p/conemu-maximus5/issues/detail?id=294) shows some details.
+[Issue 294](http://github.com/Maximus5/conemu-old-issues/issues/294) shows some details.
 
 However it's not possible yet. ConEmu uses standard Windows TabBar control which do not allow theming.
 

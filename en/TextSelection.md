@@ -19,9 +19,9 @@ readalso:
 ---
 
 {% comment %}
-* <a title="Selection problem" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=887">Issue 887&nbsp;</a>
-* <a title="Selection problem" class=closed_ref href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1292">Issue 1292&nbsp;</a>
-* <a title="Can I use Ctrl+Shift+Arrow to select and delete text?"  href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1332">Issue 1332</a>
+* <a title="Selection problem" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/887">Issue 887&nbsp;</a>
+* <a title="Selection problem" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/1292">Issue 1292&nbsp;</a>
+* <a title="Can I use Ctrl+Shift+Arrow to select and delete text?"  href="http://github.com/Maximus5/conemu-old-issues/issues/1332">Issue 1332</a>
 {% endcomment %}
 
 # Copying and Pasting text in ConEmu consoles

@@ -20,10 +20,10 @@ readalso:
 # The large difference
 
 {% comment %}
-http://code.google.com/p/conemu-maximus5/issues/detail?id=823#22
-http://code.google.com/p/conemu-maximus5/issues/detail?id=887
-http://code.google.com/p/conemu-maximus5/issues/detail?id=1219
-http://code.google.com/p/conemu-maximus5/issues/detail?id=1292
+http://github.com/Maximus5/conemu-old-issues/issues/823#22
+http://github.com/Maximus5/conemu-old-issues/issues/887
+http://github.com/Maximus5/conemu-old-issues/issues/1219
+http://github.com/Maximus5/conemu-old-issues/issues/1292
 {% endcomment %}
 
 From time to time somebody says ‘ConEmu is still running the Windows cmd.exe, it's not a bash’.

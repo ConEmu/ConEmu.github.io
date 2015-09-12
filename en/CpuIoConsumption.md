@@ -54,7 +54,7 @@ of this type.
 {% comment %}
 --- Some references ---
 <a title="Windows 8 - x64 Edition of EMU.... using process Hacker to monitor ConEMU" 
-href="http://code.google.com/p/conemu-maximus5/issues/detail?id=820">Issue 820&nbsp;</a>, 
+href="http://github.com/Maximus5/conemu-old-issues/issues/820">Issue 820&nbsp;</a>, 
 <a title="Процессы ConEmuC(32/64) беспрерывно осуществляют дисковую активность в районе 2.5Mb/s…" 
-href="http://code.google.com/p/conemu-maximus5/issues/detail?id=1241">Issue 1241&nbsp;</a>
+href="http://github.com/Maximus5/conemu-old-issues/issues/1241">Issue 1241&nbsp;</a>
 {% endcomment %}
