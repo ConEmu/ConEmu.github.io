@@ -12,7 +12,9 @@ breadcrumbs:
 
 readalso:
   - url: WindowsEnvironment.html
-    title: Windows Environment Variables
+    title: Переменные окружения Windows
+  - url: UnicodeSupport.html
+    title: Unicode в ConEmu
 
 otherlang:
    eng: /en/ConEmuEnvironment.html
