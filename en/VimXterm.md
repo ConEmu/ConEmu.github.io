@@ -23,6 +23,7 @@ readalso:
 
 * [Requirements](#requirements)
 * [Only certain releases are supported](#required-release)
+* [Notes about vim color schemes](#vim-color-scheme)
 * [How to enable Vim scrolling using mouse Wheel in ConEmu](#Vim-scrolling-using-mouse-Wheel)
 * [StackOverflow answer](http://stackoverflow.com/a/14434531/1405560)
 
@@ -57,8 +58,23 @@ but I'm not sure how to do that properly.
 
 <h2 id="required-release"> Only certain releases are supported </h2>
 
-**NB** GIT's Vim and ‘Original’ Vim (from gvim73_46.exe) are passed tests.
-MinGW's or Cygwin's Vim fails to switch to using Ansi sequences.
+**NB** ‘Original’ Win32 console executable Vim from
+[gvim##.exe and vim##w32.zip](http://www.vim.org/download.php#pc)
+passed tests (versions 7.3 and 7.4 were tested).
+There is no guarantee that other versions would be working, for example
+MinGW's and Cygwin's Vim [do not pass ANSI to ConEmu](CygwinAnsi.html).
+
+
+
+<h2 id="vim-color-scheme"> Notes about vim color schemes </h2>
+
+Selected Vim color scheme must be prepared specially for Xterm color.
+Some color schemes are working properly in Gvim, showing 256 colors and more,
+but if they aren't aware about xterm sequences, they will fail in the console vim.
+
+If you have problems with certain color scheme, please contact it's author.
+
+Color scheme mentioned above (zenburn) is working fine.
 
 
 
