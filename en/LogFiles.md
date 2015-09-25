@@ -9,6 +9,8 @@ breadcrumbs:
    title: Feedback
 
 readalso:
+ - url: SettingsDebug.html
+   title: "Debug Log Files"
  - url: Issues.html
    title: "Contacts, Feedbacks, Suggestions"
  - url: BadIssue.html
