@@ -44,3 +44,8 @@ I do not know any way to force cygwin to do ‘right’ things (send ANSI to Con
 May be in future I'll find a way to combine pty and real console features,
 but at the moment, may be, better and faster way is request the ‘feature’
 from cygwin developers.
+
+
+## Some links
+
+* [Fixing prompt coloring with Cygwin, zsh and ohmyzsh](https://plus.google.com/100883784258900633261/posts/GZ7fGAA4m6W)
