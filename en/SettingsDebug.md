@@ -34,6 +34,9 @@ export captured lines to `*.csv` file by pressing `Save as...` button,
 upload the file to [DropBox](DropBox.html) or create a [gist](https://gist.github.com/),
 post links to your issue.
 
+**NB** Don't close Settings dialog or Debug page during problem repro!
+When you close Debug page logging is stopped automatically!
+
 
 ### Capture modes
 
