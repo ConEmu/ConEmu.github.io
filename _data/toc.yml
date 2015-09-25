@@ -606,6 +606,10 @@
       rus: "Microsoft Bugs"
       url: "MicrosoftBugs.html"
     -
+      eng: "NVIDIA crash (CoProcManager)"
+      rus: "NVIDIA crash (CoProcManager)"
+      url: "CoProcManager.html"
+    -
       eng: "Old builds"
       rus: "Old builds"
       url: "OldBuild.html"
