@@ -49,12 +49,12 @@ Still thinking the problem is inside ConEmu? Read the rest of this wiki.
 
 There are two types of Windows console (terminal) emulators:
 
-* Based on [stdin/stdout redirection](stdin-stdout_redirection_style) (in very simple terms).
+* Based on [stdin/stdout redirection](#stdin-stdout_redirection_style) (in very simple terms).
   Most known are
   [mintty](https://github.com/mintty/mintty/)>,
   [puttycyg](https://code.google.com/p/puttycyg/),
   [Poderosa's cygterm](https://sourceforge.net/projects/poderosa/).
-* Based on [Windows console API](Windows_console_API_style).
+* Based on [Windows console API](#Windows_console_API_style).
   Most known are ConEmu,
   [Console](https://sourceforge.net/projects/console/),
   [ConsoleZ](https://github.com/cbucher/console/),
