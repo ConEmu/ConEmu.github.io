@@ -211,9 +211,9 @@ by jpsoftware
 ConEmu review on [cooler-online.ru](http://user1.cooler-online.ru/blog/11782.html)
 
 
-# by vozerov
+## by vozerov
 Far Manager and ConEmu. Read on [vozerov.wordpress.com](http://vozerov.wordpress.com/2010/12/27/far-manager/)
 
 
-# by rozrobka.com
+## by rozrobka.com
 ConEmu review on [www.rozrobka.com](http://www.rozrobka.com/blog/tools/1418.html)
