@@ -25,7 +25,8 @@ readalso:
 * [Only certain releases are supported](#required-release)
 * [Notes about vim color schemes](#vim-color-scheme)
 * [How to enable Vim scrolling using mouse Wheel in ConEmu](#Vim-scrolling-using-mouse-Wheel)
-* [StackOverflow answer](http://stackoverflow.com/a/14434531/1405560)
+* [vim-airline plugin](#Vim-airline)
+* [StackOverflow and SuperUser answers](#stack-exchange)
 
 ![256-colors vim in ConEmu](/img/ConEmuVimXterm.png)
 
@@ -106,3 +107,16 @@ if !has("gui_running")
     nnoremap <Esc>[63~ <C-Y>
 endif
 ~~~
+
+
+
+<h2 id="Vim-airline"> vim-airline plugin </h2>
+
+* [Vim-airline configuration for ConEmu](https://github.com/bling/vim-airline/issues/513)
+* [Vim-airline changed colors on page scroll](https://github.com/bling/vim-airline/issues/857)
+
+
+<h2 id="stack-exchange"> StackOverflow and SuperUser answers </h2>
+
+* [ConEmu: Vim Syntax Highlight](http://stackoverflow.com/a/14434531/1405560)
+* [Vim: Encoding (Unicode) in Terminal under Windows](http://stackoverflow.com/a/25073399/1405560)
