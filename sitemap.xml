@@ -40,7 +40,7 @@
     <loc>http://conemu.github.io/en/AnsiEscapeCodes.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/AnsiEscapeCodes.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/AnsiEscapeCodes.html" />
-    <lastmod>2015-08-06</lastmod>
+    <lastmod>2015-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -224,7 +224,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/CygwinAnsi.html</loc>
-    <lastmod>2015-09-26</lastmod>
+    <lastmod>2015-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -236,7 +236,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/CygwinMsys.html</loc>
-    <lastmod>2015-09-11</lastmod>
+    <lastmod>2015-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -526,7 +526,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/Reviews.html</loc>
-    <lastmod>2015-08-28</lastmod>
+    <lastmod>2015-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -618,7 +618,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsDebug.html</loc>
-    <lastmod>2015-09-26</lastmod>
+    <lastmod>2015-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -926,7 +926,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/VimXterm.html</loc>
-    <lastmod>2015-09-14</lastmod>
+    <lastmod>2015-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
