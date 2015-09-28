@@ -26,6 +26,7 @@ and its extension
     * [Example 2: 256colors2.pl](#Example_2_256colors2_pl)
     * [Example 3: scroll console to bottom](#Example_3_scroll_console_to_bottom)
   * [TechInfo](#TechInfo)
+    * [Compatibility check](#compat-check)
   * [Environment variable](#Environment_variable)
 * [List of supported codes](#List_of_supported_codes)
   * [CSI (Control Sequence Initiator) codes](#CSI_Control_Sequence_Initiator_codes)
@@ -119,6 +120,33 @@ cmd /c type "Colors-256.ans"
 
 Also, output with extended attributes (xterm 256 color) is available with functions
 `WriteConsoleOutputCharacterA` and `WriteConsoleOutputCharacterW`.
+
+
+
+<h4 id="compat-check"> Compatibility check </h4>
+
+**NB** ConEmu is enable to ‘process’ ANSI sequences,
+if [console application](ConsoleApplication.html)
+processes and strips them before WinApi functions calls,
+listed [above](#TechInfo).
+Obviously, that is because there are
+NO ANSI sequences in the output at all.
+
+This behavior is observed in certain cygwin and msys version.
+The problem is described thoroughly
+[here](CygwinAnsi.html) and [here](VimXterm.html#required-release).
+
+Anyone may easily check, if the application
+able to post real ANSI sequences by unchecking
+option ‘ANSI X3.64 / xterm 256 colors’ on the
+[Settings / Features](SettingsFeatures.html) page.
+Look at screenshot below to realize how RAW ANSI looks like
+(`ESC` character with ASCII code `\x1B` is displayed as `←` symbol).
+Used switch [-cur_console:i](NewConsole.html) works
+in certain [shells](TerminalVsShell.html) only.
+
+![Processed and bare ANSI sequences ConEmu](/img/ConEmuAnsi2.png)
+
 
 
 <h3 id="Environment_variable"> Environment variable </h3>
