@@ -16,6 +16,8 @@ readalso:
    title: "RoadMap: Better Cygwin/MSys support"
  - url: CygwinMsys.html
    title: "Cygwin and Msys"
+ - url: AnsiEscapeCodes.html
+   title: "ANSI sequences supported by ConEmu"
 ---
 
 # Cygwin and pty related issues

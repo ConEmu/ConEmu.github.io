@@ -10,6 +10,10 @@ breadcrumbs:
 otherlang:
    eng: /en/AnsiEscapeCodes.html
    rus: /ru/AnsiEscapeCodes.html
+
+readalso:
+ - url: CygwinAnsi.html
+   title: "ANSI в Cygwin и Msys"
 ---
 
 <!-- Content starts -->

@@ -10,6 +10,10 @@ breadcrumbs:
 otherlang:
    eng: /en/AnsiEscapeCodes.html
    rus: /ru/AnsiEscapeCodes.html
+
+readalso:
+ - url: CygwinAnsi.html
+   title: "ANSI processing in Cygwin and Msys"
 ---
 
 # ANSI X3.64 and Xterm 256 colors
