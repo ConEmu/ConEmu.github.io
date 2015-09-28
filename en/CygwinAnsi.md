@@ -2,7 +2,7 @@
 redirect_from:
  - /ru/CygwinAnsi.html
 
-title: "ConEmu | Cygwin and Ansi"
+title: "ConEmu | Cygwin and ANSI"
 
 description: "When cygwin detects real win32 console, it process all ANSI sequences
    internally, so ConEmu does not receive ANSI at all."
