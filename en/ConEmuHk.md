@@ -80,9 +80,24 @@ changing IAT pointers.
 
 Current method of injections and hooking will cause small lag
 when new process is created in the ConEmu console.
-It is really small (about 60 ms per process on my virtual PC).
-User may notice that lag in the only case of running hundreds
-and thousands of processes.
+The lag is relatively small, and user may notice slowdown
+in the only case of running hundreds and thousands of processes.
+
+If you need maximum speed to run certain script you may use
+switch [-cur_console:i](NewConsole.html).
+But use it carefully, because console subsystem may
+[crash](MicrosoftBugs.html#Exception_in_ReadConsoleOutput)
+in some cases by reason of
+[Microsoft bug](MicrosoftBugs.html#Exception_in_ReadConsoleOutput).
+Usually, it may happens when you run Vim without ‘Inject ConEmuHk’ enabled.
+
+The example below shows switch usage from `cmd.exe` prompt.
+**NB** Leading `cmd.exe /c ` is required, otherwise `cmd` will not spawn
+new process and the switch `-cur_console:i` will not have any effect.
+
+```
+> cmd.exe /c -cur_console:i your_batch_file.cmd
+```
 
 
 
