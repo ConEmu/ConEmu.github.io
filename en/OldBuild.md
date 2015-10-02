@@ -25,7 +25,7 @@ If you are using old build, there is big chance that your problem was fixed alre
 Don't waste your time reporting problems of Old Builds.
 Why not to update?
 
-Note, if you are using third-party bundles (like cmder or chocolatey)
+Note, if you are using third-party bundles (like cmder)
 you most probably are using not latest build.
 There is ConEmu **internal** updater.
 Just call it from [SystemMenu](SystemMenu.html) \ `Help` \ `Check for updates`.
