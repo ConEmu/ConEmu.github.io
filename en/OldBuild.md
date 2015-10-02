@@ -31,10 +31,10 @@ There is ConEmu **internal** updater.
 Just call it from [SystemMenu](SystemMenu.html) \ `Help` \ `Check for updates`.
 Or visit download page at [FossHub](http://www.fosshub.com/ConEmu.html).
 
-Also, thanks to googlecode for stopping Download service,
+Also, due to googlecode shutdown,
 if you are using **very old build** (pre 140115)
-ConEmu automatic update will be processed in **two steps**.
-
+ConEmu automatic update will fail,
+and you have to update ConEmu manually.
 
 ## Version check
 
