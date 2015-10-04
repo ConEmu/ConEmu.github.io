@@ -184,7 +184,7 @@ Hotkeyed quake-style dropdown with custom background, multiple tabs,
 stay on top and partial transparency on lose focus. I am bursting
 with geeky glee.
 
-Comment on [Hanselman's blog](http://www.hanselman.com/blog/ConEmuTheWindowsTerminalConsolePromptWeveBeenWaitingFor.aspx#1ca49883-20a4-4645-9341-8fea8fc4ccd4)
+Comment on [Hanselman's blog](http://www.hanselman.com/blog/ConEmuTheWindowsTerminalConsolePromptWeveBeenWaitingFor.aspx)
 
 
 ## by Tobias Weltner
