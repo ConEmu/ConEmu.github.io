@@ -73,5 +73,5 @@ if exist "..\ConEmuPortable%cever%.exe" del "..\ConEmuPortable%cever%.exe"
 rar a -r -ep1 -sfxDefault.sfx -z..\ConEmuPortableRarInfo.txt "..\ConEmuPortable%cever%.exe"   %inc_List% %exc_List%
 if errorlevel 1 pause & goto :EOF
 
-call T:\VCProject\FarPlugin\ConEmu\ConEmu-key\sign_any.bat "..\ConEmuPortable%cever%.exe"
+call sign_any.bat "..\ConEmuPortable%cever%.exe"
 ~~~
