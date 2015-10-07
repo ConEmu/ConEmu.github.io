@@ -52,7 +52,7 @@ But if you are sure that you don't need ‘Restore points’ you may disable the
   from `"%1" /p:%3 /qr` to `"%1" /p:%3,adm /qn`.
 
 Switch `/qn` tells `msiexec` to show no installer interface at all.
-Side effect of this will be disabling ‘Restore points’ creation.
+Side effect of this will be disabled ‘Restore points’ creation.
 
 Note that `,adm` suffix is required because when no installer interface
 is shown, no UAC confirmation dialog will be shown too, and if `msiexec`
