@@ -31,8 +31,9 @@ You may choose any suitable way to update you ConEmu installation
 
 * [Automatic update (internal)](#automatic)
   * [Internet access issues](#auto-troubleshoot)
-    * [Change location](#auto-location)
-    * [Download version.ini from command line](#auto-commandline)
+    * [Change version.ini location](#auto-location)
+    * [Change internal downloader switches](#auto-commandline)
+    * [Use any third-party downloader tool](#auto-curl-wget)
 * [Chocolatey](#chocolatey)
 * [Manual update](#manual)
 * [PortableApps.com](#portableapps)
@@ -71,11 +72,19 @@ At the moment there are two maintained locations where `version.ini` is located:
 If your antivirus, proxy, firewall, router or provider
 blocks `ConEmuC.exe` from accessing these locations,
 ConEmu will not be able to update automatically.
-Without options. User have to contact their network
+
+If these locations are inaccessible from any browser on users PC,
+there are no options. User have to contact their network
 administrators for assistance.
 
+But if `version.ini` is available, look for the options below.
 
-#### Change location <a id="auto-location"/>
+* [Change version.ini location](#auto-location)
+* [Change internal downloader switches](#auto-commandline)
+* [Use any third-party downloader tool](#auto-curl-wget)
+
+
+#### Change version.ini location <a id="auto-location"/>
 
 If your provider, for example, blocks access to
 [conemu.github.io](http://conemu.github.io/version.ini),
@@ -90,7 +99,7 @@ via [xml or registry](ConEmuXml.html). Look at the snippet below.
 ~~~
 
 
-#### Download version.ini from command line <a id="auto-commandline"/>
+#### Change internal downloader switches <a id="auto-commandline"/>
 
 To check internet issues from command line, run the following command.
 
@@ -104,6 +113,20 @@ They are described in `ConEmuC -?` printout, [About dialog](AboutDialog.html)
 and [online](ConEmuC.html#Download).
 You may play with them and if some option helps, change them in the
 [Settings dialog](SettingsUpdate.html) or [let us know](Issues.html).
+
+
+#### Use any third-party downloader tool <a id="auto-curl-wget"/>
+
+Most known utilities available are ‘Curl’ and ‘Wget’.
+Just install them and switch to `External downloader`
+on the [Update settings page](SettingsUpdate.html).
+Sample commands lines are below, choose appropriate
+and tune their options if required.
+
+~~~
+wget.exe %1 -O %2
+curl.exe -L %1 -o %2
+~~~
 
 
 
