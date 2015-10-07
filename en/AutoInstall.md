@@ -30,8 +30,8 @@ setup ConEmu via PowerShell with single command.
 Internet connection is required.
 
 
-<!-- ******************************* -->
-<h2 id="default"> Default automatic installation </h2>
+
+## Default automatic installation <a id="default"/>
 
 |:---------------------------|:----------|
 | ConEmu version             | Latest    |
@@ -47,8 +47,8 @@ powershell -NoProfile -ExecutionPolicy Unrestricted -Command "iex ((new-object n
 
 
 
-<!-- ******************************* -->
-<h2 id="params"> Automatic installation with parameters </h2>
+
+## Automatic installation with parameters <a id="params"/>
 
 If you need to customize parameters (folder, default xml file, etc.)
 you may use another syntax.
@@ -70,8 +70,8 @@ powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set ver 'alpha'; s
 ~~~
 
 
-<!-- ******************************* -->
-<h2 id="cinst"> Using chocolatey </h2>
+
+## Using chocolatey <a id="cinst"/>
 
 [Chocolatey](https://chocolatey.org/) is a Machine Package Manager,
 somewhat like apt-get, but built with Windows in mind.
@@ -96,11 +96,11 @@ choco install conemu
 
 
 
-<!-- ******************************* -->
-<h2 id="manual">Manual installation</h2>
+
+## Manual installation <a id="manual"/>
 
 Just choose [preferred format](VersionComparison.html)
 (7-zip, installer or PortableApps.com),
 download and [unpack or install](Installation.html) ConEmu.
 
-<a href="/en/Downloads.html"><img src="/img/Downloads.png" alt="Download mirrors" title="Choose ConEmu download mirrors" /></a>
+[![Download mirrors](/img/Downloads.png)](Downloads.html "Choose ConEmu download mirrors")

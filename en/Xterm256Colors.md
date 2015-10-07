@@ -30,7 +30,7 @@ readalso:
 
 
 
-<h2 id="vim-note"> Vim note </h2>
+## Vim note <a id="vim-note"/>
 
 **NB** If ‘Inject ConEmuHk’ is off, you can still use ANSI in vim (or any other application)
 if you run them via ConEmuC.exe but not directly. For example, run vim from bash.
@@ -46,7 +46,7 @@ For any other application - you must do it yourself.
 
 
 
-<h2 id="xterm_256_color_mode_requirements"> xterm 256 color mode requirements </h2>
+## xterm 256 color mode requirements <a id="xterm_256_color_mode_requirements"/>
 
 * Options must be turned on
   * ‘TrueMod (24bit color) support’ on [Colors](Settings.html#Colors) page
@@ -56,7 +56,7 @@ For any other application - you must do it yourself.
 
 
 
-<h3 id="Example_1:_Vim"> Example 1: Vim </h3>
+### Example 1: Vim <a id="Example_1:_Vim"/>
 
 ~~~
 vim.exe -cur_console:h0 <Vim arguments here>
@@ -64,9 +64,11 @@ vim.exe -cur_console:h0 <Vim arguments here>
 
 
 
-<h3 id="Example_2:_256colors2.pl"> Example 2: 256colors2.pl </h3>
+### Example 2: 256colors2.pl <a id="Example_2:_256colors2.pl"/>
 
-Script [256colors2.pl](http://www.frexx.de/xterm-256-notes/data/256colors2.pl) must be executed as:
+Script (the copy is [here](/256colors2.pl))
+[256colors2.pl](http://www.frexx.de/xterm-256-notes/data/256colors2.pl),
+must be executed from `cmd.exe` as following:
 
 ~~~
 256colors2.pl -cur_console:h0
@@ -74,7 +76,7 @@ Script [256colors2.pl](http://www.frexx.de/xterm-256-notes/data/256colors2.pl) m
 
 
 
-<h3 id="Example_3:_scroll_console_to_the_bottom"> Example 3: scroll console to the bottom </h3>
+### Example 3: scroll console to the bottom <a id="Example_3:_scroll_console_to_the_bottom"/>
 
 When you run **not** ‘fullscreen’ application (not Far/Vim/Hiew/...),
 you may scroll console to the bottom (`^[` must be replaced with real ESC symbol, ASCII code `\x1B`):
@@ -85,7 +87,7 @@ echo ^[[9999;1H
 
 
 
-<h2 id="TechInfo"> TechInfo </h2>
+## TechInfo <a id="TechInfo"/>
 
 ANSI escape sequences are processed when console program uses functions:
 `WriteConsoleA`, `WriteConsoleW` or `WriteFile`. For example:

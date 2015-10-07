@@ -29,8 +29,8 @@ otherlang:
 Для установки требуется подключение к Internet.
 
 
-<!-- ******************************* -->
-<h2 id="default"> Автоматическая установка по умолчанию </h2>
+
+## Автоматическая установка по умолчанию <a id="default"/>
 
 |:---------------------------|:----------|
 | ConEmu version             | Latest    |
@@ -46,8 +46,8 @@ powershell -NoProfile -ExecutionPolicy Unrestricted -Command "iex ((new-object n
 
 
 
-<!-- ******************************* -->
-<h2 id="params"> Автоматическая установка с параметрами </h2>
+
+## Автоматическая установка с параметрами <a id="params"/>
 
 Если вам нужно настроить параметры установки (путь, xml-файл, и т.п.)
 можно использовать другой синтаксис.
@@ -69,8 +69,8 @@ powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set ver 'alpha'; s
 ~~~
 
 
-<!-- ******************************* -->
-<h2 id="cinst"> chocolatey.org </h2>
+
+## chocolatey.org <a id="cinst"/>
 
 [Chocolatey](https://chocolatey.org/) это ‘менеджер пакетов’,
 что-то вроде apt-get в Linux, но созданный для Windows.
@@ -95,11 +95,11 @@ choco install conemu
 
 
 
-<!-- ******************************* -->
-<h2 id="manual">Manual installation</h2>
+
+## Manual installation <a id="manual"/>
 
 Just choose [preferred format](VersionComparison.html)
 (7-zip, installer or PortableApps.com),
 download and [unpack or install](Installation.html) ConEmu.
 
-<a href="/en/Downloads.html"><img src="/img/Downloads.png" alt="Download mirrors" title="Choose ConEmu download mirrors" /></a>
+[![Download mirrors](/img/Downloads.png)](Downloads.html "Choose ConEmu download mirrors")

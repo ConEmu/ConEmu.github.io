@@ -41,7 +41,7 @@ readalso:
 
 
 
-<h2 id="definition"> Definitions </h2>
+## Definitions <a id="definition"/>
 
 ‘Child Graphical User Interface’ or ‘ChildGui’ or ‘windowed applications’ are
 [GUI applications](https://en.wikipedia.org/wiki/Graphical_user_interface)
@@ -62,7 +62,7 @@ because they are running in the ConEmu ‘native’ mode.
 
 
 
-<h2 id="limitations"> There are several limitations </h2>
+## There are several limitations <a id="limitations"/>
 
 Don't confuse ChildGui with [ConsoleApplication](ConsoleApplication.html)s
 which are specially developed and compiled.
@@ -133,7 +133,7 @@ But there are few workarounds.
 
 
 
-<h2 id="run-childgui"> How to run ChildGui in ConEmu </h2>
+## How to run ChildGui in ConEmu <a id="run-childgui"/>
 
 Absolutely the same way you do that for simple [ConsoleApplication](ConsoleApplication.html)'s.
 For example, from ‘[Create new console dialog](LaunchNewTab.html)’.
@@ -148,7 +148,7 @@ C:> putty -new_console
 
 
 
-<h2 id="child-system-menu"> ChildGui title bar, window and system menu </h2>
+## ChildGui title bar, window and system menu <a id="child-system-menu"/>
 
 To make ChildGui applications looks prettier in ConEmu tabs
 there is an option ‘Hide caption of child GUI windows started in ConEmu’

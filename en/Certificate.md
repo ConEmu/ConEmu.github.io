@@ -12,9 +12,7 @@ breadcrumbs:
 
 With courtesy of Certum, ConEmu's binaries now are signed as ‘Open Source Developer, ConEmu-Maximus5’.
 
-<h2 id="Why_to_use_certificate?">
-Why to use certificate?
-</h2>
+## Why to use certificate? <a id="Why_to_use_certificate"/>
 
 * You can check integrity of ConEmu executable files.
 * Avoid Windows SmartScreen prevention of unrecognized program from starting (Installer).
@@ -22,9 +20,7 @@ Why to use certificate?
 		![ConEmu. UAC confirmation](/img/ConEmuUAC.png)
 * More friendly attitude from antiviral programs ([AVP](http://www.kaspersky.com/) for example).
 
-<h2 id="Checking_integrity">
-Checking the integrity
-</h2>
+## Checking the integrity <a id="Checking_integrity"/>
 
 Just open file properties (by right clicking in the Explorer),
 go to ‘Digital signatures’ tab, select signature

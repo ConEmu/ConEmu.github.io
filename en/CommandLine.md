@@ -23,7 +23,7 @@ be working in the another place!
 
 
 
-<h2 id="ConEmuArgs"> <a href="ConEmuArgs.html">GUI args</a> </h2>
+## [GUI args](ConEmuArgs.html) <a id="ConEmuArgs"/>
 
 These switches are used for changing ConEmu window behavior or
 running specific commands (shells) in the ConEmu's tabs or splits.
@@ -36,7 +36,7 @@ ConEmu -mintsa -config "Maintainance" -dir "C:\Project" -cmd git fetch
 
 
 
-<h2 id="ConEmuC"> <a href="ConEmuC.html#ConEmuC.exe_command_line_switches">ConEmuC args</a> </h2>
+## [ConEmuC args](ConEmuC.html#ConEmuC.exe_command_line_switches) <a id="ConEmuC"/>
 
 ConEmuC is a console part of ConEmu. It serves a console window
 acting a console server in the ConEmu-ConEmuC pair. Also, it can be
@@ -54,7 +54,7 @@ ConEmuC -GuiMacro:0 print "Echo abc\n"
 
 
 
-<h2 id="Shell_args"> Shell args </h2>
+## Shell args <a id="Shell_args"/>
 
 Generally speaking, ConEmu has no common with shells. The shell, is
 what you run in the ConEmu's tab or split. Read more here:
@@ -74,7 +74,7 @@ bash.exe --login -i
 
 
 
-<h2 id="Console_args"> Console args </h2>
+## Console args <a id="Console_args"/>
 
 That is much like as ‘Shell args’, with only difference that ConEmuC can process some commands internally, before running you shell: ‘set’, ‘chcp’, ‘title’. They can be used in [Tasks](SettingsTasks.html), after ‘-cmd’ ConEmu's switch and so on.
 
@@ -83,7 +83,7 @@ That is much like as ‘Shell args’, with only difference that ConEmuC can pro
 ~~~
 
 
-<h2 id="Task_parameters"> Task parameters </h2>
+## Task parameters <a id="Task_parameters"/>
 
 When you do configure [tasks](SettingsTasks.html)
 you will see ‘Task parameters’ edit field.
