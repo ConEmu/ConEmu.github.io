@@ -64,9 +64,10 @@ versions available, and than, after confirmation, it downloads appropriate
 or
 [7-Zip package](http://conemu.github.io/en/VersionComparison.html#zip-package).
 
-At the moment there are two maintained locations where `version.ini` is located:
+At the moment there are several maintained locations where `version.ini` is located:
 
 * [http://conemu.github.io/version.ini](http://conemu.github.io/version.ini) (default)
+* [https://conemu.github.io/version.ini](https://conemu.github.io/version.ini) (same as above but using **https**)
 * [http://conemu.ru/version.ini](http://conemu.ru/version.ini)
 
 If your antivirus, proxy, firewall, router or provider
@@ -86,9 +87,10 @@ But if `version.ini` is available, look for the options below.
 
 #### Change version.ini location <a id="auto-location"/>
 
-If your provider, for example, blocks access to
-[conemu.github.io](http://conemu.github.io/version.ini),
-but [conemu.ru](http://conemu.ru/version.ini) is available,
+If your provider/proxy/router blocks, for example, an access to
+[http://conemu.github.io/version.ini](http://conemu.github.io/version.ini),
+but **https** [location](https://conemu.github.io/version.ini), or
+[http://conemu.ru/version.ini](http://conemu.ru/version.ini) are available,
 you may switch to working location by changing value `Update.VerLocation`
 via [xml or registry](ConEmuXml.html). Look at the snippet below.
 
