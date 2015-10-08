@@ -3,6 +3,12 @@ redirect_from:
  - /ru/SettingsHighlight.html
 
 title: "ConEmu | Settings › Highlight page"
+
+readalso:
+ - url: FileLineDetector.html
+   title: "Hyperlinks and Errors Detector"
+ - url: ShellWorkDir.html
+   title: "Shell Working Directory"
 ---
 
 # Settings: Highlight

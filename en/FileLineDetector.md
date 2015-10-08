@@ -7,6 +7,12 @@ title: "ConEmu | Hyperlinks and Errors Detector"
 breadcrumbs:
  - url: TableOfContents.html#features
    title: Features
+
+readalso:
+ - url: ShellWorkDir.html
+   title: "Shell Working Directory"
+ - url: SettingsHighlight.html
+   title: "Settings › Highlight page"
 ---
 
 # The detector

@@ -9,9 +9,44 @@ title: "ConEmu | Shell Working Directory"
 breadcrumbs:
  - url: TableOfContents.html#tips-and-tweaks
    title: Tips and Tweaks
+
+readalso:
+ - url: FileLineDetector.html
+   title: "Hyperlinks and Errors Detector"
+ - url: SettingsHighlight.html
+   title: "Settings › Highlight page"
 ---
 
-# About directories
+# Shell Working Directory
+
+Knowing current (working) directory in your [shell](TerminalVsShell.html)
+or [active console application](ActiveProcess.html) is critical to some
+neat featured. Look at the few examples below.
+
+* Hyperlinks, Files and Compiler Errors
+  [Detector/Highlighter](FileLineDetector.html)
+* Displaying **CD** in the tab title using
+  [tab templates](SettingsTabBar.html);
+* Reusing **CD** in the [Restart](RestartTab.html)
+  and [Create new console](LaunchNewTab.html) dialogs;
+* Using `%CD%` variable with [Shell](GuiMacro.html#List_of_functions)
+  macro function in the [Task's](Tasks.html) `Dir` parameter.
+
+But ConEmu is not able to retrieve working directory by itself from
+most of possible [shells](TerminalVsShell.html) available nowadays.
+User have to modify their profiles to let ConEmu know working directory.
+Please read the rest of article about required profile modifications.
+
+* [About directories](#description)
+* [What you shall do to get **CD** support](#What_you_shall_do_to_get_CD_support)
+  * [cmd and tcc](#cmd_and_tcc)
+  * [bash and some other cygwin shells](#bash_and_other_cygwin_shells)
+  * [zsh](#zsh)
+  * [PowerShell](#PowerShell)
+
+
+
+## About directories <a id="description"/>
 
 When you run new console the shell is starting in the directory you specified.
 That is the ‘**Startup directory**’.
@@ -40,7 +75,7 @@ However, since ConEmu's build 140818 you got full support of ‘**Current direct
 * At last you may use `%CD%` variable with [Shell](GuiMacro.html#List_of_functions)
   macro function in the `Dir` parameter.
   
-But user has to [configure shells they are using](#What_you_shall_do_to_get_CD_support).
+But users have to [configure shells they are using](#What_you_shall_do_to_get_CD_support).
 
 
 
