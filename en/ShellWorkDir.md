@@ -44,20 +44,20 @@ But user has to [configure shells they are using](#What_you_shall_do_to_get_CD_s
 
 
 
-<h2 id="What_you_shall_do_to_get_CD_support"> What you shall do to get **CD** support </h2>
+## What you shall do to get **CD** support <a id="What_you_shall_do_to_get_CD_support"/>
 
 * [cmd and tcc](#cmd_and_tcc)
 * [bash and some other cygwin shells](#bash_and_other_cygwin_shells)
 * [zsh](#zsh)
 * [PowerShell](#PowerShell)
 
-<h3 id="cmd_and_tcc"> cmd and tcc </h3>
+### cmd and tcc <a id="cmd_and_tcc"/>
 
 Just enable [Inject ConEmuHk](ConEmuHk.html) feature.
 ConEmu will maintain **CD** for you automatically.
 
 
-<h3 id="bash_and_other_cygwin_shells"> bash and some other cygwin shells </h3>
+### bash and some other cygwin shells <a id="bash_and_other_cygwin_shells"/>
 
 You need to tell bash to run `ConEmuC -StoreCWD` command
 each time its prompt executed.
@@ -68,7 +68,7 @@ PROMPT_COMMAND='ConEmuC -StoreCWD'
 ~~~
 
 
-<h3 id="zsh"> zsh </h3>
+### zsh <a id="zsh"/>
 
 For zsh just add this to your `.zshrc` file.
 
@@ -79,7 +79,7 @@ PROMPT_COMMAND='ConEmuC -StoreCWD'
 ~~~
 
 
-<h3 id="PowerShell"> PowerShell </h3>
+### PowerShell <a id="PowerShell"/>
 
 You need to modify your profile to override prompt function. Just run in your PowerShell prompt:
 
