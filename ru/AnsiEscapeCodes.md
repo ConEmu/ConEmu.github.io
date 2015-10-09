@@ -192,7 +192,7 @@ ANSICON_DEF=7
 | ESC \[ *lines* E | Moves cursor to beginning of the line, *lines* (default 1) lines down. |
 | ESC \[ *lines* F | Moves cursor to beginning of the line, *lines* (default 1) lines up. |
 | ESC \[ *col* G | Moves the cursor to column *col* (absolute, 1-based). |
-| ESC \[ *row* ; *col* H | Set cursor position. The values *row* and *col* are 1-based. |
+| ESC \[ *row* ; *col* H | Set cursor position. The values *row* and *col* are 1-based. |
 | ESC \[ *n* J | Erase display. When *n* is 0 or missing: from cursor to end of display). When *n* is 1: erase from start to cursor. When *n* is 2: erase whole display **and** moves cursor to upper-left corner. |
 | ESC \[ *n* K | Erase line. When *n* is 0 or missing: from cursor to end of line. When *n* is 1: erase from start of line to cursor. When *n* is 2: erase whole line **and** moves cursor to first column. |
 | ESC \[ *n* L | Insert *n* (default 1) lines before current, scroll part of screen from current line to bottom. |
@@ -270,7 +270,7 @@ For simplifying, endings in the following table marked as «ST».
 | ESC ] 9 ; 4 ; *st* ; *pr* ST | Set progress state on Windows 7 taskbar and ConEmu title. When *st* is 0: remove progress. When *st* is 1: set progress value to *pr* (number, 0-100). When *st* is 2: set error state in progress on Windows 7 taskbar |
 | ESC ] 9 ; 5 ST | Wait for Enter/Space/Esc. Set environment variable "ConEmuWaitKey" to "ENTER"/"SPACE"/"ESC" on exit. |
 | ESC ] 9 ; 6 ; "*txt*" ST | Execute [GuiMacro](GuiMacro.html) ( *txt* ). Set EnvVar "ConEmuMacroResult" on exit. |
-| ESC ] 9 ; 7 ; "*cmd*" ST | Run some process with arguments. |
+| ESC ] 9 ; 7 ; "*cmd*" ST | Run some process with arguments. |
 | ESC ] 9 ; 8 ; "*env*" ST | Output value of environment variable. |
 
 
