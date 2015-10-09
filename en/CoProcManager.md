@@ -11,6 +11,8 @@ breadcrumbs:
 
 # NVIDIA CoProcManager
 
+**Seems like the problem was fixed (proper workaround was found) in build 151006.**
+
 After changing hooking technique to
 [minhook in build 150814](http://conemu.github.io/blog/2015/08/14/Build-150814.html)
 some users reported crashes of every console application exit.
