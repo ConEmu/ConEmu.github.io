@@ -123,8 +123,7 @@ but screenshot will not omit anything.
 
 * Do not cut them!
 * Do not downscale (resize) them!
-* Do not hide [status bar](StatusBar.html)!
-* [Status bar](StatusBar.html) visibility is preferred.
+* Do not hide [Status bar](StatusBar.html)!
 
 
 
