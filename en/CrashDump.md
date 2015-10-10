@@ -25,7 +25,7 @@ Please read the following if you find one.
 * [Manual dump creation](#manual-dumps)
 
 
-<h2 id="third-party-bugs"> Third-party bugs </h2>
+## Third-party bugs  {#third-party-bugs}
 
 **Please, note!** I often receive reports related to several
 [MicrosoftBugs](MicrosoftBugs.html).
@@ -33,7 +33,7 @@ If you see the crash, please read [wiki](MicrosoftBugs.html)
 and make sure [Inject ConEmuHk](ConEmuHk.html) feature is enabled!
 
 
-<h2 id="conemu-processes"> ConEmu and ConEmuC processes </h2>
+## ConEmu and ConEmuC processes  {#conemu-processes}
 
 Well, if any unknown crash was occured in `ConEmu` or `ConEmuC` processes,
 [MemoryDump](MemoryDump.html) may greatly help to locate and fix the problem.
@@ -46,7 +46,7 @@ Due to limitation of issues attachments, please upload **Zipped** dumps to
 to issues or via email.
 
 
-<h2 id="console-applications"> Console applications </h2>
+## Console applications  {#console-applications}
 
 ConEmu does not handle crashes (exceptions actually) in the running console applications.
 That is because to minimize intrusion to running application.
@@ -55,7 +55,7 @@ in the standard Windows' console started by `Win+R` for example, please read
 [the following](#How_to_create_required_dump).
 
 
-<h3 id="How_to_create_required_dump"> How to create required dump </h3>
+### How to create required dump   {#How_to_create_required_dump}
 
 For example, you observe a crash in `ls.exe` process.
 You have to set [environment variable](ConEmuEnvironment.html#Debug_purposed_variables)
@@ -97,7 +97,7 @@ Save the dump.
 Upload **Zipped** dump to [DropBox](DropBox.html) or any other hosting.
 
 
-<h2 id="manual-dumps"> Manual dump creation </h2>
+## Manual dump creation  {#manual-dumps}
 
 If you need to create dump manually (of any ConEmu's processes or console application)
 please read that [wiki](MemoryDump.html).

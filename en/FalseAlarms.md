@@ -16,12 +16,12 @@ readalso:
 
 # Some antiviral programs are reporting false alarms
 
-<h2 id="Softpedia_guarantee"> Softpedia guarantee </h2>
+## Softpedia guarantee  {#Softpedia_guarantee}
 
 <a href="http://www.softpedia.com/get/System/System-Miscellaneous/ConEmu.shtml" rel="nofollow"><img border="0" src="http://s1.softpedia-static.com/base_img/softpedia_free_award_f.gif"/></a>
 
 
-<h2 id="Related_issues"> Related issues </h2>
+## Related issues  {#Related_issues}
 
 * [Conemu getting removed by Norton antivirus as suspcious file](http://superuser.com/q/782279/139371)
 

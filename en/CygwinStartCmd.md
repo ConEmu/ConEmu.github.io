@@ -21,7 +21,7 @@ All examples below suppose that `bash.exe` exists in your `%PATH%`.
 
 
 
-<h2 id="bashrc"> Modify your ~/.bashrc </h2>
+## Modify your ~/.bashrc  {#bashrc}
 
 The example lines were copied from [SU question](http://superuser.com/a/344486/139371).
 
@@ -42,7 +42,7 @@ set "startup_cmd=echo 'This is sample command' && echo 'And this is another comm
 
 
 
-<h2 id="conveyer"> Use command conveyers </h2>
+## Use command conveyers  {#conveyer}
 
 This method supposed that your command will be executed
 before your login shell have to be started.
@@ -55,7 +55,7 @@ bash -l -i -c "echo 'This is sample command' && echo 'And this is another comman
 
 
 
-<h2 id="guimacro"> Use GuiMacro and command conveyers </h2>
+## Use GuiMacro and command conveyers  {#guimacro}
 
 You may use [GuiMacro](GuiMacro.html) function [print](GuiMacro.html#Print)
 to post some command into console input buffer after console starts.

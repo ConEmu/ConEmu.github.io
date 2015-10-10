@@ -26,7 +26,7 @@ readalso:
 * [Full list of hotkeys](#Full_list)
 
 
-<h2 id="Please_note"> Please note! </h2>
+## Please note!  {#Please_note}
 
 These shortcuts are only defaults!
 You may redefine almost all combinations
@@ -43,7 +43,7 @@ There are also several [global hotkeys](GlobalHotKeys.html)
 available even ConEmu has not focus.
 
 
-<h2 id="Non_configurable_hotkeys"> Non configurable hotkeys </h2>
+## Non configurable hotkeys  {#Non_configurable_hotkeys}
 
 | *Hotkey* | *Description* |
 |:---|:---|
@@ -58,11 +58,11 @@ available even ConEmu has not focus.
 | Win+1 … Win+0 | [Activates consoles](Tabs.html#Switching_between_consoles) by numbers (1,2,3,4,5,6,7,8,9,0).<br/>**Note**, you may change ‘Win’ hostkey to any combination of maximum three modifiers. |
 
 
-<h2 id="Configurable_hotkeys"> Configurable hotkeys </h2>
+## Configurable hotkeys  {#Configurable_hotkeys}
 
 The list below is very brief. [Full list of hotkeys](#Full_list) is located at the botom of the article.
 
-<h3 id="multiconsole-hotkeys"> Multiconsole </h3>
+### Multiconsole   {#multiconsole-hotkeys}
 
 | *Hotkey* | *Description* |
 |:---|:---|
@@ -75,7 +75,7 @@ The list below is very brief. [Full list of hotkeys](#Full_list) is located at t
 | Win+S | Duplicate tab with current state of [root process](RootProcess.html). |
 | *Unset* | Turns [BufferHeight](ConEmuTerms.html#BufferHeight) mode on/off. **Ignored in Windows 7**. |
 
-<h3 id="selected-hotkeys"> Some selected hotkeys </h3>
+### Some selected hotkeys   {#selected-hotkeys}
 
 | *Hotkey* | *Description* |
 |:---|:---|
@@ -88,13 +88,13 @@ The list below is very brief. [Full list of hotkeys](#Full_list) is located at t
 | Apps+F | Search text in the console |
 
 
-<h3 id="Host_key"> Host key </h3>
+### Host key   {#Host_key}
 
 Note, **Win** is default ‘[Host key](ConEmuTerms.html#Host_key)’,
 keys combination is [configurable](Settings.html#Tabs).
 
 
-<h3 id="Full_list"> Full list of hotkeys </h3>
+### Full list of hotkeys   {#Full_list}
 
 Take a look at full list of keyboard shortcuts below
 and notes about [global hotkeys](GlobalHotKeys.html).

@@ -39,7 +39,7 @@ otherlang:
 
 
 
-<h2 id="about-tasks"> Подробнее о Задачах </h2>
+## Подробнее о Задачах  {#about-tasks}
 
 ConEmu-Maximus5 это терминал, своего рода контейнер,
 в котором вы запускаете
@@ -82,7 +82,7 @@ set "FARHOME=" & C:\Far\Far.exe /w /x /p%ConEmuDir%\Plugins\ConEmu;%FARHOME%\Plu
 
 
 
-<h3 id="from-settings"> Немного из настроек </h3>
+### Немного из настроек   {#from-settings}
 
 ![ConEmu settings, Tasks page](/img/Settings-Tasks.png "ConEmu settings, Tasks page")
 
@@ -120,7 +120,7 @@ ConEmu Jump list настраивается тоже здесь.
 
 
 
-<h2 id="create-new-task"> Creating new task </h2>
+## Creating new task  {#create-new-task}
 
 When you want to create new task absent in the default tasks list you need to know:
 
@@ -130,7 +130,7 @@ When you want to create new task absent in the default tasks list you need to kn
 * In some cases you need to know environment variables.
 
 
-<h3 id="find-required-information"> Where you may get required information? </h3>
+### Where you may get required information?   {#find-required-information}
 
 In most cases you may open properties of shortcut created by any installer.
 Just find the shortcut, right-click it, and choose ‘Properties’.
@@ -151,7 +151,7 @@ Finally, the task for VS prompt is ready.
 ![ConEmu VS tools prompt](/img/ConEmuVsTask2.png "ConEmu task for VS tools prompt")
 
 
-<h3 id="if-no-shell-shortcut"> If there is no shortcut for that shell </h3>
+### If there is no shortcut for that shell   {#if-no-shell-shortcut}
 
 Sometimes, if the shell is started from another program you may use
 [ProcessExplorer](ProcessExplorer.html) or [ProcessMonitor](ProcessMonitor.html)

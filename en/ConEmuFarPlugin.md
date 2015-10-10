@@ -17,7 +17,7 @@ Several Far Manager plugins works in the ConEmu only, others provides advanced f
 
 
 
-<h2 id="ConEmu"> ConEmu </h2>
+## ConEmu  {#ConEmu}
 
 `ConEmu.dll` (or `ConEmu.x64.dll`) provides next functionality:
 
@@ -37,7 +37,7 @@ All its features are available via Far Manager plugin menu `F11`,
 You'll see it as ‘ConEmu’.
 
 
-<h3 id="ConEmu-plugin-menu"> ConEmu plugin menu </h3>
+### ConEmu plugin menu   {#ConEmu-plugin-menu}
 
 ![ConEmu FAR plugin](/img/ConEmuFarPlugin.png)
 
@@ -46,7 +46,7 @@ when you starts Far Manager without ConEmu.
 
 
 
-<h2 id="ConEmu_Panel_Views"> ConEmu Panel Views </h2>
+## ConEmu Panel Views  {#ConEmu_Panel_Views}
 
 Enables thumbnails and tiles in Far Manager panels.
 
@@ -63,7 +63,7 @@ You may polish Panel Views appearence via ConEmu [Settings](Settings.html#Views)
 
 
 
-<h2 id="ConEmu_Underlines"> ConEmu Underlines </h2>
+## ConEmu Underlines  {#ConEmu_Underlines}
 
 Simple background plugin.
 
@@ -74,7 +74,7 @@ Simple background plugin.
 
 
 
-<h2 id="ConEmu_Background"> ConEmu Background </h2>
+## ConEmu Background  {#ConEmu_Background}
 
 This plugin colorize Far panels, display mnemonic picture (drive, network, and so on),
 and progress bar of used drive space at status line area.
@@ -87,7 +87,7 @@ This is ‘native’ analog of [PanelColorer](#PanelColorer) plugin.
 
 
 
-<h2 id="PanelColorer"> PanelColorer </h2>
+## PanelColorer  {#PanelColorer}
 
 This obsolete ‘third-party’ background plugin is originally from
 [here](http://forum.farmanager.com/viewtopic.php?f=11&t=5702).
@@ -95,7 +95,7 @@ This obsolete ‘third-party’ background plugin is originally from
 
 
 
-<h2 id="FarColorer"> FarColorer </h2>
+## FarColorer  {#FarColorer}
 
 This [plugin](http://colorer.sourceforge.net/farplugin.html) works in plain Far Manager too,
 but when you choose [Far 3.x](http://www.farmanager.com/download.php)

@@ -52,12 +52,12 @@ otherlang:
 * [Alphabetical](SettingsAlphabetical.html)
 
 
-<h2 id="Where_settings_are_stored"> Where settings are stored </h2>
+## Where settings are stored  {#Where_settings_are_stored}
 
 ConEmu may store its settings in the Windows registry (HKCU), or in the ConEmu.xml file.
 
 
-<h3 id="Registry"> Registry </h3>
+### Registry   {#Registry}
 
 All settings are stored in registry in the following key:
 
@@ -72,7 +72,7 @@ When You specify the [/config](ConEmuArgs.html) switch in the ConEmu.exe command
 ~~~
 
 
-<h3 id="ConEmu_.xml"> ConEmu.xml </h3>
+### ConEmu.xml   {#ConEmu_.xml}
 
 Любая [версия](VersionComparison.html) ConEmu может быть «портабельной»,
 то есть может хранить настройки в xml-файле.
@@ -88,14 +88,14 @@ When You specify the [/config](ConEmuArgs.html) switch in the ConEmu.exe command
 * [Как отправить настройки сообщая о проблемах](ConEmuXml.html#send-to-developer)
 
 
-<h2 id="Manual_change_of_settings"> Manual change of settings </h2>
+## Manual change of settings  {#Manual_change_of_settings}
 
 So, You want to change a few settings, which are absent in the Settings dialog.
 List and description of each setting You may find
 in the `Settings-ConEmu.reg` or `ConEmu_Sample.xml` files.
 
 
-<h3 id="Using_registry"> Using registry </h3>
+### Using registry   {#Using_registry}
 
 Go to Registry editor (be careful!) and change appropriate value in the ConEmu subkeys:
 
@@ -103,13 +103,13 @@ Go to Registry editor (be careful!) and change appropriate value in the ConEmu s
 * `[HKEY_CURRENT_USER\Software\ConEmu\<configname>]`, when /config switch specified in the ConEmu command line.
 
 
-<h3 id="Using_ConEmu_.xml"> Using ConEmu.xml </h3>
+### Using ConEmu.xml   {#Using_ConEmu_.xml}
 
 Open ConEmu.xml file using any text editor (Far Manager, Notepad, Vim and so on)
 find appropriate value and change it.
 
 
-<h2 id="Settings_dialog"> Settings dialog </h2>
+## Settings dialog  {#Settings_dialog}
 
 Открыть диалог настроек можно несколькими способами
 
@@ -125,52 +125,52 @@ find appropriate value and change it.
 
 <a name="screenshots"></a>
 
-<h3 id="Main"> Main </h3>
+### Main   {#Main}
 
 [![ConEmu settings, Main page](/img/Settings-Main.png "Щелкните чтобы открыть описание")](SettingsMain.html)
 
 
-<h3 id="Size_and_Pos"> Size and Pos </h3>
+### Size and Pos   {#Size_and_Pos}
 
 [![ConEmu settings, Size and position page](/img/Settings-SizePos.png "Щелкните чтобы открыть описание")](SettingsSizePos.html)
 
 
-<h3 id="Appearance"> Appearance </h3>
+### Appearance   {#Appearance}
 
 [![ConEmu settings, Appearance page](/img/Settings-Appearance.png "Щелкните чтобы открыть описание")](SettingsAppearance.html)
 
 
-<h3 id="Background"> Background </h3>
+### Background   {#Background}
 
 [![ConEmu settings, Background page](/img/Settings-Background.png "Щелкните чтобы открыть описание")](SettingsBackground.html)
 
 
-<h3 id="Tabs"> Tabs </h3>
+### Tabs   {#Tabs}
 
 [![ConEmu settings, Tabs page](/img/Settings-TabBar.png "Щелкните чтобы открыть описание")](SettingsTabBar.html)
 
 
-<h3 id="Confirm"> Confirm </h3>
+### Confirm   {#Confirm}
 
 [![ConEmu settings, Confirm page](/img/Settings-Confirm.png "Щелкните чтобы открыть описание")](SettingsConfirm.html)
 
 
-<h3 id="Task_bar"> Task bar </h3>
+### Task bar   {#Task_bar}
 
 [![ConEmu settings, Task bar page](/img/Settings-TaskBar.png "Щелкните чтобы открыть описание")](SettingsTaskBar.html)
 
 
-<h3 id="Automatic_update"> Automatic update </h3>
+### Automatic update   {#Automatic_update}
 
 [![ConEmu settings, Update page](/img/Settings-Update.png "Щелкните чтобы открыть описание")](SettingsUpdate.html)
 
 
-<h3 id="Startup"> Startup </h3>
+### Startup   {#Startup}
 
 [![ConEmu settings, Startup page](/img/Settings-Startup.png "Щелкните чтобы открыть описание")](SettingsStartup.html)
 
 
-<h3 id="Tasks"> Tasks </h3>
+### Tasks   {#Tasks}
 
 * [Простой способ запуска часто используемых оболочек](Tasks.html) в [табах](TabBar.html) или [сплитах](SplitScreen.html)
 * [Запуск задач из списка переходов панели задач](Windows7Taskbar.html#Customizable_Jump_list)
@@ -178,22 +178,22 @@ find appropriate value and change it.
 [![ConEmu settings, Tasks page](/img/Settings-Tasks.png "Щелкните чтобы открыть описание")](SettingsTasks.html)
 
 
-<h3 id="ComSpec"> ComSpec </h3>
+### ComSpec   {#ComSpec}
 
 [![ConEmu settings, Comspec page](/img/Settings-Comspec.png "Щелкните чтобы открыть описание")](SettingsComspec.html)
 
 
-<h3 id="Environment"> Environment </h3>
+### Environment   {#Environment}
 
 [![ConEmu settings, Environment page](/img/Settings-Environment.png "Щелкните чтобы открыть описание")](SettingsEnvironment.html)
 
 
-<h3 id="Features"> Features </h3>
+### Features   {#Features}
 
 [![ConEmu settings, Features page](/img/Settings-Features.png "Щелкните чтобы открыть описание")](SettingsFeatures.html)
 
 
-<h4 id="RealConsole_font"> RealConsole font </h4>
+#### RealConsole font  {#RealConsole_font}
 
 * [RealConsole](RealConsole.html)
 * [Unicode support](UnicodeSupport.html)
@@ -201,29 +201,29 @@ find appropriate value and change it.
 [![ConEmu settings, RealConsole font](/img/Settings-More-RealFont.png "Щелкните чтобы открыть описание")](RealConsole.html)
 
 
-<h3 id="Text_cursor"> Text cursor </h3>
+### Text cursor   {#Text_cursor}
 
 [![ConEmu settings, Text cursor page](/img/Settings-TextCursor.png "Щелкните чтобы открыть описание")](SettingsTextCursor.html)
 
 
-<h3 id="Colors"> Colors </h3>
+### Colors   {#Colors}
 
 [![ConEmu settings, Colors page](/img/Settings-Colors.png "Щелкните чтобы открыть описание")](SettingsColors.html)
 
 [![ConEmu settings, Predefines palettes](/img/Settings-Colors2.png "Щелкните чтобы открыть описание")](SettingsColors.html)
 
 
-<h3 id="Transparency"> Transparency </h3>
+### Transparency   {#Transparency}
 
 [![ConEmu settings, Transparency page](/img/Settings-Transparency.png "Щелкните чтобы открыть описание")](SettingsTransparency.html)
 
 
-<h3 id="Status_bar"> Status bar </h3>
+### Status bar   {#Status_bar}
 
 [![ConEmu settings, Status bar page](/img/Settings-StatusBar.png "Щелкните чтобы открыть описание")](SettingsStatusBar.html)
 
 
-<h3 id="App_distinct"> App distinct </h3>
+### App distinct   {#App_distinct}
 
 [![ConEmu settings, App distinct page](/img/Settings-AppDistinct.png "Щелкните чтобы открыть описание")](SettingsAppDistinct.html)
 
@@ -232,58 +232,58 @@ find appropriate value and change it.
 [![ConEmu settings, App distinct page](/img/Settings-AppDistinct3.png "Щелкните чтобы открыть описание")](SettingsAppDistinct.html)
 
 
-<h3 id="Integration"> Integration </h3>
+### Integration   {#Integration}
 
 [![ConEmu settings, Integration page](/img/Settings-Integration.png "Щелкните чтобы открыть описание")](SettingsIntegration.html)
 
 
-<h3 id="Default_term"> Default Terminal </h3>
+### Default Terminal   {#Default_term}
 
 * [ConEmu как терминал «по умолчанию»](DefaultTerminal.html)
 
 [![ConEmu settings, DefTerm page](/img/Settings-DefTerm.png "Щелкните чтобы открыть описание")](SettingsDefTerm.html)
 
 
-<h3 id="Keys_and_Macro"> Keys and Macro </h3>
+### Keys and Macro   {#Keys_and_Macro}
 
 [![ConEmu settings, Keys and Macro page](/img/Settings-Hotkeys.png "Щелкните чтобы открыть описание")](SettingsHotkeys.html)
 
 [![ConEmu settings, Few GuiMacros](/img/Settings-Hotkeys2.png "Щелкните чтобы открыть описание")](SettingsHotkeys.html)
 
 
-<h3 id="Controls"> Controls </h3>
+### Controls   {#Controls}
 
 [![ConEmu settings, Controls page](/img/Settings-Controls.png "Щелкните чтобы открыть описание")](SettingsControls.html)
 
 
-<h3 id="Mark_and_Copy"> Mark and Copy </h3>
+### Mark and Copy   {#Mark_and_Copy}
 
 * [Пометка, копирование и вставка текста](TextSelection.html)
 
 [![ConEmu settings, Text selection](/img/Settings-MarkCopy.png "Щелкните чтобы открыть описание")](SettingsMarkCopy.html)
 
 
-<h3 id="Paste"> Paste </h3>
+### Paste   {#Paste}
 
 [![ConEmu settings, Paste page](/img/Settings-Paste.png "Щелкните чтобы открыть описание")](SettingsPaste.html)
 
 
-<h3 id="Highlight"> Highlight </h3>
+### Highlight   {#Highlight}
 
 [![ConEmu settings, Highlight page](/img/Settings-Highlight.png "Щелкните чтобы открыть описание")](SettingsHighlight.html)
 
 
-<h3 id="Far_Manager"> Far Manager </h3>
+### Far Manager   {#Far_Manager}
 
 [![ConEmu settings, Far Manager page](/img/Settings-Far.png "Щелкните чтобы открыть описание")](SettingsFar.html)
 
 
-<h3 id="Far_macros"> Far macros </h3>
+### Far macros   {#Far_macros}
 
 ![ConEmu settings, Far macros page](/img/Settings-Far-Macros.png "ConEmu settings, Far macros page")
 
 
-<h3 id="Far_Views"> Far Views </h3>
+### Far Views   {#Far_Views}
 
 This is settings for ‘Panel Views’ Far Manager plugin.
 
@@ -291,12 +291,12 @@ This is settings for ‘Panel Views’ Far Manager plugin.
 ![ConEmu settings, Views page](/img/Settings-Far-View.png "ConEmu settings, Views page")
 
 
-<h3 id="Info"> Info </h3>
+### Info   {#Info}
 
 [![ConEmu settings, Info page](/img/Settings-Info.png "Щелкните чтобы открыть описание")](SettingsInfo.html)
 
 
-<h3 id="Debug"> Debug </h3>
+### Debug   {#Debug}
 
 Enables advanced logging of console processes creation, ANSI output and keypresses.
 

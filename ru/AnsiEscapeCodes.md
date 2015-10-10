@@ -49,7 +49,7 @@ ConEmu (начиная с версии 120520d) поддерживает пос�
   * [Текстовый Progressbar в cmd-файлах](#Text_Progressbar_in_cmd-files)
 
 
-<h2 id="Description">Описание</h2>
+## Описание  {#Description}
 
 Новая опция «ANSI X3.64 / xterm 256 colors» на вкладке «Features», по умолчанию включена.
 Адресуется консоль целиком (с прокруткой), но xterm 256 color влияет только на «рабочую»
@@ -57,14 +57,14 @@ ConEmu (начиная с версии 120520d) поддерживает пос�
 Вне «рабочей» области 256 цветов аппроксимируются к стандартным 16-и консольным цветам.
 
 
-<h3 id="ANSI_sequences_processing_requirements"> Для обработки ANSI последовательностей </h3>
+### Для обработки ANSI последовательностей   {#ANSI_sequences_processing_requirements}
 
 * Должны быть включены флажки
   * «ANSI X3.64 / xterm 256 colors» на вкладке [Features](Settings.html#Features)
   * «Inject ConEmuHk» на вкладке [Features](Settings.html#Features) (требуется для обработки программ второго уровня)
 
 
-<h3 id="xterm_256_color_processing_requirements"> Для режима xterm 256 color </h3>
+### Для режима xterm 256 color   {#xterm_256_color_processing_requirements}
 
 * Должны быть включены флажки
   * «TrueMod (24bit color) support» на вкладке [Colors](Settings.html#Colors)
@@ -73,7 +73,7 @@ ConEmu (начиная с версии 120520d) поддерживает пос�
 * проверить выключен ли буфер/прокрутка.
 
 
-<h4 id="Example_1_Vim"> Пример 1: Vim </h4>
+#### Пример 1: Vim  {#Example_1_Vim}
 
 ~~~
 vim.exe -cur_console:h0 <Vim arguments here>
@@ -81,7 +81,7 @@ vim.exe -cur_console:h0 <Vim arguments here>
 
 
 
-<h4 id="Example_2_256colors2_pl"> Пример 2: 256colors2.pl </h4>
+#### Пример 2: 256colors2.pl  {#Example_2_256colors2_pl}
 
 Скрипт
 [256colors2.pl](http://www.frexx.de/xterm-256-notes/data/256colors2.pl)
@@ -92,7 +92,7 @@ vim.exe -cur_console:h0 <Vim arguments here>
 ~~~
 
 
-<h4 id="Example_3_scroll_console_to_bottom"> Пример 3: прокрутить консоль </h4>
+#### Пример 3: прокрутить консоль  {#Example_3_scroll_console_to_bottom}
 
 Если приложение **не** «полноэкранное» (вроде Far/Vim/Hiew/...),
 можно прокрутить консоль в самый низ (в примере на 9999 строк)
@@ -113,7 +113,7 @@ echo %ESC%[9999;1H
 ~~~
 
 
-<h3 id="TechInfo"> TechInfo </h3>
+### TechInfo   {#TechInfo}
 
 Обработка ANSI escape последовательностей осуществляется в том случае,
 если консольная программа использует для вывода функции
@@ -129,7 +129,7 @@ cmd /c type "Colors-256.ans"
 
 
 
-<h4 id="compat-check"> Проверка совместимости </h4>
+#### Проверка совместимости  {#compat-check}
 
 **Внимание**, ConEmu не может «обрабатывать» ANSI последовательности,
 если [консольное приложение](ConsoleApplication.html)
@@ -155,7 +155,7 @@ cmd /c type "Colors-256.ans"
 
 
 
-<h3 id="Environment_variable"> Переменная окружения </h3>
+### Переменная окружения   {#Environment_variable}
 
 Как проверить в cmd-файле или консольном приложении разрешено ли ANSI x3.64?
 Проверить значение переменной окружения `ConEmuANSI`
@@ -179,9 +179,9 @@ ANSICON_DEF=7
 ~~~
 
 
-<h2 id="List_of_supported_codes"> Список поддерживаемых кодов </h2>
+## Список поддерживаемых кодов  {#List_of_supported_codes}
 
-<h3 id="CSI_Control_Sequence_Initiator_codes"> CSI (Control Sequence Initiator) codes </h3>
+### CSI (Control Sequence Initiator) codes   {#CSI_Control_Sequence_Initiator_codes}
 
 | Последовательность | Описание |
 |:---|:---|
@@ -216,7 +216,7 @@ ANSICON_DEF=7
 | ESC \[ u | Restore cursor position. |
 
 
-<h4 id="Terminal_modes"> Terminal modes </h4>
+#### Terminal modes  {#Terminal_modes}
 
 | Последовательность | Описание |
 |:---|:---|
@@ -226,7 +226,7 @@ ANSICON_DEF=7
 | ESC \[ 25 l | Hide text cursor. |
 
 
-<h4 id="SGR_Select_Graphic_Rendition_parameters"> SGR (Select Graphic Rendition) parameters </h4>
+#### SGR (Select Graphic Rendition) parameters  {#SGR_Select_Graphic_Rendition_parameters}
 
 | Последовательность | Описание |
 |:---|:---|
@@ -251,7 +251,7 @@ ANSICON_DEF=7
 | ESC \[ 100...107 m | Set bright ANSI background color |
 
 
-<h3 id="OSC_Operating_system_commands"> OSC (Operating system commands) </h3>
+### OSC (Operating system commands)   {#OSC_Operating_system_commands}
 
 **Note**. These codes may ends with «ESC\» (two symbols - ESC and BackSlash)
 or «BELL» (symbol with code \x07, same as «^a» in `*`nix).
@@ -262,7 +262,7 @@ For simplifying, endings in the following table marked as «ST».
 | ESC ] 2 ; "*txt*" ST | Set console window title to *txt*. |
 
 
-<h4 id="ConEmu_specific_OSC"> ConEmu specific OSC </h4>
+#### ConEmu specific OSC  {#ConEmu_specific_OSC}
 
 | Последовательность | Описание |
 |:---|:---|
@@ -278,15 +278,15 @@ For simplifying, endings in the following table marked as «ST».
 
 
 
-<h2 id="Примеры"> Примеры </h2>
+## Примеры  {#Примеры}
 
 
-<h3 id="ANSI_and_xterm_color_maps"> ANSI and xterm color maps </h3>
+### ANSI and xterm color maps   {#ANSI_and_xterm_color_maps}
 
 ![ANSI X3.64 and Xterm 256 colors in ConEmu](/img/ConEmuAnsi.png)
 
 
-<h4 id="Xterm_256_color_map"> Xterm 256 color map </h4>
+#### Xterm 256 color map  {#Xterm_256_color_map}
 
 Пример из файла: `ConEmu\Addons\AnsiColors256.ans`.
 
@@ -309,7 +309,7 @@ Grayscale ramp (232..255 from xterm palette):
 **Warning** Перед использованием `^[` нужно заменить на ESC код (символ с ASCII кодом \x1B).
 
 
-<h4 id="Standard_ANSI_color_map"> Standard ANSI color map </h4>
+#### Standard ANSI color map  {#Standard_ANSI_color_map}
 
 Пример из файла: `ConEmu\Addons\AnsiColors16.ans`.
 
@@ -322,7 +322,7 @@ System colors (Standard console 16 colors):
 **Warning** Перед использованием `^[` нужно заменить на ESC код (символ с ASCII кодом \x1B).
 
 
-<h3 id="sixteencolors.net"> sixteencolors.net </h3>
+### sixteencolors.net   {#sixteencolors.net}
 
 Большой архив [ANSI арта](http://en.wikipedia.org/wiki/ANSI_art): [sixteencolors.net](http://sixteencolors.net/).
 

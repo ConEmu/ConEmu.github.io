@@ -49,7 +49,7 @@ bash and so on) can produce unicode output.
 
 
 
-<h2 id="utf-8"> UTF-8 (UTF8) </h2>
+## UTF-8 (UTF8)  {#utf-8}
 
 On Windows, unlike Unix, the console itself is not a stream of
 ‘bytes’ but a spreadsheet of cells, each of which contains an UTF-16
@@ -93,7 +93,7 @@ set ConEmuDefaultCp=65001
 
 
 
-<h2 id="on-the-fly_conversion"> On-the-fly conversion </h2>
+## On-the-fly conversion  {#on-the-fly_conversion}
 
 Sometimes you may observe a broken output if your application uses
 wrong codepage. That is, for example, if you run `git app -p`
@@ -117,7 +117,7 @@ hack to change output CP if you don’t want to use ‘chcp’.
 
 
 
-<h2 id="font-charset"> Font charset </h2>
+## Font charset  {#font-charset}
 
 There is a ‘Font charset’ option in the font settings. This setting
 is **not** related to UTF-8 or Unicode itself, it just tells to
@@ -127,14 +127,14 @@ how the result is changed.
 
 
 
-<h2 id="troubleshooting"> Troubleshooting </h2>
+## Troubleshooting  {#troubleshooting}
 
 If you observe some non-ascii characters are not displayed correctly you may check the following.
 
 
-<h2 id="check-proper-glyphs"> Check if the font used in ConEmu has proper glyphs </h2>
+## Check if the font used in ConEmu has proper glyphs  {#check-proper-glyphs}
 
-<h3 id="what-font-you-are-using"> What font you are using </h3>
+### What font you are using   {#what-font-you-are-using}
 
 [Main](SettingsMain.html) settings page has two section:
 ‘Main console font’ and ‘Change pseudographics font’.
@@ -159,7 +159,7 @@ There is ‘Font charset’ there. Usually it must contain ‘Default’ or ‘A
 One more strange thing: the option ‘Treat font height as device units’ reflects on created font too.
 
 
-<h3 id="Check_font_glyphs"> Check font glyphs </h3>
+### Check font glyphs   {#Check_font_glyphs}
 
 Check if the font has proper glyphs: run from `Win+R` the
 `charmap.exe` tool and examine your font.
@@ -184,7 +184,7 @@ with button `...` on the right of ‘Show real console’.
 
 
 
-<h2 id="check-your-console-application"> Check if your console application is Unicode-aware </h2>
+## Check if your console application is Unicode-aware  {#check-your-console-application}
 
 What shell or application is responsible for your broken output? In
 most cases you will see the active application exe name in the
@@ -204,9 +204,9 @@ chcp 65001 & cmd
 
 
 
-<h2 id="some-tests"> ConEmu provide some tests you may run </h2>
+## ConEmu provide some tests you may run  {#some-tests}
 
-<h3 id="checkunicode-test"> CheckUnicode test </h3>
+### CheckUnicode test   {#checkunicode-test}
 
 ~~~
 ConEmuC -CheckUnicode
@@ -215,7 +215,7 @@ ConEmuC -CheckUnicode
 ![‘ConEmuC -CheckUnicode’ output](/img/ConEmuUnicodeTest1.png)
 
 
-<h3 id="utf-8-test"> UTF-8 test </h3>
+### UTF-8 test   {#utf-8-test}
 
 ~~~
 cmd /c '%ConEmuBaseDir%\Addons\utf-8-test.cmd'
@@ -225,7 +225,7 @@ cmd /c '%ConEmuBaseDir%\Addons\utf-8-test.cmd'
 
 
 
-<h2 id="some-hints"> Some hints </h2>
+## Some hints  {#some-hints}
 
 For Python 2 and 3 you may use
 [win-unicode-console](http://stackoverflow.com/questions/31846091/python-unicode-console-support-under-windows#comment51688033_31846091)

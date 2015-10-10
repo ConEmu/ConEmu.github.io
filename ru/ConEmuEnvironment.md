@@ -34,7 +34,7 @@ otherlang:
 * [ConEmuDefaultCp - hack to change output CP if you don't want to use ‘chcp’](#ConEmuDefaultCp)
 
 
-<h2 id="List_of_environment_variables_set_by_ConEmu"> Список переменных окружения устанавливаемых в ConEmu </h2>
+## Список переменных окружения устанавливаемых в ConEmu  {#List_of_environment_variables_set_by_ConEmu}
 
 
 | **Имя** | **Пример** | **Описание** |
@@ -61,7 +61,7 @@ otherlang:
 | [ConEmuDefaultCp](ConEmuEnvironment.html#ConEmuDefaultCp) | 1251 | установить кодовую страницу вместо использования chcp |
 
 
-<h2 id="PATH_modifications"> Изменения PATH </h2>
+## Изменения PATH  {#PATH_modifications}
 
 [Settings page Environment](SettingsEnvironment.html) has an options ‘Add %ConEmuDir% to %PATH%’, ‘Add %ConEmuBaseDir% to %PATH%’
 and edit box for settings user-defined environment variables.
@@ -80,7 +80,7 @@ csudo dism.exe /online /enable-feature /featurename:NetFX3 /All /Source:D:\sourc
 ~~~
 
 
-<h2 id="Debug_purposed_variables"> Debug purposed variables </h2>
+## Debug purposed variables  {#Debug_purposed_variables}
 
 | **Name** | **Example** | **Description** |
 |:---------|:------------|:----------------|
@@ -88,7 +88,7 @@ csudo dism.exe /online /enable-feature /featurename:NetFX3 /All /Source:D:\sourc
 | `ConEmuReportExe` | `perl.exe` | Shows message box like ‘perl.exe loaded’ when `perl.exe` started inside ConEmu tab; option ‘Inject [ConEmuHk](ConEmuHk.html)’ must be enabled |
 
 
-<h2 id="Export_variables"> Export variables </h2>
+## Export variables  {#Export_variables}
 
 When you start new console - it inherits environment strings (`%PATH%` also)
 from parent process (ConEmu GUI).
@@ -106,7 +106,7 @@ This will ‘copy’ your current `%PATH%` value to ConEmu GUI
 and it will be applied to all new ConEmu's consoles.
 
 
-<h3 id="Full_syntax_of_Export_command"> Full syntax of Export command </h3>
+### Full syntax of Export command   {#Full_syntax_of_Export_command}
 
 ~~~
 ConEmuC /EXPORT[=CON|ALL] [Var1 [Var2 [...]]]
@@ -126,7 +126,7 @@ ConEmuC /export[=CON|ALL] [Var1 [Var2 [...]]]
 * ‘bash’ - fails completely (seems, it does not support outside changing of env.vars).
 
 
-<h2 id="Disabling_hooks_temporarily"> Disabling hooks temporarily </h2>
+## Disabling hooks temporarily  {#Disabling_hooks_temporarily}
 
 You may temporarily disable injects when running ‘long’ batches or initialization scripts:
 
@@ -144,7 +144,7 @@ set ConEmuHooks=NOARG,NOSTART
 ~~~
 
 
-<h2 id="Cheating_system_time"> Cheating system time </h2>
+## Cheating system time  {#Cheating_system_time}
 
 Environment variable "ConEmuFakeDT".
 That will cheat system and local current time for console processes.
@@ -159,7 +159,7 @@ set ConEmuFakeDT=2013-11-30
 ~~~
 
 
-<h2 id="ConEmuCpCvt"> ConEmuCpCvt </h2>
+## ConEmuCpCvt  {#ConEmuCpCvt}
 
 Codepage hack to force output CP conversion.
 
@@ -176,7 +176,7 @@ set ConEmuCpCvt=perl.exe:1252:1251;*:850:866;
 ~~~
 
 
-<h2 id="ConEmuDefaultCp"> ConEmuDefaultCp </h2>
+## ConEmuDefaultCp  {#ConEmuDefaultCp}
 
 Codepage hack to change output CP if you don't want to use chcp.
 

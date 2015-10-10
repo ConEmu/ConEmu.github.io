@@ -47,7 +47,7 @@ and its extension
   * [Text Progressbar in cmd-files](#Text_Progressbar_in_cmd-files)
 
 
-<h2 id="Description"> Description </h2>
+## Description  {#Description}
 
 New option ‘ANSI X3.64 / xterm 256 colors’ on the ‘Features’ page, turned On by default.
 It works with full console (including scrolling area - BufferHeight) but xterm 256 color
@@ -55,14 +55,14 @@ affects only on ‘working’ area (this is bottom part of console, if scrolling
 Outside (upper area) 256 colors will be approximated to console stanard 16-colors.
 
 
-<h3 id="ANSI_sequences_processing_requirements"> ANSI sequences processing requirements </h3>
+### ANSI sequences processing requirements   {#ANSI_sequences_processing_requirements}
 
 * These checkboxes must be **On**
   * ‘ANSI X3.64 / xterm 256 colors’ on the [Features](Settings.html#Features) page
   * ‘Inject ConEmuHk’ on the [Features](Settings.html#Features) page (required for 2-nd level programs, aka started from your shell)
 
 
-<h3 id="xterm_256_color_processing_requirements"> xterm 256 color processing requirements </h3>
+### xterm 256 color processing requirements   {#xterm_256_color_processing_requirements}
 
 * These checkboxes must be **On**
   * ‘TrueMod (24bit color) support’ on the [Colors](Settings.html#Colors) page
@@ -71,7 +71,7 @@ Outside (upper area) 256 colors will be approximated to console stanard 16-color
 * You need to ensure that buffer/scrolling is Off
 
 
-<h4 id="Example_1_Vim"> Example 1: Vim </h4>
+#### Example 1: Vim  {#Example_1_Vim}
 
 ~~~
 vim.exe -cur_console:h0 <Vim arguments here>
@@ -79,7 +79,7 @@ vim.exe -cur_console:h0 <Vim arguments here>
 
 
 
-<h4 id="Example_2_256colors2_pl"> Example 2: 256colors2.pl </h4>
+#### Example 2: 256colors2.pl  {#Example_2_256colors2_pl}
 
 Perl script
 [256colors2.pl](http://www.frexx.de/xterm-256-notes/data/256colors2.pl)
@@ -90,7 +90,7 @@ have to be runned as following:
 ~~~
 
 
-<h4 id="Example_3_scroll_console_to_bottom"> Example 3: scroll console to bottom </h4>
+#### Example 3: scroll console to bottom  {#Example_3_scroll_console_to_bottom}
 
 If your console application **is not** ‘fullscreen’ (alike Far/Vim/Hiew/...),
 you may scroll console to the bottom (by 9999 lines in the example)
@@ -111,7 +111,7 @@ echo %ESC%[9999;1H
 ~~~
 
 
-<h3 id="TechInfo"> TechInfo </h3>
+### TechInfo   {#TechInfo}
 
 ANSI escape sequences will be processed when console application
 output text using Windows API functions
@@ -127,7 +127,7 @@ Also, output with extended attributes (xterm 256 color) is available with functi
 
 
 
-<h4 id="compat-check"> Compatibility check </h4>
+#### Compatibility check  {#compat-check}
 
 **NB** ConEmu is enable to ‘process’ ANSI sequences,
 if [console application](ConsoleApplication.html)
@@ -153,7 +153,7 @@ in certain [shells](TerminalVsShell.html) only.
 
 
 
-<h3 id="Environment_variable"> Environment variable </h3>
+### Environment variable   {#Environment_variable}
 
 How can I check in cmd-file if ANSI x3.64 is supported and enabled?
 You have to check `ConEmuANSI` environment variable:
@@ -177,9 +177,9 @@ ANSICON_DEF=7
 ~~~
 
 
-<h2 id="List_of_supported_codes"> List of supported codes </h2>
+## List of supported codes  {#List_of_supported_codes}
 
-<h3 id="CSI_Control_Sequence_Initiator_codes"> CSI (Control Sequence Initiator) codes </h3>
+### CSI (Control Sequence Initiator) codes   {#CSI_Control_Sequence_Initiator_codes}
 
 | Sequence | Description |
 |:---|:---|
@@ -214,7 +214,7 @@ ANSICON_DEF=7
 | ESC \[ u | Restore cursor position. |
 
 
-<h4 id="Terminal_modes"> Terminal modes </h4>
+#### Terminal modes  {#Terminal_modes}
 
 | Sequence | Description |
 |:---|:---|
@@ -224,7 +224,7 @@ ANSICON_DEF=7
 | ESC \[ 25 l | Hide text cursor. |
 
 
-<h4 id="SGR_Select_Graphic_Rendition_parameters"> SGR (Select Graphic Rendition) parameters </h4>
+#### SGR (Select Graphic Rendition) parameters  {#SGR_Select_Graphic_Rendition_parameters}
 
 | Sequence | Description |
 |:---|:---|
@@ -249,7 +249,7 @@ ANSICON_DEF=7
 | ESC \[ 100...107 m | Set bright ANSI background color |
 
 
-<h3 id="OSC_Operating_system_commands"> OSC (Operating system commands) </h3>
+### OSC (Operating system commands)   {#OSC_Operating_system_commands}
 
 **Note**. These codes may ends with ‘ESC\’ (two symbols - ESC and BackSlash)
 or ‘BELL’ (symbol with code \x07, same as ‘^a’ in `*`nix).
@@ -260,7 +260,7 @@ For simplifying, endings in the following table marked as ‘ST’.
 | ESC ] 2 ; "*txt*" ST | Set console window title to *txt*. |
 
 
-<h4 id="ConEmu_specific_OSC"> ConEmu specific OSC </h4>
+#### ConEmu specific OSC  {#ConEmu_specific_OSC}
 
 | Sequence | Description |
 |:---|:---|
@@ -276,15 +276,15 @@ For simplifying, endings in the following table marked as ‘ST’.
 
 
 
-<h2 id="Examples"> Examples </h2>
+## Examples  {#Examples}
 
 
-<h3 id="ANSI_and_xterm_color_maps"> ANSI and xterm color maps </h3>
+### ANSI and xterm color maps   {#ANSI_and_xterm_color_maps}
 
 ![ANSI X3.64 and Xterm 256 colors in ConEmu](/img/ConEmuAnsi.png)
 
 
-<h4 id="Xterm_256_color_map"> Xterm 256 color map </h4>
+#### Xterm 256 color map  {#Xterm_256_color_map}
 
 Example from file: `ConEmu\Addons\AnsiColors256.ans`.
 
@@ -307,7 +307,7 @@ Grayscale ramp (232..255 from xterm palette):
 **Warning** You need to change `^[` to ESC code before using this script (char with code ASCII \x1B).
 
 
-<h4 id="Standard_ANSI_color_map"> Standard ANSI color map </h4>
+#### Standard ANSI color map  {#Standard_ANSI_color_map}
 
 This example is from file: `ConEmu\Addons\AnsiColors16.ans`.
 
@@ -320,7 +320,7 @@ System colors (Standard console 16 colors):
 **Warning** You need to change `^[` to ESC code before using this script (char with ASCII code \x1B).
 
 
-<h3 id="sixteencolors.net"> sixteencolors.net </h3>
+### sixteencolors.net   {#sixteencolors.net}
 
 Large [ANSI art](http://en.wikipedia.org/wiki/ANSI_art) archive: [sixteencolors.net](http://sixteencolors.net/).
 

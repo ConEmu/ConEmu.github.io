@@ -21,7 +21,7 @@ Can you suggest better translation or add some text to the documentation?
 Any suggestions are appreciated!
 
 
-<h2 id="documentation">Documentation</h2>
+## Documentation  {#documentation}
 
 Documentation seen by user: [TableOfContents.html](TableOfContents.html)
 
@@ -35,7 +35,7 @@ and tooltips for their controls in the file
 [ConEmu.rc2](https://github.com/Maximus5/ConEmu/blob/alpha/src/ConEmu/ConEmu.rc2)
 
 
-<h2 id="why-it-is-so-hard">Why it is so hard</h2>
+## Why it is so hard  {#why-it-is-so-hard}
 
 Many pages were written during long time, by occasion,
 in my free time, in language I was ‘thinking’ at that moment.
@@ -43,7 +43,7 @@ For example, I'm writing [WhatsNew](Whats_New.html) in English because
 there is no time to translate it or write in two languages simultaneously.
 
 
-<h2 id="how-to-help">How you can help with documentation</h2>
+## How you can help with documentation  {#how-to-help}
 
 If anyone has free time and wish to help - you are welcome.
 

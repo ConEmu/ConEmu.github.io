@@ -31,7 +31,7 @@ Article navigation
 
 
 
-<h2 id="Ways-to-split"> Ways to split </h2>
+## Ways to split  {#Ways-to-split}
 
 As usual, ConEmu provides more than a one way to do any action.
 
@@ -47,7 +47,7 @@ press `Win+Shift+W` or `Shift`+<code class="plus">[+]</code>.
 
 
 
-<h3 id="From-your-shell-prompt"> From your shell prompt </h3>
+### From your shell prompt   {#From-your-shell-prompt}
 
 You may use `-new_console:s[<SplitTab>T][<Percents>](H|V)` switch
 appended to any command typed in your prompt.
@@ -63,7 +63,7 @@ Examples:
 
 
 
-<h3 id="Default-hotkeys"> Default hotkeys </h3>
+### Default hotkeys   {#Default-hotkeys}
 
 Split key macros (default as `Ctrl+Shift+O` and `Ctrl+Shift+E`) work
 like ‘Duplicate root...’ menu item.
@@ -71,7 +71,7 @@ These macros will duplicate shell from your active pane!
 
 
 
-<h3 id="task-grid-2x2"> Start several consoles in 2x2 grid from the named Task </h3>
+### Start several consoles in 2x2 grid from the named Task   {#task-grid-2x2}
 
 The question from [superuser.com](http://superuser.com/q/473807/139371).
 
@@ -86,7 +86,7 @@ putty -load mysrv -cur_console:s2THn
 
 
 
-<h2 id="Working-with-splits"> Working with splits </h2>
+## Working with splits  {#Working-with-splits}
 
 * Cycle switche visible split-panes: `Apps+Tab`, `Apps+Shift+Tab`
   {[GuiMacro](GuiMacro.html): Tab(10,...)}.

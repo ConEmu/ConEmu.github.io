@@ -21,7 +21,7 @@ If you have touch-sensitive screen, you may use ‘taps’ and ‘gestures’ in
 This article describes Windows 8 gestures.
 
 
-<h2 id="Terms"> Terms </h2>
+## Terms  {#Terms}
 
 | Name | Description |
 |:---|:---|
@@ -36,7 +36,7 @@ This article describes Windows 8 gestures.
 | Масштаб | Нажать двумя пальцами и сводить/разводить их |
 
 
-<h3 id="#Analogues"> Аналогии </h3>
+### Аналогии   {##Analogues}
 
 | Mouse | Touch-screen |
 |:---|:---|
@@ -48,7 +48,7 @@ This article describes Windows 8 gestures.
 
 
 
-<h2 id="ConsoleScroll"> Console scrolling </h2>
+## Console scrolling  {#ConsoleScroll}
 
 * Одновременно двумя пальцами нажать-перетащить вверх/вниз-отпустить.
 
@@ -57,22 +57,22 @@ This article describes Windows 8 gestures.
 преобразуются в «обычные» мышиные нажатия и перетаскивания.
 
 
-<h2 id="TabSwitch"> Tab switching </h2>
+## Tab switching  {#TabSwitch}
 
 * Жест "Поворот" листает табы влево/вправо.
 
 
-<h2 id="FontScale"> Font size changing </h2>
+## Font size changing  {#FontScale}
 
 * Жест "Масштаб" увеличивает/уменьшает размер шрифта.
 
 
 
-<h2 id="FarManager"> How to use Far on TabletPC </h2>
+## How to use Far on TabletPC  {#FarManager}
 
-<h3 id="FarSelectFile"> Files selection </h3>
+### Files selection   {#FarSelectFile}
 
-<h4 id="FarSelectFileSingle"> Single </h4>
+#### Single  {#FarSelectFileSingle}
 
 * Тап двумя пальцами. Для целкости попадания рекомендую две точки касания располагать по горизонтали (вдоль имени файла). Длинный тап - показ контекстного меню.
   * Держать палец над файлом/папкой, пока под пальцем не появится «квадрат». 
@@ -80,29 +80,29 @@ This article describes Windows 8 gestures.
   * Это аналог щелчка правой кнопкой пыши. 
 
 
-<h4 id="FarSelectFileMulti"> Multiple </h4>
+#### Multiple  {#FarSelectFileMulti}
 
 * Держать палец над первым файлом/папкой, пока под пальцем не появится «квадрат». После этого можно вести палец по панели - будут выделены «проведенные» элементы.
 * Выделить/снять выделение с первого файла группы (тап двумя пальцами). После этого, на области статуса (для выделения вниз) или области имен колонок (для выделения вверх) двойной тап с удержанием.
 
 
-<h3 id="FarPanelScroll"> Far Panel scrolling </h3>
+### Far Panel scrolling   {#FarPanelScroll}
 
 * Прокрутка (одновременно двумя пальцами нажать-перетащить вверх/вниз-отпустить).
 * Двойной тап с удержанием на заголовке колонки панели или статусной области приводит к прокрутке панели. Внимание! При этом может меняться «выделенность» элементов панели.
 
 
-<h3 id="FarPanelResize"> Far Panels resizing </h3>
+### Far Panels resizing   {#FarPanelResize}
 
 * Перетащите разделитель между панелями вправо/влево и отпустите. Внимание! На вкладке «Far Manager» должны быть включены флажки «Resize panels by mouse» и «use both panel edges».
 
 
-<h3 id="FarPanelShowHide"> Show/hide Far Panels </h3>
+### Show/hide Far Panels   {#FarPanelShowHide}
 
 * Тап по области часов +1 строка вниз (правый верхний угол). Аналог левому клику мышкой в координате {0,0}.
 
 
-<h3 id="FarPanelEMenu"> Panels context menu - EMenu </h3>
+### Panels context menu - EMenu   {#FarPanelEMenu}
 
 {% comment %}
 !!! проверить параметры настройки
@@ -111,12 +111,12 @@ This article describes Windows 8 gestures.
 * Длинный тап. Должна быть включена настройка
 
 
-<h3 id="FarViewerScroll"> Far Viewer scrolling </h3>
+### Far Viewer scrolling   {#FarViewerScroll}
 
 * Двойной тап по верхней/нижней части вьювера приводит к прокрутке содержимого вверх/вниз.
 
 
-<h3 id="FarEditor"> Far Editor </h3>
+### Far Editor   {#FarEditor}
 
 * Удобно использовать макрос `Editor.MsRClick.lua` для копирования и вставки из буфера.
   Длинный тап по редактору или полю редактирования в диалоге приводит к отображению меню,

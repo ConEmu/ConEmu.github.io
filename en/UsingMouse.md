@@ -26,9 +26,9 @@ breadcrumbs:
 
 
 
-<h2 id="Common"> Common </h2>
+## Common  {#Common}
 
-<h3 id="Text_selection_and_clipboard"> Text selection and clipboard </h3>
+### Text selection and clipboard   {#Text_selection_and_clipboard}
 
 ConEmu allows marking console blocks and streams,
 copying marked text to Windows Clipboard,
@@ -37,7 +37,7 @@ pasting from Clipboard to console.
 
 
 
-<h3 id="Left_click_on_the_tab"> Left click on the tab </h3>
+### Left click on the tab   {#Left_click_on_the_tab}
 
 ConEmu tries to activate corresponding Far window. This may fails when:
 
@@ -47,7 +47,7 @@ ConEmu tries to activate corresponding Far window. This may fails when:
 
 
 
-<h3 id="Right_click_on_the_tab"> Right click on the tab </h3>
+### Right click on the tab   {#Right_click_on_the_tab}
 
 When You right clicking on the Tab:
 
@@ -56,7 +56,7 @@ When You right clicking on the Tab:
 
 
 
-<h3 id="Middle_click_or_Ctrl+Right_click_on_the_tab"> Middle click or Ctrl+Right click on the tab </h3>
+### Middle click or Ctrl+Right click on the tab   {#Middle_click_or_Ctrl+Right_click_on_the_tab}
 
 When You right clicking on the Tab:
 
@@ -65,22 +65,22 @@ When You right clicking on the Tab:
 
 
 
-<h3 id="Right_click_on_Cross_button"> Right click on Cross button </h3>
+### Right click on Cross button   {#Right_click_on_Cross_button}
 
 Right clicking on the Cross button (window title) will minimize ConEmu window
 to the taskbar status area (hide window from screen).
 
 
 
-<h3 id="Double_click_on_left_or_right_window_edges"> Double click on left or right window edges </h3>
+### Double click on left or right window edges   {#Double_click_on_left_or_right_window_edges}
 
 Stretch the window to the width of the monitor.
 
 
 
-<h2 id="Far_Manager_related"> Far Manager related </h2>
+## Far Manager related  {#Far_Manager_related}
 
-<h3 id="Drag-n-Drop"> Drag-n-Drop </h3>
+### Drag-n-Drop   {#Drag-n-Drop}
 
 You may use dragging either with left or right mouse button.
 
@@ -101,7 +101,7 @@ Drop to command line:
 
 
 
-<h3 id="Right_click_on_Far_Manager_panels"> Right click on Far Manager panels </h3>
+### Right click on Far Manager panels   {#Right_click_on_Far_Manager_panels}
 
 You may choose right click behaviour:
 
@@ -120,7 +120,7 @@ but You may choose different way to display context menu, by specifying the macr
 
 
 
-<h3 id="Resizing_Far_Manager_panels_with_mouse"> Resizing Far Manager panels with mouse </h3>
+### Resizing Far Manager panels with mouse   {#Resizing_Far_Manager_panels_with_mouse}
 
 This is simple now. Drag panels by bottom border, or by left border of the **right** panel.
 Option [Resize panels by mouse](Settings.html#Features) must be checked.
@@ -143,7 +143,7 @@ hyperlinks/errors detected under mouse cursor. LeftClick (with modifier) will op
 
 
 
-<h3 id="Right_click_on_KeyBar"> Right click on KeyBar </h3>
+### Right click on KeyBar   {#Right_click_on_KeyBar}
 
 RClick on KeyBar pop up menu with F-key with possible modifiers.
 E.g., when you RClick on `7Search` in the Far Editor you can choose

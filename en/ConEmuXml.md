@@ -23,7 +23,7 @@ Windows 2000 is limited to using Registry.
 
 
 
-<h2 id="search-sequence"> ConEmu.xml search sequence </h2>
+## ConEmu.xml search sequence  {#search-sequence}
 
 You may use ConEmu in ‘portable’ mode,
 so all settings will be stored in the `ConEmu.xml` file
@@ -56,14 +56,14 @@ even after ConEmu starts and loads its settings from registry.
 
 
 
-<h3 id="PortableApps-format"> Note for PortableApps.com format </h3>
+### Note for PortableApps.com format   {#PortableApps-format}
 
 When you are running ConEmu installed with ‘paf’ bundle, your settings will be stored
 in `<app>/Data/settings/ConEmu.xml`.
 
 
 
-<h2 id="send-to-developer"> How to send your config to developer </h2>
+## How to send your config to developer  {#send-to-developer}
 
 When one reports about problem, developer needs your ConEmu settings often.
 

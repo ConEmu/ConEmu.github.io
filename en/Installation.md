@@ -84,7 +84,7 @@ Otherwise you have to use `/p` switch as shown in the example above.
 	argument in ConEmu shortcut or command line.
 
 
-<h2 id="mactype">MacType issues</h2>
+## MacType issues  {#mactype}
 
 If you are using MacType you can get crashes when starting any application
 from a shell started in ConEmu tab.
@@ -96,7 +96,7 @@ and it does not draw any text on graphical canvas at all.
 **The workaround**. Add `ConEmuC.exe` and `ConEmuC64.exe` to MacType exclusion list.
 
 
-<h2 id="java">Java issues</h2>
+## Java issues  {#java}
 
 There is an [Issue 1899](https://github.com/Maximus5/conemu-old-issues/issues/1899)
 with Java version 7.x if it was installed in symlinked folder.

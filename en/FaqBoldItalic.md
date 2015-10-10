@@ -37,7 +37,7 @@ However, when you are using ConEmu you may use them. Here are some tricks.
 
 
 
-<h2 id="Extend_fonts_feature"> Extend fonts feature </h2>
+## Extend fonts feature  {#Extend_fonts_feature}
 
 You may choose two background color indexes to force ConEmu
 to draw text using bold/italic outline.
@@ -58,18 +58,18 @@ In the following examples, black color (`#0`)
 was selected for using with `cmd.exe` prompt.
 
 
-<h3 id="extended-fonts-settings"> Extend fonts settings </h3>
+### Extend fonts settings   {#extended-fonts-settings}
 
 ![ConEmu Settings: Extend fonts](/img/ConEmuExtFonts1.png)
 
 
-<h3 id="bold-italic-cmd-prompt"> Bold and italic in cmd prompt </h3>
+### Bold and italic in cmd prompt   {#bold-italic-cmd-prompt}
 
 ![ConEmu Settings: Bold and italic in cmd prompt](/img/ConEmuExtFonts2.png)
 
 
 
-<h2 id="Xterm-256_emulation"> Xterm-256 emulation </h2>
+## Xterm-256 emulation  {#Xterm-256_emulation}
 
 Another way is using xterm-256 ANSI sequences.
 
@@ -88,6 +88,6 @@ prompt $E[9999E$E[48;5;0m$E[38;5;7m$E[1m$P$E[m$S$E[48;5;0m$E[38;5;7m$E[4m$D$E[m$
 ~~~
 
 
-<h3 id="bold-italic-underlined-cmd-prompt"> Bold/italic/underlined in cmd prompt </h3>
+### Bold/italic/underlined in cmd prompt   {#bold-italic-underlined-cmd-prompt}
 
 ![ConEmu Settings: Bold, italic and underlined in cmd prompt](/img/ConEmuExtFonts3.png)

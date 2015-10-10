@@ -35,7 +35,7 @@ However there were no issues about that yet.
 
 
 
-<h2 id="Inspired_by_questions"> Inspired by SuperUser's and StackOverflow's questions </h2>
+## Inspired by SuperUser's and StackOverflow's questions  {#Inspired_by_questions}
 
 * [How to change the default terminal emulator on Windows](http://superuser.com/q/509642/139371)
 * [Use custom console for Visual Studio console application debugging](http://stackoverflow.com/q/12602411/1405560)
@@ -45,7 +45,7 @@ And ConEmu from build 121124 introduced unique feature: ‘Replace default Windo
 
 
 
-<h2 id="Description"> Description </h2>
+## Description  {#Description}
 
 [![ConEmu settings, Default Term page](/img/Settings-DefTerm.png)](SettingsDefTerm.html "ConEmu settings, Default Term page")
 <a href="SettingsDefTerm.html"><div class="snote">Settings page description</div></a>
@@ -83,7 +83,7 @@ Settings page docs: [Default term](SettingsDefTerm.html).
 
 
 
-<h2 id="force-standard-terminal"> Force some application within standard terminal </h2>
+## Force some application within standard terminal  {#force-standard-terminal}
 
 If You need to run some [console application](ConsoleApplication.html)
 in the standard Windows console there is no need to disable
@@ -96,7 +96,7 @@ cmd -new_console:z
 
 
 
-<h2 id="Tech_info"> Tech info </h2>
+## Tech info  {#Tech_info}
 
 The only real way to ‘change’ default Windows terminal:
 
@@ -108,7 +108,7 @@ Looks simple, right? But who can perform these actions?
 
 
 
-<h3 id="Hooks_must_be_installed"> Hooks must be installed </h3>
+### Hooks must be installed   {#Hooks_must_be_installed}
 
 [ConEmuHk](ConEmuHk.html) (`ConEmuHk.dll` or `ConEmuHk64.dll`) must be loaded
 into process space of ‘parent’ application **from** which you are starting
@@ -125,7 +125,7 @@ Actually, startup procedure slightly differs when you start debugging session.
 
 
 
-<h3 id="Normal_console_application_startup"> Normal console application startup </h3>
+### Normal console application startup   {#Normal_console_application_startup}
 
 To avoid flickering of [RealConsole](RealConsole.html) window
 [ConEmuHk](ConEmuHk.html) will change command line.
@@ -145,7 +145,7 @@ ConEmuC64.exe [many internal switched] /HIDE /NOCONFIRM /ROOT "C:\Windows\system
 That is safe because ‘parent’ does not really need to get started process handle (`cmd.exe` in example).
 
 
-<h3 id="Starting_debugging_session"> Starting debugging session </h3>
+### Starting debugging session   {#Starting_debugging_session}
 
 When you start Visual Studio debugger of your `ConAppSample`,
 ‘parent’ process (devenv.exe or WDExpress.exe) need to get

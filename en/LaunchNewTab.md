@@ -35,7 +35,7 @@ ConEmu -reuse -dir "c:\projects" -cmd "set PATH=C:\MinGW\bin;%PATH%" & chcp 6500
 ~~~
 
 
-<h2 id="Create_new_console_dialog"> Create new console dialog </h2>
+## Create new console dialog  {#Create_new_console_dialog}
 
 How to start application (tcc, powershell, far, putty) in ConEmu tab?
 
@@ -65,7 +65,7 @@ Similar dialog may be opened when you [Restart current console](RestartTab.html)
 
 
 
-<h3 id="Create_new_console_without_dialog"> Create new console without dialog </h3>
+### Create new console without dialog   {#Create_new_console_without_dialog}
 
 You may switch off create new console confirmation,
 just disable ‘Create confirmation’ checkbox on the
@@ -85,7 +85,7 @@ You may choose task in the ‘Create new console’ dialog too.
 
 
 
-<h2 id="Create_new_tab_from_existing_one"> Create new tab from existing one </h2>
+## Create new tab from existing one  {#Create_new_tab_from_existing_one}
 
 Use [-new_console](NewConsole.html) switch while executing command.
 For example, if you want to start PuTTY in new ConEmu tab,
@@ -103,7 +103,7 @@ and it will be launched in the new tab of ConEmu.
 
 
 
-<h2 id="Duplicate_root"> Duplicate root </h2>
+## Duplicate root  {#Duplicate_root}
 
 Well, this interesting feature offers a way to duplicate shell
 ([root process](RootProcess.html) of current tab) state to the new ConEmu tab.
@@ -116,7 +116,7 @@ This will create ‘copy’ of `cmd.exe` at most recent state (when possible).
 
 
 
-<h2 id="Default_terminal_feature"> Default terminal feature </h2>
+## Default terminal feature  {#Default_terminal_feature}
 
 This allows to seize creation of console processes from many (selected by user) applications.
 For example, when you run ‘Command prompt’ shortcut from ‘Start menu’ cmd.exe
@@ -126,13 +126,13 @@ Read more about [Default terminal feature](DefaultTerminal.html).
 
 
 
-<h2 id="Attach_existing_console_or_GUI_application"> Attach existing console or GUI application </h2>
+## Attach existing console or GUI application  {#Attach_existing_console_or_GUI_application}
 
 Choose ‘Attach...’ from [system menu](SystemMenu.html).
 
 
 
-<h2 id="Attach_from_command_prompt"> Attach from command prompt </h2>
+## Attach from command prompt  {#Attach_from_command_prompt}
 
 Batch file `Attach.cmd` is shipped with ConEmu package.
 Run this file from any cmd.exe to attach this console into the new ConEmu tab.
@@ -146,7 +146,7 @@ which you may run from any other console shell or even from your own console app
 
 
 
-<h2 id="Automatic_attach_of_cmd"> Automatic attach of cmd </h2>
+## Automatic attach of cmd  {#Automatic_attach_of_cmd}
 
 Mostly like as ‘Attach from command prompt’ but you may set up automatic execution
 of ‘Attach’ on cmd.exe startup.
@@ -156,7 +156,7 @@ Set up feature on ‘ComSpec’ page of ‘Settings’ dialog.
 
 
 
-<h2 id="Gui_Macro"> Gui Macro </h2>
+## Gui Macro  {#Gui_Macro}
 
 You may set up several most used shells or build environments via [GuiMacro](GuiMacro.html).
 Example: open ‘Keys & Macro’ settings page, click ‘Macros’ radio (it filters long key list)

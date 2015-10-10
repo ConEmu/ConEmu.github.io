@@ -45,7 +45,7 @@ Still thinking the problem is inside ConEmu? Read the rest of this wiki.
 
 
 
-<h2 id="Some_techinfo_first"> Some techinfo first </h2>
+## Some techinfo first  {#Some_techinfo_first}
 
 There are two types of Windows console (terminal) emulators:
 
@@ -61,7 +61,7 @@ There are two types of Windows console (terminal) emulators:
   [Take Command](http://jpsoft.com/).
 
 
-<h3 id="stdin-stdout_redirection_style"> stdin/stdout redirection style </h3>
+### stdin/stdout redirection style   {#stdin-stdout_redirection_style}
 
 Most of this type emulators are based on ‘POSIX layer’ -
 <a href="http://cygwin.com/" rel="nofollow">cygwin</a>,
@@ -70,7 +70,7 @@ or <a href="http://msysgit.github.io/" rel="nofollow">msysgit</a>.
 AFAIK, msys was forked long ago from cygwin, that is why they are alike in many cases.
 In turn, there is another fork - msysgit was forked from msys...
 
-<h4 id="Pros"> Pros </h4>
+#### Pros  {#Pros}
 
 Very fast output. Really. No need to use ‘slow’ Windows console subsystem,
 that's why the speed is limited mainly with pipe throughput.
@@ -81,7 +81,7 @@ No need to translate them to and from Windows console subsystem.
 Almost unlimited backscroll buffer.
 
 
-<h4 id="Cons"> Cons </h4>
+#### Cons  {#Cons}
 
 User can't run here large amount of programs designed for Windows console.
 For example, Powershell and Far Manager can't be started at all.
@@ -89,7 +89,7 @@ For example, Powershell and Far Manager can't be started at all.
 but command history (Up arrow) is not working. And so on...
 
 
-<h3 id="Windows_console_API_style"> Windows console API style </h3>
+### Windows console API style   {#Windows_console_API_style}
 
 These emulators always have hidden standard Windows console window.
 Say, they are wrappers around Windows API. That means all programs
@@ -100,7 +100,7 @@ easy resizing and handy copy/pasting.
 On the other hand, programs designed for ‘POSIX layer’ may fails here or there...
 
 
-<h2 id="Complains"> Complains </h2>
+## Complains  {#Complains}
 
 I regularly get emails and issues about cygwin/msys compatibility with ConEmu.
 Most of them does not have anything to fix inside ConEmu sources,
@@ -119,7 +119,7 @@ Well, it may show some lack of features
 in all other cases.
 
 
-<h2 id="Windows_power"> Windows power </h2>
+## Windows power  {#Windows_power}
 
 Windows standard console supports 16 color palette,
 32K lines of backscroll buffer, alternative screens,
@@ -134,7 +134,7 @@ What I want to say. Windows console is powerful subsystem.
 Just run there proper shell. If you like bash - just run it!
 
 
-<h2 id="Problems_with_cygwin"> Problems with cygwin </h2>
+## Problems with cygwin  {#Problems_with_cygwin}
 
 Before reporting cygwin-related problem to me,
 please check it first in the **standard Windows console**.
@@ -158,9 +158,9 @@ But in your case, cygwin acts properly only under certain terminal emulators (mi
 which are not real consoles in fact.
 
 
-<h2 id="Report_examples"> Report examples </h2>
+## Report examples  {#Report_examples}
 
-<h3 id="Broken_screen_output"> Broken screen output </h3>
+### Broken screen output   {#Broken_screen_output}
 
 Was happen with alternative screens.
 There was several bugs related and they was fixed in cygwin.
@@ -175,7 +175,7 @@ Some related issues:
 
 
 
-<h3 id="Mouse_do_not_working"> Mouse do not working </h3>
+### Mouse do not working   {#Mouse_do_not_working}
 
 Mouse do working in mintty but don't in standard Windows console.
 For example, mc ignores mouse clicks when it is started from "cmd.exe".
@@ -197,7 +197,7 @@ Some related issues:
 
 
 
-<h3 id="ANSI_support"> ANSI support </h3>
+### ANSI support   {#ANSI_support}
 
 One may notice that colors in the mintty are "nice" but in the ConEmu are "ugly".
 That is because cygwin (ncurses actually, thought) does not send escape sequences
@@ -209,7 +209,7 @@ Read more in wiki [CygwinAnsi](CygwinAnsi.html).
 
 
 
-<h3 id="Startup_directory"> Startup directory </h3>
+### Startup directory   {#Startup_directory}
 
 Cygwin shell always starts in your <code>"${HOME}"</code> instead of specified working folder.
 
@@ -217,7 +217,7 @@ How to change that behaviour - read in wiki [CygwinStartDir](CygwinStartDir.html
 
 
 
-<h2 id="Resume"> Bottom line </h2>
+## Bottom line  {#Resume}
 
 My position is simple: if you are writing console application
 for Windows - just make it working in Windows.

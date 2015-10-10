@@ -6,19 +6,19 @@ title: "ConEmu | Tips and Tweaks"
 
 # Did you know that...
 
-<h2 id="right_click_on_the_cross"> right click on the cross </h2>
+## right click on the cross  {#right_click_on_the_cross}
 
 minimize ConEmu to taskbar status area (hide from screen).
 
 
 
-<h2 id="run_console_app_from_GUI_app"> run console app from GUI app </h2>
+## run console app from GUI app  {#run_console_app_from_GUI_app}
 
 console app will starts in new ConEmu tab.
 
 
 
-<h2 id="ConEmu_may_set_up_itself_as_default_terminal"> ConEmu may set up itself as default terminal </h2>
+## ConEmu may set up itself as default terminal  {#ConEmu_may_set_up_itself_as_default_terminal}
 
 goto ‘Settings’ -> ‘Integration’ and check ‘Force ConEmu as default terminal...’,
 you may also adjust list of hooked applications
@@ -26,7 +26,7 @@ you may also adjust list of hooked applications
 
 
 
-<h2 id="ConEmu_may_be_easily_configured_as_compile-host"> ConEmu may be easily configured as compile-host </h2>
+## ConEmu may be easily configured as compile-host  {#ConEmu_may_be_easily_configured_as_compile-host}
 
 you may unpack ConEmu files to special folder, use portable mode
 with `ConEmu.xml` file, pin shortcut to taskbar and use Windows 7
@@ -43,7 +43,7 @@ again.
 
 
 
-<h2 id="creating_single-file_portable_ConEmu"> creating single-file portable ConEmu </h2>
+## creating single-file portable ConEmu  {#creating_single-file_portable_ConEmu}
 
 will be clarified, WinRar required
 

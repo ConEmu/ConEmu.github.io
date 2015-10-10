@@ -15,7 +15,7 @@ and not available in the [real console](RealConsole.html).
 
 
 
-<h3 id="Anti-aliasing_settings"> Anti-aliasing settings </h3>
+### Anti-aliasing settings   {#Anti-aliasing_settings}
 
 ![ConEmu with ClearType enabled](/img/ConEmuFontClearType.png)
 
@@ -25,7 +25,7 @@ and not available in the [real console](RealConsole.html).
 
 
 
-<h3 id="Easy_to_use_of_Raster_fonts"> Easy to use of Raster fonts </h3>
+### Easy to use of Raster fonts   {#Easy_to_use_of_Raster_fonts}
 
 ![ConEmu with Raster font](/img/ConEmuFontRaster.png)
 

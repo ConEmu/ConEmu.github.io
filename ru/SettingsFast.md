@@ -69,7 +69,7 @@ otherlang:
 * [Читайте также](#read-also)
 
 
-<h2 id="fast-configuration"> Диалог «ConEmu Fast Configuration» </h2>
+## Диалог «ConEmu Fast Configuration»  {#fast-configuration}
 
 Итак, при **первом** запуске программы вы, скорее всего,
 увидите *диалог быстрой настройки*.
@@ -91,7 +91,7 @@ otherlang:
 
 
 
-<h3 id="settings-storage"> Settings storage location </h3>
+### Settings storage location   {#settings-storage}
 
 ConEmu может хранить настройки в реестре Windows или xml-файлах.
 
@@ -114,7 +114,7 @@ ConEmu может хранить настройки в реестре Windows и
 Подробнее о хранении настроек [здесь](ConEmuXml.html).
 
 
-<h3 id="startup-task"> Startup task or shell </h3>
+### Startup task or shell   {#startup-task}
 
 [Task-и](Tasks.html) это предопределенные командные строки
 для запуска [shell-ов](TerminalVsShell.html) или [ChildGui](ChildGui.html)
@@ -130,12 +130,12 @@ ConEmu может хранить настройки в реестре Windows и
 и укажите аргументы.
 
 
-<h3 id="color-scheme"> Preferred color scheme </h3>
-<h3 id="single-instance"> Single instance mode </h3>
-<h3 id="quake-style"> Quake-style </h3>
-<h3 id="show-hide-hotkey"> Show-hide hotkey </h3>
+### Preferred color scheme   {#color-scheme}
+### Single instance mode   {#single-instance}
+### Quake-style   {#quake-style}
+### Show-hide hotkey   {#show-hide-hotkey}
 
-<h3 id="keyboard-hooks"> Install keyboard hooks </h3>
+### Install keyboard hooks   {#keyboard-hooks}
 
 Если флажок отключить, ConEmu не сможет обрабатывать некоторые
 клавиатурные комбинации.
@@ -151,7 +151,7 @@ ConEmu может хранить настройки в реестре Windows и
 Посмотрите на вкладку [Keys & Macro](SettingsHotkeys.html) [диалога настроек](Settings.html).
 
 
-<h3 id="inject-conemuhk"> Inject ConEmuHk.dll into processes, started in ConEmu tabs </h3>
+### Inject ConEmuHk.dll into processes, started in ConEmu tabs   {#inject-conemuhk}
 
 Внедрение хуков требуется для реализации многих возможностей.
 Например обработки параметра [-new_console](NewConsole.html),
@@ -163,7 +163,7 @@ ConEmu может хранить настройки в реестре Windows и
 ConEmuHk.dll (или ConEmuHk64.dll для 64-битных приложений).
 
 
-<h3 id="auto-update"> Enable automatic updates </h3>
+### Enable automatic updates   {#auto-update}
 
 Все очевидно, разрешить обновление программы из интернета.
 Потом, в диалоге настроек на вкладке [Update](SettingsUpdate.html)
@@ -171,18 +171,18 @@ ConEmuHk.dll (или ConEmuHk64.dll для 64-битных приложений)
 ConEmu не «самовольничает», перед запуском процесса обновления у вас спросят подтверждение.
 
 
-<h3 id="disable-conime"> Disable ConIme.exe autorun (Vista only) </h3>
+### Disable ConIme.exe autorun (Vista only)   {#disable-conime}
 
 Пользователи Windows Vista могут увидеть этот флажок.
 Почему и зачем написано в [FAQ](ConEmuFAQ.html#Windows_Vista).
 
 
-<h3 id="after-ok"> После нажатия кнопки «OK» </h3>
+### После нажатия кнопки «OK»   {#after-ok}
 
 Теперь ConEmu запустит task или shell
 указанный в поле [Startup task or shell](#startup-task).
 
 
-<h2 id="open-settings"> Теперь можно открыть диалог настроек </h2>
+## Теперь можно открыть диалог настроек  {#open-settings}
 
 [Как открыть диалог настроек](Settings.html#Settings_dialog)

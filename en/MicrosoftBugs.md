@@ -21,7 +21,7 @@ breadcrumbs:
 
 
 
-<h2 id="WM_MOUSEWHEEL-10"> Broken WM_MOUSEWHEEL's mouse cursor position in Windows 10 </h2>
+## Broken WM_MOUSEWHEEL's mouse cursor position in Windows 10  {#WM_MOUSEWHEEL-10}
 
 [MSDN says](https://msdn.microsoft.com/en-us/library/windows/desktop/ms645617.aspx)
 that WM_MOUSEWHEEL/lParam contains X and Y coordinates of the mouse pointer,
@@ -52,7 +52,7 @@ instead of relying on message's lParam, will be suitable.
 
 
 
-<h2 id="SetWindowPos-10"> Broken desktop coordinate system in Windows 10 </h2>
+## Broken desktop coordinate system in Windows 10  {#SetWindowPos-10}
 
 [insider/forum/insider_wintp-insider_desktop/desktop-coordinate-system-is-broken](http://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_desktop/desktop-coordinate-system-is-broken/9e6fd9ab-6d27-45e0-bb55-4c868cd6ac45)
 
@@ -67,7 +67,7 @@ instead of relying on message's lParam, will be suitable.
 
 
 
-<h2 id="Exception_in_ReadConsoleOutput"> Exception in ReadConsoleOutput </h2>
+## Exception in ReadConsoleOutput  {#Exception_in_ReadConsoleOutput}
 
 [social.msdn.microsoft.com/Forums/en-US/40c8e395-cca9-45c8-b9b8-2fbe6782ac2b](http://social.msdn.microsoft.com/Forums/en-US/40c8e395-cca9-45c8-b9b8-2fbe6782ac2b)
 
@@ -97,7 +97,7 @@ Turn on ‘Inject ConEmuHk’ option.
 
 
 
-<h2 id="Console_screen_buffer_corrupts_from_other_console_application"> Console screen buffer corrupts from other console application </h2>
+## Console screen buffer corrupts from other console application  {#Console_screen_buffer_corrupts_from_other_console_application}
 
 [social.msdn.microsoft.com/Forums/en-US/ec363615-397c-42a8-84d2-38a70e4f8ae2](http://social.msdn.microsoft.com/Forums/en-US/ec363615-397c-42a8-84d2-38a70e4f8ae2)
 
@@ -120,7 +120,7 @@ Turn on ‘Inject ConEmuHk’ option. Workaround was first created in ConEmu bui
 
 
 
-<h2 id="chcp_hung"> chcp hung </h2>
+## chcp hung  {#chcp_hung}
 
 Console code page change (`chcp.com`, `SetConsoleCP`, `SetConsoleOutputCP`) hungs.
 
@@ -140,7 +140,7 @@ Turn on ‘Inject ConEmuHk’ option.
 
 
 
-<h2 id="Insert-Overwrite-Indicator"> Insert/Overwrite indication </h2>
+## Insert/Overwrite indication  {#Insert-Overwrite-Indicator}
 
 It is not possible to determine the state of
 [ReadConsole](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684958.aspx)
@@ -157,7 +157,7 @@ Doesn't exists.
 
 
 
-<h2 id="Conclusion"> Conclusion </h2>
+## Conclusion  {#Conclusion}
 
 My (and not only) experience in ‘bug reporting’ suggests that
 Microsoft won't fix reported bugs in current versions of Windows.

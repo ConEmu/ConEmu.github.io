@@ -23,9 +23,9 @@ to your Issue and need to use on of dozens of free file hosters. Some links belo
 
 
 
-<h2 id="Cloud_services"> Cloud services </h2>
+## Cloud services  {#Cloud_services}
 
-<h3 id="DropBox_(my_choice)"> DropBox (my choice) </h3>
+### DropBox (my choice)   {#DropBox_(my_choice)}
 
 Free [registration](http://db.tt/9myALvii) and free space:
 2.0 GB + 500 MB (my invite link) + 500 MB (installing app to your mobile).
@@ -36,27 +36,27 @@ it allows creating shortcuts to specific folder just on launcher screen.
 
 
 
-<h3 id="Yandex"> Yandex </h3>
+### Yandex   {#Yandex}
 
 Another russian free cloud service [Yandex disk](https://disk.yandex.ru/invite/?hash=VZANG8NO)
 gives you up to 10 GB free space.
 
 
 
-<h3 id="SkyDrive"> SkyDrive </h3>
+### SkyDrive   {#SkyDrive}
 
 Free cloud service from [Microsoft](https://skydrive.live.com/) gives you 7 GB for free.
 
 
 
-<h2 id="Simple_file_hosters"> Simple file hosters </h2>
+## Simple file hosters  {#Simple_file_hosters}
 
-<h3 id="Sendspace"> Sendspace </h3>
+### Sendspace   {#Sendspace}
 
 [Sendspace](http://www.sendspace.com/) allows you to upload files up to 300 MB without registration.
 
 
 
-<h3 id="rghost.ru"> rghost.ru </h3>
+### rghost.ru   {#rghost.ru}
 
 [RGhost](http://rghost.ru/) (russian) allows you to upload files up to 500 MB without registration.

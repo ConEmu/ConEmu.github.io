@@ -21,7 +21,7 @@ and ‘Activate ConEmu and 'CD' to last Explorer window path’.
 
 
 
-<h2 id="limitations"> Limitations </h2>
+## Limitations  {#limitations}
 
 These hotkeys are registered globally in system via
 [RegisterHotKey](http://msdn.microsoft.com/en-us/library/windows/desktop/ms646309.aspx)
@@ -42,7 +42,7 @@ However, some **limitations** applied:
 
 
 
-<h2 id="active-layout"> Active keyboard layout dependency (Quake hotkey) </h2>
+## Active keyboard layout dependency (Quake hotkey)  {#active-layout}
 
 Perpaps, this is most frustrating limitations. Global hotkeys are processed by Windows kernel,
 and application receives only [WM_HOTKEY](http://msdn.microsoft.com/en-us/library/windows/desktop/ms646279.aspx)
@@ -65,7 +65,7 @@ There are two solutions.
 
 
 
-<h2 id="Using_F12_as_global_hotkey"> Using F12 as global hotkey </h2>
+## Using F12 as global hotkey  {#Using_F12_as_global_hotkey}
 
 [MSDN](http://msdn.microsoft.com/en-us/library/windows/desktop/ms646309(v=vs.85).aspx) claims,
 that F12 is reserved for use by the debugger.

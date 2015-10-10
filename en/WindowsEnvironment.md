@@ -30,25 +30,25 @@ That means, if you notice some strange in your environment - find problems on yo
 Some common problems described below.
 
 
-<h2 id="Variables_doesn't_match_defined_in_system_settings"> Variables doesn't match defined in system settings </h2>
+## Variables doesn't match defined in system settings  {#Variables_doesn't_match_defined_in_system_settings}
 
 Well, sometimes Windows Explorer fails with automatic acceptance of changes
 done by user or installation programs. This is known Microsoft behavior.
 
-<h3 id="Resolution"> Resolution </h3>
+### Resolution   {#Resolution}
 
 Logoff your Windows session and logon again.
 
 
 
-<h2 id="Something_strange_with_home"> Something strange with home </h2>
+## Something strange with home  {#Something_strange_with_home}
 
 Are you using clink? Is you `%HOME%` point to clink's profile?
 You may be using old clink version.
 There was an [issue](https://code.google.com/p/clink/issues/detail?id=113)
 on old clink's project site about that.
 
-<h3 id="Resolution"> Resolution </h3>
+### Resolution   {#Resolution}
 
 * Update clink (if you are using it)
 * Use [ProcessExplorer](ProcessExplorer.html) to examine environment variables

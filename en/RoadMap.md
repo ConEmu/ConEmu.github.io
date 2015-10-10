@@ -41,19 +41,19 @@ Any help will be very much appreciated!
 * [History and tab-autocompletion in cmd and powershell](#cmd-powershell-tab-history)
 
 
-<h2 id="documentation"> Documentation </h2>
+## Documentation  {#documentation}
 
 Unfortunately, there is not enough time for maintaining documentation and screenshots. Also, the english may be not very well :)
 
 
-<h2 id="issues"> Existing issues </h2>
+## Existing issues  {#issues}
 
 There are a lot of different [issues](Issues.html) - feature-requests or bug-reports.
 Many of them were already implemented and solved.
 But of course there is a lot of to do yet.
 
 
-<h2 id="horizontal-scrolling"> Horizontal scrolling </h2>
+## Horizontal scrolling  {#horizontal-scrolling}
 
 Some programs use not only vertical, but horizontal console buffer.
 
@@ -62,7 +62,7 @@ Current ConEmu version allows neither horizontal scrolling nor setting horizonta
 Your console application can change horizontal buffer size itself (run `wmic` for example) however scrolling is not possible. You can only reveal [RealConsole](RealConsole.html) window by pressing `Ctrl-Win-Alt-Space`.
 
 
-<h2 id="tab-theming"> TabBar theming</h2>
+## TabBar theming  {#tab-theming}
 
 One of most asked questions is a TabBar theming.
 [Issue 294](http://github.com/Maximus5/conemu-old-issues/issues/294) shows some details.
@@ -70,14 +70,14 @@ One of most asked questions is a TabBar theming.
 However it's not possible yet. ConEmu uses standard Windows TabBar control which do not allow theming.
 
 
-<h2 id="direct-write"> DirectWrite suport </h2>
+## DirectWrite suport  {#direct-write}
 
 There were some
 [requests](https://github.com/Maximus5/ConEmu/issues/74)
 about DirectWrite font rendering. This also relates to opaque fonts on transparent background.
 
 
-<h2 id="cygwin-terminal"> Better Cygwin/MSys support </h2>
+## Better Cygwin/MSys support  {#cygwin-terminal}
 
 ConEmu can run [Cygwin and MSys](CygwinMsys.html) applications without problems
 if they were properly written. However their developers, perhaps due to required
@@ -86,13 +86,13 @@ These are not ConEmu limitations, for example official Vim can use
 [xterm-256](VimXterm.html) color schemes, but cygwin or msys Vim builds can't.
 
 
-<h2 id="optimization"> Optimization </h2>
+## Optimization  {#optimization}
 
 Some portions of code must be optimized or totally rewritten :(
 
 
 {% comment %}
-<h2 id="Portable_registry">Portable registry</h2>
+## Portable registry  {#Portable_registry}
 
 ConEmu can store itself settings in xml file already. However, it is possible to hook registry functions, so any (console or GUI) application, started in ConEmu tab become portable.
 
@@ -100,12 +100,12 @@ This portion of code exists but not perfect. So, it is disabled in release versi
 {% endcomment %}
 
 
-<h2 id="advertising"> Advertising </h2>
+## Advertising  {#advertising}
 
 We hope, ConEmu is stable enough and competitive with other console emulators.
 
 
-<h2 id="virtual-buffer"> Virtual console buffer </h2>
+## Virtual console buffer  {#virtual-buffer}
 
 In the current version, maximum buffer height (backscroll output history) is limited to 32766 lines (Windows console limit).
 
@@ -114,14 +114,14 @@ It will be nice to eliminate this limitation.
 Also, restricting real console buffer to visible rect only may greatly increase speed of command execution (e.g. `dir /s c:\windows`).
 
 
-<h2 id="far-manager"> Far Manager related </h2>
+## Far Manager related  {#far-manager}
 
-<h3 id="icons-in-far-panels"> Icons in standard Far panels </h3>
+### Icons in standard Far panels   {#icons-in-far-panels}
 
 Thumbnails and Tiles already work, but they are ConEmu windows which overlaps standard panels.
 
 
-<h2 id="configurable-toolbars"> Configurable panels and toolbars </h2>
+## Configurable panels and toolbars  {#configurable-toolbars}
 
 Something like what TCMD or TC has.
 
@@ -132,12 +132,12 @@ are contained. This panel may be shown at the top or the bottom of the window.
 Also there is optional [StatusBar](StatusBar.html) at the bottom of the window.
 
 
-<h2 id="rtl-support"> RTL languages </h2>
+## RTL languages  {#rtl-support}
 
 RTL is beyond my comprehension :) If RTL users think ConEmu may be better - [let me know](Issues.html).
 
 
-<h2 id="cmd-powershell-tab-history"> History and tab-autocompletion in cmd and powershell </h2>
+## History and tab-autocompletion in cmd and powershell  {#cmd-powershell-tab-history}
 
 Some users asks about any way to get it to remember history from previous sessions
 or get unix style tab-completion in the prompt.

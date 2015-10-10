@@ -33,13 +33,13 @@ Following information is a copy of answers from [ConEmu FAQ](ConEmuFAQ.html).
 
 
 
-<h2 id="How_to_create_a_minidump"> How to create a minidump </h2>
+## How to create a minidump  {#How_to_create_a_minidump}
 
 There are several ways to create memory dumps.
 
 
 
-<h3 id="Process_Explorer"> Process Explorer </h3>
+### Process Explorer   {#Process_Explorer}
 
 [Process Explorer](ProcessExplorer.html) can create proper ‘Memory dumps’.
 But be sure, you are using latest ‘Process Explorer’ version (15.40 is OK now).
@@ -48,7 +48,7 @@ Just locate process in the list, right click on it and choose ‘Create dump’ 
 
 
 
-<h3 id="ConEmu_System_menu"> ConEmu System menu </h3>
+### ConEmu System menu   {#ConEmu_System_menu}
 
 ConEmu GUI offers easy creation of ‘[ActiveProcess](ActiveProcess.html) memory dump’.
 Just choose menu item from [SystemMenu](SystemMenu.html) -> Debug.
@@ -58,7 +58,7 @@ but not a `ConEmu[64].exe` or `ConEmuC[64].exe`.
 
 
 
-<h3 id="Using_ConEmuC_command_line"> Using ConEmuC command line </h3>
+### Using ConEmuC command line   {#Using_ConEmuC_command_line}
 
 **Windows XP and above**
 
@@ -84,7 +84,7 @@ You will be offered to choose filename for a minidump.
 
 
 
-<h3 id="Using_Windows_Task_manager"> Using Windows Task manager </h3>
+### Using Windows Task manager   {#Using_Windows_Task_manager}
 
 **Windows 7 and up**
 
@@ -97,7 +97,7 @@ Open Windows' Task Manager, switch to the "Processes" tab, right-click the proce
 
 
 
-<h2 id="How_to_find_Process_ID_(PID)"> How to find Process ID (PID) </h2>
+## How to find Process ID (PID)  {#How_to_find_Process_ID_(PID)}
 
 A. You can find the Process ID near to Process Name (ConEmu.exe, cmd.exe, etc.)
 

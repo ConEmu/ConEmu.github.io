@@ -22,7 +22,7 @@ If you want to use that handy way to start tasks, do the following:
 
 
 
-<h2 id="Failed_to_reuse"> Failed to reuse </h2>
+## Failed to reuse  {#Failed_to_reuse}
 
 Sometimes Windows explorer fails to reuse pinned icon.
 ConEmu can't do anything with that, absolutely.

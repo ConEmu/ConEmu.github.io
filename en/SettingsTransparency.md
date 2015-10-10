@@ -9,7 +9,7 @@ title: "ConEmu | Settings › Transparency page"
 
 ![ConEmu Settings: Transparency](/img/Settings-Transparency.png)
 
-<h2 id="Change_transparency_on_the_fly"> Change transparency on the fly </h2>
+## Change transparency on the fly  {#Change_transparency_on_the_fly}
 
 [Status bar](StatusBar.html) contains (by default)
 column with transparency value.

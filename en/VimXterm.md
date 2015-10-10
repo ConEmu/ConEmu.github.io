@@ -32,7 +32,7 @@ readalso:
 
 
 
-## Requirements <a id="requirements"/>
+## Requirements   {#requirements}
 
 * Only [certain releases](#required-release) are supported;
 * Vim's executable must be named ‘vim.exe’;
@@ -57,7 +57,7 @@ but I'm not sure how to do that properly.
 
 
 
-## Only certain releases are supported <a id="required-release"/>
+## Only certain releases are supported   {#required-release}
 
 **NB** ‘Original’ Win32 console executable Vim from
 [gvim##.exe and vim##w32.zip](http://www.vim.org/download.php#pc)
@@ -67,7 +67,7 @@ MinGW's and Cygwin's Vim [do not pass ANSI to ConEmu](CygwinAnsi.html).
 
 
 
-## Notes about vim color schemes <a id="vim-color-scheme"/>
+## Notes about vim color schemes   {#vim-color-scheme}
 
 Selected Vim color scheme must be prepared specially for Xterm color.
 Some color schemes are working properly in Gvim, showing 256 colors and more,
@@ -79,7 +79,7 @@ Color scheme mentioned above (zenburn) is working fine.
 
 
 
-## How to enable Vim scrolling using mouse Wheel in ConEmu <a id="Vim-scrolling-using-mouse-Wheel"/>
+## How to enable Vim scrolling using mouse Wheel in ConEmu   {#Vim-scrolling-using-mouse-Wheel}
 
 When ConEmu emulates xterm it translates mouse wheel to the following sequences:
 
@@ -110,13 +110,13 @@ endif
 
 
 
-## vim-airline plugin <a id="Vim-airline"/>
+## vim-airline plugin   {#Vim-airline}
 
 * [Vim-airline configuration for ConEmu](https://github.com/bling/vim-airline/issues/513)
 * [Vim-airline changed colors on page scroll](https://github.com/bling/vim-airline/issues/857)
 
 
-## StackOverflow and SuperUser answers <a id="stack-exchange"/>
+## StackOverflow and SuperUser answers   {#stack-exchange}
 
 * [ConEmu: Vim Syntax Highlight](http://stackoverflow.com/a/14434531/1405560)
 * [Vim: Encoding (Unicode) in Terminal under Windows](http://stackoverflow.com/a/25073399/1405560)

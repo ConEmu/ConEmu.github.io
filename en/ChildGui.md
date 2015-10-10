@@ -41,7 +41,7 @@ readalso:
 
 
 
-## Definitions <a id="definition"/>
+## Definitions   {#definition}
 
 ‘Child Graphical User Interface’ or ‘ChildGui’ or ‘windowed applications’ are
 [GUI applications](https://en.wikipedia.org/wiki/Graphical_user_interface)
@@ -62,7 +62,7 @@ because they are running in the ConEmu ‘native’ mode.
 
 
 
-## There are several limitations <a id="limitations"/>
+## There are several limitations   {#limitations}
 
 Don't confuse ChildGui with [ConsoleApplication](ConsoleApplication.html)s
 which are specially developed and compiled.
@@ -72,7 +72,7 @@ This is one of the most common [console-related delusions](Delusions.html).
 ConEmu acts as simple holder for these ChildGui-s.
 
 
-<h3 id="process"> Single process, single window </h3>
+### Single process, single window   {#process}
 
 ChildGui support was developed for simple applications.
 It will not be working with those ones which runs several
@@ -81,7 +81,7 @@ runs bunch of child processes or reuses single process for new windows.
 
 
 
-<h3 id="resizeable"> Child window must be resizeable </h3>
+### Child window must be resizeable   {#resizeable}
 
 **Note** To be able to ‘integrate’ ChildGui into ConEmu, your application window must be **resizeable**!
 For example, if your PuTTY settings locks its window size to certain ‘rows x cols’ values,
@@ -92,7 +92,7 @@ That will look weird, small framed child window with caption inside ConEmu works
 
 
 
-<h3 id="not-controlled"> Can't be controlled by ConEmu </h3>
+### Can't be controlled by ConEmu   {#not-controlled}
 
 These application process all mouse and keyboard events, draw the contents
 including selection areas internally. ConEmu can't control or customize them.
@@ -102,7 +102,7 @@ That is because PuTTY colors must be configured in PuTTY itself.
 
 
 
-<h3 id="hotkeys"> Hotkeys limitations </h3>
+### Hotkeys limitations   {#hotkeys}
 
 One more note about **hotkeys**. When you are running ChildGui, all keypressed must be passed to that application.
 That's why most of ConEmu hotkeys will be inaccessible.
@@ -111,7 +111,7 @@ if option ‘Install keyboard hooks’ is **enabled**.
 
 
 
-<h4 id="hotkey-workaround"> Hotkey workaround </h4>
+#### Hotkey workaround  {#hotkey-workaround}
 
 One of most asked question is ‘Why Ctrl-Tab is not working with PuTTY?’
 
@@ -133,7 +133,7 @@ But there are few workarounds.
 
 
 
-## How to run ChildGui in ConEmu <a id="run-childgui"/>
+## How to run ChildGui in ConEmu   {#run-childgui}
 
 Absolutely the same way you do that for simple [ConsoleApplication](ConsoleApplication.html)'s.
 For example, from ‘[Create new console dialog](LaunchNewTab.html)’.
@@ -148,7 +148,7 @@ C:> putty -new_console
 
 
 
-## ChildGui title bar, window and system menu <a id="child-system-menu"/>
+## ChildGui title bar, window and system menu   {#child-system-menu}
 
 To make ChildGui applications looks prettier in ConEmu tabs
 there is an option ‘Hide caption of child GUI windows started in ConEmu’

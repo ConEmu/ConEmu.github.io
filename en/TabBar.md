@@ -52,7 +52,7 @@ You can change suffix text or completely remove it on
 Also, you may strip superfluous `Administrator:` prefix from console title:
 [Skip words from title](SettingsTabBar.html) edit field.
 
-<h2 id="switching-consoles"> Switching between consoles </h2>
+## Switching between consoles  {#switching-consoles}
 
 You may use `Win-Number` to activate consoles:
 

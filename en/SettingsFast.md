@@ -67,7 +67,7 @@ These and other options you may change later in the full [Settings dialog](Setti
 * [Read also](#read-also)
 
 
-<h2 id="fast-configuration"> Dialog ‘ConEmu Fast Configuration’ </h2>
+## Dialog ‘ConEmu Fast Configuration’  {#fast-configuration}
 
 Well, when you start ConEmu **first** time you would most probably see
 ‘*Fast configuration dialog*’.
@@ -89,7 +89,7 @@ However, you may disable these function, though disabling is not recommended.
 
 
 
-<h3 id="settings-storage"> Settings storage location </h3>
+### Settings storage location   {#settings-storage}
 
 ConEmu may store settings in Windows registry or in xml-file.
 
@@ -112,7 +112,7 @@ so the ‘Registry’ is suggested for this old OS.
 Read more about settings storage [here](ConEmuXml.html).
 
 
-<h3 id="startup-task"> Startup task or shell </h3>
+### Startup task or shell   {#startup-task}
 
 [Tasks](Tasks.html) are kind of predefined command lines
 to run [shells](TerminalVsShell.html) or [ChildGui](ChildGui.html)
@@ -128,12 +128,12 @@ but any desired program, just enter here full path to its
 with arguments.
 
 
-<h3 id="color-scheme"> Preferred color scheme </h3>
-<h3 id="single-instance"> Single instance mode </h3>
-<h3 id="quake-style"> Quake-style </h3>
-<h3 id="show-hide-hotkey"> Show-hide hotkey </h3>
+### Preferred color scheme   {#color-scheme}
+### Single instance mode   {#single-instance}
+### Quake-style   {#quake-style}
+### Show-hide hotkey   {#show-hide-hotkey}
 
-<h3 id="keyboard-hooks"> Install keyboard hooks </h3>
+### Install keyboard hooks   {#keyboard-hooks}
 
 This option is required for ability to process certain
 keyboard hotkeys.
@@ -149,7 +149,7 @@ For example checkboxes ‘Win+Number - activates console’,
 Take a look at [Keys & Macro](SettingsHotkeys.html) in the [Settings dialog](Settings.html).
 
 
-<h3 id="inject-conemuhk"> Inject ConEmuHk.dll into processes, started in ConEmu tabs </h3>
+### Inject ConEmuHk.dll into processes, started in ConEmu tabs   {#inject-conemuhk}
 
 Injecting hooks is required for many features.
 For example processing switch [-new_console](NewConsole.html),
@@ -162,7 +162,7 @@ is injected into processes running inside ConEmu window.
 
 
 
-<h3 id="auto-update"> Enable automatic updates </h3>
+### Enable automatic updates   {#auto-update}
 
 As is. This allows to do automatic update the ConEmu installation from internet.
 Later you may tune up updating settings on the
@@ -171,18 +171,18 @@ ConEmu do not do unauthorized changes, it will ask your permission
 before starting update process.
 
 
-<h3 id="disable-conime"> Disable ConIme.exe autorun (Vista only) </h3>
+### Disable ConIme.exe autorun (Vista only)   {#disable-conime}
 
 Windows Vista users may see this checkbox.
 Why and its purpose you may see in [FAQ](ConEmuFAQ.html#Windows_Vista).
 
 
-<h3 id="after-ok"> After ‘OK’ click </h3>
+### After ‘OK’ click   {#after-ok}
 
 ConEmu will start in its tab the task or shell you have selected
 in the [Startup task or shell](#startup-task) field.
 
 
-<h2 id="open-settings"> Thorough configuration in Settings dialog </h2>
+## Thorough configuration in Settings dialog  {#open-settings}
 
 [How to open full Settings dialog](Settings.html#Settings_dialog)

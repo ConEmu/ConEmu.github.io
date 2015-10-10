@@ -22,7 +22,7 @@ And that may be **not** a ConEmu issue at all.
 
 
 
-<h2 id="example"> How to run specified command </h2>
+## How to run specified command  {#example}
 
 Most of shells have switches to disable loading plugins or extensions.
 Just use them. Easiest way to use `ConEmu -cmd ...` to force proper shell command.
@@ -46,7 +46,7 @@ Alternatively, you may change the ‘Command line’ on the ‘Startup’ settin
 
 
 
-<h2 id="cmd"> cmd </h2>
+## cmd  {#cmd}
 
 Just run cmd using `/D` switch.
 
@@ -56,7 +56,7 @@ cmd /D
 
 
 
-<h2 id="PowerShell"> PowerShell </h2>
+## PowerShell  {#PowerShell}
 
 Use `-noprofile` switch.
 
@@ -66,7 +66,7 @@ PowerShell -noprofile
 
 
 
-<h2 id="Far_Manager"> Far Manager </h2>
+## Far Manager  {#Far_Manager}
 
 Use `/p` to disable plugins and `/m` to disable macros.
 

@@ -19,19 +19,19 @@ You may execute some ConEmu's actions from Far Manager macros.
 
 
 
-<h2 id="ConEmu-macro"> ConEmu plugin macros </h2>
+## ConEmu plugin macros  {#ConEmu-macro}
 
-<h3 id="ConEmu-macro-Far2"> Far2 </h3>
+### Far2   {#ConEmu-macro-Far2}
 
 * callplugin(0x43454D55,"[GuiMacro](GuiMacro.html)")
 * callplugin(0x43454D55,*PluginCommand*)
 
-<h3 id="ConEmu-macro-Far3"> Far3 (Plugin.Call is alias for callplugin) </h3>
+### Far3 (Plugin.Call is alias for callplugin)   {#ConEmu-macro-Far3}
 
 * Plugin.Call("4b675d80-1d4a-4ea9-8436-fdc23f2fc14b","[GuiMacro](GuiMacro.html)")
 * Plugin.Call("4b675d80-1d4a-4ea9-8436-fdc23f2fc14b",*PluginCommand*)
 
-<h3 id="ConEmu-macro-PluginCommand"> PluginCommand </h3>
+### PluginCommand   {#ConEmu-macro-PluginCommand}
 
 | Code | Action |
 |:---|:---|
@@ -47,17 +47,17 @@ You may execute some ConEmu's actions from Far Manager macros.
 
 
 
-<h2 id="PanelViews-macro"> ConEmu Panel Views plugin macros </h2>
+## ConEmu Panel Views plugin macros  {#PanelViews-macro}
 
-<h3 id="PanelViews-macro-Far2"> Far2 </h3>
+### Far2   {#PanelViews-macro-Far2}
 
 * callplugin(0x43455568,*PluginCommand*)
 
-<h3 id="PanelViews-macro-Far3"> Far3 (Plugin.Call is alias for callplugin) </h3>
+### Far3 (Plugin.Call is alias for callplugin)   {#PanelViews-macro-Far3}
 
 * Plugin.Call("bd454d48-448e-46cc-909d-b6cf789c2d65",*PluginCommand*)
 
-<h3 id="PanelViews-macro-PluginCommand"> PluginCommand </h3>
+### PluginCommand   {#PanelViews-macro-PluginCommand}
 
 | Code | Action |
 |:---|:---|

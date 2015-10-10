@@ -26,9 +26,9 @@ it is powerful editor, huge number of plugins, powerful macro engine.
 
 
 
-<h2 id="First-of-all"> First of all </h2>
+## First of all  {#First-of-all}
 
-<h3 id="Two-platforms"> There are two platforms (?) </h3>
+### There are two platforms (?)   {#Two-platforms}
 
 * x86 (32-bit binaries) it works everywhere, beginning from Windows 2000 SP4 with one hotfix.
 * x64 (64-bit binaries) it requires 64-bit OS.
@@ -46,7 +46,7 @@ I'm using Far 3.0 x86 version (my primary OS is Win 7 x64).
 
 
 
-<h3 id="Three-branches"> There are three (already) branches of Far Manager </h3>
+### There are three (already) branches of Far Manager   {#Three-branches}
 
 * 1.x (closed) oldschool version. It is ANSI (OEM to be more precise),
   so it can't deal with unicode characters out of system OEM codetable.
@@ -63,7 +63,7 @@ I'm using Far 3.0 x86 version (my primary OS is Win 7 x64).
 
 
 
-<h3 id="There-are-several-types-of-plugins"> There are several types of plugins </h3>
+### There are several types of plugins   {#There-are-several-types-of-plugins}
 
 * **Panels**. This is most common type. Examples:
   * Miscellaneous archives: Arclite, [Observer](http://forum.farmanager.com/viewtopic.php?f=11&t=4643),
@@ -92,7 +92,7 @@ I'm using Far 3.0 x86 version (my primary OS is Win 7 x64).
 
 
 
-<h2 id="1-Downloads-Installation"> 1. Downloads / Installation </h2>
+## 1. Downloads / Installation  {#1-Downloads-Installation}
 
 * Download Full version from [official site](http://www.farmanager.com/download.php?l=en).
   Does not matter whatever you use - msi installer or 7z package.
@@ -111,7 +111,7 @@ After installing (unpacking) Far Manager you have such directory structure (by e
 
 
 
-<h2 id="2-Install-plugins"> 2. Install plugins to your's mind </h2>
+## 2. Install plugins to your's mind  {#2-Install-plugins}
 
 There thousands of plugins written for many years. There many sources, where you can download them.
 
@@ -126,7 +126,7 @@ To make Far Manager load new plugins you may:
 
 
 
-<h3 id="Examples"> Examples </h3>
+### Examples   {#Examples}
 
 * (Note, this plugin already included in the latest Far distro).
   You have downloaded [FarColorer_far3_1.0.3.10.7z](https://sourceforge.net/projects/colorer/files/FAR%20Colorer/)
@@ -139,7 +139,7 @@ To make Far Manager load new plugins you may:
 
 
 
-<h3 id="Main-plugins-sources"> Main plugins sources </h3>
+### Main plugins sources   {#Main-plugins-sources}
 
 * [PlugRing](http://plugring.farmanager.com/index.php?l=en)
 * [Plugin announces (russian)](http://forum.farmanager.com/viewforum.php?f=11)
@@ -148,7 +148,7 @@ To make Far Manager load new plugins you may:
 
 
 
-<h3 id="Developer-sites"> Developer sites </h3>
+### Developer sites   {#Developer-sites}
 
 * [Regeditor, Picture View, ImpEx (PE browser), Far3wrap and others](https://github.com/Maximus5/FarPlugins)
   and [old mirror](http://code.google.com/p/conemu-maximus5/wiki/FarPlugins).
@@ -162,7 +162,7 @@ To make Far Manager load new plugins you may:
 
 
 
-<h2 id="3-Help-FAQ-Documentation"> 3. Help, FAQ, Documentation </h2>
+## 3. Help, FAQ, Documentation  {#3-Help-FAQ-Documentation}
 
 Unfortunately for non-Russian speaking users, most of resources are on russian.
 However, you may use google translate, or ask competent users, for example,
@@ -174,7 +174,7 @@ Or, may be, on [SuperUser](http://superuser.com/questions/tagged/far-manager).
 
 
 
-<h2 id="4-Control"> 4. Control </h2>
+## 4. Control  {#4-Control}
 
 Far have oldschool and intuitive NC-like interface :)
 
@@ -208,7 +208,7 @@ This is **very** breaf list of key kombos, read F1 for more information.
 
 
 
-<h2 id="5-Automation"> 5. Automation </h2>
+## 5. Automation  {#5-Automation}
 
 One of most powerful options of Far Manager are Macros. There are two styles of Macro.
 

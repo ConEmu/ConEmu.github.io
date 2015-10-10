@@ -34,7 +34,7 @@ readalso:
   * [Example 6 (Split Screen)](#example-6)
 
 
-<h2 id="purpose"> Purpose </h2>
+## Purpose  {#purpose}
 
 Switches `-new_console` and `-cur_console` are used to modify the behavior
 of the ConEmu tabs and splits (new or existing). Few examples below.
@@ -76,7 +76,7 @@ with ConEmu's executables command line.
 ConEmu.exe /cmdlist cmd ||| powershell -new_console:sV
 ~~~
 
-<h2 id="exclusions"> Exclusions </h2>
+## Exclusions  {#exclusions}
 
 Sometimes, you may need to disable processing of `-new_console` and `-cur_console` switches at all.
 For example, you need to create git commit with `-new_console` in the commit message,
@@ -113,7 +113,7 @@ git -am "Commit message with -new_console argument"
 </pre>
 
 
-<h2 id="the-difference"> The difference </h2>
+## The difference  {#the-difference}
 
 What is the difference between `-new_console` and `-cur_console`?
 
@@ -125,7 +125,7 @@ On the other hand, using them in ConEmu's tasks or command line,
 both `-new_console` and `-cur_console` has the same effect.
 
 
-<h2 id="syntax"> Syntax </h2>
+## Syntax  {#syntax}
 
 When you run application from existing ConEmu tab, or starting new tab from ConEmu interface,
 you may use `-new_console` or `-cur_console` switches.
@@ -160,7 +160,7 @@ you may use `-new_console` or `-cur_console` switches.
 ~~~
 
 
-<h2 id="important-notes"> Important notes </h2>
+## Important notes  {#important-notes}
 
   * Option [Inject ConEmuHk](ConEmuHk.html) **must be enabled** in ConEmu settings
     if you want to use these switches in your shell prompt (CLI).
@@ -180,14 +180,14 @@ you may use `-new_console` or `-cur_console` switches.
 
 
 
-<h2 id="examples"> Examples </h2>
+## Examples  {#examples}
 
 **Note**. In some cases `-new_console` can not be intercepted (e.g. starting batches
 or internal commands from command processor itself).
 In this cases you owe to use the ‘prefix’ before actual command!
 
 
-<h3 id="example-1"> Example 1 </h3>
+### Example 1   {#example-1}
 
 Starts `dir c:\ /s` in new background ConEmu tab,
 set buffer height to 9999 lines,
@@ -198,7 +198,7 @@ do not close tab after `dir` completion.
 ~~~
 
 
-<h3 id="example-2"> Example 2 </h3>
+### Example 2   {#example-2}
 
 Starts `vim.exe c:\sources\1.cpp` in new ConEmu tab,
 disable buffer scrolling (buffer height will be equal to window height),
@@ -209,7 +209,7 @@ vim.exe -new_console:nh0 c:\sources\1.cpp
 ~~~
 
 
-<h3 id="example-3"> Example 3 </h3>
+### Example 3   {#example-3}
 
 Starts `cmd.exe` in specified directory with specified login/username (Nick) and password (pwd).
 
@@ -218,7 +218,7 @@ cmd.exe -new_console:d:"C:\Users\Nick" "-new_console:u:Nick:pwd"
 ~~~
 
 
-<h3 id="example-4"> Example 4 (Far Manager related) </h3>
+### Example 4 (Far Manager related)   {#example-4}
 
 Starts `hiew.exe c:\tools\app.exe` in **current** ConEmu tab,
 do not enabling buffer scrolling (buffer height will be equal to window height).
@@ -228,7 +228,7 @@ hiew.exe -cur_console:h0 c:\tools\app.exe
 ~~~
 
 
-<h3 id="example-5"> Example 5 </h3>
+### Example 5   {#example-5}
 
 Starts PuTTY in new ConEmu tab.
 
@@ -237,7 +237,7 @@ putty -new_console
 ~~~
 
 
-<h3 id="example-6"> Example 6 (Split Screen) </h3>
+### Example 6 (Split Screen)   {#example-6}
 
 Split current tab, new tab will be created to the right, both tabs becomes 50% width of active tab.
 

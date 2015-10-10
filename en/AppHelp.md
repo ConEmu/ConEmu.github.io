@@ -24,19 +24,19 @@ readalso:
 * [The solution](#The_solution)
 
 
-<h2 id="Abstract"> Abstract </h2>
+## Abstract  {#Abstract}
 
 Several times I've seen cygwin/msys errors when their subsystem
 had failed to create child processes.
 
 
-<h3 id="Example-from-cygwin-ls"> Example from cygwin's ls </h3>
+### Example from cygwin's ls   {#Example-from-cygwin-ls}
 
 ~~~
 0 [main] us 0 init_cheap: VirtualAlloc pointer is null, Win32 error 487 AllocationBase 0x68520000, BaseAddress 0x68570000, RegionSize 0x218000, State 0x1000 C:\Program Files (x86)\Git\bin\ls.exe: *** Couldn't reserve space for cygwin's heap, Win32 error 487
 ~~~
 
-<h3 id="Example-from-msys-git-perl"> Example from msys-git's perl </h3>
+### Example from msys-git's perl   {#Example-from-msys-git-perl}
 
 ~~~
 C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\bin\libsvn_wc-1-0.dll to same address as parent -- 0x2190000
@@ -49,7 +49,7 @@ C:\GIT\bin\perl.exe: *** unable to remap C:\GIT\lib\perl5\site_perl\5.8.8\msys\a
 
 
 
-<h2 id="The_problem"> The problem </h2>
+## The problem  {#The_problem}
 
 Digging the problem for some time I've found the reason of these errors on my PC (in perl's case).
 
@@ -61,7 +61,7 @@ Digging the problem for some time I've found the reason of these errors on my PC
 
 
 
-<h2 id="The_check"> The check </h2>
+## The check  {#The_check}
 
 *The following examples shows msysgit x86*
 
@@ -98,7 +98,7 @@ Yeah, that is not too simple but rather...
 
 
 
-<h2 id="The_solution"> The solution </h2>
+## The solution  {#The_solution}
 
 1. You need to ‘rebase’ conflicting modules.
 2. Alternatively you need to run your shell in different way so process tree

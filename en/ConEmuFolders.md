@@ -17,7 +17,7 @@ ConEmu has several required files (`exe` and `dll`) for normal operation.
 This page describes possible variants of files layouts.
 
 
-<h2 id="Required_files"> Required files </h2>
+## Required files  {#Required_files}
 
 ConEmu distro contains several ‘parts’.
 
@@ -37,7 +37,7 @@ You will waste much more nerves, energy and time when you face
 disability to run something somedays.
 
 
-<h2 id="Standard_structure"> Standard structure </h2>
+## Standard structure  {#Standard_structure}
 
 | File | Description |
 |:---|:---|
@@ -47,14 +47,14 @@ disability to run something somedays.
 | `.\Plugins\ConEmu\` | This folder contains Far Manager plugins. If you are not using Far Manager, you may delete `Plugins` folder |
 
 
-<h2 id="Plain_structure"> Plain structure </h2>
+## Plain structure  {#Plain_structure}
 
 | File | Description |
 |:---|:---|
 | `.\ConEmu.exe` <br> `.\ConEmu64.exe` <br> `.\ConEmuC.exe` <br> `.\ConEmuCD.dll` <br> `.\ConEmuHk.dll` <br> `.\ConEmuC64.exe` <br> `.\ConEmuCD64.dll` <br> `.\ConEmuHk64.dll` | If you wish, you may put all ConEmu files in one folder.<br> But! You must write post-update command to move<br> console-part files to root folder,<br> if you want to use ‘Autoupdate’ feature. |
 
 
-<h2 id="MinGW_structure"> MinGW structure </h2>
+## MinGW structure  {#MinGW_structure}
 
 | File | Description |
 |:---|:---|

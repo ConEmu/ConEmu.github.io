@@ -27,7 +27,7 @@ This article describes ‘high dpi’, ‘high resulution’, ‘dpi awareness�
   * [New dpi-aware build shows clean picture](#New_dpi-aware_build_shows_clean_picture)
 
 
-<h2 id="Types_of_High-DPI_OS_settings"> Types of High-DPI OS settings </h2>
+## Types of High-DPI OS settings  {#Types_of_High-DPI_OS_settings}
 
 There are two ways how high-dpi (high resolution) support may work in Windows.
 
@@ -41,7 +41,7 @@ Also, modern Windows versions do not use ‘DPI’ term.
 There is ‘Scaling’ defined in per cents.
 
 
-<h2 id="Types_of_high-dpi_awareness"> Types of high-dpi awareness </h2>
+## Types of high-dpi awareness  {#Types_of_high-dpi_awareness}
 
 There are three style of DPI support in modern Windows versions.
 
@@ -49,7 +49,7 @@ There are three style of DPI support in modern Windows versions.
 * [Per system DPI-aware](#system-dpi-aware)
 * [Per monitor DPI-aware](#per-monitor-aware)
 
-<h3 id="dpi-awareness-checker"> DPI-awareness checker </h3>
+### DPI-awareness checker   {#dpi-awareness-checker}
 
 One of the most common delusions of high-dpi support complains
 is comparison of ConEmu, which is [per monitor DPI-aware](#per-monitor-aware),
@@ -79,7 +79,7 @@ PID     Awareness       Process name
 At the moment, most of applications will show either ‘SystemAware’ or ‘Unaware’.
 
 
-<h3 id="Non-dpi-aware"> Not DPI-aware </h3>
+### Not DPI-aware   {#Non-dpi-aware}
 
 These old applications do not know anything about monitor dpi and how to deal with high resolution.
 
@@ -96,7 +96,7 @@ scaled and displayed properly, not blurred.
 ![Very old calc at 150% and 100% scaling](/img/calc-150-100.png)
 
 
-<h3 id="system-dpi-aware"> Per system DPI-aware </h3>
+### Per system DPI-aware   {#system-dpi-aware}
 
 These applications provide a way better support of high resolution.
 And they looks fine if all your monitors have same DPI.
@@ -106,7 +106,7 @@ That is because the application can detect only ‘System DPI’
 and do not know anything about [different devices](#per-monitor-aware).
 
 
-<h3 id="per-monitor-dpi-aware"> Per monitor DPI-aware </h3>
+### Per monitor DPI-aware   {#per-monitor-dpi-aware}
 
 These applications look fine on any monitor,
 their contents will not be blurred on any DPI.
@@ -123,9 +123,9 @@ Press `Win+E` and move the window between monitors with different scaling
 by `Win+Shift+Left` and `Win+Shift+Right`.
 
 
-<h2 id="Some-more-examples"> Some more examples </h2>
+## Some more examples  {#Some-more-examples}
 
-<h3 id="Dialog-downscale-issue"> Dialogs downscale issues </h3>
+### Dialogs downscale issues   {#Dialog-downscale-issue}
 
 If your primary monitor has larger scaling percentage
 than secondary one, you may notice some dialog drawing artefacts.
@@ -136,10 +136,10 @@ to make them look fine.
 
 ![Dialog downscale issue](/img/dpi-downscaled.png)
 
-<h3 id="Very_old_build_without_dpi-awareness_causes_blurred_text"> Very old build without dpi-awareness causes blurred text </h3>
+### Very old build without dpi-awareness causes blurred text   {#Very_old_build_without_dpi-awareness_causes_blurred_text}
 
 ![Very old ConEmu build without dpi-awareness](/img/dpi-old-150.png)
 
-<h3 id="New_dpi-aware_build_shows_clean_picture"> New dpi-aware build shows clean picture </h3>
+### New dpi-aware build shows clean picture   {#New_dpi-aware_build_shows_clean_picture}
 
 ![New dpi-aware ConEmu build](/img/dpi-new-150.png)

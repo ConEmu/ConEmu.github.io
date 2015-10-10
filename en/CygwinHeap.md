@@ -46,7 +46,7 @@ compiled with link options ask Windows kernel to load [ConEmuHk](ConEmuHk.html).
 2. There is no valid bug reports confirming the conflict between ConEmu and cygwin/msys.
 
 
-<h2 id="How_to_fix_that"> How to fix that? </h2>
+## How to fix that?  {#How_to_fix_that}
 
 I really can't help you because it is not a ConEmu bug... But you may fix it yourself in your PC.
 
@@ -67,12 +67,12 @@ address overlaps with dll your found. From my experience, that can be [apphelp.d
 
 
 
-<h2 id="Still_not_sure"> Still not sure? </h2>
+## Still not sure?  {#Still_not_sure}
 
 Well, submit your report with [MiniDump](MemoryDump.html) attached. All reports will be checked.
 
 
-<h3 id="How_to_create_required_dump"> How to create required dump </h3>
+### How to create required dump   {#How_to_create_required_dump}
 
 Description with examples:
 [CrashDump.html#How_to_create_required_dump](CrashDump.html#How_to_create_required_dump).

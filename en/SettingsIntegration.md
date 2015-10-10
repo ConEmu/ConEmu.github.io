@@ -33,7 +33,7 @@ ConEmu offers two types of integration, registered separately:
 * ‘ConEmu Inside’ (lower group) - your shell will be started in the pane of your Explorer window.
 
 
-<h2 id="ConEmu_Inside"> ConEmu Inside </h2>
+## ConEmu Inside  {#ConEmu_Inside}
 
 When you run one of ‘ConEmu inside’ items,
 ConEmu window will be started **inside** your Explorer window.
@@ -60,12 +60,12 @@ To pop up ConEmu ‘Tab’ menu - right click on the
 <code class="plus">[+]</code> item in the ConEmu status bar.
 
 
-<h2 id="Page-items-description"> ‘Integration’ page items description </h2>
+## ‘Integration’ page items description  {#Page-items-description}
 
 ![Integration page items description](/img/Settings-Integration2.png)
 
 
-<h3 id="Menu_item"> Menu item </h3>
+### Menu item   {#Menu_item}
 
 What you will see in the Explorer popup menu.
 You can use `&` sign to set hotkey for the menu item.
@@ -77,13 +77,13 @@ There is no way to register
 for these methods.
 
 
-<h3 id="Configuration"> Configuration </h3>
+### Configuration   {#Configuration}
 
 Especially for Inside mode. Allows to set different font,
 palette and other settings for your ConEmu instance.
 
 
-<h3 id="Command"> Command </h3>
+### Command   {#Command}
 
 Specify your shell here (cmd, powershell, Far Manager, etc.)
 
@@ -103,12 +103,12 @@ Use `/single` switch with following `/cmd`, example:
 ~~~
 
 
-<h3 id="Icon-file"> Icon file </h3>
+### Icon file   {#Icon-file}
 
 Examples: `C:\Far\far.exe,0`, `powershell.exe`, `C:\Images\Icon.ico`.
 
 
-<h3 id="Sync-dir"> Sync dir (Inside mode only) </h3>
+### Sync dir (Inside mode only)   {#Sync-dir}
 
 Here you can choose special command for ‘cd’ in your shell.
 You may use following macro here

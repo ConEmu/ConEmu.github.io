@@ -25,7 +25,7 @@ but let it be here, in one place.
 * [Conclusion](#Conclusion)
 
 
-<h2 id="minhook"> minhook alpha build note </h2>
+## minhook alpha build note  {#minhook}
 
 Since [build 150814](http://conemu.github.io/blog/2015/08/14/Build-150814.html)
 ConEmu is changing hooking technique from ‘changing IAT pointers’ to ‘detouring’.
@@ -42,7 +42,7 @@ The quest is in progress.
 
 
 
-<h2 id="descr"> Description </h2>
+## Description  {#descr}
 
 ConEmu need to intercept large amount of Windows API functions,
 otherwise it would be possible
@@ -64,7 +64,7 @@ will have same problems as ConEmu. Few examples:
 
 
 
-<h2 id="Tech_info"> Tech info </h2>
+## Tech info  {#Tech_info}
 
 What are injects?
 
@@ -76,7 +76,7 @@ changing IAT pointers.
 
 
 
-<h2 id="Slowdown"> Slowdown </h2>
+## Slowdown  {#Slowdown}
 
 Current method of injections and hooking will cause small lag
 when new process is created in the ConEmu console.
@@ -101,7 +101,7 @@ new process and the switch `-cur_console:i` will not have any effect.
 
 
 
-<h2 id="Third_party_problems"> Third party problems </h2>
+## Third party problems  {#Third_party_problems}
 
 I had bunches of issues about ‘crashes in ConEmu’. Really? And what are the causes?
 
@@ -120,7 +120,7 @@ I had bunches of issues about ‘crashes in ConEmu’. Really? And what are the 
 
 
 
-<h2 id="Conclusion"> Conclusion </h2>
+## Conclusion  {#Conclusion}
 
 Do you think still you have no need in ConEmuHk?
 Well, you may **completely** disable them,

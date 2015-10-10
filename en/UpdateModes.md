@@ -41,7 +41,7 @@ You may choose any suitable way to update you ConEmu installation
 
 
 
-## Automatic update (internal) <a id="automatic"/>
+## Automatic update (internal)   {#automatic}
 
 ConEmu is able to update itself if it was installed by
 [Installer](http://conemu.github.io/en/VersionComparison.html#installer)
@@ -54,7 +54,7 @@ or just call ‘Help > Check for updates’ from
 [SystemMenu](SystemMenu.html).
 
 
-### Internet access issues <a id="auto-troubleshoot"/>
+### Internet access issues   {#auto-troubleshoot}
 
 ConEmu's internal update is using [ConEmuC](ConEmuC.html#Download)
 for accessing external sites. When automatic update check is issued,
@@ -85,7 +85,7 @@ But if `version.ini` is available, look for the options below.
 * [Use any third-party downloader tool](#auto-curl-wget)
 
 
-#### Change version.ini location <a id="auto-location"/>
+#### Change version.ini location   {#auto-location}
 
 If your provider/proxy/router blocks, for example, an access to
 [http://conemu.github.io/version.ini](http://conemu.github.io/version.ini),
@@ -101,7 +101,7 @@ via [xml or registry](ConEmuXml.html). Look at the snippet below.
 ~~~
 
 
-#### Change internal downloader switches <a id="auto-commandline"/>
+#### Change internal downloader switches   {#auto-commandline}
 
 To check internet issues from command line, run the following command.
 
@@ -117,7 +117,7 @@ You may play with them and if some option helps, change them in the
 [Settings dialog](SettingsUpdate.html) or [let us know](Issues.html).
 
 
-#### Use any third-party downloader tool <a id="auto-curl-wget"/>
+#### Use any third-party downloader tool   {#auto-curl-wget}
 
 Most known utilities available are ‘Curl’ and ‘Wget’.
 Just install them and switch to `External downloader`
@@ -132,7 +132,7 @@ curl.exe -L %1 -o %2
 
 
 
-## Chocolatey <a id="chocolatey"/>
+## Chocolatey   {#chocolatey}
 
 [Chocolatey](https://chocolatey.org/) is a Machine Package Manager,
 somewhat like apt-get, but built with Windows in mind.
@@ -148,7 +148,7 @@ choco upgrade conemu
 
 
 
-## Manual update <a id="manual"/>
+## Manual update   {#manual}
 
 If ConEmu failed to download update package, you may download the package yourself
 from the [primary download site](Downloads.html).
@@ -160,7 +160,7 @@ Than you may trigger update procedure by Dropping downloaded package:
 
 
 
-## PortableApps.com <a id="portableapps"/>
+## PortableApps.com   {#portableapps}
 
 You may use automatic update by
 [7-Zip package](http://conemu.github.io/en/VersionComparison.html#zip-package)
@@ -168,7 +168,7 @@ or PortableApps' standard method by selecting downloaded `ConEmu_*_English.paf.e
 
 
 
-## MSYS2 <a id="msys2"/>
+## MSYS2   {#msys2}
 
 **Note** Version of the available package may be obsolete because it's not maintained by ConEmu's authors.
 Anyway, the command to update MSYS2 package is below.

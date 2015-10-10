@@ -31,7 +31,7 @@ Internet connection is required.
 
 
 
-## Default automatic installation <a id="default"/>
+## Default automatic installation   {#default}
 
 |:---------------------------|:----------|
 | ConEmu version             | Latest    |
@@ -48,7 +48,7 @@ powershell -NoProfile -ExecutionPolicy Unrestricted -Command "iex ((new-object n
 
 
 
-## Automatic installation with parameters <a id="params"/>
+## Automatic installation with parameters   {#params}
 
 If you need to customize parameters (folder, default xml file, etc.)
 you may use another syntax.
@@ -71,7 +71,7 @@ powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set ver 'alpha'; s
 
 
 
-## Using chocolatey <a id="cinst"/>
+## Using chocolatey   {#cinst}
 
 [Chocolatey](https://chocolatey.org/) is a Machine Package Manager,
 somewhat like apt-get, but built with Windows in mind.
@@ -97,7 +97,7 @@ choco install conemu
 
 
 
-## Manual installation <a id="manual"/>
+## Manual installation   {#manual}
 
 Just choose [preferred format](VersionComparison.html)
 (7-zip, installer or PortableApps.com),

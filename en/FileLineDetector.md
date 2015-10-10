@@ -27,7 +27,7 @@ May be configured on [Highlight](SettingsHighlight.html) settings page.
 
 
 
-## Compiler errors <a id="Compiler_errors"/>
+## Compiler errors   {#Compiler_errors}
 
 
 Examples:
@@ -42,7 +42,7 @@ Action: File will be opened in the [specified editor](SettingsHighlight.html) on
 
 
 
-## Files <a id="Files"/>
+## Files   {#Files}
 
 File names or full paths produced from `dir`, `ls`, `git status`, `git diff` and so on.
 
@@ -56,7 +56,7 @@ Action:
 
 
 
-## Hyperlinks <a id="Hyperlinks"/>
+## Hyperlinks   {#Hyperlinks}
 
 Examples:
 

@@ -14,7 +14,7 @@ Do you want to get your cmd.exe prompt bottom aligned?
 On ConEmu startup and after "cls"?
 
 
-<h2 id="Far_Manager"> Far Manager </h2>
+## Far Manager  {#Far_Manager}
 
 Actually, I can't understand why anyone use cmd as shell but not a [FarManager](FarManager.html).
 It's a fast, handy and powerfull combination of:
@@ -34,21 +34,21 @@ and save configuration changes **Shift+F9**.
 You will get command prompt with permanent history (Alt+F8).
 
 
-<h2 id="Plain_cmd.exe"> Plain cmd.exe </h2>
+## Plain cmd.exe  {#Plain_cmd.exe}
 
 OK. If you still want use plain "cmd.exe" - here is one trick
 using [AnsiEscapeCodes](AnsiEscapeCodes.html).
 
-<h3 id="Set_up_your_task"> Set up your task </h3>
+### Set up your task   {#Set_up_your_task}
 
 ![cmd.exe prompt at the bottom - 1](/img/PromptAtBottom1.png "Prompt at the bottom of ConEmu window")
 
 
-<h3 id="Choose_it_as_startup_task"> Choose it as startup task </h3>
+### Choose it as startup task   {#Choose_it_as_startup_task}
 
 ![cmd.exe prompt at the bottom - 2](/img/PromptAtBottom2.png "Prompt at the bottom of ConEmu window")
 
 
-<h3 id="Prompt_will_appears_at_the_bottom"> Prompt will appears at the bottom </h3>
+### Prompt will appears at the bottom   {#Prompt_will_appears_at_the_bottom}
 
 ![cmd.exe prompt at the bottom - 3](/img/PromptAtBottom3.png "Prompt at the bottom of ConEmu window")

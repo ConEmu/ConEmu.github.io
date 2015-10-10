@@ -31,7 +31,7 @@ you may observe weird result of tab-completion in your prompt,
 like in the [issue 225](https://github.com/Maximus5/ConEmu/issues/225).
 
 
-<h2 id="ConEmu_and_clink"> cmd.exe and clink </h2>
+## cmd.exe and clink  {#ConEmu_and_clink}
 
 If you are using `cmd.exe` as shell you may try [clink](http://mridgers.github.io/clink/)
 for bash style completion and advanced cmd prompt.
@@ -66,7 +66,7 @@ Please refer to
 for further information and bugreports.
 
 
-<h2 id="PowerShell"> PowerShell.exe </h2>
+## PowerShell.exe  {#PowerShell}
 
 There are two nice PowerShell extensions to make its prompt more friendly:
 
@@ -74,7 +74,7 @@ There are two nice PowerShell extensions to make its prompt more friendly:
 * [PowerTab](http://powertab.codeplex.com/) (outdated)
 
 
-<h2 id="zsh"> zsh.exe </h2>
+## zsh.exe  {#zsh}
 
 Perhaps zsh tab-complition is good enough, but lately I've found the
 [openshift](https://blog.openshift.com/openshift-3-tab-completion-for-windows/)

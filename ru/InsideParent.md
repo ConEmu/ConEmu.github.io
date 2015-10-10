@@ -39,7 +39,7 @@ otherlang:
 
 
 
-<h2 id="settings"> Настройка для работы в окне Проводника Windows </h2>
+## Настройка для работы в окне Проводника Windows  {#settings}
 
 Режим навеян вопросом
 ‘<a href="http://superuser.com/a/441531/139371" rel="nofollow"
@@ -52,13 +52,13 @@ otherlang:
 Все на вкладке [Integration](SettingsIntegration.html) окна [Settings](Settings.html).
 
 
-<h3 id="inside-group"> Группа элементов ‘ConEmu Inside’ </h3>
+### Группа элементов ‘ConEmu Inside’   {#inside-group}
 Можно создать несколько пунктов контекстного меню проводника,
 и просмотривать/редактировать ранее назначенные пункты
 (выберите пункт в выпадающем списке ‘Menu Item’).
 
 
-<h3 id="sync-dir"> Опция ‘Sync current directory (Explorer > ConEmu)’ </h3>
+### Опция ‘Sync current directory (Explorer > ConEmu)’   {#sync-dir}
 Пока что эта не сохраняется в настройке и включена по умолчанию.
 Для быстрого включения/выключения в режиме Inside в [статустной строке](StatusBar.html)
 отображается колонка ‘Sync’.
@@ -68,7 +68,7 @@ otherlang:
 должен отображаться полный путь текущей папки.
 
 
-<h2 id="startup"> Запуск из Проводника Windows </h2>
+## Запуск из Проводника Windows  {#startup}
 
 Как уже было сказано ранее, запуск ConEmu в этом режиме осуществляется
 через выбор пункта контекстного меню проводника.
@@ -102,7 +102,7 @@ otherlang:
 
 
 
-<h2 id="inside-switches"> Параметры запуска ConEmu </h2>
+## Параметры запуска ConEmu  {#inside-switches}
 
 | | |
 |:----|:----|

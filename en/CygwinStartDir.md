@@ -19,7 +19,7 @@ One of the most asked questions about cygwin usage:
 
 
 
-<h2 id="the-problem"> The problem </h2>
+## The problem  {#the-problem}
 
 Finally, thanks to csbdess,
 [Issue 1552: can't set working dir for cygwin consoles from commandline](https://github.com/Maximus5/conemu-old-issues/issues/1552)#15,
@@ -45,7 +45,7 @@ You may change that file yourself to get the same checks as cygwin.
 
 
 
-<h2 id="CHERE"> CHERE </h2>
+## CHERE  {#CHERE}
 
 Cygwin will not do `cd "${HOME}"` if environment variable `CHERE_INVOKING` is defined.
 So, if you run your shell (bash) as following, shell will be started in proper working directory.
@@ -62,7 +62,7 @@ Because you can change cygwin behaviour within ConEmu tasks or command line.
 
 
 
-<h2 id="ConEmuWorkDir"> ConEmuWorkDir </h2>
+## ConEmuWorkDir  {#ConEmuWorkDir}
 
 Another workaround - do `cd` to the working folder in your
 shell profile (`.bashrc`, `.zshrc`, etc.)
@@ -123,7 +123,7 @@ Note that in all situations described here, ${foobar+1} expands to 1 if and only
 
 
 
-<h2 id="cygdrive"> cygdrive </h2>
+## cygdrive  {#cygdrive}
 
 Not related to working directory and ConEmu, actually, but let it be here.
 

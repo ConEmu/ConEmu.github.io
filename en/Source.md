@@ -13,7 +13,7 @@ breadcrumbs:
 Want to contribute? You may help with coding or documentation.
 
 
-## [Github (preferred mirror)](https://github.com/Maximus5/ConEmu) <a id="github"/>
+## [Github (preferred mirror)](https://github.com/Maximus5/ConEmu)   {#github}
 
 Here you can find latest sources and all actual branches.
 
@@ -29,13 +29,13 @@ git submodule update --init --recursive
 ~~~
 
 
-## How to build
+## How to build  {#HowToBuild}
 
 Build requirements and instructions are described in the file
 [/src/HowToBuild.txt](https://github.com/Maximus5/ConEmu/blob/master/src/HowToBuild.txt).
 
 
-## Documentation <a id="Documentation"/>
+## Documentation   {#Documentation}
 
 Oh, there are many docs and places with information about ConEmu, but not enough.
 

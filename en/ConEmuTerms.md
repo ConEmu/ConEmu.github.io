@@ -52,12 +52,12 @@ but does not have some window-related items.
 
 
 
-<h3 id="TSA"> TSA </h3>
+### TSA   {#TSA}
 
 Taskbar status area. It's a part of Windows taskbar next to the clock.
 
 
-<h3 id="Host_key"> Host key </h3>
+### Host key   {#Host_key}
 
 **Obsolete**
 
@@ -68,14 +68,14 @@ You may select yours convinent combination (up to 3 keys) from Win, Ctrl, Alt, S
 Host keys examples: Win, CtrlAltShift, CtrlApps, and so on...
 
 
-<h3 id="Apps_key"> Apps key </h3>
+### Apps key   {#Apps_key}
 
 A key between `RightWin` and `RightShift` on the most of keyboards.
 [More...](AppsKey.html)
 
 
 
-<h3 id="BufferHeight"> BufferHeight </h3>
+### BufferHeight   {#BufferHeight}
 
 Buffer height of the [RealConsole](ConEmuTerms.html#RealConsole) window may be much longer,
 than height of the visible area. ConEmu shows scrollbar (automatic or persistent)

@@ -32,13 +32,13 @@ But there is also logging of console output, [see below](#Log_console_output).
 * [Log console output](#Log_console_output)
 
 
-<h2 id="Why_they_are_needed"> Why LogFiles are needed </h2>
+## Why LogFiles are needed  {#Why_they_are_needed}
 
 When user reports a problem, frequently, developer needs more information
 than user may tell. ConEmu may write internal information in text form into log files.
 
 
-<h3 id="How_to_start_logging"> How to start logging </h3>
+### How to start logging   {#How_to_start_logging}
 
 Run `ConEmu.exe` or `ConEmu64.exe` (whatever you are using)
 with special switch `-log`.
@@ -50,7 +50,7 @@ Larger digit - more information will be written - ConEmu will run slower.
 
 
 
-<h3 id="Where_log_files_are_created"> Where log files are created </h3>
+### Where log files are created   {#Where_log_files_are_created}
 
 This depends of when program folder is write-allowed.
 For example, running as normal user any program can't write to `C:\Program Files`.
@@ -67,7 +67,7 @@ Note, that there are `ConEmuC.exe` and `ConEmuC64.exe` in the `ConEmu` subfolder
 
 
 
-<h3 id="Logging_in_DefTerm"> Start logging with ‘Default Terminal’ </h3>
+### Start logging with ‘Default Terminal’   {#Logging_in_DefTerm}
 
 When you are using [Default Terminal](DefaultTerminal.html) feature,
 you may enable logging for [hooked processes](SettingsDefTerm.html).
@@ -84,7 +84,7 @@ in the `ConEmuLogs` folder.
 
 
 
-<h3 id="Posting_to_issues"> Posting files to issues </h3>
+### Posting files to issues   {#Posting_to_issues}
 
 1. Please, don't post huge log files to issues comments!
    A great deal of lines with debug information makes
@@ -100,7 +100,7 @@ or any other hosting and post only link to the issue.
 
 
 
-<h2 id="Log_console_output"> Log console output </h2>
+## Log console output  {#Log_console_output}
 
 Don't confuse this with log files created by `-log` switch.
 

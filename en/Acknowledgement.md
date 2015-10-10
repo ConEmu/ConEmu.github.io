@@ -43,7 +43,7 @@ and replace [simple cmd or powershell window](Delusions.html#delusion-2).
 
 
 
-<h2 id="Project_mirrors"> Project mirrors </h2>
+## Project mirrors  {#Project_mirrors}
 
 * [https://github.com/Maximus5/ConEmu](https://github.com/Maximus5/ConEmu)
 * [https://sourceforge.net/projects/conemu/](https://sourceforge.net/projects/conemu/)
@@ -52,7 +52,7 @@ and replace [simple cmd or powershell window](Delusions.html#delusion-2).
 
 
 
-<h2 id="Acknoledgements"> Acknoledgements </h2>
+## Acknoledgements  {#Acknoledgements}
 
 * [Hanselman Ultimate Tools List](http://www.hanselman.com/tools)
 * [ConEmu - The Windows Terminal/Console/Prompt we've been waiting for?](http://www.hanselman.com/blog/ConEmuTheWindowsTerminalConsolePromptWeveBeenWaitingFor.aspx)
@@ -61,7 +61,7 @@ and replace [simple cmd or powershell window](Delusions.html#delusion-2).
 
 
 
-<h2 id="About_author"> About author </h2>
+## About author  {#About_author}
 
 My accounts on the network.
 

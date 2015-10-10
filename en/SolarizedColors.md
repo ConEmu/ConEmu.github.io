@@ -27,7 +27,7 @@ colors 0..15 show Solarized palette, colors 16..31 show standard Windows colors.
 If your application looks weird, some colors are fade or undistinguished there are two ways.
 
 
-<h2 id="Setup_your_application"> Setup your application </h2>
+## Setup your application  {#Setup_your_application}
 
 For example, [MsysGit](http://msysgit.github.io/) uses low color octet
 (dark green actually) for displaying branch names, updated (indexed) files,
@@ -40,7 +40,7 @@ git config --global color.branch.current "green bold"
 ~~~
 
 
-<h2 id="Use_modified_color_scheme"> Use modified color scheme </h2>
+## Use modified color scheme  {#Use_modified_color_scheme}
 
 ConEmu has several Solarized schemes.
 For example `<Solarized Git>` was optimized for vanilla [MSysGit](http://msysgit.github.io/),

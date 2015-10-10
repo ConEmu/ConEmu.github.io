@@ -50,7 +50,7 @@ Also, ConEmu's selection doesn't correspond to
 
 
 
-<h2 id="settings"> Settings </h2>
+## Settings  {#settings}
 
 ![ConEmu: Text selection and copy settings](/img/Settings-MarkCopy.png)
 
