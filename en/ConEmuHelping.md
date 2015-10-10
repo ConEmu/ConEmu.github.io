@@ -1,5 +1,5 @@
 ---
-title: ConEmu | How you can help with documentation
+title: ConEmu | How you may help with documentation
 
 description: "Have you seen spelling error in the program interface or documentation?
    Can you suggest better translation or add some text to the documentation?
@@ -14,13 +14,20 @@ otherlang:
    rus: /ru/ConEmuHelping.html
 ---
 
+# How you may help with documentation
+
+Have you seen spelling error in the program interface or documentation?
+Can you suggest better translation or add some text to the documentation?
+Any suggestions are appreciated!
+
+
 <h2 id="documentation">Documentation</h2>
 
 Documentation seen by user: [TableOfContents.html](TableOfContents.html)
 
 Page sources: [github.com](https://github.com/ConEmu/ConEmu.github.io)
 
-English pages are located in ‘en’ subfolder.
+English pages are located in the ‘en’ subfolder.
 
 All settings dialogs are stored in the file
 [ConEmu.rc](https://github.com/Maximus5/ConEmu/blob/alpha/src/ConEmu/ConEmu.rc)
