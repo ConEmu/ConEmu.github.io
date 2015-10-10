@@ -40,7 +40,8 @@ it is impossible to fix something abstract...
 
 
 
-## Be verbose <a id="Be_verbose"/>
+<a id="Be_verbose"/>
+## Be verbose
 
 Appreciating yours reporting efforts, but
 **only properly prepared issues are meaningful**.
@@ -97,7 +98,8 @@ ConEmu may be **automatically** updated in **two steps** only.
 
 
 
-## OS version <a id="OS_version"/>
+<a id="OS_version"/>
+## OS version
 
 The Windows version matter!
 From version to version Windows behavior differs.
@@ -108,26 +110,31 @@ Fortunaterly, in the most cases developer can create some workaround.
 
 
 
-## Screenshot <a id="Screenshot"/>
+<a id="Screenshot"/>
+## Screenshot
 
-Personally, I prefer [ShareX](http://getsharex.com/) to make screenshots,
-but you may use any other program.
-You may even press `PrintScreen`, run `MSPaint` from `Win+R` and press `Ctrl+V`.
+Doesn't matter how do you create screenshots, but they must be descriptive.
+Personally, I prefer [ShareX](http://getsharex.com/) to make screenshots.
+You may use any other program.
+Or simply press `PrintScreen`, run `MSPaint` from `Win+R` and press `Ctrl+V`.
 
 Full-sized screenshot may tell about the problem more than you can imagine.
 Reporter may omit something from the problem description,
 but screenshot will not omit anything.
 
-### Screenshot Requirements <a id="Screenshot-Requirements"/>
+<a id="Screenshot-Requirements"/>
+### Screenshot Requirements
 
 * Do not cut them!
 * Do not downscale (resize) them!
 * Do not hide [status bar](StatusBar.html)!
+* [Status bar](StatusBar.html) visibility is preferred.
 
 
 
 
-## [Log Files](LogFiles.html) <a id="LogFiles"/>
+<a id="LogFiles"/>
+## [Log Files](LogFiles.html)
 
 How to create log files is described thoroughly [here](LogFiles.html).
 
@@ -147,7 +154,8 @@ Post your links to the issue.
 
 
 
-## Text of the error <a id="Text_of_the_error"/>
+<a id="Text_of_the_error"/>
+## Text of the error
 
 If the error message box appears, screenshot may helps, of course.
 But the text itself will be helpful.
@@ -159,7 +167,8 @@ to the Windows clipboard. Tada... Just paste it to the issue text.
 
 
 
-## Crash dumps <a id="Crash_dumps"/>
+<a id="Crash_dumps"/>
+## Crash dumps
 
 When crash or assertion occures, automatically created
 [crash dump](CrashDump.html) will be very helpful!
