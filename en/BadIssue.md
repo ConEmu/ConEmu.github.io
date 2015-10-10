@@ -40,8 +40,7 @@ it is impossible to fix something abstract...
 
 
 
-<a id="Be_verbose"/>
-## Be verbose
+## <a id="Be_verbose"/> Be verbose
 
 Appreciating yours reporting efforts, but
 **only properly prepared issues are meaningful**.
@@ -66,7 +65,7 @@ will be appreciated.
 
 
 
-## Software version <a id="Software_version"/>
+## <a id="Software_version"/> Software version
 
 One of the most significant information, omitted by many reporters.
 And do not say ‘I'm using last version’.
@@ -79,7 +78,7 @@ Just press `Win+Alt+A` to be sure ([SystemMenu](SystemMenu.html) \ Help \ About)
 
 
 
-### Update your installation <a id="Update_your_installation"/>
+### <a id="Update_your_installation"/> Update your installation
 
 If you are using old build, there is big chance
 that your problem was fixed already.
@@ -98,8 +97,7 @@ ConEmu may be **automatically** updated in **two steps** only.
 
 
 
-<a id="OS_version"/>
-## OS version
+## <a id="OS_version"/> OS version
 
 The Windows version matter!
 From version to version Windows behavior differs.
@@ -110,8 +108,7 @@ Fortunaterly, in the most cases developer can create some workaround.
 
 
 
-<a id="Screenshot"/>
-## Screenshot
+## <a id="Screenshot"/> Screenshot
 
 Doesn't matter how do you create screenshots, but they must be descriptive.
 Personally, I prefer [ShareX](http://getsharex.com/) to make screenshots.
@@ -122,8 +119,7 @@ Full-sized screenshot may tell about the problem more than you can imagine.
 Reporter may omit something from the problem description,
 but screenshot will not omit anything.
 
-<a id="Screenshot-Requirements"/>
-### Screenshot Requirements
+### <a id="Screenshot-Requirements"/> Screenshot Requirements
 
 * Do not cut them!
 * Do not downscale (resize) them!
@@ -133,8 +129,7 @@ but screenshot will not omit anything.
 
 
 
-<a id="LogFiles"/>
-## [Log Files](LogFiles.html)
+## <a id="LogFiles"/> [Log Files](LogFiles.html)
 
 How to create log files is described thoroughly [here](LogFiles.html).
 
@@ -154,8 +149,7 @@ Post your links to the issue.
 
 
 
-<a id="Text_of_the_error"/>
-## Text of the error
+## <a id="Text_of_the_error"/> Text of the error
 
 If the error message box appears, screenshot may helps, of course.
 But the text itself will be helpful.
@@ -167,8 +161,7 @@ to the Windows clipboard. Tada... Just paste it to the issue text.
 
 
 
-<a id="Crash_dumps"/>
-## Crash dumps
+## <a id="Crash_dumps"/> Crash dumps
 
 When crash or assertion occures, automatically created
 [crash dump](CrashDump.html) will be very helpful!
