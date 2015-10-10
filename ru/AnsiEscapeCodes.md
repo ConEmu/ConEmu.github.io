@@ -247,6 +247,8 @@ ANSICON_DEF=7
 | ESC \[ 48 ; 5 ; *n* m | Set xterm background color, *n* is color index from 0 to 255 |
 | ESC \[ 48 ; 2 ; *r* ; *g* ; *b* m | Set xterm 24-bit background color, *r*, *g*, *b* are from 0 to 255 |
 | ESC \[ 49 m | Reset background color to defauls |
+| ESC \[ 90...97 m | Set bright ANSI text color |
+| ESC \[ 100...107 m | Set bright ANSI background color |
 
 
 <h3 id="OSC_Operating_system_commands"> OSC (Operating system commands) </h3>
