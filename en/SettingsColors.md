@@ -214,11 +214,11 @@ RTEXT
 
 ## Graphic enhancement
 
-**Fade when inactive** When ConEmu looses focus, its contents may be faded. You may specify most bright color.
+**Fade when inactive** When ConEmu loses focus, its contents may be faded. You may specify most bright color.
 
-**Low** When ConEmu looses focus, its contents may be faded. You may specify here "low shift" (wich makes dark colors lighter).
+**Low** When ConEmu loses focus, its contents may be faded. You may specify here "low shift" (wich makes dark colors lighter).
 
-**High** When ConEmu looses focus, its contents may be faded. You may specify here "high shift" (wich makes light colors darker).
+**High** When ConEmu loses focus, its contents may be faded. You may specify here "high shift" (wich makes light colors darker).
 
 **TrueMod (24bit color) support** Colorer truemod support
 

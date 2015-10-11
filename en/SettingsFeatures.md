@@ -26,7 +26,7 @@ title: "ConEmu | Settings › Features page"
 
 ## CPU consuming
 
-**Sleep in background** Reduce FPS when ConEmu loose focus
+**Sleep in background** Reduce FPS when ConEmu loses focus
 
 **Retard inactive panes** Retard inactive but visible split-panes in the active ConEmu window
 

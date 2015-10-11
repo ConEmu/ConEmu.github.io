@@ -107,7 +107,7 @@ right column contains description - tooltip of this control.
 | cbTrueColorer | Colorer truemod support |
 | cbDropUnlocked | Unlock source and target window on Drop operation. This may cause unpredictable results, when DragSource creates temp dragged files ONLY for drag lifetime. |
 | cbDropUseBCopy | Use BCopy service for drop operations («Unlocked drop» must be checked) |
-| cbFadeInactive | When ConEmu looses focus, its contents may be faded. You may specify most bright color. |
+| cbFadeInactive | When ConEmu loses focus, its contents may be faded. You may specify most bright color. |
 | cbBlockInactiveCursor | Draw empty rectangle cursor while ConEmu has no focus |
 | bHideCaptionSettings | Choose frame width, appearance and disappearance delays |
 | tHideCaptionAlwaysFrame | While caption and frame are hidden, ConEmu may keep small part of frame (in pixels) around console part. Default is 1 pixel. |
@@ -117,8 +117,8 @@ right column contains description - tooltip of this control.
 | bReloadSettings | Reload all settings from registry/xml |
 | cbHandleFarDetach | Automatic attach to ConEmu new Far manager console, created on detach (CtrlAltTab) |
 | cbHookFarRegistry | Enable portable mode for FAR manager. ConEmu plugin must be installed. |
-| tFadeLow | When ConEmu looses focus, its contents may be faded. You may specify here 'low shift' (wich makes dark colors lighter). |
-| tFadeHigh | When ConEmu looses focus, its contents may be faded. You may specify here 'high shift' (wich makes light colors darker). |
+| tFadeLow | When ConEmu loses focus, its contents may be faded. You may specify here 'low shift' (wich makes dark colors lighter). |
+| tFadeHigh | When ConEmu loses focus, its contents may be faded. You may specify here 'high shift' (wich makes light colors darker). |
 | tPerfFPS | Frames per second |
 | tPerfData | Average duration of transferring data<br>from CRealConsole to CVirtualConsole |
 | tPerfRender | Average duration of rendering text to memory DC |
@@ -142,7 +142,7 @@ right column contains description - tooltip of this control.
 | tTilesSpacing | Spacing in pixels on the left of text label |
 | tTilesPadding | Spacing in pixels on the right of text label |
 | cbThumbRestoreOnStartup | Restore panel views on FAR startup |
-| cbSleepInBackground | Reduce FPS when ConEmu loose focus |
+| cbSleepInBackground | Reduce FPS when ConEmu loses focus |
 | cbExtendUCharMap | Show glyphs from selected font in «Unicode CharMap» plugin (FAR2 only) |
 | cbShellNoZoneCheck | SEE_MASK_NOZONECHECKS. Same as appeared in Far 2 build 771 and disappeared after 1464. |
 | cbThumbUsePicView2 | Try to use PicView2 plugin to generate previews (FAR2 only) |
