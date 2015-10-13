@@ -209,6 +209,7 @@ or returned via string result if you are using Far 3.0 with Lua. </p>
 	<li><a href="#Status">Status(0[,&lt;Parm&gt;]), Status(1[,&quot;&lt;Text&gt;&quot;])</a></li>
 	<li><a href="#Tab">Tab(&lt;Cmd&gt;[,&lt;Parm&gt;])</a></li>
 	<li><a href="#Task">Task(Index[,&quot;Dir&quot;]), Task(&quot;Name&quot;[,&quot;Dir&quot;])</a></li>
+  <li><a href="#TaskAdd">TaskAdd(&quot;Name&quot;,&quot;Commands&quot;[,&quot;GuiArgs&quot;[,Flags]])</a></li>
 	<li><a href="#Transparency">Transparency(&lt;Cmd&gt;,&lt;Value&gt;)</a></li>
 	<li><a href="#Wiki">Wiki([&quot;PageName&quot;])</a></li>
 	<li><a href="#WindowMode">WindowFullscreen, WindowMaximize, WindowMinimize</a></li>
@@ -480,6 +481,10 @@ Status(1[,&quot;&lt;Text&gt;&quot;])
  - start task with 1-based index
 Task(&quot;Name&quot;[,&quot;Dir&quot;])
  - start task with specified name</code></pre>
+ 
+<h4><a name="TaskAdd"></a>Create new <a href="Tasks.html">Task</a> and save it to <a href="ConEmuXml.html">Settings</a><a href="#Task" class="section_anchor"></a></h4>
+<pre><code>TaskAdd(&quot;Name&quot;,&quot;Commands&quot;[,&quot;GuiArgs&quot;[,Flags]])
+ - create new task and save it to settings</code></pre>
 
 <h4><a name="Transparency"></a>Change ConEmu window transparency level<a href="#Transparency" class="section_anchor"></a></h4>
 <pre><code>Transparency(&lt;Cmd&gt;,&lt;Value&gt;)
