@@ -26,7 +26,7 @@ I have many reports about cygwin.
 And most of them are related to one cygwin behavior: when it detects real win32 console,
 it process all ANSI sequences internally, so ConEmu does not receive ANSI at all.
 
-Yep, users said: ‘It is working in mintty’.
+Yep, users say: ‘It is working in mintty’.
 
 Answer is simple: mintty is not a ‘real’ console, all its magic is done with pipes.
 
