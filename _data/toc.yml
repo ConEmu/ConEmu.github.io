@@ -660,6 +660,10 @@
       rus: "Загрузка CPU и ввод/вывод"
       url: "CpuIoConsumption.html"
     -
+      eng: "Clear Screen"
+      rus: "Очистка экрана (Clear Screen)"
+      url: "ClearScreen.html"
+    -
       eng: "AutoHotKey"
       rus: "AutoHotKey"
       url: "AutoHotKey.html"
