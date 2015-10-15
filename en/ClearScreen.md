@@ -16,6 +16,7 @@ Another example. Even with cmd or bash. They have printed PROMPT. But after "ext
 One may say: users know when they want to clear screen in appropriate moment. Yep. But that would case garbaged output due to abovementioned reasons.
 
 Resume. To clear your screen do one of the following:
+
 * Issue "clear" or "cls" in your shell.
 * Press Ctrl+L or other hotkey, if your shell supports it. Even cmd+clink may do that.
 * Restart your tab. Default hotkey is `Win+~`.
