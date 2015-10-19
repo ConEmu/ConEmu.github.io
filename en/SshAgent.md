@@ -38,7 +38,7 @@ ssh your.server.com "cd /path/to/directory ; bash --login"
 ~~~
 
 
-## The key
+## How ssh-agent works   {#the-key}
 
 When `ssh-agent` starts it defines two [environment](WindowsEnvironment.html) variables,
 `SSH_AGENT_PID` and `SSH_AUTH_SOCK`, which must be exported to your
@@ -51,9 +51,11 @@ eval $(ssh-agent)   # Create agent and environment variables
 ~~~
 
 That would be nice if you are working in the single-tab console environment,
-but what about ConEmu?
+but what about ConEmu and multi-tab environment?
 
-The answer is simple.
+
+### Answer 1: Export variables   {#answer-export}
+
 Just [export these variables](ConEmuEnvironment.html#Export_variables)
 to the ConEmu GUI and all running consoles
 ([Tabs](Tabs.html) and [Panes](Panes.html)).
@@ -68,20 +70,31 @@ of the implemented export method - existing cygwin tabs will not get these varia
 only new cygwin consoles will get them.
 
 
-## Some other links
+### Answer 2: Modify your bash profile   {#answer-profile}
 
-### <a href="https://twitter.com/rootpd/status/428600352229687296" rel="nofollow">Tweet #1</a>
+GitHub documentation
+[suggests](https://help.github.com/articles/working-with-ssh-key-passphrases/#auto-launching-ssh-agent-on-msysgit)
+to change your bash profile, so your ssh-agent will be initialized properly
+in any bash instance, regardless of the used terminal.
+
+Also, [here](https://www.schoonology.com/technology/ssh-agent-windows/)
+you may find slightly modified script, which adds ssh key files by mask.
+
+
+## Some other links  {#other-links}
+
+### <a href="https://twitter.com/rootpd/status/428600352229687296" rel="nofollow">Tweet #1</a>  {#link-tweet-1}
 
 SSH agent working with @ConEmuMaximus5 and Git Bash. For multiple
 tabs. Load your keys just once, use everywhere.
 
 
-### <a href="http://superuser.com/a/141241/139371" rel="nofollow">SuperUser answer</a>
+### <a href="http://superuser.com/a/141241/139371" rel="nofollow">SuperUser answer</a>  {#link-su-141241}
 
 Using the [bash script](http://superuser.com/a/141241/139371) and an alias `sagent`.
 
 
-### <a href="http://www.cygwin.com/ml/cygwin/2001-06/msg00537.html">CygWin profile modification</a>
+### <a href="http://www.cygwin.com/ml/cygwin/2001-06/msg00537.html">CygWin profile modification</a>  {#link-cygwin}
 
 This solution does not relates to ConEmu at first glance but may be useful anyway.
 
