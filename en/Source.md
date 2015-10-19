@@ -32,7 +32,7 @@ git submodule update --init --recursive
 ## How to build  {#HowToBuild}
 
 Build requirements and instructions are described in the file
-[/src/HowToBuild.txt](https://github.com/Maximus5/ConEmu/blob/master/src/HowToBuild.txt).
+[/src/HowToBuild.md](https://github.com/Maximus5/ConEmu/blob/master/src/HowToBuild.md).
 
 
 ## Documentation   {#Documentation}
