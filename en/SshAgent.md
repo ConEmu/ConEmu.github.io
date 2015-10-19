@@ -12,8 +12,6 @@ breadcrumbs:
 
 # ConEmu, cygwin/msys and ssh-agent
 
-Article is under construction, you may find following links and paragraphs useful.
-
 When you ssh into remote computer you may use your ‘Public key’ for authentication.
 Private and public keys are usually stored in the user's home directory and are
 often encrypted with passphrase to be more secure.
@@ -36,6 +34,15 @@ directory for the remote ssh session as follows.
 ~~~
 ssh your.server.com "cd /path/to/directory ; bash --login"
 ~~~
+
+* [How ssh-agent works](#the-key)
+  * [Answer 1: Export variables](#answer-export)
+  * [Answer 2: Modify your bash profile](#answer-profile)
+* [Some other links](#other-links)
+  * [Tweet #1](#link-tweet-1)
+  * [SuperUser answer](#link-su-141241)
+  * [CygWin profile modification](#link-cygwin)
+
 
 
 ## How ssh-agent works   {#the-key}
