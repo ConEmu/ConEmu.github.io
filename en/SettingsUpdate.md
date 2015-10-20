@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsUpdate.html
 
 title: "ConEmu | Settings › Update page"
+
+readalso:
+ - url: UpdateModes.html
+   title: "Automatic update modes"
 ---
 
 # Settings: Update
