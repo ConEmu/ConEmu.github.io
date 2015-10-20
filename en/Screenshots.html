@@ -47,7 +47,7 @@ screenshots:
 <p>Also, some <a href="Screencasts.html">screencasts</a> are available. </p>
 
 {% for img in page.screenshots %}
-<h3>{{ img.title }}</h2>
+<h3>{{ img.title }}</h3>
 {% if img.group %}
   {% for i in img.group %}
   <p><img src="/img/{{ i.src }}" alt="{{ i.alt }}"> </p>
