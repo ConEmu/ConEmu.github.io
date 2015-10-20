@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Settings › Update page"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 readalso:
  - url: UpdateModes.html
    title: "Automatic update modes"

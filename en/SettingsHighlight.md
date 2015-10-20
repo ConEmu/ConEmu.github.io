@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Settings › Highlight page"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 readalso:
  - url: FileLineDetector.html
    title: "Hyperlinks and Errors Detector"

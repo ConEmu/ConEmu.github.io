@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsBackground.html
 
 title: "ConEmu | Settings › Background page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Background

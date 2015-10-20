@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsTaskBar.html
 
 title: "ConEmu | Settings › TaskBar page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Task bar

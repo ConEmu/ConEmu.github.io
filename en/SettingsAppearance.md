@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsAppearance.html
 
 title: "ConEmu | Settings › Appearance page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Appearance

@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Settings › Default Term page"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 readalso:
  - url: DefaultTerminal.html
    title: The only way to replace default Windows terminal

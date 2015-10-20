@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsSizePos.html
 
 title: "ConEmu | Settings › SizePos page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Size & Pos

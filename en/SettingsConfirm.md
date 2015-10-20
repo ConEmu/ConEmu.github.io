@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsConfirm.html
 
 title: "ConEmu | Settings › Confirm page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Confirm

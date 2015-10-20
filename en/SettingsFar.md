@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsFar.html
 
 title: "ConEmu | Settings › Far page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Far Manager

@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsPaste.html
 
 title: "ConEmu | Settings › Paste page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Paste

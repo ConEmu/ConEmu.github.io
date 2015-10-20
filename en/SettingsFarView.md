@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsFarView.html
 
 title: "ConEmu | Settings › FarView page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Views

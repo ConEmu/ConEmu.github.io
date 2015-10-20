@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsStartup.html
 
 title: "ConEmu | Settings › Startup page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Startup

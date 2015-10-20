@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Alphabetical list of Settings"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 description: "Automatically generated page with list of ConEmu settings"
 ---
 

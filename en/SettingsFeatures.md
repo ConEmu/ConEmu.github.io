@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsFeatures.html
 
 title: "ConEmu | Settings › Features page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Features

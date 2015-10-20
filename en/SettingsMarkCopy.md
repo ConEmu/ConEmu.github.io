@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsMarkCopy.html
 
 title: "ConEmu | Settings › MarkCopy page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Mark/Copy

@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsFarMacros.html
 
 title: "ConEmu | Settings › FarMacros page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Far macros

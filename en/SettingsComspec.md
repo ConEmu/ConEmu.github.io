@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Settings › Comspec page"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 readalso:
  - url: SettingsEnvironment.html
    title: "Settings › Environment page"

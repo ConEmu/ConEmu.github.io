@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Settings › Colors page"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 readalso:
  - url: SolarizedColors.html
    title: Solorized scheme hints

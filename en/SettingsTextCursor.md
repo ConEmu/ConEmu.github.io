@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsTextCursor.html
 
 title: "ConEmu | Settings › TextCursor page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Text cursor

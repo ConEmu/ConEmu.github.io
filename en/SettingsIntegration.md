@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Settings › Integration page"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 readalso:
  - url: StartupDir.html
    title: "ConEmu Startup Directory"

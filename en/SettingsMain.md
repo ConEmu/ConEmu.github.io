@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsMain.html
 
 title: "ConEmu | Settings › Main page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Main

@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Settings › Debug page"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 readalso:
  - url: LogFiles.html
    title: Log Files

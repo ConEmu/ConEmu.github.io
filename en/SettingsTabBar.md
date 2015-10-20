@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsTabBar.html
 
 title: "ConEmu | Settings › TabBar page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Tabs

@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsTasks.html
 
 title: "ConEmu | Settings › Tasks page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Tasks

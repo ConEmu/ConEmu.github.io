@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsTransparency.html
 
 title: "ConEmu | Settings › Transparency page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Transparency

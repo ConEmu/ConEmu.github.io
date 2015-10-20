@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsAppDistinct.html
 
 title: "ConEmu | Settings › AppDistinct page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: App distinct

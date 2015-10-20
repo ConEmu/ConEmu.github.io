@@ -3,6 +3,10 @@ redirect_from:
  - /ru/SettingsStatusBar.html
 
 title: "ConEmu | Settings › StatusBar page"
+
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
 ---
 
 # Settings: Status bar

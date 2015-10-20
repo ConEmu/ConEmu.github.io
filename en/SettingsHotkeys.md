@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Settings › Keys & Macro page"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 readalso:
  - url: KeyboardShortcuts.html
    title: Keyboard Shortcuts

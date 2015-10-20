@@ -4,6 +4,10 @@ redirect_from:
 
 title: "ConEmu | Settings › Environment page"
 
+breadcrumbs:
+ - url: TableOfContents.html#settings
+   title: Settings
+
 readalso:
  - url: ConEmuEnvironment.html
    title: "ConEmu Environment Variables"
