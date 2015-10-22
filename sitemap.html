@@ -10,8 +10,17 @@ noindex: true
 
 <table>
 
-<tr><th> URL </th><th> Description </th></tr>
+<tr>
+  <th> URL </th>
+  <th> Lang </th>
+  <th> Description </th>
+</tr>
 
-{% for p in site.pages %}{% if p.docfolder == '/en' %}<tr><td> <a href="{{ p.url }}" title="{{ p.title }}"> {{ p.url }} </a> </td><td> {{ p.title }} </td></tr>
-{% endif %}{% endfor %}
+{% for p in site.pages %}{% if p.title != 'ConEmu - default pagetitle' %}
+<tr>
+  <td> <a href="{{ p.url }}" title="{{ p.title }}"> {{ p.url }} </a> </td>
+  <td> {{ p.pagelang }} </td>
+  <td> {{ p.title }} </td>
+</tr>{% endif %}{% endfor %}
+
 </table>

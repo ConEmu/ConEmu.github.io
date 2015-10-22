@@ -49,7 +49,7 @@ defaults:
     values:
       isroot: true
       layout: "root"
-      title: "ConEmu - Windows terminal emulator"
+      title: "ConEmu - default pagetitle"
       site_label: "Windows terminal"
       docfolder: /en
       pagelang: en
