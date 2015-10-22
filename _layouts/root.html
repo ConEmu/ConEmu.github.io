@@ -22,7 +22,10 @@
 <meta name="author" content="@ConEmuMaximus5">
 
 {% if page.canonical and page.canonical != '' %}
-<link rel="canonical" href="{{page.canonical}}">{% endif %}
+<link rel="canonical" href="{{page.canonical}}">{% elsif site.site_lang == "en" and page.pagelang == "ru" %}
+<link rel="canonical" href="{{site.mirror_ru}}{{page.url}}">{% elsif site.site_lang == "ru" and page.pagelang == "en" %}
+<link rel="canonical" href="{{site.mirror_en}}{{page.url}}">
+{% endif %}
 <!--
 This page was saved from: {{site.url}}{{page.url}}
 -->
