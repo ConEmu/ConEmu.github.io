@@ -5,6 +5,7 @@ url: "http://conemu.github.io"
 
 # used with breadcrumbs
 site_name: "conemu.github.io"
+site_lang: "en"
 # used with socials
 twit_text: "ConEmu%3A%20Handy%20Windows%20terminal"
 
