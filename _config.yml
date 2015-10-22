@@ -62,7 +62,7 @@ defaults:
     values:
       isroot: false
       layout: "root"
-      title: "ConEmu - Documentation"
+      title: "ConEmu - default pagetitle"
       site_label: "Windows terminal"
       docfolder: /en
       pagelang: en
@@ -75,7 +75,7 @@ defaults:
     values:
       isroot: false
       layout: "root"
-      title: "ConEmu - эмулятор терминала Windows"
+      title: "ConEmu - default pagetitle"
       site_label: "терминал Windows"
       docfolder: /ru
       pagelang: ru
