@@ -30,19 +30,26 @@ RTEXT
 
 
 
-**X1** Spacing in pixels from the left side of cell to the left side of preview
+#### X1
+Spacing in pixels from the left side of cell to the left side of preview
 
-**Y1** Spacing in pixels from the top side of cell to the top side of preview
+#### Y1
+Spacing in pixels from the top side of cell to the top side of preview
 
-**Image size** Size in pixels of preview square in Thumbnails mode Default is 96
+#### Image size
+Size in pixels of preview square in Thumbnails mode Default is 96
 
-**Vert.pad** Vertical spacing in pixels (top and bottom) of text label
+#### Vert.pad
+Vertical spacing in pixels (top and bottom) of text label
 
-**Horz.pad** Horizontal spacing in pixels (left and right) of text label
+#### Horz.pad
+Horizontal spacing in pixels (left and right) of text label
 
-**X2** Spacing in pixels from the right side of preview to the right side of cell
+#### X2
+Spacing in pixels from the right side of preview to the right side of cell
 
-**Y2** Spacing in pixels from the bottom side of preview to the bottom side of cell (text label is placed here)
+#### Y2
+Spacing in pixels from the bottom side of preview to the bottom side of cell (text label is placed here)
 
 
 
@@ -58,19 +65,26 @@ RTEXT
 
 
 
-**X1** Spacing in pixels from the left side of cell to the left side of preview
+#### X1
+Spacing in pixels from the left side of cell to the left side of preview
 
-**Y1** Spacing in pixels from the top side of cell to the top side of preview
+#### Y1
+Spacing in pixels from the top side of cell to the top side of preview
 
-**Image size** Size in pixels of preview square in Tiles mode Default is 48
+#### Image size
+Size in pixels of preview square in Tiles mode Default is 48
 
-**Left pad** Spacing in pixels on the left of text label
+#### Left pad
+Spacing in pixels on the left of text label
 
-**Right pad** Spacing in pixels on the right of text label
+#### Right pad
+Spacing in pixels on the right of text label
 
-**X2** Spacing in pixels from the right side of preview to the right side of cell (text label is placed here)
+#### X2
+Spacing in pixels from the right side of preview to the right side of cell (text label is placed here)
 
-**Y2** Spacing in pixels from the bottom side of preview to the bottom side of cell
+#### Y2
+Spacing in pixels from the bottom side of preview to the bottom side of cell
 
 
 
@@ -78,15 +92,21 @@ Text labels font height in Tiles mode
 
 Text labels font name in Tiles mode
 
-**Load previews for files** Generate previews for files
+#### Load previews for files  {#1664}
+Generate previews for files
 
-**Load previews in subfolders** Generate previews for folders (by first 4 files)
+#### Load previews in subfolders  {#1663}
+Generate previews for folders (by first 4 files)
 
-**Loading timeout (sec.)** Maximal duration of preview generation (per file)
+#### Loading timeout (sec.)
+Maximal duration of preview generation (per file)
 
-**Use PicView2 for previews** *(Max. zoom)* Try to use PicView2 plugin to generate previews (FAR2 only)
+#### Use PicView2 for previews  {#1680}
+*Max. zoom*  
+Try to use PicView2 plugin to generate previews (FAR2 only)
 
-**Restore on Far startup** Restore panel views on Far startup
+#### Restore on Far startup  {#1720}
+Restore panel views on Far startup
 
 ## Preview background
 
@@ -110,7 +130,7 @@ Maximal zoom for images smaller than preview
 
 
 
-## Preview frame
+## Preview frame  {#1667}
 
 
 
@@ -130,7 +150,7 @@ Maximal zoom for images smaller than preview
 
 
 
-## Current item frame
+## Current item frame  {#1668}
 
 
 
@@ -150,7 +170,8 @@ Maximal zoom for images smaller than preview
 
 
 
-**Apply** 
+#### Apply  {#1715}
+
 
 
 
@@ -180,7 +201,8 @@ Maximal zoom for images smaller than preview
 
 
 
-**Supported extensions** 
+#### Supported extensions
+
 
 ## Store preview cache
 
@@ -195,7 +217,8 @@ Maximal zoom for images smaller than preview
 
 
 
-**Choose...** 
+#### Choose...  {#1691}
+
 
 
 

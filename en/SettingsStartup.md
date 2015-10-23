@@ -18,7 +18,7 @@ breadcrumbs:
 
 
 
-## Startup options (may be overriden with "/cmd" or "/cmdlist" argument of ConEmu.exe)
+## Startup options (may be overriden with "/cmd" or "/cmdlist" argument of ConEmu.exe)  {#2868}
 
 
 
@@ -43,15 +43,28 @@ breadcrumbs:
 * **Auto save/restore opened tabs** Auto save/restore (reopen) ConEmu tabs
 
 
-**Far folders also** When ‘Auto save/restore opened tabs’ save/restore Far Manager panels folders too
+#### Far folders also  {#2237}
+When ‘Auto save/restore opened tabs’ save/restore Far Manager panels folders too
 
-**Far editors/viewers also** When ‘Auto save/restore opened tabs’ save/restore Far Manager editors/viewers too
+#### Far editors/viewers also  {#2238}
+When ‘Auto save/restore opened tabs’ save/restore Far Manager editors/viewers too
+
+
+
+#### Delay between consoles initialization (ms)
 
 
 
 
 
-## Selected task contents (view only, change on Tasks page)
+
+
+
+
+
+
+
+## Selected task contents (view only, change on Tasks page)  {#2754}
 
 
 

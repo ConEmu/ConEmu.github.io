@@ -22,15 +22,19 @@ readalso:
 
 
 
-## Update settings
+## Update settings  {#2864}
 
 
 
-**Startup** *(Do automatic check on)* 
+#### Startup  {#2058}
+*Do automatic check on*  
 
-**Hourly** 
 
-**TSA notification only** 
+#### Hourly  {#2067}
+
+
+#### TSA notification only  {#2068}
+
 
 **Preferred release type**
 
@@ -40,19 +44,25 @@ readalso:
 * **Latest**
 
 
-**External downloader** 
+#### External downloader  {#2856}
 
 
 
-**Proxy** 
 
-**Server:port** 
+#### Proxy  {#2059}
 
-**User** 
 
-**Password** 
+#### Server:port
 
-**Leave downloaded packages** 
+
+#### User
+
+
+#### Password
+
+
+#### Leave downloaded packages  {#2065}
+
 
 
 
@@ -74,9 +84,11 @@ readalso:
 
 
 
-**Post-update command, don't forget ‘call’ for batches** 
+#### Post-update command, don't forget ‘call’ for batches
 
-**ConEmu latest version location info** 
+
+#### ConEmu latest version location info
+
 
 
 

@@ -20,21 +20,26 @@ breadcrumbs:
 
 
 
-## Application distinct settings
+## Application distinct settings  {#2317}
 
 
 
-**+** 
-
-**-** 
+#### +  {#2136}
 
 
+#### -  {#2137}
 
-**Up** 
 
-**Down** 
 
-**Reload...** 
+
+#### Up  {#2138}
+
+
+#### Down  {#2139}
+
+
+#### Reload...  {#2140}
+
 
 
 * **Elevated**
@@ -44,7 +49,8 @@ breadcrumbs:
 
 
 
-**Executables, delimited by "|", e.g. "tcc.exe|cmd.exe"** 
+#### Executables, delimited by "|", e.g. "tcc.exe|cmd.exe"
+
 
 CTEXT
 

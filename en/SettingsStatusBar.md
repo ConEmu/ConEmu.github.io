@@ -18,7 +18,7 @@ breadcrumbs:
 
 
 
-## Show status bar
+## Show status bar  {#2262}
 
 
 
@@ -42,19 +42,25 @@ RTEXT
 
 
 
-**Dark** 
+#### Dark
 
 
 
 
 
-**Horizontal** *(Lines)* 
 
-**Vertical** 
+#### Horizontal  {#2422}
+*Lines*  
 
-**Use vertical padding** 
 
-**System colors** 
+#### Vertical  {#2421}
+
+
+#### Use vertical padding  {#2615}
+
+
+#### System colors  {#2496}
+
 
 
 
@@ -70,15 +76,19 @@ LTEXT
 
 LTEXT
 
-**>>** 
-
-**>** 
-
-**<** 
+#### >>  {#2507}
 
 
+#### >  {#2508}
 
-**<<** 
+
+#### <  {#2510}
+
+
+
+
+#### <<  {#2509}
+
 
 
 

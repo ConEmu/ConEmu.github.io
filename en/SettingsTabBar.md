@@ -28,25 +28,35 @@ breadcrumbs:
 * **Don't show**
 
 
-**Tabs on bottom** 
+#### Tabs on bottom  {#2481}
 
-**Internal CtrlTab** Handle CtrlTab and CtrlShiftTab internally (by ConEmu). These keystrokes will not be sent to console window, but You can easily switch between consoles (panels).
 
-**Lazy tab switch** When checked - real window switching will be performed on Ctrl depress
+#### Internal CtrlTab  {#1531}
+Handle CtrlTab and CtrlShiftTab internally (by ConEmu). These keystrokes will not be sent to console window, but You can easily switch between consoles (panels).
 
-**Recent mode** Switch first between recent tabs. You may still switch between tabs in standard manner using Left/Right (after CtrlTab), while Ctrl is still presses.
+#### Lazy tab switch  {#1532}
+When checked - real window switching will be performed on Ctrl depress
 
-**Hide disabled tabs** Hide tabs, wich can't be activated. E.g. hide Far Manager editors while executing cmd.exe
+#### Recent mode  {#1533}
+Switch first between recent tabs. You may still switch between tabs in standard manner using Left/Right (after CtrlTab), while Ctrl is still presses.
 
-**Far windows** Show all Far Manager windows (panels, editors, viewers) instead of one tab for one console
+#### Hide disabled tabs  {#2051}
+Hide tabs, wich can't be activated. E.g. hide Far Manager editors while executing cmd.exe
 
-**‘Host-key’+Number iterates Far windows** Iterate opened Far windows with ‘Host-key’+Number
+#### Far windows  {#2053}
+Show all Far Manager windows (panels, editors, viewers) instead of one tab for one console
 
-**Active console only** Show tabs from active console only
+#### ‘Host-key’+Number iterates Far windows  {#2104}
+Iterate opened Far windows with ‘Host-key’+Number
 
-**One tab per group** Show only one tab for all splits in the group
+#### Active console only  {#1642}
+Show tabs from active console only
 
-**Activate split on mouse hover** When several panes (splits) are visible simultaneously activate console with mouse over, 3rd-state - match ‘Active window tracking’ system settings
+#### One tab per group  {#2599}
+Show only one tab for all splits in the group
+
+#### Activate split on mouse hover  {#2601}
+When several panes (splits) are visible simultaneously activate console with mouse over, 3rd-state - match ‘Active window tracking’ system settings
 
 LTEXT
 
@@ -56,7 +66,8 @@ RTEXT
 
 
 
-**Tab templates (Far Manager ones are located on 'Far Manager' page)** 
+#### Tab templates (Far Manager ones are located on 'Far Manager' page)  {#2106}
+
 
 
 
@@ -66,19 +77,26 @@ LTEXT
 
 
 
-**Console** Common tab template (any console program except Far Manager)
+#### Console
+Common tab template (any console program except Far Manager)
 
-**Modified suffix** When something was changed in the inactive console ConEmu may show that in the tab label Set or clear this suffix appended to the tab template
+#### Modified suffix
+When something was changed in the inactive console ConEmu may show that in the tab label Set or clear this suffix appended to the tab template
 
-**Invisible tab activity flash count** When something was changed in the inactive console ConEmu may flash tab icon in that case Set ‘-1’ to flash infinitely Use odd values to leave tab in highlighted state
+#### Invisible tab activity flash count
+When something was changed in the inactive console ConEmu may flash tab icon in that case Set ‘-1’ to flash infinitely Use odd values to leave tab in highlighted state
 
-**Skip words from title** 
+#### Skip words from title
 
-**Maximum tab width (in chars)** 
 
-**Admin shield** When this is checked - ‘Shield’ icon will be shown in tabs, started ‘As administrator’
+#### Maximum tab width (in chars)
 
-**suffix** When this is checked - specified suffix will be appended in tabs titles, started ‘As administrator’. You may choose insertion place with ‘%a’ var, otherwise suffix will be at the tab end.
+
+#### Admin shield  {#2109}
+When this is checked - ‘Shield’ icon will be shown in tabs, started ‘As administrator’
+
+#### suffix  {#2110}
+When this is checked - specified suffix will be appended in tabs titles, started ‘As administrator’. You may choose insertion place with ‘%a’ var, otherwise suffix will be at the tab end.
 
 
 

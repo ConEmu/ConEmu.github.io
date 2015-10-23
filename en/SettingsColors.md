@@ -28,11 +28,13 @@ readalso:
 
 LTEXT
 
-**Save** 
+#### Save  {#2123}
 
-**Delete...** 
 
-## Standard colors
+#### Delete...  {#2125}
+
+
+## Standard colors  {#1544}
 
 
 
@@ -136,9 +138,11 @@ Specify default background popup color for new consoles
 
 ## Extended foreground colors (same format as Standard colors)
 
-**Extend foreground colors with background** You can use up to 32 foreground colors (instead of console standard 16) at the expense of one of background colors
+#### Extend foreground colors with background  {#1515}
+You can use up to 32 foreground colors (instead of console standard 16) at the expense of one of background colors
 
-**Default...** 
+#### Default...  {#2716}
+
 
 Choose background color index, used to increase foreground color index
 
@@ -218,13 +222,17 @@ RTEXT
 
 ## Graphic enhancement
 
-**Fade when inactive** When ConEmu loses focus, its contents may be faded. You may specify most bright color.
+#### Fade when inactive  {#1581}
+When ConEmu loses focus, its contents may be faded. You may specify most bright color.
 
-**Low** When ConEmu loses focus, its contents may be faded. You may specify here "low shift" (wich makes dark colors lighter).
+#### Low
+When ConEmu loses focus, its contents may be faded. You may specify here "low shift" (wich makes dark colors lighter).
 
-**High** When ConEmu loses focus, its contents may be faded. You may specify here "high shift" (wich makes light colors darker).
+#### High
+When ConEmu loses focus, its contents may be faded. You may specify here "high shift" (wich makes light colors darker).
 
-**TrueMod (24bit color) support** Colorer truemod support
+#### TrueMod (24bit color) support  {#1578}
+Colorer truemod support
 
 
 

@@ -29,11 +29,14 @@ breadcrumbs:
 * **Rectangle**
 
 
-**Color (inverse screen part under cursor shape)** ON - cursor emulates console behaviour (sort of colors inversion) OFF - cursor is white (color#15) on dark backgrounds, and black (color#0) on light backgrounds; also this checkbox affect appearance of ‘Block’ cursors
+#### Color (inverse screen part under cursor shape)  {#1210}
+ON - cursor emulates console behaviour (sort of colors inversion) OFF - cursor is white (color#15) on dark backgrounds, and black (color#0) on light backgrounds; also this checkbox affect appearance of ‘Block’ cursors
 
-**Blinking** When "Blinking" is ON - cursor blinks with standard cursor blink rate.
+#### Blinking  {#1522}
+When "Blinking" is ON - cursor blinks with standard cursor blink rate.
 
-**Fixed cursor size** Ignore cursor size in real console, always show cursor with specified size
+#### Fixed cursor size  {#1655}
+Ignore cursor size in real console, always show cursor with specified size
 
 Specified size of cursor in percents. Use together with ‘Fixed cursor size’
 
@@ -41,11 +44,12 @@ LTEXT
 
 
 
-**Min size (pix)** Specified minimal size of cursor in pixels (regardless of ‘Fixed cursor size’)
+#### Min size (pix)
+Specified minimal size of cursor in pixels (regardless of ‘Fixed cursor size’)
 
 
 
-## Inactive console Text Cursor
+## Inactive console Text Cursor  {#2544}
 
 
 
@@ -56,11 +60,14 @@ LTEXT
 * **Rectangle**
 
 
-**Color (inverse screen part under cursor shape)** 
+#### Color (inverse screen part under cursor shape)  {#2538}
 
-**Blinking** 
 
-**Fixed cursor size** 
+#### Blinking  {#2545}
+
+
+#### Fixed cursor size  {#2539}
+
 
 
 
@@ -68,7 +75,8 @@ LTEXT
 
 
 
-**Min size (pix)** 
+#### Min size (pix)
+
 
 
 

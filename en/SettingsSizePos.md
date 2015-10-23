@@ -20,11 +20,14 @@ breadcrumbs:
 
 ## Console size and Window position
 
-**Show & store current window size and position** 
+#### Show & store current window size and position  {#2417}
 
-**Auto save window size and position on exit** 
 
-**Apply** 
+#### Auto save window size and position on exit  {#1723}
+
+
+#### Apply  {#1520}
+
 
 ## Window size (cells, pixels or percents)
 
@@ -38,9 +41,11 @@ breadcrumbs:
 
 
 
-**Width** Width of console window Use numbers for size in cells Use percent sign (e.g. ‘40%’) for monitor-relative size Use ‘px’ suffix (e.g. ‘800px’) for strict pixel size
+#### Width
+Width of console window Use numbers for size in cells Use percent sign (e.g. ‘40%’) for monitor-relative size Use ‘px’ suffix (e.g. ‘800px’) for strict pixel size
 
-**Height** Height of console window Use numbers for size in cells Use percent sign (e.g. ‘40%’) for monitor-relative size Use ‘px’ suffix (e.g. ‘800px’) for strict pixel size
+#### Height
+Height of console window Use numbers for size in cells Use percent sign (e.g. ‘40%’) for monitor-relative size Use ‘px’ suffix (e.g. ‘800px’) for strict pixel size
 
 
 
@@ -55,15 +60,18 @@ breadcrumbs:
 
 
 
-**X** Upper left corner of ConEmu in Normal mode This is in pixels
+#### X
+Upper left corner of ConEmu in Normal mode This is in pixels
 
-**Y** Upper left corner of ConEmu in Normal mode This is in pixels
+#### Y
+Upper left corner of ConEmu in Normal mode This is in pixels
 
 
 
 ## Console buffer height
 
-**Long console output** Autoexpand bufferheight to specified number of lines, while Far executes console commands. Full console output (up to specified count of lines) will be available via Far macro (CtrlO.reg)
+#### Long console output  {#1534}
+Autoexpand bufferheight to specified number of lines, while Far executes console commands. Full console output (up to specified count of lines) will be available via Far macro (CtrlO.reg)
 
 Size of bufferheight, while Far executes console commands
 
@@ -81,13 +89,21 @@ Old DOS programs may be runned under console sizes: 80x25, 80x28, 80x43 or 80x50
 
 ## Alignment
 
-**Center console in ConEmu workspace** Draw console content in center of ConEmu window. Use together with ‘Pad size’
+#### Center console in ConEmu workspace  {#1570}
+Draw console content in center of ConEmu window. Use together with ‘Pad size’
 
-**Pad size** Create pad between ConEmu frame and console field
+#### Pad size
+Create pad between ConEmu frame and console field
 
-**Align ConEmu window size to cells** *(pixels)* 
+#### Align ConEmu window size to cells  {#2594}
+*pixels*  
 
-**Snap to desktop edges** Lock ConEmu window inside desktop work area
+
+#### Snap to desktop edges  {#2403}
+Lock ConEmu window inside desktop work area
+
+#### Restore to active monitor  {#2867}
+When restoring or sliding-down move window to the active monitor, where mouse cursor is located
 
 
 
@@ -125,9 +141,11 @@ Old DOS programs may be runned under console sizes: 80x25, 80x28, 80x43 or 80x50
 
 ## FullScreen mode
 
-**Hide tab & status bars** 
+#### Hide tab & status bars  {#2468}
 
-**Fixed console size** 
+
+#### Fixed console size  {#2469}
+
 
 
 

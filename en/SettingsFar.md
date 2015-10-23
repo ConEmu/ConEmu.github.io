@@ -20,21 +20,28 @@ breadcrumbs:
 
 ## Shell style Drag and Drop (Far Manager only)
 
-**LDrag** Allow drag with left mouse button
+#### LDrag  {#1504}
+Allow drag with left mouse button
 
-**Drop & Confirmation** Off - ConEmu will NOT receive external drops On - Drops allowed (Far confirmation dialog) 3rd-state - same as "On", but w/o confirmation
+#### Drop & Confirmation  {#1502}
+Off - ConEmu will NOT receive external drops On - Drops allowed (Far confirmation dialog) 3rd-state - same as "On", but w/o confirmation
 
-**Overlay** Create and display overlay transparent snapshoot of files are dragged
+#### Overlay  {#1548}
+Create and display overlay transparent snapshoot of files are dragged
 
-**Shell icons** Show icons of dragged iterms
+#### Shell icons  {#1553}
+Show icons of dragged iterms
 
-**RDrag** Allow drag with right mouse button
+#### RDrag  {#1505}
+Allow drag with right mouse button
 
 Drag with left mouse button, only when pressed...
 
-**Copy by default** Forced "Copy" action as default, You can use Ctrl, Shift or Alt during drag to change action
+#### Copy by default  {#2287}
+Forced "Copy" action as default, You can use Ctrl, Shift or Alt during drag to change action
 
-**Use drop menu** 
+#### Use drop menu  {#2246}
+
 
 
 
@@ -42,23 +49,32 @@ Drag with right mouse button, only when pressed...
 
 ## Far Manager options
 
-**Hourglass if not responding** Show AppStarting cursor (arrow with a small hourglass) when Far is not responding (during long operations)
+#### Hourglass if not responding  {#1563}
+Show AppStarting cursor (arrow with a small hourglass) when Far is not responding (during long operations)
 
-**Resize panels by mouse** Enable sizing of left and right panel by dragging with mouse. 3rd-state - resize on button release with macroses.
+#### Resize panels by mouse  {#1568}
+Enable sizing of left and right panel by dragging with mouse. 3rd-state - resize on button release with macroses.
 
-**Right selection fix** Fix dashed selection with fast right mouse drag Far 3: restore files selection instead of EMenu
+#### Right selection fix  {#1536}
+Fix dashed selection with fast right mouse drag Far 3: restore files selection instead of EMenu
 
-**Extend Unicode CharMap** Show glyphs from selected font in ‘Unicode CharMap’ plugin (FAR2 only)
+#### Extend Unicode CharMap  {#1722}
+Show glyphs from selected font in ‘Unicode CharMap’ plugin (FAR2 only)
 
-**use both panel edges** 
+#### use both panel edges  {#2102}
 
-**No zone check** SEE_MASK_NOZONECHECKS. Same as appeared in Far 2 build 771 and disappeared after 1464.
 
-**Disable Far flashing** Disable flashing (from Far Manager) on Windows taskbar. 3rd-state - allow short flashing.
+#### No zone check  {#1725}
+SEE_MASK_NOZONECHECKS. Same as appeared in Far 2 build 771 and disappeared after 1464.
 
-**ASCII sort function in Far** Hook Far string sort functions. !!!HIGHLY EXPERIMENTAL!!!
+#### Disable Far flashing  {#1718}
+Disable flashing (from Far Manager) on Windows taskbar. 3rd-state - allow short flashing.
 
-**KeyBar RClick** 
+#### ASCII sort function in Far  {#1561}
+Hook Far string sort functions. !!!HIGHLY EXPERIMENTAL!!!
+
+#### KeyBar RClick  {#2114}
+
 
 
 
@@ -70,13 +86,17 @@ LTEXT
 
 
 
-**Panels** Tab template for Far Manager panels
+#### Panels
+Tab template for Far Manager panels
 
-**Viewer** Tab template for Far Manager internal viewers
+#### Viewer
+Tab template for Far Manager internal viewers
 
-**Editor** Tab template for Far Manager internal editors
+#### Editor
+Tab template for Far Manager internal editors
 
-**Modified** Tab template for Far Manager internal modified editors
+#### Modified
+Tab template for Far Manager internal modified editors
 
 
 

@@ -18,19 +18,21 @@ breadcrumbs:
 
 
 
-## Performance counters
+## Performance counters  {#1400}
 
 FPS: Frames per second Data: Average duration of transferring data from Real to Virtual console Render: Average duration of rendering text to memory DC Blt: Average duration of blit operation from memory DC to screen DC RPS: Average counts of reads real console data per second
 
 
 
-## Console states
+## Console states  {#1560}
 
 
 
-**Far PID** Far PID and Far with plugin PID
+#### Far PID
+Far PID and Far with plugin PID
 
-**States** 
+#### States
+
 
 
 
@@ -46,25 +48,33 @@ FPS: Frames per second Data: Average duration of transferring data from Real to 
 
 
 
-**Console (chars)** 
+#### Console (chars)
 
-**(pixels)** 
 
-**DC window** 
+#### (pixels)
 
-**Cursor (x,y,h)** 
 
-**Left** 
+#### DC window
+
+
+#### Cursor (x,y,h)
+
+
+#### Left
+
 
 ## Font
 
 
 
-**Right** 
+#### Right
 
-**Main** Real sizes of main font: Height x Width x AveWidth
 
-**Fix** Real sizes of "Change pseudographics font": Height x Width
+#### Main
+Real sizes of main font: Height x Width x AveWidth
+
+#### Fix
+Real sizes of "Change pseudographics font": Height x Width
 
 
 

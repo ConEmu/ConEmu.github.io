@@ -18,45 +18,62 @@ breadcrumbs:
 
 
 
-## Predefined tasks (command groups)
+## Predefined tasks (command groups)  {#2115}
 
 Task name (alias), surrounded by {...}, used in ‘[+] menu’, ‘Recreate dialog’ or ‘/cmd’ agrument of ConEmu.exe
 
-**Hotkey** Choose hotkey for creating this task (not global, it works in ConEmu only)
+#### Hotkey
+Choose hotkey for creating this task (not global, it works in ConEmu only)
 
-**Default task for new console** 
-
-**Taskbar jump lists** 
-
-**Default shell (Win+X)** 
-
-**Toolbar** 
-
-**Task parameters. Example: /dir "C:\" /icon "cmd.exe" /single** Task parameters (‘/dir’, ‘/icon’) Example: /dir "C:\" /icon "cmd.exe" /single
+#### Default task for new console  {#2750}
 
 
+#### Taskbar jump lists  {#2752}
 
-**Commands (application, arguments, "-new_console" params) Delimit commands with empty lines Each command creates tab in ConEmu when group started Mark active console tab with '>' sign Start console 'As Administrator' with '`*`' sign** Commands (application, arguments, ‘-new_console’) Delimit commands with empty lines Each command creates tab or pane on group start Mark active console tab with '>' sign Start console 'As Admin' with '`*`' sign
 
-**Add default tasks...** 
+#### Default shell (Win+X)  {#2751}
 
-**Reload...** 
 
-**+** 
+#### Toolbar  {#2753}
 
-**-** 
 
-**Up** 
+#### Task parameters. Example: /dir "C:\" /icon "cmd.exe" /single
+Task parameters (‘/dir’, ‘/icon’) Example: /dir "C:\" /icon "cmd.exe" /single
 
-**Down** 
 
-**Tab...** 
 
-**Startup dir...** 
+#### Commands (application, arguments, "-new_console" params) Delimit commands with empty lines Each command creates tab in ConEmu when group started Mark active console tab with '>' sign Start console 'As Administrator' with '`*`' sign
+Commands (application, arguments, ‘-new_console’) Delimit commands with empty lines Each command creates tab or pane on group start Mark active console tab with '>' sign Start console 'As Admin' with '`*`' sign
 
-**File path...** 
+#### Add default tasks...  {#2632}
 
-**Active tabs** 
+
+#### Reload...  {#2131}
+
+
+#### +  {#2122}
+
+
+#### -  {#2124}
+
+
+#### Up  {#2126}
+
+
+#### Down  {#2127}
+
+
+#### Tab...  {#2128}
+
+
+#### Startup dir...  {#2452}
+
+
+#### File path...  {#2129}
+
+
+#### Active tabs  {#2493}
+
 
 RTEXT
 
