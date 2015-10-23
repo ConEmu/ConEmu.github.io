@@ -166,11 +166,11 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | *NoDefault* | `CTS.VkCopyAll` <br/> `Copy(1)` | Copy: All active console text output (buffer including) |
 | Apps+L | `HighlightMouseSwitch` <br/> `HighlightMouse(1)` | Highlighting: Switch ‘Highlight row under mouse cursor’ |
 | Apps+X | `HighlightMouseSwitchX` <br/> `HighlightMouse(3)` | Highlighting: Switch ‘Highlight row & col under mouse cursor’ |
-| *NoDefault* | `Multi.ShowTabsList` | Show opened tabs list (does not works in Far - use macro instead) |
+| *NoDefault* | `Multi.ShowTabsList` | Show opened tabs list (ignored in Far - use macro instead) |
 | Apps+F12 | `Multi.ShowTabsList2` <br/> `Tabs(8)` | Show opened tabs list (works in Far too) |
-| Shift+Ins | `ClipboardVkAllLines` | Paste clipboard contents (does not work in Far) |
-| Ctrl+V | `ClipboardVkFirstLine` | Paste first line of clipboard contents (does not work in Far) |
-| Ctrl+BACK | `DeleteWordToLeft` | Delete word leftward to the cursor (does not work in Far) |
+| Shift+Ins | `ClipboardVkAllLines` | Paste clipboard contents (ignored in Far) |
+| Ctrl+V | `ClipboardVkFirstLine` | Paste first line of clipboard contents, autoconvert paths for cygwin's appllications (ignored in Far) |
+| Ctrl+BACK | `DeleteWordToLeft` | Delete word leftward to the cursor (ignored in Far) |
 | Apps+F | `FindTextKey` | Find text in active console |
 | Win+H | `ScreenshotKey` | Make screenshot of active window |
 | Win+Shift+H | `ScreenshotFullKey` | Make screenshot of entire desktop |
