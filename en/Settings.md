@@ -17,10 +17,10 @@ otherlang:
 
 * [Where settings are stored](#Where_settings_are_stored)
   * [Registry](#Registry)
-  * [ConEmu.xml](#ConEmu_.xml)
+  * [ConEmu.xml](#ConEmu_xml)
 * [Manual change of settings](#Manual_change_of_settings)
   * [Using registry](#Using_registry)
-  * [Using ConEmu .xml](#Using_ConEmu_.xml)
+  * [Using ConEmu .xml](#Using_ConEmu_xml)
 * [Settings dialog](#Settings_dialog)
   * [Main](#Main)
   * [Size and Pos](#Size_and_Pos)
@@ -76,7 +76,7 @@ When You specify the [/config](ConEmuArgs.html) switch in the ConEmu.exe command
 ~~~
 
 
-### ConEmu.xml   {#ConEmu_.xml}
+### ConEmu.xml   {#ConEmu_xml}
 
 Any ConEmu [installation](VersionComparison.html) may be ‘portable’,
 i.e. it may store settings in the xml files.
@@ -107,7 +107,7 @@ Go to Registry editor (be careful!) and change appropriate value in the ConEmu s
 * `[HKEY_CURRENT_USER\Software\ConEmu\<configname>]`, when /config switch specified in the ConEmu command line.
 
 
-### Using ConEmu.xml   {#Using_ConEmu_.xml}
+### Using ConEmu.xml   {#Using_ConEmu_xml}
 
 Open ConEmu.xml file using any text editor (Far Manager, Notepad, Vim and so on)
 find appropriate value and change it.
