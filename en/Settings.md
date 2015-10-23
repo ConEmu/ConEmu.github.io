@@ -126,6 +126,21 @@ You may open settings dialog in several ways
 * by right-clicking on the ConEmu icon in [TSA](ConEmuTerms.html#TSA) (if you enable TSA feature)
 * Or, you may press Win+Alt+P on the keyboard (predefined hotkey)
 
+### Common controls
+
+#### Save settings  {#id1610}
+Almost all changes in options are applied immediately when you change them.
+But if you want these changes persist on next ConEmu start,
+you have to press ‘Save settings’ button.
+
+**NB** Button ‘Save settings’ may be disabled when [settings file](ConEmuXml.html)
+is write-protected or ConEmu was started with [-basic](ConEmuArgs.html) switch.
+You may store changes in another [xml file](ConEmuXml.html) by pressing button
+[Export...](#id2572).
+
+#### Export...  {#id2572}
+Click it, you need to make a copy of your settings in the [xml file](ConEmuXml.html).
+
 
 <a name="screenshots"></a>
 

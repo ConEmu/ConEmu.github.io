@@ -126,6 +126,21 @@ find appropriate value and change it.
 * если в [TSA](ConEmuTerms.html#TSA) включено отображение иконки, можно щелкнуть по ней правой кнопкой мышки
 * нажать на клавиатуре Win+Alt+P
 
+### Common controls
+
+#### Save settings  {#id1610}
+Almost all changes in options are applied immediately when you change them.
+But if you want these changes persist on next ConEmu start,
+you have to press ‘Save settings’ button.
+
+**NB** Button ‘Save settings’ may be disabled when [settings file](ConEmuXml.html)
+is write-protected or ConEmu was started with [-basic](ConEmuArgs.html) switch.
+You may store changes in another [xml file](ConEmuXml.html) by pressing button
+[Export...](#id2572).
+
+#### Export...  {#id2572}
+Click it, you need to make a copy of your settings in the [xml file](ConEmuXml.html).
+
 
 <a name="screenshots"></a>
 
