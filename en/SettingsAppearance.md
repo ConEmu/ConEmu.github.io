@@ -40,7 +40,8 @@ Turn on MultiConsole (several consoles in one ConEmu) ConEmu restart required
 Enhance appearance of progressbars and scrollbars
 
 #### Desktop mode  {#id1571}
-Act as a part of Windows Desktop
+Act as a part of Windows Desktop This was created for Windows XP,
+where ConEmu may go on the Desktop (sort of ‘live background’).
 
 #### Always on top  {#id1572}
 Places the ConEmu window above all non-topmost windows. The window maintains its topmost position even when it is deactivated
