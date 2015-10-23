@@ -18,18 +18,18 @@ breadcrumbs:
 
 
 
-## Pasting text behavior (with exception of Far Manager)  {#2166}
+## Pasting text behavior (with exception of Far Manager)  {#id2166}
 
-#### All lines (default Shift+Ins)  {#2168}
-
-
-#### First line (default Ctrl+V)  {#2170}
+#### All lines (default Shift+Ins)  {#id2168}
 
 
-#### Confirm <Enter> keypress  {#2171}
+#### First line (default Ctrl+V)  {#id2170}
 
 
-#### Confirm pasting more than  {#2225}
+#### Confirm <Enter> keypress  {#id2171}
+
+
+#### Confirm pasting more than  {#id2225}
 
 
 #### chars

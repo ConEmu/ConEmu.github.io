@@ -26,10 +26,10 @@ readalso:
 
 ## Hyperlinks and compiler errors (goto editor)
 
-#### Highlight and goto  {#1765}
+#### Highlight and goto  {#id1765}
 
 
-#### External editor, when Far not started  {#1766}
+#### External editor, when Far not started  {#id1766}
 
 
 Command line for starting editor with file positioned on line and column
@@ -42,10 +42,10 @@ LTEXT
 
 ## Highlight rows/columns
 
-#### Highlight whole row under mouse cursor  {#2641}
+#### Highlight whole row under mouse cursor  {#id2641}
 
 
-#### Highlight whole column under mouse cursor  {#2642}
+#### Highlight whole column under mouse cursor  {#id2642}
 
 
 

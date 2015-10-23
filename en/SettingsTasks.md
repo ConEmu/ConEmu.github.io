@@ -18,23 +18,23 @@ breadcrumbs:
 
 
 
-## Predefined tasks (command groups)  {#2115}
+## Predefined tasks (command groups)  {#id2115}
 
 Task name (alias), surrounded by {...}, used in ‘[+] menu’, ‘Recreate dialog’ or ‘/cmd’ agrument of ConEmu.exe
 
 #### Hotkey
 Choose hotkey for creating this task (not global, it works in ConEmu only)
 
-#### Default task for new console  {#2750}
+#### Default task for new console  {#id2750}
 
 
-#### Taskbar jump lists  {#2752}
+#### Taskbar jump lists  {#id2752}
 
 
-#### Default shell (Win+X)  {#2751}
+#### Default shell (Win+X)  {#id2751}
 
 
-#### Toolbar  {#2753}
+#### Toolbar  {#id2753}
 
 
 #### Task parameters. Example: /dir "C:\" /icon "cmd.exe" /single
@@ -45,34 +45,34 @@ Task parameters (‘/dir’, ‘/icon’) Example: /dir "C:\" /icon "cmd.exe" /s
 #### Commands (application, arguments, "-new_console" params) Delimit commands with empty lines Each command creates tab in ConEmu when group started Mark active console tab with '>' sign Start console 'As Administrator' with '`*`' sign
 Commands (application, arguments, ‘-new_console’) Delimit commands with empty lines Each command creates tab or pane on group start Mark active console tab with '>' sign Start console 'As Admin' with '`*`' sign
 
-#### Add default tasks...  {#2632}
+#### Add default tasks...  {#id2632}
 
 
-#### Reload...  {#2131}
+#### Reload...  {#id2131}
 
 
-#### +  {#2122}
+#### +  {#id2122}
 
 
-#### -  {#2124}
+#### -  {#id2124}
 
 
-#### Up  {#2126}
+#### Up  {#id2126}
 
 
-#### Down  {#2127}
+#### Down  {#id2127}
 
 
-#### Tab...  {#2128}
+#### Tab...  {#id2128}
 
 
-#### Startup dir...  {#2452}
+#### Startup dir...  {#id2452}
 
 
-#### File path...  {#2129}
+#### File path...  {#id2129}
 
 
-#### Active tabs  {#2493}
+#### Active tabs  {#id2493}
 
 
 RTEXT

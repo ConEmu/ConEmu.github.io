@@ -18,13 +18,13 @@ breadcrumbs:
 
 
 
-## Performance counters  {#1400}
+## Performance counters  {#id1400}
 
 FPS: Frames per second Data: Average duration of transferring data from Real to Virtual console Render: Average duration of rendering text to memory DC Blt: Average duration of blit operation from memory DC to screen DC RPS: Average counts of reads real console data per second
 
 
 
-## Console states  {#1560}
+## Console states  {#id1560}
 
 
 

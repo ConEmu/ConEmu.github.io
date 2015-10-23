@@ -20,25 +20,25 @@ breadcrumbs:
 
 
 
-## Application distinct settings  {#2317}
+## Application distinct settings  {#id2317}
 
 
 
-#### +  {#2136}
+#### +  {#id2136}
 
 
-#### -  {#2137}
+#### -  {#id2137}
 
 
 
 
-#### Up  {#2138}
+#### Up  {#id2138}
 
 
-#### Down  {#2139}
+#### Down  {#id2139}
 
 
-#### Reload...  {#2140}
+#### Reload...  {#id2140}
 
 
 

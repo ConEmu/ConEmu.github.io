@@ -18,7 +18,7 @@ breadcrumbs:
 
 
 
-## Show status bar  {#2262}
+## Show status bar  {#id2262}
 
 
 
@@ -49,20 +49,17 @@ RTEXT
 
 
 
-#### Horizontal  {#2422}
+#### Horizontal  {#id2422}
 *Lines*  
 
 
-#### Vertical  {#2421}
+#### Vertical  {#id2421}
 
 
-#### Use vertical padding  {#2615}
+#### Use vertical padding  {#id2615}
 
 
-#### System colors  {#2496}
-
-
-
+#### System colors  {#id2496}
 
 
 
@@ -70,24 +67,27 @@ RTEXT
 
 
 
-LTEXT
 
 
 
 LTEXT
 
-#### >>  {#2507}
 
 
-#### >  {#2508}
+LTEXT
+
+#### >>  {#id2507}
 
 
-#### <  {#2510}
+#### >  {#id2508}
+
+
+#### <  {#id2510}
 
 
 
 
-#### <<  {#2509}
+#### <<  {#id2509}
 
 
 

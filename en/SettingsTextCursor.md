@@ -29,13 +29,13 @@ breadcrumbs:
 * **Rectangle**
 
 
-#### Color (inverse screen part under cursor shape)  {#1210}
+#### Color (inverse screen part under cursor shape)  {#id1210}
 ON - cursor emulates console behaviour (sort of colors inversion) OFF - cursor is white (color#15) on dark backgrounds, and black (color#0) on light backgrounds; also this checkbox affect appearance of ‘Block’ cursors
 
-#### Blinking  {#1522}
+#### Blinking  {#id1522}
 When "Blinking" is ON - cursor blinks with standard cursor blink rate.
 
-#### Fixed cursor size  {#1655}
+#### Fixed cursor size  {#id1655}
 Ignore cursor size in real console, always show cursor with specified size
 
 Specified size of cursor in percents. Use together with ‘Fixed cursor size’
@@ -49,7 +49,7 @@ Specified minimal size of cursor in pixels (regardless of ‘Fixed cursor size�
 
 
 
-## Inactive console Text Cursor  {#2544}
+## Inactive console Text Cursor  {#id2544}
 
 
 
@@ -60,13 +60,13 @@ Specified minimal size of cursor in pixels (regardless of ‘Fixed cursor size�
 * **Rectangle**
 
 
-#### Color (inverse screen part under cursor shape)  {#2538}
+#### Color (inverse screen part under cursor shape)  {#id2538}
 
 
-#### Blinking  {#2545}
+#### Blinking  {#id2545}
 
 
-#### Fixed cursor size  {#2539}
+#### Fixed cursor size  {#id2539}
 
 
 

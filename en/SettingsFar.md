@@ -20,27 +20,27 @@ breadcrumbs:
 
 ## Shell style Drag and Drop (Far Manager only)
 
-#### LDrag  {#1504}
+#### LDrag  {#id1504}
 Allow drag with left mouse button
 
-#### Drop & Confirmation  {#1502}
+#### Drop & Confirmation  {#id1502}
 Off - ConEmu will NOT receive external drops On - Drops allowed (Far confirmation dialog) 3rd-state - same as "On", but w/o confirmation
 
-#### Overlay  {#1548}
+#### Overlay  {#id1548}
 Create and display overlay transparent snapshoot of files are dragged
 
-#### Shell icons  {#1553}
+#### Shell icons  {#id1553}
 Show icons of dragged iterms
 
-#### RDrag  {#1505}
+#### RDrag  {#id1505}
 Allow drag with right mouse button
 
 Drag with left mouse button, only when pressed...
 
-#### Copy by default  {#2287}
+#### Copy by default  {#id2287}
 Forced "Copy" action as default, You can use Ctrl, Shift or Alt during drag to change action
 
-#### Use drop menu  {#2246}
+#### Use drop menu  {#id2246}
 
 
 
@@ -49,31 +49,31 @@ Drag with right mouse button, only when pressed...
 
 ## Far Manager options
 
-#### Hourglass if not responding  {#1563}
+#### Hourglass if not responding  {#id1563}
 Show AppStarting cursor (arrow with a small hourglass) when Far is not responding (during long operations)
 
-#### Resize panels by mouse  {#1568}
+#### Resize panels by mouse  {#id1568}
 Enable sizing of left and right panel by dragging with mouse. 3rd-state - resize on button release with macroses.
 
-#### Right selection fix  {#1536}
+#### Right selection fix  {#id1536}
 Fix dashed selection with fast right mouse drag Far 3: restore files selection instead of EMenu
 
-#### Extend Unicode CharMap  {#1722}
+#### Extend Unicode CharMap  {#id1722}
 Show glyphs from selected font in ‘Unicode CharMap’ plugin (FAR2 only)
 
-#### use both panel edges  {#2102}
+#### use both panel edges  {#id2102}
 
 
-#### No zone check  {#1725}
+#### No zone check  {#id1725}
 SEE_MASK_NOZONECHECKS. Same as appeared in Far 2 build 771 and disappeared after 1464.
 
-#### Disable Far flashing  {#1718}
+#### Disable Far flashing  {#id1718}
 Disable flashing (from Far Manager) on Windows taskbar. 3rd-state - allow short flashing.
 
-#### ASCII sort function in Far  {#1561}
+#### ASCII sort function in Far  {#id1561}
 Hook Far string sort functions. !!!HIGHLY EXPERIMENTAL!!!
 
-#### KeyBar RClick  {#2114}
+#### KeyBar RClick  {#id2114}
 
 
 

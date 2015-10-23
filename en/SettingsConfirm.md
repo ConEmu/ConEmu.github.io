@@ -18,33 +18,33 @@ breadcrumbs:
 
 
 
-## Confirm actions  {#2686}
+## Confirm actions  {#id2686}
 
-#### Confirm creating new console/tab (Win+W, toolbar [+])  {#1546}
+#### Confirm creating new console/tab (Win+W, toolbar [+])  {#id1546}
 Confirm new console creation. You may change cmd line for it, or turn on "Run as..." feature. Even if unchecked, You may hold "Shift" to display dialog.
 
-#### Confirm tab duplicating (Duplicate root menu item)  {#2688}
+#### Confirm tab duplicating (Duplicate root menu item)  {#id2688}
 
 
-#### Confirm console detach  {#2689}
+#### Confirm console detach  {#id2689}
 
 
 
 
-## Close confirmations  {#2756}
+## Close confirmations  {#id2756}
 
-#### Confirm window closing (cross click)  {#2757}
+#### Confirm window closing (cross click)  {#id2757}
 Show confirmation before closing ConEmu window (cross clicking)
 
-#### Confirm tab closing  {#2179}
+#### Confirm tab closing  {#id2179}
 Show confirmation before closing tab or page (tab ‘Close’ menu item)
 
-#### When running process was detected  {#2758}
+#### When running process was detected  {#id2758}
 If there are two or more user processes in the console
 
-## Far Manager  {#2759}
+## Far Manager  {#id2759}
 
-#### Confirm Far Manager Editor/Viewer tab closing  {#2517}
+#### Confirm Far Manager Editor/Viewer tab closing  {#id2517}
 Show confirmation before closing Far Manager editor or viewer tab
 
 
@@ -57,12 +57,12 @@ Show confirmation before closing Far Manager editor or viewer tab
 
 
 
-## Miscellaneous  {#2687}
+## Miscellaneous  {#id2687}
 
-#### Show ‘... was hidden’ warning in TSA  {#2435}
+#### Show ‘... was hidden’ warning in TSA  {#id2435}
 Show ‘ConEmu was hidden from some program’ message in TSA
 
-#### Show ‘... brought ConEmu OnTop. Revert?’ confirmation box  {#2854}
+#### Show ‘... brought ConEmu OnTop. Revert?’ confirmation box  {#id2854}
 Show ‘Some external program brought ConEmu OnTop. Revert?’ confirmation box
 
 

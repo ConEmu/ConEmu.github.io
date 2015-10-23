@@ -28,34 +28,34 @@ breadcrumbs:
 * **Don't show**
 
 
-#### Tabs on bottom  {#2481}
+#### Tabs on bottom  {#id2481}
 
 
-#### Internal CtrlTab  {#1531}
+#### Internal CtrlTab  {#id1531}
 Handle CtrlTab and CtrlShiftTab internally (by ConEmu). These keystrokes will not be sent to console window, but You can easily switch between consoles (panels).
 
-#### Lazy tab switch  {#1532}
+#### Lazy tab switch  {#id1532}
 When checked - real window switching will be performed on Ctrl depress
 
-#### Recent mode  {#1533}
+#### Recent mode  {#id1533}
 Switch first between recent tabs. You may still switch between tabs in standard manner using Left/Right (after CtrlTab), while Ctrl is still presses.
 
-#### Hide disabled tabs  {#2051}
+#### Hide disabled tabs  {#id2051}
 Hide tabs, wich can't be activated. E.g. hide Far Manager editors while executing cmd.exe
 
-#### Far windows  {#2053}
+#### Far windows  {#id2053}
 Show all Far Manager windows (panels, editors, viewers) instead of one tab for one console
 
-#### ‘Host-key’+Number iterates Far windows  {#2104}
+#### ‘Host-key’+Number iterates Far windows  {#id2104}
 Iterate opened Far windows with ‘Host-key’+Number
 
-#### Active console only  {#1642}
+#### Active console only  {#id1642}
 Show tabs from active console only
 
-#### One tab per group  {#2599}
+#### One tab per group  {#id2599}
 Show only one tab for all splits in the group
 
-#### Activate split on mouse hover  {#2601}
+#### Activate split on mouse hover  {#id2601}
 When several panes (splits) are visible simultaneously activate console with mouse over, 3rd-state - match ‘Active window tracking’ system settings
 
 LTEXT
@@ -66,7 +66,7 @@ RTEXT
 
 
 
-#### Tab templates (Far Manager ones are located on 'Far Manager' page)  {#2106}
+#### Tab templates (Far Manager ones are located on 'Far Manager' page)  {#id2106}
 
 
 
@@ -92,10 +92,10 @@ When something was changed in the inactive console ConEmu may flash tab icon in 
 #### Maximum tab width (in chars)
 
 
-#### Admin shield  {#2109}
+#### Admin shield  {#id2109}
 When this is checked - ‘Shield’ icon will be shown in tabs, started ‘As administrator’
 
-#### suffix  {#2110}
+#### suffix  {#id2110}
 When this is checked - specified suffix will be appended in tabs titles, started ‘As administrator’. You may choose insertion place with ‘%a’ var, otherwise suffix will be at the tab end.
 
 

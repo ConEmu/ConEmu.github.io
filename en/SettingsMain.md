@@ -18,7 +18,7 @@ breadcrumbs:
 
 
 
-## Main console font  {#2678}
+## Main console font  {#id2678}
 
 
 
@@ -30,34 +30,34 @@ RTEXT
 
 
 
-#### Bold  {#2278}
+#### Bold  {#id2278}
 *Cell*  
 Main font weight
 
-#### Italic  {#2280}
+#### Italic  {#id2280}
 Main font italic
 
-#### Monospace  {#2283}
+#### Monospace  {#id2283}
 Check it for non proportional (monospaced) fonts, 3rd-state - center symbols in the cells
 
-#### Auto size (fixed console size in cells)  {#1566}
+#### Auto size (fixed console size in cells)  {#id1566}
 Automatic font resize for the fixed real console width
 
-#### Admit monitor dpi with font size  {#2691}
+#### Admit monitor dpi with font size  {#id2691}
 
 
 Face name for main font
 
 Main font height
 
-#### Treat font height as device units  {#2692}
+#### Treat font height as device units  {#id2692}
 
 
 Main font width 0 - mean default width for specified height
 
 Cell width for "Monospace" mode
 
-## Anti-aliasing  {#2677}
+## Anti-aliasing  {#id2677}
 
 
 
@@ -79,7 +79,7 @@ RTEXT
 
 
 
-## Alternative font (pseudographics, CJK, etc.)  {#1207}
+## Alternative font (pseudographics, CJK, etc.)  {#id1207}
 
 You can specify additional font for drawing pseudographics or specified range of symbols. E.g. main - "Fixedsys", additional - "Lucida Console". You may force this font for specified range of symbols, search "Settings-ConEmu.reg" for "FixFarBordersRanges" option.
 
@@ -91,7 +91,7 @@ RTEXT
 
 LTEXT
 
-#### Apply  {#2838}
+#### Apply  {#id2838}
 
 
 
@@ -100,7 +100,7 @@ Font face used to draw pseudographics or specified range of symbols. E.g. main -
 
 WIDTH for pseudographics font. It must be wider than main font, otherwise, You may get "dashed" borders.
 
-## Extend fonts  {#1576}
+## Extend fonts  {#id1576}
 
 ConEmu is able to use normal, bold and italic fonts side by side. This feature may be useful for prompt decoration or with Colorer plugin for Far Manager (1.7x, 2.x).
 

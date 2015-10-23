@@ -92,20 +92,20 @@ Text labels font height in Tiles mode
 
 Text labels font name in Tiles mode
 
-#### Load previews for files  {#1664}
+#### Load previews for files  {#id1664}
 Generate previews for files
 
-#### Load previews in subfolders  {#1663}
+#### Load previews in subfolders  {#id1663}
 Generate previews for folders (by first 4 files)
 
 #### Loading timeout (sec.)
 Maximal duration of preview generation (per file)
 
-#### Use PicView2 for previews  {#1680}
+#### Use PicView2 for previews  {#id1680}
 *Max. zoom*  
 Try to use PicView2 plugin to generate previews (FAR2 only)
 
-#### Restore on Far startup  {#1720}
+#### Restore on Far startup  {#id1720}
 Restore panel views on Far startup
 
 ## Preview background
@@ -130,7 +130,7 @@ Maximal zoom for images smaller than preview
 
 
 
-## Preview frame  {#1667}
+## Preview frame  {#id1667}
 
 
 
@@ -150,7 +150,7 @@ Maximal zoom for images smaller than preview
 
 
 
-## Current item frame  {#1668}
+## Current item frame  {#id1668}
 
 
 
@@ -170,7 +170,7 @@ Maximal zoom for images smaller than preview
 
 
 
-#### Apply  {#1715}
+#### Apply  {#id1715}
 
 
 
@@ -217,7 +217,7 @@ Maximal zoom for images smaller than preview
 
 
 
-#### Choose...  {#1691}
+#### Choose...  {#id1691}
 
 
 

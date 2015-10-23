@@ -22,18 +22,18 @@ readalso:
 
 
 
-## Update settings  {#2864}
+## Update settings  {#id2864}
 
 
 
-#### Startup  {#2058}
+#### Startup  {#id2058}
 *Do automatic check on*  
 
 
-#### Hourly  {#2067}
+#### Hourly  {#id2067}
 
 
-#### TSA notification only  {#2068}
+#### TSA notification only  {#id2068}
 
 
 **Preferred release type**
@@ -44,12 +44,12 @@ readalso:
 * **Latest**
 
 
-#### External downloader  {#2856}
+#### External downloader  {#id2856}
 
 
 
 
-#### Proxy  {#2059}
+#### Proxy  {#id2059}
 
 
 #### Server:port
@@ -61,7 +61,7 @@ readalso:
 #### Password
 
 
-#### Leave downloaded packages  {#2065}
+#### Leave downloaded packages  {#id2065}
 
 
 

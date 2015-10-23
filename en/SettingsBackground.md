@@ -18,7 +18,7 @@ breadcrumbs:
 
 
 
-## Background image (bmp, jpg, png, tif)  {#1699}
+## Background image (bmp, jpg, png, tif)  {#id1699}
 
 Show background image instead standard colors #0 and #1 (black and blue) 3rd-state - don't draw in viewer/editor
 
@@ -34,7 +34,7 @@ Choose background image file (bmp, jpg, png, tif) or specify solid color in any 
 
 Choose background color indexes, which will be replaced with background image, default is ‘#0 #1’ Black and Blue. Use "`*`" (asterisk) for Far Manager panels background color.
 
-#### Placement  {#2339}
+#### Placement  {#id2339}
 
 
 #### Darkening
@@ -42,7 +42,7 @@ Choose background color indexes, which will be replaced with background image, d
 
 
 
-#### Allow background plugins (Far Manager)  {#1734}
+#### Allow background plugins (Far Manager)  {#id1734}
 Enable background Far plugins (e.g. Panel Colorer), 3rd-state - don't draw in viewer/editor
 
 #### Darkening
