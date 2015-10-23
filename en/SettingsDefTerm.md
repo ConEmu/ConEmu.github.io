@@ -38,6 +38,7 @@ Main switch
 
 #### Register on OS startup  {#id2547}
 ConEmu may start automatically when you logon. Registered via registry, example is below.
+
 ~~~
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]
 "ConEmuDefaultTerminal"="\"C:\\Tools\\ConEmu\\ConEmu.exe\" /SetDefTerm /Detached /MinTSA /Exit"
@@ -54,6 +55,7 @@ One already [hooked process](#id2516), e.g. ‘Explorer.exe’, will be enough.
 
 #### List of hooked executables or window class names  {#id2516}
 Delimit them by `|`. For example:
+
 ~~~
 explorer.exe|devenv.exe|totalcmd.exe|TaskManagerWindow|codeblocks.exe|lazarus.exe|gdb.exe
 ~~~
@@ -66,6 +68,7 @@ Certain information is required to be written in the registry.
 That is because [hooked processes](#id2516) do not know anything
 about ConEmu and its [settings](ConEmuXml.html) location.
 An example below.
+
 ~~~
 [HKEY_CURRENT_USER\Software\ConEmu]
 "DefTerm-Agressive"=dword:00000000
