@@ -8,6 +8,12 @@ breadcrumbs:
    title: Tips and Tweaks
  - url: GitForWindows.html
    title Using Git for Windows
+
+readalso:
+ - url: SettingsColors.html
+   title: "Settings › Colors page"
+ - url: GitForWindows.html
+   title: "Setting up Git for Windows in ConEmu"
 ---
 
 # Solarized, ConEmu, git and settings
