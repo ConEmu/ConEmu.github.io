@@ -13,7 +13,7 @@ readalso:
  - url: SolarizedColors.html
    title: Solarized color scheme
  - url: SettingsConfirm.html
-   title: "Settings › Confirm page"
+   title: "Settings â€º Confirm page"
 ---
 
 # Using Git for Windows
@@ -47,7 +47,7 @@ of [ChildGui](ChildGui.html) applications.
 ### Use proper sh.exe from version 2.x
 
 **NB** Don't run `/bin/sh.exe` as your shell ([root process](RootProcess.html))
-in ConEmu tab! This is just a wrapper for ‘full version’ located in `/usr/bin/`
+in ConEmu tab! This is just a wrapper for â€˜full versionâ€™ located in `/usr/bin/`
 folder. That's why ConEmu will not be able to determine if your tab has running
 process, or there is a shell only.
 
