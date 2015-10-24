@@ -12,6 +12,8 @@ breadcrumbs:
 readalso:
  - url: SolarizedColors.html
    title: Solarized color scheme
+ - url: SettingsConfirm.html
+   title: "Settings › Confirm page"
 ---
 
 # Using Git for Windows
@@ -20,6 +22,38 @@ Native and full-featured set of [Git SCM](http://git-scm.com/) tools.
 
 * [Version 2.x.x](https://git-for-windows.github.io/)
 * [Version 1.9.5 (deprecated)](https://github.com/msysgit/msysgit/releases)
+
+
+## Starting shell
+
+Git-for-Windows package provides a lot of msys tools,
+useful for users used to Unix environment. So, anyone
+may easily run `bash.exe` prepared for Git environment.
+
+~~~
+git-cmd.exe --no-cd --command=usr/bin/bash.exe -l -i
+~~~
+
+When you start ConEmu first time, it will create a task `{Git bash}`
+with similar contents.
+
+Also, you may run in ConEmu tab `git-bash.exe`, but this is not recommended,
+because it runs `mintty.exe`, which is another terminal, actually.
+And of course, ConEmu can't change behavior and appearance
+of [ChildGui](ChildGui.html) applications.
+
+
+
+### Use proper sh.exe from version 2.x
+
+**NB** Don't run `/bin/sh.exe` as your shell ([root process](RootProcess.html))
+in ConEmu tab! This is just a wrapper for ‘full version’ located in `/usr/bin/`
+folder. That's why ConEmu will not be able to determine if your tab has running
+process, or there is a shell only.
+
+Run `/usr/bin/sh.exe -l -i` to get proper behavior of
+[tab closing confirmation](SettingsConfirm.html#id2756)
+option.
 
 
 
