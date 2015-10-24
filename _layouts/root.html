@@ -52,6 +52,8 @@ This page was saved from: {{site.url}}{{page.url}}
 <meta property="og:description" content="{{page.description}}">{% endif %}{% if page.og_image != '' and page.og_image != nil %}
 <meta property="og:image" content="{{page.og_image}}">{% endif %}
 
+<script src="/misc/anchor.min.js"></script>
+
 {% if site.url != 'local' %}{% include analytics.html %}{% endif %}
 {% if site.url != 'local' %}{% include yametrica.html %}{% endif %}
 
@@ -125,6 +127,11 @@ This page was saved from: {{site.url}}{{page.url}}
 </div><!-- .wrapper -->
 
 {% include copyright.html %}
+
+<!-- Use AnchorJS to add anchor links to headers -->
+<script>
+anchors.add();
+</script>
 
 <!-- Auto select text in preformatted elements on click. -->
 <script>
