@@ -19,11 +19,11 @@ readalso:
 Native and full-featured set of [Git SCM](http://git-scm.com/) tools.
 
 * [Version 2.x.x](https://git-for-windows.github.io/)
-* [Version 1.9.5](https://msysgit.github.io/)
+* [Version 1.9.5 (deprecated)](https://github.com/msysgit/msysgit/releases)
 
 
 
-## My personal preferences
+## Colorizing fix for Solarized color scheme  {#Solarized}
 
 Fix for [Solarized color scheme](SolarizedColors.html).
 
@@ -43,7 +43,7 @@ git config --global core.editor "farrun -e1:1"
 
 
 
-## cygwin_exception in less.exe
+## cygwin_exception in less.exe  {#cygwin-exception}
 
 When updated my git to `PortableGit-2.3.5.8-dev-preview-32-bit.7z.exe` (obsolete build),
 bumped into strange exception.
