@@ -56,9 +56,11 @@ And ConEmu has [tabs](TabBar.html) and [splittings](SplitScreen.html)
 So you can have different programs running in each of those ‘slots’.
 
 A ‘task’ is an instruction what and how ConEmu must run in ‘slots’.
-Each ‘task’ has a ‘name’, one or more actual commands to run,
-‘hotkey’ to run task which is available when ConEmu has focus,
-some optional switches like startup directory or icon.
+
+* Each ‘task’ has a ‘name’;
+* one or **several** actual commands to run;
+* ‘hotkey’ to run task which is available when ConEmu has focus;
+* some optional switches like startup directory or icon.
 
 | Value    | Example |
 |:---------|:--------|
@@ -106,17 +108,24 @@ You can optionally specify the icon that is displayed in the Jump list, for exam
 /icon "cmd.exe"
 ~~~
 
-и рабочую папку, в которой будет запущен указанный процесс, например
+and working directory, where new process will be started, for example
 
 ~~~
 /dir "c:\Program Files"
 ~~~
 
-После настройки списка задач включите флажок «Add ConEmu tasks to taskbar» и (по желанию)
-«Add commands from history, too». Нажмите кнопку «Update Now!».
-В случае успеха вы увидите сообщение «Taskbar jump list was updated successfully», ну или сообщение об ошибке.
-Есть способ инициировать Jump list при запуске ConEmu (<a title="Jump Lists/Task window problem" href="http://github.com/Maximus5/conemu-old-issues/issues/576"> Issue 576 </a>,
-может кому еще понадобится для автоматизации установки, например) для этого запустите (однократно) ConEmu.exe с аргументом `/updatejumplist`.
+
+### Tasks in Windows 7 task bar jump list {#jump-list}
+
+Ensure that option ‘[Taskbar jump lists](SettingsTasks.html#id2752)’
+is checked, and go to [Settings/Task bar](SettingsTaskBar.html).
+Check there ‘[Add ConEmu tasks to taskbar](SettingsTaskBar.html#id2132)’
+and (optionally) ‘[Add commands from history, too](SettingsTaskBar.html#id2133)’.
+Than press ‘[Update Now!](SettingsTaskBar.html#id2320)’ button.
+
+On success, you'll see the message ‘Taskbar jump list was updated successfully’, or an error information.
+Also, you may initialize Jump list on ConEmu startup (automate your box setup),
+just run (once) `ConEmu.exe /updatejumplist`.
 
 
 
