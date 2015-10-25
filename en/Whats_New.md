@@ -38,7 +38,7 @@ or anything else, spreading the word for example.
 
 {% for post in site.posts %}{%if post.build %}
 <article>
-<h2 id="Build_{{ post.build }}">[Build {{ post.build }}]({{ post.url }})</h2>
+<h2 id="Build_{{ post.build }}"><a href="{{ post.url }}">Build {{ post.build }}</a></h2>
 {{ post.content }}
 </article>
 {% endif %}{% endfor %}
