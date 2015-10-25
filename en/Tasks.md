@@ -11,6 +11,8 @@ breadcrumbs:
 readalso:
  - url: NewConsole.html
    title: "Using -new_console switch to change palette, icon, background image, etc."
+ - url: SplitScreen.html
+   title: "Split Screen or Panes"
 
 otherlang:
    eng: /en/Tasks.html
@@ -114,6 +116,11 @@ and working directory, where new process will be started, for example
 /dir "c:\Program Files"
 ~~~
 
+**NB** Switches `/icon` and `/dir` must be typed in the ‘Task parameters’ field,
+but not in ‘Commands’. If you run several shells from one task, you may specify
+icons and working directories for each shell using
+[-new_console](NewConsole.html) switches in the ‘Commands’ box.
+
 
 ### Tasks in Windows 7 task bar jump list {#jump-list}
 
@@ -133,8 +140,8 @@ just run (once) `ConEmu.exe /updatejumplist`.
 
 When you want to create new task absent in the default tasks list you need to know:
 
-* The shell name. For example: cmd, powershell, bash and so on.
-* The shell arguments. For example: `/k vcvarsall.bat x86`
+* The shell name. For example: `cmd`, `powershell`, `bash` and so on.
+* The shell arguments. For example: `cmd /k vcvarsall.bat x86`
 * Shell working directory. That may be very significant.
 * In some cases you need to know environment variables.
 

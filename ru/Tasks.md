@@ -11,6 +11,8 @@ breadcrumbs:
 readalso:
  - url: NewConsole.html
    title: "Смена палитры, иконки, фонового изображения с помощью -new_console"
+ - url: SplitScreen.html
+   title: "Сплиты или панели (Split Screen)"
 
 otherlang:
    eng: /en/Tasks.html
@@ -114,6 +116,12 @@ ConEmu Jump list настраивается тоже здесь.
 /dir "c:\Program Files"
 ~~~
 
+**Внимание** Ключи `/icon` и `/dir` предназначены для поля ‘Task parameters’,
+а не для ‘Commands’. Если нужно запустить несколько шеллов из одного ‘Task’,
+вы можете указать иконки и рабочие папки для каждого с помощью
+ключей [-new_console](NewConsole.html) в поле ‘Commands’.
+
+
 ### «Task-и» в списках переходов панели задач Windows 7 (jump list) {#jump-list}
 
 Убедитесь, что флажок «[Taskbar jump lists](SettingsTasks.html#id2752)»
@@ -132,8 +140,8 @@ ConEmu Jump list настраивается тоже здесь.
 
 When you want to create new task absent in the default tasks list you need to know:
 
-* The shell name. For example: cmd, powershell, bash and so on.
-* The shell arguments. For example: `/k vcvarsall.bat x86`
+* The shell name. For example: `cmd`, `powershell`, `bash` and so on.
+* The shell arguments. For example: `cmd /k vcvarsall.bat x86`
 * Shell working directory. That may be very significant.
 * In some cases you need to know environment variables.
 
