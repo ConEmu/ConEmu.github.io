@@ -32,6 +32,7 @@ readalso:
   * [Example 4 (Far Manager related)](#example-4)
   * [Example 5](#example-5)
   * [Example 6 (Split Screen)](#example-6)
+  * [Example 7 (grid 2x2)](#example-7)
 
 
 ## Purpose  {#purpose}
@@ -263,11 +264,13 @@ Split 3-d tab, create new tab to the right with 30% width.
 cmd -new_console:s3T30H
 ~~~
 
-You may also create named task with several cmd's. Next example creates four cmd.exe consoles in a grid 2x2.
+### Example 7 (grid 2x2)   {#example-7}
+
+You may also create named task with several shells. Next example creates four consoles in a grid 2x2.
 
 ~~~
 > cmd -cur_console:n
-cmd -cur_console:s1TVn
-cmd -cur_console:s1THn
-cmd -cur_console:s2THn
+powershell -cur_console:s1TVn
+bash -l -i -cur_console:s1THn
+ssh.exe user@127.0.0.1 -cur_console:s2THn
 ~~~
