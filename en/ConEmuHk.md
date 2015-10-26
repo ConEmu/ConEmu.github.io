@@ -8,6 +8,10 @@ breadcrumbs:
    title: ConEmu
  - url: ConEmuTerms.html
    title: Terms
+
+readalso:
+ - url: MicrosoftBugs.html#Exception_in_ReadConsoleOutput
+   title: "Exception in ReadConsoleOutput (conhost.exe)"
 ---
 
 # Option ‘Inject ConEmuHk’

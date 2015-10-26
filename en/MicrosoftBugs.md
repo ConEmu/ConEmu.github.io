@@ -6,6 +6,10 @@ title: "ConEmu | Some Windows Bugs and Workarounds"
 breadcrumbs:
  - url: TableOfContents.html#feedback
    title: Feedback
+
+readalso:
+ - url: ConEmuHk.html
+   title: "ConEmuHk - Hooks and Injects"
 ---
 
 # Some Windows Bugs and Workarounds
