@@ -94,8 +94,8 @@ But [ConEmuC](ConEmuC.html) is a [console application](ConsoleApplication.html)
 and it does not draw any text on graphical canvas at all.
 
 ### The workarounds  {#mactype-workaround}
-* Use ‘Load with MacTray’ + ‘Standalong loading mode’
-  instead of ‘Registry’ or ‘Service’.
+* Use â€˜Load with MacTrayâ€™ + â€˜Standalong loading modeâ€™
+  instead of â€˜Registryâ€™ or â€˜Serviceâ€™.
 * Or add `ConEmuC.exe` and `ConEmuC64.exe` to MacType exclusion list,
   if exclusion lists works for you.
 
