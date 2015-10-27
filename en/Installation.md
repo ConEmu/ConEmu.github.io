@@ -93,7 +93,11 @@ That is because MacType tries to hook `ConEmuC.exe` and `ConEmuC64.exe` processe
 But [ConEmuC](ConEmuC.html) is a [console application](ConsoleApplication.html)
 and it does not draw any text on graphical canvas at all.
 
-**The workaround**. Add `ConEmuC.exe` and `ConEmuC64.exe` to MacType exclusion list.
+### The workarounds  {#mactype-workaround}
+* Use ‘Load with MacTray’ + ‘Standalong loading mode’
+  instead of ‘Registry’ or ‘Service’.
+* Or add `ConEmuC.exe` and `ConEmuC64.exe` to MacType exclusion list,
+  if exclusion lists works for you.
 
 
 ## Java issues  {#java}

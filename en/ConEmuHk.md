@@ -115,7 +115,7 @@ I had bunches of issues about ‘crashes in ConEmu’. Really? And what are the 
 * Third party tools run injects too. Several injection systems will conflict each other.
   The result? Crash! One system tries to execute LoadLibrary in the external process,
   but it think that LoadLibrary is located in the other module than kernel32.dll. Sadly.
-  * MacType and sort of. There is workaround - add ConEmuC.exe and ConEmuC64.exe to MacType exclusion list.
+  * [MacType](Installation.html#mactype) and sort of. Workaround - [use MacTray](Installation.html#mactype-workaround).
     You may still use it with ConEmu.exe and ConEmu64.exe.
   * AnsiCon. Another ANSI sequences processor. ConEmu already implements that feature internally.
   * Intel pin. You may use it with wrapper batch file, disabling ConEmuHk temporarily.
