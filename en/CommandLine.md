@@ -36,7 +36,7 @@ ConEmu -mintsa -config "Maintainance" -dir "C:\Project" -cmd git fetch
 
 
 
-## [ConEmuC args](ConEmuC.html#ConEmuC.exe_command_line_switches)   {#ConEmuC}
+## [ConEmuC args](ConEmuC.html#ConEmuC_switches)   {#ConEmuC}
 
 ConEmuC is a console part of ConEmu. It serves a console window
 acting a console server in the ConEmu-ConEmuC pair. Also, it can be

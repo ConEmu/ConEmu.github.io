@@ -14,10 +14,7 @@ breadcrumbs:
    title: Switches
 ---
 
-<!-- Content starts -->
-
 # Console part of ConEmu
-
 
 ConEmuC is a console part of ConEmu.
 It implements full-featured console window and serves all console requests.
@@ -25,33 +22,28 @@ Also it can be used from command line to do many jobs like
 [posting GuiMacro](#GuiMacro), [downloading files](#Download),
 [exporting environment](#Export) and much more.
 
-
-
 There are two versions - ConEmuC.exe and ConEmuC64.exe.
-
-
 
 In the 32-bit operation systems only ConEmuC.exe (and ConEmuHk.dll library) is used.
 
+64-bit systems are more complicated, so both versions must exists in the ConEmu folder.
+ConEmuC.exe is used, when You run 32bit applications from started console,
+ConEmuC64.exe (and ConEmuHk64.dll) for 64bit applications.
 
-
-64-bit systems are more complicated, so both versions must exists in the ConEmu folder. ConEmuC.exe is used, when You run 32bit applications from started console, ConEmuC64.exe (and ConEmuHk64.dll) for 64bit applications.
-
-
-
-Root console process will be ConEmuC.exe, when You are using ConEmu.exe, and ConEmuC64.exe, when You are using ConEmu64.exe.
-
-
+Root console process will be ConEmuC.exe, when You are using ConEmu.exe,
+and ConEmuC64.exe, when You are using ConEmu64.exe.
 
 
 
 ### Font in real console  {#Font_in_real_console}
 
-
-ConEmu use small *Lucida console* font in real console by default, cause of this font is shipped with Windows and it is unicode (unicode font must be selected in real console to allow ConEmu retrieve unicode characters from real console).
-
+ConEmu use small *Lucida console* font in real console by default,
+cause of this font is shipped with Windows and it is unicode
+(unicode font must be selected in real console to allow ConEmu
+retrieve unicode characters from real console).
 
 You may specify font face name and size to the real console.
+
 
 
 #### Warning  {#font-warning}
@@ -62,9 +54,7 @@ You may specify font face name and size to the real console.
 
 
 
-### ConEmuC.exe command line switches  {#ConEmuC.exe_command_line_switches}
-
-
+### ConEmuC.exe command line switches  {#ConEmuC_switches}
 
 **Note** From build 140106 you may use '-'style switches with ConEmuC too, for example, following commands acts the same.
 
@@ -125,7 +115,6 @@ ConEmuC [/SILENT] /GUIMACRO[:PID|HWND][:T<tab>][:S<split>] Function([Arg1[,Arg2[
 
 
 #### Echo and Type  {#EchoAndType}
-
 
 These two was implemented for test purposed mostly. But may be useful.
 Use any of `-e`, `-echo`, `/echo` to echo a string with ANSI sequences.
@@ -223,20 +212,20 @@ ConEmuC /ErrorLevel <number>
 
 
 
-### -new_console and -cur_console switches  {#-new_console_and_-cur_console_switches}
+### -new_console and -cur_console switches  {#new_console_and_cur_console}
 
 When you run application from ConEmu console, you may use **[-new_console](NewConsole.html)** or **[-cur_console](NewConsole.html)** switches.
 
 
 Btw, this is one of the ways to start **GUI** application in ConEmu tab.
 
-#### Warnings  {#-new_console-warnings}
+#### Warnings  {#new_console-warnings}
 
 * These are NOT a switches of ConEmuC, specify them as application (far, vim, putty, etc.) switches.
 * Option 'Inject ConEmuHk' must be enabled in ConEmu settings!
 
 
-#### Examples  {#-new_console-examples}
+#### Examples  {#new_console-examples}
 
 ~~~
 dir "-new_console:bh9999c" c:\ /s
