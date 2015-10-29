@@ -33,9 +33,28 @@ ConEmuC64.exe (and ConEmuHk64.dll) for 64bit applications.
 Root console process will be ConEmuC.exe, when You are using ConEmu.exe,
 and ConEmuC64.exe, when You are using ConEmu64.exe.
 
+* [Font in real console](#Font_in_real_console)
+  * [Warning](#font-warning)
+* [ConEmuC.exe command line switches](#ConEmuC_switches)
+  * [Show help screen](#HelpScreen)
+  * [Useful checks](#UsefulChecks)
+  * [Attach consoles to ConEmu](#Attach)
+  * [ConEmu GUI macro command](#GuiMacro)
+  * [Echo and Type](#EchoAndType)
+  * [Debug and MiniDump](#Debug)
+  * [Export environment variables to the parent processes](#Export)
+  * [Download from http/https/ftp](#Download)
+  * [Execute commands and create tabs (use with caution!)](#Commands)
+  * [Show errorlevel of `<command>`](#ShowErrorlevel)
+  * [Return errorlevel = `<number>`](#ReturnErrorlevel)
+* [-new_console and -cur_console switches](#new_console_and_cur_console)
+  * [Warnings](#new_console-warnings)
+  * [Examples](#new_console-examples)
 
 
-### Font in real console  {#Font_in_real_console}
+
+
+## Font in real console  {#Font_in_real_console}
 
 ConEmu use small *Lucida console* font in real console by default,
 cause of this font is shipped with Windows and it is unicode
@@ -46,7 +65,7 @@ You may specify font face name and size to the real console.
 
 
 
-#### Warning  {#font-warning}
+### Warning  {#font-warning}
 
 * This font must be preinstalled in the system.
 * It **must** be **unicode** (means TTF).
@@ -54,7 +73,7 @@ You may specify font face name and size to the real console.
 
 
 
-### ConEmuC.exe command line switches  {#ConEmuC_switches}
+## ConEmuC.exe command line switches  {#ConEmuC_switches}
 
 **Note** From build 140106 you may use '-'style switches with ConEmuC too, for example, following commands acts the same.
 
@@ -65,7 +84,7 @@ ConEmuC -IsConEmu
 
 
 
-#### Show help screen  {#HelpScreen}
+### Show help screen  {#HelpScreen}
 
 ~~~
 ConEmuC /?
@@ -73,7 +92,7 @@ ConEmuC /?
 
 
 
-#### Useful checks  {#UsefulChecks}
+### Useful checks  {#UsefulChecks}
 
 ~~~
 ConEmuC /IsConEmu
@@ -86,7 +105,7 @@ ConEmuC /IsTerm
 
 
 
-#### Attach consoles to ConEmu  {#Attach}
+### Attach consoles to ConEmu  {#Attach}
 
 ~~~
 ConEmuC /AUTOATTACH [/GHWND=NEW|<HWND>]
@@ -106,7 +125,7 @@ ConEmuC /ATTACH [/GHWND=NEW|<HWND>] /[FAR|CON|TRM]PID=<PID>
 
 
 
-#### [ConEmu GUI macro command](GuiMacro.html)  {#GuiMacro}
+### [ConEmu GUI macro command](GuiMacro.html)  {#GuiMacro}
 
 ~~~
 ConEmuC [/SILENT] /GUIMACRO[:PID|HWND][:T<tab>][:S<split>] Function([Arg1[,Arg2[,...]])
@@ -114,7 +133,7 @@ ConEmuC [/SILENT] /GUIMACRO[:PID|HWND][:T<tab>][:S<split>] Function([Arg1[,Arg2[
 
 
 
-#### Echo and Type  {#EchoAndType}
+### Echo and Type  {#EchoAndType}
 
 These two was implemented for test purposed mostly. But may be useful.
 Use any of `-e`, `-echo`, `/echo` to echo a string with ANSI sequences.
@@ -150,7 +169,7 @@ ConEmuC -e "^[[1;33;45mqwerty^[[m"
 
 
 
-#### Debug and [MiniDump](MemoryDump.html)  {#Debug}
+### Debug and [MiniDump](MemoryDump.html)  {#Debug}
 
 ~~~
 ConEmuC /DEBUGPID=<Debugging PID> [/DUMP | /MINI | /FULL]
@@ -163,7 +182,7 @@ ConEmuC /DEBUGTREE <command line>
 
 
 
-#### [Export environment variables](ConEmuEnvironment.html#Export_variables) to the parent processes  {#Export}
+### [Export environment variables](ConEmuEnvironment.html#Export_variables) to the parent processes  {#Export}
 
 ~~~
 ConEmuC /EXPORT[=CON|ALL] [Var1 [Var2 [...]]]
@@ -171,7 +190,7 @@ ConEmuC /EXPORT[=CON|ALL] [Var1 [Var2 [...]]]
 
 
 
-#### Download from http/https/ftp  {#Download}
+### Download from http/https/ftp  {#Download}
 
 ~~~
 ConEmuC /download [-login <name> -password <pwd>]
@@ -182,7 +201,7 @@ ConEmuC /download [-login <name> -password <pwd>]
 
 
 
-#### Execute commands and create tabs (use with caution!)  {#Commands}
+### Execute commands and create tabs (use with caution!)  {#Commands}
 
 ~~~
 ConEmuC [switches] /ROOT <program with arguments, far.exe for example>
@@ -196,7 +215,7 @@ ConEmuC [switches] [/U | /A] [/Async | /Fork] /C <command line>
 
 
 
-#### Show errorlevel of `<command>`  {#ShowErrorlevel}
+### Show errorlevel of `<command>`  {#ShowErrorlevel}
 
 ~~~
 ConEmuC /Result /C <command>
@@ -204,7 +223,7 @@ ConEmuC /Result /C <command>
 
 
 
-#### Return errorlevel = `<number>`  {#ReturnErrorlevel}
+### Return errorlevel = `<number>`  {#ReturnErrorlevel}
 
 ~~~
 ConEmuC /ErrorLevel <number>
@@ -212,20 +231,20 @@ ConEmuC /ErrorLevel <number>
 
 
 
-### -new_console and -cur_console switches  {#new_console_and_cur_console}
+## -new_console and -cur_console switches  {#new_console_and_cur_console}
 
 When you run application from ConEmu console, you may use **[-new_console](NewConsole.html)** or **[-cur_console](NewConsole.html)** switches.
 
 
 Btw, this is one of the ways to start **GUI** application in ConEmu tab.
 
-#### Warnings  {#new_console-warnings}
+### Warnings  {#new_console-warnings}
 
 * These are NOT a switches of ConEmuC, specify them as application (far, vim, putty, etc.) switches.
 * Option 'Inject ConEmuHk' must be enabled in ConEmu settings!
 
 
-#### Examples  {#new_console-examples}
+### Examples  {#new_console-examples}
 
 ~~~
 dir "-new_console:bh9999c" c:\ /s
