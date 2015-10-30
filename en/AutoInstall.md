@@ -60,6 +60,7 @@ you may use another syntax.
 | Destination folder | dst | Full path to desired location <br/> C:\Tools\ConEmu |
 | ConEmu version | ver | • 'alpha' <br/> • 'preview' <br/> • 'stable' |
 | Create shortcut on desktop | lnk | • $TRUE <br/> • $FALSE <br/> • 'Desired link name' |
+| ConEmu.xml bootstrap | xml | 'https://conemu.github.io/ConEmu.xml' |
 | Run after installation | run | • $TRUE <br/> • $FALSE |
 
 Paste the command (see example below) to your box startup script
