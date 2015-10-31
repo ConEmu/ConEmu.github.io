@@ -21,7 +21,7 @@ readalso:
 [Solarized](http://ethanschoonover.com/solarized) is an eye-candy color scheme
 specially designed for console and GUI applications.
 
-The screenshot below shows `<ConEmu>` palette adopted for Windows' console applications.
+The screenshot below shows `<ConEmu>` palette adapted for Windows' console applications.
 
 ![ConEmu: Solarized Git](/img/SolarizedGit.png)
 
