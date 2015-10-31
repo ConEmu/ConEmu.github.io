@@ -48,7 +48,7 @@ And ConEmu from build 121124 introduced unique feature: ‘Replace default Windo
 ## Description  {#Description}
 
 [![ConEmu settings, Default Term page](/img/Settings-DefTerm.png)](SettingsDefTerm.html "ConEmu settings, Default Term page")
-<a href="SettingsDefTerm.html"><div class="snote">Settings page description</div></a>
+{% comment %} [Settings page description](SettingsDefTerm.html) {% endcomment %}
 
 Just turn on checkbox ‘Force ConEmu as default terminal for console applications’,
 optionally turn on checkbox ‘Register on OS startup’ and point ‘parent’ applications
