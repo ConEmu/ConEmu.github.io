@@ -7,7 +7,7 @@ breadcrumbs:
  - url: TableOfContents.html#tips-and-tweaks
    title: Tips and Tweaks
  - url: GitForWindows.html
-   title Using Git for Windows
+   title: Using Git for Windows
 
 readalso:
  - url: SettingsColors.html
