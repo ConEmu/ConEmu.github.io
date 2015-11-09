@@ -214,25 +214,26 @@ One of most powerful options of Far Manager are Macros. There are two styles of 
 
 * Sequence of recorded keypresses. This is very useful, when you need to repeat multiple times one routine operation,
   or for simplifying access to most useful operations.
-  * For example, how to create oldschool keymapping - Esc turns panels on/off.
-    * Press Ctrl+. (Ctrl and Dot on main keyboard) to start recording (red ‘R’ lights in upper-left corner)
-    * Press keys, the sequence: Ctrl+O
-    * Press Ctrl+. again, recording stopped, Far show small dialog ‘Press the desired key’.
-      * Some ‘keys’ may be selected only from drop-down list. Choose ‘Esc’ from there.
-    * Press ‘Enter’ to confirm key selection.
+  * For example, how to create oldschool keymapping - `Esc` turns panels on/off.
+    * Press `Ctrl+.` (`Ctrl` and `Dot` on main keyboard) to start recording (red `R` lights in upper-left corner)
+    * Press keys, the sequence: `Ctrl+O`
+    * Press `Ctrl+`. again, recording stopped, Far shows small dialog ‘Press the desired key’.
+      * Some ‘keys’ may be selected only from drop-down list. Choose `Esc` from there and press `Enter`.
+      * If you press `Ctrl+Shift+.` instead of `Ctrl+.`, you may change recorded sequence after choosing desired key.
+    * Press `Enter` to confirm key selection.
   * If you want to use recored macro in future sessions, you owe to save it
-    * Press ShiftF9 in panels and confirm saving
-    * or, type in command line ‘macro:save’ and press ‘Enter’.
+    * Press `Shift+F9` in panels and confirm saving
+    * or, type in command line `macro:save` and press `Enter`.
   * If you do not need recorded macro anymore
-    * Press (twice) Ctrl+. Ctrl+.
+    * Press (twice) `Ctrl+.` `Ctrl+.`
     * Choose macro key
-    * Press ‘Enter’, confirm deletion
+    * Press `Enter`, confirm deletion
 * Scripts, written on [Macro language](http://translate.google.ru/translate?hl=ru&sl=ru&tl=en&u=http%3A%2F%2Fapi.farmanager.com%2Fru2%2Fmacro%2Fmacrocmd%2Findex.html).
   There are several ways to create such macros
-  * Press ‘Ctrl+.’ any keys (‘Space’ for example) ‘Ctrl+Shift+.’ choose key ‘Enter’.
+  * Press `Ctrl+.` any keys (`Space` for example), `Ctrl+Shift+.` choose the key, and press `Enter`.
     Far opens dialog with recorded key sequence. You can modify it there.
   * Use [MacroLib](http://translate.google.ru/translate?hl=ru&sl=ru&tl=en&u=http%3A%2F%2Fcode.google.com%2Fp%2Ffar-plugins%2Fwiki%2FMacroLib).
-    This plugin (my choice) simplify creation, editing, maintaning and calling Far Macros. Read plugin documentation for description
-    of fml (text) file format.
+    This plugin (my choice for Far 2.x) simplify creation, editing, maintaning and calling Far Macros.
+    Read plugin documentation for description of fml (text) file format.
   * Use `*.farconfig` files. Generally, these files may contain any Far Manager settings, not Macros only.
     Import them with command `far.exe /import <farconfig-file>`.
