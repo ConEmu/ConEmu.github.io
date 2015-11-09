@@ -15,14 +15,14 @@ it is powerful editor, huge number of plugins, powerful macro engine.
   * [There are two platforms (?)](#Two-platforms)
   * [There are three (already) branches of Far Manager](#Three-branches)
   * [There are several types of plugins](#There-are-several-types-of-plugins)
-* [1. Downloads / Installation](#1-Downloads-Installation)
-* [2. Install plugins to your's mind](#2-Install-plugins)
+* [1. Downloads / Installation](#p1-Downloads-Installation)
+* [2. Install plugins to your's mind](#p2-Install-plugins)
   * [Examples](#Examples)
   * [Main plugins sources](#Main-plugins-sources)
   * [Developer sites](#Developer-sites)
-* [3. Help, FAQ, Documentation](#3-Help-FAQ-Documentation)
-* [4. Control](#4-Control)
-* [5. Automation](#5-Automation)
+* [3. Help, FAQ, Documentation](#p3-Help-FAQ-Documentation)
+* [4. Control](#p4-Control)
+* [5. Automation](#p5-Automation)
 
 
 
@@ -92,7 +92,7 @@ I'm using Far 3.0 x86 version (my primary OS is Win 7 x64).
 
 
 
-## 1. Downloads / Installation  {#1-Downloads-Installation}
+## 1. Downloads / Installation  {#p1-Downloads-Installation}
 
 * Download Full version from [official site](http://www.farmanager.com/download.php?l=en).
   Does not matter whatever you use - msi installer or 7z package.
@@ -111,7 +111,7 @@ After installing (unpacking) Far Manager you have such directory structure (by e
 
 
 
-## 2. Install plugins to your's mind  {#2-Install-plugins}
+## 2. Install plugins to your's mind  {#p2-Install-plugins}
 
 There thousands of plugins written for many years. There many sources, where you can download them.
 
@@ -162,7 +162,7 @@ To make Far Manager load new plugins you may:
 
 
 
-## 3. Help, FAQ, Documentation  {#3-Help-FAQ-Documentation}
+## 3. Help, FAQ, Documentation  {#p3-Help-FAQ-Documentation}
 
 Unfortunately for non-Russian speaking users, most of resources are on russian.
 However, you may use google translate, or ask competent users, for example,
@@ -174,7 +174,7 @@ Or, may be, on [SuperUser](http://superuser.com/questions/tagged/far-manager).
 
 
 
-## 4. Control  {#4-Control}
+## 4. Control  {#p4-Control}
 
 Far have oldschool and intuitive NC-like interface :)
 
@@ -208,7 +208,7 @@ This is **very** breaf list of key kombos, read F1 for more information.
 
 
 
-## 5. Automation  {#5-Automation}
+## 5. Automation  {#p5-Automation}
 
 One of most powerful options of Far Manager are Macros. There are two styles of Macro.
 
