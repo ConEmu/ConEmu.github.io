@@ -183,8 +183,13 @@ ANSICON_DEF=7
 
 ### CSI (Control Sequence Initiator) codes   {#CSI_Control_Sequence_Initiator_codes}
 
+**Внимание!** ANSI последовательности адресуют только рабочую область терминала.
+То есть «абсолютные» координаты работают в видимой части терминала,
+область прокрутки (невидимая часть сверху) не может быть адресована.
+
 | Последовательность | Описание |
 |:---|:---|
+| ESC \[ *n* @ | Insert *n* (default 1) blank characters. |
 | ESC \[ *lines* A | Moves cursor up by *lines* lines (1 by default) |
 | ESC \[ *lines* B | Moves cursor down by *lines* lines (1 by default) |
 | ESC \[ *cols* C | Moves cursor rightward by *cols* columns (1 by default) |
@@ -197,11 +202,13 @@ ANSICON_DEF=7
 | ESC \[ *n* K | Erase line. When *n* is 0 or missing: from cursor to end of line. When *n* is 1: erase from start of line to cursor. When *n* is 2: erase whole line **and** moves cursor to first column. |
 | ESC \[ *n* L | Insert *n* (default 1) lines before current, scroll part of screen from current line to bottom. |
 | ESC \[ *n* M | Delete *n* (default 1) lines including current. |
+| ESC \[ *n* P | Delete *n* (default 1) characters. |
 | ESC \[ *lines* S | Scroll screen (whole buffer) up by *lines*. New lines are added at the bottom. |
 | ESC \[ *lines* T | Scroll screen (whole buffer) down by *lines*. New lines are added at the top. |
 | ESC \[ *n* X | Erase *n* (default 1) characters from cursor (fill with spaces and default attributes). |
-| ESC \[ *>* c | Reports `ESC > 67 ; build ; 0 c` |
+| ESC \[ *>* c | Reports `ESC > 0 ; 136 ; 0 c` |
 | ESC \[ c | Reports `ESC [ ? 1 ; 2 c` |
+| ESC \[ *row* d | Moves the cursor to line *row* (absolute, 1-based). |
 | ESC \[ *row* ; *col* f | Set cursor position (same as H). The values *row* and *col* are 1-based. |
 | ESC \[ *a* ; *b* h | Set mode ([see below](#Terminal_modes)). |
 | ESC \[ *a* ; *b* l | Reset mode ([see below](#Terminal_modes)). |
@@ -224,6 +231,14 @@ ANSICON_DEF=7
 | ESC \[ 7 l | Disables line wrapping. Lines wraps at the end of screen buffer. |
 | ESC \[ 25 h | Show text cursor. |
 | ESC \[ 25 l | Hide text cursor. |
+| ESC \[ ? 47 h | Same as ‘ESC \[ ? 1047 h’ |
+| ESC \[ ? 47 l | Same as ‘ESC \[ ? 1047 l’ |
+| ESC \[ ? 1047 h | Activate xterm alternative buffer (no backscroll) |
+| ESC \[ ? 1047 l | Restore xterm working buffer (with backscroll) |
+| ESC \[ ? 1048 h | Save cursor position |
+| ESC \[ ? 1048 l | Restore cursor position |
+| ESC \[ ? 1049 h | Save cursor position and activate xterm alternative buffer (no backscroll) |
+| ESC \[ ? 1049 l | Restore cursor position and restore xterm working buffer (with backscroll) |
 
 
 #### SGR (Select Graphic Rendition) parameters  {#SGR_Select_Graphic_Rendition_parameters}
@@ -236,9 +251,11 @@ ANSICON_DEF=7
 | ESC \[ 3 m | Set ItalicOrInverse |
 | ESC \[ 4 m | Set BackOrUnderline |
 | ESC \[ 5 m | Set BackOrUnderline |
+| ESC \[ 7 m | Use inverse colors |
 | ESC \[ 22 m | Unset BrightOrBold |
 | ESC \[ 23 m | Unset ItalicOrInverse |
 | ESC \[ 24 m | Unset BackOrUnderline |
+| ESC \[ 27 m | Use normal colors |
 | ESC \[ 30...37 m | Set ANSI text color |
 | ESC \[ 38 ; 5 ; *n* m | Set xterm text color, *n* is color index from 0 to 255 |
 | ESC \[ 38 ; 2 ; *r* ; *g* ; *b* m | Set xterm 24-bit text color, *r*, *g*, *b* are from 0 to 255 |
