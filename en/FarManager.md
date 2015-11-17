@@ -2,6 +2,10 @@
 redirect_from: /ru/FarManager.html
 
 title: "Far Manager Introduction"
+
+readalso:
+ - url: "ConEmuFarPlugin.html"
+   title: "Essential ConEmu plugins"
 ---
 
 # Far Manager

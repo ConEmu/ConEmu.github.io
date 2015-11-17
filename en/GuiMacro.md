@@ -10,6 +10,18 @@ description: "GUI macros are the set of functions allowing to control ConEmu win
 breadcrumbs:
  - url: TableOfContents.html#controls
    title: Controls
+
+readalso:
+ - url: "ConEmuC.html#ConEmuC_switches"
+   title: "ConEmuC.exe command line switches"
+ - url: "AutoHotKey.html#syntax"
+   title: "AutoHotKey syntax"
+ - url: "SettingsHotkeys.html"
+   title: "Settings › Keys & Macro page"
+ - url: "AnsiEscapeCodes.html"
+   title: "ANSI sequences"
+ - url: "ConEmuFarPlugin.html"
+   title: "ConEmu plugin for Far Manager"
 ---
 
 # ConEmu GuiMacro
