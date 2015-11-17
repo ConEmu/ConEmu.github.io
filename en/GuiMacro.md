@@ -77,7 +77,7 @@ ConEmuC -GuiMacro:0 print: C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroR
 ConEmu.exe -Detached -GuiMacro "Create(0,1); Context; print(\"echo \\\"Hello world\\\"\");"
 ~~~
     
-* [ANSI X3.64](AnsiEscapeCodes.html) OSC code. The following example, is an example only,
+* [ANSI](AnsiEscapeCodes.html) OSC code. The following example, is an example only,
   if you need to check [‘IsConEmu’](ConEmuC.html) it is better to call
   `"ConEmuC -IsConEmu"` and check %errorlevel%.
 
@@ -254,7 +254,7 @@ print(@"CD /d ""C:\Users""")
 #### Far plugin notes  {#Far_plugin_notes}
 
 When you run some GuiMacro's from Far Manager macro and the string
-has backslashes ("`C:\\Users\\...`") you need to use verbatim strings
+has backslashes (`"C:\\Users\\..."`) you need to use verbatim strings
 or double-double them because ConEmu GuiMacro parser always parse
 escaped symbols itself.
 The GuiMacro may be called from many places (from command line for example)
@@ -383,15 +383,22 @@ or returned via string result if you are using Far 3.0 with Lua.
 Optional parameters are italic.
 
 * [**About** ( "*Page*" )](#About)
+* [**AffinityPriority** ( *Affinity*, *Priority* )](#AffinityPriority)
 * [**Attach** ( *PID*, *Alternative* )](#Attach)
 * [**Break** ( Event, *ProcessGroupId* )](#Break)
 * [**Close** ( What, *Flags* )](#Close)
+* [**Context** ( *Tab*, *Split* )](#Context)
 * [**Copy** ( What, *Format*, "*File*" )](#Copy)
 * [**Create** ( Action, *Confirm*, *AsAdmin* )](#Recreate)
-* [**FindEditor**, **FindViewer**, **FindFarWindow** ( WindowType, "WindowTitle" )](#FindEditor)
+* [**Debug** ( Action )](#Debug)
+* [**Detach**](#Detach)
+* [**FindEditor** ( "FullEditFileName" )](#FindEditor)
+* [**FindViewer** ( "FullViewerFileName" )](#FindEditor)
+* [**FindFarWindow** ( WindowType, "WindowTitle" )](#FindEditor)
 * [**Flash** ( Cmd, *Flags*, *Count*)](#Flash)
 * [**FontSetName** ( "FontFaceName", *FontHeight*, *FontWidth* )](#FontSetName)
 * [**FontSetSize** ( Relative, N )](#FontSetSize)
+* [**GetInfo** ( "Parm1", "*Parm2*", ... )](#GetInfo)
 * [**GetOption** ( "Name" )](#GetOption)
 * [**GroupInput** ( *Cmd* )](#GroupInput)
 * [**HighlightMouse** ( What, Act )](#HighlightMouse)
@@ -400,8 +407,11 @@ Optional parameters are italic.
 * [**IsRealVisible**](#IsRealVisible)
 * [**Keys** ( "Combo1", "*Combo2*", ... )](#Keys)
 * [**MsgBox** ( "Text", "Title", ButtonType )](#MsgBox)
+* [**Palette** ( Cmd, "*NewPalette*"/*NewPaletteIndex* )](#Palette)
 * [**Paste** ( Cmd, "*Text*", "*Text2*", ... )](#Paste)
+* [**PasteExplorerPath** ( DoCd, SetFocus )](#PasteExplorerPath)
 * [**PasteFile** ( Cmd, "*File*", "*CommentMark*" )](#PasteFile)
+* [**Pause** ( *Cmd* )](#Pause)
 * [**Print** ( "*Text*", "*Text2*", ... )](#Print)
 * [**Progress** ( Type, *Value* )](#Progress)
 * [**Recreate** ( Action, *Confirm*, *AsAdmin* )](#Recreate)
@@ -423,6 +433,7 @@ Optional parameters are italic.
 * [**Wiki** ( "*PageName*" )](#Wiki)
 * [**WindowFullscreen**, **WindowMaximize**, **WindowMinimize**](#WindowMode)
 * [**WindowMode** ( "*Mode*" )](#WindowMode)
+* [**WindowPosSize** ( "X", "Y", "W", "H" )](#WindowPosSize)
 * [**Zoom** ( N )](#Zoom)
 
 
@@ -435,6 +446,19 @@ Optional parameters are italic.
 ~~~
 About(["<Page>"])
   - Show ‘About’ dialog with page activated, e.g. ‘About("-new_console")’
+~~~
+
+
+
+### Change affinity and priority of active console  {#AffinityPriority}
+
+~~~
+AffinityPriority( *Affinity*, *Priority* )
+  - Call without arguments to show affinity/priority dialog
+    Affinity: Number - processor mask, same as WinApi's SetProcessAffinityMask
+              "" - empty string means ‘don't change’
+    Priority: Number - priority class, same as WinApi's SetPriorityClass
+              "" - empty string means ‘don't change’
 ~~~
 
 
@@ -476,6 +500,19 @@ Close(<What>[,<Flags>])
 
 
 
+### Change macro execution context  {#Context}
+
+Useful after creating new consoles or switching tabs.
+
+~~~
+Context([<Tab>[,<Split>]])
+  - Change macro execution context
+    Tab: 1-based tab index
+    Split: 1-based split index
+~~~
+
+
+
 ### Copy console contents or selection, plain text or HTML  {#Copy}
 
 ~~~
@@ -488,6 +525,27 @@ Copy(<What>[,<Format>[,"<File>"]])
     Format==1: copy HTML format
     Format==2: copy as HTML
     File: if specified - save to file instead of clipboard
+~~~
+
+
+
+### Create debugger console or memory dumps  {#Debug}
+
+~~~
+Debug(<Action>)
+  - Create debugger console or memory dumps
+    Action==0: Debug active process
+    Action==1: Active process memory dump
+    Action==2: Active process tree memory dump
+~~~
+
+
+
+### Detach active RealConsole from ConEmu  {#Detach}
+
+~~~
+Detach
+  - Detach active RealConsole from ConEmu
 ~~~
 
 
@@ -537,6 +595,18 @@ FontSetSize(Relative,N)
    Relative==1: N (+-1, +-2) - increase/decrease font height
    Relative==2: N (per cents) - alias for Zoom(N)
    returns - "OK", or "InvalidArg"
+~~~
+
+
+
+### Returns value of some ConEmu environment variables  {#GetInfo}
+
+Macro returned environment variables from GUI (`ConEmu.exe` or `ConEmu64.exe`)
+
+~~~
+GetInfo("PID"[,"HWND"[,...]])
+  - Returns values of some ConEmu environment variables
+    GetInfo("PID") returns %ConEmuPID% and so on
 ~~~
 
 
@@ -626,6 +696,21 @@ MsgBox("<Text>","<Title>",<ButtonType>)
 
 
 
+### Change or acquire current console palette  {#Palette}
+
+~~~
+Palette([<Cmd>[,"<NewPalette>"|<NewPaletteIndex>]])
+  - Returns current palette name, change if <Cmd> specified
+     Cmd==0: return palette from ConEmu settings
+     Cmd==1: change palette in ConEmu settings, returns prev palette
+     Cmd==2: return palette from current console
+     Cmd==3: change palette in current console, returns prev palette
+     NewPalette: palette name (string)
+     NewPaletteIndex: 0-based index (number)
+~~~
+
+
+
 ### Paste specified text or Windows clipboard contents  {#Paste}
 
 ~~~
@@ -647,6 +732,17 @@ Paste(<Cmd>[,"<Text>"[,"<Text2>"[...]]])
 
 
 
+### Paste active Explorer window path into ConEmu  {#PasteExplorerPath}
+
+~~~
+PasteExplorerPath (<DoCd>,<SetFocus>)
+  - Activate ConEmu and ‘CD’ to last (top in Z-order) Explorer window path
+     DoCd: 1 - ‘CD’, 0 - paste path only
+     SetFocus: 1 - bring ConEmu to the top, 0 - don't change active window
+~~~
+
+
+
 ### Paste specified or selected file contents  {#PasteFile}
 
 ~~~
@@ -659,6 +755,18 @@ PasteFile(<Cmd>[,"<File>"[,"<CommentMark>"]])
    Cmd==9: paste all lines space-separated
    Cmd==10: paste all lines space-separated, without confirmations
    If "<CommentMark>" specified - skip all lines starting with prefix
+~~~
+
+
+
+### Pause or un-pause current console  {#Pause}
+
+~~~
+Pause([<Cmd>])
+  - Pause current console
+     Cmd==0: switch mode (default)
+     Cmd==1: pause
+     Cmd==2: un-pause
 ~~~
 
 
@@ -911,11 +1019,23 @@ WindowMaximize([<Cmd>])
    returns previous window mode
 WindowMinimize() or WindowMinimize(1)
  - Minimize ConEmu window ("1" means "minimize to the TSA")
-WindowMode([\"<Mode>\"])
+WindowMode(["<Mode>"])
  - Returns or set current window mode
    "NOR", "MAX", "FS" (fullscreen), "MIN", "TSA"
    "TLEFT", "TRIGHT" (tile to left/right), "THEIGHT",
    "MPREV", "MNEXT" (move ConEmu to prev/next monitor)
+~~~
+
+
+
+### Change ConEmu window geometry  {#WindowPosSize}
+
+~~~
+WindowPosSize("<X>", "<Y>", "<W>", "<H>")
+  - Change ConEmu window geometry
+    "<X>" and "<Y>" are pixels (numbers in doublequotes);
+    "<W>" and "<H>" may be cells, percentage or pixels:
+      "80", "40%", "800px".
 ~~~
 
 
