@@ -10,9 +10,13 @@ breadcrumbs:
 
 readalso:
  - url: NewConsole.html
-   title: "Using -new_console switch to change palette, icon, background image, etc."
+   title: "-new_console to change palette, icon, background image, etc."
  - url: SplitScreen.html
    title: "Split Screen or Panes"
+ - url: CommandLine.html
+   title: "GUI, Console and Shells switches"
+ - url: SettingsTasks.html
+   title: "Settings › Tasks page"
 
 otherlang:
    eng: /en/Tasks.html

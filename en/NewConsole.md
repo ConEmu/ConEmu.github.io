@@ -16,6 +16,8 @@ readalso:
    title: Using Tasks
  - url: TerminalVsShell.html
    title: Terminal vs Shell
+ - url: CommandLine.html
+   title: "GUI, Console and Shells switches"
 ---
 
 # Switches -new_console and -cur_console

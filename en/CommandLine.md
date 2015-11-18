@@ -7,6 +7,10 @@ title: "ConEmu | CommandLine - GUI, Console and Shells switches"
 breadcrumbs:
  - url: TableOfContents.html#launch-apps
    title: Launch Apps
+
+readalso:
+ - url: NewConsole.html
+   title: "-new_console and -cur_console"
 ---
 
 # CommandLine - GUI, Console and Shells switches

@@ -13,6 +13,10 @@ readalso:
    title: "Смена палитры, иконки, фонового изображения с помощью -new_console"
  - url: SplitScreen.html
    title: "Сплиты или панели (Split Screen)"
+ - url: CommandLine.html
+   title: "Ключи GUI, Console и Shells"
+ - url: SettingsTasks.html
+   title: "Settings › Tasks"
 
 otherlang:
    eng: /en/Tasks.html

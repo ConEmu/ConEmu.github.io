@@ -7,6 +7,14 @@ title: "ConEmu | Settings › Tasks page"
 breadcrumbs:
  - url: TableOfContents.html#settings
    title: Settings
+
+readalso:
+ - url: Tasks.html
+   title: "Tasks"
+ - url: CommandLine.html
+   title: "GUI, Console and Shells switches"
+ - url: NewConsole.html
+   title: "-new_console and -cur_console"
 ---
 
 # Settings: Tasks
