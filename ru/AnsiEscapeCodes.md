@@ -189,6 +189,8 @@ ANSICON_DEF=7
 
 | Последовательность | Описание |
 |:---|:---|
+| ESC 7 | Save cursor position (same as `ESC [ s`) |
+| ESC 8 | Restore cursor position (same as `ESC [ u`) |
 | ESC \[ *n* @ | Insert *n* (default 1) blank characters. |
 | ESC \[ *lines* A | Moves cursor up by *lines* lines (1 by default) |
 | ESC \[ *lines* B | Moves cursor down by *lines* lines (1 by default) |
