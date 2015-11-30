@@ -36,6 +36,7 @@ Still thinking the problem is inside ConEmu? Read the rest of this wiki.
 * [Complains](#Complains)
 * [Windows power](#Windows_power)
 * [Problems with cygwin](#Problems_with_cygwin)
+  * [How to save bash's history on window close](#bash-history)
 * [Report examples](#Report_examples)
   * [Broken screen output](#Broken_screen_output)
   * [Mouse do not working](#Mouse_do_not_working)
@@ -156,6 +157,29 @@ That means, you should contact cygwin team,
 because ‘console application must work properly in the console’.
 But in your case, cygwin acts properly only under certain terminal emulators (mintty),
 which are not real consoles in fact.
+
+
+
+### How to save bash's history on window close  {#bash-history}
+
+By default, bash saves history on normal `exit`.
+But you may to force it to append each command immediately,
+just add to your `.bashrc`:
+
+~~~
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+~~~
+
+Or even more handy variant:
+
+~~~
+# Save timestamp in the history file
+HISTTIMEFORMAT="%F %T "
+# Don't store duplicates
+HISTCONTROL=ignoredups
+# Allow "sharing" of history between instances
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+~~~
 
 
 ## Report examples  {#Report_examples}
