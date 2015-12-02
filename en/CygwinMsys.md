@@ -37,6 +37,7 @@ Still thinking the problem is inside ConEmu? Read the rest of this wiki.
 * [Windows power](#Windows_power)
 * [Problems with cygwin](#Problems_with_cygwin)
   * [How to save bash's history on window close](#bash-history)
+  * [Few helpful keybindings for .inputrc](#inputrc)
 * [Report examples](#Report_examples)
   * [Broken screen output](#Broken_screen_output)
   * [Mouse do not working](#Mouse_do_not_working)
@@ -179,6 +180,30 @@ HISTTIMEFORMAT="%F %T "
 HISTCONTROL=ignoredups
 # Allow "sharing" of history between instances
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+~~~
+
+
+
+### Few helpful keybindings for .inputrc  {#inputrc}
+
+~~~
+# Ctrl-Left
+"\e[1;5C": forward-word
+
+# Ctrl-Right
+"\e[1;5D": backward-word
+
+# Ctrl-Del
+"\e[3;5~": kill-word
+
+# Ctrl-BS - kill word on the left
+"\x1F": "\C-w"
+
+# Ctrl-K - resets the terminal (commented, I prefer binding below)
+# "\C-k": "\C-e\C-uecho -e \"\\033c\"\n"
+
+# Ctrl-K - clears the input line regardless of cursor pos
+"\C-k": "\C-e\C-u"
 ~~~
 
 
