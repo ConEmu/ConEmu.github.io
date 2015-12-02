@@ -33,14 +33,15 @@ ConEmu (начиная с версии 120520d) поддерживает пос�
     * [Пример 3: прокрутить консоль](#Example_3_scroll_console_to_bottom)
   * [TechInfo](#TechInfo)
     * [Проверка совместимости](#compat-check)
-  * [Переменная окружения](#Переменная_окружения)
-* [Список поддерживаемых кодов](#Список_поддерживаемых_кодов)
+  * [Переменная окружения](#Environment_variable)
+* [Список поддерживаемых кодов](#List_of_supported_codes)
+  * [C1 Control Characters](#C1_Control_Chars)
   * [CSI (Control Sequence Initiator) codes](#CSI_Control_Sequence_Initiator_codes)
     * [Terminal modes](#Terminal_modes)
     * [SGR (Select Graphic Rendition) parameters](#SGR_Select_Graphic_Rendition_parameters)
   * [OSC (Operating system commands)](#OSC_Operating_system_commands)
     * [ConEmu specific OSC](#ConEmu_specific_OSC)
-* [Примеры](#Примеры)
+* [Примеры](#Examples)
   * [ANSI and xterm color maps](#ANSI_and_xterm_color_maps)
     * [Xterm 256 color map](#Xterm_256_color_map)
     * [Standard ANSI color map](#Standard_ANSI_color_map)
@@ -181,6 +182,18 @@ ANSICON_DEF=7
 
 ## Список поддерживаемых кодов  {#List_of_supported_codes}
 
+### C1 Control Characters  {#C1_Control_Chars}
+
+| Sequence | Description |
+|:---|:---|
+| ESC 7 | Save cursor position (same as `ESC [ s`) |
+| ESC 8 | Restore cursor position (same as `ESC [ u`) |
+| ESC E | Same as `\r\n` |
+| ESC D | Same as `\n` but preserves X coord |
+| ESC M | Reverse `\n` |
+| ESC c | Full reset (clear screen, backscroll, move cursor to the upper-left corner) |
+
+
 ### CSI (Control Sequence Initiator) codes   {#CSI_Control_Sequence_Initiator_codes}
 
 **Внимание!** ANSI последовательности адресуют только рабочую область терминала.
@@ -189,8 +202,6 @@ ANSICON_DEF=7
 
 | Последовательность | Описание |
 |:---|:---|
-| ESC 7 | Save cursor position (same as `ESC [ s`) |
-| ESC 8 | Restore cursor position (same as `ESC [ u`) |
 | ESC \[ *n* @ | Insert *n* (default 1) blank characters. |
 | ESC \[ *lines* A | Moves cursor up by *lines* lines (1 by default) |
 | ESC \[ *lines* B | Moves cursor down by *lines* lines (1 by default) |
@@ -301,7 +312,7 @@ For simplifying, endings in the following table marked as «ST».
 
 
 
-## Примеры  {#Примеры}
+## Примеры  {#Examples}
 
 
 ### ANSI and xterm color maps   {#ANSI_and_xterm_color_maps}

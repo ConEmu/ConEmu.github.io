@@ -33,6 +33,7 @@ and its extension
     * [Compatibility check](#compat-check)
   * [Environment variable](#Environment_variable)
 * [List of supported codes](#List_of_supported_codes)
+  * [C1 Control Characters](#C1_Control_Chars)
   * [CSI (Control Sequence Initiator) codes](#CSI_Control_Sequence_Initiator_codes)
     * [Terminal modes](#Terminal_modes)
     * [SGR (Select Graphic Rendition) parameters](#SGR_Select_Graphic_Rendition_parameters)
@@ -179,6 +180,18 @@ ANSICON_DEF=7
 
 ## List of supported codes  {#List_of_supported_codes}
 
+### C1 Control Characters  {#C1_Control_Chars}
+
+| Sequence | Description |
+|:---|:---|
+| ESC 7 | Save cursor position (same as `ESC [ s`) |
+| ESC 8 | Restore cursor position (same as `ESC [ u`) |
+| ESC E | Same as `\r\n` |
+| ESC D | Same as `\n` but preserves X coord |
+| ESC M | Reverse `\n` |
+| ESC c | Full reset (clear screen, backscroll, move cursor to the upper-left corner) |
+
+
 ### CSI (Control Sequence Initiator) codes   {#CSI_Control_Sequence_Initiator_codes}
 
 **NB** ANSI sequences address terminal working space only.
@@ -187,8 +200,6 @@ backscroll buffer (upper invisible parts) may not be accessed in that way.
 
 | Sequence | Description |
 |:---|:---|
-| ESC 7 | Save cursor position (same as `ESC [ s`) |
-| ESC 8 | Restore cursor position (same as `ESC [ u`) |
 | ESC \[ *n* @ | Insert *n* (default 1) blank characters. |
 | ESC \[ *lines* A | Moves cursor up by *lines* lines (1 by default) |
 | ESC \[ *lines* B | Moves cursor down by *lines* lines (1 by default) |
