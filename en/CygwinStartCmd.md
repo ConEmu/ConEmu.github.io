@@ -28,17 +28,30 @@ The example lines were copied from [SU question](http://superuser.com/a/344486/1
 You need to modify your `~/.bashrc` profile script adding at the end:
 
 ~~~
-[[ $startup_cmd ]] && {
-  declare +x startup_cmd
-  eval "$startup_cmd"
+[[ $STARTUP_CMD ]] && {
+  declare +x STARTUP_CMD
+  eval "$STARTUP_CMD"
+  unset STARTUP_CMD
 }
+~~~
+
+Or, if previous snippet does not work (msys1 does not have `locale`):
+
+~~~
+if [[ -n "${STARTUP_CMD}" ]]; then
+  $STARTUP_CMD
+  unset STARTUP_CMD
+fi
 ~~~
 
 And configure your ConEmu's task like following:
 
 ~~~
-set "startup_cmd=echo 'This is sample command' && echo 'And this is another command'" && bash -l -i
+set "STARTUP_CMD=echo 'This is sample command' && echo 'And this is another command'" && bash -l -i
 ~~~
+
+**NB** It's recommended to use **upper-case** variable name.
+Some versions have ignored lower-case or camel-case variable names.
 
 
 
