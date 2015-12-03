@@ -31,9 +31,9 @@ breadcrumbs:
 | -Title *title* | Set **fixed** *title* for ConEmu window. You may use environment variables in *title*. |
 | -Multi `|` -NoMulti | Enable or disable multiconsole features |
 | -Single `|` -Reuse | New console will be started in new tab of existing ConEmu |
-| -NoSingle `|` Force new ConEmu window even if single mode is selected in the Settings |
+| -NoSingle | Force new ConEmu window even if single mode is selected in the Settings |
 | -ShowHide `|` -ShowHideTSA | May be used with AutoHotKey or desktop shortcuts. Works like ‘Minimize/Restore’ global hotkey. |
-| -NoUpdate `|` Disable automatic checking for updates on startup |
+| -NoUpdate | Disable automatic checking for updates on startup |
 | -CT`[0|1]` | Anti-aliasing: `-ct0` - off, `-ct1` - standard, `-ct` - clear type |
 | -Font *fontname* | Specify the font name |
 | -Size *fontsize* | Specify the font size |
