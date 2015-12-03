@@ -200,7 +200,7 @@ PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; h
 "\x1F": "\C-w"
 
 # Ctrl-K - resets the terminal (commented, I prefer binding below)
-# "\C-k": "\C-e\C-uecho -e \"\\033c\"\n"
+# "\C-k": "\C-e\C-uecho -e \"\\033c\\c\"\n"
 
 # Ctrl-K - clears the input line regardless of cursor pos
 "\C-k": "\C-e\C-u"
