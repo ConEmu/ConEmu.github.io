@@ -41,6 +41,7 @@ breadcrumbs:
 | -FontDir *fontfolder* | Loads all fonts from folder (multiple pairs allowed) |
 | -BufferHeight *lines* | Set console buffer height. May be used with cmd.exe, PowerShell, etc. |
 | -Wnd{X`|`Y`|`W`|`H} *value* | Set window position and size. |
+| -Monitor *monitor-id* | Place window on the specified monitor. *Monitor-id* may be specified by: 1-based index; hex descriptor (e.g. "x00010001"); device name (e.g. "\\.\DISPLAY1"). You may check this values in the [About/SysInfo](AboutDialog.html). |
 | -Palette *Name* | Choose named color palette. |
 | -Log `|` -Log1 `|` -Log2 | Used to create debug log files |
 | -Reset | Don't load settings from registry/xml. |
