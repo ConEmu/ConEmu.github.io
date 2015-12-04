@@ -17,7 +17,7 @@ readalso:
 cygwin, msys, msysgit and ConEmu
 {% endcomment %}
 
-<h1 id="Abstract"> Troubleshooting Cygwin and Msys problems </h1>
+# Troubleshooting Cygwin and Msys problems
 
 Please, don't report third-party bugs on the ConEmu issue tracker,
 report cygwin and msys bugs to their [authors](http://dir.gmane.org/gmane.os.cygwin)!
@@ -25,6 +25,8 @@ report cygwin and msys bugs to their [authors](http://dir.gmane.org/gmane.os.cyg
 ConEmu is terminal! It just the display for output of console applications.
 Bugs in applications will lead wrong behaviour and display output in ConEmu.
 Undoubtedly.
+
+**Experimental** [cygwin/msys terminal connector](#cygwin-connector) is on the way.
 
 Still thinking the problem is inside ConEmu? Read the rest of this wiki.
 
@@ -36,6 +38,7 @@ Still thinking the problem is inside ConEmu? Read the rest of this wiki.
 * [Complains](#Complains)
 * [Windows power](#Windows_power)
 * [Problems with cygwin](#Problems_with_cygwin)
+  * [cygwin/msys terminal connector](#cygwin-connector)
   * [How to save bash's history on window close](#bash-history)
   * [Few helpful keybindings for .inputrc](#inputrc)
 * [Report examples](#Report_examples)
@@ -161,6 +164,24 @@ which are not real consoles in fact.
 
 
 
+### cygwin/msys terminal connector  {#cygwin-connector}
+
+Experimental approach to implement POSIX-compatible terminal (pty)
+emulation is [on the go](https://github.com/Maximus5/cygwin-connector).
+
+Well, in fact, [cygwin/msys connector](https://github.com/Maximus5/cygwin-connector)
+is a simple tool which forces cygwin/msys core to disable ANSI processing
+and let it just pass ANSI sequences to terminal unmodified.
+
+Why the terminal application must create special hacks to disable ANSI processing?
+I have not idea... Just a simple switch would be enough, but it does not exist.
+
+Anyway, anyone may go to [cygwin/msys connector](https://github.com/Maximus5/cygwin-connector),
+download fresh test release, update ConEmu to **the latest ALPHA version**,
+change your cygwin/msys task startup command and use console tools in ConEmu's native way.
+
+
+
 ### How to save bash's history on window close  {#bash-history}
 
 By default, bash saves history on normal `exit`.
@@ -181,6 +202,8 @@ HISTCONTROL=ignoredups
 # Allow "sharing" of history between instances
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 ~~~
+
+**NB** Read about [cygwin/msys terminal connector](#cygwin-connector) above.
 
 
 
@@ -205,6 +228,9 @@ PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; h
 # Ctrl-K - clears the input line regardless of cursor pos
 "\C-k": "\C-e\C-u"
 ~~~
+
+**NB** Read about [cygwin/msys terminal connector](#cygwin-connector) above.
+
 
 
 ## Report examples  {#Report_examples}
