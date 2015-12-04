@@ -48,6 +48,26 @@ but at the moment, may be, better and faster way is request the ‘feature’
 from cygwin developers.
 
 
+
+### cygwin/msys terminal connector  {#cygwin-connector}
+
+Experimental approach to implement POSIX-compatible terminal (pty)
+emulation is [on the go](CygwinMsysConnector.html).
+
+Well, in fact, [cygwin/msys connector](CygwinMsysConnector.html)
+is a simple tool which forces cygwin/msys core to disable ANSI processing
+and let it just pass ANSI sequences to terminal unmodified.
+
+Why the terminal application must create special hacks to disable ANSI processing?
+I have not idea... Just a simple switch would be enough, but it does not exist.
+
+Anyway, anyone may go to [cygwin/msys connector](CygwinMsysConnector.html),
+download fresh test release, update ConEmu to
+<strong><a href="http://www.fosshub.com/ConEmu.html" rel="nofollow">the latest ALPHA version</a></strong>,
+change your cygwin/msys task startup command and use console tools in ConEmu's native way.
+
+
+
 ## Some links
 
 * [Fixing prompt coloring with Cygwin, zsh and ohmyzsh](https://plus.google.com/100883784258900633261/posts/GZ7fGAA4m6W)

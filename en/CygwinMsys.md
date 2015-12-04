@@ -177,7 +177,8 @@ Why the terminal application must create special hacks to disable ANSI processin
 I have not idea... Just a simple switch would be enough, but it does not exist.
 
 Anyway, anyone may go to [cygwin/msys connector](CygwinMsysConnector.html),
-download fresh test release, update ConEmu to **the latest ALPHA version**,
+download fresh test release, update ConEmu to
+<strong><a href="http://www.fosshub.com/ConEmu.html" rel="nofollow">the latest ALPHA version</a></strong>,
 change your cygwin/msys task startup command and use console tools in ConEmu's native way.
 
 
