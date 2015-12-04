@@ -167,16 +167,16 @@ which are not real consoles in fact.
 ### cygwin/msys terminal connector  {#cygwin-connector}
 
 Experimental approach to implement POSIX-compatible terminal (pty)
-emulation is [on the go](https://github.com/Maximus5/cygwin-connector).
+emulation is [on the go](CygwinMsysConnector.html).
 
-Well, in fact, [cygwin/msys connector](https://github.com/Maximus5/cygwin-connector)
+Well, in fact, [cygwin/msys connector](CygwinMsysConnector.html)
 is a simple tool which forces cygwin/msys core to disable ANSI processing
 and let it just pass ANSI sequences to terminal unmodified.
 
 Why the terminal application must create special hacks to disable ANSI processing?
 I have not idea... Just a simple switch would be enough, but it does not exist.
 
-Anyway, anyone may go to [cygwin/msys connector](https://github.com/Maximus5/cygwin-connector),
+Anyway, anyone may go to [cygwin/msys connector](CygwinMsysConnector.html),
 download fresh test release, update ConEmu to **the latest ALPHA version**,
 change your cygwin/msys task startup command and use console tools in ConEmu's native way.
 
