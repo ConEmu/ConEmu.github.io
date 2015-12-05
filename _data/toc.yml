@@ -459,6 +459,10 @@
   url: "CygwinMsys.html"
   children:
     -
+      eng: "Cygwin/Msys connector"
+      rus: "Cygwin/Msys connector"
+      url: "CygwinMsysConnector.html"
+    -
       eng: "Cygwin & ${HOME}"
       rus: "Cygwin & ${HOME}"
       url: "CygwinStartDir.html"
