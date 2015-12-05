@@ -38,7 +38,8 @@ Please note, status of this plugin is ‘Experimental’.
 
 
 ## Screenshots  {#screenshots}
-##### Just a `cat AnsiColors256.ans` from bash
+
+#### Just a `cat AnsiColors256.ans` from bash
 ![cygwin](/img/cygwin-256colors.png)
 
 
