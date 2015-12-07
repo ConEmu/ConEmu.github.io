@@ -82,6 +82,7 @@ But users have to [configure shells they are using](#What_you_shall_do_to_get_CD
 ## What you shall do to get **CD** support   {#What_you_shall_do_to_get_CD_support}
 
 * [cmd and tcc](#cmd_and_tcc)
+* [cygwin/msys shells via PS1](#connector-ps1)
 * [bash and some other cygwin shells](#bash_and_other_cygwin_shells)
 * [zsh](#zsh)
 * [PowerShell](#PowerShell)
@@ -90,6 +91,26 @@ But users have to [configure shells they are using](#What_you_shall_do_to_get_CD
 
 Just enable [Inject ConEmuHk](ConEmuHk.html) feature.
 ConEmu will maintain **CD** for you automatically.
+
+
+
+### cygwin/msys shells via PS1   {#connector-ps1}
+
+**Warning!** This options will work only with
+[cygwin/msys connector](CygwinMsysConnector.html)!
+
+For example, you may configure your bash by appending
+to your `.bashrc` following sequence:
+
+~~~
+\033]9;9;"$PWD"\007
+~~~
+
+So, my own prompt looks like this:
+
+~~~
+PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ \033]9;9;"$PWD"\007'
+~~~
 
 
 ### bash and some other cygwin shells   {#bash_and_other_cygwin_shells}
