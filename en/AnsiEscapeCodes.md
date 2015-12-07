@@ -290,7 +290,7 @@ For simplifying, endings in the following table marked as ‘ST’.
 
 | Sequence | Description |
 |:---|:---|
-| ESC ] 2 ; "*txt*" ST | Set console window title to *txt*. |
+| ESC ] 0..2 ; "*txt*" ST | Set console window title to *txt*. |
 
 
 #### ConEmu specific OSC  {#ConEmu_specific_OSC}
