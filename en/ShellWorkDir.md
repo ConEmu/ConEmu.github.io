@@ -103,13 +103,16 @@ For example, you may configure your bash by appending
 to your `.bashrc` following sequence:
 
 ~~~
-\033]9;9;"$PWD"\007
+\[\e]9;9;"\w"\007\033]9;12\007\]
 ~~~
+
+**NB** Don't forget to ‘escape’ non-printable parts of `PS1` with `\[` and `\]`.
+This is required to avoid weird behavior of readline when you type really long commands.
 
 So, my own prompt looks like this:
 
 ~~~
-PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ \033]9;9;"$PWD"\007'
+PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ \[\e]9;9;"\w"\007]'
 ~~~
 
 
