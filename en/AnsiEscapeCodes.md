@@ -307,6 +307,8 @@ For simplifying, endings in the following table marked as ‘ST’.
 | ESC ] 9 ; 8 ; "*env*" ST | Output value of environment variable. |
 | ESC ] 9 ; 9 ; "*cwd*" ST | Inform ConEmu about shell current working directory. |
 | ESC ] 9 ; 10 ST | Request xterm keyboard emulation. |
+| ESC ] 9 ; 11; "*txt*" ST | Just a ‘comment’, skip it. |
+| ESC ] 9 ; 12 ST | Let ConEmu treat current cursor position as prompt start. Useful with `PS1`. |
 
 
 
