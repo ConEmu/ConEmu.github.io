@@ -38,7 +38,7 @@ or anything else, spreading the word for example.
 
 {% for post in site.posts %}{%if post.build %}
 <article>
-<h2 id="Build_{{ post.build }}"><a href="{{ post.url }}">Build {{ post.build }}{% if page.stage != '' and page.stage %} ({{ page.stage }}){% endif %}</a></h2>
+<h2 id="Build_{{ post.build }}"><a href="{{ post.url }}">Build {{ post.build }}{% if post.stage != '' and post.stage %} ({{ post.stage }}){% endif %}</a></h2>
 {{ post.content }}
 </article>
 {% endif %}{% endfor %}
