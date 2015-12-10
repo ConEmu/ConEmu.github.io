@@ -41,7 +41,7 @@ This page was saved from: {{site.url}}{{page.url}}
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
 
 {% if page.category == "blog" and page.build %}
-<title>Build {{ page.build }}</title>
+<title>Build {{ page.build }}{% if page.stage != '' and page.stage %} ({{ page.stage }}){% endif %}</title>
 {% else %}
 <title>{{page.title}}</title>
 {% if page.description != '' and page.description != nil %}<meta name="description" content="{{page.description}}">{% endif %}
@@ -79,7 +79,7 @@ This page was saved from: {{site.url}}{{page.url}}
 	<h1>{% if page.h1_title %}{{ page.h1_title }}{% else %}{{ page.title }}{% endif %}</h1>{% if page.h1_content != '' and page.h1_content != nil %}
 	<p>{{ page.h1_content }}</p>{% endif %}
 {% elsif page.category == "blog" and page.build %}
-<h2 class="h0" id="Build_{{ page.build }}"><a href="{{ page.url }}"> Build {{ page.build }} </a></h2>
+<h2 class="h0" id="Build_{{ page.build }}"><a href="{{ page.url }}"> Build {{ page.build }}{% if page.stage != '' and page.stage %} ({{ page.stage }}){% endif %} </a></h2>
 {% endif %}
 
 {{ content }}
