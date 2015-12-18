@@ -14,6 +14,8 @@ readalso:
    title: Settings › Controls page
  - url: GlobalHotKeys.html
    title: Global Hot Keys
+ - url: AppsKey.html
+   title: "Where is an Apps Key?"
 ---
 
 <!-- Content starts -->
@@ -24,6 +26,7 @@ readalso:
 * [Configurable hotkeys](#Configurable_hotkeys)
 * [Host key](#Host_key)
 * [Full list of hotkeys](#Full_list)
+* [Where is an Apps Key?][AppsKey.html]
 
 
 ## Please note!  {#Please_note}
