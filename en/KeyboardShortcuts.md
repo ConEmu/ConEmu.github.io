@@ -26,7 +26,7 @@ readalso:
 * [Configurable hotkeys](#Configurable_hotkeys)
 * [Host key](#Host_key)
 * [Full list of hotkeys](#Full_list)
-* [Where is an Apps Key?][AppsKey.html]
+* [Where is an Apps Key?](AppsKey.html)
 
 
 ## Please note!  {#Please_note}
