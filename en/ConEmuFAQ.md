@@ -28,7 +28,7 @@ Frequenly asked user questions about ConEmu usage.
     * [Q. How to launch an application in a new ConEmu tab?](#q-1-9)
     * [Q. How to use the '-new_console' parameter?](#q-1-10)
     * [Q. Which environment variables does ConEmu set?](#q-1-11)
-    * [Q. Launched program outputs nothing.](#q-1-12)
+    * [Q. Launched console program outputs nothing.](#q-1-12)
     * [Q. A program does not work in «Long console output» mode.](#q-1-13)
   * [Distribution package](#Distribution_package)
     * [Q. What is the purpose of `ConEmuSetup.*.exe`?](#q-2-1)
@@ -185,8 +185,11 @@ A. A missing or non-Unicode font was specified in ConEmu's settings (Settings-Co
 
 #### Q. Is it possible to run a GUI application in a ConEmu tab?   {#q-1-8}
 
-
-A. Yes, with certain GUI applications. Example: Putty, Notepad, and others.
+A. Yes, with **certain** GUI applications. Example: Putty, Notepad, and others.
+Please note, that ConEmu can't modify [ChildGui](ChildGui.html) behavior,
+and you may notice visual or controlling problems with applications,
+which were not designed for embedding.
+This is not a ConEmu's problem, please contact your application author.
 
 
 
@@ -238,8 +241,9 @@ A. Read wiki page [ConEmu Environment](ConEmuEnvironment.html).
 
 
 
-#### Q. Launched program outputs nothing.   {#q-1-12}
+#### Q. Launched console program outputs nothing.   {#q-1-12}
 
+**This question covers only [console applications](ConsoleApplication.html)!**
 
 A. Certain programs work with the console's alternative buffer - e.g. telnet.exe, launched without parameters. A history of this issue can be read here: [Issue 65](http://github.com/Maximus5/conemu-old-issues/issues/65). The problem is fixed in version 120504 (the «Inject [ConEmuHk](ConEmuHk.html)» flag must be set). In previous versions, the workaround was to show the real console (CtrlWinAltSpace), and temporarily work with it.
 
@@ -902,6 +906,3 @@ A. "Tahoma" is the default font used for tab captions. Choose another font which
 
 
 A. Update GoldenDict to version [1.0.1-271](http://goldendict.org/forum/viewtopic.php?p=7835#p7835) or higher.
-
-
-<!-- Content ends -->
