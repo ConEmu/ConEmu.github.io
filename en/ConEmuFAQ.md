@@ -478,9 +478,10 @@ A. The real console was not hidden. Check the 'Visible' flag on the 'Features' t
 #### Q. How to configure a bitmap font?   {#q-6-3}
 
 
-A. The bitmap fonts selectable in the standard console's properties are actually the Terminal font. For example, the bitmap '8 x 12' font is 'Terminal 12 x 8' in ConEmu, '12 x 16' -> 'Terminal 16 x 12', etc. <blockquote>Take note: The 'Charset' field must be set to 'OEM'. 
-Personally, I prefer 'Fixedsys 16 x 8', which is absent in the standard console. 
-</blockquote>
+A. The bitmap fonts selectable in the standard console's properties are actually the Terminal font. For example, the bitmap '8 x 12' font is 'Terminal 12 x 8' in ConEmu, '12 x 16' -> 'Terminal 16 x 12', etc.
+
+> Take note: The 'Charset' field must be set to 'OEM'. 
+> Personally, I prefer 'Fixedsys 16 x 8', which is absent in the standard console.
 
 
 A. In the font list you may directly select e.g. `[Raster Fonts 8x12]`.
@@ -698,7 +699,9 @@ A. No issues for this problem have been filed so far. Nevertheless, if hang occu
 #### Q. How to create a minidump   {#q-9-3}
 
 
-A. Windows XP and above. <blockquote>Press **Win+R** and run the following command, it will create a full process memory dump (it may be large enough).
+A. **Windows XP and above.**
+
+Press `Win+R` and run the following command, it will create a full process memory dump (it may be large enough).
 
 ~~~
 C:\Program Files\ConEmu\ConEmu\ConEmuC.exe /DEBUGPID=Your_PID /FULL
@@ -707,17 +710,24 @@ Or, create a small process memory dump. Yes, it will be small, but may contains 
 ~~~
 C:\Program Files\ConEmu\ConEmu\ConEmuC.exe /DEBUGPID=Your_PID /MINI
 ~~~
-</blockquote><blockquote>Substitute *Your_PID* with the process ID, [read below](MemoryDump.html#How_to_find_Process_ID_(PID)). You will be offered to choose filename for a minidump. 
-</blockquote><blockquote>***Warning!*** Before creating dumps of Far Manager please ensure that "far.exe" was started with "/x" switch. 
-</blockquote>
-A. Windows 7 and up. <blockquote>*Warning! This method only works for processes with the same bitness as the operating system. Therefore, you won't be able to create a working minidump for 32-bit processes when using a 64-bit Windows version.* 
-</blockquote>    <blockquote>Open Windows' Task Manager, switch to the "Processes" tab, right-click the process, and select "Create dump file". 
-</blockquote>
+
+Substitute *Your_PID* with the process ID, [read below](MemoryDump.html#How_to_find_Process_ID_(PID)).
+You will be offered to choose filename for a minidump.
+
+**Warning!** Before creating dumps of Far Manager please ensure that "far.exe" was started with "/x" switch.
+
+A. **Windows 7 and up.**
+
+*Warning! This method only works for processes with the same bitness as the operating system.
+Therefore, you won't be able to create a working minidump for 32-bit processes when using a 64-bit Windows version.*
+
+Open Windows' Task Manager, switch to the "Processes" tab, right-click the process, and select "Create dump file".
 
 
-A. Process Explorer. <blockquote>«Process Explorer» can also create minidumps, however *it will also fail to create a correct minidump for a 32-bit process on a 64-bit system*. 
-</blockquote>
+A. **Process Explorer.**
 
+‘Process Explorer’ can also create minidumps,
+however *it will also fail to create a correct minidump for a 32-bit process on a 64-bit system*.
 
 
 
