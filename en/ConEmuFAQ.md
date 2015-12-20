@@ -16,6 +16,12 @@ otherlang:
 
 Frequenly asked user questions about ConEmu usage.
 
+Please note, that this document has been written for a long period,
+and some answers may be obsolete.
+If you find any Q/A, which differs from other parts of
+[documentation](TableOfContents.html),
+please let us know via ‘Suggest better edit’ link at the bottom of the page.
+
   * [General](#q-1-general)
     * [Q. I found a bug, what should I do?](#q-1-1)
     * [Q. What about ConMan , alternative console, etc.?](#q-1-2)
