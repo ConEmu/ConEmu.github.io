@@ -141,7 +141,7 @@ you may use `-new_console` or `-cur_console` switches.
 -cur_console[:switches]
    a - RunAs shell verb (as Admin on Vista+, user/pwd in Win2k and WinXP)
    b - create background tab
-   c - force enable ‘Press Enter or Esc to close console’ (default)
+   c[0] - force enable [silent] ‘Press Enter or Esc to close console’
    C:"<iconfile>" - specify icon used in tab
    d:"<dir>" - specify working directory
    f - force starting console active, useful when starting several consoles simultaneously
