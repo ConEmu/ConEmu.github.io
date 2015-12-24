@@ -601,12 +601,15 @@ FontSetSize(Relative,N)
 
 ### Returns value of some ConEmu environment variables  {#GetInfo}
 
-Macro returned environment variables from GUI (`ConEmu.exe` or `ConEmu64.exe`)
+Macro returned requested information from GUI (`ConEmu.exe` or `ConEmu64.exe`)
 
 ~~~
 GetInfo("PID"[,"HWND"[,...]])
   - Returns values of some ConEmu environment variables
-    GetInfo("PID") returns %ConEmuPID% and so on
+    GetInfo("PID") - %ConEmuPID% and so on
+  - Returns additional information about RealConsole
+    GetInfo("Root") - XML with RootProcess info
+    GetInfo("ActivePID","CurDir") - as is
 ~~~
 
 
