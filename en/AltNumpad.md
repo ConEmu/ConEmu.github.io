@@ -13,6 +13,8 @@ breadcrumbs:
 readalso:
  - url: TableOfContents.html#controls
    title: "Keyboard and Mouse in ConEmu"
+ - url: UnicodeSupport.html
+   title: "Unicode support in ConEmu"
  - url: https://msdn.microsoft.com/en-us/goglobal/bb964658.aspx
    title: "Alt+Numpad in Microsoft glossary"
 ---
