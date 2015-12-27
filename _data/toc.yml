@@ -441,6 +441,10 @@
       rus: "Глобальные клавиши"
       url: "GlobalHotKeys.html"
     -
+      eng: "Alt+Numpad"
+      rus: "Alt+Numpad"
+      url: "AltNumpad.html"
+    -
       eng: "Using mouse"
       rus: "Мышь"
       url: "UsingMouse.html"
