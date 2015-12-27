@@ -26,7 +26,8 @@ and it's obviously impossible to place all of them on the standard 101-keys
 keyboards.
 
 Alt+Numpad helps. Using this method you may enter any character by its number.
-Turn on `NumLock`, hold down left `Alt` key (not an `AltGr`) and type type number.
+Turn on `NumLock`, hold down **left** `Alt` key (**not** an `AltGr`),
+and type type number.
 
 **Note** All **numbers** must be entered **on the numpad**
 (numeric keypad, right part of keyboard) with `NumLock` **turned on**!
