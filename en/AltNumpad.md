@@ -31,20 +31,21 @@ Turn on `NumLock`, hold down left `Alt` key (not an `AltGr`) and type type numbe
 With exception of hexadecimal `A`..`F`, of course they are entered
 on the main keyboard part.
 
-* [Unicode: `Alt`-`+`-`xxxx`](#alt-xxxx)
-* [`Alt`-`0ddd` and `Alt`-`ddd`](#alt-decimal)
-  * [ANSI: `Alt`-`0ddd`](#alt-0ddd)
-  * [OEM: `Alt`-`ddd`](#alt-ddd)
+* [Unicode: ‘Alt’-‘+’-‘xxxx’](#alt-xxxx)
+* [‘Alt’-‘0ddd’ or ‘Alt’-‘ddd’](#alt-decimal)
+  * [ANSI: ‘Alt’-‘0ddd’](#alt-0ddd)
+  * [OEM: ‘Alt’-‘ddd’](#alt-ddd)
 
 
-## Unicode: `Alt`-`+`-`xxxx`  {#alt-xxxx}
+## Unicode: ‘Alt’-‘+’-‘xxxx’  {#alt-xxxx}
 
 This method allows to enter character by its **hexadecimal** number.
 Find character codebase on the [www.unicode.org](http://www.unicode.org/charts/).
 
-> Hold `Alt`, press `+` on the numeric keypad (aka `GrayPlus`),
-> and then enter unicode ‘codebase’,
-> up to four hex numbers.
+* Hold `Alt`;
+* press `+` on the numeric keypad (aka `GrayPlus`);
+* enter unicode ‘codebase’, up to four hex numbers;
+* release `Alt`.
 
 For example, to enter Russian capital ‘Я’ press `Alt`-`+`-`42F`.
 
@@ -58,7 +59,7 @@ registry has been set up properly. If not, change registry and re-logon.
 "EnableHexNumpad"="1"
 ~~~
 
-## `Alt`-`0ddd` and `Alt`-`ddd`  {#alt-decimal}
+## ‘Alt’-‘0ddd’ or ‘Alt’-‘ddd’  {#alt-decimal}
 
 Enter character by its decimal codepoint in ANSI or OEM.
 In theory, Windows uses system ACP and OEMCP to convert
@@ -69,12 +70,12 @@ To check what is your ACP and OEMCP look at
 [About/SysInfo](AboutDialog.html#About-SysInfo.png).
 
 
-### ANSI: `Alt`-`0ddd`  {#alt-0ddd}
+### ANSI: ‘Alt’-‘0ddd’  {#alt-0ddd}
 
-> Hold `Alt`,
-> **press `0` on the numeric keypad**,
-> and then enter **ANSI** ‘codebase’,
-> up to three decimal numbers.
+* Hold `Alt`;
+* **press `0` on the numeric keypad**;
+* enter **ANSI** ‘codebase’,  up to three decimal numbers;
+* release `Alt`.
 
 Example: `Alt`-`096` types ‘Grave Accent’.
 
@@ -83,11 +84,11 @@ using this method, regardless the fact my ACP is 1251 and ‘Russian’
 was set as default for non-unicode applications in regional settings.
 
 
-### OEM: `Alt`-`ddd`  {#alt-ddd}
+### OEM: ‘Alt’-‘ddd’  {#alt-ddd}
 
-> Hold `Alt`,
-> and then enter **OEM** ‘codebase’,
-> up to three decimal numbers.
+* Hold `Alt`;
+* enter **OEM** ‘codebase’, up to three decimal numbers;
+* release `Alt`.
 
 Example: `Alt`-`240` types Russian capital ‘Ё’ if OEMCP is 866.
 
