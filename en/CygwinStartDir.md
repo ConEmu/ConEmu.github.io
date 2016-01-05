@@ -5,6 +5,10 @@ redirect_from:
  - /ru/CygwinWorkDir.html
 
 title: "ConEmu | Cygwin Startup Directory"
+
+breadcrumbs:
+ - url: TableOfContents.html#cygwin-and-msys
+   title: Cygwin and Msys
 ---
 
 # cygwin, mingw, ConEmu and start up directory

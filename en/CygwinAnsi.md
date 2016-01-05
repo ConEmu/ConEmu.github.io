@@ -12,6 +12,8 @@ breadcrumbs:
    title: Cygwin and Msys
 
 readalso:
+ - url: CygwinMsysConnector.html
+   title: "cygwin/msys connector"
  - url: RoadMap.html#cygwin-terminal
    title: "RoadMap: Better Cygwin/MSys support"
  - url: CygwinMsys.html

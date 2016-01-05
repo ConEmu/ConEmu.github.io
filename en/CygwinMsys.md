@@ -11,6 +11,8 @@ breadcrumbs:
 readalso:
  - url: CygwinAnsi.html
    title: Cygwin and Ansi
+ - url: CygwinMsysConnector.html
+   title: "cygwin/msys connector"
 ---
 
 {% comment %}

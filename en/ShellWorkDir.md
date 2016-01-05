@@ -15,6 +15,8 @@ readalso:
    title: "Hyperlinks and Errors Detector"
  - url: SettingsHighlight.html
    title: "Settings › Highlight page"
+ - url: CygwinMsysConnector.html
+   title: "cygwin/msys connector"
 ---
 
 # Shell Working Directory

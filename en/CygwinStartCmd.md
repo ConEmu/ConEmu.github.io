@@ -2,6 +2,10 @@
 redirect_from: /ru/CygwinStartCmd.html
 
 title: "ConEmu | Cygwin Startup Command"
+
+breadcrumbs:
+ - url: TableOfContents.html#cygwin-and-msys
+   title: Cygwin and Msys
 ---
 
 # cygwin and startup command
