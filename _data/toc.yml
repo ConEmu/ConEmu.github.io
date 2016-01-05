@@ -467,16 +467,16 @@
       rus: "Cygwin/Msys connector"
       url: "CygwinMsysConnector.html"
     -
-      eng: "Cygwin starts in ${HOME}"
-      rus: "Cygwin стартует в ${HOME}"
-      url: "CygwinStartDir.html"
-    -
       eng: "Cygwin's & user's profile"
       rus: "Cygwin и профиль пользователя"
       url: "CygwinHome.html"
     -
-      eng: "Cygwin & startup cmd"
-      rus: "Cygwin & startup cmd"
+      eng: "Cygwin startup directory"
+      rus: "Cygwin startup directory"
+      url: "CygwinStartDir.html"
+    -
+      eng: "Cygwin startup command"
+      rus: "Cygwin startup command"
       url: "CygwinStartCmd.html"
     -
       eng: "ssh agent"
