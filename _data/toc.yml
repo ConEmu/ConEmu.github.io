@@ -467,9 +467,13 @@
       rus: "Cygwin/Msys connector"
       url: "CygwinMsysConnector.html"
     -
-      eng: "Cygwin & ${HOME}"
-      rus: "Cygwin & ${HOME}"
+      eng: "Cygwin starts in ${HOME}"
+      rus: "Cygwin стартует в ${HOME}"
       url: "CygwinStartDir.html"
+    -
+      eng: "Cygwin's & user's profile"
+      rus: "Cygwin и профиль пользователя"
+      url: "CygwinHome.html"
     -
       eng: "Cygwin & startup cmd"
       rus: "Cygwin & startup cmd"
