@@ -193,10 +193,10 @@ ConEmuC /EXPORT[=CON|ALL] [Var1 [Var2 [...]]]
 ### Download from http/https/ftp  {#Download}
 
 ~~~
-ConEmuC /download [-login <name> -password <pwd>]
+ConEmuC -download [-login <name> -password <pwd>]
     [-proxy <address:port> [-proxylogin <name> -proxypassword <pwd>]]
     [-async Y|N] [-otimeout <ms>] [-timeout <ms>] [-agent <name>]
-    "full_url_to_file" "local_path_name"
+    [-debug] "full_url_to_file" "local_path_name"
 ~~~
 
 
