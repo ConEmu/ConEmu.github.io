@@ -85,7 +85,7 @@ You may choose task in the ‘Create new console’ dialog too.
 
 
 
-## Create new tab from existing one  {#Create_new_tab_from_existing_one}
+## Create new tab from existing one with -new_console  {#Create_new_tab_from_existing_one}
 
 Use [-new_console](NewConsole.html) switch while executing command.
 For example, if you want to start PuTTY in new ConEmu tab,
@@ -100,6 +100,13 @@ and it will be launched in the new tab of ConEmu.
 `-new_console` works even in batch files.
 
 **NB** Option [Inject ConEmuHk](ConEmuHk.html) must be turned on [Settings / Features](SettingsFeatures.html).
+
+**NB** Switch `-new_console` has a lot of [sub-switches](NewConsole.html).
+For example, you may start command in new elevated tab using `-new_console:a`.
+
+~~~
+cmd -new_console:a
+~~~
 
 
 
