@@ -23,7 +23,7 @@ readalso:
 
 Knowing current (working) directory in your [shell](TerminalVsShell.html)
 or [active console application](ActiveProcess.html) is critical to some
-neat featured. Look at the few examples below.
+neat features. Look at the few examples below.
 
 * Hyperlinks, Files and Compiler Errors
   [Detector/Highlighter](FileLineDetector.html)
