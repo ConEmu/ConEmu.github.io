@@ -195,6 +195,9 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Alt+Enter | `Key.FullScreen` <br/> `WindowFullscreen()` | Full screen |
 | Alt+Space | `Key.SysMenu` | Show ConEmu System menu |
 | Ctrl+RightMouseButton | `Key.SysMenu2` | Show ConEmu System menu |
+| Win+Shift+D | `Key.DebugProcess` <br/> `Debug(0)` | Debug active process |
+| *NoDefault* | `Key.DumpProcess` <br/> `Debug(1)` | Active process memory dump |
+| *NoDefault* | `Key.DumpTree` <br/> `Debug(2)` | Active process tree memory dump |
 | Ctrl+UpArrow | `Key.BufUp` | Scroll buffer one line up (disabled in Far /w) |
 | Ctrl+DownArrow | `Key.BufDn` | Scroll buffer one line down (disabled in Far /w) |
 | Ctrl+PageUp | `Key.BufPgUp` | Scroll buffer one page up (disabled in Far /w) |

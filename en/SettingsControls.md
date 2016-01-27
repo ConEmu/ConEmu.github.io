@@ -26,8 +26,11 @@ Uncheck this to stop sending mouse events to console, mouse will be processed by
 #### Skip click on activation  {#id1542}
 Skip mouse button (left/right/middle) click, while activating window
 
-#### Skip in background  {#id1543}
+#### Skip mouse events in background  {#id1543}
 Skip mouse move events, while ConEmu is not foreground window
+
+#### Activate split/pane on mouse hover  {#id2601}
+When several panes (splits) are visible simultaneously activate (put focus in) console with mouse hover, 3rd-state - match ‘Active window tracking’ system settings
 
 
 

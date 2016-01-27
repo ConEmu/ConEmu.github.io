@@ -58,6 +58,9 @@ Enable processing of ANSI escape sequences, ‘Inject ConEmuHk’ must be checke
 #### Disable all flashing  {#id1719}
 Disable all flashing (from consoles) on Windows taskbar. 3rd-state - allow short flashing.
 
+#### Suppress bells  {#id2598}
+Suppress annoying bells produced by echoing char(7), Beep and MessageBeep functions. Inject ConEmuHk is required.
+
 #### Log console output (`*`)  {#id2679}
 Log console output to text files ConEmu-YYYY-MM-DD-pNNNN.log (affect new consoles only)
 
@@ -68,6 +71,9 @@ Enable processing of '-new_console' and '-cur_console' switches in your shell pr
 
 #### Process 'start'  {#id2740}
 Hook 'start' command in your cmd's prompt and batches started in ConEmu tabs to run console applications in new ConEmu tabs
+
+#### Process Ctrl-Z in ReadConsole  {#id2878}
+Treat Ctrl-Z as ‘EndOfStream’. On new line press Ctrl-Z and Enter. Refer to the gh#465 for details (Go input streams).
 
 
 
@@ -84,6 +90,5 @@ Show real console on startup
 
 
 
-#### Suppress bells  {#id2598}
-Stop annoying bells produced by echoing char(7) to console, Inject ConEmuHk is required
+
 

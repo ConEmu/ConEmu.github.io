@@ -38,7 +38,7 @@ Main font weight
 Main font italic
 
 #### Monospace  {#id2283}
-Check it for non proportional (monospaced) fonts, 3rd-state - center symbols in the cells
+Check it for non proportional (monospaced) fonts
 
 #### Auto size (fixed console size in cells)  {#id1566}
 Automatic font resize for the fixed real console width
@@ -85,8 +85,8 @@ You can specify additional font for drawing pseudographics or specified range of
 
 Main font charset
 
-RTEXT
-
+#### Anti-aliasing  {#id2883}
+*Width*  
 
 
 LTEXT

@@ -73,7 +73,7 @@ Upper left corner of ConEmu in Normal mode This is in pixels
 #### Long console output  {#id1534}
 Autoexpand bufferheight to specified number of lines, while Far executes console commands. Full console output (up to specified count of lines) will be available via Far macro (CtrlO.reg)
 
-Size of bufferheight, while Far executes console commands
+Length of backscroll buffer in lines. Maximum supported value is 32766.
 
 
 

@@ -88,6 +88,9 @@ readalso:
 
 
 #### ConEmu latest version location info
+URL to retrieve latest version information, default is: https://conemu.github.io/version.ini Erase text box to revert to default URL.
+
+#### Apply & Check  {#id2877}
 
 
 

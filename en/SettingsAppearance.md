@@ -26,6 +26,9 @@ Use one ConEmu window when starting new console from shortcut or somewhere May b
 #### Multiple consoles in one ConEmu window  {#id1506}
 Turn on MultiConsole (several consoles in one ConEmu) ConEmu restart required
 
+#### Always on top  {#id1572}
+Places the ConEmu window above all non-topmost windows. The window maintains its topmost position even when it is deactivated
+
 #### Show buttons (toolbar) in tab bar  {#id2549}
 
 
@@ -38,13 +41,6 @@ Turn on MultiConsole (several consoles in one ConEmu) ConEmu restart required
 
 #### Enhance progressbars and scrollbars  {#id2289}
 Enhance appearance of progressbars and scrollbars
-
-#### Desktop mode  {#id1571}
-Act as a part of Windows Desktop This was created for Windows XP,
-where ConEmu may go on the Desktop (sort of ‘live background’).
-
-#### Always on top  {#id1572}
-Places the ConEmu window above all non-topmost windows. The window maintains its topmost position even when it is deactivated
 
 #### Show balloon help tooltips  {#id2592}
 Don't like tooltips in settings dialog? Disable this feature.
@@ -114,7 +110,7 @@ Slide console window from the top of the screen like gaming consoles Choose desi
 
 
 #### ms
-Duration of Quake slide down/up (0..2000ms) or window show/hide
+Duration of window animation (0..2000ms): Quake slide down/up and restoring/hiding window to TSA. Animation is working only when window caption is hidden.
 
 
 

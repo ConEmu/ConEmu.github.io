@@ -55,9 +55,6 @@ Show tabs from active console only
 #### One tab per group  {#id2599}
 Show only one tab for all splits in the group
 
-#### Activate split on mouse hover  {#id2601}
-When several panes (splits) are visible simultaneously activate console with mouse over, 3rd-state - match ‘Active window tracking’ system settings
-
 LTEXT
 
 
