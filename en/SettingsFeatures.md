@@ -50,7 +50,7 @@ Allow injecting ConEmuHk.dll in every process of ConEmu console window. Required
 Enables DosBox integration
 
 #### Use Clink in prompt  {#id2418}
-Use clink to extend command prompt (cmd.exe) http://mridgers.github.io/clink/
+Use clink to extend command prompt (cmd.exe) https://mridgers.github.io/clink/
 
 #### ANSI X3.64 / xterm 256 colors  {#id2253}
 Enable processing of ANSI escape sequences, ‘Inject ConEmuHk’ must be checked if you want to work with second level processes (e.g. cmd.exe -> app.exe)
