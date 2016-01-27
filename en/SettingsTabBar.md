@@ -41,7 +41,7 @@ When checked - real window switching will be performed on Ctrl depress
 Switch first between recent tabs. You may still switch between tabs in standard manner using Left/Right (after CtrlTab), while Ctrl is still presses.
 
 #### Hide disabled tabs  {#id2051}
-Hide tabs, wich can't be activated. E.g. hide Far Manager editors while executing cmd.exe
+Hide tabs, which can't be activated. E.g. hide Far Manager editors while executing cmd.exe
 
 #### Far windows  {#id2053}
 Show all Far Manager windows (panels, editors, viewers) instead of one tab for one console

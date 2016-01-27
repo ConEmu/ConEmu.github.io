@@ -172,7 +172,7 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | *NoDefault* | `Multi.ShowTabsList` | Show opened tabs list (ignored in Far - use macro instead) |
 | Apps+F12 | `Multi.ShowTabsList2` <br/> `Tabs(8)` | Show opened tabs list (works in Far too) |
 | Shift+Ins | `ClipboardVkAllLines` | Paste clipboard contents (ignored in Far) |
-| Ctrl+V | `ClipboardVkFirstLine` | Paste first line of clipboard contents, autoconvert paths for cygwin's appllications (ignored in Far) |
+| Ctrl+V | `ClipboardVkFirstLine` | Paste first line of clipboard contents, autoconvert paths for cygwin's applications (ignored in Far) |
 | Ctrl+BACK | `DeleteWordToLeft` | Delete word leftward to the cursor (ignored in Far) |
 | Apps+F | `FindTextKey` | Find text in active console |
 | Win+H | `ScreenshotKey` | Make screenshot of active window |

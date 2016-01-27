@@ -27,7 +27,7 @@ Allow drag with left mouse button
 Off - ConEmu will NOT receive external drops On - Drops allowed (Far confirmation dialog) 3rd-state - same as "On", but w/o confirmation
 
 #### Overlay  {#id1548}
-Create and display overlay transparent snapshoot of files are dragged
+Create and display overlay transparent snapshot of files are dragged
 
 #### Shell icons  {#id1553}
 Show icons of dragged iterms

@@ -226,10 +226,10 @@ RTEXT
 When ConEmu loses focus, its contents may be faded. You may specify most bright color.
 
 #### Low
-When ConEmu loses focus, its contents may be faded. You may specify here "low shift" (wich makes dark colors lighter).
+When ConEmu loses focus, its contents may be faded. You may specify here "low shift" (which makes dark colors lighter).
 
 #### High
-When ConEmu loses focus, its contents may be faded. You may specify here "high shift" (wich makes light colors darker).
+When ConEmu loses focus, its contents may be faded. You may specify here "high shift" (which makes light colors darker).
 
 #### TrueMod (24bit color) support  {#id1578}
 Colorer truemod support
