@@ -35,6 +35,7 @@ With exception of hexadecimal `A`..`F`, of course they are entered
 on the main keyboard part.
 
 * [Unicode: ‘Alt’-‘+’-‘xxxx’](#alt-xxxx)
+  * [Enable ‘Alt’-‘+’-‘xxxx’ globally in Windows](#windows)
 * [‘Alt’-‘0ddd’ or ‘Alt’-‘ddd’](#alt-decimal)
   * [ANSI: ‘Alt’-‘0ddd’](#alt-0ddd)
   * [OEM: ‘Alt’-‘ddd’](#alt-ddd)
@@ -47,20 +48,36 @@ Find character codebase on the [www.unicode.org](http://www.unicode.org/charts/)
 
 * Hold `Alt`;
 * press `+` on the numeric keypad (aka `GrayPlus`);
-* enter unicode ‘codebase’, up to four hex numbers;
+* enter unicode ‘codebase’, up to six hex numbers;
 * release `Alt`.
 
-For example, to enter Russian capital ‘Я’ press `Alt`-`+`-`42F`.
+Few examples below.
 
-Another example, to enter ‘£’ press `Alt`-`+`-`A3`.
+* Russian capital ‘Я’: press `Alt`-`+`-`42F`.
+* Pound sign ‘£’: press `Alt`-`+`-`A3`.
 
-**Note** To enable this method in Windows you must ensure that your
-registry has been set up properly. If not, change registry and re-logon.
+Also, ConEmu is able to convert entered codepoints to surrogate pairs,
+so you may enter uncommon symbols outside from BMP. Examples below.
+
+* Double-struck ‘𝔸’: press `Alt`-`+`-`1D538`.
+* Sushi emoticon ‘🍣’: press `Alt`-`+`-`1F363`
+
+
+### Enable ‘Alt’-‘+’-‘xxxx’ globally in Windows  {#windows}
+
+Since ConEmu build 160203 **hexadecimal** Alt+HexNumber input
+is supported from the box, **internally by ConEmu**. Therefore,
+**registry modification is not required** anymore.
+
+However, if you want to use hexadecimal input in **other applications**,
+you must ensure that your registry has been set up properly.
+If not, change registry and re-logon.
 
 ~~~
 [HKEY_CURRENT_USER\Control Panel\Input Method]
 "EnableHexNumpad"="1"
 ~~~
+
 
 ## ‘Alt’-‘0ddd’ or ‘Alt’-‘ddd’  {#alt-decimal}
 
