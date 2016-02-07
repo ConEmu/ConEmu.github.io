@@ -7,6 +7,10 @@ title: "ConEmu | Settings › SizePos page"
 breadcrumbs:
  - url: TableOfContents.html#settings
    title: Settings
+
+readalso:
+ - url: ResizeAndMove.html
+   title: "Resize and Move"
 ---
 
 # Settings: Size & Pos

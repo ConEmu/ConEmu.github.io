@@ -453,6 +453,10 @@
       rus: "Работа с текстом"
       url: "TextSelection.html"
     -
+      eng: "Resize and Move"
+      rus: "Ресайз и перемещение"
+      url: "ResizeAndMove.html"
+    -
       eng: "Far and touchscreen"
       rus: "Far и тачскрин"
       url: "TabletPC.html"
