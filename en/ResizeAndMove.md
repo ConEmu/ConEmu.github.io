@@ -1,4 +1,4 @@
-﻿---
+---
 redirect_from:
  - /ru/ResizeAndMove.html
 
