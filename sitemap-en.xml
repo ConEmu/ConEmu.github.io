@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/donate.html</loc>
-    <lastmod>2015-08-17</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/AltNumpad.html</loc>
-    <lastmod>2016-01-05</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -126,7 +126,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/ConEmuC.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -464,7 +464,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/KeyboardShortcuts.html</loc>
-    <lastmod>2016-01-05</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -476,7 +476,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/LaunchNewTab.html</loc>
-    <lastmod>2015-10-11</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -559,6 +559,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://conemu.github.io/en/ResizeAndMove.html</loc>
+    <lastmod>2016-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://conemu.github.io/en/RestartTab.html</loc>
     <lastmod>2015-08-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -622,7 +628,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsAppearance.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -634,7 +640,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsColors.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -652,7 +658,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsControls.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -676,7 +682,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsFar.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -702,7 +708,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsFeatures.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -732,7 +738,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsMain.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -750,7 +756,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsSizePos.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -768,7 +774,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsTabBar.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -798,13 +804,13 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsUpdate.html</loc>
-    <lastmod>2015-10-30</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://conemu.github.io/en/ShellWorkDir.html</loc>
-    <lastmod>2016-01-05</lastmod>
+    <lastmod>2016-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
