@@ -6,6 +6,9 @@ redirect_from:
 
 title: "ConEmu | Localization"
 
+description: "All language resources are located in the file ConEmu.l10n.
+  Any help with translation would be appreciated."
+
 breadcrumbs:
  - url: TableOfContents.html#feedback
    title: Feedback
@@ -21,6 +24,12 @@ readalso:
 
 If you want to translate ConEmu interface to your language,
 your localization efforts would be appreciated.
+
+* [Where language resources are stored](#resources)
+* [Resource file format](#format)
+* [How to add new language](#new-lang)
+* [Resources deprecation](#deprecation)
+* [How to test](#test)
 
 
 ## Where language resources are stored  {#resources}
@@ -39,9 +48,7 @@ The file consists of several sections: `languages` for list of languages;
 The resource may be either simple "string", or an ["array ", "of ", "strings"]
 which are concatenated without changes at run time.
 
-Look at the excerpt below.
-
-~~~JSON
+~~~
 ﻿{
   "languages": [
     {"id": "en", "name": "English" }
@@ -66,7 +73,7 @@ Look at the excerpt below.
 1. Add to the `languages` new record. Example below adds Russian with id `ru`.
 2. Translate all entries by adding `ru` record to each resource.
 
-~~~diff
+~~~
 --- a/Release/ConEmu/ConEmu.l10n
 +++ b/Release/ConEmu/ConEmu.l10n
 @@ -1,5 +1,7 @@
@@ -88,18 +95,33 @@ Look at the excerpt below.
 ~~~
 
 
-## Deprecation  {#deprecation}
+## Resources deprecation  {#deprecation}
 
 If the `en` resource is changed, other languages translations becomes deprecated.
 To depict that, language id-s for this resource would be prefixed with `_`
 (`ru` -> `_ru`).
 So, translation maintainers may easily find changed resources.
 
-~~~JSON
+~~~
 ﻿{
     "bResetSettings": {
       "en": "Reset all settings to defaults",
       "_ru": "Сбросить настройки к умолчаниям",
       "id": 1595 }
 }
+~~~
+
+
+## How to test  {#test}
+
+The work is still in progress...
+At the moment only hints and Settings dialog controls are processed by l10n engine.
+
+To check the translation, download
+[this test version](https://www.dropbox.com/s/px7jysz0aln0ajt/ConEmu.160207a.exe.7z?dl=0),
+unpack it to main distro, and run `ConEmu.exe` with your language code,
+for example:
+
+~~~
+ConEmu.exe -lng "ru"
 ~~~
