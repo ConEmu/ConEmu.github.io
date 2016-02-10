@@ -637,6 +637,10 @@
       eng: "How you may help"
       rus: "Как помочь в разработке"
       url: "ConEmuHelping.html"
+    -
+      eng: "Localization"
+      rus: "Локализация"
+      url: "Localization.html"
 -
   eng: "Extras"
   rus: "Разное"
