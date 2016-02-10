@@ -52,3 +52,10 @@ otherlang:
 
   - Видите грамматическую ошибку в интерфейсе? Форкайте [проект](https://github.com/Maximus5/ConEmu) и присылайте [pull request](https://github.com/Maximus5/ConEmu/pulls)
   - Можете предложить лучший вариант текста, перевести/поправить/дописать страничку документации? Присылайте [pull request](https://github.com/ConEmu/ConEmu.github.io/pulls) для сайта
+
+  
+## Перевод интерфейса  {#l10n}
+
+Статья [Localization](Localization.html) описывает как помочь с переводом интерфейса.
+Добавьте ваш язык в `ConEmu.l10n` и присылайте пулл-реквест.
+

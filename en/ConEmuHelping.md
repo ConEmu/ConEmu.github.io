@@ -49,3 +49,9 @@ If anyone has free time and wish to help - you are welcome.
 
   - Have you seen spelling error in the program interface? Fork the [project](https://github.com/Maximus5/ConEmu) and send me [pull request](https://github.com/Maximus5/ConEmu/pulls)
   - Can you suggest better translation or add some text to the documentation? Send me [pull request](https://github.com/ConEmu/ConEmu.github.io/pulls) on the project site
+
+  
+## Interface translation  {#l10n}
+
+[Localization](Localization.html) article describes how you may help with interface translation.
+In brief, add your language to the `ConEmu.l10n` file and create pull request.
