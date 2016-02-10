@@ -54,4 +54,5 @@ If anyone has free time and wish to help - you are welcome.
 ## Interface translation  {#l10n}
 
 [Localization](Localization.html) article describes how you may help with interface translation.
+
 In brief, add your language to the `ConEmu.l10n` file and create pull request.
