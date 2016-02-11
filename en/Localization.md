@@ -117,12 +117,11 @@ So, translation maintainers may easily find changed resources.
 The work is still in progress...
 At the moment only hints and Settings dialog controls are processed by l10n engine.
 
-To check the translation, download
-[this test version](https://www.dropbox.com/s/px7jysz0aln0ajt/ConEmu.160207a.exe.7z?dl=0),
-and unpack it to main distro.
+To check the translation:
 
-You may place file `ConEmu.l10n` into `%ConEmuBaseDir%`
-and run `ConEmu.exe` with your language code.
+* Download and install build [160211 or later](http://www.fosshub.com/ConEmu.html).
+* Place the file [ConEmu.l10n](https://github.com/Maximus5/ConEmu/blob/daily/Release/ConEmu/ConEmu.l10n)
+  into `%ConEmuBaseDir%` and run `ConEmu.exe` with your language code.
 
 ~~~
 ConEmu.exe -lng "ru"
