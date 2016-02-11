@@ -97,7 +97,7 @@ which are concatenated without changes at run time.
 
 ## Resources deprecation  {#deprecation}
 
-If the `en` resource is changed, other languages translations becomes deprecated.
+If the `en` resource is changed, other languages translations become deprecated.
 To depict that, language id-s for this resource would be prefixed with `_`
 (`ru` -> `_ru`).
 So, translation maintainers may easily find changed resources.
@@ -131,7 +131,7 @@ ConEmu.exe -lng "ru"
 Alternatively, you may specify the location of the file with `-lngfile` argument.
 
 ~~~
-ConEmu.exe -lng "ru" -lngfile "fill-path-to-l10n"
+ConEmu.exe -lng "ru" -lngfile "full-path-to-l10n"
 ~~~
 
 Also, the button `Reload...` in the Settings dialog would reload language data too,
