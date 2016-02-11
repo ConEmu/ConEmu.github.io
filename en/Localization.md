@@ -119,9 +119,20 @@ At the moment only hints and Settings dialog controls are processed by l10n engi
 
 To check the translation, download
 [this test version](https://www.dropbox.com/s/px7jysz0aln0ajt/ConEmu.160207a.exe.7z?dl=0),
-unpack it to main distro, and run `ConEmu.exe` with your language code,
-for example:
+and unpack it to main distro.
+
+You may place file `ConEmu.l10n` into `%ConEmuBaseDir%`
+and run `ConEmu.exe` with your language code.
 
 ~~~
 ConEmu.exe -lng "ru"
 ~~~
+
+Alternatively, you may specify the location of the file with `-lngfile` argument.
+
+~~~
+ConEmu.exe -lng "ru" -lngfile "fill-path-to-l10n"
+~~~
+
+Also, the button `Reload...` in the Settings dialog would reload language data too,
+and resources will be applied to dialog controls when you open the dialog next time.
