@@ -604,12 +604,13 @@ FontSetSize(Relative,N)
 Macro returned requested information from GUI (`ConEmu.exe` or `ConEmu64.exe`)
 
 ~~~
-GetInfo("PID"[,"HWND"[,...]])
+GetInfo("<Opt1>"[,"<Opt2>"[,...]])
   - Returns values of some ConEmu environment variables
-    GetInfo("PID") - %ConEmuPID% and so on
+    Processed in GUI so the result may differs from RealConsole env.vars
+    "PID": %ConEmuPID% and so on
   - Returns additional information about RealConsole
-    GetInfo("Root") - XML with RootProcess info
-    GetInfo("ActivePID","CurDir") - as is
+    "Root": XML with RootProcess info
+    "ActivePID","CurDir": as is
 ~~~
 
 
