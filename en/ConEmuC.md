@@ -139,12 +139,13 @@ These two was implemented for test purposed mostly. But may be useful.
 Use any of `-e`, `-echo`, `/echo` to echo a string with ANSI sequences.
 
 ~~~
-ConEmuC -e [-r] [-n] [-b] "String to echo"
+ConEmuC -e [-r] [-n] [-x] [-b] "String to echo"
   Switches
     -r  - do not replace "^e^r^n^t^a^b" with ASCII equivalents
           to print single "^" char - double it "^^"
           escape char alias - "^["
     -n  - do not add CRLF after printed line
+    -x  - expand environment variables
     -b  - scroll to bottom of the buffer before printing (TrueColor buffer compatible)
 ~~~
 
