@@ -1028,6 +1028,7 @@ WindowMode(["<Mode>"])
    "NOR", "MAX", "FS" (fullscreen), "MIN", "TSA"
    "TLEFT", "TRIGHT" (tile to left/right), "THEIGHT",
    "MPREV", "MNEXT" (move ConEmu to prev/next monitor)
+   "HERE" (move ConEmu to monitor with mouse cursor)
 ~~~
 
 
