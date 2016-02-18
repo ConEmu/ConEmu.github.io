@@ -19,8 +19,8 @@ readalso:
    title: "Документация"
 
 otherlang:
-   eng: /en/Issues.html
-   rus: /ru/Issues.html
+   en: /en/Issues.html
+   ru: /ru/Issues.html
 ---
 
 # Контакты, Отзывы, Предложения

@@ -9,8 +9,8 @@ breadcrumbs:
    title: Settings
 
 otherlang:
-   eng: /en/Settings.html
-   rus: /ru/Settings.html
+   en: /en/Settings.html
+   ru: /ru/Settings.html
 ---
 
 # Настройка ConEmu

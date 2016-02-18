@@ -17,8 +17,8 @@ readalso:
     title: Unicode Support in ConEmu
 
 otherlang:
-   eng: /en/ConEmuEnvironment.html
-   rus: /ru/ConEmuEnvironment.html
+   en: /en/ConEmuEnvironment.html
+   ru: /ru/ConEmuEnvironment.html
 ---
 
 # ConEmu Environment variables

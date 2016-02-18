@@ -8,8 +8,8 @@ breadcrumbs:
    title: ConEmu
 
 otherlang:
-   eng: /en/ConEmuFAQ.html
-   rus: /ru/ConEmuFAQ.html
+   en: /en/ConEmuFAQ.html
+   ru: /ru/ConEmuFAQ.html
 ---
 
 # Содержание

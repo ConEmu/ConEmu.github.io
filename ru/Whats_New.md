@@ -13,8 +13,8 @@ breadcrumbs:
    title: WhatsNew
 
 otherlang:
-   eng: /en/Whats_New.html
-   rus: /ru/Whats_New.html
+   en: /en/Whats_New.html
+   ru: /ru/Whats_New.html
 ---
 
 # Новые версии ConEmu

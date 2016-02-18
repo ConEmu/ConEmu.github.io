@@ -17,8 +17,8 @@ readalso:
    title: Terminal vs Shell
 
 otherlang:
-   eng: /en/Delusions.html
-   rus: /ru/Delusions.html
+   en: /en/Delusions.html
+   ru: /ru/Delusions.html
 ---
 
 # Console-related delusions

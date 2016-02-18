@@ -7,8 +7,8 @@ description: "Оглавление документации по ConEmu:
 h1_title: Оглавление документации по ConEmu
 
 otherlang:
-   eng: /en/TableOfContents.html
-   rus: /ru/TableOfContents.html
+   en: /en/TableOfContents.html
+   ru: /ru/TableOfContents.html
 ---
 
 {% include toc.md %}

@@ -17,8 +17,8 @@ readalso:
    title: Terminal или Shell
 
 otherlang:
-   eng: /en/Delusions.html
-   rus: /ru/Delusions.html
+   en: /en/Delusions.html
+   ru: /ru/Delusions.html
 ---
 
 # Околоконсольные заблужения

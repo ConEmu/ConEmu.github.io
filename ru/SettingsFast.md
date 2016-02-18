@@ -22,8 +22,8 @@ readalso:
    title: "Остальная документация"
 
 otherlang:
-   eng: /en/SettingsFast.html
-   rus: /ru/SettingsFast.html
+   en: /en/SettingsFast.html
+   ru: /ru/SettingsFast.html
 ---
 
 # Первый запуск ConEmu

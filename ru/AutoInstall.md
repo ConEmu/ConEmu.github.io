@@ -19,8 +19,8 @@ readalso:
    title: "Сравнение версий: distros, bitness, stages"
 
 otherlang:
-   eng: /en/AutoInstall.html
-   rus: /ru/AutoInstall.html
+   en: /en/AutoInstall.html
+   ru: /ru/AutoInstall.html
 ---
 
 # Автоматизация установки системы

@@ -20,8 +20,8 @@ readalso:
    title: "Comparison: distros, bitness, stages"
 
 otherlang:
-   eng: /en/AutoInstall.html
-   rus: /ru/AutoInstall.html
+   en: /en/AutoInstall.html
+   ru: /ru/AutoInstall.html
 ---
 
 # Automate your box installation

@@ -10,8 +10,8 @@ breadcrumbs:
    title: Feedback and contacts
 
 otherlang:
-   eng: /en/ConEmuHelping.html
-   rus: /ru/ConEmuHelping.html
+   en: /en/ConEmuHelping.html
+   ru: /ru/ConEmuHelping.html
 ---
 
 # How you may help with documentation

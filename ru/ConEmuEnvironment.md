@@ -17,8 +17,8 @@ readalso:
     title: Unicode в ConEmu
 
 otherlang:
-   eng: /en/ConEmuEnvironment.html
-   rus: /ru/ConEmuEnvironment.html
+   en: /en/ConEmuEnvironment.html
+   ru: /ru/ConEmuEnvironment.html
 ---
 
 # ConEmu Environment variables - Переменные Окружения

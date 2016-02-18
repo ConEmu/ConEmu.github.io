@@ -20,8 +20,8 @@ readalso:
    title: "Documentation"
 
 otherlang:
-   eng: /en/SettingsFast.html
-   rus: /ru/SettingsFast.html
+   en: /en/SettingsFast.html
+   ru: /ru/SettingsFast.html
 ---
 
 # ConEmu first start

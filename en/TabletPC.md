@@ -8,8 +8,8 @@ breadcrumbs:
    title: Controls
 
 otherlang:
-   eng: /en/TabletPC.html
-   rus: /ru/TabletPC.html
+   en: /en/TabletPC.html
+   ru: /ru/TabletPC.html
 ---
 
 # Working with touchscreen

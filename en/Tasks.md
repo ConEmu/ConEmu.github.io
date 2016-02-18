@@ -19,8 +19,8 @@ readalso:
    title: "Settings › Tasks page"
 
 otherlang:
-   eng: /en/Tasks.html
-   rus: /ru/Tasks.html
+   en: /en/Tasks.html
+   ru: /ru/Tasks.html
 ---
 
 # ConEmu's Tasks

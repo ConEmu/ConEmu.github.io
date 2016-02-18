@@ -7,8 +7,8 @@ description: "ConEmu Documentation Table of Contents:
 h1_title: ConEmu Documentation Table of Contents
 
 otherlang:
-   eng: /en/TableOfContents.html
-   rus: /ru/TableOfContents.html
+   en: /en/TableOfContents.html
+   ru: /ru/TableOfContents.html
 ---
 
 {% include toc.md %}

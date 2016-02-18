@@ -5,8 +5,8 @@ description: "Где хранятся настройки и как подгот�
   для пересылки разработчику при сообщениях о проблеме."
 
 otherlang:
-   eng: /en/ConEmuXml.html
-   rus: /ru/ConEmuXml.html
+   en: /en/ConEmuXml.html
+   ru: /ru/ConEmuXml.html
 ---
 
 # ConEmu settings storage

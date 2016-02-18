@@ -8,8 +8,8 @@ breadcrumbs:
    title: Функции
 
 otherlang:
-   eng: /en/AnsiEscapeCodes.html
-   rus: /ru/AnsiEscapeCodes.html
+   en: /en/AnsiEscapeCodes.html
+   ru: /ru/AnsiEscapeCodes.html
 
 readalso:
  - url: CygwinAnsi.html

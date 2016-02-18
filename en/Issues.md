@@ -18,8 +18,8 @@ readalso:
    title: "Documentation"
 
 otherlang:
-   eng: /en/Issues.html
-   rus: /ru/Issues.html
+   en: /en/Issues.html
+   ru: /ru/Issues.html
 ---
 
 {% comment %} ‘UTF-8’ {% endcomment %}
