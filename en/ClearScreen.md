@@ -33,7 +33,7 @@ your shell behavior is the same.
 There are requests from our users to add ‘Clear’ command to the
 ConEmu [system menu](SystemMenu.html).
 
-[References](https://github.com/Maximus5/ConEmu/issues?q=is:issue clear screen label:status-rejected]):
+[References](https://github.com/Maximus5/ConEmu/issues?q=is:issue clear screen label:status-rejected):
 [gh-550](https://github.com/Maximus5/ConEmu/issues/550),
 [gh-372](https://github.com/Maximus5/ConEmu/issues/372),
 [gh-234](https://github.com/Maximus5/ConEmu/issues/234).
