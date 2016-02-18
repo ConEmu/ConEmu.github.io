@@ -28,9 +28,9 @@ It doesn't matter are you working in ConEmu or any other terminal,
 your shell behavior is the same.
 
 
-## ‘Clear’ command in the ConEmu menu  {#clear-command}
+## â€˜Clearâ€™ command in the ConEmu menu  {#clear-command}
 
-There are requests from our users to add ‘Clear’ command to the
+There are requests from our users to add â€˜Clearâ€™ command to the
 ConEmu [system menu](SystemMenu.html).
 
 [References](https://github.com/Maximus5/ConEmu/issues?q=is:issue clear screen label:status-rejected]):
@@ -45,21 +45,21 @@ able to show application output, but that is all.
 ### Reason 1  {#reason-1}
 
 You are editing file in vim, manage your files with Far Manager,
-or do something else not related to simple ‘read-line-execute-command’,
-and call this mysterious ‘clear’ menu item. What would happen?
+or do something else not related to simple â€˜read-line-execute-commandâ€™,
+and call this mysterious â€˜clearâ€™ menu item. What would happen?
 
 Your screen would be garbaged.
 
 Console app is sure that cursor is located in certain position and all
 visible lines of text file were printed properly. But after such
-‘external clear’ this would not be true.
+â€˜external clearâ€™ this would not be true.
 
 ### Reason 2  {#reason-2}
 
 Even with cmd or bash. They have printed PROMPT.
-But after ‘external clear’ there would be no PROMPT! The screen
+But after â€˜external clearâ€™ there would be no PROMPT! The screen
 would be absolutely clean, but shell do not know that it must
-‘reprint’ PROMPT. It just waits for user input!
+â€˜reprintâ€™ PROMPT. It just waits for user input!
 
 ### Reason 3  {#reason-3}
 
@@ -79,14 +79,14 @@ rubbish and more.
 ### Reason 5  {#reason-5}
 
 In the [Issue 550](https://github.com/Maximus5/ConEmu/issues/550)
-I been noted about ‘example’ of the feature implementation in the Tera Term.
+I been noted about â€˜exampleâ€™ of the feature implementation in the Tera Term.
 
 Well, I have tried both local cygwin connection and remote ssh to Ubuntu
 in the Tera Term, and it just doesn't work.
 
 * Connect (to cygwin or remote via ssh)
 * Execute `ls`
-* Call menu item ‘Reset terminal’
+* Call menu item â€˜Reset terminalâ€™
 * Get fail
   * Cursor jumps to the {0,0} and that's all!
   * Screen is not cleared!
