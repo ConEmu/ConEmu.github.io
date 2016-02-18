@@ -30,6 +30,10 @@
 <!--
 This page was saved from: {{site.url}}{{page.url}}
 -->
+{% if page.otherlang %}
+{% if page.pagelang == 'ru' %}<link rel="alternate" hreflang="en" href="{{ page.otherlang.en }}" >{% endif %}
+{% if page.pagelang == 'en' %}<link rel="alternate" hreflang="ru" href="{{ page.otherlang.ru }}" >{% endif %}
+{% endif %}
 
 <!--<link rel="stylesheet" href="/normalize.css">-->
 <link rel="stylesheet" href="/main.css">
