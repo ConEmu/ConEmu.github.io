@@ -33,6 +33,11 @@ your shell behavior is the same.
 There are requests from our users to add ‘Clear’ command to the
 ConEmu [system menu](SystemMenu.html).
 
+[References](https://github.com/Maximus5/ConEmu/issues?q=is:issue clear screen label:status-rejected]):
+[gh-550](https://github.com/Maximus5/ConEmu/issues/550),
+[gh-372](https://github.com/Maximus5/ConEmu/issues/372),
+[gh-234](https://github.com/Maximus5/ConEmu/issues/234).
+
 These requests are rejects by a simple and logical reason - ConEmu
 (terminal) do not know what console application is doing. ConEmu
 able to show application output, but that is all.
@@ -73,7 +78,7 @@ rubbish and more.
 
 ### Reason 5  {#reason-5}
 
-In the [Issue 550](https://github.com/Maximus5/ConEmu/issues/550]
+In the [Issue 550](https://github.com/Maximus5/ConEmu/issues/550)
 I been noted about ‘example’ of the feature implementation in the Tera Term.
 
 Well, I have tried both local cygwin connection and remote ssh to Ubuntu
