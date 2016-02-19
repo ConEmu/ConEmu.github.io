@@ -25,6 +25,7 @@ This article describes ‘high dpi’, ‘high resulution’, ‘dpi awareness�
   * [Dialogs downscale issues](#Dialog-downscale-issue)
   * [Very old build without dpi-awareness causes blurred text](#Very_old_build_without_dpi-awareness_causes_blurred_text)
   * [New dpi-aware build shows clean picture](#New_dpi-aware_build_shows_clean_picture)
+* [StackOverflow: No way to scale title bar (non-client area)](http://stackoverflow.com/q/31781767/1405560)
 
 
 ## Types of High-DPI OS settings  {#Types_of_High-DPI_OS_settings}
