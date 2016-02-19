@@ -434,6 +434,7 @@ Optional parameters are italic.
 * [**WindowFullscreen**, **WindowMaximize**, **WindowMinimize**](#WindowMode)
 * [**WindowMode** ( "*Mode*" )](#WindowMode)
 * [**WindowPosSize** ( "X", "Y", "W", "H" )](#WindowPosSize)
+* [**Write** ( "Text" )](#Write)
 * [**Zoom** ( N )](#Zoom)
 
 
@@ -1041,6 +1042,35 @@ WindowPosSize("<X>", "<Y>", "<W>", "<H>")
     "<X>" and "<Y>" are pixels (numbers in doublequotes);
     "<W>" and "<H>" may be cells, percentage or pixels:
       "80", "40%", "800px".
+~~~
+
+
+
+### Write Text to console output {#Write}
+
+> Use it at you own risk! Calling this function may cause unexpected behavior
+> of running console application! That is because function changes console
+> contents and cursor position directly, bypassing detouring standard
+> ConIn/ConOut processing queue.
+
+~~~
+Write("<Text>")
+  - Write text to console OUTPUT
+~~~
+
+In most cases **safe** functions [Paste](#Paste), [Print](#Print) and [Keys](#Keys) are preferable!
+
+However, with `Write` you may implement some interesting features,
+like printing sort of ‘hints’ in shell prompt:
+
+~~~
+Write "\e7\e[90mEcho \"Hello world!\"\e[m\e8"
+~~~
+
+Or push to console several colored lines to ‘mark’ some point in real-time logs (tail -f).
+
+~~~
+Write "\n\n\e[91m========== '\e]9;8;\"time\"\e\\' ==========\e[m\n\n"
 ~~~
 
 
