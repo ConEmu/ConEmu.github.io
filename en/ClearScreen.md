@@ -33,14 +33,33 @@ your shell behavior is the same.
 There are requests from our users to add ‘Clear’ command to the
 ConEmu [system menu](SystemMenu.html).
 
-[References](https://github.com/Maximus5/ConEmu/issues?q=is:issue clear screen label:status-rejected):
+[References](https://github.com/Maximus5/ConEmu/issues?q=is:issue clear screen):
 [gh-550](https://github.com/Maximus5/ConEmu/issues/550),
 [gh-372](https://github.com/Maximus5/ConEmu/issues/372),
 [gh-234](https://github.com/Maximus5/ConEmu/issues/234).
 
-These requests are rejects by a simple and logical reason - ConEmu
+These requests were rejects by a simple and logical reason - ConEmu
 (terminal) do not know what console application is doing. ConEmu
 able to show application output, but that is all.
+
+However, since [GuiMacro Write](GuiMacro.html#Write) was implemented,
+anyone may create a macro to `Write("\ec")`, which actually resets the terminal.
+So, anyone may choose [desired hotkey](SettingsHotkeys.html) for action
+‘Reset terminal: clear screen, backscroll, move cursor to the upper-left corner’.
+
+BTW, [Write](GuiMacro.html#Write) may be used to push to console several colored lines using
+[ANSI sequences](AnsiEscapeCodes.html#ConEmu_specific_OSC)
+to ‘mark’ some point in real-time logs (tail -f). Example.
+
+~~~
+Write "\n\n\e[91m========== '\e]9;8;\"time\"\e\\' ==========\e[m\n\n"
+~~~
+
+
+## Injurious operation  {#injurious}
+
+Terminal reset may harm normal behavior of running console applications.
+So, use it carefully and on your own risk!
 
 ### Reason 1  {#reason-1}
 
@@ -100,3 +119,5 @@ To clear your screen do one of the following:
 * Issue `clear` or `cls` in your shell.
 * Press `Ctrl+L` or other hotkey, if your shell supports it. Even cmd+clink may do that.
 * Restart your tab. Default hotkey is `Win+~`.
+* (*Use very carefully*) Set [hotkey](SettingsHotkeys.html) for action
+  ‘Reset terminal: clear screen, backscroll, move cursor to the upper-left corner’.
