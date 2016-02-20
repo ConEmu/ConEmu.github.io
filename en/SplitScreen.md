@@ -31,6 +31,7 @@ Article navigation
   * [From your shell prompt](#From-your-shell-prompt)
   * [Default hotkeys](#Default-hotkeys)
   * [Start several consoles in 2x2 grid from the named Task](#task-grid-2x2)
+  * [More examples](#more-examples)
 * [Working with splits](#Working-with-splits)
 
 
