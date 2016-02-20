@@ -9,6 +9,10 @@ title: "ConEmu | Split Screen or Panes"
 breadcrumbs:
  - url: TableOfContents.html#controls
    title: Controls
+
+readalso:
+ - url: NewConsole.html
+   title: "-new_console switch"
 ---
 
 # Split Screen or Panes in ConEmu
@@ -83,6 +87,14 @@ powershell -cur_console:s1TVn
 sh --login -i -cur_console:s1THn
 putty -load mysrv -cur_console:s2THn
 ~~~
+
+
+
+### More examples  {#more-examples}
+
+* [-new_console usage examples](https://conemu.github.io/en/NewConsole.html#example-6)
+* [Examples on StackOverflow](http://stackoverflow.com/search?q=%5Bconemu%5D+split)
+* [Examples on SuperUser](http://superuser.com/search?q=%5Bconemu%5D+split)
 
 
 
