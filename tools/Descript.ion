@@ -1,0 +1,2 @@
+AutoUpdate.cmd AutoUpdate.cmd 150319 Alpha|Preview|Preview_Alpha|Stable
+UpdateIni.cmd UpdateIni.cmd build devel|preview|stable setup_dir pack_dir www_dir
