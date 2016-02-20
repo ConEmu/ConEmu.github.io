@@ -1,78 +1,113 @@
-/* Just a sample file! actual information is maintained in version.ini */
 {
- "lastmod":  "2015-04-17T06:08:45.909Z",
- "releases":  [
-      {
-       "type":  "Alpha",
-       "version":  "150416",
-       "files":  [
-            {
-             "type":  "7-Zip",
-             "urls":  [
-              "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.150416.7z?use_mirror=autoselect"
-             ],
-             "size":  2182511,
-             "crc32":  "F950B9AA",
-             "md5":  "2eb4da132b7abccb3215386e0fb6cdb0",
-             "description":  "Alpha, Portable (32-bit, 64-bit)"
-            },
-            {
-             "type":  "Installer",
-             "urls":  [
-              "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.150416.exe?use_mirror=autoselect"
-             ],
-             "size":  4463016,
-             "crc32":  "ECE1E539",
-             "md5":  "f3e9c6bb17a154eb153bdba472a6a7a9",
-             "description":  "Alpha, Installer (32-bit, 64-bit)"
-            },
-            {
-             "type":  "PortableApps",
-             "urls":  [
-              "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_150416_English.paf.exe?use_mirror=autoselect"
-             ],
-             "size":  2072696,
-             "crc32":  "53396F82",
-             "md5":  "8203308006ae4b4111eb1a9f06e23d80",
-             "description":  "Alpha, Installer (32-bit, 64-bit)"
-            }
-           ]
-      },
-      {
-       "type":  "Preview",
-       "version":  "150327",
-       "files":  [
-            {
-             "type":  "7-Zip",
-             "urls":  [
-              "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.150327.7z?use_mirror=autoselect"
-             ],
-             "size":  2171464,
-             "crc32":  "486726FA",
-             "md5":  "a159b4c49b1ef300f173ec9d3aeb5ee4",
-             "description":  "Preview, Portable (32-bit, 64-bit)"
-            },
-            {
-             "type":  "Installer",
-             "urls":  [
-              "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.150327.exe?use_mirror=autoselect"
-             ],
-             "size":  4449728,
-             "crc32":  "12DBF3F5",
-             "md5":  "bb91cc3b8f03467c1f41d8fcad06c934",
-             "description":  "Preview, Installer (32-bit, 64-bit)"
-            },
-            {
-             "type":  "PortableApps",
-             "urls":  [
-              "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_150327_English.paf.exe?use_mirror=autoselect"
-             ],
-             "size":  2064160,
-             "crc32":  "95CE13FF",
-             "md5":  "1522c3c92ab9a9496a68394dc0e3bda7",
-             "description":  "Preview, Installer (32-bit, 64-bit)"
-            }
-           ]
-      }
-     ]
+    "lastmod":  "2016-02-20T18:22:08.300Z",
+    "releases":  [
+                     {
+                         "type":  "Alpha",
+                         "version":  "150416",
+                         "files":  [
+                                       {
+                                           "type":  "7-Zip",
+                                           "urls":  [
+                                                        "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.150416.7z?use_mirror=autoselect"
+                                                    ],
+                                           "size":  2182511,
+                                           "crc32":  "F950B9AA",
+                                           "md5":  "2eb4da132b7abccb3215386e0fb6cdb0",
+                                           "description":  "Alpha, Portable (32-bit, 64-bit)"
+                                       },
+                                       {
+                                           "type":  "Installer",
+                                           "urls":  [
+                                                        "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.150416.exe?use_mirror=autoselect"
+                                                    ],
+                                           "size":  4463016,
+                                           "crc32":  "ECE1E539",
+                                           "md5":  "f3e9c6bb17a154eb153bdba472a6a7a9",
+                                           "description":  "Alpha, Installer (32-bit, 64-bit)"
+                                       },
+                                       {
+                                           "type":  "PortableApps",
+                                           "urls":  [
+                                                        "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_150416_English.paf.exe?use_mirror=autoselect"
+                                                    ],
+                                           "size":  2072696,
+                                           "crc32":  "53396F82",
+                                           "md5":  "8203308006ae4b4111eb1a9f06e23d80",
+                                           "description":  "Alpha, Installer (32-bit, 64-bit)"
+                                       }
+                                   ]
+                     },
+                     {
+                         "type":  "Preview",
+                         "version":  "150327",
+                         "files":  [
+                                       {
+                                           "type":  "7-Zip",
+                                           "urls":  [
+                                                        "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.150327.7z?use_mirror=autoselect"
+                                                    ],
+                                           "size":  2171464,
+                                           "crc32":  "486726FA",
+                                           "md5":  "a159b4c49b1ef300f173ec9d3aeb5ee4",
+                                           "description":  "Preview, Portable (32-bit, 64-bit)"
+                                       },
+                                       {
+                                           "type":  "Installer",
+                                           "urls":  [
+                                                        "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.150327.exe?use_mirror=autoselect"
+                                                    ],
+                                           "size":  4449728,
+                                           "crc32":  "12DBF3F5",
+                                           "md5":  "bb91cc3b8f03467c1f41d8fcad06c934",
+                                           "description":  "Preview, Installer (32-bit, 64-bit)"
+                                       },
+                                       {
+                                           "type":  "PortableApps",
+                                           "urls":  [
+                                                        "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_150327_English.paf.exe?use_mirror=autoselect"
+                                                    ],
+                                           "size":  2064160,
+                                           "crc32":  "95CE13FF",
+                                           "md5":  "1522c3c92ab9a9496a68394dc0e3bda7",
+                                           "description":  "Preview, Installer (32-bit, 64-bit)"
+                                       }
+                                   ]
+                     },
+                     {
+                         "type":  "Stable",
+                         "version":  "150416",
+                         "files":  [
+                                       {
+                                           "type":  "7-Zip",
+                                           "urls":  [
+                                                        "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.150416.7z?use_mirror=autoselect"
+                                                    ],
+                                           "size":  2182511,
+                                           "crc32":  "F950B9AA",
+                                           "md5":  "2eb4da132b7abccb3215386e0fb6cdb0",
+                                           "description":  "Stable, Portable (32-bit, 64-bit)"
+                                       },
+                                       {
+                                           "type":  "Installer",
+                                           "urls":  [
+                                                        "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.150416.exe?use_mirror=autoselect"
+                                                    ],
+                                           "size":  4463016,
+                                           "crc32":  "ECE1E539",
+                                           "md5":  "f3e9c6bb17a154eb153bdba472a6a7a9",
+                                           "description":  "Stable, Installer (32-bit, 64-bit)"
+                                       },
+                                       {
+                                           "type":  "PortableApps",
+                                           "urls":  [
+                                                        "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_150416_English.paf.exe?use_mirror=autoselect"
+                                                    ],
+                                           "size":  2072696,
+                                           "crc32":  "53396F82",
+                                           "md5":  "8203308006ae4b4111eb1a9f06e23d80",
+                                           "description":  "Stable, Installer (32-bit, 64-bit)"
+                                       }
+                                   ]
+                     }
+                 ]
 }
