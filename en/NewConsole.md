@@ -168,18 +168,23 @@ you may use `-new_console` or `-cur_console` switches.
   * Option [Inject ConEmuHk](ConEmuHk.html) **must be enabled** in ConEmu settings
     if you want to use these switches in your shell prompt (CLI).
   * These switches are shown in ConEmu ‘About’ dialog (Win+Alt+A).
-  * The `s` sub-switch is complicated, look at examples below.
+  * The `s` sub-switch is complicated and [deserves separate article](SplitScreen.html#From-your-shell-prompt), look at examples below.
   * The `-new_console` is one of the ways to start **[GUI](ChildGui.html)** application from existing tab in the new ConEmu tab.
   * Several switches in one command may be used:
     `-new_console:b -new_console:h9999` and `-new_console:bh9999` are equal.
   * While you create new tab from ConEmu GUI interface, `-new_console` and `-cur_console` have the same effect.
   * These are NOT ConEmuC switches, specify them as application (far, vim, putty, etc.) switches.
   * You may put multiple simple or quoted string switches delimited with colon, example:
-<pre>cmd -new_console:a:bc:d:"c:\users\Pete":u:"Pete:password"
-</pre>
+
+~~~
+cmd -new_console:a:bc:d:"c:\users\Pete":u:"Pete:password"
+~~~
+
   * You may need to escape special symbols `<>()&|^"` with `^` symbol, example:
-<pre>cmd -new_console:P:"^<PowerShell^>"
-</pre>
+
+~~~
+cmd -new_console:P:"^<PowerShell^>"
+~~~
 
 
 

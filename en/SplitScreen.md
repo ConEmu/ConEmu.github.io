@@ -42,12 +42,12 @@ As usual, ConEmu provides more than a one way to do any action.
 
 
 
-<h3 id="Create-new-console-dialog"> <a href="SplitScreen.html">SplitScreen</a> options in ‘Create new console’ dialog </h3>
+### SplitScreen options in ‘Create new console’ dialog  {#Create-new-console-dialog}
 
-Open ‘Create new console’ dialog by pressing Win+W or
+Open ‘[Create new console](LaunchNewTab.html)’ dialog by pressing Win+W or
 <code class="plus">[+]</code> toolbar button and set up ‘New console split’ options.
 
-**Note**, if you have disabled [Create confirmation](SettingsConfirm.html)
+**NB**, if you have disabled [Create confirmation](SettingsConfirm.html)
 press `Win+Shift+W` or `Shift`+<code class="plus">[+]</code>.
 
 
@@ -55,16 +55,34 @@ press `Win+Shift+W` or `Shift`+<code class="plus">[+]</code>.
 ### From your shell prompt   {#From-your-shell-prompt}
 
 You may use `-new_console:s[<SplitTab>T][<Percents>](H|V)` switch
-appended to any command typed in your prompt.
-Option ‘Inject [ConEmuHk](ConEmuHk.html)’ must be enabled to use this feature.
+appended to any command typed in your prompt or [Task contents](Tasks.html).
+Option ‘Inject [ConEmuHk](ConEmuHk.html)’ must be enabled to use this feature in prompt.
 
-Examples:
+#### Examples  {#new_console-examples}
 
 |:---|:---|
 | `cmd -new_console:s` | split current pane, run `cmd` shell, new pane and old (current) pane become 50% width of current pane |
 | `cmd -new_console:s50H` | same as `cmd -new_console:s` |
 | `powershell -NoProfile -new_console:sV` | split current pane, run `powershell -NoProfile`, create new pane to the bottom |
 | `sh --login -i -new_console:s3T30H` | split 3-d pane, create new pane to the right with 30% width |
+
+#### SplitTab  {#SplitTab}
+
+Usually the active console is splitted, but with this 1-based number you may
+select ‘proper’ console (pane or tab) to split.
+
+The switch has meaning only when used within [Task commands](Tasks.html),
+and only consoles started **from the Task** are counted.
+
+So, you may create complicated geometry starting tabs in desired order.
+
+~~~
+cmd
+cmd -new_console:s66H
+cmd -new_console:s50H
+cmd -new_console:s2T50V
+cmd -new_console:s3T50V
+~~~
 
 
 

@@ -48,6 +48,9 @@ This dialog may be opened from:
 * ![System menu](/img/ConEmuAddSys.png)
 * GuiMacro [Create(0,1)](GuiMacro.html#Recreate)
 
+**NB**, if you have disabled [Create confirmation](SettingsConfirm.html)
+press `Win+Shift+W` or `Shift`+<code class="plus">[+]</code>.
+
 Well, what you can do with this dialog?
 
 * Choose command line and startup directory for new process.
