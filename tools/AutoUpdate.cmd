@@ -1,6 +1,8 @@
-rem @echo off
+@echo off
 
 setlocal
+
+if NOT defined LANG ( set "LANG=en_US.UTF-8" )
 
 if "%~2"=="" (
   echo Usage: %~nx0 ^<BuildNo^> ^<Alpha^|Preview^|Preview+Alpha^|Stable^> [-local]
@@ -136,11 +138,14 @@ call "%~dp0push-conemu.cmd"
 
 rem Upload "%www_dir%\version.ini" to $SF$/AutoUpdate
 pushd "%www_dir%"
+cd
+call cecho /yellow "%upld_dir%\UploadSF.cmd version.ini AutoUpdate"
 call "%upld_dir%\UploadSF.cmd" version.ini AutoUpdate
 if errorlevel 1 (
   call cecho "Upload `version.ini` to SF failed"
   pause
 )
+call cecho /yellow "%upld_dir%\UploadSF.cmd version.json AutoUpdate"
 call "%upld_dir%\UploadSF.cmd" version.json AutoUpdate
 if errorlevel 1 (
   call cecho "Upload `version.json` to SF failed"
