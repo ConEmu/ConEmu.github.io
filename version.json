@@ -1,41 +1,41 @@
 {
-    "lastmod":  "2016-02-20T18:29:32.749Z",
+    "lastmod":  "2016-02-22T19:07:54.320Z",
     "releases":  [
                      {
                          "type":  "Alpha",
-                         "version":  "160219",
+                         "version":  "160222",
                          "files":  [
                                        {
                                            "type":  "7-Zip",
                                            "urls":  [
-                                                        "https://github.com/Maximus5/ConEmu/releases/download/v16.02.19/ConEmuPack.160219.7z",
-                                                        "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.160219.7z?use_mirror=autoselect"
+                                                        "https://github.com/Maximus5/ConEmu/releases/download/v16.02.22/ConEmuPack.160222.7z",
+                                                        "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.160222.7z?use_mirror=autoselect"
                                                     ],
-                                           "size":  2385641,
-                                           "crc32":  "25028A66",
-                                           "md5":  "056c498c41f8ccfcc95bff1ef86e21ad",
+                                           "size":  2356486,
+                                           "crc32":  "89686E81",
+                                           "md5":  "8ea28d295f0e068f92844c35af03663b",
                                            "description":  "Alpha, Portable (32-bit, 64-bit)"
                                        },
                                        {
                                            "type":  "Installer",
                                            "urls":  [
-                                                        "https://github.com/Maximus5/ConEmu/releases/download/v16.02.19/ConEmuSetup.160219.exe",
-                                                        "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.160219.exe?use_mirror=autoselect"
+                                                        "https://github.com/Maximus5/ConEmu/releases/download/v16.02.22/ConEmuSetup.160222.exe",
+                                                        "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.160222.exe?use_mirror=autoselect"
                                                     ],
-                                           "size":  4679080,
-                                           "crc32":  "829DA663",
-                                           "md5":  "c0f23175c4dfe43ce45c18a37b550e23",
+                                           "size":  4679592,
+                                           "crc32":  "ACD2A358",
+                                           "md5":  "47ddd8c745713662c6fa5cb5dfb13871",
                                            "description":  "Alpha, Installer (32-bit, 64-bit)"
                                        },
                                        {
                                            "type":  "PortableApps",
                                            "urls":  [
-                                                        "https://github.com/Maximus5/ConEmu/releases/download/v16.02.19/ConEmu_160219_English.paf.exe",
-                                                        "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_160219_English.paf.exe?use_mirror=autoselect"
+                                                        "https://github.com/Maximus5/ConEmu/releases/download/v16.02.22/ConEmu_160222_English.paf.exe",
+                                                        "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_160222_English.paf.exe?use_mirror=autoselect"
                                                     ],
-                                           "size":  2237672,
-                                           "crc32":  "4191F583",
-                                           "md5":  "63dd0c7e9ddde5375b879065e5fbf651",
+                                           "size":  2208952,
+                                           "crc32":  "91C0B0D1",
+                                           "md5":  "da91f823ad9d38108a4a1fe0869c38e3",
                                            "description":  "Alpha, PortableApps.com"
                                        }
                                    ]
