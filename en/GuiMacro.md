@@ -383,6 +383,7 @@ or returned via string result if you are using Far 3.0 with Lua.
 Optional parameters are italic.
 
 * [**About** ( "*Page*" )](#About)
+* [**Start Alt+Number mode**](#AltNumber)
 * [**AffinityPriority** ( *Affinity*, *Priority* )](#AffinityPriority)
 * [**Attach** ( *PID*, *Alternative* )](#Attach)
 * [**Break** ( Event, *ProcessGroupId* )](#Break)
@@ -447,6 +448,15 @@ Optional parameters are italic.
 ~~~
 About(["<Page>"])
   - Show ‘About’ dialog with page activated, e.g. ‘About("-new_console")’
+~~~
+
+
+
+### Start [Alt+Number](AltNumpad.html) mode  {#AltNumber}
+
+~~~
+AltNumber([Base])
+  - Start Alt+Numbers mode: Base = 10 or 16
 ~~~
 
 
