@@ -92,6 +92,7 @@ if errorlevel 1 (
 rem Preview
 if /I "%~2"=="Preview" call "%www_dir%\tools\UpdateIni.cmd" %CEVER% preview "%setup_dir%" "%pack_dir%" "%www_dir%"
 if /I "%~2"=="Preview+Alpha" call "%www_dir%\tools\UpdateIni.cmd" %CEVER% preview_alpha "%setup_dir%" "%pack_dir%" "%www_dir%"
+if /I "%~2"=="Preview_Alpha" call "%www_dir%\tools\UpdateIni.cmd" %CEVER% preview_alpha "%setup_dir%" "%pack_dir%" "%www_dir%"
 if errorlevel 1 (
   call cecho "'Update_Ini.cmd stable' preview"
   pause
@@ -123,6 +124,10 @@ if exist "%www_dir%\_posts\.daily.md" (
   )
 )
 
+
+if "%~3" == "-local" (
+  goto :EOF
+)
 
 call cecho /green "Commit AutoUpdates to GIT"
 call "%~dp0Deploy_ini_to_github.cmd" "ConEmu %CEVER% AutoUpdate information"

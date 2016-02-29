@@ -285,9 +285,35 @@ function WriteFileContent($file,$text)
 $script:json = (Get-Content -Raw $json_file) | ConvertFrom-JSON
 UpdateJSON $js_reltype
 if ($js_reltype2 -ne "") {
-  Update $js_reltype2
+  UpdateJSON $js_reltype2
 }
-WriteFileContent $json_file (ConvertTo-JSON $script:json -Depth 99)
+# Format with spaces
+$json_data = (ConvertTo-JSON $script:json -Depth 99)
+$json_fmt = @()
+$json_fmt += @{ what="`"".PadLeft(56); to="`"".PadLeft(14); }
+$json_fmt += @{ what="]".PadLeft(52); to="]".PadLeft(10); }
+$json_fmt += @{ what="`"".PadLeft(43); to="`"".PadLeft(12); }
+$json_fmt += @{ what="`"".PadLeft(25); to="`"".PadLeft(8); }
+$json_fmt += @{ what="{".PadLeft(39); to="{".PadLeft(8); }
+$json_fmt += @{ what="}".PadLeft(39); to="}".PadLeft(8); }
+$json_fmt += @{ what="{".PadLeft(21); to="{".PadLeft(4); }
+$json_fmt += @{ what="}".PadLeft(21); to="}".PadLeft(4); }
+$json_fmt += @{ what="],".PadLeft(21); to="];".PadLeft(10); }
+$json_fmt += @{ what="]".PadLeft(21); to="]".PadLeft(6); }
+$json_fmt += @{ what="]".PadLeft(20); to="]".PadLeft(6); }
+$json_fmt += @{ what="]".PadLeft(17); to="]".PadLeft(2); }
+$json_fmt += @{ what="`"".PadLeft(4); to="`"".PadLeft(2); }
+$json_fmt += @{ what="`"type`":  `"";  to="`"type`": `""; }
+$json_fmt += @{ what=":  [";  to=": ["; }
+$json_fmt += @{ what="`"size`":  ";  to="`"size`":   "; }
+$json_fmt += @{ what="`"crc32`":  `""; to="`"crc32`": `""; }
+$json_fmt += @{ what="`"md5`":  `"";   to="`"md5`":   `""; }
+$json_fmt += @{ what="`"description`":  `""; to="`"description`": `""; }
+$json_fmt | % {
+  $json_data = $json_data.Replace($_.what, $_.to)
+}
+# Write to version.json
+WriteFileContent $json_file $json_data
 #Set-Content $json_file (ConvertTo-JSON $script:json) -Encoding UTF8
 Write-Host "Success:  $json_file"
 
