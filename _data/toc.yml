@@ -594,6 +594,10 @@
       rus: "Bad issues"
       url: "BadIssue.html"
     -
+      eng: "Third-party problems"
+      rus: "Проблемы сторонних приложений"
+      url: "ThirdPartyProblem.html"
+    -
       eng: "Search before post"
       rus: "Используйте поиск"
       url: "SearchBeforePost.html"

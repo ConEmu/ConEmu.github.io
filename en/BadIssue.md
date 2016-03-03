@@ -9,6 +9,8 @@ breadcrumbs:
    title: Feedback
 
 readalso:
+ - url: ThirdPartyProblems.html
+   title: Third-party problems
  - url: SearchBeforePost.html
    title: Search before post
  - url: OldBuild.html
