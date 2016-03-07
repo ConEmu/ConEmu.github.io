@@ -1,8 +1,9 @@
 ---
 title: "ConEmu | Inside Parent (Embedding)"
 
-description: "Feature ‘ConEmu Inside’ or ‘Embedding’ allows to run it inside any
-   other window, for example inside Windows' Explorer's details pane. Like ‘ConEmu Here’."
+description: "Feature ‘ConEmu Inside’ or ‘Embedding’ allows to run it
+   inside any other window, for example inside Windows' Explorer's
+   details pane. Like ‘ConEmu Here’."
 
 breadcrumbs:
  - url: TableOfContents.html#features
@@ -23,84 +24,101 @@ otherlang:
    ru: /ru/InsideParent.html
 ---
 
-# ConEmu Inside or Embedding
+# ConEmu-Inside or Embedding
 
-Функция ‘Inside’ позволяет запустить ConEmu-Maximus5 внутри какого-либо другого окна.
+The ‘Inside’ mode allows to run ConEmu-Maximus5
+inside any other window.
 
-* [В качестве панели в окне проводника](#settings) - выбираете
-  в контекстном меню для диска/папки/файла пункт ‘ConEmu Inside’
-  и внутри окна проводника появится настроенный вами shell
-  (cmd/powershell/bash) в текущей папке Проводника.
-* [В качестве дочернего окна в любом выбранном вами окне](#inside-switches).
-  Пример сейчас не придумаю, но может кому-то пригодится такой способ
-  интеграции удобной консоли в свое приложение.
+* [As a pane of Windows Explorer](#explorer) - select
+  from [context menu](#settings) of drive/folder/file item ‘ConEmu Inside’
+  ([register it first](SettingsIntegration.html)
+  and inside your Explorer window selected shell
+  (cmd/powershell/bash) would be started in the current folder.
+* [As child window inside any desired window](#terminal).
+  This mode may be used to implement handy and powerful terminal
+  inside other products, for example GitExtensions.
+  Just start ConEmu with switch `-insidewnd 0xHWND`.
 
 
 
-## Настройка для работы в окне Проводника Windows  {#settings}
+## Configuration for use inside Windows Explorer  {#settings}
 
 Режим навеян вопросом
-‘<a href="http://superuser.com/a/441531/139371" rel="nofollow"
- >How to embed PowerShell into Explorer or Explorer-like tool</a>’?
+‘[How to embed PowerShell into Explorer or Explorer-like tool](http://superuser.com/a/441531/139371)’?
 
 Add item ‘ConEmu Inside’ into Windows ‘Explorer’ context menu,
 it will open ConEmu as child window inside ‘Explorer’ window.
 It's similar to ‘ConEmu Here’ - working folder will be current folder from ‘Explorer’ window.
 
-В ‘Проводник’ Windows добавляется пункт контекстного меню ‘ConEmu Inside’,
-при выборе которого ConEmu запускается в ‘области переходов’, внутри окна ‘Проводника’.
-Похож на режим ‘ConEmu Here’ - текущей папкой в ConEmu устанавливается папка из ‘Проводника’.
-
-Все на вкладке [Integration](SettingsIntegration.html) окна [Settings](Settings.html).
+All options on the [Integration page](SettingsIntegration.html) of [Settings dialog](Settings.html).
 
 
-### Группа элементов ‘ConEmu Inside’   {#inside-group}
-Можно создать несколько пунктов контекстного меню проводника,
-и просмотривать/редактировать ранее назначенные пункты
-(выберите пункт в выпадающем списке ‘Menu Item’).
+### Group ‘ConEmu Inside’   {#inside-group}
+You may create several Explorer's context menu items
+and view/edit previously defined items
+(just choose desired item in the ‘Menu Item’ list).
 
 
-### Опция ‘Sync current directory (Explorer > ConEmu)’   {#sync-dir}
-Пока что эта не сохраняется в настройке и включена по умолчанию.
-Для быстрого включения/выключения в режиме Inside в [статустной строке](StatusBar.html)
-отображается колонка ‘Sync’.
-Смысл опции в том, что ConEmu может следить за текущей папкой в окне проводника
-и синхронизировать ее, автоматически выполняя `cd /d ...` в окне консоли.
-Чтобы эта опция работала в WinXP/Win2k3 в заголовке окне проводника
-должен отображаться полный путь текущей папки.
+### Option ‘Sync current directory (Explorer > ConEmu)’   {#sync-dir}
+At the moment, the option is not stored in the [Settings dialog](Settings.html),
+but written as ConEmu command line option when you press ‘Register’ button.
+While Inside mode [StatusBar](StatusBar.html) shows ‘Sync’ column
+to turn synchronization On/Off.
+
+The idea of the option is that ConEmu will monitor current folder in the
+Explorer window and synchronize it with the shell, by executing `cd /d ...`
+in the console.
+You may define another command for other shell, for example if you use ‘bash’
+the command may be: `cd '\2'\n`.
+
+Note for WinXP/Win2k3. You have to show full active folder path
+in the Explorer window title.
 
 
-## Запуск из Проводника Windows  {#startup}
+## Run from Explorer window  {#explorer}
 
-Как уже было сказано ранее, запуск ConEmu в этом режиме осуществляется
-через выбор пункта контекстного меню проводника.
-Имя пункта по умолчанию - ‘ConEmu Inside’, но вы можете настроить любое имя
-и создать более одного пункта меню.
+![ConEmu Inside Explorer's window](ConEmuInside.png)
 
-Для работы в этом режиме в окне проводника должно быть место для размещения окна консоли.
+In this mode ConEmu may be started from Explorer's context menu.
+The default name of menu item is ‘ConEmu Inside’, but you may
+choose any other name,
+or create several items for different shells.
 
-| OS | Панель |
+**NB**
+This mode requires some free space (Details, Preview or Status areas)
+to ‘inject’ terminal inside it.
+
+| OS | Panel |
 |:----|:----|
-| Windows 2000 | Не проверено |
-| Windows XP <br/> Windows 2003 | Должна быть показана панель ‘**Полезный совет**’. <br/> Меню проводника ‘Вид’ Панели обозревателя ‘Полезный совет’. <br/> * English: ‘Explorer Bar’ > ‘Tip of the Day’ * |
-| Windows Vista | Не проверено |
-| Windows 7 | Нужно увеличить высоту области **статуса** или отобразить область **предварительного просмотра**. |
-| Windows 8 | Нужно отобразить либо ‘**Preview pane**’ либо ‘**Details pane**’ |
+| Windows 2000 | Unchecked |
+| Windows XP <br/> Windows 2003 | The panel ‘**Tip of the Day**’. <br/> Explorer's menu ‘View’ > ‘Explorer Bar’ > ‘Tip of the Day’. |
+| Windows Vista | Unchecked |
+| Windows 7 | Increase the height of the **status** area or turn on **preview** area. |
+| Windows 8 | Turn on either ‘**Preview pane**’ or ‘**Details pane**’. |
 
-**Подсказка** Если при выборе пункта меню удерживать ‘Shift’,
-то ConEmu запустит таб в режиме ‘As Administrator’.
+**Hint**
+If you hold ‘Shift’ pressed while starting ConEmu from menu item,
+ConEmu would start the console ‘As Administrator’.
 
-Если ConEmu уже был открыт в режиме Inside, то в ранее открытом окне запускается новый Tab.
-Панель табов в этом режиме по умолчанию не отображается (можете включить при желании),
-поэтому переключаться между табами можно через статусную строку кликом
-по полю ‘ActiveCon/TotalCount’.
+If ConEmu was already started in the Inside mode, new console would be started as new ‘Tab’.
+But [TabBar](TabBar.html) is not shown by default
+(you may turn it on in [Settings](SettingsTabBar.html)),
+so you may switch tabs through clicks on the [StatusBar's](StatusBar.html)
+field ‘ActiveCon/TotalCount’.
 
-**Подсказка** Вызвать окно [Settings](Settings.html) можно:
 
-  *  Нажав Win+Alt+P;
-  *  Щелкнув правой кнопкой мышки по ‘гамбургеру’ в [Панели инструментов](ToolBar.html);
-  *  Выбрав пункт ‘Settings’ в [Системном меню](SystemMenu.html);
-  *  Щелкнув правой кнопкой мышки по крайней левой части статусной строки.
+
+## Run Inside third-party applications  {#terminal}
+
+![ConEmu Inside third-party application](ConEmuInside.png)
+
+You (user or developer) may start ConEmu as child terminal window.
+The only thing you shall implement or provide is some child window,
+which ‘HWND’ you pass as ConEmu.exe switch `-insidewnd 0xHWND`
+when you run the terminal. `HWND` is hexadecimal window descriptor.
+
+There is sample [conemu-inside](https://github.com/Maximus5/conemu-inside)
+project which demostrates how you may create and control child terminal.
 
 
 
@@ -108,6 +126,6 @@ It's similar to ‘ConEmu Here’ - working folder will be current folder from �
 
 | | |
 |:----|:----|
-| `/inside` | Automatic mode. Used to run ConEmu in the Explorer window. <br/> ConEmu will search for appropriate parent process window suitable to embed into. |
-| `/insidepid PID` | То же что и ‘/inside’ но с явным указанием PID процесса, в окно которого нужно внедриться. <br/> *PID* - ИД процесса (dec). |
-| `/insidewnd 0xHWND` | Directly specified window handle (HWND) to embed into. Unlike automatic mode ConEmu will cover all client area of this HWND. <br/> *HWND* - window descriptor (hex). |
+| `-inside` | Automatic mode. Used to run ConEmu in the Explorer window. <br/> ConEmu will search for appropriate parent process window suitable to embed into. |
+| `-insidepid PID` | Same as ‘-inside’ but you define exact Process ID, in which window ConEmu must integrate. <br/> *PID* is a decimal process identifier. |
+| `-insidewnd 0xHWND` | Directly specified window handle (HWND) to embed into. Unlike automatic mode ConEmu will cover all client area of this HWND. <br/> *HWND* - window descriptor (hex). |
