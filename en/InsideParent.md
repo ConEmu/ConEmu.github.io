@@ -43,7 +43,7 @@ inside any other window.
 
 ## Configuration for use inside Windows Explorer  {#settings}
 
-Режим навеян вопросом
+The mode was inspired by the question
 ‘[How to embed PowerShell into Explorer or Explorer-like tool](http://superuser.com/a/441531/139371)’?
 
 Add item ‘ConEmu Inside’ into Windows ‘Explorer’ context menu,
