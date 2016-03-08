@@ -72,8 +72,8 @@ Keep in mind few things!
 
 ## Do not run your console tool in mintty  {#mintty}
 
-You run **console** application developer for **Windows**, don't you?
-So, why does that application require to be started in **certain** terminal emulation,
+You run **console** application developed for **Windows**, don't you?
+So, why does that application require to be started in **certain** terminal emulator,
 instead of [Standard Windows terminal](RealConsole.html)?
 
 Imagine, that you bought a game with mark ‘Designed for Windows’,
