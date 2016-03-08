@@ -9,6 +9,8 @@ breadcrumbs:
    title: Feedback
 
 readalso:
+ - url: CygwinMsys.html
+   title: "Cygwin & MSys"
  - url: BadIssue.html
    title: Bad issues has no value
  - url: SearchBeforePost.html
@@ -59,9 +61,35 @@ Keep in mind few things!
   using same console window and buffer sizes. A lot of problems ‘magically’
   disappear when console window size is lesser than some value, hard-coded
   in the third-party software.
+* Do not run your application in the mintty or its descendants.
+  The reason is [simple and obvious](#mintty).
 * There is [Environment Settings page](SettingsEnvironment.html), where you may predefine
   [environment variables](WindowsEnvironment.html), [desired code page](UnicodeSupport.html),
   and some other initializations. Take them into account too.
+
+
+
+## Do not run your console tool in mintty  {#mintty}
+
+You run **console** application developer for **Windows**, don't you?
+So, why does that application require to be started in **certain** terminal emulation,
+instead of [Standard Windows terminal](RealConsole.html)?
+
+Imagine, that you bought a game with mark ‘Designed for Windows’,
+but when you try to run it, you realize that you are required to install
+VirtualBox with Linux inside it. Nice enough, yeah? Even if these products
+are completely free.
+
+So, I'm encourage you to check your application in the
+[Standard Windows terminal](RealConsole.html) and report the problem
+to the application authors, because almost all problems have nothing
+to fix within ConEmu.
+
+There are special articles about this subsystem and related problems:
+[Cygwin & MSys](CygwinMsys.html), [Cygwin & ANSI](CygwinAnsi.html),
+and [more](TableOfContents.html#cygwin-and-msys).
+
+**Experimental** [cygwin/msys terminal connector](#cygwin-connector) is on the way.
 
 
 
