@@ -40,6 +40,7 @@ or mouse input. Use of ‘native’ [console analogues](ConsoleApplication.html)
 is preferable.
 
 * [Check third-party software stand-alone](#stand-alone)
+* [Do not run your console tool in mintty](#mintty)
 * [Run your shell without profile](#bare-shell)
 * [Note about DefaultTerminal](#defterm)
 
@@ -80,9 +81,9 @@ but when you try to run it, you realize that you are required to install
 VirtualBox with Linux inside it. Nice enough, yeah? Even if these products
 are completely free.
 
-So, I'm encourage you to check your application in the
-[Standard Windows terminal](RealConsole.html) and report the problem
-to the application authors, because almost all problems have nothing
+So, I encourage you to check your application in the
+[Standard Windows terminal](RealConsole.html) and **report** the problem
+to the **application authors**, because almost all problems have nothing
 to fix within ConEmu.
 
 There are special articles about this subsystem and related problems:
