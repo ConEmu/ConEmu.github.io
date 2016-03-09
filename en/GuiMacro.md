@@ -420,7 +420,7 @@ Optional parameters are italic.
 * [**Scroll** ( Type, Direction, *Count* )](#Scroll)
 * [**Select** ( Type, DX, DY, HE )](#Select)
 * [**SetDpi** ( DPI )](#SetDpi)
-* [**SetOption** ( "Check", ID, Value )](#SetOption)
+* [**SetOption** ( "Check", ID, Value )](#SetOptionID)
 * [**SetOption** ( "Name", Value, *IsRelative* )](#SetOptionName)
 * [**Settings** ( *PageResourceId* )](#Settings)
 * [**Shell** ( "Verb", "File", "*Parms*", "*Dir*", *ShowCmd* )](#Shell)
@@ -1100,7 +1100,7 @@ Zoom(N)
 ## SetOption  {#SetOptionExample}
 
 
-You may change some (or most) of ConEmu settings using [SetOption](#SetOption) macro function.
+You may change some (or most) of ConEmu settings using [SetOption](#SetOptionID) macro function.
 
 
 It may be used **by name** for several options, for example
