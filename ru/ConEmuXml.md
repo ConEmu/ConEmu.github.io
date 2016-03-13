@@ -33,6 +33,7 @@ Windows 2000 is limited to using Registry.
 ConEmu ищет этот файл в следующем порядке:
 
 |:---|:---|
+| Пользовательский | Если `ConEmu.exe` запущен с ключом [-loadcfgfile "full-path-2-xml"](ConEmuArgs.html), то будет использоваться указанный файл |
 | `%ConEmuDir%\` | Папка с файлами `ConEmu.exe` и `ConEmu64.exe` |
 | `%ConEmuBaseDir%\` | Папка с файлами `ConEmuC.exe` и `ConEmuC64.exe` |
 | `%APPDATA%\` | Я не считаю этот случай действительно «портабельным», но многие просили `%APPDATA%` |
@@ -45,9 +46,9 @@ ConEmu ищет этот файл в следующем порядке:
 или просто переименовать `ConEmu_Sample.xml` в `ConEmu.xml` для включения xml-режима.
 Пример настроек `ConEmu_Sample.xml` поставляется с ConEmu.
 
-Ключ [именованных конфигураций (/config)](ConEmuArgs.html) также можно использовать в xml-режиме.
+Ключ [именованных конфигураций (-config "cfg-name")](ConEmuArgs.html) также можно использовать в xml-режиме.
 
-И наконец, есть два ключа [/loadcfgfile и /safecfgfile](ConEmuArgs.html)
+И наконец, есть два ключа [-loadcfgfile и -safecfgfile](ConEmuArgs.html)
 для использования специально указанных файлов (может быть полезно в некоторых случаях).
 
 

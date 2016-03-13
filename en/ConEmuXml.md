@@ -33,6 +33,7 @@ File without leading dot has priority.
 ConEmu search sequence of this file:
 
 |:---|:---|
+| User specified | If `ConEmu.exe` is started with switch [-loadcfgfile "full-path-2-xml"](ConEmuArgs.html), than ConEmu will use specified xml file |
 | `%ConEmuDir%\` | Folder with `ConEmu.exe` and `ConEmu64.exe` |
 | `%ConEmuBaseDir%\` | Folder with `ConEmuC.exe` and `ConEmuC64.exe` |
 | `%APPDATA%\` | I don't think this is really ‘portable’, but many users was asked about `%APPDATA%` |
@@ -45,9 +46,9 @@ Or you may create manually a new empty `ConEmu.xml`
 or just rename `ConEmu_Sample.xml` to `ConEmu.xml` for engaging xml-mode.
 Template file `ConEmu_Sample.xml` is shipped with ConEmu.
 
-You may use [named configuration (/config)](ConEmuArgs.html) switch with xml-mode too.
+You may use [named configuration (-config "cfg-name")](ConEmuArgs.html) switch with xml-mode too.
 
-Also, there are switches [/loadcfgfile and /safecfgfile](ConEmuArgs.html)
+Also, there are switches [-loadcfgfile and -safecfgfile](ConEmuArgs.html)
 to use any special locations (may be not so useful for daily using, but available).
 
 
