@@ -1,5 +1,5 @@
 {
-  "lastmod":  "2016-03-14T01:46:06.875Z",
+  "lastmod":  "2016-03-14T11:34:41.915Z",
   "releases": [
     {
       "type": "Alpha",
@@ -11,9 +11,9 @@
             "https://github.com/Maximus5/ConEmu/releases/download/v16.03.13/ConEmuPack.160313.7z",
             "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.160313.7z?use_mirror=autoselect"
           ],
-          "size":   2590382,
-          "crc32": "4DC474F5",
-          "md5":   "ece258cd80b8a398a5c75bb8f18ef5c7",
+          "size":   2590215,
+          "crc32": "4F468394",
+          "md5":   "d4781e4604be4bdb0f74c0318fbf522c",
           "description": "Alpha, Portable (32-bit, 64-bit)"
         },
         {
