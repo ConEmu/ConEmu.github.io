@@ -77,7 +77,7 @@ in the Explorer window title.
 
 ## Run from Explorer window  {#explorer}
 
-![ConEmu Inside Explorer's window](ConEmuInside.png)
+![ConEmu Inside Explorer's window](/img/ConEmuInside.png)
 
 In this mode ConEmu may be started from Explorer's context menu.
 The default name of menu item is ‘ConEmu Inside’, but you may
@@ -110,7 +110,7 @@ field ‘ActiveCon/TotalCount’.
 
 ## Run Inside third-party applications  {#terminal}
 
-![ConEmu Inside third-party application](ConEmuInside.png)
+![ConEmu Inside third-party application](/img/ConEmuInside2.png)
 
 You (user or developer) may start ConEmu as child terminal window.
 The only thing you shall implement or provide is some child window,
