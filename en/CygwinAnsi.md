@@ -24,23 +24,33 @@ readalso:
 
 # Cygwin and pty related issues
 
-I have many reports about cygwin.
-And most of them are related to one cygwin behavior: when it detects real win32 console,
-it process all ANSI sequences internally, so ConEmu does not receive ANSI at all.
+I have many false reports about cygwin behavior in ConEmu.
+
+The problem is that when cygwin's applications detect [real win32 console](RealConsole.html),
+**cygwin's core process** all ANSI sequences **internally** instead of bypassing them to terminal.
+In other words, ConEmu **does not receive** any ANSI sequences at all.
+
+Sample issues:
+[gh-608](https://github.com/Maximus5/ConEmu/issues/608),
+[gh-590](https://github.com/Maximus5/ConEmu/issues/590),
+[old-issues#879](https://github.com/Maximus5/conemu-old-issues/issues/879),
+etc.
 
 Yep, users say: ‘It is working in mintty’.
 
 Answer is simple: mintty is not a ‘real’ console, all its magic is done with pipes.
 
-On the one hand - cygwin detects ‘pipe’ mode (that mode may be named ‘pty’ or ‘cygwin terminal’)
+On the one hand - cygwin detects POSIX compatible ‘pipe’ mode
+(that mode may be named ‘pty’ or ‘cygwin terminal’)
 and do not process ANSI internally, but just bypass them to terminal.
 
-On the other hand - many console applications fails in mintty (most known to me - PowerShell and Far Manager).
+On the other hand - many console applications fails in mintty
+(most known to me - PowerShell and Far Manager).
 
-ConEmu is hybrid terminal.
-It support all functionality Windows offers to console applications
-AND is able to process [ANSI sequences](AnsiEscapeCodes.html),
-all magic is done by [hooking Windows API](ConEmuHk.html).
+ConEmu is **hybrid terminal**. It support all functionality
+[Windows offers to console applications](https://msdn.microsoft.com/en-us/library/windows/desktop/ms681913.aspx)
+**and** is able to process [ANSI sequences](AnsiEscapeCodes.html).
+All magic is done by [hooking Windows API](ConEmuHk.html).
 
 But cygwin do not know about [ConEmu abilities](AnsiEscapeCodes.html) and
 I do not know any way to force cygwin to do ‘right’ things (send ANSI to ConEmu consoles).
