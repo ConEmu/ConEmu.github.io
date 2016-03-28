@@ -141,6 +141,13 @@ if errorlevel 1 (
 rem call "%www_dir%\..project\0-sitemap.cmd"
 call "%~dp0push-conemu.cmd"
 
+
+rem Other mirrors
+if exist "%~dp0mirrors.cmd" (
+  call "%~dp0mirrors.cmd" "%~2"
+)
+
+
 rem Upload "%www_dir%\version.ini" to $SF$/AutoUpdate
 pushd "%www_dir%"
 cd
