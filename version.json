@@ -1,41 +1,41 @@
 {
-  "lastmod":  "2016-03-28T12:27:04.596Z",
+  "lastmod":  "2016-03-29T12:39:54.681Z",
   "releases": [
     {
       "type": "Alpha",
-      "version":  "160327",
+      "version":  "160328",
       "files": [
         {
           "type": "7-Zip",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v16.03.27/ConEmuPack.160327.7z",
-            "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.160327.7z?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v16.03.28/ConEmuPack.160328.7z",
+            "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.160328.7z?use_mirror=autoselect"
           ],
-          "size":   2660021,
-          "crc32": "F5A6519D",
-          "md5":   "d9d08ee12a1d1b2bfd2e562574bfded1",
+          "size":   2659314,
+          "crc32": "A1128A13",
+          "md5":   "1cee22176f2d1d24dd17721438aa00da",
           "description": "Alpha, Portable (32-bit, 64-bit)"
         },
         {
           "type": "Installer",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v16.03.27/ConEmuSetup.160327.exe",
-            "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.160327.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v16.03.28/ConEmuSetup.160328.exe",
+            "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.160328.exe?use_mirror=autoselect"
           ],
           "size":   5133008,
-          "crc32": "3E8BBE47",
-          "md5":   "9baa96c60eb8ad51c02ab3f9c1956787",
+          "crc32": "673C6E8E",
+          "md5":   "edecd1622225fe9f6c5f43a523676cb4",
           "description": "Alpha, Installer (32-bit, 64-bit)"
         },
         {
           "type": "PortableApps",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v16.03.27/ConEmu_160327_English.paf.exe",
-            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_160327_English.paf.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v16.03.28/ConEmu_160328_English.paf.exe",
+            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_160328_English.paf.exe?use_mirror=autoselect"
           ],
-          "size":   2488936,
-          "crc32": "9A13D051",
-          "md5":   "94bf0cee095de9e8b07d65f11ef10d88",
+          "size":   2490592,
+          "crc32": "5D8E59B3",
+          "md5":   "5524f0359fbb3452e97e72a49e40701b",
           "description": "Alpha, PortableApps.com"
         }
       ]
