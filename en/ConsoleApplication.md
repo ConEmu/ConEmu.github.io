@@ -8,6 +8,8 @@ breadcrumbs:
    title: ConEmu
  - url: ConEmuTerms.html
    title: Terms
+ - url: https://msdn.microsoft.com/en-us/library/windows/desktop/ms681913.aspx
+   title: Windows console API
 ---
 
 # Console Applications

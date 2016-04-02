@@ -12,6 +12,8 @@ breadcrumbs:
 readalso:
  - url: VirtualConsole.html
    title: VirtualConsole
+ - url: https://msdn.microsoft.com/en-us/library/windows/desktop/ms681913.aspx
+   title: Windows console API
 ---
 
 # RealConsole
