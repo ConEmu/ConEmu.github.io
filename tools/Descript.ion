@@ -1,2 +1,3 @@
 AutoUpdate.cmd AutoUpdate.cmd 150319 Alpha|Preview|Preview_Alpha|Stable [-local]
+mirrors.cmd [Alpha|Preview|Preview_Alpha|Stable] - default is Alpha
 UpdateIni.cmd UpdateIni.cmd build devel|preview|Preview_Alpha|stable setup_dir pack_dir www_dir
