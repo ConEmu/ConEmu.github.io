@@ -127,7 +127,7 @@ to work with choosen console or GUI application.
 
 
 ## Release stages
-ConEmu released with 3-stage manner.
+ConEmu released with 3-stage manner: Stable, Preview and Alpha.
 Thought, it must be obvious, that if one don't want new features **and bugfixes** - he may stuck on stable.
 But it is strange (for me) enough when user reports a bug which was fixed months ago...
 
