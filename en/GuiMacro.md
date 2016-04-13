@@ -430,6 +430,7 @@ Optional parameters are italic.
 * [**Tab** ( Cmd, *Parm* )](#Tab)
 * [**Task** ( Index, "*Dir*" ), **Task** ( "Name", "*Dir*" )](#Task)
 * [**TaskAdd** ( "Name", "Commands", "*GuiArgs*", *Flags* )](#TaskAdd)
+* [**TermMode** ( Mode, Action )](#TermMode)
 * [**Transparency** ( Cmd, Value )](#Transparency)
 * [**Wiki** ( "*PageName*" )](#Wiki)
 * [**WindowFullscreen**, **WindowMaximize**, **WindowMinimize**](#WindowMode)
@@ -995,6 +996,21 @@ Task("Name"[,"Dir"])
 ~~~
 TaskAdd("Name","Commands"[,"GuiArgs"[,Flags]])
  - create new task and save it to settings
+~~~
+
+
+
+### Changes active terminal modes  {#TermMode}
+
+~~~
+TermMode(<Mode>[,<Action>])
+  - changes active terminal modes
+    Mode==0: Keyboard emulation (Xterm/Windows)
+    Mode==1: Bracketed paste
+    Mode==2: Application cursor keys (DECCKM)
+    Action==0: Disable mode
+    Action==1: Enable mode
+    Action==2: Switch mode (default)
 ~~~
 
 
