@@ -150,6 +150,7 @@ you may use `-new_console` or `-cur_console` switches.
    I - (GuiMacro only) forces inheriting of root process contents, like ‘Duplicate root’ feature
    n - disable ‘Press Enter or Esc to close console’
    o - don't enable ‘Long console output’ when starting command from Far Manager
+   p1 - force xterm keyboard emulation mode for started process
    P:"<palettename>" - set fixed palette for tab
    r - run as restricted user
    R - force start hooks server in the parent process
