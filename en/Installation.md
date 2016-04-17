@@ -31,22 +31,27 @@ readalso:
 In general, ConEmu installation is easy.
 Just unpack or install to any folder and run `ConEmu.exe`.
 
-* <a href="#not-a-far-manager">If you are **not** a Far Manager user</a>
-* <a href="#far-manager">If you **are** a Far Manager user</a>
-* <a href="#mactype">MacType issues</a>
-* <a href="#java">Java issues</a>
+* [If you are **not** a Far Manager user](#not-a-far-manager)
+* [If you **are** a Far Manager user](#far-manager)
+  * [Far Manager macros for ConEmu](#far-macros)
+* [MSI installer](#installer)
+  * [Desktop icons](#installer-icons)
+* [MacType issues](#mactype)
+* [Java issues](#java)
 
 
-<h2 id="not-a-far-manager">If you are <strong>not</strong> a Far Manager user</h2>
+## If you are **not** a Far Manager user  {#not-a-far-manager}
 
-* Unpack all files (from appropriate `ConEmuPack.\*.7z`)
-	or install `ConEmuSetup.\*.exe` package to any folder your choice.
- 	Subfolder `plugins` (Far Manager related) is not required in your case
+* You may use either package `ConEmuPack.*.7z` or `ConEmuSetup.*.exe`, both contain identical binaries.
+  * Just unpack all files from `ConEmuPack.*.7z`;
+  * Or run installer `ConEmuSetup.*.exe` and follow MSI installation wizard steps.
+    Read more about [installer](#installer) below.
+* NB.	Subfolder `plugins` (Far Manager related) is not required in your case
   and may be deleted or unchecked in the installer.
 * Run `ConEmu.exe` or `ConEmu64.exe`.
 
 
-<h2 id="far-manager">If you <strong>are</strong> a Far Manager user</h2>
+## If you **are** a Far Manager user  {#far-manager}
 
 In general, installation for using with Far Manager does not differ.
 With the only exception:
@@ -68,20 +73,73 @@ and will be loaded by `far.exe` automatically.
 
 Otherwise you have to use `/p` switch as shown in the example above.
 
-#### Sligtly deprecated
 
-* Use of `ConEmuPack.\*.7z` and `ConEmuSetup.\*.exe` are slightly different
-  * `ConEmuPack.\*.7z`: Unpack all files to the folder, containing `far.exe`
-  * `ConEmuSetup.\*.exe`: On the `Features` page you must select destination
-	for `Far Manager plugins` to the folder, containing `far.exe`.
-* Import to the registry Far Manager macroses, related to ConEmu. Macro `*.reg`
-	files are located in `ConEmu.Addons` directory. Each macro file (`*.reg`) has
-	description in header. Just doubleclick chosen files in Windows Explorer
-	to import them.
-* By default (started without command line params), ConEmu runs `far.exe` from
-	it's home folder, or `cmd.exe` if Far Manager not found.
-	Alternatively, You may run any root command, specifying `/Cmd \<App with params\>`
-	argument in ConEmu shortcut or command line.
+#### Far Manager macros for ConEmu  {#far-macros}
+
+The subfolder `ConEmu` contains several useful macros for different Far Manager versions.
+For example, folder `Far1_reg` contains `*.reg` macros for old-school Far 1.75,
+and `Far3_lua` supplies `*.lua` macros for latest Far 3.0 branch.
+
+Just browse them and choose what you want, each macro file has description in the header.
+
+For example, `ConEmu.ShiftEnter.*`
+let you run application under cursor or typed command in the new ConEmu tab.
+Just press `Alt+Enter` to run tab in foreground and `Shift+Enter` to run in background.
+
+How to use the desired macro.
+
+* `*.lua` macro files. Standard for Far 3.0 branch. Copy the file to the `%FARPROFILE%\macros\scripts`
+  and run in Far prompt `Macro:Load`.
+* `*.fml` macro files. This requires ‘MacroLib’ plugin, please refer to its documentation.
+* `*.reg` macro files. Just double click the file to import its contents to Windows registry.
+
+If your Far version does not know `Macro:Load` command, just restart the Far to reload macros list.
+
+
+
+## MSI installer  {#installer}
+
+The installer `ConEmuSetup.*.exe` is actually a bundle for standard x32 and x64 MSI installers.
+There are not differences between them except of default installatin folder on 64-bit OS.
+
+| Bitness | Default folder on 64-bit OS |
+|:---|:---|
+| 32-bit | `C:\Program Files (x86)\ConEmu` |
+| 64-bit | `C:\Program Files\ConEmu` |
+
+But you may choose any desired folder, and `ConEmuSetup.*.exe` shows if the version
+is already installed and where. The following screenshot depicts that 64-bit ConEmu
+version was installed in the `C:\ConEmu` folder.
+
+![Choose desired version](/img/Installer1.png)
+
+Actually, there are no differences between 32-bit and 64-bit packages, both contain
+all required files to run on any Windows.
+
+Selected MSI installer is unpacked to `%TEMP%` folder and you'll face usual MSI wizard.
+Just follow usual installation steps, selecting options and pressing ‘Next’ button.
+
+
+
+#### Desktop icons  {#installer-icons}
+
+By default, the installer creates icons on the ‘Desktop’ and in the ‘Start menu’.
+And these icons will be recreated by MSI each time you update ConEmu.
+If you dislike the behavior, if you want to rename icons or remove them from ‘Desktop’,
+you shall:
+
+* Run the installer `ConEmuSetup.*.exe` changing installed features.
+
+![Change installed features](/img/Installer2.png)
+
+* Uncheck ‘Desktop’ shortcuts creation.
+
+![Disable Desktop icon creation](/img/Installer3.png)
+
+* Go to the end of MSI wizard process.
+
+After that you may create you own personalized shortcuts on the Desktop.
+
 
 
 ## MacType issues  {#mactype}
