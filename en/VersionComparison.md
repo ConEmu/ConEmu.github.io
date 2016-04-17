@@ -120,7 +120,7 @@ or any other folder, if you are not using Far Manager..
 
 Download page: <http://www.fosshub.com/ConEmu.html>
 
-<a href="http://www.fosshub.com/ConEmu.html" rel="nofollow"><img src="../img/Downloads.png" alt="Fosshub.com" title="Fosshub.com mirror"></img></a>
+<a href="http://www.fosshub.com/ConEmu.html" rel="nofollow"><img src="../img/Downloads.png" alt="Fosshub.com" title="Fosshub.com mirror"/></a>
 
 **PS**. In fact, it does not matter which version of GUI you use (ConEmu.exe or ConEmu64.exe).
 ConEmu automatically selects the required files (ConEmuHk.dll or ConEmuHk64.dll and so on)
