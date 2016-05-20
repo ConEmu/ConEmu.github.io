@@ -254,6 +254,7 @@ ANSICON_DEF=7
 | ESC \[ ? 1049 l | Restore cursor position and restore xterm working buffer (with backscroll) |
 | ESC \[ ? 2004 h | Enable xterm bracketed paste mode: ConEmu sends pasted text to console input buffer framed into `\s[200~` ... `\e[201~` |
 | ESC \[ ? 2004 l | Disable xterm bracketed paste mode |
+| ESC \[ *shape* SP q | Change text cursor in active console (DECSCUSR, VT520). *shape* is: 0 - ConEmu's default, 1 - blinking block, 2 - steady block, 3 - blinking underline, 4 - steady underline, 5 - blinking bar, 6 - steady bar. `SP` is just a ‘space’ character. |
 
 
 #### SGR (Select Graphic Rendition) parameters  {#SGR_Select_Graphic_Rendition_parameters}
