@@ -16,8 +16,8 @@
 # ==============================================================================
 
 # urls
-$url_ver = "http://conemu-maximus5.googlecode.com/svn/trunk/ConEmu/version.ini"
-$url_7za = "http://conemu.github.io/7zip/7za.exe"
+$url_ver = "https://conemu.github.io/version.ini"
+$url_7za = "https://github.com/ConEmu/ConEmu.github.io/releases/download/7zip-9.20/7za.exe"
 
 # predefines        default val    arg name
 $script:dstdir    = "C:\ConEmu"  # dst
