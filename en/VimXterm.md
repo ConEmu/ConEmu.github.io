@@ -24,6 +24,7 @@ readalso:
 * [Requirements](#requirements)
 * [Only certain releases are supported](#required-release)
 * [Notes about vim color schemes](#vim-color-scheme)
+* [Fix BS issue](#vim-bs-issue)
 * [How to enable Vim scrolling using mouse Wheel in ConEmu](#Vim-scrolling-using-mouse-Wheel)
 * [vim-airline plugin](#Vim-airline)
 * [StackOverflow and SuperUser answers](#stack-exchange)
@@ -76,6 +77,20 @@ but if they aren't aware about xterm sequences, they will fail in the console vi
 If you have problems with certain color scheme, please contact it's author.
 
 Color scheme mentioned above (zenburn) is working fine.
+
+
+
+## Fix BS issue  {#vim-bs-issue}
+
+If you have problems with `BS` in Vim under ConEmu when `term=xterm`,
+you may try to remap `BS` key:
+
+~~~
+inoremap <Char-0x07F> <BS>
+nnoremap <Char-0x07F> <BS>
+~~~
+
+Check for details in the [issue 641](https://github.com/Maximus5/ConEmu/issues/641).
 
 
 
