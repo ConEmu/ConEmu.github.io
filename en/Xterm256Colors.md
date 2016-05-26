@@ -53,6 +53,8 @@ For any other application - you must do it yourself.
   * ‘ANSI X3.64 / xterm 256 colors’ on [Features](Settings.html#Features) page
   * ‘Inject ConEmuHk’ on [Features](Settings.html#Features) page (required for second level programs)
 * Turn off scrolling (extended attributes works only in the ‘work’ area - the bottom of the console)
+* Cygwin and Msys applications do not pass ANSI to terminal. At all. [More information here](CygwinAnsi.html).
+  * As workaround for cygwin and msys you may use [cygwin/msys terminal connector](CygwinMsysConnector.md).
 
 
 
