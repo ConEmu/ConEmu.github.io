@@ -1,3 +1,4 @@
 .set-git-path.cmd
 .set-upld-dir.cmd
 .set-deploy-dir.cmd
+/mirrors.*
