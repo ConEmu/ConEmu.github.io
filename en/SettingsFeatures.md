@@ -12,7 +12,7 @@ breadcrumbs:
 # Settings: Features
 
 *This page was generated automatically from ConEmu sources*
-{% comment %} IDD_SPG_FEATURE {% endcomment %}
+{% comment %} IDD_SPG_FEATURES {% endcomment %}
 
 ![ConEmu Settings: Features](/img/Settings-Features.png)
 
@@ -20,14 +20,11 @@ breadcrumbs:
 
 ## Miscellaneous options  {#id2163}
 
-#### Auto register fonts  {#id1550}
-Search, register for process, and use first `*`.ttf file in conemu folder
+#### Auto register fonts in ConEmu folder  {#id1550}
+Use in ConEmu fonts, located in ConEmu folder. `*`.ttf, `*`.otf and `*`.bdf files are supported.
 
 #### Monitor console lang  {#id1537}
 Monitor input language change in real console (e.g. Far Manager XLat switching support)
-
-#### Focus in child windows  {#id2568}
-Set focus in xshell/putty/notepad/etc. when ConEmu is activated or tab switched.
 
 
 
@@ -61,11 +58,6 @@ Disable all flashing (from consoles) on Windows taskbar. 3rd-state - allow short
 #### Suppress bells  {#id2598}
 Suppress annoying bells produced by echoing char(7), Beep and MessageBeep functions. Inject ConEmuHk is required.
 
-#### Log console output (`*`)  {#id2679}
-Log console output to text files ConEmu-YYYY-MM-DD-pNNNN.log (affect new consoles only)
-
-You may choose folder for in-console log files (affect new consoles only)
-
 #### Process '-new_console' and '-cur_console' switches  {#id2640}
 Enable processing of '-new_console' and '-cur_console' switches in your shell prompt, scripts etc. started in ConEmu tabs
 
@@ -74,6 +66,14 @@ Hook 'start' command in your cmd's prompt and batches started in ConEmu tabs to 
 
 #### Process Ctrl-Z in ReadConsole  {#id2878}
 Treat Ctrl-Z as ‘EndOfStream’. On new line press Ctrl-Z and Enter. Refer to the gh#465 for details (Go input streams).
+
+#### Skip focus events (don't send to console FOCUS_EVENT, useful with Far Manager)  {#id1538}
+Don't send focus events to console to disable autoclosing of fast search dialog in panels
+
+#### Log console output (`*`)  {#id2679}
+Log console output to text files ConEmu-YYYY-MM-DD-pNNNN.log (affect new consoles only)
+
+You may choose folder for in-console log files (affect new consoles only)
 
 
 
@@ -87,6 +87,9 @@ Show some debug information in ConEmu title E.g. plugin communication steps.
 
 #### Show real console  {#id1545}
 Show real console on startup
+
+#### Internal LogFiles location  {#id3031}
+
 
 
 

@@ -18,7 +18,7 @@ breadcrumbs:
 
 
 
-## Text selection
+## Text selection  {#id2975}
 
 #### Freeze console contents before selection (may cause small lag)  {#id2257}
 
@@ -33,7 +33,7 @@ Bash leave one space-character on the right edge of console when wrapping lines,
 3rd-state means ‘Only for Text selection’
 
 #### EOL  {#id2367}
-Choose preferred line separator (\r ,   or \r)
+Choose preferred line separator (\r\n, \n or \r)
 
 RTEXT
 
@@ -41,7 +41,7 @@ RTEXT
 
 
 
-## Color indexes
+## Color indexes  {#id2976}
 
 
 
@@ -53,19 +53,13 @@ RTEXT
 
 
 
-RTEXT
 
 
 
 
 
 
-
-
-
-
-
-## Select text with mouse (LeftClick+Drag)
+## Select text with mouse (LeftClick+Drag)  {#id2979}
 
 #### Intelligent mode  {#id2657}
 
@@ -84,14 +78,17 @@ Copy immediately on left mouse button up (when selecting with mouse)
 
 Choose modifier to starting ‘Text selection’ with mouse LeftClick+Drag
 
-#### Show IBeam cursor  {#id2603}
-Show IBeam (text selection) cursor when available and allowed by settings and key modifiers
+#### Reset selection on Left Button release  {#id3029}
+Reset selection region on left mouse button up (when selecting with mouse)
 
 Choose modifier to starting ‘Block selection’ with mouse LeftClick+Drag
 
+#### Show IBeam cursor  {#id2603}
+Show IBeam (text selection) cursor when available and allowed by settings and key modifiers
 
 
-## Select text with keyboard (Also there are two hotkeys on KeysMacro page)
+
+## Select text with keyboard (Also there are two hotkeys on KeysMacro page)  {#id2980}
 
 #### Start selection with Shift+Arrow (Text = Left/Right/Home/End, Block = Up/Down)  {#id2553}
 Start text selection with Shift+Left/Right/Home/End or block selection with Shift+Up/Down
@@ -99,11 +96,14 @@ Start text selection with Shift+Left/Right/Home/End or block selection with Shif
 #### Reset selection on input  {#id2412}
 Reset selection region on keypress
 
-#### any key  {#id2436}
+#### any non-alpha-numeric key  {#id2436}
 When ‘Off’ - only characters ends selection When ‘On’ - any key ends selection (Arrows, PgUp, End, etc.)
 
 #### copy before reset  {#id2579}
 Copy selection to clipboard before selection region reset
+
+#### try to cut/erase selection before reset  {#id3030}
+Try to erase selected region if possible by posting sequence of Del/BS to console. Implement ‘usual’ hotkeys Ctrl+X, Shift+Del, BS and Del.
 
 
 

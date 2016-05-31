@@ -20,7 +20,7 @@ readalso:
 # Settings: Tasks
 
 *This page was generated automatically from ConEmu sources*
-{% comment %} IDD_SPG_CMDTASKS {% endcomment %}
+{% comment %} IDD_SPG_TASKS {% endcomment %}
 
 ![ConEmu Settings: Tasks](/img/Settings-Tasks.png)
 
@@ -28,7 +28,7 @@ readalso:
 
 ## Predefined tasks (command groups)  {#id2115}
 
-Task name (alias), surrounded by {...}, used in ‘[+] menu’, ‘Recreate dialog’ or ‘/cmd’ agrument of ConEmu.exe
+Task name (alias), surrounded by {...}, used in ‘[+] menu’, ‘Recreate dialog’ or ‘-run’ argument of ConEmu.exe
 
 #### Hotkey
 Choose hotkey for creating this task (not global, it works in ConEmu only)
@@ -45,8 +45,8 @@ Choose hotkey for creating this task (not global, it works in ConEmu only)
 #### Toolbar  {#id2753}
 
 
-#### Task parameters. Example: /dir "C:\" /icon "cmd.exe" /single
-Task parameters (‘/dir’, ‘/icon’) Example: /dir "C:\" /icon "cmd.exe" /single
+#### Task parameters. Example: /dir "C:\\" /icon "cmd.exe" /single
+Task parameters (‘/dir’, ‘/icon’) Example: /dir "C:\\" /icon "cmd.exe" /single
 
 
 
@@ -71,6 +71,8 @@ Commands (application, arguments, ‘-new_console’) Delimit commands with empt
 #### Down  {#id2127}
 
 
+RTEXT
+
 #### Tab...  {#id2128}
 
 
@@ -82,8 +84,6 @@ Commands (application, arguments, ‘-new_console’) Delimit commands with empt
 
 #### Active tabs  {#id2493}
 
-
-RTEXT
 
 
 

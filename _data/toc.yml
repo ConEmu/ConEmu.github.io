@@ -198,108 +198,120 @@
       children:
         -
           eng: "Main"
-          rus: "Main"
+          rus: "Основные"
           url: "SettingsMain.html"
           children:
             -
               eng: "Size & Pos"
-              rus: "Size & Pos"
+              rus: "Положение окна"
               url: "SettingsSizePos.html"
             -
               eng: "Appearance"
-              rus: "Appearance"
+              rus: "Внешний вид"
               url: "SettingsAppearance.html"
             -
+              eng: "Quake style"
+              rus: "Quake режим"
+              url: "SettingsQuake.html"
+            -
               eng: "Background"
-              rus: "Background"
+              rus: "Фоновый рисунок"
               url: "SettingsBackground.html"
             -
               eng: "Tab bar"
-              rus: "Tab bar"
+              rus: "Панель табов"
               url: "SettingsTabBar.html"
             -
               eng: "Confirm"
-              rus: "Confirm"
+              rus: "Подтверждения"
               url: "SettingsConfirm.html"
             -
               eng: "Task bar"
-              rus: "Task bar"
+              rus: "Панель задач"
               url: "SettingsTaskBar.html"
             -
               eng: "Update"
-              rus: "Update"
+              rus: "Обновление"
               url: "SettingsUpdate.html"
         -
           eng: "Startup"
-          rus: "Startup"
+          rus: "При старте"
           url: "SettingsStartup.html"
           children:
             -
               eng: "Tasks"
-              rus: "Tasks"
+              rus: "Задачи (Tasks)"
               url: "SettingsTasks.html"
+            -
+              eng: "Environment"
+              rus: "Окружение"
+              url: "SettingsEnvironment.html"
+        -
+          eng: "Features"
+          rus: "Параметры"
+          url: "SettingsFeatures.html"
+          children:
+            -
+              eng: "Text cursor"
+              rus: "Текстовый курсор"
+              url: "SettingsTextCursor.html"
+            -
+              eng: "Colors"
+              rus: "Цвета"
+              url: "SettingsColors.html"
+            -
+              eng: "Transparency"
+              rus: "Прозрачность"
+              url: "SettingsTransparency.html"
+            -
+              eng: "Status bar"
+              rus: "Статусная строка"
+              url: "SettingsStatusBar.html"
+            -
+              eng: "App distinct"
+              rus: "По приложениям"
+              url: "SettingsAppDistinct.html"
+        -
+          eng: "Integration"
+          rus: "Интеграция"
+          url: "SettingsIntegration.html"
+          children:
+            -
+              eng: "Default term"
+              rus: "Терминал ОС"
+              url: "SettingsDefTerm.html"
             -
               eng: "ComSpec"
               rus: "ComSpec"
               url: "SettingsComspec.html"
             -
-              eng: "Environment"
-              rus: "Environment"
-              url: "SettingsEnvironment.html"
-        -
-          eng: "Features"
-          rus: "Features"
-          url: "SettingsFeatures.html"
-          children:
-            -
-              eng: "Text cursor"
-              rus: "Text cursor"
-              url: "SettingsTextCursor.html"
-            -
-              eng: "Colors"
-              rus: "Colors"
-              url: "SettingsColors.html"
-            -
-              eng: "Transparency"
-              rus: "Transparency"
-              url: "SettingsTransparency.html"
-            -
-              eng: "Status bar"
-              rus: "Status bar"
-              url: "SettingsStatusBar.html"
-            -
-              eng: "App distinct"
-              rus: "App distinct"
-              url: "SettingsAppDistinct.html"
-        -
-          eng: "Integration"
-          rus: "Integration"
-          url: "SettingsIntegration.html"
-          children:
-            -
-              eng: "Default terminal"
-              rus: "Default terminal"
-              url: "SettingsDefTerm.html"
+              eng: "Children GUI"
+              rus: "Дочерние GUI"
+              url: "SettingsChildGui.html"
         -
           eng: "Keys & Macro"
-          rus: "Keys & Macro"
+          rus: "Кнопки & Макросы"
           url: "SettingsHotkeys.html"
           children:
             -
-              eng: "Controls"
-              rus: "Controls"
-              url: "SettingsControls.html"
+              eng: "Keyboard"
+              rus: "Клавиатура"
+              url: "SettingsKeyboard.html"
+            -
+              eng: "Mouse"
+              rus: "Мышь"
+              url: "SettingsMouse.html"
             -
               eng: "Mark/Copy"
-              rus: "Mark/Copy"
+              rus: "Выделение"
               url: "SettingsMarkCopy.html"
             -
               eng: "Paste"
-              rus: "Paste"
+              rus: "Вставка"
               url: "SettingsPaste.html"
             -
               eng: "Highlight"
-              rus: "Highlight"
+              rus: "Подсветка"
               url: "SettingsHighlight.html"
         -
           eng: "Far Manager"
@@ -308,7 +320,7 @@
           children:
             -
               eng: "Far macros"
-              rus: "Far macros"
+              rus: "Far макросы"
               url: "SettingsFarMacros.html"
             -
               eng: "Views"
@@ -316,12 +328,12 @@
               url: "SettingsFarView.html"
         -
           eng: "Info"
-          rus: "Info"
+          rus: "Информация"
           url: "SettingsInfo.html"
           children:
             -
               eng: "Debug"
-              rus: "Debug"
+              rus: "Отладка"
               url: "SettingsDebug.html"
     -
       eng: "Fonts"

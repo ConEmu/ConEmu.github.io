@@ -12,13 +12,13 @@ breadcrumbs:
 # Settings: Appearance
 
 *This page was generated automatically from ConEmu sources*
-{% comment %} IDD_SPG_SHOW {% endcomment %}
+{% comment %} IDD_SPG_APPEAR {% endcomment %}
 
 ![ConEmu Settings: Appearance](/img/Settings-Appearance.png)
 
 
 
-## Generic
+## Generic  {#id2900}
 
 #### Single instance mode (use existing window instead of running new instance)  {#id2578}
 Use one ConEmu window when starting new console from shortcut or somewhere May be disabled by ‘/nosingle’ or forced by ‘/single’ switches
@@ -47,7 +47,7 @@ Don't like tooltips in settings dialog? Disable this feature.
 
 
 
-## Scrollbar
+## Scrollbar  {#id2901}
 
 
 
@@ -89,28 +89,6 @@ Delay in milliseconds, for a Frame disappearance
 
 #### Always show numbers [n/m]  {#id2480}
 Show [ActiveCon/TotalCon] in window caption
-
-#### Hide caption of child GUI windows started in ConEmu  {#id2562}
-
-
-
-
-## Quake style
-
-#### Quake style slide down  {#id2333}
-Slide console window from the top of the screen like gaming consoles Choose desired hotkey for ‘Minimize/Restore’ action on ‘Keys & Macro’ page
-
-#### Auto-hide on focus lose  {#id2466}
-
-
-
-
-## Animation time  {#id2690}
-
-
-
-#### ms
-Duration of window animation (0..2000ms): Quake slide down/up and restoring/hiding window to TSA. Animation is working only when window caption is hidden.
 
 
 

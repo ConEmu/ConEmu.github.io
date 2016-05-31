@@ -18,7 +18,7 @@ breadcrumbs:
 
 
 
-## Taskbar status area (TSA)
+## Taskbar status area (TSA)  {#id2908}
 
 #### Always show TSA icon  {#id1736}
 Always show ConEmu icon in the Taskbar Status Area (TSA)
@@ -28,7 +28,7 @@ Auto minimize to Taskbar Status Area (TSA) Right click on ‘Close window button
 
 
 
-## Taskbar buttons
+## Taskbar buttons  {#id2909}
 
 
 
@@ -47,7 +47,7 @@ Auto minimize to Taskbar Status Area (TSA) Right click on ‘Close window button
 
 
 
-## Action on closing last console (tab) and 'cross clicking'
+## Action on closing last console (tab) and 'cross clicking'  {#id2910}
 
 #### Close ConEmu with last tab  {#id2588}
 
@@ -63,12 +63,12 @@ Auto minimize to Taskbar Status Area (TSA) Right click on ‘Close window button
 
 
 
-## Minimize ConEmu automatically
+## Minimize ConEmu automatically  {#id2911}
 
 #### Minimize on focus lose (not in Quake style)  {#id2567}
 
 
-## Minimize when Esc pressed
+## Minimize when Esc pressed  {#id2912}
 
 
 

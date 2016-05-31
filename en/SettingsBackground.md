@@ -12,7 +12,7 @@ breadcrumbs:
 # Settings: Background
 
 *This page was generated automatically from ConEmu sources*
-{% comment %} IDD_SPG_BACK {% endcomment %}
+{% comment %} IDD_SPG_BACKGR {% endcomment %}
 
 ![ConEmu Settings: Background](/img/Settings-Background.png)
 
@@ -27,11 +27,7 @@ Choose background image file (bmp, jpg, png, tif) or specify solid color in any 
 
 
 
-
-* **Transparent**
-* **Replace color indexes**
-
-
+#### Replace color indexes
 Choose background color indexes, which will be replaced with background image, default is ‘#0 #1’ Black and Blue. Use "`*`" (asterisk) for Far Manager panels background color.
 
 #### Placement  {#id2339}

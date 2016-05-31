@@ -20,19 +20,64 @@ breadcrumbs:
 
 ## Pasting text behavior (with exception of Far Manager)  {#id2166}
 
-#### All lines (default Shift+Ins)  {#id2168}
 
 
-#### First line (default Ctrl+V)  {#id2170}
+## Paste mode #1 (Shift+Ins)  {#id3047}
 
 
-#### Confirm <Enter> keypress  {#id2171}
 
 
-#### Confirm pasting more than  {#id2225}
+* **Multi lines**
+* **Single line**
+* **First line**
+* **Do nothing**
 
 
-#### chars
+
+
+## Paste mode #2 (Ctrl+V)  {#id3048}
+
+
+
+
+* **Multi lines**
+* **Single line**
+* **First line**
+* **Do nothing**
+
+
+
+
+## Confirm critical actions  {#id3049}
+
+#### Multi-line paste: avoid unexpected command execution by <Enter> keypress  {#id2171}
+
+
+#### Long text paste: avoid non-responsive console until the paste finishes  {#id2225}
+
+
+
+
+RTEXT
+
+
+
+
+
+## Paste mode #1 (Shift+Ins)
+
+
+
+
+
+## Paste mode #2 (Ctrl+V)
+
+
+
+
+
+## Confirm critical actions
+
 
 
 

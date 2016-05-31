@@ -36,7 +36,7 @@ Far PID and Far with plugin PID
 
 
 
-## Processes
+## Processes  {#id2942}
 
 
 
@@ -44,7 +44,7 @@ Far PID and Far with plugin PID
 
 
 
-## Sizes
+## Sizes  {#id2943}
 
 
 
@@ -63,7 +63,7 @@ Far PID and Far with plugin PID
 #### Left
 
 
-## Font
+## Font  {#id2951}
 
 
 
@@ -86,7 +86,7 @@ Real sizes of "Change pseudographics font": Height x Width
 
 
 
-## Current command line
+## Current command line  {#id2944}
 
 
 

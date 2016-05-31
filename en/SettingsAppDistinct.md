@@ -43,13 +43,22 @@ breadcrumbs:
 
 
 * **Elevated**
+
+
+
+
+**Executables, delimited by \"|\", e.g. \"tcc.exe|cmd.exe\"**
+
+
 * **Non elevated**
-* **Elevation don't matter**
 
 
 
 
-#### Executables, delimited by "|", e.g. "tcc.exe|cmd.exe"
+
+* **Doesn't matter**
+
+
 
 
 CTEXT

@@ -24,15 +24,14 @@ readalso:
 
 
 
-## Hyperlinks and compiler errors (goto editor)
+## Hyperlinks and compiler errors (goto editor)  {#id2972}
 
 #### Highlight and goto  {#id1765}
 
 
-#### External editor, when Far not started  {#id1766}
+RTEXT
 
 
-Command line for starting editor with file positioned on line and column
 
 
 
@@ -40,7 +39,7 @@ LTEXT
 
 
 
-## Highlight rows/columns
+## Highlight rows/columns  {#id2973}
 
 #### Highlight whole row under mouse cursor  {#id2641}
 
@@ -49,4 +48,6 @@ LTEXT
 
 
 
+
+Command line for starting editor with file positioned on line and column
 

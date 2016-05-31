@@ -77,7 +77,7 @@ readalso:
 
 
 
-* **7-Zip archieve (ConEmu.7z), WinRar or 7-Zip required**
+* **7-Zip archive (ConEmu.7z), WinRar or 7-Zip required**
 
 
 
@@ -90,7 +90,7 @@ readalso:
 #### ConEmu latest version location info
 URL to retrieve latest version information, default is: https://conemu.github.io/version.ini Erase text box to revert to default URL.
 
-#### Apply & Check  {#id2877}
+#### Apply (and) Check  {#id2877}
 
 
 

@@ -18,11 +18,11 @@ breadcrumbs:
 
 
 
-## Far Panel Views
+## Far Panel Views  {#id2992}
 
 
 
-## Thumbnails mode
+## Thumbnails mode  {#id2993}
 
 
 
@@ -55,7 +55,7 @@ Spacing in pixels from the bottom side of preview to the bottom side of cell (te
 
 Text labels font height in Thumbnails mode
 
-## Tiles mode
+## Tiles mode  {#id2994}
 
 
 
@@ -108,7 +108,7 @@ Try to use PicView2 plugin to generate previews (FAR2 only)
 #### Restore on Far startup  {#id1720}
 Restore panel views on Far startup
 
-## Preview background
+## Preview background  {#id3005}
 
 
 

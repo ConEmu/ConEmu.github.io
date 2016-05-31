@@ -18,19 +18,19 @@ breadcrumbs:
 
 
 
-## Shell style Drag and Drop (Far Manager only)
+## Shell style Drag and Drop (Far Manager only)  {#id2957}
 
 #### LDrag  {#id1504}
 Allow drag with left mouse button
 
-#### Drop & Confirmation  {#id1502}
+#### Drop (and) Confirmation  {#id1502}
 Off - ConEmu will NOT receive external drops On - Drops allowed (Far confirmation dialog) 3rd-state - same as "On", but w/o confirmation
 
 #### Overlay  {#id1548}
 Create and display overlay transparent snapshot of files are dragged
 
 #### Shell icons  {#id1553}
-Show icons of dragged iterms
+Show icons of dragged items
 
 #### RDrag  {#id1505}
 Allow drag with right mouse button
@@ -47,38 +47,38 @@ Forced "Copy" action as default, You can use Ctrl, Shift or Alt during drag to c
 
 Drag with right mouse button, only when pressed...
 
-## Far Manager options
+## Far Manager options  {#id2958}
 
 #### Hourglass if not responding  {#id1563}
 Show AppStarting cursor (arrow with a small hourglass) when Far is not responding (during long operations)
 
-#### Resize panels by mouse  {#id1568}
-Enable sizing of left and right panel by dragging with mouse. 3rd-state - resize on button release with macroses.
-
-#### Right selection fix  {#id1536}
-Fix dashed selection with fast right mouse drag Far 3: restore files selection instead of EMenu
+#### ASCII sort function in Far  {#id1561}
+Hook Far string sort functions. !!!HIGHLY EXPERIMENTAL!!!
 
 #### Extend Unicode CharMap  {#id1722}
 Show glyphs from selected font in ‘Unicode CharMap’ plugin (FAR2 only)
 
-#### use both panel edges  {#id2102}
-
-
-#### No zone check  {#id1725}
-SEE_MASK_NOZONECHECKS. Same as appeared in Far 2 build 771 and disappeared after 1464.
+#### Right selection fix  {#id1536}
+Fix dashed selection with fast right mouse drag Far 3: restore files selection instead of EMenu
 
 #### Disable Far flashing  {#id1718}
 Disable flashing (from Far Manager) on Windows taskbar. 3rd-state - allow short flashing.
 
-#### ASCII sort function in Far  {#id1561}
-Hook Far string sort functions. !!!HIGHLY EXPERIMENTAL!!!
+#### No zone check  {#id1725}
+SEE_MASK_NOZONECHECKS. Same as appeared in Far 2 build 771 and disappeared after 1464.
+
+#### Resize panels by mouse  {#id1568}
+Enable sizing of left and right panel by dragging with mouse. 3rd-state - resize on button release with macroses.
 
 #### KeyBar RClick  {#id2114}
 
 
+#### use both panel edges  {#id2102}
 
 
-## Tab templates
+
+
+## Tab templates  {#id2959}
 
 
 

@@ -16,15 +16,15 @@ readalso:
 # Settings: Size & Pos
 
 *This page was generated automatically from ConEmu sources*
-{% comment %} IDD_SPG_WNDSIZEPOS {% endcomment %}
+{% comment %} IDD_SPG_SIZEPOS {% endcomment %}
 
 ![ConEmu Settings: Size & Pos](/img/Settings-SizePos.png)
 
 
 
-## Console size and Window position
+## Console size and Window position  {#id2889}
 
-#### Show & store current window size and position  {#id2417}
+#### Show (and) store current window size and position  {#id2417}
 
 
 #### Auto save window size and position on exit  {#id1723}
@@ -33,7 +33,7 @@ readalso:
 #### Apply  {#id1520}
 
 
-## Window size (cells, pixels or percents)
+## Window size (cells, pixels or percents)  {#id2893}
 
 
 
@@ -53,7 +53,7 @@ Height of console window Use numbers for size in cells Use percent sign (e.g. �
 
 
 
-## Window position (pixels)
+## Window position (pixels)  {#id2890}
 
 
 
@@ -72,7 +72,7 @@ Upper left corner of ConEmu in Normal mode This is in pixels
 
 
 
-## Console buffer height
+## Console buffer height  {#id2894}
 
 #### Long console output  {#id1534}
 Autoexpand bufferheight to specified number of lines, while Far executes console commands. Full console output (up to specified count of lines) will be available via Far macro (CtrlO.reg)
@@ -81,7 +81,7 @@ Length of backscroll buffer in lines. Maximum supported value is 32766.
 
 
 
-## DOS applications (ntvdm)
+## DOS applications (ntvdm)  {#id2895}
 
 
 
@@ -89,18 +89,19 @@ RTEXT
 
 
 
-Old DOS programs may be runned under console sizes: 80x25, 80x28, 80x43 or 80x50. You may force window size selection, or left the automatic selection. This feature is not available in x64 OS.
+## Alignment  {#id2897}
 
-## Alignment
+
+
+Old DOS programs may be run under console sizes: 80x25, 80x28, 80x43 or 80x50. You may force window size selection, or left the automatic selection. This feature is not available in x64 OS.
 
 #### Center console in ConEmu workspace  {#id1570}
 Draw console content in center of ConEmu window. Use together with ‘Pad size’
 
-#### Pad size
+#### Pad size (pixels)
 Create pad between ConEmu frame and console field
 
 #### Align ConEmu window size to cells  {#id2594}
-*pixels*  
 
 
 #### Snap to desktop edges  {#id2403}
@@ -145,7 +146,7 @@ When restoring or sliding-down move window to the active monitor, where mouse cu
 
 ## FullScreen mode
 
-#### Hide tab & status bars  {#id2468}
+#### Hide tab (and) status bars  {#id2468}
 
 
 #### Fixed console size  {#id2469}

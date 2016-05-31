@@ -9,26 +9,21 @@ breadcrumbs:
    title: Settings
 ---
 
-# Settings: Tabs
+# Settings: Tab bar
 
 *This page was generated automatically from ConEmu sources*
 {% comment %} IDD_SPG_TABS {% endcomment %}
 
-![ConEmu Settings: Tabs](/img/Settings-TabBar.png)
+![ConEmu Settings: Tab bar](/img/Settings-TabBar.png)
 
 
 
-## Tabs (consoles, Far Manager panels/editors/viewers)
+## Tabs (consoles, Far Manager panels/editors/viewers)  {#id2981}
 
 
 
 
 * **Always show**
-* **Auto show**
-* **Don't show**
-
-
-#### Tabs on bottom  {#id2481}
 
 
 #### Internal CtrlTab  {#id1531}
@@ -40,8 +35,19 @@ When checked - real window switching will be performed on Ctrl depress
 #### Recent mode  {#id1533}
 Switch first between recent tabs. You may still switch between tabs in standard manner using Left/Right (after CtrlTab), while Ctrl is still presses.
 
-#### Hide disabled tabs  {#id2051}
-Hide tabs, which can't be activated. E.g. hide Far Manager editors while executing cmd.exe
+
+* **Auto show**
+
+
+#### Active console only  {#id1642}
+Show tabs from active console only
+
+#### Only active pane of group  {#id2599}
+Show only one tab for all splits in the group
+
+
+* **Don't show**
+
 
 #### Far windows  {#id2053}
 Show all Far Manager windows (panels, editors, viewers) instead of one tab for one console
@@ -49,11 +55,8 @@ Show all Far Manager windows (panels, editors, viewers) instead of one tab for o
 #### ‘Host-key’+Number iterates Far windows  {#id2104}
 Iterate opened Far windows with ‘Host-key’+Number
 
-#### Active console only  {#id1642}
-Show tabs from active console only
+#### Tabs on bottom  {#id2481}
 
-#### One tab per group  {#id2599}
-Show only one tab for all splits in the group
 
 LTEXT
 
@@ -80,16 +83,17 @@ Common tab template (any console program except Far Manager)
 #### Modified suffix
 When something was changed in the inactive console ConEmu may show that in the tab label Set or clear this suffix appended to the tab template
 
-#### Invisible tab activity flash count
-When something was changed in the inactive console ConEmu may flash tab icon in that case Set ‘-1’ to flash infinitely Use odd values to leave tab in highlighted state
-
 #### Skip words from title
 
 
 #### Maximum tab width (in chars)
 
 
+#### Invisible tab activity flash count
+When something was changed in the inactive console ConEmu may flash tab icon in that case Set ‘-1’ to flash infinitely Use odd values to leave tab in highlighted state
+
 #### Admin shield  {#id2109}
+*Elevated consoles*  
 When this is checked - ‘Shield’ icon will be shown in tabs, started ‘As administrator’
 
 #### suffix  {#id2110}
@@ -97,15 +101,23 @@ When this is checked - specified suffix will be appended in tabs titles, started
 
 
 
-LTEXT
-
-
-
-LTEXT
+## Tab double click actions  {#id3055}
 
 
 
 RTEXT
+
+
+
+RTEXT
+
+
+
+
+
+## Tab double click actions
+
+
 
 
 
