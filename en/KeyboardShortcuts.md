@@ -153,11 +153,11 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | *NoDefault* | `CloseAllConKey` <br/> `Close(8)` | Close all consoles |
 | *NoDefault* | `CloseZombiesKey` <br/> `Close(9)` | Close all zombies |
 | *NoDefault* | `CloseExceptConKey` <br/> `Close(5)` | Close all but active |
-| *NoDefault* | `KillProcessKey` | Terminate active process in the current console |
-| Win+Shift+Delete | `KillAllButShellKey` <br/> `Close(10,1)` | Terminate all but shell processes in the current console |
+| Ctrl+Alt+Break | `KillProcessKey` <br/> `Close(1)` | Terminate (kill) active process in the current console |
+| Win+Alt+Break | `KillAllButShellKey` <br/> `Close(10,1)` | Terminate (kill) all but shell processes in the current console |
 | Win+S | `DuplicateRootKey` | Duplicate tab with current state of root process |
 | Win+F4 | `CloseConEmuKey` <br/> `Close(2)` | Close all tabs (same as ‘Cross’ click) |
-| Apps+R | `Multi.Rename` | Rename active tab (for Far Manager only first tab may be renamed) |
+| Apps+R | `Multi.Rename` | Rename active tab |
 | Apps+A | `AffinityPriorityKey` <br/> `AffinityPriority` |  |
 | Win+Alt+LeftArrow | `Multi.MoveLeft` | Move active tab leftward |
 | Win+Alt+RightArrow | `Multi.MoveRight` | Move active tab rightward |
@@ -173,6 +173,7 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Apps+F12 | `Multi.ShowTabsList2` <br/> `Tabs(8)` | Show opened tabs list (works in Far too) |
 | Shift+Ins | `ClipboardVkAllLines` | Paste clipboard contents (ignored in Far) |
 | Ctrl+V | `ClipboardVkFirstLine` | Paste first line of clipboard contents, autoconvert paths for cygwin's applications (ignored in Far) |
+| *NoDefault* | `Key.AltNumpad` <br/> `AltNumber(16)` | Start Alt+Number mode to enter unicode symbol by its hex codebase |
 | Ctrl+BACK | `DeleteWordToLeft` | Delete word leftward to the cursor (ignored in Far) |
 | Apps+F | `FindTextKey` | Find text in active console |
 | Win+H | `ScreenshotKey` | Make screenshot of active window |
@@ -190,6 +191,7 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Win+Shift+UpArrow | `Key.MaximizeHeight` <br/> `WindowMode(8)` | Snap ConEmu window to the monitor's top/bottom edges (maximize height) |
 | Win+LeftArrow | `Key.TileToLeft` <br/> `WindowMode(6)` | Snap ConEmu window to the monitor's left edge |
 | Win+RightArrow | `Key.TileToRight` <br/> `WindowMode(7)` | Snap ConEmu window to the monitor's right edge |
+| *NoDefault* | `Key.JumpActiveMonitor` <br/> `WindowMode(12)` | Move ConEmu window to the monitor with mouse cursor (Bring here) |
 | Win+Shift+LeftArrow | `Key.JumpPrevMonitor` <br/> `WindowMode(9)` | Move ConEmu window to previous monitor |
 | Win+Shift+RightArrow | `Key.JumpNextMonitor` <br/> `WindowMode(10)` | Move ConEmu window to next monitor |
 | Alt+Enter | `Key.FullScreen` <br/> `WindowFullscreen()` | Full screen |
@@ -207,6 +209,7 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Apps+Home | `Key.BufTop` <br/> `Scroll(3,-1)` | Scroll buffer to the top |
 | Apps+End | `Key.BufBottom` <br/> `Scroll(3,+1)` | Scroll buffer to the bottom |
 | Apps+BACK | `Key.BufCursor` <br/> `Scroll(4)` | Scroll buffer to the cursor position |
+| *NoDefault* | `Key.ResetTerm` <br/> `Write(\`\\ec\`)` | Reset terminal: clear screen, backscroll, move cursor to the upper-left corner |
 | Ctrl+WheelUp | `FontLargerKey` <br/> `FontSetSize(1,2)` | Make main font larger |
 | Ctrl+WheelDown | `FontSmallerKey` <br/> `FontSetSize(1,-2)` | Make main font smaller |
 | Ctrl+MiddleMouseButton | `FontOriginalKey` <br/> `Zoom(100)` | Make main font original size |
