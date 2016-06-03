@@ -539,6 +539,10 @@
       rus: "Поддержка Unicode"
       url: "UnicodeSupport.html"
     -
+      eng: "Bash on Windows"
+      rus: "Bash on Windows"
+      url: "BashOnWindows.html"
+    -
       eng: "Bold/Italic/Underlined"
       rus: "Жирный/Курсив/Подчеркнутый"
       url: "FaqBoldItalic.html"
