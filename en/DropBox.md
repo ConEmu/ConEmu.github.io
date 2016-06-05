@@ -56,6 +56,10 @@ Free cloud service from [Microsoft](https://skydrive.live.com/) gives you 7 GB f
 [Sendspace](http://www.sendspace.com/) allows you to upload files up to 300 MB without registration.
 
 
+### ZippyShare  {#ZippyShare}
+
+[ZippyShare](http://www.zippyshare.com/) allows you to upload files up to 200 MB without registration.
+
 
 ### rghost.ru   {#rghost.ru}
 
