@@ -49,11 +49,14 @@ breadcrumbs:
 | -LoadCfgFile *file* | Use specified xml file as configuration storage. |
 | -SaveCfgFile *file* | Save configuration to the specified xml file. |
 | -Exit | Don't create ConEmu window, exit after actions. |
-| -new_console <br/> -cur_console | This **special** switches may be specified **after** `-cmd` switch. Read more about [-new_console and -cur_console](NewConsole.html) switches |
-| -cmd *commandline* <br/> -cmd @*taskfile* <br/> -cmd *{taskname}* | Command line to start. This must be the last used switch (excepting -new_console and -cur_console). You may use ">" and "`*`" modifiers in *taskfile* and -BufferHeight argument. <br/> *taskname* is one of the tasks specified on the "Tasks" page of "Settings" dialog. |
-| -cmdlist *commands* | Run several tabs on startup. This must be the last used switch (excepting -new_console and -cur_console). Use the same syntax and abilities as on the "Tasks" page of "Settings" dialog. Delimit commands (tabs) with "`|``|``|`". Note, that you must escape delimiter "`^|^|^|`" when running from cmd-files. |
+| -new_console <br/> -cur_console | This **special** switches may be specified **after** `-run` switch. Read more about [-new_console and -cur_console](NewConsole.html) switches |
+| -run *commandline* <br/> -run @*taskfile* <br/> -run *{taskname}* | Command line to start. This must be the last used switch (excepting -new_console and -cur_console). You may use ">" and "`*`" modifiers in *taskfile* and -BufferHeight argument. <br/> *taskname* is one of the tasks specified on the "Tasks" page of "Settings" dialog. |
+| -runlist *commands* | Run several tabs on startup. This must be the last used switch (excepting -new_console and -cur_console). Use the same syntax and abilities as on the "Tasks" page of "Settings" dialog. Delimit commands (tabs) with "`|``|``|`". Note, that you must escape delimiter "`^|^|^|`" when running from cmd-files. |
 
-ConEmuC.exe command line switches are described [here](ConEmuC.html#ConEmuC_switches).
+**NB** Switches `-run` and `-runlist` are renovated variants of `-cmd` and `-cmdlist` to avoid their confusing with `cmd.exe`.
+These switches were introduced in build [160416](/blog/2016/04/16/Build-160416.html). Use `-cmd` and `-cmdlist` for older builds.
+
+**NB** `ConEmuC.exe` command line switches are described [here](ConEmuC.html#ConEmuC_switches).
 
 
 ## Examples  {#Examples}
@@ -62,7 +65,7 @@ ConEmuC.exe command line switches are described [here](ConEmuC.html#ConEmuC_swit
 ClearType is ON, using font face name ‘Lucida Console’, font height 16. Starts FAR manager in the folder ‘C:\1 2’.
 
 ~~~
-ConEmu.exe -ct -font "Lucida Console" -size 16 -cmd far.exe "c:\1 2\"
+ConEmu.exe -ct -font "Lucida Console" -size 16 -run far.exe "c:\1 2\"
 ~~~
 
 
@@ -70,15 +73,15 @@ ConEmu.exe -ct -font "Lucida Console" -size 16 -cmd far.exe "c:\1 2\"
 Starts continuous operation minimized in taskbar status area (TSA), use icon from "cmd.exe".
 
 ~~~
-ConEmu.exe -tsa -min -icon "cmd.exe" -cmd cmd /c dir c:\ /s
+ConEmu.exe -tsa -min -icon "cmd.exe" -run cmd /c dir c:\ /s
 ~~~
 
 
-### Example 3 (-cmdlist)  {#Example3}
+### Example 3 (-runlist)  {#Example3}
 Start four cmd tabs in a grid 2x2 (**Win+R** or **shortcut** syntax).
 
 ~~~
-ConEmu.exe -cmdlist cmd -cur_console:fn ||| cmd -cur_console:s1TVn ||| cmd -cur_console:s1THn ||| cmd -cur_console:s2THn
+ConEmu.exe -runlist cmd -cur_console:fn ||| cmd -cur_console:s1TVn ||| cmd -cur_console:s1THn ||| cmd -cur_console:s2THn
 ~~~
 
 ### Example 4  (four tabs) {#Example4}
@@ -92,7 +95,7 @@ Starts with four tabs: Far Manager, CMD, PowerShell and Bash.
 **Win+R** or **shortcut** syntax (following is **one-line** command, splitted for clearness)
 
 ~~~
-ConEmu.exe -cmdlist
+ConEmu.exe -runlist
   >"C:\Program Files\Far\far.exe"
   ||| cmd /k color 4F "-cur_console:h400d:%ALLUSERSPROFILE%"
   ||| *powershell "-cur_console:h1000d:%USERPROFILE%"
@@ -103,7 +106,7 @@ batch files (bat, cmd) syntax (following is **one-line** command, splitted for c
 
 ~~~
 rem Remove line breaks after paste!
-start "ConEmu" "C:\Program Files\ConEmu\ConEmu.exe" -cmdlist
+start "ConEmu" "C:\Program Files\ConEmu\ConEmu.exe" -runlist
   ^>"C:\Program Files\Far\far.exe"
   ^|^|^| cmd /k color 4F "-cur_console:h400d:%ALLUSERSPROFILE%"
   ^|^|^| *powershell "-cur_console:h1000d:%USERPROFILE%"
@@ -111,11 +114,11 @@ start "ConEmu" "C:\Program Files\ConEmu\ConEmu.exe" -cmdlist
 ~~~
 or
 ~~~
-ConEmu.exe -cmd @startfile.txt
+ConEmu.exe -run @startfile.txt
 ~~~
 or
 ~~~
-ConEmu.exe -cmd {taskname}
+ConEmu.exe -run {taskname}
 ~~~
 
 ### Sample startfile.txt or contents of {taskname}  {#Sample-file-or-task}
@@ -135,7 +138,7 @@ and different working directory (`C:\`, `D:\`, `E:\`).
 Following is **one-line** command, splitted for clearness.
 
 ~~~
-start "Three tabs" "C:\Program Files\ConEmu\ConEmu.exe" -cmdlist
+start "Three tabs" "C:\Program Files\ConEmu\ConEmu.exe" -runlist
   ^> cmd /k color 4C -cur_console:d:C:\
   ^|^|^| cmd /k color 5D -cur_console:d:D:\
   ^|^|^| cmd /k color 2A -cur_console:d:E:\
@@ -158,6 +161,6 @@ start "Three tabs" "C:\Program Files\ConEmu\ConEmu.exe" -cmdlist
 | -noregfonts | Disable auto register fonts (font files from ConEmu folder) |
 | -nocloseconfirm | Disable confirmation of ConEmu's window closing |
 | -inside<br/>-insidepid *PID*<br/>-insidewnd x*HWND* | Starts ConEmu in ‘inside’ mode (act as child window of parent process) |
-| -demote | Run command de-elevated, using Task Sheduler. May be useful in Vista and higher with UAC enabled. Example: `ConEmu.exe -demote -cmd powershell.exe` |
+| -demote | Run command de-elevated, using Task Sheduler. May be useful in Vista and higher with UAC enabled. Example: `ConEmu.exe -demote -run powershell.exe` |
 | -resetdefault | Same as -reset **and** don't show [fast configuration](SettingsFast.html) dialog. |
 | -basic | Same as -resetdefault **and** disable ‘Save settings’ button in [Settings](Settings.html) dialog. |
