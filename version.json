@@ -9,7 +9,7 @@
           "type": "7-Zip",
           "urls": [
             "https://github.com/Maximus5/ConEmu/releases/download/v16.06.07/ConEmuPack.160607.7z",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.160607.7z?use_mirror=autoselect"
+            "http://downloads.sf.net/project/conemu/Stable/ConEmuPack.160607.7z?use_mirror=autoselect"
           ],
           "size":   2843575,
           "crc32": "37A9E1FC",
@@ -20,7 +20,7 @@
           "type": "Installer",
           "urls": [
             "https://github.com/Maximus5/ConEmu/releases/download/v16.06.07/ConEmuSetup.160607.exe",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.160607.exe?use_mirror=autoselect"
+            "http://downloads.sf.net/project/conemu/Stable/ConEmuSetup.160607.exe?use_mirror=autoselect"
           ],
           "size":   5475872,
           "crc32": "19D3FBED",
@@ -48,7 +48,7 @@
           "type": "7-Zip",
           "urls": [
             "https://github.com/Maximus5/ConEmu/releases/download/v16.06.07/ConEmuPack.160607.7z",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.160607.7z?use_mirror=autoselect"
+            "http://downloads.sf.net/project/conemu/Stable/ConEmuPack.160607.7z?use_mirror=autoselect"
           ],
           "size":   2843575,
           "crc32": "37A9E1FC",
@@ -59,7 +59,7 @@
           "type": "Installer",
           "urls": [
             "https://github.com/Maximus5/ConEmu/releases/download/v16.06.07/ConEmuSetup.160607.exe",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.160607.exe?use_mirror=autoselect"
+            "http://downloads.sf.net/project/conemu/Stable/ConEmuSetup.160607.exe?use_mirror=autoselect"
           ],
           "size":   5475872,
           "crc32": "19D3FBED",
