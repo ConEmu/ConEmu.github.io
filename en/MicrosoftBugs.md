@@ -14,6 +14,7 @@ readalso:
 
 # Some Windows Bugs and Workarounds
 
+* [Broken cursor position and height in Windows 10](#BrokenCursor-10)
 * [Broken WM_MOUSEWHEEL's mouse cursor position in Windows 10](#WM_MOUSEWHEEL-10)
 * [Broken desktop coordinate system in Windows 10](#SetWindowPos-10)
 * [Exception in ReadConsoleOutput](#Exception_in_ReadConsoleOutput)
@@ -21,6 +22,28 @@ readalso:
 * [chcp hung](#chcp_hung)
 * [Insert/Overwrite indication](#Insert-Overwrite-Indicator)
 * [Conclusion](#Conclusion)
+
+
+
+
+
+## Broken cursor position and height in Windows 10  {#BrokenCursor-10}
+
+After `SetConsoleScreenBufferSize` call cursor position and height are broken.
+
+Full description: <https://github.com/Maximus5/ms-bug-1>.
+
+| Appeared | Fixed |
+|:--------|:------|
+| Windows 10 (14361) | ? |
+
+### Workaround
+
+Choose ‘Fixed cursor size’ at [Text cursor](SettingsTextCursor.html) settings page.
+
+### Related issues
+
+* [Issue 718: Cursor disappears after window resize](https://github.com/Maximus5/ConEmu/issues/718)
 
 
 
