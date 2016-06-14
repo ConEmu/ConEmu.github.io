@@ -25,12 +25,12 @@ And that may be **not** a ConEmu issue at all.
 ## How to run specified command  {#example}
 
 Most of shells have switches to disable loading plugins or extensions.
-Just use them. Easiest way to use `ConEmu -cmd ...` to force proper shell command.
+Just use them. Easiest way to use `ConEmu -run ...` to force proper shell command.
 
 For example.
 
 ~~~
-ConEmu -cmd PowerShell -noprofile
+ConEmu -run PowerShell -noprofile
 ~~~
 
 Also, you may turn on ConEmu's default settings by `-basic`.
@@ -38,7 +38,7 @@ Your current [configuration file or registry](ConEmuXml.html)
 **will not be changed**.
 
 ~~~
-ConEmu -basic -cmd PowerShell -noprofile
+ConEmu -basic -run PowerShell -noprofile
 ~~~
 
 Alternatively, you may change the ‘Command line’ on the ‘Startup’ settings page.

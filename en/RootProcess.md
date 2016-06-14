@@ -27,7 +27,7 @@ when you [start new console](LaunchNewTab.html) in ConEmu.
 In the following process tree the `bash.exe` is ‘root process’.
 
 ~~~
-ConEmu.exe -basic -cmd bash -l -i
+ConEmu.exe -basic -run bash -l -i
    ConEmuC.exe /ROOT bash -l -i
       bash.exe -l -i
 ~~~

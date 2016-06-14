@@ -74,13 +74,13 @@ Here are few examples to clarify command changes.
 For example, you run your MSYS2 x64 bash from shortcut from desktop (old style):
 
 ~~~
-ConEmu64.exe -cmd set MSYSTEM=MINGW64 & c:\tools\msys64\usr\bin\bash.exe --login -i
+ConEmu64.exe -run set MSYSTEM=MINGW64 & c:\tools\msys64\usr\bin\bash.exe --login -i
 ~~~
 
 Just change it to:
 
 ~~~
-ConEmu64.exe -cmd set MSYSTEM=MINGW64 & conemu-msys2-64.exe
+ConEmu64.exe -run set MSYSTEM=MINGW64 & conemu-msys2-64.exe
 ~~~
 
 ### MSYS2 x64 bash example (Task)  {#msys2-task}

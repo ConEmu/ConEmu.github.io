@@ -35,7 +35,7 @@ from your [command-line interpreter](TerminalVsShell.html).
 Example below.
 
 ~~~
-ConEmu -basic -noquake -nosingle -startTSA -cmd <build your project command line>
+ConEmu -basic -noquake -nosingle -startTSA -run <build your project command line>
 ~~~
 
 **Add %ConEmuBaseDir% to %PATH%**. If checked you may run `ConEmuC.exe` and `ConEmuC64.exe`

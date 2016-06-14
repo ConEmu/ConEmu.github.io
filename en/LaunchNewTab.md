@@ -28,10 +28,10 @@ breadcrumbs:
 <h2 id="Using_ConEmu_switches"> <a href="ConEmuArgs.html">Using ConEmu switches</a> </h2>
 
 When you run something from `Win+R` or shortcut from your Desktop,
-you may use `-cmd` or `-cmdlist` to run your application. Remember, `-cmd` or `-cmdlist` will be the last ConEmu's GUI interpreted switch. The rest of command line will be used to start your application. Read more in the [wiki](ConEmuArgs.html). Example:
+you may use `-run` or `-runlist` to run your application. Remember, `-run` or `-runlist` will be the last ConEmu's GUI interpreted switch. The rest of command line will be used to start your application. Read more in the [wiki](ConEmuArgs.html). Example:
 
 ~~~
-ConEmu -reuse -dir "c:\projects" -cmd "set PATH=C:\MinGW\bin;%PATH%" & chcp 65001 & sh -l -i 
+ConEmu -reuse -dir "c:\projects" -run "set PATH=C:\MinGW\bin;%PATH%" & chcp 65001 & sh -l -i
 ~~~
 
 

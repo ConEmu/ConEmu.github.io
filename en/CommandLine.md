@@ -31,11 +31,11 @@ be working in the another place!
 
 These switches are used for changing ConEmu window behavior or
 running specific commands (shells) in the ConEmu's tabs or splits.
-In the following example all between `ConEmu` and `-cmd` are GUI
+In the following example all between `ConEmu` and `-run` are GUI
 arguments.
 
 ~~~
-ConEmu -mintsa -config "Maintainance" -dir "C:\Project" -cmd git fetch
+ConEmu -mintsa -config "Maintainance" -dir "C:\Project" -run git fetch
 ~~~
 
 
@@ -80,7 +80,7 @@ bash.exe --login -i
 
 ## Console args   {#Console_args}
 
-That is much like as ‘Shell args’, with only difference that ConEmuC can process some commands internally, before running you shell: ‘set’, ‘chcp’, ‘title’. They can be used in [Tasks](SettingsTasks.html), after ‘-cmd’ ConEmu's switch and so on.
+That is much like as ‘Shell args’, with only difference that ConEmuC can process some commands internally, before running you shell: ‘set’, ‘chcp’, ‘title’. They can be used in [Tasks](SettingsTasks.html), after ‘-run’ ConEmu's switch and so on.
 
 ~~~
 "set PATH=C:\MinGW\bin;%PATH%" & set MSYSTEM=MINGW64 & chcp 65001 & sh -l -i
