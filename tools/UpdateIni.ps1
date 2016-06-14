@@ -298,7 +298,7 @@ function WriteFileContent($file,$text)
   [System.IO.File]::WriteAllText($file, $text, $Utf8NoBom)
 }
 
-$js_rels | % { UpdateJSON $js_rels }
+$js_rels | % { UpdateJSON $_ }
 # Format with spaces
 $json_data = (ConvertTo-JSON $script:json -Depth 99)
 $json_fmt = @()
