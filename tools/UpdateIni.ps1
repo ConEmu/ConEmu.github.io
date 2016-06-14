@@ -52,29 +52,48 @@ $urls2 = @()
 $sf_folder = ""
 
 # If version comes to both channels: Preview & Alpha
-$section2 = ""
-$js_reltype2 = ""
+$sects = @()
+$js_rels = @()
 $sf_prefix="http://downloads.sf.net/project/conemu"
 $sf_suffix="?use_mirror=autoselect"
+
+$script:json = (Get-Content -Raw $json_file) | ConvertFrom-JSON
+
+function CheckVersion($stage)
+{
+  $v = ($json.releases | ? { $_.type -eq "Alpha" }).Version
+  if ($build_no -gt %v) {
+    return $TRUE
+  }
+  return $FALSE
+}
 
 # Type of release: Alpha|Devel, Preview, Stable
 if ($relType -eq "Stable") {
   $sf_folder = "Stable"
-  $js_reltype = "Stable"
-  $section = "ConEmu_Stable_2"
+  $js_rels += "Stable"
+  $sects += "ConEmu_Stable_2"
+  if ((CheckVersion "Preview")) {
+    $js_rels += "Preview"
+    $sects += "ConEmu_Preview_2"
+  }
+  if ((CheckVersion "Alpha")) {
+    $js_rels += "Alpha"
+    $sects += "ConEmu_Devel_2"
+  }
 } elseif (($relType -eq "Preview") -Or ($relType -eq "Preview_Alpha")) {
   $sf_folder = "Preview"
-  $js_reltype = "Preview"
-  $section = "ConEmu_Preview_2"
-  if ($relType -eq "Preview_Alpha") {
+  $js_rels += "Preview"
+  $sects += "ConEmu_Preview_2"
+  if ((CheckVersion "Alpha")) {
     # Version comes to both channels: Preview & Alpha
-    $section2 = "ConEmu_Devel_2"
-    $js_reltype2 = "Alpha"
+    $js_rels += "Alpha"
+    $sects += "ConEmu_Devel_2"
   }
 } else {
   $sf_folder = "Alpha"
-  $js_reltype = "Alpha"
-  $section = "ConEmu_Devel_2"
+  $js_rels += "Alpha"
+  $sects += "ConEmu_Devel_2"
 }
 
 # http://downloads.sf.net/project/conemu/Preview/ConEmuPack.160219.7z?use_mirror=autoselect
@@ -82,7 +101,7 @@ $urls2 += "$sf_prefix/$sf_folder/$($names[0])$sf_suffix"
 $urls2 += "$sf_prefix/$sf_folder/$($names[1])$sf_suffix"
 $urls2 += "$sf_prefix/PortableApps/$($names[2])$sf_suffix"
 
-Write-Host "Section:  $section"
+Write-Host "Section:  $($sects[0])"
 
 
 #### CRC32 calculation begin ####
@@ -244,10 +263,7 @@ function WriteSection($section) {
   $rc = [ProfileAPI]::WritePrivateProfileString($section, "mirror1_exe", $urls2[1], $ini_file)
 }
 
-WriteSection $section
-if ($section2 -ne "") {
-  WriteSection $section2
-}
+$sects | % { WriteSection $_ }
 
 Write-Host "Success:  $ini_file"
 
@@ -282,11 +298,7 @@ function WriteFileContent($file,$text)
   [System.IO.File]::WriteAllText($file, $text, $Utf8NoBom)
 }
 
-$script:json = (Get-Content -Raw $json_file) | ConvertFrom-JSON
-UpdateJSON $js_reltype
-if ($js_reltype2 -ne "") {
-  UpdateJSON $js_reltype2
-}
+$js_rels | % { UpdateJSON $js_rels }
 # Format with spaces
 $json_data = (ConvertTo-JSON $script:json -Depth 99)
 $json_fmt = @()
