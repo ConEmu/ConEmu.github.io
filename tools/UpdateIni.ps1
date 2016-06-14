@@ -62,7 +62,7 @@ $script:json = (Get-Content -Raw $json_file) | ConvertFrom-JSON
 function CheckVersion($stage)
 {
   $v = ($json.releases | ? { $_.type -eq "Alpha" }).Version
-  if ($build_no -gt %v) {
+  if ($build_no -gt $v) {
     return $TRUE
   }
   return $FALSE
