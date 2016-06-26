@@ -35,7 +35,7 @@ Full description: <https://github.com/Maximus5/ms-bug-1>.
 
 | Appeared | Fixed |
 |:--------|:------|
-| Windows 10 (14361) | ? |
+| Windows 10 (14361) | Windows 10 (14371)? |
 
 ### Workaround
 
