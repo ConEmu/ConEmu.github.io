@@ -14,6 +14,7 @@ readalso:
 
 # Some Windows Bugs and Workarounds
 
+* [Broken text is returned from console input](#BrokenText)
 * [Broken cursor position and height in Windows 10](#BrokenCursor-10)
 * [Broken WM_MOUSEWHEEL's mouse cursor position in Windows 10](#WM_MOUSEWHEEL-10)
 * [Broken desktop coordinate system in Windows 10](#SetWindowPos-10)
@@ -27,6 +28,24 @@ readalso:
 
 
 
+## Broken text is returned from console input  {#BrokenText}
+
+In some cases, broken text is returned from console input buffer.
+
+Full description: <https://github.com/Maximus5/ms-bug-2>.
+
+| Appeared | Fixed |
+|:--------|:------|
+| Windows 2000 | ? |
+
+### Related issues
+
+* [Issue 760: Unexpected characters when pasting in Terminal](https://github.com/Maximus5/issues/760)
+* [Old-Issue 903: Plink tab paste issue](https://github.com/Maximus5/conemu-old-issues/issues/903)
+
+
+
+
 ## Broken cursor position and height in Windows 10  {#BrokenCursor-10}
 
 After `SetConsoleScreenBufferSize` call cursor position and height are broken.
@@ -35,7 +54,7 @@ Full description: <https://github.com/Maximus5/ms-bug-1>.
 
 | Appeared | Fixed |
 |:--------|:------|
-| Windows 10 (14361) | Windows 10 (14371)? |
+| Windows 10 (14361) | Windows 10 (14371) |
 
 ### Workaround
 
