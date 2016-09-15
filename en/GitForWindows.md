@@ -68,7 +68,7 @@ git config --global color.branch.current "green bold"
 ~~~
 
 Using Far Manager as editor (commit texts). I'm using
-[FarRun](https://github.com/Maximus5/FarPlugins/tree/master/FarRun/Release)
+[FarRun](https://github.com/Maximus5/FarPlugins/releases/tag/FarRun-1.1s)
 to simplify call of `far.exe`.
 
 ~~~
