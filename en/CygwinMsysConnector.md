@@ -118,11 +118,12 @@ Usage: conemu-cyg-32 [switches] [- | shell [shell switches]]
   -d, --dir <dir>  chdir to `dir` before starting shell
                    forces `set CHERE_INVOKING=1`
   -t <new-term>    forces `set TERM=new-term`
-      --debug      wait for debugger for 60 seconds
-      --environ    print environment on startup
-      --isatty     do isatty checks and print pts names
-      --keys       read conin and print bare input
-      --shlvl      forces `set SHLVL=1` to avoid terminal reset on exit
-      --verbose    additional information during startup
-      --version    print version of this tool
+  --logs [<dir>]   dump all conout to log file
+  --debug          wait for debugger for 60 seconds
+  --environ        print environment on startup
+  --isatty         do isatty checks and print pts names
+  --keys           read conin and print bare input
+  --shlvl          forces `set SHLVL=1` to avoid terminal reset on exit
+  --verbose        additional information during startup
+  --version        print version of this tool
 ~~~
