@@ -33,13 +33,17 @@ Good places to start are:
 
 * ‘Settings’ -> ‘Update and Security’ -> ‘For developers’: Enable ‘Developer mode’
 *  Reboot
-* ‘Administrator's command prompt’: execute the following
+* ‘Administrator's command prompt’ execute the following:
 
 ~~~
 powershell -command Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ~~~
 
-* After another reboot, run `bash.exe` in ‘command prompt’ to install required files.
+* After another reboot, run in the ‘command prompt’ to install required files:
+
+~~~
+%windir%\system32\bash.exe
+~~~
 
 
 ## Some techinfo
@@ -105,6 +109,17 @@ conemu-cyg-32.exe ./wslbridge.exe -t "-new_console:C:%LOCALAPPDATA%\lxss\bash.ic
 ~~~
 
 
+### TLDR: Just run wslbridge  {#TLDR2}
+
+Well, you may run `wsl-con.cmd` which would set up wslbridge for you.
+
+**Warning**, if you have installed ConEmu in ‘Program Files’,
+or any other protected location, please run `wsl-con.cmd`
+as Administrator (from elevated ConEmu tab).
+
+Download [wsl-con.cmd here](https://github.com/Maximus5/ConEmu/raw/daily/Release/ConEmu/wsl/wsl-con.cmd).
+
+
 ### How to get 24-bit colors working  {#true-color-example}
 
 You need just few more files:
@@ -164,6 +179,7 @@ Alternatively, you may enable [StatusBar](StatusBar.html) column ‘Terminal mod
 LeftClick the column and select ‘XTerm’ and ‘AppKeys’ when tab with Bash on Windows
 is active.
 
+Another alternative is [wslbridge](#true-color) described above.
 
 {% comment %}
 If you run ConEmu first time, or use [-basic](ConEmuArgs.html) switch,
