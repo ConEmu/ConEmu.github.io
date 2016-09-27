@@ -32,8 +32,11 @@ Good places to start are:
 ### TLDR: Installation  {#TLDR}
 
 * ‘Settings’ -> ‘Update and Security’ -> ‘For developers’: Enable ‘Developer mode’
-* ‘Administrator's command prompt’: `powershell -command Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+* ‘Administrator's command prompt’: execute the following
 
+~~~
+powershell -command Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+~~~
 
 
 ## Some techinfo
