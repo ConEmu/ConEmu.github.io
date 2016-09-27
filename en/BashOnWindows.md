@@ -32,11 +32,14 @@ Good places to start are:
 ### TLDR: Installation  {#TLDR}
 
 * ‘Settings’ -> ‘Update and Security’ -> ‘For developers’: Enable ‘Developer mode’
+*  Reboot
 * ‘Administrator's command prompt’: execute the following
 
 ~~~
 powershell -command Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ~~~
+
+* After another reboot, run `bash.exe` in ‘command prompt’ to install required files.
 
 
 ## Some techinfo
