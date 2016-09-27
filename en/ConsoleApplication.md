@@ -27,7 +27,7 @@ These applications may be runned in the terminals only ([TerminalVsShell](Termin
 Terminal accepts user input, sends it to application input stream,
 reads application output and displays it in its own window as text.
 
-Few terminal examples:
+## Few terminal examples {#conhost}
 [conhost.exe](http://www.howtogeek.com/howto/4996/what-is-conhost.exe-and-why-is-it-running/)
 (but not a cmd.exe like [many users think](Delusions.html)),
 ConEmu, ConsoleZ, mintty, PuTTY, KiTTY, Xshell and many others.
