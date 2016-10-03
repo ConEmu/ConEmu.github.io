@@ -25,8 +25,11 @@ without using of virtual machines or recompilations.
 
 Good places to start are:
 
-* https://msdn.microsoft.com/commandline/wsl/install_guide
-* https://msdn.microsoft.com/commandline/wsl/about
+* <https://msdn.microsoft.com/commandline/wsl/install_guide>
+* <https://msdn.microsoft.com/commandline/wsl/about>
+
+
+![Bash on Windows in ConEmu](/img/BashOnWindows.png)
 
 
 ### TLDR: Installation  {#TLDR}
