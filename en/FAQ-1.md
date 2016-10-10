@@ -38,7 +38,7 @@ otherlang:
 #### Q. I found a bug, what should I do?   {#q-1-1}
 
 
-A. First, make sure that the bug doesn't occur without ConEmu (e.g. running FAR directly, not via ConEmu). Next, make sure that the bug wasn't fixed [in the latest ConEmu version](http://www.fosshub.com/ConEmu.html). If the bug persists, [file a thoroughly detailed issue](http://code.google.com/p/conemu-maximus5/issues/list).
+A. First, make sure that the bug doesn't occur without ConEmu (e.g. running FAR directly, not via ConEmu). Next, make sure that the bug wasn't fixed [in the latest ConEmu version](http://www.fosshub.com/ConEmu.html). If the bug persists, [file a thoroughly detailed issue](https://github.com/Maximus5/ConEmu/issues/new).
 
 
 
