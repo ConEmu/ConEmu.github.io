@@ -19,6 +19,15 @@ readalso:
 
 # Integration
 
+* [ConEmu Inside  ](#ConEmu_Inside)
+* [‘Integration’ page items description  ](#Page-items-description)
+  * [Menu item   ](#Menu_item)
+  * [Configuration   ](#Configuration)
+  * [Command   ](#Command)
+  * [Icon file   ](#Icon-file)
+  * [Sync dir (Inside mode only)   ](#Sync-dir)
+  * [Registering menu items  ](#Register)
+
 ![ConEmu Settings: Integration](/img/Settings-Integration.png)
 
 
@@ -135,3 +144,14 @@ Bash (bash.exe, sh.exe):
 CMD and others:
   \ecd /d \1\n
 ~~~
+
+
+### Registering menu items  {#Register}
+
+Don't forget to press ‘Register’ button when you fill all fields.
+Menu items are **stored in Windows registry** to allow Explorer to show them!
+
+If you want to show registered item explicitly with ‘Shift’ key pressed,
+just hold ‘Shift’ key when you click ‘Register’ button. The menu item
+would be marked as ‘Extended’ and would not be show in ‘normal’ Explorer
+popup menu when ‘Shift’ key is not pressed.
