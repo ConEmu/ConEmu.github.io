@@ -102,6 +102,8 @@ instead of relying on message's lParam, will be suitable.
 
 [insider/forum/insider_wintp-insider_desktop/desktop-coordinate-system-is-broken](http://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_desktop/desktop-coordinate-system-is-broken/9e6fd9ab-6d27-45e0-bb55-4c868cd6ac45)
 
+More details in this sample project: [ms-bug-3](https://github.com/Maximus5/ms-bug-3#coordinate-system-is-broken-in-windows-10).
+
 | Appeared | Fixed |
 |:--------|:------|
 | Windows 10 | ? |
