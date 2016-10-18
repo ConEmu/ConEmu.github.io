@@ -13,6 +13,8 @@ readalso:
    title: Cygwin and Ansi
  - url: CygwinMsysConnector.html
    title: "cygwin/msys connector"
+ - url: BashOnWindows.html
+   title: "Bash On Ubuntu On Windows (WSL)"
 ---
 
 {% comment %}

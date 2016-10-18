@@ -2,9 +2,9 @@
 redirect_from:
  - /ru/BashOnWindows.html
 
-title: "ConEmu | Bash on Windows in ConEmu"
+title: "ConEmu | Bash on Ubuntu on Windows in ConEmu (WSL)"
 
-description: "Some hints about setting up Bash on Windows in ConEmu"
+description: "Some hints about setting up Bash on Windows (WSL) in ConEmu"
 
 breadcrumbs:
  - url: TableOfContents.html#tips-and-tweaks

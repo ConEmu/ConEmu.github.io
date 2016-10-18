@@ -20,6 +20,8 @@ readalso:
    title: "Cygwin and Msys"
  - url: AnsiEscapeCodes.html
    title: "ANSI sequences supported by ConEmu"
+ - url: BashOnWindows.html
+   title: "Bash On Ubuntu On Windows (WSL)"
 ---
 
 # Cygwin and pty related issues
