@@ -14,6 +14,8 @@ otherlang:
 readalso:
  - url: CygwinAnsi.html
    title: "ANSI в Cygwin и Msys"
+ - url: BashOnWindows.html
+   title: "Стрелки и Цвета в Bash на Windows (WSL)"
 ---
 
 <!-- Content starts -->

@@ -14,6 +14,8 @@ otherlang:
 readalso:
  - url: CygwinAnsi.html
    title: "ANSI processing in Cygwin and Msys"
+ - url: BashOnWindows.html
+   title: "Keys and Colors in Bash On Windows (WSL)"
 ---
 
 # ANSI X3.64 and Xterm 256 colors

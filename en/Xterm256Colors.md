@@ -17,6 +17,8 @@ readalso:
    title: "Cygwin and Ansi"
  - url: ExtendedConsole.html
    title: "Far Manager ExtendedConsole"
+ - url: BashOnWindows.html
+   title: "Keys and Colors in Bash On Windows (WSL)"
 ---
 
 # How to enable xterm 256 colors in ConEmu
