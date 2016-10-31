@@ -141,6 +141,13 @@ You may store changes in another [xml file](ConEmuXml.html) by pressing button
 #### Export...  {#id2572}
 Click it, you need to make a copy of your settings in the [xml file](ConEmuXml.html).
 
+#### Look up an option  {#id2569}
+If you can't find a desired option the easiest way to do that is ‘Search field’.
+Just press `Ctrl+F` in the Settings dialog, type something, the ‘title’ for example,
+and wait a bit. ConEmu would activate appropriate page and show the hint on the
+found control. You may use `Enter` or ‘Lens icon’ in the search field to find
+next occurrence of the string.
+
 
 <a name="screenshots"></a>
 
