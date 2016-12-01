@@ -162,9 +162,11 @@ try {
     if ($script:xmlsrc -ne "") {
       $xml_data = DownloadString $script:xmlsrc
     } else {
-      $xml_data = '<?xml version="1.0" encoding="utf-8"?>'
+      $xml_data = ""
     }
-    Set-Content $xml_file $xml_data
+    #Set-Content $xml_file $xml_data
+    $Utf8NoBom = new-object -TypeName System.Text.UTF8Encoding($FALSE)
+    [System.IO.File]::WriteAllText($xml_file, $xml_data, $Utf8NoBom)
   }
 
   # create shortcut on desktop?
