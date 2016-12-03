@@ -148,6 +148,7 @@ you may use `-new_console` or `-cur_console` switches.
    h<height> - i.e., h0 - turn buffer off, h9999 - switch to 9999 lines
    i - don't inject ConEmuHk into starting process
    I - (GuiMacro only) forces inheriting of root process contents, like ‘Duplicate root’ feature
+   m:/mnt - defines ‘/mnt’ prefix for Unix-path conversion
    n - disable ‘Press Enter or Esc to close console’
    o - don't enable ‘Long console output’ when starting command from Far Manager
    p[N] - pty modes, N - bitmask: 1 - XTermKeys, 2 - BrPaste, 4 - AppCursorKeys; default is 5 (1+4)
