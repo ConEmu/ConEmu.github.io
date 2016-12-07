@@ -38,6 +38,7 @@ it is impossible to fix something abstract...
 * [Screenshot](#Screenshot)
 * [Log files](#LogFiles)
 * [Text of the error](#Text_of_the_error)
+* [Assertions are not crashes!](#Assertions)
 * [Crash dumps](#Crash_dumps)
 
 
@@ -159,6 +160,47 @@ And reporter do not need to re-type the text!
 Just press `Ctrl+C` in the dialog box, and its message will be placed
 to the Windows clipboard. Tada... Just paste it to the issue text.
 
+
+
+## Assertions are not crashes!  {#Assertions}
+
+In [‘Peview’ and ‘Alpha’ builds](VersionComparison.html#release-stages)
+ConEmu may show some critical messages called ‘Assertions’.
+Check the example below.
+
+~~~
+Assertion: ConEmu 161203 [32] PID=1234, TID=12345
+C:\Tools\ConEmu\ConEmu.exe
+conemu\src\conemu\menu.cpp:2441
+-----------------------
+FALSE && "This is RELEASE test assertion"
+-----------------------
+
+Press <Ignore> to continue your work.
+
+Press <Abort> to throw exception, ConEmu will be terminated!
+
+Press <Retry> to copy text information to clipboard
+and report a bug (open project web page).
+~~~
+
+**These are not crashes of ConEmu**!
+
+If fact, these messages shows that something unexpected happened.
+
+For example, if the ‘conhost.exe’ was crashed user may receive
+the assertion message ‘nNewWidth>0 && nNewHeight>0’.
+The ‘conhost.exe’ is Microsoft process and ConEmu does not inject
+any code into that process, so actually any crashes of ‘conhost.exe’
+have to be reported to Microsoft directly. ConEmu can't be responsible
+for [Microsoft Bugs](MicrosoftBugs.html).
+
+Assertion may appear in some race condition too. For example
+if the tab in ConEmu was closed before ‘ConEmuC.exe’ process was terminated
+properly, user may be notified that ‘tab not found’.
+
+**Assertions are disabled in [Stable](VersionComparison.html#stable) build**
+since [build 161206](https://conemu.github.io/blog/2016/12/06/Build-161206.html).
 
 
 
