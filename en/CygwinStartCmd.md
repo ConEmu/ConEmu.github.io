@@ -18,6 +18,7 @@ The simplest thing with `cmd.exe` - `/k` switch, but the bash has no equivalent.
 Of course, the question is not related to ConEmu, but let options be here.
 
 * [Modify your ~/.bashrc](#bashrc)
+* [Piping ~/.bashrc copy](#bashrc-temp)
 * [Use the conveyer](#conveyer)
 * [Use GuiMacro and command conveyers](#guimacro)
 
@@ -56,6 +57,19 @@ set "STARTUP_CMD=echo 'This is sample command' && echo 'And this is another comm
 
 **NB** It's recommended to use **upper-case** variable name.
 Some versions have ignored lower-case or camel-case variable names.
+
+
+
+## Piping ~/.bashrc copy {#bashrc-temp}
+
+Solution from [StackOverflow](http://stackoverflow.com/a/36152028/1405560):
+
+~~~
+bash --rcfile <(echo '. ~/.bashrc; some_command')
+~~~
+
+No modifications of original `~/.bashrc` are required, just take care of properly
+escaped special symbols (single quote) in `some_command`.
 
 
 
