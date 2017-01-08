@@ -98,7 +98,7 @@ Check for details in the [issue 641](https://github.com/Maximus5/ConEmu/issues/6
 
 When ConEmu emulates xterm it translates mouse wheel to the following sequences:
 
-| **Event** | **Sequence** | **Description** |
+| **ConEmu Event** | **Sequence** | **Description** |
 |:---|:---|:---|
 | `<WheelDown>` | `\e[62~` | toward the user |
 | `<WheelUp>` | `\e[63~` | away from the user |
@@ -123,6 +123,8 @@ if !has("gui_running")
 endif
 ~~~
 
+If you have problems with Vim configuration, you may refer to the
+[Issue 1007](https://github.com/Maximus5/ConEmu/issues/1007#issuecomment-271166152).
 
 
 ## vim-airline plugin   {#Vim-airline}
