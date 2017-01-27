@@ -12,14 +12,24 @@ readalso:
    title: "Configuring Cmd Prompt"
  - url: PromptAtTheBottom.html
    title: "Hold Shell Prompt at the Bottom"
+ - url: ShellWorkDir.html
+   title: "Shell Working Directory"
+ - url: AnsiEscapeCodes.html
+   title: "ANSI sequences"
+ - url: GuiMacro.html
+   title: "GuiMacro"
 ---
 
 # Extending the Powershell Prompt
 
-Do you want to see your current powershell location
-(directory, etc.) in the ConEmu tab title?
-You can do it. Tab title will be updated each time
-powershell print your prompt.
+* ConEmu may show [current working directory](SettingsTabBar.html#id2106) in the Tab title.
+* User may change prompt cursor position with [mouse click](SettingsMouse.html#id3020).
+* Open files by [clicking on them](SettingsHighlight.html#id1765) (output from `cl`, `git`, etc.)
+
+It's simple to configure.
+
+
+### Create or open your PowerShell profile script  {#profile}
 
 Open your profile in the editor, Notepad for example
 
@@ -30,7 +40,7 @@ notepad $profile
 ~~~
 
 
-### Prepare prompt for ConEmu
+### Prepare prompt for ConEmu  {#prompt}
 
 The following function will pass some crucial information to ConEmu,
 which can not be obtained by ConEmu automatically.
@@ -41,7 +51,7 @@ which can not be obtained by ConEmu automatically.
 * Current PowerShell's working directory (FileSystem only).
   ConEmu may show full path or just current folder name
   in the Tab label (check Tab templates).
-  Also this knowledge is crucial to process ‘hyperlinks’ clicks
+  Also this knowledge is crucial to process â€˜hyperlinksâ€™ clicks
   on files in the output from compilers and source control
   systems (git, hg, ...)
 
@@ -77,12 +87,12 @@ function prompt
 
 
 
-### Few more examples with GuiMacro
+### Few more examples with GuiMacro  {#guimacro}
+
+These are just [GuiMacro](GuiMacro.html) usage examples, the Tab title
+may be perfectly processed by prompt function [suggested above](#prompt).
 
 Add following function to change (rename) ConEmu Tab title each time prompt appears.
-
-These are just GuiMacro usage examples, the Tab title may be perfectly processed
-by prompt function suggested above.
 
 ~~~
 function prompt
