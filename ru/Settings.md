@@ -19,8 +19,8 @@ otherlang:
   * [Registry](#Registry)
   * [ConEmu.xml](#ConEmu_xml)
 * [Manual change of settings](#Manual_change_of_settings)
-  * [Using registry](#Using_registry)
   * [Using ConEmu.xml](#Using_ConEmu_xml)
+  * [Using registry](#Using_registry)
 * [Диалог настроек «Settings»](#Settings_dialog)
   * Common controls
     * [Save settings](#id1610)
@@ -98,9 +98,15 @@ When You specify the [/config](ConEmuArgs.html) switch in the ConEmu.exe command
 
 ## Manual change of settings  {#Manual_change_of_settings}
 
-So, You want to change a few settings, which are absent in the Settings dialog.
-List and description of each setting You may find
-in the `Settings-ConEmu.reg` or `ConEmu_Sample.xml` files.
+Almost any option may be changed using Settings dialog.
+But if you have to change a few settings, which are absent in the Settings dialog,
+just edit your [ConEmu.xml](#Using_ConEmu_xml) or [registry](#Using_registry).
+
+
+### Using ConEmu.xml   {#Using_ConEmu_xml}
+
+Open ConEmu.xml file using any text editor (Far Manager, Notepad, Vim and so on)
+find appropriate value and change it.
 
 
 ### Using registry   {#Using_registry}
@@ -109,12 +115,6 @@ Go to Registry editor (be careful!) and change appropriate value in the ConEmu s
 
 * `[HKEY_CURRENT_USER\Software\ConEmu\.Vanilla]`, when [/config](ConEmuArgs.html) switch is not used;
 * `[HKEY_CURRENT_USER\Software\ConEmu\<configname>]`, when /config switch specified in the ConEmu command line.
-
-
-### Using ConEmu.xml   {#Using_ConEmu_xml}
-
-Open ConEmu.xml file using any text editor (Far Manager, Notepad, Vim and so on)
-find appropriate value and change it.
 
 
 ## Settings dialog  {#Settings_dialog}
