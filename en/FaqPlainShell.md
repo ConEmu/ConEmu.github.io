@@ -16,33 +16,27 @@ affect normal behaviour of your shell.
 And that may be **not** a ConEmu issue at all.
 
 * [How to run specified command](#example)
-* [cmd](#cmd)
-* [PowerShell](#PowerShell)
-* [Far Manager](#Far_Manager)
+  * [cmd](#cmd)
+  * [PowerShell](#PowerShell)
+  * [Far Manager](#Far_Manager)
 
 
 
 ## How to run specified command  {#example}
 
 Most of shells have switches to disable loading plugins or extensions.
-Just use them. Easiest way to use `ConEmu -run ...` to force proper shell command.
+Just use them plain.
 
-For example.
+Easiest way to execute `ConEmu64.exe -run ...` from `Win+R` dialog to force proper shell command.
 
-~~~
-ConEmu -run PowerShell -noprofile
-~~~
-
-Also, you may turn on ConEmu's default settings by `-basic`.
+It's recommended to force ConEmu's default settings by `-basic` switch.
 Your current [configuration file or registry](ConEmuXml.html)
-**will not be changed**.
+**will not be changed**: `ConEmu64.exe -basic -run ...`.
 
-~~~
-ConEmu -basic -run PowerShell -noprofile
-~~~
+![Run ConEmu from Win+R dialog](/img/Win-R-dialog.png)
 
-Alternatively, you may change the ‘Command line’ on the ‘Startup’ settings page.
-
+Of course you may change the ‘Command line’ on the ‘Startup’ settings page,
+but running ConEmu from `Win+R` dialog is more strict method.
 
 
 
@@ -51,7 +45,7 @@ Alternatively, you may change the ‘Command line’ on the ‘Startup’ settin
 Just run cmd using `/D` switch.
 
 ~~~
-cmd /D
+ConEmu64.exe -basic -run cmd.exe /D
 ~~~
 
 
@@ -61,7 +55,7 @@ cmd /D
 Use `-noprofile` switch.
 
 ~~~
-PowerShell -noprofile
+ConEmu64.exe -basic -run PowerShell.exe -noprofile
 ~~~
 
 
@@ -71,5 +65,5 @@ PowerShell -noprofile
 Use `/p` to disable plugins and `/m` to disable macros.
 
 ~~~
-Far /p /m
+ConEmu64.exe -basic -run Far.exe /p /m
 ~~~
