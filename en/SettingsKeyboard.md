@@ -32,6 +32,9 @@ Enables switching of tabs (30 consoles) by their numbers (1,2,...,9,10,11,...). 
 #### Win+Arrows - resize window  {#id1768}
 Resize ConEmu window with arrow keys
 
+#### Alt+NumpadAdd - unicode hex codebase  {#id3061}
+Use Alt+NumpadAdd+HexNumbers to enter unicode symbol by its hex codebase Ignored in Far Manager Has no effect on explicit shortcut
+
 
 
 ## Seize keys / Send to console  {#id3018}

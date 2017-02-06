@@ -93,14 +93,17 @@ Auto minimize to Taskbar Status Area (TSA) Right click on ‘Close window button
 
 ## Windows 7 taskbar (Jump list)  {#id2134}
 
-#### Add ConEmu tasks to taskbar  {#id2132}
+#### Add ConEmu Tasks  {#id2132}
+Show in TaskBar Jump List eligible Tasks (check Task properties)
 
+#### Add commands from history  {#id2133}
+Show in TaskBar Jump List commands used to run consoles (history)
 
-#### Add commands from history, too  {#id2133}
-
+#### Autoupdate  {#id3073}
+If checked, Jump Lists will be updated automatically when user (un)check the ‘Taskbar jump lists’ checkbox in Task properties.
 
 #### Update Now!  {#id2320}
-
+Don't forget to update Jump Lists, especially if ‘Autoupdate’ is unchecked
 
 
 

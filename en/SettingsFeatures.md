@@ -49,7 +49,7 @@ Enables DosBox integration
 #### Use Clink in prompt  {#id2418}
 Use clink to extend command prompt (cmd.exe) https://mridgers.github.io/clink/
 
-#### ANSI X3.64 / xterm 256 colors  {#id2253}
+#### ANSI and xterm sequences  {#id2253}
 Enable processing of ANSI escape sequences, ‘Inject ConEmuHk’ must be checked if you want to work with second level processes (e.g. cmd.exe -> app.exe)
 
 #### Disable all flashing  {#id1719}
@@ -66,6 +66,9 @@ Hook 'start' command in your cmd's prompt and batches started in ConEmu tabs to 
 
 #### Process Ctrl-Z in ReadConsole  {#id2878}
 Treat Ctrl-Z as ‘EndOfStream’. On new line press Ctrl-Z and Enter. Refer to the gh#465 for details (Go input streams).
+
+#### Kill ssh-agent with ConEmu  {#id3075}
+Terminate all `ssh-agent.exe` processes started from ConEmu's consoles on ConEmu termination.
 
 #### Skip focus events (don't send to console FOCUS_EVENT, useful with Far Manager)  {#id1538}
 Don't send focus events to console to disable autoclosing of fast search dialog in panels

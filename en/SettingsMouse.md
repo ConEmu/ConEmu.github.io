@@ -48,13 +48,6 @@ Allows to move ConEmu window via dragging it by client area.
 
 
 
-
-* ****
-* **Buffer only (e.g. cmd.exe)**
-
-
-
-
 RTEXT
 
 
@@ -63,9 +56,13 @@ RTEXT
 
 
 
+RTEXT
 
 
 
+
+
+Choose required pressed modifier for actions <No-Mod> is ignored in Far Manager to bypass  mouse button clicks to console
 
 
 

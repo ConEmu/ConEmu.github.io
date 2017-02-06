@@ -66,6 +66,9 @@ Cell width for "Monospace" mode
 #### Monospace  {#id2283}
 Check it for non proportional (monospaced) fonts
 
+#### Compress long strings to fit space  {#id3074}
+
+
 
 
 Face name for main font
@@ -81,20 +84,20 @@ Face name for main font
 Main font charset
 
 #### Alternative font (pseudographics, CJK, etc.)  {#id1207}
-You can specify additional font for drawing pseudographics or specified range of symbols. E.g. main - "Fixedsys", additional - "Lucida Console". You may force this font for specified range of symbols, search "Settings-ConEmu.reg" for "FixFarBordersRanges" option.
+You can specify additional font for drawing pseudographics or specified range of symbols. E.g. main - "Consolas", additional - "Segoe UI".
 
 #### Anti-aliasing  {#id2883}
 *Width*  
-
+Enable or disable ‘Clear Type’ for alternative font. Accurate pseudographics looks better.
 
 LTEXT
 
 #### Apply  {#id2838}
+Don't forger to apply manually entered UCS range to observe the result.
 
 
 
-
-WIDTH for pseudographics font. It must be wider than main font, otherwise, You may get "dashed" borders.
+WIDTH for pseudographics font. It must be wider than main font to avoid "dashed" pseudographics (frames).
 
 ## Extend fonts  {#id1576}
 
@@ -116,9 +119,9 @@ RTEXT
 
 
 
-Font face used to draw pseudographics or specified range of symbols. E.g. main - "Fixedsys", additional - "Lucida Console". You may force this font for specified range of symbols, search "Settings-ConEmu.reg" for "FixFarBordersRanges" option.
+Font face used to draw pseudographics or specified range of symbols. E.g. main - "Consolas", additional - "Segoe UI".
 
-
+Define your own UCS range or choose predefined one from the list.
 
 Choose background color index for which ‘Bold’ font properties will be inverted (default is Red #12)
 

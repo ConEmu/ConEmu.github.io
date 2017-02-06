@@ -49,8 +49,8 @@ Drag with right mouse button, only when pressed...
 
 ## Far Manager options  {#id2958}
 
-#### Hourglass if not responding  {#id1563}
-Show AppStarting cursor (arrow with a small hourglass) when Far is not responding (during long operations)
+#### Change mouse cursor if busy  {#id1563}
+Show AppStarting mouse cursor (arrow with a small hourglass or circle) when Far is busy (not responding during long operations)
 
 #### ASCII sort function in Far  {#id1561}
 Hook Far string sort functions. !!!HIGHLY EXPERIMENTAL!!!
