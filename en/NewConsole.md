@@ -88,7 +88,7 @@ or create string value in the registry, using `reg.exe` tool.
 There are several ways to disable or skip processing of these switches.
 
   * Option ‘Process -new_console and -cur_console switches’ on the [Features](SettingsFeatures.html) Settings page.
-    When you disable that option swithes will not be processed when you run something from your shell prompt or
+    When you disable that option, switches will not be processed when you run something from your shell prompt or
     scripts (inside ConEmu tabs).
   * Using single quotes or backslashes, examples below.
 <pre>
