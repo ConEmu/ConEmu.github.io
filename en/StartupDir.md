@@ -27,7 +27,7 @@ Why? There are reasons.
   folder (you will get that if you run something from Win+R).
 
 
-## Force use of the specific directory
+## Force use of the specific directory  {#force}
 
 If you want to force ConEmu to start using some specific
 default directory there are options.
@@ -45,12 +45,11 @@ default directory there are options.
   task or specified command.
 
 
-## Shell related notes
+## Shell related notes  {#shells}
 
 Even if ConEmu sets a directory as startup location for [new tab or split](LaunchNewTab.html)
 some [shells](TerminalVsShell.html) may ignore it.
 
-For example,
 [cygwin](CygwinStartCmd.html) always starts (by default) in user's home directory,
 Far Manager may restore last or saved panel directories,
 and so on...
@@ -58,13 +57,20 @@ and so on...
 The workaround is to tell your [console application](ConsoleApplication.html)
 to use specified directory instead of default one. Here are some hints...
 
-* Use `CHERE_INVOKING` environment variable for [cygwin shells](CygwinStartDir.html). Example:
+Refer to your application manual to find proper way.
+
+Few examples below.
+
+### Cygwin  {#cygwin}
+
+Use `CHERE_INVOKING` environment variable for [cygwin shells](CygwinStartDir.html). Example:
 ~~~
 set CHERE_INVOKING=1 & sh.exe -l -i
 ~~~
-* Use `!ConEmuWorkDir!` [environment variable](ConEmuEnvironment.html). Example:
+
+### Far Manager  {#far}
+Use `!ConEmuWorkDir!` [environment variable](ConEmuEnvironment.html). Example:
 ~~~
 Far.exe "!ConEmuWorkDir!"
 ~~~
 
-Refer to your application manual to find proper way.
