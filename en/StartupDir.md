@@ -61,12 +61,22 @@ Refer to your application manual to find proper way.
 
 Few examples below.
 
+
 ### Cygwin  {#cygwin}
+
+*NB This is not related to ‘[Bash on Windows](BashOnWindows.html)’!*
 
 Use `CHERE_INVOKING` environment variable for [cygwin shells](CygwinStartDir.html). Example:
 ~~~
 set CHERE_INVOKING=1 & sh.exe -l -i
 ~~~
+
+Put this command in the `{CygWin bash}` [Task](Tasks.html) (as ConEmu suggests by default)
+and start ConEmu as:
+~~~
+ConEmu.exe -run {CygWin bash}"
+~~~
+
 
 ### Far Manager  {#far}
 Use `!ConEmuWorkDir!` [environment variable](ConEmuEnvironment.html). Example:
@@ -74,3 +84,8 @@ Use `!ConEmuWorkDir!` [environment variable](ConEmuEnvironment.html). Example:
 Far.exe "!ConEmuWorkDir!"
 ~~~
 
+If you have (as recommended) the [Task](Tasks.html) `{Far}`
+the full command to run ConEmu would be:
+~~~
+ConEmu.exe -run {Far} "!ConEmuWorkDir!"
+~~~
