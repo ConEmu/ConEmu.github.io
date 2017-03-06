@@ -26,4 +26,4 @@ if errorlevel 1 exit /b 100
 call %git% merge master
 if errorlevel 1 exit /b 100
 
-call "%~dp0push-conemu.cmd"
+call "%~dp0push-conemu.cmd" --pull

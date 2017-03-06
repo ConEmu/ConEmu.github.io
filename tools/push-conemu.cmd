@@ -5,6 +5,7 @@
 @if NOT defined git ( set "git=git.exe" )
 @pushd "%~dp0"
 @call git checkout master
+@call git pull origin
 @call "%~dp0push-conemu-en.cmd"
 @call git checkout conemu-ru && call git merge master && call git checkout master
 @call "%~dp0push-conemu-ru.cmd"

@@ -26,6 +26,6 @@ if errorlevel 1 exit /b 100
 call %git% commit -m %message%
 if errorlevel 1 exit /b 100
 if /I "%~3" == "--commit-only" goto skip_push
-call "%~dp0push-conemu.cmd"
+call "%~dp0push-conemu.cmd" --pull
 if errorlevel 1 exit /b 100
 :skip_push
