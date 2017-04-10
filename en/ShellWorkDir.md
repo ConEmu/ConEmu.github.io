@@ -17,6 +17,8 @@ readalso:
    title: "Settings › Highlight page"
  - url: CygwinMsysConnector.html
    title: "cygwin/msys connector"
+ - url: PowershellPrompt.html
+   title: "Powershell Prompt"
 ---
 
 # Shell Working Directory
@@ -42,6 +44,7 @@ Please read the rest of article about required profile modifications.
 * [About directories](#description)
 * [What you shall do to get **CD** support](#What_you_shall_do_to_get_CD_support)
   * [cmd and tcc](#cmd_and_tcc)
+  * [cygwin/msys shells via PS1](#connector-ps1)
   * [bash and some other cygwin shells](#bash_and_other_cygwin_shells)
   * [zsh](#zsh)
   * [PowerShell](#PowerShell)
@@ -102,7 +105,7 @@ ConEmu will maintain **CD** for you automatically.
 [cygwin/msys connector](CygwinMsysConnector.html)!
 
 For example, you may configure your bash by appending
-to your `.bashrc` following sequence:
+to your `~/.bashrc` following sequence:
 
 ~~~
 \[\e]9;9;"\w"\007\033]9;12\007\]
@@ -122,7 +125,7 @@ PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ \[\e]9;9;"\w"\007]
 
 You need to tell bash to run `ConEmuC -StoreCWD` command
 each time its prompt executed.
-For example, add to your `.bashrc`
+For example, add to your `~/.bashrc`
 
 ~~~
 PROMPT_COMMAND='ConEmuC -StoreCWD'
@@ -131,7 +134,7 @@ PROMPT_COMMAND='ConEmuC -StoreCWD'
 
 ### zsh   {#zsh}
 
-For zsh just add this to your `.zshrc` file.
+For zsh just add this to your `~/.zshrc` file.
 
 ~~~
 prmptcmd() { eval "$PROMPT_COMMAND" }
@@ -145,7 +148,9 @@ PROMPT_COMMAND='ConEmuC -StoreCWD'
 You need to modify your profile to override prompt function. Just run in your PowerShell prompt:
 
 ~~~
-notepad $Profile
+New-Item -ItemType directory -Path (Split-Path -Parent $profile) -Force
+New-Item -ItemType file -Path $profile
+notepad $profile
 ~~~
 
 And change prompt as in the following example:
@@ -164,3 +169,6 @@ function prompt {
   return ">"
 }
 ~~~
+
+Also check another variant of `prompt` function exposing input start to ConEmu:
+[PowershellPrompt](PowershellPrompt.html).
