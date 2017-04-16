@@ -254,8 +254,8 @@ If 64-bit version is not working for same reasons, you may try other WSLBridge v
 
 1. Download [desired wslbridge release](https://github.com/rprichard/wslbridge/releases).
 2. Obtain required dlls:
-   * either `cygwin1.dll` from [https://cygwin.com/]
-   * or `msys-2.0.dll` from [http://www.msys2.org/]
+   * either `cygwin1.dll` from [https://cygwin.com/](https://cygwin.com)
+   * or `msys-2.0.dll` from [http://www.msys2.org/](http://www.msys2.org/)
 3. Download latest [connector](https://github.com/Maximus5/cygwin-connector/releases).
 4. Collect all files in some folder, for example: `C:\Tools\ConEmu\wsl`.
 5. Create the task `{WSL:Bridge}`.
