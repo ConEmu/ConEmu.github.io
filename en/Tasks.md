@@ -42,6 +42,7 @@ Tasks may be configured in the [‘Settings’ dialog](SettingsTasks.html).
 * [Creating new task](#create-new-task)
   * [Where you may get required information?](#find-required-information)
   * [If there is no shortcut for that shell](#if-no-shell-shortcut)
+  * [Add default tasks](#add-default-tasks)
 
 
 
@@ -185,3 +186,13 @@ but run powershell host internally. Just google! For example:
 * [Using NuGet standalone command-line](http://headsigned.com/article/using-nuget-standalone-command-line)
 * [Download Nuget Packages Without VS/NuGet Package Manager](http://stackoverflow.com/a/13581202/1405560)
 * [Do an offline installation into Visual Studio](http://stackoverflow.com/a/15000559/1405560)
+
+
+### Add default tasks  {#add-default-tasks}
+
+In case you have installed new application (for example new Visual Studio version)
+the new task is not created automatically by ConEmu without user's request.
+
+Just open ‘Tasks’ settings page and press ‘Add default tasks...’ button.
+ConEmu will confirm the action (‘Yes’ - add missed tasks; ‘No’ - rewrite existing tasks with defaults)
+and you will get new tasks at the end of the Tasks list!
