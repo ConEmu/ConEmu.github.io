@@ -36,6 +36,16 @@ It supports:
 Please note, status of this plugin is ‘Experimental’.
 
 
+* [Screenshots](#screenshots)
+* [How to use connector](#how-to-use)
+  * [WARNING](#warning)
+* [Examples](#examples)
+  * [MSYS2 x64 bash example (desktop shortcut)](#msys2-shortcut)
+  * [MSYS2 x64 bash example (Task)](#msys2-task)
+  * [Want to run specific shell or pass arguments?](#specific-shell)
+* [Supported switches](#switches)
+
+
 
 ## Screenshots  {#screenshots}
 
@@ -108,7 +118,7 @@ set CHERE_INVOKING=1 & C:\Cygwin\bin\conemu-cyg-32.exe /usr/bin/zsh -l -i
 ~~~
 
 
-## Supported switches
+## Supported switches  {#switches}
 You may run `conemu-cyg-32.exe --help` to learn about options.
 
 ~~~
