@@ -51,6 +51,8 @@ Auto minimize to Taskbar Status Area (TSA) Right click on ‘Close window button
 
 #### Close ConEmu with last tab  {#id2588}
 
+This option is automatically unchecked on startup if switch ‘-NoAutoClose’ is specified.
+
 
 #### Quit on close (e.g. caption bar cross clicking)  {#id2585}
 

@@ -153,6 +153,7 @@ start "Three tabs" "C:\Program Files\ConEmu\ConEmu.exe" -runlist
 | -autosetup 1 | 0 | Install or remove ConEmu autostart with cmd.exe |
 | -visible | Starts with visible real console |
 | -detached | Starts with no console, ConEmu is ready for attaching from another real console or FAR manager |
+| -noautoclose | Don't close ConEmu window automatically with last tab; may be used with ‘-detached’ |
 | -nocascade | Disable ‘Cascade’ option may be set in the Settings |
 | -nodefterm | Don't start initialization procedure for setting up ConEmu as default terminal |
 | -nokeyhooks | Disable SetWindowsHookEx and global hotkeys |
