@@ -6,6 +6,10 @@ title: "ConEmu | Hold Shell Prompt at the Bottom"
 breadcrumbs:
  - url: TableOfContents.html#tips-and-tweaks
    title: Tips and Tweaks
+
+readalso:
+ - url: PowershellPrompt.html
+   title: "Powershell Prompt"
 ---
 
 # Hold Shell Prompt at the Bottom

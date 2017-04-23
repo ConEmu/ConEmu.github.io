@@ -515,6 +515,24 @@
       rus: "AppHelp problem"
       url: "AppHelp.html"
 -
+  eng: "Bash on Windows"
+  rus: "Bash on Windows"
+  id:  "bash-on-windows"
+  url: "BashOnWindows.html"
+  children:
+    -
+      eng: "WSL installation"
+      rus: "Установка WSL"
+      url: "BashOnWindows.html#TLDR"
+    -
+      eng: "Get arrows working in ConEmu"
+      rus: "Если не работают кнопки курсора"
+      url: "BashOnWindows.html#arrows"
+    -
+      eng: "WSLBridge in ConEmu"
+      rus: "WSLBridge в ConEmu"
+      url: "BashOnWindows.html#wslbridge"
+-
   eng: "ConEmu and Far Manager"
   rus: "ConEmu и Far Manager"
   id:  "conemu-and-far"
@@ -538,10 +556,6 @@
       eng: "Unicode support"
       rus: "Поддержка Unicode"
       url: "UnicodeSupport.html"
-    -
-      eng: "Bash on Windows"
-      rus: "Bash on Windows"
-      url: "BashOnWindows.html"
     -
       eng: "Bold/Italic/Underlined"
       rus: "Жирный/Курсив/Подчеркнутый"

@@ -23,16 +23,31 @@ without using of virtual machines or recompilations.
 
 **Required** 64-bit version of Windows 10 Anniversary Update build 14316 or later!
 
-Good places to start are:
+![Bash on Windows in ConEmu](/img/BashOnWindows.png)
+
+
+* Installation
+  * [Good places to start](#start)
+  * [TLDR: WSL Installation](#TLDR)
+* [Some techinfo](#techinfo)
+* [Get arrows working in ConEmu](#arrows)
+  * Solution 1: Default task {bash} {#arrows-sol-1}
+  * [Solution 2: StatusBar's Terminal modes](#arrows-sol-2)
+  * [Solution 3: wslbridge](#arrows-sol-3)
+* [WSLBridge: Get 24-bit colors working in ConEmu](#wslbridge)
+  * [TLDR: Just run wslbridge](#TLDR2)
+  * [How to get 24-bit colors working](#true-color-example)
+  * [WSLBridge manual installation and Task contents](#wslbridge-task)
+  * [Other versions of WSLBridge](#wslbridge-32)
+
+
+
+### Good places to start  {#start}
 
 * <https://msdn.microsoft.com/commandline/wsl/install_guide>
 * <https://msdn.microsoft.com/commandline/wsl/about>
 
-
-![Bash on Windows in ConEmu](/img/BashOnWindows.png)
-
-
-### TLDR: Installation  {#TLDR}
+### TLDR: WSL Installation  {#TLDR}
 
 * ‘Settings’ -> ‘Update and Security’ -> ‘For developers’: Enable ‘Developer mode’
 *  Reboot
@@ -49,7 +64,7 @@ powershell -command Enable-WindowsOptionalFeature -Online -FeatureName Microsoft
 ~~~
 
 
-## Some techinfo
+## Some techinfo  {#techinfo}
 
 Despite the fact WSL binaries runs in Windows console window,
 they are not native Windows console applications (obviously)
@@ -79,7 +94,63 @@ they are converted properly.
 Both problem have workarounds, read further.
 
 
-## Get 24-bit colors working in ConEmu  {#true-color}
+
+
+## Get arrows working in ConEmu  {#arrows}
+
+This solution is **only for [Bash on Windows (WSL)](https://github.com/Microsoft/BashOnWindows)**!
+It does not rely to [Cygwin, MSYS](CygwinMsys.html) or [Git-for-Windows](GitForWindows.html)!
+
+Due to the bug [BashOnWindows#111](https://github.com/Microsoft/BashOnWindows/issues/111)
+arrows may not be working in some cases if you start just a `bash.exe`.
+More details in tickets
+[BashOnWindows#111](https://github.com/Microsoft/BashOnWindows/issues/111)
+and
+[ConEmu#629](https://github.com/Maximus5/ConEmu/issues/629).
+
+
+### Solution 1: Default task {bash} {#arrows-sol-1}
+
+1. Don't use [Old ConEmu Builds](OldBuild.html)!
+   There is no sense to complain on things changed months ago!
+   [Update](UpdateModes.html) your installation!
+2. ConEmu creates new task for ‘Bash on Windows’ automatically,
+   you may check this by running `ConEmu64.exe -basic -run {bash}`.
+   Also, you may call [Add default tasks...](SettingsTasks.html#id2632)
+   from [Tasks page](SettingsTasks.html) on your existing config.
+3. So, just run `{bash}` [task](Tasks.html), arrow keys are expected
+   to be working!
+
+   
+### Solution 2: StatusBar's Terminal modes  {#arrows-sol-2}
+
+You may enable [StatusBar](StatusBar.html) column ‘Terminal modes’.
+LeftClick the column and select ‘XTerm’ and ‘AppKeys’ when tab with Bash on Windows
+is active.
+
+{% comment %} Using ‘App Keys’ here to make it searchable {% endcomment %}
+
+When ‘XTerm’ mode is turned on, ConEmu posts into the console input buffer
+ANSI sequences instead of native Windows key-codes. For example, Linux application
+expect to receive `^[[A` instead of `VK_UP`.
+
+However there are two notations, and some applications turns on ‘App Keys’ mode
+to receive `^[OA` instead of `^[[A`. That is the problem, because without [wslbridge](#wslbridge)
+ConEmu doesn't receive the request to change the mode!
+
+So, if keys are not working properly, it may mean that application expects another mode
+of ‘App Keys’. The solution is simple: just LeftClick the ‘Terminal modes’ [StatusBar](StatusBar.html) column
+and change ‘AppKeys’ mode!
+
+
+### Solution 3: wslbridge  {#arrows-sol-3}
+
+Another alternative is [wslbridge](#wslbridge) described below.
+
+
+
+
+## WSLBridge: Get 24-bit colors working in ConEmu  {#wslbridge}
 
 Ryan Prichard has created [wslbridge](https://github.com/rprichard/wslbridge)
 which allows anyone to run WSL in any POSIX enabled terminal like mintty
@@ -153,47 +224,43 @@ bash -l -i
 ~~~
 
 
+### WSLBridge manual installation and Task contents  {#wslbridge-task}
 
-## Get arrows working in ConEmu
+To run wslbridge in ConEmu, just do simple steps:
 
-This solution is **only for [Bash on Windows (WSL)](https://github.com/Microsoft/BashOnWindows)**!
-It does not rely to [Cygwin, MSYS](CygwinMsys.html) or [Git-for-Windows](GitForWindows.html)!
+1. Download latest [wsltty](https://github.com/mintty/wsltty/releases) and unpack it.
+   You need three files: `wslbridge.exe`, `cygwin1.dll`, `wslbridge-backend`.
+2. Download latest [connector](https://github.com/Maximus5/cygwin-connector/releases).
+   You need the file: `conemu-cyg-64.exe`. Bitness must be the same as `cygwin1.dll`
+   from ‘step 1’.
+3. Put these four files into some folder, for example: `C:\Tools\ConEmu\wsl`.
+4. Create the task `{WSL:Bridge}`.
 
-Due to the bug [BashOnWindows#111](https://github.com/Microsoft/BashOnWindows/issues/111)
-arrows were not working if you start `bash.exe` in old ConEmu builds.
-More details in tickets
-[BashOnWindows#111](https://github.com/Microsoft/BashOnWindows/issues/111)
-and
-[ConEmu#629](https://github.com/Maximus5/ConEmu/issues/629).
-
-### Solution
-
-1. Don't use [Old ConEmu Builds](OldBuild.html)!
-   There is no sense to complain on things changed months ago!
-   [Update](UpdateModes.html) your installation!
-2. ConEmu creates new task for ‘Bash on Windows’ automatically,
-   you may check this by running `ConEmu64.exe -basic -run {bash}`.
-   Also, you may call [Add default tasks...](SettingsTasks.html#id2632)
-   from [Tasks page](SettingsTasks.html) on your existing config.
-3. So, just run `{bash}` [task](Tasks.html), arrow keys are expected
-   to be working!
-
-Alternatively, you may enable [StatusBar](StatusBar.html) column ‘Terminal modes’.
-LeftClick the column and select ‘XTerm’ and ‘AppKeys’ when tab with Bash on Windows
-is active.
-
-Another alternative is [wslbridge](#true-color) described above.
-
-{% comment %}
-If you run ConEmu first time, or use [-basic](ConEmuArgs.html) switch,
-or even call [Add default tasks...](SettingsTasks.html#id2632)
-you'll get proper task for ‘Bash on Windows’
-
+Task **command**:
 ~~~
-%windir%\system32\bash.exe -cur_console:p
+C:\Tools\ConEmu\wsl\conemu-cyg-64.exe /cygdrive/c/Tools/ConEmu/wsl/wslbridge.exe -cur_console:pn
 ~~~
 
-This is the only way to tell ConEmu, that this executable is **so special**,
-that **native** Windows console application, which obviously `bash.exe` is,
-requires **Linux Escape sequences** instead of Windows native keyboard events.
-{% endcomment %}
+Task parameters (icon):
+~~~
+-icon "%USERPROFILE%\AppData\Local\lxss\bash.ico"
+~~~
+
+
+### Other versions of WSLBridge  {#wslbridge-32}
+
+If 64-bit version is not working for same reasons, you may try other WSLBridge versions:
+32-bit cygwin or 32/64-bit msys2.
+
+1. Download [desired wslbridge release](https://github.com/rprichard/wslbridge/releases).
+2. Obtain required dlls:
+   * either `cygwin1.dll` from [https://cygwin.com/](https://cygwin.com)
+   * or `msys-2.0.dll` from [http://www.msys2.org/](http://www.msys2.org/)
+3. Download latest [connector](https://github.com/Maximus5/cygwin-connector/releases).
+4. Collect all files in some folder, for example: `C:\Tools\ConEmu\wsl`.
+5. Create the task `{WSL:Bridge}`.
+
+If you selected cygwin-32, so the Task command would be:
+~~~
+C:\Tools\ConEmu\wsl\conemu-cyg-32.exe /cygdrive/c/Tools/ConEmu/wsl/wslbridge.exe -cur_console:pn
+~~~
