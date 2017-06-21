@@ -21,15 +21,16 @@ readalso:
    title: "Powershell Prompt"
 ---
 
-# Shell Working Directory
+# Shell's Working Directory (Path)
 
-Knowing current (working) directory in your [shell](TerminalVsShell.html)
-or [active console application](ActiveProcess.html) is critical to some
-neat features. Look at the few examples below.
+Current directory (working directory, path or just a **CD**) in your
+[shell](TerminalVsShell.html) or [active console application](ActiveProcess.html)
+is critical to some neat features.
+Look at the few examples below.
 
 * Hyperlinks, Files and Compiler Errors
   [Detector/Highlighter](FileLineDetector.html)
-* Displaying **CD** in the tab title using
+* Displaying **CD** (full path or just a folder name) in the tab title using
   [tab templates](SettingsTabBar.html);
 * Reusing **CD** in the [Restart](RestartTab.html)
   and [Create new console](LaunchNewTab.html) dialogs;
