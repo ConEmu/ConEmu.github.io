@@ -40,6 +40,7 @@ or mouse input. Use of ‘native’ [console analogues](ConsoleApplication.html)
 is preferable.
 
 * [Check third-party software stand-alone](#stand-alone)
+* [Special note for WSL/bash](#wsl)
 * [Do not run your console tool in mintty](#mintty)
 * [Run your shell without profile](#bare-shell)
 * [Note about DefaultTerminal](#defterm)
@@ -67,6 +68,19 @@ Keep in mind few things!
 * There is [Environment Settings page](SettingsEnvironment.html), where you may predefine
   [environment variables](WindowsEnvironment.html), [desired code page](UnicodeSupport.html),
   and some other initializations. Take them into account too.
+
+
+
+## Special note for WSL/bash  {#wsl}
+
+Before posting bugs related to ‘Bash on Ubuntu on Windows’
+a.k.a. ‘Windows Subsystem for Linux’ please check your problem
+**without** ConEmu.
+
+Please read also:
+
+* [Bash on Ubuntu on Windows in ConEmu](BashOnWindows.html)
+* [Note about DefaultTerminal](#defterm)
 
 
 
