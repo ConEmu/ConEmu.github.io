@@ -128,7 +128,9 @@ each time its prompt executed.
 For example, add to your `~/.bashrc`
 
 ~~~
-PROMPT_COMMAND='ConEmuC -StoreCWD'
+if [[ -n "${ConEmuBaseDir}" ]]; then
+  PROMPT_COMMAND='ConEmuC -StoreCWD'
+fi
 ~~~
 
 
