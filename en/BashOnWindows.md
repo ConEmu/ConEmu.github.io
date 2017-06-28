@@ -179,7 +179,7 @@ Now you may run the command below. Don't forget to change `C:\MSYS\WSL` if you u
 Also read about [-new_console switch](NewConsole.html).
 
 ~~~
-conemu-cyg-32.exe ./wslbridge.exe -t "-new_console:C:%LOCALAPPDATA%\lxss\bash.ico" "-new_console:D:C:\MSYS\WSL" -new_console:np
+conemu-cyg-32.exe ./wslbridge.exe -t "-new_console:C:%LOCALAPPDATA%\lxss\bash.ico" "-new_console:d:C:\MSYS\WSL" -new_console:np
 ~~~
 
 
@@ -205,7 +205,7 @@ You need just few more files:
 ~~~
 @echo off
 if "%~1" == "-run" goto run
-ConEmuC -c "%~0" -run "-new_console:C:%LOCALAPPDATA%\lxss\bash.ico" "-new_console:D:%~dp0" -new_console:np
+ConEmuC -c "%~0" -run "-new_console:C:%LOCALAPPDATA%\lxss\bash.ico" "-new_console:d:%~dp0" -new_console:np
 goto :EOF
 :run
 call SetEscChar
