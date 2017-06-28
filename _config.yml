@@ -31,6 +31,7 @@ kramdown:
 # Allow redirections
 gems:
   - jekyll-redirect-from
+  - jekyll-paginate
 
 
 # How many news (builds) show per page
