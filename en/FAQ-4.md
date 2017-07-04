@@ -25,14 +25,14 @@ otherlang:
 #### Q. Can ConEmu update automatically?   {#q-4-1}
 
 
-A. Yes. ConEmu can check for new versions on launch, every hour, or by user request (System menu -> Help -> Check for updates).
+**A.** Yes. ConEmu can check for new versions on launch, every hour, or by user request (System menu -> Help -> Check for updates).
 
 
 
 
 #### Q. What are the capabilities of the automatic updater?   {#q-4-2}
 
-A. You can configure updates however you like it.
+**A.** You can configure updates however you like it.
 
 * Proxy support.
 * Selection between «stable» or «alpha» builds.

@@ -16,7 +16,7 @@ otherlang:
 
 {% include faq_disclaimer_en.md %}
 
-* [Q. What is the purpose of `ConEmuSetup.*.exe`?](#q-2-1)
+* [Q. What is the purpose of ConEmuSetup.exe?](#q-2-1)
 * [Q. What is the purpose of ConEmuC.exe (ConEmuC64.exe)?](#q-2-2)
 * [Q. What is the purpose of the Far plugin ConEmu.dll (ConEmu.x64.dll)?](#q-2-3)
 * [Q. What is the purpose of ConEmuHk.dll (ConEmuHk64.dll)?](#q-2-4)
@@ -24,20 +24,21 @@ otherlang:
 
 
 
-#### Q. What is the purpose of `ConEmuSetup.*.exe`?   {#q-2-1}
+#### Q. What is the purpose of ConEmuSetup.exe?   {#q-2-1}
 
-A. Using the installer is recommended on computers with UAC enabled
-(Vista and higher), if you intend to install ConEmu to "Program Files".
+**A.** Using the installer `ConEmuSetup.*.exe` is recommended on computers
+with UAC enabled (Vista and higher), if you intend to install ConEmu
+into "Program Files".
 
 
-A. The installer also contains some additional files, e.g. `KeyEvents.exe`.
+**A.** The installer also contains some additional files, e.g. `KeyEvents.exe`.
 
 
 
 
 #### Q. What is the purpose of ConEmuC.exe (ConEmuC64.exe)?   {#q-2-2}
 
-A. This is the "console" component of ConEmu. It communicates
+**A.** This is the "console" component of ConEmu. It communicates
 information from the real console to the graphical shell
 (ConEmu.exe). This process also controls automatic buffer resizing
 when running commands/applications, and attaching "new" consoles
@@ -48,7 +49,7 @@ when running commands/applications, and attaching "new" consoles
 
 #### Q. What is the purpose of the Far plugin ConEmu.dll (ConEmu.x64.dll)?   {#q-2-3}
 
-A. This module provides communication between Far Manager and ConEmu.
+**A.** This module provides communication between Far Manager and ConEmu.
 
 * It is required for certain extended features (tabs, Drag-and-Drop, progress).
 * It is required for TrueColor in Far 3.x.
@@ -62,7 +63,7 @@ A. This module provides communication between Far Manager and ConEmu.
 
 #### Q. What is the purpose of ConEmuHk.dll (ConEmuHk64.dll)?   {#q-2-4}
 
-A. This module is injected into applications ran in ConEmu. It is
+**A.** This module is injected into applications ran in ConEmu. It is
 required to implement certain options, as well as work around
 multiple problems manifesting both with and without ConEmu.
 
@@ -82,7 +83,7 @@ multiple problems manifesting both with and without ConEmu.
 
 #### Q. What is the purpose of ExtendedConsole.dll (ExtendedConsole64.dll)?   {#q-2-5}
 
-A. This file implements support for the extended console feature in
+**A.** This file implements support for the extended console feature in
 Far 3.x, and must be placed in the same directory as ConEmuHk.dll.
 In its presence and enabled «TrueMod support» option, it is possible
 to configure and use arbitrary (24-bit) colors and styles

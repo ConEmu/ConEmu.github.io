@@ -28,7 +28,7 @@ otherlang:
 
 #### Q. Upon exiting from a console program, an error such as the following appears: Access violation at address 6F78DE5B in module 'ConEmuHk.dll'. Read of address 0071004E   {#q-9-1}
 
-A. One possible cause is when the program destroys its own import
+**A.** One possible cause is when the program destroys its own import
 table. The proper solution would be to contact the application
 developer. For a precise verdict, send me a [minidump](MemoryDump.html).
 
@@ -36,7 +36,7 @@ developer. For a precise verdict, send me a [minidump](MemoryDump.html).
 
 #### Q. ConEmu or console application hangs on exit   {#q-9-2}
 
-A. No issues for this problem have been filed so far. Nevertheless,
+**A.** No issues for this problem have been filed so far. Nevertheless,
 if hang occures on exit, create [minidumps](MemoryDump.html) for the
 processes ConEmu`*`.exe, ConEmuC`*`.exe and all console processes
 (far.exe, cmd.exe...) See below for instructions. Pack up and submit
@@ -48,7 +48,7 @@ create a [minidump](MemoryDump.html) of a 32-bit application in a
 
 #### Q. How to create a minidump   {#q-9-3}
 
-A. **Windows XP and above.**
+**A.** **Windows XP and above.**
 
 Press `Win+R` and run the following command, it will create a full process memory dump (it may be large enough).
 
@@ -65,7 +65,7 @@ You will be offered to choose filename for a minidump.
 
 **Warning!** Before creating dumps of Far Manager please ensure that "far.exe" was started with "/x" switch.
 
-A. **Windows 7 and up.**
+**A.** **Windows 7 and up.**
 
 *Warning! This method only works for processes with the same bitness as the operating system.
 Therefore, you won't be able to create a working minidump for 32-bit processes when using a 64-bit Windows version.*
@@ -73,7 +73,7 @@ Therefore, you won't be able to create a working minidump for 32-bit processes w
 Open Windows' Task Manager, switch to the "Processes" tab, right-click the process, and select "Create dump file".
 
 
-A. **Process Explorer.**
+**A.** **Process Explorer.**
 
 ‘Process Explorer’ can also create minidumps,
 however *it will also fail to create a correct minidump for a 32-bit process on a 64-bit system*.
@@ -82,7 +82,7 @@ however *it will also fail to create a correct minidump for a 32-bit process on 
 
 #### Q. Where can I find Process ID (PID)   {#q-9-4}
 
-A. You can find the Process ID near to Process Name (ConEmu.exe, cmd.exe, etc.)
+**A.** You can find the Process ID near to Process Name (ConEmu.exe, cmd.exe, etc.)
 
 * in Windows' Task Manager, PID column on Processes page;
 * in the ConEmu status line;
@@ -97,13 +97,13 @@ A. You can find the Process ID near to Process Name (ConEmu.exe, cmd.exe, etc.)
 
 #### Q. How to run Task Manager   {#q-9-5}
 
-A. Press **Ctrl+Shift+Esc** or right click on taskbar and choose menu item «Task Manager».
+**A.** Press **Ctrl+Shift+Esc** or right click on taskbar and choose menu item «Task Manager».
 
 
 
 #### Q. ConEmuC: CreateFile(CONOUT$) failed, ErrCode=0x00000005   {#q-9-6}
 
-A. The launched program created and set up its own console buffer created using `CreateConsoleScreenBuffer(..., 0/*No sharing*/, ...)`. Ask the program author to create the buffer with the correct access flags:
+**A.** The launched program created and set up its own console buffer created using `CreateConsoleScreenBuffer(..., 0/*No sharing*/, ...)`. Ask the program author to create the buffer with the correct access flags:
 
 ~~~
 (GENERIC_READ|GENERIC_WRITE, FILE_SHARE_READ|FILE_SHARE_WRITE,...)
