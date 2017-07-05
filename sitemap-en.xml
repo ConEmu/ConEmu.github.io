@@ -90,13 +90,13 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/BashOnWindows.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://conemu.github.io/en/Certificate.html</loc>
-    <lastmod>2015-10-11</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -126,7 +126,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/ConEmuArgs.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -148,7 +148,7 @@
     <loc>http://conemu.github.io/en/ConEmuFAQ.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/ConEmuFAQ.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/ConEmuFAQ.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -272,7 +272,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/CygwinMsysConnector.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -316,7 +316,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/Downloads.html</loc>
-    <lastmod>2016-01-05</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -328,7 +328,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/DragDrop.html</loc>
-    <lastmod>2015-08-11</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -366,7 +366,7 @@
     <loc>http://conemu.github.io/en/FAQ-1.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-1.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-1.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -374,7 +374,7 @@
     <loc>http://conemu.github.io/en/FAQ-10.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-10.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-10.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -382,7 +382,7 @@
     <loc>http://conemu.github.io/en/FAQ-2.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-2.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-2.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -390,7 +390,7 @@
     <loc>http://conemu.github.io/en/FAQ-3.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-3.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-3.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -398,7 +398,7 @@
     <loc>http://conemu.github.io/en/FAQ-4.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-4.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-4.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -406,7 +406,7 @@
     <loc>http://conemu.github.io/en/FAQ-5.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-5.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-5.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -414,7 +414,7 @@
     <loc>http://conemu.github.io/en/FAQ-6.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-6.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-6.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -422,7 +422,7 @@
     <loc>http://conemu.github.io/en/FAQ-7.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-7.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-7.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -430,7 +430,7 @@
     <loc>http://conemu.github.io/en/FAQ-8.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-8.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-8.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -438,7 +438,7 @@
     <loc>http://conemu.github.io/en/FAQ-9.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/FAQ-9.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/FAQ-9.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -450,7 +450,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/FaqPlainShell.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -604,7 +604,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/NewConsole.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -640,7 +640,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/PromptAtTheBottom.html</loc>
-    <lastmod>2015-10-11</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -902,7 +902,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/SettingsTaskBar.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -932,7 +932,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/ShellWorkDir.html</loc>
-    <lastmod>2016-02-07</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -962,7 +962,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/StartupDir.html</loc>
-    <lastmod>2015-06-17</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1028,7 +1028,7 @@
     <loc>http://conemu.github.io/en/Tasks.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="http://conemu.github.io/en/Tasks.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="http://conemu.github.io/ru/Tasks.html" />
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1052,7 +1052,7 @@
   </url>
   <url>
     <loc>http://conemu.github.io/en/ThirdPartyProblems.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
