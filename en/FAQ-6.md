@@ -16,6 +16,7 @@ otherlang:
 
 {% include faq_disclaimer_en.md %}
 
+* [Q. How run cmd file to initialize the environment (cmd prompt)?](FAQ-6.html#q-6-12)
 * [Q. Is it possible to set up ConEmu to open multiple tabs on startup (e.g. Far, CMD, PowerShell)?](#q-6-1)
 * [Q. Duplicate Far Manager windows](#q-6-2)
 * [Q. How to configure a bitmap font?](#q-6-3)
@@ -30,6 +31,33 @@ otherlang:
 
 
 
+
+
+
+
+#### Q. How run cmd file to initialize the environment (cmd prompt)?   {#q-6-12}
+
+**A.** There are examples in [Tasks](Tasks.html): ‘Shells::cmd’,
+‘SDK::VS 15.0 x64 tools prompt’, and so on. They set up prompt and environment
+variables.
+
+Does not matter how do you [run you cmd (batch) script](LaunchNewTab.html),
+the rules are the same for ‘cmd.exe’. [Tasks](Tasks.html), [New console dialog](LaunchNewTab.html),
+command prompt, Windows' `Win+R` dialog, whatever...
+
+Just run `cmd /?` to understand switches and capabilities.
+And **take care** about **double quotes**.
+
+**TLDR.** Just use `/k` switch with ‘cmd.exe’! Without it you would
+get the message ‘Root process was alive less than 10 sec’. And it's true.
+Without `/k` switch you ask ConEmu ‘**just** execute this batch’.
+
+Example for desktop shortcut: run *new* ConEmu window with cmd.exe
+initialized with file ‘C:\Your tools\YourScript.cmd’.
+
+~~~
+ConEmu64.exe -nosingle -run cmd.exe /k "C:\Your tools\YourScript.cmd".
+~~~
 
 
 
