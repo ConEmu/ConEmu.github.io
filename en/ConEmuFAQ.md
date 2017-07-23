@@ -68,6 +68,7 @@ Frequenly asked user questions about ConEmu usage.
 * [Q. What is going on with environment variables in 64-bit OS?](FAQ-5.html#q-5-5)
 
 ### [Configuration](FAQ-6.html#q-6-settings)  {#faq-6}
+* [Q. How run cmd file to initialize the environment (cmd prompt)?](FAQ-6.html#q-6-12)
 * [Q. Is it possible to set up ConEmu to open multiple tabs on startup (e.g. Far, CMD, PowerShell)?](FAQ-6.html#q-6-1)
 * [Q. Duplicate Far Manager windows](FAQ-6.html#q-6-2)
 * [Q. How to configure a bitmap font?](FAQ-6.html#q-6-3)
