@@ -16,6 +16,7 @@ breadcrumbs:
   * [Create new console without dialog](#Create_new_console_without_dialog)
 * [Tasks](#Tasks)
 * [Create new tab from existing one](#Create_new_tab_from_existing_one)
+  * [Take care about double quotes](#double_quotes)
 * [Duplicate root](#Duplicate_root)
 * [Default terminal feature](#Default_terminal_feature)
 * [Attach existing console or GUI application](#Attach_existing_console_or_GUI_application)
@@ -25,7 +26,7 @@ breadcrumbs:
 
 
 
-<h2 id="Using_ConEmu_switches"> <a href="ConEmuArgs.html">Using ConEmu switches</a> </h2>
+## [Using ConEmu switches](ConEmuArgs.html)  {#Using_ConEmu_switches}
 
 When you run something from `Win+R` or shortcut from your Desktop,
 you may use `-run` or `-runlist` to run your application. Remember, `-run` or `-runlist` will be the last ConEmu's GUI interpreted switch. The rest of command line will be used to start your application. Read more in the [wiki](ConEmuArgs.html). Example:
@@ -35,21 +36,23 @@ ConEmu -reuse -dir "c:\projects" -run "set PATH=C:\MinGW\bin;%PATH%" & chcp 6500
 ~~~
 
 
+
+
 ## Create new console dialog  {#Create_new_console_dialog}
 
 How to start application (tcc, powershell, far, putty) in ConEmu tab?
 
 ![ConEmu confirmation of new console creation](/img/ConEmuCreate.png)
 
-This dialog may be opened from:
+This dialog may be opened by:
 
-* Keyboard (Win+W by default), or
-* ![Toolbar](/img/ConEmuAddBtn.png)
-* ![System menu](/img/ConEmuAddSys.png)
+* [Keyboard shortcut](SettingsHotkeys.html) (it's `Win+Shif+W` by default)
+* [Toolbar's](ToolBar.html) <code class="plus">[+]</code> button, you have to hold `Shift` key if you've disabled
+  [‘Confirm creating new console/tab’](SettingsConfirm.html#id1546) <br/>
+  ![Toolbar](/img/ConEmuAddBtn.png)
+* [System menu -> New console...](SystemMenu.html) <br/>
+  ![System menu](/img/ConEmuAddSys.png)
 * GuiMacro [Create(0,1)](GuiMacro.html#Recreate)
-
-**NB**, if you have disabled [Create confirmation](SettingsConfirm.html)
-press `Win+Shift+W` or `Shift`+<code class="plus">[+]</code>.
 
 Well, what you can do with this dialog?
 
@@ -80,7 +83,7 @@ or Keyboard (`Win+Shift+W` by default).
 
 
 
-<h2 id="Tasks"> <a href="Tasks.html">Tasks</a> </h2>
+## [Tasks](Tasks.html)  {#Tasks}
 
 You may define your own tasks or just use predefined one.
 Choose the task from drop down menu or run task by hotkey.
@@ -110,6 +113,21 @@ For example, you may start command in new elevated tab using `-new_console:a`.
 ~~~
 cmd -new_console:a
 ~~~
+
+
+### Take care about double quotes  {#double_quotes}
+
+Some shells (e.g. PowerShell) do preprocessing of the typed command line
+**before** passing it to the starting application.
+
+You must properly **escape** double quotes. Please consult with your shell manual.
+
+Example below starts new PowerShell tab from **PowerShell prompt** or script
+using specified Tab icon.
+
+```
+& powershell "-new_console:C:`"C:\path with spaces\favicon.ico`""
+```
 
 
 
@@ -162,7 +180,7 @@ Mostly like as ‘Attach from command prompt’ but you may set up automatic exe
 of ‘Attach’ on cmd.exe startup.
 This also works with TCC/LE.
 
-Set up feature on ‘ComSpec’ page of ‘Settings’ dialog.
+Set up feature on [‘ComSpec’](SettingsComspec.html) page of ‘Settings’ dialog.
 
 
 
