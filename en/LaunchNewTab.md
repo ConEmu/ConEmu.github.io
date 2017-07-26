@@ -47,10 +47,10 @@ How to start application (tcc, powershell, far, putty) in ConEmu tab?
 This dialog may be opened by:
 
 * [Keyboard shortcut](SettingsHotkeys.html) (it's `Win+Shif+W` by default)
-* [Toolbar's](ToolBar.html) <code class="plus">[+]</code> button, you have to hold `Shift` key if you've disabled
-  [‘Confirm creating new console/tab’](SettingsConfirm.html#id1546) <br/>
+* [Toolbar's](ToolBar.html) <code class="plus">[+]</code> button,
+  hold `Shift` key if [confirmation](SettingsConfirm.html#id1546) is disabled <br/>
   ![Toolbar](/img/ConEmuAddBtn.png)
-* [System menu -> New console...](SystemMenu.html) <br/>
+* [System menu -> New console...](SystemMenu.html), hold `Shift` key if [confirmation](SettingsConfirm.html#id1546) is disabled <br/>
   ![System menu](/img/ConEmuAddSys.png)
 * GuiMacro [Create(0,1)](GuiMacro.html#Recreate)
 
