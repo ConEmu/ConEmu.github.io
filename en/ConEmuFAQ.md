@@ -22,6 +22,7 @@ Frequenly asked user questions about ConEmu usage.
 * [Updates](#faq-4)
 * [x64 issues](#faq-5)
 * [Configuration](#faq-6)
+* [ConEmu automation](#faq-11)
 * [Far Manager](#faq-7)
 * [Windows Vista](#faq-8)
 * [Abnormal termination](#faq-9)
@@ -80,6 +81,9 @@ Frequenly asked user questions about ConEmu usage.
 * [Q. How to export ConEmu settings?](FAQ-6.html#q-6-9)
 * [Q. How to attach a running console application to a new ConEmu instance?](FAQ-6.html#q-6-10)
 * [Q. How to delete items from the «Create new console» dropdown?](FAQ-6.html#q-6-11)
+
+### [ConEmu automation](FAQ-11.html#q-11-automation)  {#faq-11}
+* [Q. How to distinguish different ConEmu instances (windows)?](FAQ-11.html#q-11-1)
 
 ### [Far Manager](FAQ-7.html#q-7-far)  {#faq-7}
 * [Q. Ctrl+Number doesn't switch panel modes.](FAQ-7.html#q-7-9)

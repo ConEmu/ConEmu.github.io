@@ -22,6 +22,7 @@ otherlang:
 * [Обновление](#faq-4)
 * [x64 issues](#faq-5)
 * [Настройка](#faq-6)
+* [ConEmu automation](#faq-11)
 * [Far Manager](#faq-7)
 * [Windows Vista](#faq-8)
 * [Аварийные завершения](#faq-9)
@@ -80,6 +81,9 @@ otherlang:
 * [Q. Как экспортировать настройки ConEmu](FAQ-6.html#q-6-9)
 * [Q. Как прицепить открытое консольное окно в новый экземпляр ConEmu](FAQ-6.html#q-6-10)
 * [Q. Как удалить пункты из списка «Create new console»](FAQ-6.html#q-6-11)
+
+### [ConEmu automation](FAQ-11.html#q-11-automation)  {#faq-11}
+* [Q. Как различать различные экземпляры (окна) ConEmu?](FAQ-11.html#q-11-1)
 
 ### [Far Manager](FAQ-7.html#q-7-far)  {#faq-7}
 * [Q. Ctrl+Number не переключают режимы панелей.](FAQ-7.html#q-7-9)
