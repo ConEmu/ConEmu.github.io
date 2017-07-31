@@ -14,7 +14,7 @@ redirect_from: /ru/FAQ-11.html
 
 {% include faq_disclaimer_en.md %}
 
-* [Q. How to distinguish different ConEmu instances (windows)?](FAQ-11.html#q-11-13)
+* [Q. How to distinguish different ConEmu instances (windows)?](FAQ-11.html#q-11-1)
 
 
 
@@ -22,12 +22,12 @@ redirect_from: /ru/FAQ-11.html
 
 
 
-#### Q. How to distinguish different ConEmu instances (windows)?   {#q-11-13}
+#### Q. How to distinguish different ConEmu instances (windows)?   {#q-11-1}
 
 **A.** If you need to have **different appearance or behavior** of the ConEmu installation,
-you may use [-config "name"](ConEmuArgs.html) switch to use different named configurations.
+you may use switch [-config "name"](ConEmuArgs.html) to use different named configurations.
 So you may store several configurations in one xml file. Alternatively you may specify
-certain xml file using [-LoadCfgFile "path\to\file.xml"](ConEmuArgs.html) switch.
+certain xml file using switch [-LoadCfgFile "path\to\file.xml"](ConEmuArgs.html).
 Just create new shortcut on your Desktop or run ConEmu from script.
 
 The following will start **new** ConEmu window using named config `git maintenance`
