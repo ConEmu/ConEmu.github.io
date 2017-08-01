@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<key name="Software">
+	<key name="ConEmu">
+		<key name=".Vanilla" modified="2016-05-30 19:04:31" build="160529">
+			<value name="StartType" type="hex" data="02"/>
+			<value name="StartTasksName" type="string" data="{Shells::cmd}"/>
+			<value name="SetDefaultTerminal" type="hex" data="01"/>
+			<value name="SetDefaultTerminalStartup" type="hex" data="01"/>
+			<value name="DefaultTerminalApps" type="string" data="explorer.exe|codeblocks.exe|lazarus.exe|gdb.exe|pythonw.exe|code.exe"/>
+			<value name="KeyboardHooks" type="hex" data="01"/>
+			<value name="ComSpec.UncPaths" type="hex" data="00"/>
+			<value name="EnvironmentSet" type="multi">
+				<line data="echo -x &quot;Welcome to the ConEmu %ConEmuBuild%&quot; &quot;terminal&quot; &quot;^nPress Win-Alt-P for Settings&quot;"/>
+				<line data="echo &quot;------------------------&quot;"/>
+				<line data=" "/>
+				<line data="set PATH=%ConEmuBaseDir%\Scripts;%PATH%"/>
+				<line data=" "/>
+				<line data="alias alias=DOSKEY $*"/>
+				<line data="alias aliases=DOSKEY /MACROS"/>
+				<line data="alias cat=ConEmuC -type $*"/>
+				<line data="alias ce=ConEmuC -echo $*"/>
+				<line data="alias ...=cd /d &quot;%ConEmuDir%&quot;"/>
+			</value>
+			<value name="Update.CheckOnStartup" type="hex" data="01"/>
+			<value name="Update.CheckHourly" type="hex" data="01"/>
+			<value name="Update.ConfirmDownload" type="hex" data="01"/>
+			<value name="Update.UseBuilds" type="hex" data="03"/>
+			<key name="HotKeys" modified="2016-05-30 19:00:19" build="160529">
+				<value name="KeyMacro01" type="dword" data="00001144"/>
+				<value name="KeyMacro01.Text" type="string" data="print(&quot;\e&quot;,&quot;exit&quot;,&quot;\n&quot;)"/>
+				<value name="KeyMacro02" type="dword" data="00101141"/>
+				<value name="KeyMacro02.Text" type="string" data="SetOption(&quot;AlwaysOnTop&quot;,2)"/>
+			</key>
+			<key name="Apps" modified="2016-05-30 19:00:19" build="160529">
+				<value name="Count" type="long" data="2"/>
+				<key name="App1" modified="2016-05-30 19:00:19" build="160529">
+					<value name="AppNames" type="string" data="cmd.exe"/>
+					<value name="Elevated" type="hex" data="00"/>
+				</key>
+				<key name="App2" modified="2016-05-30 19:00:19" build="160529">
+					<value name="AppNames" type="string" data="powershell.exe"/>
+					<value name="Elevated" type="hex" data="00"/>
+				</key>
+			</key>
+			<value name="UseCurrentSizePos" type="hex" data="01"/>
+			<value name="AutoSaveSizePos" type="hex" data="01"/>
+			<value name="Cascaded" type="hex" data="01"/>
+			<value name="IntegralSize" type="hex" data="00"/>
+			<value name="WindowMode" type="dword" data="0000051f"/>
+			<value name="ConWnd X" type="long" data="46"/>
+			<value name="ConWnd Y" type="long" data="440"/>
+			<value name="LastMonitor" type="string" data="0,0,1671,1080"/>
+			<value name="ConWnd Width" type="dword" data="00000050"/>
+			<value name="ConWnd Height" type="dword" data="00000019"/>
+			<value name="16bit Height" type="ulong" data="0"/>
+		</key>
+	</key>
+</key>
