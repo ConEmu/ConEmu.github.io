@@ -1,3 +1,7 @@
+0-sitemap.cmd generate sitemap.xml, call with "force" to update all pages
+1-screenshots.cmd [-detached]
 AutoUpdate.cmd AutoUpdate.cmd 150319 Alpha|Preview|Preview_Alpha|Stable [-local]
+Maintain.ps1 <<<===
 mirrors.cmd [Alpha|Preview|Preview_Alpha|Stable] - default is Alpha
+Settings-Screenshot.ps1 This makes screenshots of all settings pages in the ./img folder
 UpdateIni.cmd UpdateIni.cmd build devel|preview|Preview_Alpha|stable setup_dir pack_dir www_dir

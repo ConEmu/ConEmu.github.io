@@ -40,9 +40,6 @@ readalso:
 
 ## Choose preferred command processor platform (bits)
 
-
-
-
 * **Same as OS** 64bit OS only, (System32 or SysWOW64) - use System32
 * **Same as running application** 64bit OS only, (System32 or SysWOW64) - same bits as application (ConEmu, Far Manager, ...)
 * **x32 always** 64bit OS only, (System32 or SysWOW64) - use SysWOW64
@@ -53,8 +50,6 @@ readalso:
 **Test** Show ‘calculated’ ComSpec path
 
 **Set ComSpec environment variable for child processes to selected value** ConEmu may update %ComSpec% variable to selected command processor
-
-**Cmd.exe output codepage** Windows command processor (cmd.exe) may cause then output of internal commands to be OEM or Unicode. You may force this selection, or use automatic selection (FAR2 -> Unicode).
 
 **Support UNC paths in cmd.exe (\\server\share\folder)** 
 
