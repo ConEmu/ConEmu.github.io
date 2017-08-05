@@ -63,8 +63,10 @@ but I'm not sure how to do that properly.
 **NB** ‘Original’ Win32 console executable Vim from
 [gvim##.exe and vim##w32.zip](http://www.vim.org/download.php#pc)
 passed tests (versions 7.3 and 7.4 were tested).
-There is no guarantee that other versions would be working, for example
-MinGW's and Cygwin's Vim [do not pass ANSI to ConEmu](CygwinAnsi.html).
+
+If you would like to use cygwin, msys, or [WSL](BashOnWindows.html) Vim versions
+you shall use [connector](CygwinMsysConnector.html) to let ConEmu emulate POSIX terminal.
+Otherwise WSL, MinGW's and Cygwin's Vim [do not pass ANSI to ConEmu](CygwinAnsi.html).
 
 
 
@@ -80,14 +82,22 @@ Color scheme mentioned above (zenburn) is working fine.
 
 
 
-## Fix BS issue  {#vim-bs-issue}
+## Fix Vim's BS issue  {#vim-bs-issue}
 
-If you have problems with `BS` in Vim under ConEmu when `term=xterm`,
-you may try to remap `BS` key:
+If you have problems with `BS` in Vim (`BS` acts like `Delete` key)
+under ConEmu when `term=xterm`, you may try to **remap** `BS` key:
 
 ~~~
 inoremap <Char-0x07F> <BS>
 nnoremap <Char-0x07F> <BS>
+~~~
+
+If `BS` still acts like `Delete` the problem may be with plugins.
+Find problem plugins and disable them.
+
+~~~
+:verbose map <bs>
+:verbose map <c-h>
 ~~~
 
 Check for details in the [issue 641](https://github.com/Maximus5/ConEmu/issues/641).
@@ -96,15 +106,8 @@ Check for details in the [issue 641](https://github.com/Maximus5/ConEmu/issues/6
 
 ## How to enable Vim scrolling using mouse Wheel in ConEmu   {#Vim-scrolling-using-mouse-Wheel}
 
-When ConEmu emulates xterm it translates mouse wheel to the following sequences:
-
-| **ConEmu Event** | **Sequence** | **Description** |
-|:---|:---|:---|
-| `<WheelDown>` | `\e[62~` | toward the user |
-| `<WheelUp>` | `\e[63~` | away from the user |
-| `<Shift><WheelDown>` | `\e[64~` | toward the user |
-| `<Shift><WheelUp>` | `\e[65~` | away from the user |
-
+Since ConEmu build [170730](/blog/2017/07/30/Build-170730.html) all mouse events
+are posted as XTerm sequences when XTerm mouse mode was requested by console application.
 
 So all you need to add following lines to your `vimrc` file:
 
@@ -115,11 +118,8 @@ So all you need to add following lines to your `vimrc` file:
 if !has("gui_running")
     set term=xterm
     set mouse=a
+    " perhaps `nocompatible` is not required
     set nocompatible
-    inoremap <Esc>[62~ <C-X><C-E>
-    inoremap <Esc>[63~ <C-X><C-Y>
-    nnoremap <Esc>[62~ <C-E>
-    nnoremap <Esc>[63~ <C-Y>
 endif
 ~~~
 
