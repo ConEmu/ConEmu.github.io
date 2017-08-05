@@ -30,7 +30,7 @@ That means, if you notice some strange in your environment - find problems on yo
 Some common problems described below.
 
 
-## Variables doesn't match defined in system settings  {#Variables_doesn't_match_defined_in_system_settings}
+## Variables doesn't match defined in system settings  {#System_settings}
 
 Well, sometimes Windows Explorer fails with automatic acceptance of changes
 done by user or installation programs. This is known Microsoft behavior.
