@@ -14,6 +14,7 @@ readalso:
 
 # Some Windows Bugs and Workarounds
 
+* [Console content is ‘erased’ after resize in Windows 10](#ErasedWindows10)
 * [Broken text is returned from console input](#BrokenText)
 * [Broken cursor position and height in Windows 10](#BrokenCursor-10)
 * [Broken WM_MOUSEWHEEL's mouse cursor position in Windows 10](#WM_MOUSEWHEEL-10)
@@ -25,6 +26,32 @@ readalso:
 * [Conclusion](#Conclusion)
 
 
+
+
+
+## Console content is ‘erased’ after resize in Windows 10  {#ErasedWindows10}
+
+After resizing ConEmu in Windows 10 console contents becomes invisible.
+It looks like contents was erased, but actually text attributes are to ‘black on black’.
+This is [known conhost's API bug](https://github.com/Maximus5/ConEmu/issues/1164#issuecomment-309836175).
+
+| Appeared | Fixed |
+|:--------|:------|
+| Windows 10 | ? |
+
+### Workaround
+
+There is no good solution yet.
+
+You may enable ‘Legacy mode’ in [RealConsole](RealConsole.html) properties,
+but you'd lost abitily to run [Bash on Ubuntu on Windows](BashOnWindows.html)
+and console contents reflow would stop working.
+
+### Related issues
+
+* [Issue 1164: Content disappears after resizing to smaller size](https://github.com/Maximus5/ConEmu/issues/1164)
+* [Issue 1216: Split pane does not play well with shell_plus in top window](https://github.com/Maximus5/ConEmu/issues/1216)
+* [Issue 1219: Maximize & restore console erases text](https://github.com/Maximus5/ConEmu/issues/1219)
 
 
 
