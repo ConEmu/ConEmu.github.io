@@ -65,7 +65,7 @@ Enable processing of '-new_console' and '-cur_console' switches in your shell pr
 Hook 'start' command in your cmd's prompt and batches started in ConEmu tabs to run console applications in new ConEmu tabs
 
 #### Process Ctrl-Z in ReadConsole  {#id2878}
-Treat Ctrl-Z as ‘EndOfStream’. On new line press Ctrl-Z and Enter. Refer to the gh#465 for details (Go input streams).
+Treat Ctrl-Z as ‘EndOfStream’. On new line press Ctrl-Z and Enter. Refer to the [conemu#465](https://github.com/Maximus5/ConEmu/issues/465) for details (Go input streams).
 
 #### Kill ssh-agent with ConEmu  {#id3075}
 Terminate all `ssh-agent.exe` processes started from ConEmu's consoles on ConEmu termination.

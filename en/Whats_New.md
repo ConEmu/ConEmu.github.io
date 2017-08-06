@@ -70,7 +70,7 @@ or anything else, spreading the word for example.
 * Highlight & goto was broken at least for powershell scripts (c8c386a regression).
     Only file name (path) was highlighted without following line number.
 * Highlight & goto detector was failed if mouse was before first backslash of the path.
-* gh#205: TabBar was not shown on startup in some monitor configurations (bacc66d regression).
+* [conemu#205](https://github.com/Maximus5/ConEmu/issues/205): TabBar was not shown on startup in some monitor configurations (bacc66d regression).
 
 
 
@@ -80,14 +80,14 @@ or anything else, spreading the word for example.
 
 		  ConEmuC [/SILENT] /EXPORT[=CON|GUI|ALL] [Var1 [Var2 [...]]]
 
-* gh#193: Fix wrong condition: ‘Warn if MacType hookers are loaded’.
+* [conemu#193](https://github.com/Maximus5/ConEmu/issues/193): Fix wrong condition: ‘Warn if MacType hookers are loaded’.
 * Omit ConEmuC export variables message in GitShowBranch.cmd.
-* gh#174: Let paste to all ‘grouped input’ consoles at once.
+* [conemu#174](https://github.com/Maximus5/ConEmu/issues/174): Let paste to all ‘grouped input’ consoles at once.
 * Show actual hotkey instead of default Ctrl+BackSpace in Settings.
 * Vert/Horz text cursor was displayed in wrong position especially on DBCS systems.
 * Ctrl+BackSpace feature was not working on DBCS systems.
 * Redirect chocolatey downloads to github.
-* gh#204: ConEmu hung on startup in some cases while initializing default tasks.
+* [conemu#204](https://github.com/Maximus5/ConEmu/issues/204): ConEmu hung on startup in some cases while initializing default tasks.
 
 
 
@@ -98,7 +98,7 @@ or anything else, spreading the word for example.
     if matching one was not found. These palettes ‘#Attached:XX’ are not
     saved automatically, but will be when user presses ‘Save settings’ button
     in the settings dialog.
-* gh#193: Show hookers warning once per day.
+* [conemu#193](https://github.com/Maximus5/ConEmu/issues/193): Show hookers warning once per day.
 * Show real names for ‘Win+Number’ and ‘Win+Arrows’ on the Controls page.
 * Search for static text control in the Settings dialog was failed.
 * Issue 1977: Don't change RealConsole height on tabs auto-show/hide,
@@ -138,7 +138,7 @@ or anything else, spreading the word for example.
 ## Build 150610  {#Build_150610}
 
 * Simplify `set` usage in Settings\Environment.
-* gh#179: Fix broken environment inheritance (ca9e31a regression).
+* [conemu#179](https://github.com/Maximus5/ConEmu/issues/179): Fix broken environment inheritance (ca9e31a regression).
 * Ensure that `set` commands in the task/command line will override ConEmu's default environment (settings page).
 * GuiMacro: Make Task and Shell functions synchronous to be able to use Context function after it.
 * GuiMacro: Return more information about wrong macro.
@@ -164,7 +164,7 @@ or anything else, spreading the word for example.
 
         sudo diskpart
 
-* gh#176: Avoid creating two tabs while starting:
+* [conemu#176](https://github.com/Maximus5/ConEmu/issues/176): Avoid creating two tabs while starting:
 
         git-bash.exe --command=usr/bin/bash.exe -l -i
 
@@ -181,14 +181,14 @@ or anything else, spreading the word for example.
 * Quake mode enabled by `-quake` command line switch was not shown in Fast Configuration dialog.
 * Suggest the task user specified by `ConEmu.exe -cmd {cmd}` in Fast Configuration dialog.
 * Don't set default task in Fast Configuration dialog, use exact `-cmd ...` command specified by user.
-* gh#151: Do (quake) animation after starting RealConsole creation.
+* [conemu#151](https://github.com/Maximus5/ConEmu/issues/151): Do (quake) animation after starting RealConsole creation.
 * Add `-here` switch description in the About dialog.
 * Ensure all default bash tasks names will be unique.
 * Always reset FARHOME env.var when creating default Far tasks.
 * Move checkboxes ‘Add ConEmu??? to PATH’ to separate page ‘Environment’.
-* gh#171, Issue 1655: Add option to skip ‘... brought ConEmu OnTop. Revert?’ confirmation.
-* gh#173: Attach of detached console ignored new ConEmu instance.
-* gh#173: Implement Unfasten of console tabs (ChildGui not yet). Tab menu item, hotkey and GuiMacro.
+* [conemu#171](https://github.com/Maximus5/ConEmu/issues/171), Issue 1655: Add option to skip ‘... brought ConEmu OnTop. Revert?’ confirmation.
+* [conemu#173](https://github.com/Maximus5/ConEmu/issues/173): Attach of detached console ignored new ConEmu instance.
+* [conemu#173](https://github.com/Maximus5/ConEmu/issues/173): Implement Unfasten of console tabs (ChildGui not yet). Tab menu item, hotkey and GuiMacro.
 * Implement ‘Settings\Environment’ page.
 		User may define here multiple "set varname=varvalue" commands
 		or set default console code page with "chcp utf-8", "chcp 866" and so on.
@@ -206,10 +206,10 @@ or anything else, spreading the word for example.
 ## Build 150513  {#Build_150513}
 
 * Don't show [reg] or [xml] in Fast Configuration dialog because there is the storage location field.
-* gh#142: Win+Left/Right didn't snap window if it was maximized.
-* gh#139: If Quake was hidden when user presses Win key (Start menu), ConEmu was unexpectedly slided down after second Win press (after menu was hidden).
+* [conemu#142](https://github.com/Maximus5/ConEmu/issues/142): Win+Left/Right didn't snap window if it was maximized.
+* [conemu#139](https://github.com/Maximus5/ConEmu/issues/139): If Quake was hidden when user presses Win key (Start menu), ConEmu was unexpectedly slided down after second Win press (after menu was hidden).
 * Garbage was shown sometimes while searching in Settings dialog.
-* gh#143: Add CygWin bash default tasks by checking registry (for new config).
+* [conemu#143](https://github.com/Maximus5/ConEmu/issues/143): Add CygWin bash default tasks by checking registry (for new config).
 * RealConsole pause refactoring.
 * Execute RedrawWindow in the server process to avoid access violation.
 
@@ -221,8 +221,8 @@ or anything else, spreading the word for example.
 * The field ‘Startup task’ was not filled in the ConEmu Fast Configuration dialog.
 * Fix ChocolateyAbout.cmd script, correct PATH suggestion and powershell command.
 * Check if Chocolatey is already installed and show the path (ChocolateyAbout.cmd).
-* gh#127: ConEmu did not stay minimized if a new console tab was opened in background.
-* gh#106: ChildGui turned black after ConEmu was restored.
+* [conemu#127](https://github.com/Maximus5/ConEmu/issues/127): ConEmu did not stay minimized if a new console tab was opened in background.
+* [conemu#106](https://github.com/Maximus5/ConEmu/issues/106): ChildGui turned black after ConEmu was restored.
 
 
 
@@ -231,13 +231,13 @@ or anything else, spreading the word for example.
 * Reset `FARHOME` env.var when creating default {Far} task without full path to `far.exe`.
 * Default/startup task may be not initialized properly if saved config was partial.
 * Show proper error code in StatusBar if restart console was failed.
-* gh#121: Selecting 'No' when restarting console as admin produced error state.
+* [conemu#121](https://github.com/Maximus5/ConEmu/issues/121): Selecting 'No' when restarting console as admin produced error state.
 
 
 
 ## Build 150427  {#Build_150427}
 
-* gh#112: Python with Tk: rightclick menu window not showing.
+* [conemu#112](https://github.com/Maximus5/ConEmu/issues/112): Python with Tk: rightclick menu window not showing.
 * Set `FARHOME` env.var in default created Far tasks.
     That is because otherwise FARHOME may hold wrong value
     and plugins may be loaded from wrong place.
@@ -266,17 +266,17 @@ or anything else, spreading the word for example.
 
 * DefTerm. First VisualStudio debugging session was not processed by DefTerm.
 * Default settings were not applied on first start (suggested startup task).
-* gh#104: Add default task for Git-for-Windows-v2.
-* gh#107: Quoted Task names were not working after ConEmu.exe `-cmd` argument.
+* [conemu#104](https://github.com/Maximus5/ConEmu/issues/104): Add default task for Git-for-Windows-v2.
+* [conemu#107](https://github.com/Maximus5/ConEmu/issues/107): Quoted Task names were not working after ConEmu.exe `-cmd` argument.
 * Warning 'Maximum real console size was reached' was appeared sometimes during several splits tab closing.
 
 
 
 ## Build 150416  {#Build_150416}
 
-* gh#96: DefTerm was failed to hook VS Debugging console applications. Avoid deadlocks.
+* [conemu#96](https://github.com/Maximus5/ConEmu/issues/96): DefTerm was failed to hook VS Debugging console applications. Avoid deadlocks.
 * Issue 1965: Correct 3rd state condition for ‘Change prompt text cursor position with LClick’.
-* gh#99: Make Update confirmation dialog a child of main ConEmu window.
+* [conemu#99](https://github.com/Maximus5/ConEmu/issues/99): Make Update confirmation dialog a child of main ConEmu window.
 * Show in the update confirmation dialog the type of action: x86/x64 for installer or (7-Zip).
 * Allow using tasks in ‘Recreate’ dialog.
 * Let's create default tasks {Bash::Msys2-64} and {Bash::Msys2-32} in new configs.
@@ -287,7 +287,7 @@ or anything else, spreading the word for example.
 
 ## Build 150409  {#Build_150409}
 
-* gh#63: Option ‘Auto save/restore tabs’ was conflicted with unchecked ‘Quit on close’.
+* [conemu#63](https://github.com/Maximus5/ConEmu/issues/63): Option ‘Auto save/restore tabs’ was conflicted with unchecked ‘Quit on close’.
 * Some of GuiMacro functions must be executed in the main thread only.
 
 
@@ -321,7 +321,7 @@ or anything else, spreading the word for example.
 
 ## Build 150331  {#Build_150331}
 
-* gh#88: Allow ‘Apps’ key to use as single hotkey.
+* [conemu#88](https://github.com/Maximus5/ConEmu/issues/88): Allow ‘Apps’ key to use as single hotkey.
 * [GuiMacro](GuiMacro.html). Bugfixes and new function.
   * Function delimiter ‘;’ was ignored without brackets.
   * Support escapes in C-strings with "ConEmu -GuiMacro ...".
@@ -423,20 +423,20 @@ or anything else, spreading the word for example.
 ## Build 150307a  {#Build_150307a}
 
 * [Issue 1931](http://github.com/Maximus5/conemu-old-issues/issues/1931),
-    gh#67: ConEmu's output was blocked after maximizing window.
+    [conemu#67](https://github.com/Maximus5/ConEmu/issues/67): ConEmu's output was blocked after maximizing window.
 
 
 
 ## Build 150307  {#Build_150307}
 
-* gh#65: Min size for active cursor changes were not saved.
+* [conemu#65](https://github.com/Maximus5/ConEmu/issues/65): Min size for active cursor changes were not saved.
 * Create toolbar buttons as large as the size of the tabbar.
 * Take current dpi into account while creating tab icons.
 * [Issue 1929](http://github.com/Maximus5/conemu-old-issues/issues/1929):
     Quake position was changed unexpectedly after Win+D / restore.
 * [Issue 1792](http://github.com/Maximus5/conemu-old-issues/issues/1792):
     Unexpected console resize happens after Win+D Win+D.
-* gh#66: New tab template ‘%f’ shows shell's current folder name. Check wiki [ShellWorkDir](ShellWorkDir.html).
+* [conemu#66](https://github.com/Maximus5/ConEmu/issues/66): New tab template ‘%f’ shows shell's current folder name. Check wiki [ShellWorkDir](ShellWorkDir.html).
 
 
 
@@ -449,7 +449,7 @@ or anything else, spreading the word for example.
 * Add ‘Ranges’ drop-down list to pseudographics font settings with some predefines.
 * [Issue 1927](http://github.com/Maximus5/conemu-old-issues/issues/1927):
     Key-Up event for ‘Space’ and ‘Enter’ in ReadConsoleInputA.
-* gh#63: Switch `-cur_console:d:...` was not stripped from Task while running shell sometimes.
+* [conemu#63](https://github.com/Maximus5/ConEmu/issues/63): Switch `-cur_console:d:...` was not stripped from Task while running shell sometimes.
 * While creating 'Auto save/restore' task add all `-cur_console` switches before the shell itself.
 
 
@@ -491,7 +491,7 @@ or anything else, spreading the word for example.
 * Add to the [TabMenu](TabMenu.html) items ‘Split to right’ and ‘Split to bottom’.
 * Untick ‘Auto minimize to TSA’ when turning Quake mode off.
 * ToolBar buttons min/max/close were not properly shown/hidden on some options changing.
-* gh#57: Cannot restore prevoisly opened tabs if there was a task marked as ‘Default for new console’.
+* [conemu#57](https://github.com/Maximus5/ConEmu/issues/57): Cannot restore prevoisly opened tabs if there was a task marked as ‘Default for new console’.
 * Consoles were not resized sometimes after Win+Left/Right (snap window to left/right monitor edge).
 * After restoring snapped window the snapped state was dropped (window was put to ‘Normal’ position).
 
@@ -511,8 +511,8 @@ or anything else, spreading the word for example.
 * Internal. Fix wrong logging message for WA_ACTIVE
 * During excessing keyboard activity console contents was updated slowly.
 * Switch "/bypass" creates processes with normal priority.
-* gh#59: Message ‘Failed to start task in user mode, timeout’ was appeared after updating.
-* gh#56: Do not use RVAL_REF with GCC
+* [conemu#59](https://github.com/Maximus5/ConEmu/issues/59): Message ‘Failed to start task in user mode, timeout’ was appeared after updating.
+* [conemu#56](https://github.com/Maximus5/ConEmu/issues/56): Do not use RVAL_REF with GCC
 * [LogFiles](LogFiles.html) were not created for far.exe sometimes.
 * Do not flush logs after each line to avoid lags.
 
