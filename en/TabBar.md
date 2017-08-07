@@ -54,22 +54,23 @@ Also, you may strip superfluous `Administrator:` prefix from console title:
 
 ## Switching between consoles  {#switching-consoles}
 
-You may use `Win-Number` to activate consoles:
+‘Activate console by number’ is configurable on the [Keys & Macro](SettingsHotkeys.html) settings page,
+`LCtrl+Number` is default hotkey for the action.
 
-* When console count less or equal to 10: `Win+1` activates first console, `Win+9` - ninth, `Win+0` - tenth.
+* When console count less or equal to 10: `LCtrl+1` activates first console, `LCtrl+9` - ninth, `LCtrl+0` - tenth.
 * Otherwise - one-digit-number and two-digit-number activations are allowed. Example:
-  * `Win(down) 1 5` - activates 15'th console;
-  * `Win(down) 1 Win(up)` - activates 1'th console.
+  * `LCtrl(down) 1 5` - activates 15'th console;
+  * `LCtrl(down) 1 LCtrl(up)` - activates 1'th console.
 
-Win is default [HostKey](ConEmuTerms.html#Host_key),
+`LCtrl` is default [modifer](ConEmuTerms.html#Host_key),
 You may select yours convinent combination (up to 3 keys)
 from `Win`, `Ctrl`, `Alt`, `Shift` and [`Apps`](AppsKey.html).
 
 By default, ConEmu [internally handles Ctrl+Tab](SettingsTabBar.html) combination,
 which switch consoles too. But this combination does not work with [ChildGui](ChildGui.html).
 
-Also, you may use `Win+Tab` to switch consoles (check box on [Controls](SettingsControls.html) page).
+Also, you may use `Win+Tab` to switch consoles (check box on [Keyboard](SettingsKeyboard.html) page).
 
 At last, there are [hotkeys](SettingsHotkeys.html):
-* `Win+Q` - Switch next console
-* `Win+Shift+Q` - Switch previous console
+* ‘Switch next console’ - `Win+Shift+Q`;
+* ‘Switch previous console’ - unassigned.

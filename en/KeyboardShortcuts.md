@@ -10,8 +10,8 @@ breadcrumbs:
 readalso:
  - url: SettingsHotkeys.html
    title: Settings › Keys & Macro page
- - url: SettingsControls.html
-   title: Settings › Controls page
+ - url: SettingsKeyboard.html
+   title: Settings › Keyboard
  - url: GlobalHotKeys.html
    title: Global Hot Keys
  - url: AppsKey.html
