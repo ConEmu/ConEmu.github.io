@@ -28,6 +28,7 @@ readalso:
 * [How to enable Vim scrolling using mouse Wheel in ConEmu](#Vim-scrolling-using-mouse-Wheel)
 * [vim-airline plugin](#Vim-airline)
 * [StackOverflow and SuperUser answers](#stack-exchange)
+* [Install Vim8 in Bash on Ubuntu on Windows](#vim8-wsl)
 
 ![256-colors vim in ConEmu](/img/ConEmuVimXterm.png)
 
@@ -137,3 +138,8 @@ If you have problems with Vim configuration, you may refer to the
 
 * [ConEmu: Vim Syntax Highlight](http://stackoverflow.com/a/14434531/1405560)
 * [Vim: Encoding (Unicode) in Terminal under Windows](http://stackoverflow.com/a/25073399/1405560)
+
+
+## Install Vim8 in Bash on Ubuntu on Windows  {#vim8-wsl}
+
+* [Ubuntu 16.10 repository providing vim 8](https://askubuntu.com/a/875006)
