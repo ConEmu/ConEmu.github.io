@@ -154,7 +154,7 @@ This is not a ConEmu's problem, please contact your application author.
 * `u` - Open ConEmu choose user dialog
 * `u:<user>:<pwd>` - specify user/pwd in args. MUST BE THE LAST OPTION.
 
-**Example:** «`"%ConEmuBaseDir%\ConEmuC.exe" /c dir "-new_console:bh9999c" c:\ /s`». Note that when launching from Far Manager, «`"%ConEmuBaseDir%\ConEmuC.exe" /c `» can be omitted.
+**Example:** `"%ConEmuBaseDir%\ConEmuC.exe" /c dir "-new_console:bh9999c" c:\ /s`. Note that when launching from Far Manager, `"%ConEmuBaseDir%\ConEmuC.exe" /c ` may be omitted.
 
 
 **A.** For comfort, when using Far, one can configure a macro bound to ShiftEnter (see example in the distribution package).

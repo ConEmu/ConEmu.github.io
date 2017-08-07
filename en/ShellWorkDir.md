@@ -100,42 +100,49 @@ ConEmu will maintain **CD** for you automatically.
 
 
 
-### cygwin/msys shells via PS1   {#connector-ps1}
+### WSL/cygwin/msys shells via PS1   {#connector-ps1}
 
 **Warning!** This options will work only with
 [cygwin/msys connector](CygwinMsysConnector.html)!
 
+This is the only option available for [Bash on Ubuntu on Windows](BashOnWindows.html).
+
+Use [ANSI](AnsiEscapeCodes.html#ConEmu_specific_OSC) in `PS1`
+environment variable to notify ConEmu about directory changes.
 For example, you may configure your bash by appending
 to your `~/.bashrc` following sequence:
 
 ~~~
-\[\e]9;9;"\w"\007\033]9;12\007\]
+if [[ -n "${ConEmuPID}" ]]; then
+  PS1='$PS1\[\e]9;9;"\w"\007\033]9;12\007\]'
+fi
 ~~~
 
 **NB** Don't forget to ‘escape’ non-printable parts of `PS1` with `\[` and `\]`.
 This is required to avoid weird behavior of readline when you type really long commands.
 
-So, my own prompt looks like this:
-
-~~~
-PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ \[\e]9;9;"\w"\007]'
-~~~
 
 
 ### bash and some other cygwin shells   {#bash_and_other_cygwin_shells}
+
+**NB**. Dont try this in [Bash on Ubuntu on Windows](BashOnWindows.html).
+`ConEmuC.exe` is *native* Windows application which can't be executed by *linux* kernel.
 
 You need to tell bash to run `ConEmuC -StoreCWD` command
 each time its prompt executed.
 For example, add to your `~/.bashrc`
 
 ~~~
-if [[ -n "${ConEmuBaseDir}" ]]; then
+if [[ -n "${ConEmuPID}" ]]; then
   PROMPT_COMMAND='ConEmuC -StoreCWD'
 fi
 ~~~
 
 
 ### zsh   {#zsh}
+
+**NB**. Dont try this in [Bash on Ubuntu on Windows](BashOnWindows.html).
+`ConEmuC.exe` is *native* Windows application which can't be executed by *linux* kernel.
 
 For zsh just add this to your `~/.zshrc` file.
 

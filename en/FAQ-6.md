@@ -41,19 +41,19 @@ otherlang:
 ‘SDK::VS 15.0 x64 tools prompt’, and so on. They set up prompt and environment
 variables.
 
+**TL;DR.** Use `/k` switch: `cmd.exe /k ...`! Without it you would
+get the message ‘Root process was alive less than 10 sec’. And it's true.
+Without `/k` switch you ask ConEmu (actually cmd) to ‘execute this batch and exit’.
+
 Does not matter how do you [run you cmd (batch) script](LaunchNewTab.html),
 the rules are the same for ‘cmd.exe’. [Tasks](Tasks.html), [New console dialog](LaunchNewTab.html),
 command prompt, Windows' `Win+R` dialog, whatever...
 
-Just run `cmd /?` to understand switches and capabilities.
+Run `cmd /?` to understand switches and capabilities.
 And **take care** about **double quotes**.
 
-**TLDR.** Just use `/k` switch with ‘cmd.exe’! Without it you would
-get the message ‘Root process was alive less than 10 sec’. And it's true.
-Without `/k` switch you ask ConEmu ‘**just** execute this batch’.
-
-Example for desktop shortcut: run *new* ConEmu window with cmd.exe
-initialized with file ‘C:\Your tools\YourScript.cmd’.
+Desktop shortcut example. It runs *new* ConEmu window with cmd.exe
+initialized via file `C:\Your tools\YourScript.cmd`.
 
 ~~~
 ConEmu64.exe -nosingle -run cmd.exe /k "C:\Your tools\YourScript.cmd".
