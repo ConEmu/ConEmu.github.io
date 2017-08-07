@@ -11,9 +11,6 @@ breadcrumbs:
 
 # Settings: Task bar
 
-*This page was generated automatically from ConEmu sources*
-{% comment %} IDD_SPG_TASKBAR {% endcomment %}
-
 ![ConEmu Settings: Task bar](/img/Settings-TaskBar.png)
 
 
