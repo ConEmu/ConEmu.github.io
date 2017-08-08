@@ -11,8 +11,8 @@ breadcrumbs:
 readalso:
  - url: KeyboardShortcuts.html
    title: Keyboard Shortcuts
- - url: SettingsControls.html
-   title: Settings › Controls page
+ - url: SettingsKeyboard.html
+   title: Settings › Keyboard
  - url: GlobalHotKeys.html
    title: Global Hot Keys
 ---

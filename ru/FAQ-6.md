@@ -33,25 +33,25 @@ otherlang:
 
 #### Q. Как запустить cmd-файл инициализирующий переменные окружения (командную строку)?   {#q-6-12}
 
-**A.** Примеры есть в [Tasks](Tasks.html): ‘Shells::cmd’,
-‘SDK::VS 15.0 x64 tools prompt’, и т.п. Они устанавливают prompt
+**A.** Примеры есть в [Tasks](Tasks.html): «Shells::cmd»,
+«SDK::VS 15.0 x64 tools prompt», и т.п. Они устанавливают prompt
 и инициализируют переменные окружения.
 
+**TL;DR.** Просто используйте ключ `/k` с «cmd.exe»! Без этого ключа
+вы получите сообщение «Root process was alive less than 10 sec». И это правильно.
+Без ключа `/k` вы просите ConEmu (cmd) «выполни этот скрипт и выйди».
+
 Не имеет значения как вы [запускаете cmd (batch) скрипт](LaunchNewTab.html),
-правила одни и те же и относятся они только к ‘cmd.exe’.
+правила одни и те же и относятся они только к «cmd.exe».
 [Tasks](Tasks.html), [New console dialog](LaunchNewTab.html), command prompt,
 диалог `Win+R` в Window, без разницы...
 
 Просто запустите `cmd /?` и изучите ключи и возможности.
 Будьте особо **внимательны к двойным кавычкам**.
 
-**TLDR.** Просто используйте ключ `/k` с ‘cmd.exe’! Без этого ключа
-вы получите сообщение ‘Root process was alive less than 10 sec’. И это правильно.
-Без ключа `/k` вы просите ConEmu ‘выполни **только** этот скрипт’.
-
 Пример для ярлыка на рабочем столе:
 запустить *новое* окно ConEmu с cmd.exe
-инициализированное файлом ‘C:\Your tools\YourScript.cmd’.
+инициализированное файлом `C:\Your tools\YourScript.cmd`.
 
 ~~~
 ConEmu64.exe -nosingle -run cmd.exe /k "C:\Your tools\YourScript.cmd".

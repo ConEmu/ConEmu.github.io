@@ -113,23 +113,27 @@ if option ‘Install keyboard hooks’ is **enabled**.
 
 #### Hotkey workaround  {#hotkey-workaround}
 
-One of most asked question is ‘Why Ctrl-Tab is not working with PuTTY?’
+One of most asked question is ‘Why Ctrl-Tab is not working with PuTTY or mintty?’
 
-It isn't because of <a href="#limitations">hotkeys limitations</a>.
+It isn't because of [hotkeys limitations](#limitations).
 Keyboard focus is located in that ChildGui application but not in ConEmu.
 
 But there are few workarounds.
 
-1. There are special [Hotkeys](SettingsHotkeys.html) for switching consoles and
-   ‘Install keyboard hooks’ must be checked on the [Settings › Controls page](SettingsControls.html).
-  * `Win+Q` - ‘Switch next console’;
-  * `Win+Shift+Q` - ‘Switch previous console’;
-  * `Win+<Number>`, but ‘Win+Numbers - activate console’ must be checked on the [Settings › Controls page](SettingsControls.html).
-2. Same there are hotkeys to force focus to be set in ConEmu, after that you may use `Ctrl+Tab` to switch consoles.
-  * `Win+Z` - Switch focus between ConEmu and child GUI application;
-  * Set focus to ConEmu;
-  * Set focus to child GUI application.
-3. You may still use mouse to switch tabs.
+1. [Hotkeys](SettingsHotkeys.html) with `Win` key are working even if ChildGui has focus.
+   But you have to check ‘**Install keyboard hooks**’ on the [Settings › Keyboard](SettingsKeyboard.html)
+   to enable this advanced hotkeys processing technique.
+   In that case you may use following [hotkeys](SettingsHotkeys.html) (look at *default* keymappings below):
+  * ‘Switch next console’ - `Win+Shift+Q`;
+  * ‘Switch previous console’ - unassigned;
+  * ‘Activate console by number’ - works too if you choose `Win+Numbers` hotkey in [Keys & Macro](SettingsHotkeys.html)
+    and check ‘Win+Numbers - activate console’ on the [Settings › Keyboard](SettingsKeyboard.html).
+2. Also there are hotkeys to force focus to be set in ConEmu or ChildGui.
+   When you put focus into ConEmu (default is `Win+Z`) you may switch tabs by `Ctrl+Tab` as usual.
+  * ‘Switch focus between ConEmu and child GUI application’ - `Win+Z`;
+  * ‘Set focus to ConEmu’ - unassigned;
+  * ‘Set focus to child GUI application’ - unassigned.
+3. At last you may still use mouse to switch tabs.
 
 
 
@@ -145,6 +149,8 @@ Or with [-new_console](NewConsole.html) switch from your shell prompt.
 ~~~
 C:> putty -new_console
 ~~~
+
+**NB**. You can't run ChildGui from [Bash on Ubuntu on Windows](BashOnWindows.html).
 
 
 
