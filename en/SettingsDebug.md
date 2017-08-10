@@ -49,9 +49,9 @@ for internal purposes, or troubleshooting on user side by request only.
 
 * **Disabled** Disable debug logging. This implies on ‘Settings’ dialog close.
 * **Shell** Log shell calls (progress creations, library loadings, etc.) [Inject ConEmuHk](ConEmuHk.html) is required.
-* **Input** Log keyboard and mouse activities.
+* **Input** Log keyboard and mouse activities including XTerm sequences.
 * **Cmd** Log internal ConEmu (GUI<-->Server) calls.
-* **Ansi** Capture console applications outputs ([ANSI sequences](AnsiEscapeCodes.html)).
+* **Ansi** *Deprecated* Instead you may turn on [Log console output](SettingsFeatures.html#id2679).
 * **Debug** Automatically attach ConEmu debugger to all started processes.
 
 
