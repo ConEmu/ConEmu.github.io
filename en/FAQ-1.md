@@ -18,8 +18,6 @@ otherlang:
 
 * [Q. I found a bug, what should I do?](#q-1-1)
 * [Q. What about ConMan , alternative console, etc.?](#q-1-2)
-* [Q. What is the purpose of ConEmu .cer (digital certificate)?](#q-1-3)
-* [Q. How to import the certificate to the list of trusted root certificates?](#q-1-4)
 * [Q. What is an Apps key?](#q-1-5)
 * [Q. What is a Host key?](#q-1-6)
 * [Q. Not all characters (hieroglyphs, ellipses, copyright symbols etc.) are displayed](#q-1-7)
@@ -45,46 +43,35 @@ otherlang:
 
 #### Q. What about ConMan, alternative console, etc.?   {#q-1-2}
 
+**A.** Everything is seamlessly built into ConEmu, but in better way ;)
+The flag ‘[Multiple consoles](SettingsAppearance.html#id1506)’ should be enabled.
+Furthermore, using ConMan with ConEmu is NOT RECOMMENDED.
+A new console [may be created in many ways](LaunchNewTab.html):
+using a keyboard shortcut (`Win+W` by default), by adding [`-new_console`](NewConsole.html)
+to the executed command in prompt, and so on.
+The current console can be closed or restarted: `Win+~`.
+The long output of a console command or program can be opened in Far's editor/viewer
+via [plugin](ConEmuFarPlugin.html) or `Ctrl+O` Far's Macro.
+Switching between consoles can be done with `Ctrl+Tab` or `Win+Shift+Q`.
 
-**A.** Everything is built into ConEmu, except better ;) The flag 'MultiCon' should be enabled. Furthermore, using ConMan with ConEmu is NOT RECOMMENDED. A new console can be created using a keyboard shortcut (Win-W by default), as well as adding -new_console to the executed command. The current console can be closed or restarted (Win-~). The long output of a console command or program can be opened in Far's editor/viewer (Ctrl-O). Switching between consoles can be done with Win-Q. Switching between consoles and tabs can be done with Ctrl-Tab.
 
 
-
-
+{% comment %}
 #### Q. What is the purpose of ConEmu.cer (digital certificate)?   {#q-1-3}
-
-
 **A.** For validation of the integrity of ConEmu's executable files.
-
-
 **A.** Windows SmartScreen blocks execution of files (Installer) from "unverified publishers".
-
-
 **A.** If the certificate is imported into the list of trusted root certificates (for the user, machine or domain), launching ConEmu "As Administrator" (Vista & Win7) will display a less scary warning (program name + "verified publisher: ConEmu-Maximus5" instead of the scary "unverified publisher" window).
-
-
 **A.** If the certificate is imported into the list of trusted root certificates, certain antivirus software (e.g. KIS) will consider the program as "trusted".
 
-
-
-
 #### Q. How to import the certificate to the list of trusted root certificates?   {#q-1-4}
-
-
 **A.** In Vista+ one can simply open the certificate file, and click the "Install certificate" button.
-
-
 **A.** Via MMC -> Certificates snap-in.
-
-
 **A.** Using the utility CertMgr from the Windows SDK:
-
 ~~~
    "C:\Program Files\Microsoft SDKs\Windows\v7.0\Bin\CertMgr" -add -c ConEmu.cer -s root
 ~~~
-
 **A.** For details, see here: [Certificate installation](Certificate.html)
-
+{% endcomment %}
 
 
 

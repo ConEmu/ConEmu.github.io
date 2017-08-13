@@ -33,8 +33,6 @@ Frequenly asked user questions about ConEmu usage.
 ### [General](FAQ-1.html#q-1-general)  {#faq-1}
 * [Q. I found a bug, what should I do?](FAQ-1.html#q-1-1)
 * [Q. What about ConMan , alternative console, etc.?](FAQ-1.html#q-1-2)
-* [Q. What is the purpose of ConEmu .cer (digital certificate)?](FAQ-1.html#q-1-3)
-* [Q. How to import the certificate to the list of trusted root certificates?](FAQ-1.html#q-1-4)
 * [Q. What is an Apps key?](FAQ-1.html#q-1-5)
 * [Q. What is a Host key?](FAQ-1.html#q-1-6)
 * [Q. Not all characters (hieroglyphs, ellipses, copyright symbols etc.) are displayed](FAQ-1.html#q-1-7)

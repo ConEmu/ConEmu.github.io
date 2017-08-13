@@ -33,8 +33,6 @@ otherlang:
 ### [О главном](FAQ-1.html#q-1-general)  {#faq-1}
 * [Q. Что делать, если нашли ошибку?](FAQ-1.html#q-1-1)
 * [Q. А как же ConMan , альтернативная консоль и пр.?](FAQ-1.html#q-1-2)
-* [Q. Для чего нужен сертификат ConEmu .cer (digital certificate)?](FAQ-1.html#q-1-3)
-* [Q. Как импортировать в корневые доверенные сертификаты?](FAQ-1.html#q-1-4)
 * [Q. What is an Apps key?](FAQ-1.html#q-1-5)
 * [Q. What is a Host key?](FAQ-1.html#q-1-6)
 * [Q. Отображаются не все символы (иероглифы, троеточие, копирайты, и др.)](FAQ-1.html#q-1-7)
