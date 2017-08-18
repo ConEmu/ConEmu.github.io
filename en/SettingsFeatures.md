@@ -7,6 +7,10 @@ title: "ConEmu | Settings › Features page"
 breadcrumbs:
  - url: TableOfContents.html#settings
    title: Settings
+
+readalso:
+ - url: SshAgent.html
+   title: How to use ssh-agent
 ---
 
 # Settings: Features

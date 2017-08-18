@@ -37,6 +37,7 @@ ssh your.server.com "cd /path/to/directory ; bash --login"
 
 * [How ssh-agent works](#the-key)
   * [Answer 1: Export variables](#answer-export)
+    * [My solution step-by-step](#step-by-step)
   * [Answer 2: Modify your bash profile](#answer-profile)
 * [Some other links](#other-links)
   * [Tweet #1](#link-tweet-1)
@@ -75,6 +76,115 @@ ConEmuC -export=ALL SSH_*   # Export variables to ConEmu and all its tabs
 The only drawback is a [limitation](ConEmuEnvironment.html#Export_variables)
 of the implemented export method - existing cygwin tabs will not get these variables,
 only new cygwin consoles will get them.
+
+
+#### My solution step-by-step  {#step-by-step}
+
+1. Create the task `{Bash::ssh-agent}` which runs single batch `ssh-agent.cmd`.
+
+~~~
+"%USERPROFILE%\.ssh\ssh-agent.cmd" -cur_console:n
+~~~
+
+2. Create the task `{Helper::Startup}` containing two sub-tasks `{Bash::ssh-agent}`
+   and another one with your favourite shell. I'm using `{Far}`.
+   
+~~~
+>{ssh-agent}
+{Far}
+~~~
+
+3. Select the task `{Helper::Startup}` on [Settings/Startup](SettingsStartup.html)
+   page and set ‘Delay between consoles initialization’ to some suitable value.
+   I'm using `1500` ms.
+   
+4. I've checked the [‘Kill ssh-agent with ConEmu’](SettingsFeatures.html#id3075).
+   
+5. Prepare your `ssh-agent.cmd`. The script must be located in writeable location.
+   You have to change variables `ce_ssh_bin`, `ce_ssh_pvt` and name of ssh keys.
+   In the example below it's `%ce_ssh_pvt%/id_rsa` for Key1.
+   
+~~~
+@echo off
+
+set ce_ssh_bin="C:\Program Files\Git\usr\bin"
+set ce_ssh_pvt=/c/Users/username/.ssh
+
+if NOT defined SSH_AGENT_PID goto do_run
+
+rem ssh-agent.exe may be already started, check if its PID equals to %SSH_AGENT_PID%
+tasklist /FI "IMAGENAME eq ssh-agent.exe" 2>NUL | find /I /N " %SSH_AGENT_PID% ">NUL
+if "%ERRORLEVEL%"=="0" (
+  echo ssh-agent PID=%SSH_AGENT_PID% is running
+  rem timeout /t 10
+  goto fin
+) else (
+  call cecho "ssh-agent PID=%SSH_AGENT_PID% was terminated"
+)
+
+:do_run
+rem We suppose our batch is located in write-enabled folder
+set "SSH_AGENT_INFO=%~dp0ssh-agent-%ConEmuServerPID%"
+"%ce_ssh_bin%\ssh-agent.exe" -c > "%SSH_AGENT_INFO%"
+if errorlevel 1 (
+  call cecho "ssh-agent failed"
+  goto fin
+)
+FOR /F "eol=; tokens=2,3*" %%i in (%SSH_AGENT_INFO%) do (
+  @rem echo `%%i` `%%j` `%%k`
+  if "%%i" == "SSH_AUTH_SOCK" set "SSH_AUTH_SOCK=%%j"
+  if "%%i" == "SSH_AGENT_PID" set "SSH_AGENT_PID=%%j"
+)
+set "SSH_AUTH_SOCK=%SSH_AUTH_SOCK:~0,-1%"
+set "SSH_AGENT_PID=%SSH_AGENT_PID:~0,-1%"
+del "%SSH_AGENT_INFO%"
+set SSH_AGENT_INFO=
+set SSH_
+ConEmuC -export=ALL SSH_*
+
+setlocal
+rem ### Adding keys begin ###
+set was_errors=
+
+rem ### Key1 ###
+"%ce_ssh_bin%\ssh-add.exe" %ce_ssh_pvt%/id_rsa
+if errorlevel 1 set was_errors=1
+
+rem You may add below more keys, by copying lines above
+rem ### Key2 ###
+rem ### Key3 ###
+
+rem ### Adding keys end ###
+if defined was_errors (
+  ConEmuC -export=ALL SSH_*
+  cmd /k
+)
+endlocal
+
+timeout /T 5
+:on_errors
+ConEmuC -export=ALL SSH_*
+:fin
+~~~
+
+
+**NB** If you are lazy and confident of your personal files, you may
+bypass requirement to enter the passphrase. Just create the file
+`ssh-key-pwd.cmd` near to `ssh-agent.cmd`.
+
+~~~
+@set TEMP_SSH_KEY=your_passphrase
+~~~
+
+And change the call to `ssh-add.exe`.
+
+~~~
+rem ### Key1 ###
+call "%~dp0ssh-key-pwd.cmd"
+ConEmuC -GuiMacro print("%TEMP_SSH_KEY%\n")
+"%ce_ssh_bin%\ssh-add.exe" %ce_ssh_pvt%/id_rsa
+if errorlevel 1 set was_errors=1
+~~~
 
 
 ### Answer 2: Modify your bash profile   {#answer-profile}
