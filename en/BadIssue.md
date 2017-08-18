@@ -91,7 +91,7 @@ Note, if you are using third-party bundles (like cmder)
 you may not using latest build.
 There is ConEmu [internal updater](UpdateModes.html).
 Just call it from [SystemMenu](SystemMenu.html) \ Help \ Check for updates.
-Or visit download page at [FossHub](http://www.fosshub.com/ConEmu.html).
+Or visit download page at [FossHub]({{ site.fosshub }}).
 
 Also, thanks to googlecode for stopping Download service,
 if you are using **very old build** (pre 140115)

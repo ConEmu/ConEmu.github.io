@@ -35,7 +35,7 @@ otherlang:
 
 **A.** Сначала проверить, повторяется ли ошибка БЕЗ ConEmu, в 'чистом' FAR?
 Если не повторяется - проверить последнюю версию ConEmu.
-Качать здесь: [http://www.fosshub.com/ConEmu.html](http://www.fosshub.com/ConEmu.html)
+Качать здесь: [{{ site.fosshub }}]({{ site.fosshub }})
 Если ошибка не исправлена - создавайте [Issue с подробным описанием](Issues.html).
 
 

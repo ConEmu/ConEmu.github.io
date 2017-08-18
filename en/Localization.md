@@ -119,7 +119,7 @@ At the moment only hints and Settings dialog controls are processed by l10n engi
 
 To check the translation:
 
-* Download and install build [160211 or later](http://www.fosshub.com/ConEmu.html).
+* Download and install [actual build]({{ site.fosshub }}).
 * Place the file [ConEmu.l10n](https://github.com/Maximus5/ConEmu/blob/daily/Release/ConEmu/ConEmu.l10n)
   into `%ConEmuBaseDir%` and run `ConEmu.exe` with your language code.
 

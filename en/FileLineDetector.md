@@ -60,7 +60,7 @@ Action:
 
 Examples:
 
-* [http://www.fosshub.com/ConEmu.html](http://www.fosshub.com/ConEmu.html)
+* [{{ site.fosshub }}]({{ site.fosshub }})
 * [mailto:user@domain.com](mailto:user@domain.com)
 * [file:///c:\\sources\\abc.html](file:///c:\\sources\\abc.html)
 

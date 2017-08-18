@@ -29,7 +29,7 @@ Note, if you are using third-party bundles (like cmder)
 you most probably are using not latest build.
 There is ConEmu **internal** updater.
 Just call it from [SystemMenu](SystemMenu.html) \ `Help` \ `Check for updates`.
-Or visit download page at [FossHub](http://www.fosshub.com/ConEmu.html).
+Or visit download page at [FossHub]({{ site.fosshub }}).
 
 Also, due to googlecode shutdown,
 if you are using **very old build** (pre 140115)
@@ -44,4 +44,4 @@ Just press `Win+Alt+A` to be sure ([SystemMenu](SystemMenu.html) \ `Help` \ `Abo
 
 ## Download and install new build
 
-[![Download ConEmu](/img/Downloads.png)](http://www.fosshub.com/ConEmu.html "Download ConEmu")
+[![Download ConEmu](/img/Downloads.png)]({{ site.fosshub }} "Download ConEmu")

@@ -65,7 +65,7 @@ already there (settings area is really overwhelming). You will
 probably end up in making ConEmu your default terminal for Windows.
 
 Read full review on
-[www.fosshub.com](http://www.fosshub.com/ConEmu.html)
+[www.fosshub.com]({{ site.fosshub }})
 
 
 ## by Greg Steen (technet.microsoft.com)
@@ -86,7 +86,7 @@ app is awesome! I have been using Console2 for a long time, then
 just stumbled onto this. Have uninstalled Console2. The amount of
 features available in ConEmu are impressive. Kudos to the devs!!!
 
-More comments on [fosshub.com](http://www.fosshub.com/ConEmu.html)
+More comments on [fosshub.com]({{ site.fosshub }})
 
 
 ## by Rafal Borowiec

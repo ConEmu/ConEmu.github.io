@@ -61,7 +61,7 @@ or even connector files may be integrated into ConEmu distro
 and starting POSIX enabled terminal will be automatic.
 
 1. Connector is constantly changing, so first ensure that you are using
-   <strong><a href="http://www.fosshub.com/ConEmu.html" rel="nofollow">the latest available ConEmu version</a></strong>!
+   <strong><a href="{{ site.fosshub }}" rel="nofollow">the latest available ConEmu version</a></strong>!
 2. Download latest [release of connector](https://github.com/Maximus5/cygwin-connector/releases).
 3. Choose appropriate binary from downloaded 7z archive, e.g. `conemu-cyg-32.exe` for 32-bit Cygwin.
 4. Unpack this file to your bin folder, e.g. `C:/Cygwin/bin` (where `sh.exe` is located).
