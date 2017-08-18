@@ -1,7 +1,7 @@
 # ### Site settings ###
 
 # used in layouts and header
-url: "http://conemu.github.io"
+url: "https://conemu.github.io"
 
 # used with breadcrumbs
 site_name: "conemu.github.io"
