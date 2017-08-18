@@ -11,9 +11,10 @@ twit_text: "ConEmu%3A%20Handy%20Windows%20terminal"
 
 # main mirror location
 mirror: "" # leave it empty for main site
-mirror_en: "http://conemu.github.io"
+mirror_en: "https://conemu.github.io"
+# site ssl certificate todo
 mirror_ru: "http://www.conemu.ru"
-# mirror: "http://conemu.github.io"
+# mirror: "https://conemu.github.io"
 # used with conjunction with
 # page.docfolder: "/en"
 # sort of: href="{{ site.mirror }}{{ page.docfolder }}/VersionComparison.html"
