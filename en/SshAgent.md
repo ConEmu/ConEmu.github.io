@@ -80,13 +80,13 @@ only new cygwin consoles will get them.
 
 #### My solution step-by-step  {#step-by-step}
 
-1. Create the task `{Bash::ssh-agent}` which runs single batch `ssh-agent.cmd`.
+1) Create the task `{Bash::ssh-agent}` which runs single batch `ssh-agent.cmd`.
 
 ~~~
 "%USERPROFILE%\.ssh\ssh-agent.cmd" -cur_console:n
 ~~~
 
-2. Create the task `{Helper::Startup}` containing two sub-tasks `{Bash::ssh-agent}`
+2) Create the task `{Helper::Startup}` containing two sub-tasks `{Bash::ssh-agent}`
    and another one with your favourite shell. I'm using `{Far}`.
    
 ~~~
@@ -94,13 +94,13 @@ only new cygwin consoles will get them.
 {Far}
 ~~~
 
-3. Select the task `{Helper::Startup}` on [Settings/Startup](SettingsStartup.html)
+3) Select the task `{Helper::Startup}` on [Settings/Startup](SettingsStartup.html)
    page and set ‘Delay between consoles initialization’ to some suitable value.
    I'm using `1500` ms.
    
-4. I've checked the [‘Kill ssh-agent with ConEmu’](SettingsFeatures.html#id3075).
+4) I've checked the [‘Kill ssh-agent with ConEmu’](SettingsFeatures.html#id3075).
    
-5. Prepare your `ssh-agent.cmd`. The script must be located in writeable location.
+5) Prepare your `ssh-agent.cmd`. The script must be located in writeable location.
    You have to change variables `ce_ssh_bin`, `ce_ssh_pvt` and name of ssh keys.
    In the example below it's `%ce_ssh_pvt%/id_rsa` for Key1.
    
