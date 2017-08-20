@@ -107,7 +107,7 @@ only new cygwin consoles will get them.
 ~~~
 @echo off
 
-set ce_ssh_bin="C:\Program Files\Git\usr\bin"
+set "ce_ssh_bin=C:\Program Files\Git\usr\bin"
 set ce_ssh_pvt=/c/Users/username/.ssh
 
 if NOT defined SSH_AGENT_PID goto do_run
