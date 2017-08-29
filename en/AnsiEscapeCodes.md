@@ -23,7 +23,7 @@ readalso:
 ConEmu (from build 120520d) can process
 [ANSI X3.64](http://en.wikipedia.org/wiki/ANSI_X3.64)
 and its extension
-[xterm 256 color mode](http://www.frexx.de/xterm-256-notes/).
+xterm 256 color mode.
 
 * [Description](#Description)
   * [ANSI sequences processing requirements](#ANSI_sequences_processing_requirements)
@@ -359,7 +359,7 @@ System colors (Standard console 16 colors):
 **Warning** You need to change `^[` to ESC code before using this script (char with ASCII code \x1B).
 
 
-### sixteencolors.net   {#sixteencolors.net}
+### sixteencolors.net   {#sixteencolors_net}
 
 Large [ANSI art](http://en.wikipedia.org/wiki/ANSI_art) archive: [sixteencolors.net](http://sixteencolors.net/).
 
