@@ -25,7 +25,7 @@ readalso:
 ConEmu (начиная с версии 120520d) поддерживает последовательности
 [ANSI X3.64](http://en.wikipedia.org/wiki/ANSI_X3.64)
 и его расширения
-[xterm 256 color mode](http://www.frexx.de/xterm-256-notes/).
+xterm 256 color mode.
 
 * [Описание](#Description)
   * [Для обработки ANSI последовательностей](#ANSI_sequences_processing_requirements)
@@ -361,7 +361,7 @@ System colors (Standard console 16 colors):
 **Warning** Перед использованием `^[` нужно заменить на ESC код (символ с ASCII кодом \x1B).
 
 
-### sixteencolors.net   {#sixteencolors.net}
+### sixteencolors.net   {#sixteencolors_net}
 
 Большой архив [ANSI арта](http://en.wikipedia.org/wiki/ANSI_art): [sixteencolors.net](http://sixteencolors.net/).
 
