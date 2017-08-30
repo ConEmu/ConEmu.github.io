@@ -84,9 +84,7 @@ vim.exe -cur_console:h0 <Vim arguments here>
 
 #### Example 2: 256colors2.pl  {#Example_2_256colors2_pl}
 
-Perl script
-[256colors2.pl](http://www.frexx.de/xterm-256-notes/data/256colors2.pl)
-have to be runned as following:
+Perl script [256colors2.pl](/256colors2.pl) have to be runned as following:
 
 ~~~
 256colors2.pl -cur_console:h0

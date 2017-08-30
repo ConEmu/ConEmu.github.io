@@ -87,7 +87,7 @@ vim.exe -cur_console:h0 <Vim arguments here>
 #### Пример 2: 256colors2.pl  {#Example_2_256colors2_pl}
 
 Скрипт
-[256colors2.pl](http://www.frexx.de/xterm-256-notes/data/256colors2.pl)
+[256colors2.pl](https://conemu.github.io/en/256colors2.pl)
 нужно запускать так:
 
 ~~~

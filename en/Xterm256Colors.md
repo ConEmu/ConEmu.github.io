@@ -70,9 +70,7 @@ vim.exe -cur_console:h0 <Vim arguments here>
 
 ### Example 2: 256colors2.pl   {#Ex_2_256colors2.pl}
 
-Script (the copy is [here](/256colors2.pl))
-[256colors2.pl](http://www.frexx.de/xterm-256-notes/data/256colors2.pl),
-must be executed from `cmd.exe` as following:
+Script [256colors2.pl](/256colors2.pl) must be executed from `cmd.exe` as following:
 
 ~~~
 256colors2.pl -cur_console:h0
