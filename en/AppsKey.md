@@ -13,7 +13,7 @@ breadcrumbs:
 # What is an Apps key?
 
 This key (mentioned as `VK_APPS` in `WinUser.h`)
-is located between `RightWin` and `RightShift` on the most of
+is located between `RightWin` and `RightControl` on the most of
 [keyboard layouts](http://en.wikipedia.org/wiki/File:Klawiatura_maszynistki.jpg).
 
 Sometimes it's called `Application/Menu`.
