@@ -16,7 +16,8 @@ otherlang:
 
 {% include faq_disclaimer_en.md %}
 
-* [Q. How run cmd file to initialize the environment (cmd prompt)?](FAQ-6.html#q-6-12)
+* [Q. How run cmd file to initialize the environment (cmd prompt)?](#q-6-12)
+* [Q. How to let Shift-Home select prompt text to the start of command?](#q-6-13)
 * [Q. Is it possible to set up ConEmu to open multiple tabs on startup (e.g. Far, CMD, PowerShell)?](#q-6-1)
 * [Q. Duplicate Far Manager windows](#q-6-2)
 * [Q. How to configure a bitmap font?](#q-6-3)
@@ -58,6 +59,24 @@ initialized via file `C:\Your tools\YourScript.cmd`.
 ~~~
 ConEmu64.exe -nosingle -run cmd.exe /k "C:\Your tools\YourScript.cmd".
 ~~~
+
+
+
+
+#### Q. How to let Shift-Home select prompt text to the start of command?   {#q-6-13}
+
+Some essential information cannot be obtained by ConEmu automatically in some shells.
+Obviously, if ConEmu doesn't know where prompt input was started, it cannot select
+command text without prompt label.
+
+~~~
+Max@PC /mnt/c/Sources $ git clone ssh://...
+<---- prompt label ----><command..........>
+~~~
+
+Use [ANSI](AnsiEscapeCodes.html#ConEmu_specific_OSC) to notify ConEmu where command input starts.
+The solution depends on your [shell](TerminalVsShell.html), check examples for
+[PowerShell](PowershellPrompt.html#prompt) and [bash](ShellWorkDir.html#connector-ps1).
 
 
 

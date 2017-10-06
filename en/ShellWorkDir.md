@@ -45,7 +45,7 @@ Please read the rest of article about required profile modifications.
 * [About directories](#description)
 * [What you shall do to get **CD** support](#What_you_shall_do_to_get_CD_support)
   * [cmd and tcc](#cmd_and_tcc)
-  * [cygwin/msys shells via PS1](#connector-ps1)
+  * [WSL/cygwin/msys shells via PS1](#connector-ps1)
   * [bash and some other cygwin shells](#bash_and_other_cygwin_shells)
   * [zsh](#zsh)
   * [PowerShell](#PowerShell)
@@ -108,7 +108,8 @@ ConEmu will maintain **CD** for you automatically.
 This is the only option available for [Bash on Ubuntu on Windows](BashOnWindows.html).
 
 Use [ANSI](AnsiEscapeCodes.html#ConEmu_specific_OSC) in `PS1`
-environment variable to notify ConEmu about directory changes.
+environment variable to notify ConEmu about directory changes
+and prompt end (command input start).
 For example, you may configure your bash by appending
 to your `~/.bashrc` following sequence:
 
