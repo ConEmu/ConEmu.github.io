@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/AppsKey.html</loc>
-    <lastmod>2015-08-20</lastmod>
+    <lastmod>2017-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -148,7 +148,7 @@
     <loc>https://conemu.github.io/en/ConEmuFAQ.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://conemu.github.io/en/ConEmuFAQ.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://conemu.github.io/ru/ConEmuFAQ.html" />
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2017-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -420,7 +420,7 @@
     <loc>https://conemu.github.io/en/FAQ-6.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://conemu.github.io/en/FAQ-6.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://conemu.github.io/ru/FAQ-6.html" />
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2017-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -568,7 +568,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/KeyEvents.html</loc>
-    <lastmod>2015-08-28</lastmod>
+    <lastmod>2017-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -682,7 +682,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/RoadMap.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2017-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -932,7 +932,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/ShellWorkDir.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2017-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1028,7 +1028,7 @@
     <loc>https://conemu.github.io/en/Tasks.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://conemu.github.io/en/Tasks.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://conemu.github.io/ru/Tasks.html" />
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2017-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
