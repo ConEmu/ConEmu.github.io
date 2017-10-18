@@ -143,7 +143,7 @@ or get unix style tab-completion in the prompt.
 
 That is rather complicated and must depends on the shell you are using.
 ConEmu is a terminal, where user may run dozens of different [shells](TerminalVsShell.html).
-Ant it is almost impossible to hardcode all possibilities.
+And it is almost impossible to hardcode all possibilities.
 
 Moreover, there are existing [console](ConsoleApplication.html) solutions for these requests.
 

@@ -46,7 +46,7 @@
     <loc>https://conemu.github.io/en/AnsiEscapeCodes.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://conemu.github.io/en/AnsiEscapeCodes.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://conemu.github.io/ru/AnsiEscapeCodes.html" />
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -956,7 +956,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SshAgent.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2017-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1162,7 +1162,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/Xterm256Colors.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2017-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

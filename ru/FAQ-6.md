@@ -17,6 +17,7 @@ otherlang:
 {% include faq_disclaimer_ru.md %}
 
 * [Q. Как запустить cmd-файл инициализирующий переменные окружения (командную строку)?](#q-6-12)
+* [Q. Как настроить Shift-Home для выделения текста до начала команды (prompt)?](#q-6-13)
 * [Q. Можно ли запустить ConEmu так, чтобы в нем сразу было открыто несколько вкладок: Far, CMD, PowerShell ?](#q-6-1)
 * [Q. Двоятся окна Far Manager.](#q-6-2)
 * [Q. Как настроить растровый шрифт?](#q-6-3)
@@ -56,6 +57,24 @@ otherlang:
 ~~~
 ConEmu64.exe -nosingle -run cmd.exe /k "C:\Your tools\YourScript.cmd".
 ~~~
+
+
+
+
+#### Q. Как настроить Shift-Home для выделения текста до начала команды (prompt)?   {#q-6-13}
+
+Some essential information cannot be obtained by ConEmu automatically in some shells.
+Obviously, if ConEmu doesn't know where prompt input was started, it cannot select
+command text without prompt label.
+
+~~~
+Max@PC /mnt/c/Sources $ git clone ssh://...
+<---- prompt label ----><command..........>
+~~~
+
+Use [ANSI](AnsiEscapeCodes.html#ConEmu_specific_OSC) to notify ConEmu where command input starts.
+The solution depends on your [shell](TerminalVsShell.html), check examples for
+[PowerShell](PowershellPrompt.html#prompt) and [bash](ShellWorkDir.html#connector-ps1).
 
 
 

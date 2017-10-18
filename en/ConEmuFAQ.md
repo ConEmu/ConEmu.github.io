@@ -68,6 +68,7 @@ Frequenly asked user questions about ConEmu usage.
 
 ### [Configuration](FAQ-6.html#q-6-settings)  {#faq-6}
 * [Q. How run cmd file to initialize the environment (cmd prompt)?](FAQ-6.html#q-6-12)
+* [Q. How to let Shift-Home select prompt text to the start of command?](FAQ-6.html#q-6-13)
 * [Q. Is it possible to set up ConEmu to open multiple tabs on startup (e.g. Far, CMD, PowerShell)?](FAQ-6.html#q-6-1)
 * [Q. Duplicate Far Manager windows](FAQ-6.html#q-6-2)
 * [Q. How to configure a bitmap font?](FAQ-6.html#q-6-3)
