@@ -141,14 +141,17 @@ you may use `-new_console` or `-cur_console` switches.
 -cur_console[:switches]
    a - RunAs shell verb (as Admin on Vista+, user/pwd in Win2k and WinXP)
    b - create background tab
-   c[0] - force enable [silent] ‘Press Enter or Esc to close console’
-   C:"<iconfile>" - specify icon used in tab
+   c - force enable ‘Press Enter or Esc to close console’ confirmation
+       c0 - wait for Enter/Esc silently
+       c1 - don't close console automatically, even by Enter/Esc
+   C:"<iconfile>" - specifies an icon used in tab
    d:"<dir>" - specify working directory
+   e - use credentials for network resources only
    f - force starting console active, useful when starting several consoles simultaneously
    h<height> - i.e., h0 - turn buffer off, h9999 - switch to 9999 lines
    i - don't inject ConEmuHk into starting process
    I - (GuiMacro only) forces inheriting of root process contents, like ‘Duplicate root’ feature
-   m:/mnt - defines ‘/mnt’ prefix for Unix-path conversion
+   m:/mnt - defines ‘/mnt’ prefix for Unix-path conversion, m:"" - no prefix
    n - disable ‘Press Enter or Esc to close console’
    o - don't enable ‘Long console output’ when starting command from Far Manager
    p[N] - pty modes, N - bitmask: 1 - XTermKeys, 2 - BrPaste, 4 - AppCursorKeys; default is 5 (1+4)
@@ -159,7 +162,7 @@ you may use `-new_console` or `-cur_console` switches.
    t:"<tabname>" - rename new created tab
    u - ConEmu choose user dialog
    u:"<user>:<pwd>" - specify user/pwd in args
-   w - Enable ‘Overwrite’ mode in command prompt by default
+   w[0] - Enable [disable] ‘Overwrite’ mode in command prompt by default
    W:"<tabwallpaper>" - use specified wallpaper for the tab
    z - Don't use ‘Default terminal‘ feature for this command
 ~~~
