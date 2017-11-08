@@ -42,6 +42,7 @@ otherlang:
 | ConEmuDir | `C:\ConEmu` | папка, содержащая ConEmu.exe |
 | ConEmuDrive | `C:` | диск с двоеточием, содержащий ConEmu.exe |
 | ConEmuBaseDir | `C:\ConEmu\ConEmu` | папка, содержащая ConEmuC.exe |
+| ConEmuBaseDirShort | `C:\ConEmu\ConEmu` | то же что и ConEmuBaseDir, но с короткими путями (например `C:\PROGRA~1\...`) |
 | ConEmuWorkDir | `C:\Users` | рабочая папка, где был запущен ваш shell |
 | ConEmuWorkDrive | `C:` | диск с двоеточием, где был запущен ваш shell |
 | ConEmuArgs | <i>вариант</i> | аргументы, с которыми был запущен ConEmu.exe |

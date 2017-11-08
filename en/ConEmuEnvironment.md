@@ -41,6 +41,7 @@ otherlang:
 | ConEmuDir | `C:\ConEmu` | folder, containing ConEmu.exe |
 | ConEmuDrive | `C:` | drive letter with colon, containing ConEmu.exe |
 | ConEmuBaseDir | `C:\ConEmu\ConEmu` | folder, containing ConEmuC.exe |
+| ConEmuBaseDirShort | `C:\ConEmu\ConEmu` | same as ConEmuBaseDir, but using short names (e.g. `C:\PROGRA~1\...`) |
 | ConEmuWorkDir | `C:\Users` | folder, from where your shell was started |
 | ConEmuWorkDrive | `C:` | drive letter with colon, from where your shell was started |
 | ConEmuArgs | <i>vary</i> | arguments were specified to ConEmu.exe |
