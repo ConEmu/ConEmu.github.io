@@ -849,10 +849,12 @@ Scroll(<Type>,<Direction>,<Count=1>)
 ~~~
 Select(<Type>,<DX>,<DY>,<HE>)
  - Used internally for text selection
-   Type: 0 - Text, 1 - Block
+   Type: 0 - Text, 1 - Block, 2 - Stop
    DX: select text horizontally: -1/+1
    DY: select text vertically: -1/+1
    HE: to-home(-1)/to-end(+1) with text selection
+Select(2)
+ - Use to cancel active selection
 ~~~
 
 
