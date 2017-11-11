@@ -135,6 +135,6 @@ the credential vault.
 
 ![image](/img/ConEmuCreateDisabled.png)
 
-**See also**:
-- https://github.com/Maximus5/ConEmu/issues/1313
-- https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/502
+**More about the problem**:
+- [https://github.com/Maximus5/ConEmu/issues/1313]
+- [https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/502]
