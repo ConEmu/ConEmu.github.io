@@ -129,6 +129,7 @@ user impersonation than logon user you are trying to use `git` from. Or you star
 using ‘Run as administrator’ context menu item from Windows Explorer.
 
 Validate this guess by opening the `ConEmu` ["New console..." window](LaunchNewTab.html).
+
 If `Run as administrator` is checked and greyed out / disabled, your terminals will always be spawned
 with root priviliges, no matter which terminal type you select and thus `git` will fail to access
 the credential vault.
@@ -136,5 +137,5 @@ the credential vault.
 ![image](/img/ConEmuCreateDisabled.png)
 
 **More about the problem**:
-- [https://github.com/Maximus5/ConEmu/issues/1313]
-- [https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/502]
+- [https://github.com/Maximus5/ConEmu/issues/1313](https://github.com/Maximus5/ConEmu/issues/1313)
+- [https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/502](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/502)
