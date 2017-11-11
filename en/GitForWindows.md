@@ -110,13 +110,13 @@ IsSystem           : False
 IsAnonymous        : False
 ...
 Owner              : S-1-5-32-***
-User                 : S-1-5-21-1801674531-***
+User               : S-1-5-21-1801674531-***
 ...
 ```
 If the displayed `SID`s for `User` and `Owner` differ, you encounter an impersonation problem. `git push` and `git pull` can only be run correctly if the two `SID`s are equal. The most likely [reason](https://github.com/Maximus5/ConEmu/issues/1313#issuecomment-342789949) is that `ConEmu` root process was started from startup script or Windows Task Scheduler with different user impersonation than logon user you are trying to use `git` from.
 Validate this guess by opening the `ConEmu` "New console..." window (`CTRL+T`). If `Run as administrator` is checked and greyed out / disabled, your terminals will always be spawned with root priviliges, no matter which terminal type you select and thus `git` will fail to access the credential vault.
 
-![image](https://user-images.githubusercontent.com/5816039/32562372-c6f2989c-c4ae-11e7-980e-ae20f7367e8c.jpg)
+![image](/img/ConEmuCreateDisabled.png)
 
 **See also**:
 - https://github.com/Maximus5/ConEmu/issues/1313
