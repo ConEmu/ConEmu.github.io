@@ -6,6 +6,12 @@ title: "ConEmu | Restart Tab"
 breadcrumbs:
  - url: TableOfContents.html#launch-apps
    title: Launch Apps
+
+readalso:
+ - url: LaunchNewTab.html
+   title: Launch New Tab
+ - url: NewConsole.html
+   title: "-new_console and -cur_console"
 ---
 
 # Restart one of ConEmu's consoles

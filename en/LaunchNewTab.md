@@ -7,6 +7,12 @@ title: "ConEmu | Launch New Tab"
 breadcrumbs:
  - url: TableOfContents.html#launch-apps
    title: Launch Apps
+   
+readalso:
+ - url: RestartTab.html
+   title: Restart Tab
+ - url: NewConsole.html
+   title: "-new_console and -cur_console"
 ---
 
 # Launching applications in ConEmu
