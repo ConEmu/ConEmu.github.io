@@ -91,3 +91,33 @@ The exception actually happens at `msys-ncursesw6.dll!664465b1`.
 After some investigations found how to fix that.
 The problem was in `TERM` environment variable, it was set to `msys`.
 After removing that variable (clearing it) git's less begins to work normally.
+
+## Git Credential Manager for Windows 
+
+As of git `2.x.x`, [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows) is used as a shell-integrated authentication mechanism supporting both password-only and 2-factor authentication.
+
+In certain cases, terminals like `cmd` and `powershell` spawned by `ConEmu` may [encounter problems](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/502) when running `git pull` or `git push`. Git fails with a `Win32Exception` ("Failed to write credentials") if the terminal user does not have access to the OS provided credential vault. You can check for such a constellation by running the following command within a `ConEmu`-spawned `powershell` terminal. 
+```
+[Security.Principal.WindowsIdentity]::GetCurrent()
+```
+Output:
+```
+AuthenticationType : Kerberos
+ImpersonationLevel : None
+IsAuthenticated    : True
+IsGuest            : False
+IsSystem           : False
+IsAnonymous        : False
+...
+Owner              : S-1-5-32-***
+User                 : S-1-5-21-1801674531-***
+...
+```
+If the displayed `SID`s for `User` and `Owner` differ, you encounter an impersonation problem. `git push` and `git pull` can only be run correctly if the two `SID`s are equal. The most likely [reason](https://github.com/Maximus5/ConEmu/issues/1313#issuecomment-342789949) is that `ConEmu` root process was started from startup script or Windows Task Scheduler with different user impersonation than logon user you are trying to use `git` from.
+Validate this guess by opening the `ConEmu` "New console..." window (`CTRL+T`). If `Run as administrator` is checked and greyed out / disabled, your terminals will always be spawned with root priviliges, no matter which terminal type you select and thus `git` will fail to access the credential vault.
+
+![image](https://user-images.githubusercontent.com/5816039/32562372-c6f2989c-c4ae-11e7-980e-ae20f7367e8c.jpg)
+
+**See also**:
+- https://github.com/Maximus5/ConEmu/issues/1313
+- https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/502
