@@ -104,7 +104,7 @@ echo ^[[9999;1H
 **Warning** You need to change `^[` to ESC code before using this script in `cmd.exe` prompt
 (char with code ASCII \x1B). Because you can't insert the character with this ASCII code into
 prompt using environment variable is recommended. Script `SetEscChar.cmd` is located in the
-`%ConEmuBaseDir%` folder and it defines the variable `ESC.
+`%ConEmuBaseDir%` folder and it defines the variable `ESC`.
 
 ~~~
 call SetEscChar.cmd
