@@ -288,6 +288,10 @@
               eng: "Children GUI"
               rus: "Дочерние GUI"
               url: "SettingsChildGui.html"
+            -
+              eng: "ANSI execution"
+              rus: "ANSI execution"
+              url: "SettingsANSI.html"
         -
           eng: "Keys & Macro"
           rus: "Кнопки & Макросы"
@@ -323,8 +327,8 @@
               rus: "Far макросы"
               url: "SettingsFarMacros.html"
             -
-              eng: "Views"
-              rus: "Views"
+              eng: "Panel Views"
+              rus: "Panel Views"
               url: "SettingsFarView.html"
         -
           eng: "Info"

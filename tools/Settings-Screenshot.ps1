@@ -72,7 +72,7 @@ $pages = @(
     @{id=$IDD_SPG_HIGHLIGHT;   child=1; title="Highlight";   file="Settings-Highlight.png";},
     @{id=$IDD_SPG_FEATURE_FAR; child=0; title="Far Manager"; file="Settings-Far.png";},
     @{id=$IDD_SPG_FARMACRO;    child=1; title="Far macros";  file="Settings-Far-Macros.png";},
-    @{id=$IDD_SPG_VIEWS;       child=1; title="Views";       file="Settings-Far-View.png";},
+    @{id=$IDD_SPG_VIEWS;       child=1; title="Panel Views"; file="Settings-Far-View.png";},
     @{id=$IDD_SPG_INFO;        child=0; title="Info";        file="Settings-Info.png";},
     @{id=$IDD_SPG_DEBUG;       child=1; title="Debug";       file="Settings-Debug.png";}
     @{id=0}
