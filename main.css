@@ -39,14 +39,14 @@ div {
   box-shadow: 0 0 8px 3px #93a1a1;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1010px) {
   .wrapper {
-    width: 960px;
-    min-width: 760px;
+    width: 990px;
+    min-width: 790px;
   }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1010px) {
   .wrapper {
     width: 100%;
   }
@@ -319,7 +319,7 @@ table.no-border tr, table.no-border th, table.no-border td {
   content: '';
 }
 .container {
-  width: 734px;
+  width: 764px;
   float: right;
   overflow: hidden;
 }
@@ -555,7 +555,7 @@ div.post_navigation, div.build_download {
 }
 
 .block li {
-  line-height: 1.5em !important;
+  line-height: 2.0em !important;
 }
 
 .block .MenuItemA {
