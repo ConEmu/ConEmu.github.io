@@ -26,7 +26,7 @@ breadcrumbs:
 
 
 
-RTEXT
+Label font
 
 
 
@@ -61,7 +61,7 @@ Text labels font height in Thumbnails mode
 
 Text labels font name in Thumbnails mode
 
-RTEXT
+Label font
 
 
 

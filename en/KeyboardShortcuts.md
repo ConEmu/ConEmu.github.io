@@ -123,7 +123,7 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | *NoDefault* | `Multi.NewWindow` | Create new window (after ‘Create confirmation’) |
 | Win+N | `Multi.NewConsolePopup` | Show create new console popup menu |
 | *NoDefault* | `Multi.NewConsolePopup2` | Show create new console popup menu with task submenus |
-| Win+G | `Multi.NewAttach` | Attach existing Console or GUI application |
+| Win+Shift+G | `Multi.NewAttach` | Attach existing Console or GUI application |
 | Ctrl+Shift+O | `Multi.NewSplitV` <br/> `Split(0,0,50)` | Split: Duplicate active ‘shell’ split to bottom |
 | Ctrl+Shift+E | `Multi.NewSplitH` <br/> `Split(0,50,0)` | Split: Duplicate active ‘shell’ split to right |
 | Apps+Enter | `Multi.SplitMaximize` <br/> `Split(3)` | Split: Maximize/restore active pane |
@@ -137,13 +137,20 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Apps+DownArrow | `Multi.SplitFocusD` <br/> `Split(2,0,1)` | Split: Put focus to nearest pane downward |
 | Apps+LeftArrow | `Multi.SplitFocusL` <br/> `Split(2,-1,0)` | Split: Put focus to nearest pane leftward |
 | Apps+RightArrow | `Multi.SplitFocusR` <br/> `Split(2,1,0)` | Split: Put focus to nearest pane rightward |
-| Win+Q | `Multi.Next` | Switch next console |
-| Win+Shift+Q | `Multi.NextShift` | Switch previous console |
+| Apps+Alt+X | `Multi.SplitSwap` <br/> `Split(4)` | Split: Exchange (swap) with nearest pane |
+| Apps+Alt+UpArrow | `Multi.SplitSwapU` <br/> `Split(4,0,-1)` | Split: Exchange (swap) with nearest pane upward |
+| Apps+Alt+DownArrow | `Multi.SplitSwapD` <br/> `Split(4,0,1)` | Split: Exchange (swap) with nearest pane downward |
+| Apps+Alt+LeftArrow | `Multi.SplitSwapL` <br/> `Split(4,-1,0)` | Split: Exchange (swap) with nearest pane leftward |
+| Apps+Alt+RightArrow | `Multi.SplitSwapR` <br/> `Split(4,1,0)` | Split: Exchange (swap) with nearest pane rightward |
+| Win+Shift+Q | `Multi.Next` | Switch next console |
+| *NoDefault* | `Multi.NextShift` | Switch previous console |
 | Win+192/*тильда*/ | `Multi.Recreate` | Recreate active console |
 | Win+A | `Multi.AltCon` | Show alternative console buffer (last command output) |
 | Pause | `Multi.Pause` <br/> `Pause` | Pause current console |
 | *NoDefault* | `Multi.Scroll` | Switch bufferheight mode |
-| Apps+G | `Multi.GroupInput` <br/> `GroupInput` | Group keyboard input for visible splits |
+| Apps+G | `Multi.GroupInput` <br/> `GroupInput(0)` | Group keyboard input for visible splits |
+| Apps+ Shift+G | `Multi.GroupInputAll` <br/> `GroupInput(3)` | Group keyboard input for all consoles |
+| Apps+ Alt+G | `Multi.GroupInputKey` <br/> `GroupInput(6)` | Add active console into group keyboard input |
 | *NoDefault* | `Multi.Detach` <br/> `Detach` | Detach active RealConsole from ConEmu |
 | *NoDefault* | `Multi.Unfasten` <br/> `Unfasten` | Unfasten active RealConsole from active ConEmu window |
 | Win+Delete | `Multi.Close` <br/> `Close(0)` | Close active console |
@@ -208,6 +215,8 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Apps+PageDown | `Key.BufHfPgDn` <br/> `Scroll(2,+1)` | Scroll buffer one half-page down |
 | Apps+Home | `Key.BufTop` <br/> `Scroll(3,-1)` | Scroll buffer to the top |
 | Apps+End | `Key.BufBottom` <br/> `Scroll(3,+1)` | Scroll buffer to the bottom |
+| Ctrl+Alt+PageUp | `Key.BufPrUp` <br/> `Scroll(5,-1)` |  |
+| Ctrl+Alt+PageDown | `Key.BufPrDn` <br/> `Scroll(5,+1)` |  |
 | Apps+BACK | `Key.BufCursor` <br/> `Scroll(4)` | Scroll buffer to the cursor position |
 | *NoDefault* | `Key.ResetTerm` <br/> `Write(\`\\ec\`)` | Reset terminal: clear screen, backscroll, move cursor to the upper-left corner |
 | Ctrl+WheelUp | `FontLargerKey` <br/> `FontSetSize(1,2)` | Make main font larger |

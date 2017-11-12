@@ -29,13 +29,13 @@ readalso:
 #### Highlight and goto  {#id1765}
 
 
-RTEXT
+External editor, when Far not started
 
 
 
 
 
-LTEXT
+Available macros: ‘%1’ - line number, ‘%2’ - column number\n‘%3’ - C:\\Path\\File, ‘%4’ - C:/Path/File, ‘%5’ - /C/Path/File\nUse ‘#’ prefix to run editor outside of ConEmu
 
 
 

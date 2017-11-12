@@ -26,7 +26,7 @@ readalso:
 
 
 
-RTEXT
+Schemes
 
 #### Save  {#id2123}
 
@@ -46,83 +46,83 @@ RTEXT
 
 
 
-RTEXT
+0.
 
 
 
-RTEXT
+4/1.
 
 
 
-RTEXT
+8.
 
 
 
-RTEXT
+12.
 
 
 
-RTEXT
+1/4.
 
 
 
-RTEXT
+5.
 
 
 
-RTEXT
+9.
 
 
 
-RTEXT
+13.
 
 
 
-RTEXT
+2.
 
 
 
-RTEXT
+6/3.
 
 
 
-RTEXT
+10.
 
 
 
-RTEXT
+14.
 
 
 
-RTEXT
+3/6.
 
 
 
-RTEXT
+7.
 
 
 
-RTEXT
+11.
 
 
 
-RTEXT
+15.
 
 
 
-RTEXT
+Text
 
 
 
-RTEXT
+Back
 
 
 
-RTEXT
+Popup
 
 
 
-RTEXT
+Back
 
 
 
@@ -152,67 +152,67 @@ Choose background color index, used to increase foreground color index
 
 
 
-RTEXT
+16.
 
 
 
-RTEXT
+20.
 
 
 
-RTEXT
+24.
 
 
 
-RTEXT
+28.
 
 
 
-RTEXT
+17.
 
 
 
-RTEXT
+21.
 
 
 
-RTEXT
+25.
 
 
 
-RTEXT
+29.
 
 
 
-RTEXT
+18.
 
 
 
-RTEXT
+22.
 
 
 
-RTEXT
+26.
 
 
 
-RTEXT
+30.
 
 
 
-RTEXT
+19.
 
 
 
-RTEXT
+23.
 
 
 
-RTEXT
+27.
 
 
 
-RTEXT
+31.
 
 
 

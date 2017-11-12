@@ -40,7 +40,7 @@ Ignore cursor size in real console, always show cursor with specified size
 
 Specified size of cursor in percents. Use together with ‘Fixed cursor size’
 
-LTEXT
+(5-100) %
 
 
 
@@ -71,7 +71,7 @@ Specified minimal size of cursor in pixels (regardless of ‘Fixed cursor size�
 
 
 
-LTEXT
+(0-100) %
 
 
 

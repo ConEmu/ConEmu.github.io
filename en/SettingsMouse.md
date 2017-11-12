@@ -48,15 +48,15 @@ Allows to move ConEmu window via dragging it by client area.
 
 
 
-RTEXT
+Condition
 
 
 
-RTEXT
+Right
 
 
 
-RTEXT
+Middle
 
 
 

@@ -59,7 +59,7 @@ Enable processing of ANSI escape sequences, ‘Inject ConEmuHk’ must be checke
 #### Disable all flashing  {#id1719}
 Disable all flashing (from consoles) on Windows taskbar. 3rd-state - allow short flashing.
 
-#### Suppress bells  {#id2598}
+#### Suppress bells (beeps)  {#id2598}
 Suppress annoying bells produced by echoing char(7), Beep and MessageBeep functions. Inject ConEmuHk is required.
 
 #### Process '-new_console' and '-cur_console' switches  {#id2640}
@@ -69,7 +69,7 @@ Enable processing of '-new_console' and '-cur_console' switches in your shell pr
 Hook 'start' command in your cmd's prompt and batches started in ConEmu tabs to run console applications in new ConEmu tabs
 
 #### Process Ctrl-Z in ReadConsole  {#id2878}
-Treat Ctrl-Z as ‘EndOfStream’. On new line press Ctrl-Z and Enter. Refer to the [conemu#465](https://github.com/Maximus5/ConEmu/issues/465) for details (Go input streams).
+Treat Ctrl-Z as ‘EndOfStream’. On new line press Ctrl-Z and Enter. Refer to the gh#465 for details (Go input streams).
 
 #### Kill ssh-agent with ConEmu  {#id3075}
 Terminate all `ssh-agent.exe` processes started from ConEmu's consoles on ConEmu termination.

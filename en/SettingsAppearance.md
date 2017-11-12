@@ -65,6 +65,9 @@ Scrollbar appear delay when ‘Always show scrollbar’ is off or in 3rd-state
 #### Disappear
 Scrollbar disappear delay when ‘Always show scrollbar’ is off or in 3rd-state
 
+#### Dynamic scrollbar range (backscroll buffer)  {#id3090}
+Increase maximum scrollbar position with console output grows
+
 
 
 ## Title bar (Caption) and border options  {#id2165}

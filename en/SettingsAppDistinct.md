@@ -61,7 +61,3 @@ breadcrumbs:
 
 
 
-CTEXT
-
-
-

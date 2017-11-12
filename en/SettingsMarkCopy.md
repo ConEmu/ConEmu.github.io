@@ -35,7 +35,7 @@ Bash leave one space-character on the right edge of console when wrapping lines,
 #### EOL  {#id2367}
 Choose preferred line separator (\r\n, \n or \r)
 
-RTEXT
+Copying format
 
 
 
@@ -45,11 +45,11 @@ RTEXT
 
 
 
-RTEXT
+Foreground
 
 
 
-RTEXT
+Background
 
 
 
