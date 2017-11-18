@@ -27,11 +27,11 @@ Enable processing of ANSI escape sequences, ‘Inject ConEmuHk’ must be checke
 
 
 
-LTEXT
+Use `^]]9;6;\"`*`macro`*`\"^]\\` for GuiMacro execution
 
 
 
-LTEXT
+Use `^]]9;7;\"`*`cmd`*`\"^]\\` for process creation (required for GitShowBranch.cmd)
 
 
 

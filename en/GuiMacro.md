@@ -893,6 +893,8 @@ SetOption("<Name>",<Value>[,<IsRelative>])
      Value: 0(disable) .. 1(enable)
    "AlwaysOnTop": place ConEmu window above all non-topmost windows
      Value: 2 - toggle, 1 - enable, 0 - disable
+   "bgImage": change background image
+      Value: file or color, e.g. "C:\image.jpg" or "#3182a4"
    "bgImageDarker": darkening of background image
      Value: 0 .. 255
    "FarGotoEditorPath": path to the highlight/error editor

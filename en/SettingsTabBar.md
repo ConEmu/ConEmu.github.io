@@ -26,7 +26,7 @@ breadcrumbs:
 * **Always show**
 
 
-#### Internal CtrlTab  {#id1531}
+#### Internal Ctrl+Tab  {#id1531}
 Handle CtrlTab and CtrlShiftTab internally (by ConEmu). These keystrokes will not be sent to console window, but You can easily switch between consoles (panels).
 
 #### Lazy tab switch  {#id1532}
@@ -58,11 +58,11 @@ Iterate opened Far windows with ‘Host-key’+Number
 #### Tabs on bottom  {#id2481}
 
 
-LTEXT
+Tab font
 
 
 
-RTEXT
+Charset
 
 
 
@@ -73,7 +73,7 @@ RTEXT
 
 
 
-LTEXT
+%s - Title, %c - Console #, %n - Active process name, %p - PID,\n%m...m, %M...M - mark ‘...’ for active (m) and inactive (M) tab\n%a - ‘Admin’, %d - current shell directory, %f - folder, %% - %
 
 
 
@@ -105,11 +105,11 @@ When this is checked - specified suffix will be appended in tabs titles, started
 
 
 
-RTEXT
+Tab button (labels)
 
 
 
-RTEXT
+Tab bar
 
 
 

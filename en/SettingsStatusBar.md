@@ -26,19 +26,19 @@ breadcrumbs:
 
 
 
-RTEXT
+Name
 
 
 
-RTEXT
+Charset
 
 
 
-RTEXT
+Back
 
 
 
-RTEXT
+Light
 
 
 
@@ -70,11 +70,11 @@ RTEXT
 
 
 
-LTEXT
+Available columns
 
 
 
-LTEXT
+Selected columns
 
 #### >>  {#id2507}
 

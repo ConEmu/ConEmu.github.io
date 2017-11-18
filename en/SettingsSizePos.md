@@ -85,7 +85,7 @@ Length of backscroll buffer in lines. Maximum supported value is 32766.
 
 
 
-RTEXT
+16bit height
 
 
 

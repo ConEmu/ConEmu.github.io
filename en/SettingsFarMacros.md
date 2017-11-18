@@ -26,11 +26,11 @@ Off - all RClicks passed to console On - EMenu called instead of RClick 3rd-stat
 #### Safe Far close  {#id1654}
 Try to close Far Manager softly, instead of closing console window, when you close ConEmu window
 
-LTEXT
+Close tab (Panel, Editor, Viewer)
 
 
 
-LTEXT
+Save all editors
 
 
 

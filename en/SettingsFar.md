@@ -82,7 +82,7 @@ Enable sizing of left and right panel by dragging with mouse. 3rd-state - resize
 
 
 
-LTEXT
+%s - Title, %c - Console #, %n - Active process name, %p - PID, %a - ‘Admin’, %% - %,\n%m...m, %M...M - mark ‘...’ for active (m) and inactive (M) tab\n%i - Far window number (you can see it in standard F12 menu)
 
 
 

@@ -53,10 +53,13 @@ Task parameters (‘/dir’, ‘/icon’) Example: /dir "C:\\" /icon "cmd.exe" /
 #### Commands (application, arguments, "-new_console" params) Delimit commands with empty lines Each command creates tab in ConEmu when group started Mark active console tab with '>' sign Start console 'As Administrator' with '`*`' sign
 Commands (application, arguments, ‘-new_console’) Delimit commands with empty lines Each command creates tab or pane on group start Mark active console tab with '>' sign Start console 'As Admin' with '`*`' sign
 
-#### Add default tasks...  {#id2632}
+#### Add/refresh default tasks...  {#id2632}
 
 
 #### Reload...  {#id2131}
+
+
+#### Clone  {#id3087}
 
 
 #### +  {#id2122}
@@ -71,7 +74,7 @@ Commands (application, arguments, ‘-new_console’) Delimit commands with empt
 #### Down  {#id2127}
 
 
-RTEXT
+Add
 
 #### Tab...  {#id2128}
 

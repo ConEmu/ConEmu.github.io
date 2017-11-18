@@ -22,11 +22,11 @@ breadcrumbs:
 
 
 
-RTEXT
+Size
 
 
 
-RTEXT
+Width
 
 
 
@@ -90,7 +90,7 @@ You can specify additional font for drawing pseudographics or specified range of
 *Width*  
 Enable or disable ‘Clear Type’ for alternative font. Accurate pseudographics looks better.
 
-LTEXT
+Unicode ranges, the default is \"2013-25C4;\"
 
 #### Apply  {#id2838}
 Don't forger to apply manually entered UCS range to observe the result.
@@ -103,19 +103,19 @@ WIDTH for pseudographics font. It must be wider than main font to avoid "dashed"
 
 ConEmu is able to use normal, bold and italic fonts side by side. This feature may be useful for prompt decoration or with Colorer plugin for Far Manager (1.7x, 2.x).
 
-LTEXT
+By the cost of background colors you may change the used font to bold or italic
 
 
 
-RTEXT
+Bold
 
 
 
-RTEXT
+Italic
 
 
 
-RTEXT
+Replace
 
 
 

@@ -33,6 +33,9 @@ breadcrumbs:
 * **Do nothing**
 
 
+#### Allow Windows to POSIX path conversion  {#id3088}
+
+
 
 
 ## Paste mode #2 (Ctrl+V)  {#id3048}
@@ -46,6 +49,9 @@ breadcrumbs:
 * **Do nothing**
 
 
+#### Allow Windows to POSIX path conversion  {#id3089}
+
+
 
 
 ## Confirm critical actions  {#id3049}
@@ -56,9 +62,8 @@ breadcrumbs:
 #### Long text paste: avoid non-responsive console until the paste finishes  {#id2225}
 
 
+#### chars
 
-
-RTEXT
 
 
 
