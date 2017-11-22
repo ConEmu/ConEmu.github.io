@@ -24,24 +24,26 @@ readalso:
 
 # cygwin/msys terminal connector
 
-This helper tool is an experimental attempt to create the symbiont
+This helper tool is an attempt to create the symbiont
 of POSIX enabled pty and WinAPI full-featured terminal.
 
 It supports:
 
 * [Cygwin](https://www.cygwin.com/): `conemu-cyg-32.exe` and `conemu-cyg-64.exe`;
 * [MSYS 1.0](http://www.mingw.org/wiki/msys): `conemu-msys-32.exe`;
-* [MSYS 2.0](https://msys2.github.io/): `conemu-msys2-32.exe` and `conemu-msys2-64.exe`.
+* [MSYS 2.0](https://msys2.github.io/) and [git for Windows](https://git-for-windows.github.io/): `conemu-msys2-32.exe` and `conemu-msys2-64.exe`.
+* [Windows subsystem for Linux](BashOnWindows.html): `conemu-cyg-64.exe` with [wslbridge](BashOnWindows.html#wslbridge).
 
-Please note, status of this plugin is ‘Experimental’.
+Since [ConEmu build 170705](/blog/2017/07/05/Build-170705.html) connector binaries
+are distributed with [ConEmu 7z-pack and installer](VersionComparison.html).
 
 
 * [Screenshots](#screenshots)
 * [How to use connector](#how-to-use)
   * [WARNING](#warning)
 * [Examples](#examples)
-  * [MSYS2 x64 bash example (desktop shortcut)](#msys2-shortcut)
-  * [MSYS2 x64 bash example (Task)](#msys2-task)
+  * [Cygwin 64 bash](#cygwin64-shortcut)
+  * [Bash On Windows (WSL)](#wslbridge)
   * [Want to run specific shell or pass arguments?](#specific-shell)
 * [Supported switches](#switches)
 
@@ -56,22 +58,23 @@ Please note, status of this plugin is ‘Experimental’.
 
 ## How to use connector  {#how-to-use}
 
-**Please note**, in future installation steps may be changed,
-or even connector files may be integrated into ConEmu distro
-and starting POSIX enabled terminal will be automatic.
+Since [ConEmu build 170705](/blog/2017/07/05/Build-170705.html) connector binaries
+is included in [ConEmu 7z-pack and installer](VersionComparison.html).
 
-1. Connector is constantly changing, so first ensure that you are using
-   <strong><a href="{{ site.fosshub }}" rel="nofollow">the latest available ConEmu version</a></strong>!
-2. Download latest [release of connector](https://github.com/Maximus5/cygwin-connector/releases).
-3. Choose appropriate binary from downloaded 7z archive, e.g. `conemu-cyg-32.exe` for 32-bit Cygwin.
-4. Unpack this file to your bin folder, e.g. `C:/Cygwin/bin` (where `sh.exe` is located).
-5. Run connector in ConEmu tab instead of shell.
-6. Get profit or [report a bug](Issues.html).
+Default tasks are created for **new** configurations: `{Bash::bash}`, `{Bash::Git bash}`,
+`{Bash::CygWin bash x64}`, etc.
+
+If you already have these tasks, press [Add/refresh default tasks](Tasks.html#add-default-tasks)
+to update existing default tasks contents.
+
+
 
 ### WARNING  {#warning}
 
-* **Do not** run connector from cygwin or msys shell! Different cygwin/msys layers will cause problems!
-* Connector might be started as [ROOT PROCESS](https://conemu.github.io/en/RootProcess.html) or from some native shell (like cmd.exe) already started in ConEmu.
+* **Do not** run connector from cygwin or msys shell!
+  Different cygwin/msys layers will cause problems!
+* Connector might be started as [ROOT PROCESS](https://conemu.github.io/en/RootProcess.html)
+  or from some native shell (like cmd.exe) already started in ConEmu.
 
 
 
@@ -79,32 +82,33 @@ and starting POSIX enabled terminal will be automatic.
 
 Here are few examples to clarify command changes.
 
+**NB** Following examples are one-line commands, they are splitted by lines just to simplification.
 
-### MSYS2 x64 bash example (desktop shortcut)  {#msys2-shortcut}
-For example, you run your MSYS2 x64 bash from shortcut from desktop (old style):
 
-~~~
-ConEmu64.exe -run set MSYSTEM=MINGW64 & c:\tools\msys64\usr\bin\bash.exe --login -i
-~~~
+### Cygwin 64 bash  {#cygwin64-shortcut}
 
-Just change it to:
+Supposing cygwin is installed into `C:\cygwin64`.
 
-~~~
-ConEmu64.exe -run set MSYSTEM=MINGW64 & conemu-msys2-64.exe
-~~~
+```
+set CHERE_INVOKING=1
+ & set "PATH=C:\cygwin64\bin;%PATH%"
+ & %ConEmuBaseDirShort%\conemu-cyg-64.exe /usr/bin/bash.exe --login -i -new_console:p:C:"C:\cygwin64\Cygwin.ico"
+```
 
-### MSYS2 x64 bash example (Task)  {#msys2-task}
-Same with [Tasks](Tasks.html):
+* `CHERE_INVOKING=1` tells cygwin shell don't `CD` to user profile, but use ConEmu working directory.
+* `set "PATH=C:\cygwin64\bin;%PATH%"` forces proper `cygwin1.dll` required by `conemu-cyg-64.exe`.
+* `/usr/bin/bash.exe --login -i` is the shell with arguments, you may use any other shell like `zsh`, `fish`, etc.
+* `-new_console:p:C:"C:\cygwin64\Cygwin.ico"` is [ConEmu special switch](NewConsole.html).
 
-~~~
-set MSYSTEM=MINGW64 & c:\tools\msys64\usr\bin\bash.exe --login -i
-~~~
 
-Change it to:
+### Bash On Windows (WSL)  {#wslbridge}
 
-~~~
-set MSYSTEM=MINGW64 & conemu-msys2-64.exe
-~~~
+On Windows 10 with installed Windows Subsystem for Linux.
+
+```
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/mnt
+```
+
 
 
 ### Want to run specific shell or pass arguments?  {#specific-shell}
@@ -124,7 +128,7 @@ You may run `conemu-cyg-32.exe --help` to learn about options.
 ~~~
 ConEmu cygwin/msys connector version 0.6
 Usage: conemu-cyg-32 [switches] [- | shell [shell switches]]
-  -h, --help       this help
+  -?, -h, --help   this help
   -d, --dir <dir>  chdir to `dir` before starting shell
                    forces `set CHERE_INVOKING=1`
   -t <new-term>    forces `set TERM=new-term`
@@ -136,4 +140,5 @@ Usage: conemu-cyg-32 [switches] [- | shell [shell switches]]
   --shlvl          forces `set SHLVL=1` to avoid terminal reset on exit
   --verbose        additional information during startup
   --version        print version of this tool
+  --wsl            run wslbridge to start Bash on Ubuntu on Windows 10
 ~~~
