@@ -25,6 +25,8 @@ If you are using old build, there is big chance that your problem was fixed alre
 Don't waste your time reporting problems of Old Builds.
 Why not to update?
 
+![Old Build warning in the issue template](/img/OldBuild.png)
+
 Note, if you are using third-party bundles (like cmder)
 you most probably are using not latest build.
 There is ConEmu **internal** updater.
