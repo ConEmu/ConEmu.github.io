@@ -80,8 +80,8 @@ Similar dialog may be opened when you [Restart current console](RestartTab.html)
 ### Create new console without dialog   {#Create_new_console_without_dialog}
 
 You may switch off create new console confirmation,
-just disable ‘Create confirmation’ checkbox on the
-[Appearance](Settings.html#Appearance) settings page.
+just disable ‘Confirm creating new console/tab’ checkbox on the
+[Confirm](Settings.html#Confirm) settings page.
 
 **NB** You may pop up confirmation dialog even if ‘Create confirmation’ unchecked.
 Just hold Shift while creating console from toolbar, System menu,
