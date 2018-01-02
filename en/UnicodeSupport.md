@@ -218,7 +218,7 @@ ConEmuC -CheckUnicode
 ### UTF-8 test   {#utf-8-test}
 
 ~~~
-cmd /c '%ConEmuBaseDir%\Addons\utf-8-test.cmd'
+cmd /c "%ConEmuBaseDir%\Addons\utf-8-test.cmd"
 ~~~
 
 ![‘utf-8-test.cmd’ output](/img/ConEmuUnicodeTest2.png)
