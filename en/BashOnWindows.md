@@ -14,7 +14,7 @@ breadcrumbs:
 # Bash on Windows
 
 At first, official place for bugs of ‘Windows Subsystem for Linux’ is:
-<https://github.com/Microsoft/BashOnWindows/issues/>.
+<https://github.com/Microsoft/WSL/issues/>.
 
 **WSL** or ‘Windows Subsystem for Linux’ or ‘Bash on Ubuntu on Windows’
 was brought to you by efforts of Microsoft and Canonical.
@@ -30,10 +30,10 @@ without using of virtual machines or recompilations.
   * [Good places to start](#start)
   * [TLDR: WSL Installation](#TLDR)
 * [Some techinfo](#techinfo)
+* [Preferred way to run WSL](#connector)
 * [Get arrows working in ConEmu](#arrows)
-  * Solution 1: Default task {bash} {#arrows-sol-1}
+  * [Solution 1: Default task {bash}](#arrows-sol-1)
   * [Solution 2: StatusBar's Terminal modes](#arrows-sol-2)
-  * [Solution 3: wslbridge](#arrows-sol-3)
 * [WSLBridge: Get 24-bit colors working in ConEmu](#wslbridge)
   * [TLDR: Just run wslbridge](#TLDR2)
   * [How to get 24-bit colors working](#true-color-example)
@@ -96,6 +96,34 @@ Both problem have workarounds, read further.
 
 
 
+## Preferred way to run WSL  {#connector}
+
+Ryan Prichard has created [wslbridge](https://github.com/rprichard/wslbridge)
+which allows anyone to run WSL in any POSIX enabled terminal like mintty
+or [ConEmu cygwin/msys connector](CygwinMsysConnector.html).
+
+**Note** If you don't use connector/wslbridge you may observe bugs with Bash.
+
+The required files of wslbridge and connector are shipped with ConEmu since
+build [170730](/blog/2017/07/30/Build-170730.html).
+Just download and install latest [Preview or Alpha](VersionComparison.html) version
+and be sure that your [Tasks](Tasks.html) are [updated](Tasks.html#add-default-tasks).
+
+You `{Bash::bash}` task command shall be something like:
+
+~~~
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pnm:/mnt -t bash -l
+~~~
+
+And its task parameters:
+
+~~~
+/dir %CD% /icon "%USERPROFILE%\AppData\Local\lxss\bash.ico"
+~~~
+
+
+
+
 ## Get arrows working in ConEmu  {#arrows}
 
 This solution is **only for [Bash on Windows (WSL)](https://github.com/Microsoft/BashOnWindows)**!
@@ -116,7 +144,7 @@ and
    [Update](UpdateModes.html) your installation!
 2. ConEmu creates new task for ‘Bash on Windows’ automatically,
    you may check this by running `ConEmu64.exe -basic -run {bash}`.
-   Also, you may call [Add default tasks...](SettingsTasks.html#id2632)
+   Also, you have to call [Add/refresh default tasks...](SettingsTasks.html#id2632)
    from [Tasks page](SettingsTasks.html) on your existing config.
 3. So, just run `{bash}` [task](Tasks.html), arrow keys are expected
    to be working!
@@ -143,55 +171,18 @@ of ‘App Keys’. The solution is simple: just LeftClick the ‘Terminal modes�
 and change ‘AppKeys’ mode!
 
 
-### Solution 3: wslbridge  {#arrows-sol-3}
-
-Another alternative is [wslbridge](#wslbridge) described below.
 
 
+## Get 24-bit colors working in ConEmu  {#wslbridge}
 
+As described in [Preferred way to run WSL](#connector), wslbridge and connector
+are shipped with ConEmu since build [170730](/blog/2017/07/30/Build-170730.html).
 
-## WSLBridge: Get 24-bit colors working in ConEmu  {#wslbridge}
-
-Ryan Prichard has created [wslbridge](https://github.com/rprichard/wslbridge)
-which allows anyone to run WSL in any POSIX enabled terminal like mintty
-or [ConEmu cygwin/msys connector](CygwinMsysConnector.html).
-
-If you don't like to download megabytes of cygwin's installation,
-you may try precompiled distribution of
-[wsltty](https://github.com/mintty/wsltty/releases).
-It's just a 32-bit bundle of mintty, cygwin1.dll and wslbridge.
-
-Does not matter what bitness of cygwin binaries you are trying,
-wslbridge is just a ‘bridge’ between Windows terminal and your
-64-bit linux applications which are running in WSL.
-
-So, example of minimal working environment is below.
-Just place these files in some folder on your NTFS drive,
-I used the folder `C:\MSYS\WSL`.
-
-| File | Source |
-|:---|:---|
-| conemu-cyg-32.exe | [latest connector release](https://github.com/Maximus5/cygwin-connector/releases) |
-| wslbridge.exe <br/> wslbridge-backend | [wslbridge-*-cygwin32.tar.gz](https://github.com/rprichard/wslbridge/releases) |
-| cygwin1.dll | <https://cygwin.com/> or [wsltty](https://github.com/mintty/wsltty/releases) |
-
-Now you may run the command below. Don't forget to change `C:\MSYS\WSL` if you use different folder!
-Also read about [-new_console switch](NewConsole.html).
-
-~~~
-conemu-cyg-32.exe ./wslbridge.exe -t "-new_console:C:%LOCALAPPDATA%\lxss\bash.ico" "-new_console:d:C:\MSYS\WSL" -new_console:np
-~~~
 
 
 ### TLDR: Just run wslbridge  {#TLDR2}
 
-Well, you may run `wsl-con.cmd` which would set up wslbridge for you.
-
-**Warning**, if you have installed ConEmu in ‘Program Files’,
-or any other protected location, please run `wsl-con.cmd`
-as Administrator (from elevated ConEmu tab).
-
-Download [wsl-con.cmd here](https://github.com/Maximus5/ConEmu/raw/daily/Release/ConEmu/wsl/wsl-con.cmd).
+Well, you may run `wsl-con.cmd` which starts wslbridge in new ConEmu tab for you.
 
 
 ### How to get 24-bit colors working  {#true-color-example}
