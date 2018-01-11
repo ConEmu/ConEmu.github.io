@@ -27,6 +27,7 @@ readalso:
   * [Icon file   ](#Icon-file)
   * [Sync dir (Inside mode only)   ](#Sync-dir)
   * [Registering menu items  ](#Register)
+    * [Extended menu items](#extended)
 
 ![ConEmu Settings: Integration](/img/Settings-Integration.png)
 
@@ -150,6 +151,8 @@ CMD and others:
 
 Don't forget to press ‘Register’ button when you fill all fields.
 Menu items are **stored in Windows registry** to allow Explorer to show them!
+
+#### Extended menu items  {#extended}
 
 If you want to show registered item explicitly with ‘Shift’ key pressed,
 just hold ‘Shift’ key when you click ‘Register’ button. The menu item
