@@ -10,6 +10,10 @@ breadcrumbs:
 readalso:
  - url: CygwinStartDir.html
    title: Cygwin Startup Directory
+ - url: GitForWindows.html
+   title: Git-for-Windows
+ - url: Tasks.html
+   title: ConEmu Tasks
 ---
 
 # ConEmu Startup Directory
@@ -37,12 +41,12 @@ default directory there are options.
   This switch is used in [ConEmu's Here or Inside](SettingsIntegration.html).
 * ConEmu's shortcut properties.
   You may change ‘Working directory’ field.
-* Task parameters. You may add `-dir ...` switch.
+* Task parameters. You may add `-dir "C:\your\path"` switch.
   This may be overrided by ConEmu's [command line](ConEmuArgs.html).
 * ConEmu's [command line](ConEmuArgs.html) (or shortcut).
-  You may add `-dir ...` switch.
-* [-new_console:d:...](NewConsole.html) switch in the
-  task or specified command.
+  You may add `-dir "C:\your\path"` switch.
+* [-new_console:d:"C:\your\path"](NewConsole.html) switch in the
+  [task](Tasks.html) or specified command.
 
 
 ## Shell related notes  {#shells}

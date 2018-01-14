@@ -6,6 +6,14 @@ redirect_from:
 
 title: "ConEmu | Cygwin Startup Directory"
 
+readalso:
+ - url: StartupDir.html
+   title: Startup Directory
+ - url: GitForWindows.html
+   title: Git-for-Windows
+ - url: Tasks.html
+   title: ConEmu Tasks
+
 breadcrumbs:
  - url: TableOfContents.html#cygwin-and-msys
    title: Cygwin and Msys
@@ -19,6 +27,7 @@ One of the most asked questions about cygwin usage:
 * [The problem](#the-problem)
 * [CHERE](#CHERE)
 * [ConEmuWorkDir](#ConEmuWorkDir)
+* [git-cmd --no-cd](#git-cmd)
 * [cygdrive](#cygdrive)
 
 
@@ -26,7 +35,7 @@ One of the most asked questions about cygwin usage:
 ## The problem  {#the-problem}
 
 Finally, thanks to csbdess,
-[Issue 1552: can't set working dir for cygwin consoles from commandline](https://github.com/Maximus5/conemu-old-issues/issues/1552)#15,
+[Issue 1552: can't set working dir for cygwin consoles from commandline](https://github.com/Maximus5/conemu-old-issues/issues/1552#15),
 the problem was identified.
 
 Cygwin always do `cd "${HOME}"` from `/etc/profile`.
@@ -124,6 +133,18 @@ In bash, like in ksh, set -o nounset; typeset -a foobar; echo $foobar triggers a
 
 Note that in all situations described here, ${foobar+1} expands to 1 if and only if $foobar would cause an error under set -o nounset.
 {% endcomment %}
+
+
+
+## git-cmd --no-cd  {#git-cmd}
+
+If you are using [Git for Windows](GitForWindows.html) then you don't have to use cygwin solutions.
+
+The bootstrapper `git-cmd.exe` has switch `--no-cd` which allows to
+inherit [startup directory](StartupDir.html).
+The default task `{Git Bash}` created by ConEmu utilize the switch.
+Don't forget to [refresh default tasks](Tasks.html#add-default-tasks).
+
 
 
 

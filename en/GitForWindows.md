@@ -14,6 +14,10 @@ readalso:
    title: Solarized color scheme
  - url: SettingsConfirm.html
    title: "Settings › Confirm page"
+ - url: StartupDir.html
+   title: Startup Directory
+ - url: Tasks.html
+   title: ConEmu Tasks
 ---
 
 # Using Git for Windows
