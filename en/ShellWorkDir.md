@@ -115,7 +115,7 @@ to your `~/.bashrc` following sequence:
 
 ~~~
 if [[ -n "${ConEmuPID}" ]]; then
-  PS1='$PS1\[\e]9;9;"\w"\007\033]9;12\007\]'
+  PS1="$PS1\[\e]9;9;\"\w\"\007\e]9;12\007\]"
 fi
 ~~~
 
