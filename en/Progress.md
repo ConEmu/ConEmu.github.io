@@ -36,3 +36,12 @@ and active console have no operation.
 ## Progress on Windows7 taskbar
 
 ![ConEmu progress in Windows7](/img/ConEmuProgress.png)
+
+
+```
+for /L %i in (0,5,100) do @(title [%i%] your title & timeout /t 1) > nul
+```
+
+```
+ConEmu\SetProgress.cmd
+```
