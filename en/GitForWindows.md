@@ -69,6 +69,9 @@ Fix for [Solarized color scheme](SolarizedColors.html).
 git config --global color.diff.new "green bold"
 git config --global color.status.updated "green bold"
 git config --global color.branch.current "green bold"
+
+git config --global color.interactive.prompt "white cyan"
+git config --global color.diff.meta "cyan"
 ~~~
 
 Using Far Manager as editor (commit texts). I'm using
