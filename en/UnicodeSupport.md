@@ -72,7 +72,7 @@ chcp 65001 & cmd
 ~~~
 
 By the way, you may set UTF8 as default encoding for all consoles
-starting in ConEmu. You you **really** like to do that, go to
+starting in ConEmu. You **really** like to do that, go to
 [Settings / Environment](SettingsEnvironment.html) page
 and add following line:
 
