@@ -1,41 +1,41 @@
 {
-  "lastmod":  "2018-01-30T13:40:02.847Z",
+  "lastmod":  "2018-01-31T13:58:58.754Z",
   "releases": [
     {
       "type": "Alpha",
-      "version":  "180130",
+      "version":  "180131",
       "files": [
         {
           "type": "7-Zip",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v18.01.30/ConEmuPack.180130.7z",
-            "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.180130.7z?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v18.01.31/ConEmuPack.180131.7z",
+            "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.180131.7z?use_mirror=autoselect"
           ],
-          "size":   4270813,
-          "crc32": "FDC5D243",
-          "md5":   "617d7e05cc38ea1b10f1332bb32384a6",
+          "size":   4271168,
+          "crc32": "EC67EB85",
+          "md5":   "33936cbcf45120589d9976e5e024e68c",
           "description": "Alpha, Portable (32-bit, 64-bit)"
         },
         {
           "type": "Installer",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v18.01.30/ConEmuSetup.180130.exe",
-            "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.180130.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v18.01.31/ConEmuSetup.180131.exe",
+            "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.180131.exe?use_mirror=autoselect"
           ],
-          "size":   6544760,
-          "crc32": "62001CD2",
-          "md5":   "4e9aeb28c693744739f627a7aa027d20",
+          "size":   6543224,
+          "crc32": "1132E1E3",
+          "md5":   "721509d0cdbb0bae963e18d215534b1d",
           "description": "Alpha, Installer (32-bit, 64-bit)"
         },
         {
           "type": "PortableApps",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v18.01.30/ConEmu_180130_English.paf.exe",
-            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_180130_English.paf.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v18.01.31/ConEmu_180131_English.paf.exe",
+            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_180131_English.paf.exe?use_mirror=autoselect"
           ],
-          "size":   4166872,
-          "crc32": "C2971F07",
-          "md5":   "96b5ee27bd5e2021c243fca2ebdafd2f",
+          "size":   4164968,
+          "crc32": "ACD89F12",
+          "md5":   "0051cc9ae3f52c4fd9b8e1e516ea9fdb",
           "description": "Alpha, PortableApps.com"
         }
       ]
