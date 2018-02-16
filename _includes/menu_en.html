@@ -3,19 +3,9 @@
 				<div class="blocktitle">Site menu</div>
 				<div class="blockcontent">
 					<ul>
-					<!-- Menu starts -->
-					<li><a {% if page.url == '/en/Downloads.html' %} class="MenuItemA" {% endif %} href="/en/Downloads.html"><span>Download mirrors</span></a></li>
-					<li><a {% if page.url == '/en/TableOfContents.html' %} class="MenuItemA" {% endif %} href="/en/TableOfContents.html"><span>Documentation</span></a></li>
-					<li><a {% if page.url == '/en/Whats_New.html' %} class="MenuItemA" {% endif %} href="/en/Whats_New.html"><span>What's new</span></a></li>
-					<li><a {% if page.url == '/en/ConEmuFAQ.html' %} class="MenuItemA" {% endif %} href="/en/ConEmuFAQ.html"><span>ConEmu FAQ</span></a></li>
-					<li><a {% if page.url == '/en/Screenshots.html' %} class="MenuItemA" {% endif %} href="/en/Screenshots.html"><span>Screenshots</span></a></li>
-					<li><a {% if page.url == '/en/Settings.html' %} class="MenuItemA" {% endif %} href="/en/Settings.html"><span>Setting</span></a></li>
-					<li><a {% if page.url == '/en/AutoInstall.html' %} class="MenuItemA" {% endif %} href="/en/AutoInstall.html"><span>Auto install</span></a></li>
-					<li><a {% if page.url == '/donate.html' %} class="MenuItemA" {% endif %} href="/donate.html"><span>Donate</span></a></li>
-					<li><a {% if page.url == '/en/AnsiEscapeCodes.html' %} class="MenuItemA" {% endif %} href="/en/AnsiEscapeCodes.html"><span>ANSI</span></a></li>
-					<li><a {% if page.url == '/en/Awards.html' %} class="MenuItemA" {% endif %} href="/en/Awards.html"><span>Awards</span></a></li>
-					<li><a {% if page.url == '/en/Delusions.html' %} class="MenuItemA" {% endif %} href="/en/Delusions.html"><span>Delusions</span></a></li>
-					<li><a {% if page.url == '/en/Source.html' %} class="MenuItemA" {% endif %} href="/en/Source.html"><span>Source code</span></a></li>
+					<!-- Menu starts -->{% for mi in site.data.menu %}{% capture mi_url %}/{{ page.pagelang }}/{{ mi.url }}{% endcapture %}
+					<li><a {% if page.url == mi_url %} class="MenuItemA" {% endif %} href="{{ mi_url }}"><span>{% if page.pagelang == "en" %}{{ mi.eng }}{% else %}{{ mi.rus }}{% endif %}</span></a></li>{% endfor %}
+					<li><a {% if page.url == "/donate.html" %} class="MenuItemA" {% endif %} href="/donate.html"><span>Donate</span></a></li>
 					<!-- Menu ends -->
 					</ul>
 				</div>

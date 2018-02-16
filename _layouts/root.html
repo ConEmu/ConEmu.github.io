@@ -115,8 +115,6 @@ window.cookieconsent.initialise({
 
 </article>
 
-{% include readalso.html %}
-
 {% if page.isroot == false %}
 <!-- Some footer links -->
 				<footer id="footer-links">
@@ -143,6 +141,11 @@ window.cookieconsent.initialise({
 {% if page.otherlang != nil %}
 		<div class="left-sidebar">
 {% include otherlang.html %}
+		</div>
+{% endif %}
+{% if page.readalso %}
+		<div class="left-sidebar">
+{% include readalso.html %}
 		</div>
 {% endif %}
 	</div><!-- .middle-->

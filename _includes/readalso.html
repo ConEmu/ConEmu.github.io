@@ -1,6 +1,8 @@
-{% if page.readalso %}<footer class="read-also">
-  <h2 id="read-also">{% if page.pagelang == 'ru' %}Читайте также{% else %}Read also{% endif %}</h2>
-  <ul>{% for artcl in page.readalso %}
-    <li><a href="{{ artcl.url }}">{{ artcl.title }}</a></li>{% endfor %}
-  </ul>
-</footer>{% endif %}
+			<div class="block">
+				<div class="blocktitle">{% if page.pagelang == 'ru' %}Читайте также{% else %}Read also{% endif %}</div>
+				<div class="blockcontent">
+					<ul>{% for artcl in page.readalso %}
+						<li><a href="{{ artcl.url }}">{{ artcl.title }}</a></li>{% endfor %}
+					</ul>
+				</div>
+			</div>

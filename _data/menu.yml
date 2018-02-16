@@ -1,0 +1,42 @@
+# Used in _includes/menu_en.html and _includes/menu_ru.html
+
+-
+  eng: "Download mirrors"
+  run: "Зеркала загрузки"
+  url: "Downloads.html"
+-
+  eng: "Documentation"
+  run: "Документация"
+  url: "TableOfContents.html"
+-
+  eng: "What's new"
+  run: "What's new"
+  url: "Whats_New.html"
+-
+  eng: "Installation"
+  run: "Установка"
+  url: "Installation.html"
+-
+  eng: "WSL/Bash"
+  run: "WSL/Bash"
+  url: "BashOnWindows.html"
+-
+  eng: "Tasks"
+  run: "Tasks"
+  url: "Tasks.html"
+-
+  eng: "ConEmu FAQ"
+  run: "ConEmu FAQ"
+  url: "ConEmuFAQ.html"
+-
+  eng: "Screenshots"
+  run: "Скриншоты"
+  url: "Screenshots.html"
+-
+  eng: "Settings"
+  run: "Настройка"
+  url: "Settings.html"
+-
+  eng: "Source code"
+  run: "Исходный код"
+  url: "Source.html"
