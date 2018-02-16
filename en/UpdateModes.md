@@ -31,6 +31,7 @@ You may choose any suitable way to update you ConEmu installation
 
 * [Automatic update (internal)](#automatic)
   * [Internet access issues](#auto-troubleshoot)
+    * [Update Internet Explorer](#auto-ie)
     * [Change version.ini location](#auto-location)
     * [Change internal downloader switches](#auto-commandline)
     * [Use any third-party downloader tool](#auto-curl-wget)
@@ -85,10 +86,20 @@ But if `version.ini` is available, look for the options below.
 * [Use any third-party downloader tool](#auto-curl-wget)
 
 
+#### Update Internet Explorer   {#auto-ie}
+
+Try to open [https://conemu.github.io/](https://conemu.github.io/)
+in the **Internet Explorer** (not in your default browser).
+If it can't open the site, try to update your Internet Explorer.
+
+There were reports that after updating from 8.0 to 11.0 the problem
+with https access were solved.
+
+
 #### Change version.ini location   {#auto-location}
 
 If your provider/proxy/router blocks, for example, an access to
-[http://conemu.github.io/version.ini](http://conemu.github.io/version.ini),
+[https://conemu.github.io/version.ini](https://conemu.github.io/version.ini),
 but **https** [location](https://conemu.github.io/version.ini), or
 [http://conemu.ru/version.ini](http://conemu.ru/version.ini) are available,
 you may switch to working location by changing value `Update.VerLocation`
