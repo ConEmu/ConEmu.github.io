@@ -9,6 +9,16 @@ description: "Some hints about setting up Bash on Windows (WSL) in ConEmu"
 breadcrumbs:
  - url: TableOfContents.html#tips-and-tweaks
    title: Tips and Tweaks
+
+readalso:
+ - url: CygwinMsysConnector.html
+   title: "WSLBridge/Connector"
+ - url: ShellWorkDir.html
+   title: "Shell Working Directory"
+ - url: CygwinStartCmd.html
+   title: "Startup Command"
+ - url: Xterm256Colors.html
+   title: "Xterm-256 Colors"
 ---
 
 # Bash on Windows

@@ -27,6 +27,10 @@ otherlang:
 
 ConEmu's ‘Tasks’ are used to store predefined commands
 or [shell's](TerminalVsShell.html) command lines.
+Each Task may contain one or more commands, or even other
+single-command tasks.
+Tasks are useful when you need to run several consoles
+on one screen in [panes](SplitScreen.html).
 Run them anytime later by name or hotkey.
 
 Also it's a simple way to start several shells
