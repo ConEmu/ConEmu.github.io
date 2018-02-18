@@ -15,6 +15,8 @@ readalso:
    title: "Split Screen or Panes"
  - url: CommandLine.html
    title: "GUI, Console and Shells switches"
+ - url: StartupDir.html
+   title: "Startup Directory"
  - url: SettingsTasks.html
    title: "Settings › Tasks page"
 
@@ -25,32 +27,46 @@ otherlang:
 
 # ConEmu's Tasks
 
-ConEmu's ‘Tasks’ are used to store predefined commands
-or [shell's](TerminalVsShell.html) command lines.
-Each Task may contain one or more commands, or even other
-single-command tasks.
-Tasks are useful when you need to run several consoles
-on one screen in [panes](SplitScreen.html).
-Run them anytime later by name or hotkey.
+ConEmu's **Tasks** are used to store predefined commands
+or [shell's](TerminalVsShell.html) command lines
+and run them anytime later by name or hotkey.
 
-Also it's a simple way to start several shells
-in [tabs](TabBar.html) or [splits](SplitScreen.html).
+* [Tasks in details](#about-tasks)
+  * [Task name](#task-name)
+  * [Task commands](#task-commands)
+  * [Task hotkey](#task-hotkey)
+  * [Task parameters](#task-parameters)
+* [Somewhat from Settings](#from-settings)
+* [Creating new task](#create-new-task)
+  * [Where you may get required information?](#find-required-information)
+  * [If there is no shortcut for that shell](#if-no-shell-shortcut)
+* [Add/refresh default tasks](#add-default-tasks)
+
+When you need to [create a tab](LaunchNewTab.html)
+you may type long command line with dozen of switches:
+
+```
+set "FARHOME=" & C:\Far\Far.exe /w /x /p%ConEmuDir%\Plugins\ConEmu;%FARHOME%\Plugins;C:\Far\Plugins.My
+```
+
+Or just run task named `{Far}`.
+
+**Task** is a simple way to start several shells
+in [tabs](TabBar.html) or [splits/panes](SplitScreen.html).
+
+At last, Tasks are the only easy way to run several [tabs](TabBar.html)
+or preconfigured [splits](SplitScreen.html) at once.
 
 ![ConEmu's tasks dropdown](/img/ConEmuStartTask.png "Start task dropdown menu")
 
 Tasks may be configured in the [‘Settings’ dialog](SettingsTasks.html).
 
 
-* [Tasks in details](#about-tasks)
-  * [A little from Settings](#from-settings)
-* [Creating new task](#create-new-task)
-  * [Where you may get required information?](#find-required-information)
-  * [If there is no shortcut for that shell](#if-no-shell-shortcut)
-* [Add/refresh default tasks](#add-default-tasks)
-
-
 
 ## Tasks in details  {#about-tasks}
+
+A **Task** is an instruction or set of instructions what and how ConEmu
+shall run in its ‘slots’ ([tabs](TabBar.html) or [splits](SplitScreen.html)).
 
 ConEmu-Maximus5 is a terminal or a kind of container
 for whatever programs you might want to run inside it:
@@ -66,36 +82,50 @@ And ConEmu has [tabs](TabBar.html) and [splittings](SplitScreen.html)
 (à la screen/tmux, but handled at the GUI level).
 So you can have different programs running in each of those ‘slots’.
 
-A ‘task’ is an instruction what and how ConEmu must run in ‘slots’.
+### Task name  {#task-name}
+Each **Task** has a **Name**. For example `{Far}`, `{Shells::cmd}`, `{Bash::Git Bash}`, etc.
+Enter the name *without curly braces*, they are added automatically.
+You may access the **Task** either by its full name `{Shells::cmd}`
+or by a short name `{cmd}`, if there are not conflicts in short names.
 
-* Each ‘task’ has a ‘name’;
-* one or **several** actual commands to run;
-* ‘hotkey’ to run task which is available when ConEmu has focus;
-* some optional switches like startup directory or icon.
+### Task commands  {#task-commands}
+One or **several** actual commands to run, it contains:
+Usually you put here a name or full path to your
+[program](https://wikipedia.org/wiki/Executable), e.g. `bash.exe`.
 
-| Value    | Example |
-|:---------|:--------|
-| task name | `{Git Bash}`, `{WinSDK v7.0}`, ... |
-| name or full path to [program](https://wikipedia.org/wiki/Executable) | `bash.exe` |
-| program arguments | `--login -i` |
-| [-new_console](NewConsole.html) switch(es) | `-new_console:t:"Bash" -new_console:d:"C:\Projects"` |
-| several [tabs](TabBar.html) or [splits](SplitScreen.html) | `cmd` <br/> `powershell -new_console:sV` |
+* a name or full path to [program](https://wikipedia.org/wiki/Executable), e.g. `bash.exe`;
+* program arguments, e.g.  `--login -i`;
+* [-new_console](NewConsole.html) switch(es), e.g. `-new_console:t:"Bash" -new_console:d:"C:\Projects"`.
+* [-new_console:sV](SplitScreen.html) switch to run commands in panes.
 
-When you need to [create a tab](LaunchNewTab.html)
-you may type may be long and full command line like
+Read below about [creating new task commands](#create-new-task).
+
+Also you may put here the names of other single-command tasks.
+For example, my `{Startup}` task initializes [ssh-agent](SshAgent.html)
+and starts [Far Manager](FarManager.html) at once.
 
 ```
-set "FARHOME=" & C:\Far\Far.exe /w /x /p%ConEmuDir%\Plugins\ConEmu;%FARHOME%\Plugins;C:\Far\Plugins.My
+> {ssh-agent}
+{Far}
 ```
 
-Or just run task named `{Far}`.
+### Task hotkey  {#task-hotkey}
+You may assign a ‘hotkey’ to each task to have the task started
+in a simple keypress when ConEmu has focus.
 
-At last, Tasks are the only easy way to run several [tabs](TabBar.html)
-or preconfigured [splits](SplitScreen.html) at once.
+### Task parameters  {#task-parameters}
+This field may contain some optional switches like startup directory or icon.
+These switches have influence over *all commands* defined in the task.
+You may use here a subset from [ConEmu command line switches](ConEmuArgs.html):
+
+* `-icon "path-to-tab-icon"` defines tab icon; alternative to [-new_console:C:"path-to-tab-icon"](NewConsole.html);
+* `-dir "working-directory"` defines shell startup directory; alternative to [-new_console:d:"working-directory"](NewConsole.html);
+* `-single` or `-reuse` forces to run the task in an existing ConEmu instance; useful with [Windows 7 jump lists](#jump-list);
+* `-quake` or `-noquake` as is, allows to run a command in quake/noquake mode.
 
 
 
-### A little from Settings   {#from-settings}
+## Somewhat from Settings   {#from-settings}
 
 ![ConEmu settings, Tasks page](/img/Settings-Tasks.png "ConEmu settings, Tasks page")
 
@@ -194,7 +224,8 @@ but run powershell host internally. Just google! For example:
 
 ## Add/refresh default tasks  {#add-default-tasks}
 
-In case you have installed new application (for example new Visual Studio version)
+In case you have installed a new application (for example new Visual Studio version)
+or new ConEmu build which knows more predefined shells than previous build,
 the new task is not created automatically by ConEmu without user's request.
 
 If you want to add missed tasks, or recreate existing tasks with default (recommended) parameters,
