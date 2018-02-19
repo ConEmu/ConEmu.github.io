@@ -17,6 +17,10 @@
   run: "Установка"
   url: "Installation.html"
 -
+  eng: "Unicode support"
+  run: "Unicode в консоли"
+  url: "UnicodeSupport.html"
+-
   eng: "WSL/Bash"
   run: "WSL/Bash"
   url: "BashOnWindows.html"
