@@ -19,10 +19,6 @@ readalso:
    title: "Startup Directory"
  - url: SettingsTasks.html
    title: "Settings › Tasks page"
-
-otherlang:
-   en: /en/Tasks.html
-   ru: /ru/Tasks.html
 ---
 
 # ConEmu's Tasks
