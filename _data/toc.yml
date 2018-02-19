@@ -519,8 +519,8 @@
       rus: "AppHelp problem"
       url: "AppHelp.html"
 -
-  eng: "Bash on Windows"
-  rus: "Bash on Windows"
+  eng: "WSL/Bash on Windows"
+  rus: "WSL/Bash on Windows"
   id:  "bash-on-windows"
   url: "BashOnWindows.html"
   children:
