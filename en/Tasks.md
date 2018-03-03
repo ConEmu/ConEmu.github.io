@@ -125,20 +125,22 @@ You may use here a subset from [ConEmu command line switches](ConEmuArgs.html):
 
 ![ConEmu settings, Tasks page](/img/Settings-Tasks.png "ConEmu settings, Tasks page")
 
-Here you can configure a list of common tasks.
-In fact, this is an alias to run one or more applications in new tabs within ConEmu.
-These can be configured in the 'Tasks' page of the 'Settings' dialog,
-and stored in the "Tasks" subkey of reg/xml settings.
-'Tasks' may be used as follows (as an example, we will use a task named {Shells}):
+**Tasks** are configured in the [Settings dialog](SettingsTasks.html).
+Don't forget to save them after changes!
 
-* when you start by specifying the properties of the shortcut: "ConEmu.exe / cmd {Shells}";
-* specifying {Shells} in the 'Command line' page 'Main' of 'Settings' dialog;
-* when you create a new console interface ConEmu (<code class="plus">[+]</code> on the toolbar, a list of Recreate-dialog);
-* from the command line (cmd.exe): "%ConEmuBaseDir%\ConEmuC.exe" / c {Shells} -new_console.
-* from the command line (far.exe): conemu:run:{Shells} -new_console
 
-The ConEmu Jump list is set here too.
-Set up a list of tasks in the field of «ConEmu arguments for Jump list»
+**Tasks** may be used in the following places (as an example, we will use a task named {cmd}):
+
+* when you start by specifying the properties of the shortcut: `ConEmu.exe -run {cmd}`;
+* `{cmd}` in the 'Command line' on the [Startup](SettingsStartup.html) Settings page;
+* when you [create a new console in ConEmu](LaunchNewTab.html) via <code class="plus">[+]</code> on the toolbar;
+* from consoles started in ConEmu:
+  * from [cmd.exe prompt](CmdPrompt.html): `"%ConEmuBaseDir%\ConEmuC.exe" /c {cmd} -new_console`;
+  * from [Far Manager](FarManager.html) prompt via [plugin](ConEmuFarPlugin.html): `conemu:run:{cmd} -new_console`;
+  * you can't start new consoles from [WSL prompt](BashOnWindows.html) because all commands are executed on the Linux side.
+
+The [ConEmu Jump list](#jump-list) may be configured here too.
+Set up a list of tasks in the field of ‘ConEmu arguments for Jump list’
 You can optionally specify the icon that is displayed in the Jump list, for example
 
 ~~~
