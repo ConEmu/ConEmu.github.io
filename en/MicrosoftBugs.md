@@ -14,6 +14,7 @@ readalso:
 
 # Some Windows Bugs and Workarounds
 
+* [WINDOW_BUFFER_SIZE_EVENT received after scrolling in Windows 10](#SizeEvent10)
 * [Console content is ‘erased’ after resize in Windows 10](#ErasedWindows10)
 * [Broken text is returned from console input](#BrokenText)
 * [Broken cursor position and height in Windows 10](#BrokenCursor-10)
@@ -24,6 +25,23 @@ readalso:
 * [chcp hung](#chcp_hung)
 * [Insert/Overwrite indication](#Insert-Overwrite-Indicator)
 * [Conclusion](#Conclusion)
+
+
+
+
+
+## WINDOW_BUFFER_SIZE_EVENT received after scrolling in Windows 10  {#SizeEvent10}
+
+When application calls [SetConsoleWindowInfo](https://docs.microsoft.com/en-us/windows/console/setconsolewindowinfo)
+to scroll console contents, conhost posts the [WINDOW_BUFFER_SIZE_EVENT](https://docs.microsoft.com/en-us/windows/console/input-record-str])
+into the console input buffer.
+
+The event was intended to inform application ‘about the new size of the console screen buffer’,
+but in fact, the size of the buffer was not changed.
+
+| Appeared | Fixed |
+|:--------|:------|
+| Windows 10 | ? |
 
 
 
