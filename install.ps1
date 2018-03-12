@@ -1,6 +1,6 @@
 # ==============================================================================
 #
-# Copyright 2014 ConEmu.Maximus5@gmail.com
+# Copyright 2018 ConEmu.Maximus5@gmail.com
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,5 +20,7 @@ $ver = "alpha"
 $xml = ""
 $lnk = $TRUE
 $run = $FALSE
+
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install2.ps1'))

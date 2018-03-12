@@ -42,7 +42,7 @@ Internet connection is required.
 Just copy the following command, press `Win+R`, paste command and press `Enter`.
 
 ~~~
-powershell -NoProfile -ExecutionPolicy Unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install.ps1'))"
+powershell -NoProfile -ExecutionPolicy RemoteSigned -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install.ps1'))"
 ~~~
 
 
@@ -67,7 +67,7 @@ Paste the command (see example below) to your box startup script
 (cmd-file for example) and change arguments to desired values.
 
 ~~~
-powershell -NoProfile -ExecutionPolicy Unrestricted -Command "set ver 'alpha'; set dst 'C:\ConEmu'; set lnk $TRUE; set run $TRUE; set xml 'https://conemu.github.io/ConEmu.xml'; iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install2.ps1'))"
+powershell -NoProfile -ExecutionPolicy RemoteSigned -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; set ver 'alpha'; set dst 'C:\ConEmu'; set lnk $TRUE; set run $TRUE; set xml 'https://conemu.github.io/ConEmu.xml'; iex ((new-object net.webclient).DownloadString('https://conemu.github.io/install2.ps1'))"
 ~~~
 
 

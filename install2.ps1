@@ -1,6 +1,6 @@
 # ==============================================================================
 #
-# Copyright 2014 ConEmu.Maximus5@gmail.com
+# Copyright 2018 ConEmu.Maximus5@gmail.com
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -104,6 +104,8 @@ function GetDownloadUrl([string]$data,[string]$section)
 
 # Main cycle
 try {
+
+  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
   # retrieve url of the latest version
   Write-Host "Download latest version information"
