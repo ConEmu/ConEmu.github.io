@@ -56,7 +56,7 @@ powershell -NoProfile -ExecutionPolicy RemoteSigned -Command "[Net.ServicePointM
 
 | Описание | Имя | Примеры значений |
 |:---|:---|:---|
-| Destination folder | dst | Full path to desired location <br/> C:\Tools\ConEmu |
+| Destination folder | dst | Full path to desired location <br/> C:\ConEmu |
 | ConEmu version | ver | • 'alpha' <br/> • 'preview' <br/> • 'stable' |
 | Create shortcut on desktop | lnk | • $TRUE <br/> • $FALSE <br/> • 'Desired link name' |
 | ConEmu.xml bootstrap | xml | 'https://conemu.github.io/ConEmu.xml' |
