@@ -31,7 +31,7 @@ kramdown:
   auto_ids: false
 
 # Allow redirections
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-paginate
 
