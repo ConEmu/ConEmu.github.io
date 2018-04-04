@@ -652,6 +652,10 @@
       rus: "Log файлы"
       url: "LogFiles.html"
     -
+      eng: "ANSI Log files"
+      rus: "ANSI Log файлы"
+      url: "AnsiLogFiles.html"
+    -
       eng: "MemoryDump"
       rus: "MemoryDump"
       url: "MemoryDump.html"

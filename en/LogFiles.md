@@ -9,6 +9,8 @@ breadcrumbs:
    title: Feedback
 
 readalso:
+ - url: AnsiLogFiles.html
+   title: "ANSI Log Files"
  - url: SettingsDebug.html
    title: "Debug Log Files"
  - url: Issues.html
@@ -22,7 +24,7 @@ readalso:
 There are several types of ‘Log Files’. Usually, when you report and issue
 developer asks for ‘Debug log files’ which are enabled by `-log` switch.
 
-But there is also logging of console output, [see below](#Log_console_output).
+But logging of console output ([described here](AnsiLogFiles.html)) is available too.
 
 * [Why LogFiles are needed](#Why_they_are_needed)
   * [How to start logging](#How_to_start_logging)
@@ -103,11 +105,5 @@ or any other hosting and post only link to the issue.
 ## Log console output  {#Log_console_output}
 
 Don't confuse this with log files created by `-log` switch.
-
-On the [Settings / Features](SettingsFeatures.html) page you may enable
-logging of console applications output. By default logging is disabled,
-and suggested folder to store log files is `%ConEmuDir%\Logs\`
-(read about [environment variables](ConEmuEnvironment.html)).
-
-Please note, that when you tick checkbox ‘Log console output’ it
-will affect newly created consoles only.
+ConEmu may write all output from [console applications](ConsoleApplication.html) to log files.
+Read more on the [ANSI Log Files](AnsiLogFiles.html) page.
