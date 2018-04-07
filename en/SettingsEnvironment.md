@@ -100,7 +100,7 @@ alias sudo=ConEmuC -c $* -new_console:a
 And you may just run in your non-elevated cmd.exe prompt (inside ConEmu of course):
 
 ~~~
-sudo dispart
+sudo diskpart
 ~~~
 
 New elevated tab with `diskpart.exe` will be started (after UAC confirmation).
