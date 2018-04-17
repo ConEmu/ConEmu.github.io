@@ -240,8 +240,8 @@ backscroll buffer (upper invisible parts) may not be accessed in that way.
 |:---|:---|
 | ESC \[ 7 ; *col* h | Enables line wrapping at column position. If *col* (1-based) is absent, wrap at column 80. |
 | ESC \[ 7 l | Disables line wrapping. Lines wraps at the end of screen buffer. |
-| ESC \[ 25 h | Show text cursor. |
-| ESC \[ 25 l | Hide text cursor. |
+| ESC \[ ? 25 h | Show text cursor. |
+| ESC \[ ? 25 l | Hide text cursor. |
 | ESC \[ ? 47 h | Same as ‘ESC \[ ? 1047 h’ |
 | ESC \[ ? 47 l | Same as ‘ESC \[ ? 1047 l’ |
 | ESC \[ ? 1047 h | Activate xterm alternative buffer (no backscroll) |
