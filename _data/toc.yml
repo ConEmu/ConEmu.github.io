@@ -676,6 +676,10 @@
       rus: "Sources"
       url: "Source.html"
     -
+      eng: "cmder bundle"
+      rus: "cmder bundle"
+      url: "cmder.html"
+    -
       eng: "How you may help"
       rus: "Как помочь в разработке"
       url: "ConEmuHelping.html"
