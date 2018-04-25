@@ -49,6 +49,7 @@ Please read the rest of article about required profile modifications.
   * [bash and some other cygwin shells](#bash_and_other_cygwin_shells)
   * [zsh](#zsh)
   * [PowerShell](#PowerShell)
+  * [Far Manager](#far)
 
 
 
@@ -183,3 +184,18 @@ function prompt {
 
 Also check another variant of `prompt` function exposing input start to ConEmu:
 [PowershellPrompt](PowershellPrompt.html).
+
+
+
+### Far Manager  {#far}
+
+The [ConEmu plugin](ConEmuFarPlugin.html) have to be loaded in your Far instance.
+
+To ensure the plugin of proper version is loaded in Far Manager,
+ConEmu creates [default Task](Tasks.html#add-default-tasks) `{Far}`, just use it.
+
+Supposing Far is installed in `C:\Tools\Far` the `{Far}` task contents is below:
+
+```
+set "FARHOME=" & "C:\Tools\Far\far.exe" /w /p"%ConEmuDir%\Plugins\ConEmu;%FARHOME%\Plugins;%FARPROFILE%\Plugins"
+```
