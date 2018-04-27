@@ -101,7 +101,7 @@ ConEmu will maintain **CD** for you automatically.
 
 
 
-### WSL/cygwin/msys shells via PS1   {#connector-ps1}
+### WSL/cygwin/msys shells via PS1 and ANSI   {#connector-ps1}
 
 **Warning!** This options will work only with
 [cygwin/msys connector](CygwinMsysConnector.html)!
@@ -130,8 +130,9 @@ This is required to avoid weird behavior of readline when you type really long c
 **NB**. Dont try this in [Bash on Ubuntu on Windows](BashOnWindows.html).
 `ConEmuC.exe` is *native* Windows application which can't be executed by *linux* kernel.
 
-You need to tell bash to run `ConEmuC -StoreCWD` command
-each time its prompt executed.
+**NB**. Preferred way is using [ANSI sequence](#connector-ps1) described above.
+
+You need to tell bash to run `ConEmuC -StoreCWD` command each time its prompt executed.
 For example, add to your `~/.bashrc`
 
 ~~~
@@ -146,6 +147,8 @@ fi
 **NB**. Dont try this in [Bash on Ubuntu on Windows](BashOnWindows.html).
 `ConEmuC.exe` is *native* Windows application which can't be executed by *linux* kernel.
 
+**NB**. Preferred way is using [ANSI sequence](#connector-ps1) described above.
+
 For zsh just add this to your `~/.zshrc` file.
 
 ~~~
@@ -157,33 +160,44 @@ PROMPT_COMMAND='ConEmuC -StoreCWD'
 
 ### PowerShell   {#PowerShell}
 
-You need to modify your profile to override prompt function. Just run in your PowerShell prompt:
+You need to modify your profile to override prompt function. Example is below.
+
+Read full article [PowershellPrompt](PowershellPrompt.html) for details.
 
 ~~~
-New-Item -ItemType directory -Path (Split-Path -Parent $profile) -Force
-New-Item -ItemType file -Path $profile
-notepad $profile
-~~~
+function prompt
+{
+  $loc = Get-Location
 
-And change prompt as in the following example:
-
-~~~
-function prompt {
-  # Just prettify the prompt
+  # Emulate standard PS prompt with location followed by ">"
+  # $out = "PS $loc> "
+  
+  # Or prettify the prompt by coloring its parts
   Write-Host -NoNewline -ForegroundColor Cyan "PS "
-  $dir = $(get-location).ProviderPath
-  Write-Host -NoNewline -ForegroundColor Yellow $dir
-  # You may use ANSI or direct ConEmuC call
-  if ($env:ConEmuBaseDir -ne $null) {
-  # Write-Host -NoNewline (([char]27) + "]9;9;`"" + $dir + "`"" + ([char]27) + "\")
-  & ConEmuC.exe -StoreCWD "$dir"
+  Write-Host -NoNewline -ForegroundColor Yellow $loc
+  $out = "> "
+
+  # Check for ConEmu existance and ANSI emulation enabled
+  if ($env:ConEmuANSI -eq "ON") {
+    # Let ConEmu know when the prompt ends, to select typed
+    # command properly with "Shift+Home", to change cursor
+    # position in the prompt by simple mouse click, etc.
+    $out += "$([char]27)]9;12$([char]7)"
+
+    # And current working directory (FileSystem)
+    # ConEmu may show full path or just current folder name
+    # in the Tab label (check Tab templates)
+    # Also this knowledge is crucial to process hyperlinks clicks
+    # on files in the output from compilers and source control
+    # systems (git, hg, ...)
+    if ($loc.Provider.Name -eq "FileSystem") {
+      $out += "$([char]27)]9;9;`"$($loc.Path)`"$([char]7)"
+    }
   }
-  return ">"
+
+  return $out
 }
 ~~~
-
-Also check another variant of `prompt` function exposing input start to ConEmu:
-[PowershellPrompt](PowershellPrompt.html).
 
 
 

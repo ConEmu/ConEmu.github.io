@@ -61,9 +61,14 @@ function prompt
   $loc = Get-Location
 
   # Emulate standard PS prompt with location followed by ">"
-  $out = "PS $loc> "
+  # $out = "PS $loc> "
+  
+  # Or prettify the prompt by coloring its parts
+  Write-Host -NoNewline -ForegroundColor Cyan "PS "
+  Write-Host -NoNewline -ForegroundColor Yellow $loc
+  $out = "> "
 
-  # Simple check for ConEmu existance and ANSI emulation enabled
+  # Check for ConEmu existance and ANSI emulation enabled
   if ($env:ConEmuANSI -eq "ON") {
     # Let ConEmu know when the prompt ends, to select typed
     # command properly with "Shift+Home", to change cursor
