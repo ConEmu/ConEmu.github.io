@@ -585,8 +585,8 @@
       rus: "Prompt внизу окна"
       url: "PromptAtTheBottom.html"
     -
-      eng: "ShellWorkDir"
-      rus: "ShellWorkDir"
+      eng: "Shell Working Directory"
+      rus: "Рабочая папка оболочки"
       url: "ShellWorkDir.html"
     -
       eng: "Solarized colors"

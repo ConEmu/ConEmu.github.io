@@ -89,7 +89,7 @@ cmd -new_console:s3T50V
 ### Default hotkeys   {#Default-hotkeys}
 
 Split key macros (default as `Ctrl+Shift+O` and `Ctrl+Shift+E`) work
-like ‘Duplicate root...’ menu item.
+like ‘[Duplicate root...](LaunchNewTab.html#Duplicate_root)’ menu item.
 These macros will duplicate shell from your active pane!
 
 

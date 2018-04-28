@@ -142,11 +142,18 @@ using specified Tab icon.
 Well, this interesting feature offers a way to duplicate shell
 ([root process](RootProcess.html) of current tab) state to the new ConEmu tab.
 For example, you have started `cmd.exe`, set up environment variables,
-cd somewhere, run any program (vim for example) and call ‘Duplicate root’
+cd somewhere, run any program (vim for example) and call ‘Duplicate root...’
 from tab popup menu.
 
 This will create ‘copy’ of `cmd.exe` at most recent state (when possible).
 
+The feature strongly depends on ability to determine current shell directory.
+Unfortunately most of shells don't call [Window API](WinApi.html) function ‘**SetCurrentDirectory**’,
+that's why you have to set up your shell (profile).
+Examples are described in the [Shell Working Directory](ShellWorkDir.html) article.
+
+**NB**. If your shell explicitly changed directory to you home (for example) on startup,
+ConEmu is not able to force it to retain [shell Startup Directory](StartupDir.html).
 
 
 
