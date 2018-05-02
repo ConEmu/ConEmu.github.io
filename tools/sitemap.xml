@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/donate.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -44,14 +44,20 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/AnsiEscapeCodes.html</loc>
-    <lastmod>2017-08-31</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/AnsiEscapeCodes.html</loc>
-    <lastmod>2017-08-31</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://conemu.github.io/en/AnsiLogFiles.html</loc>
+    <lastmod>2018-05-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
@@ -74,13 +80,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/AutoInstall.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/AutoInstall.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -98,7 +104,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/BashOnWindows.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -117,6 +123,12 @@
   <url>
     <loc>https://conemu.github.io/en/ClearScreen.html</loc>
     <lastmod>2016-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://conemu.github.io/en/cmder.html</loc>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -146,13 +158,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/ConEmuEnvironment.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/ConEmuEnvironment.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -296,7 +308,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/CygwinMsysConnector.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -308,7 +320,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/CygwinStartDir.html</loc>
-    <lastmod>2016-01-05</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -374,7 +386,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/ExportEnvVar.html</loc>
-    <lastmod>2015-08-22</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -386,7 +398,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/FalseAlarms.html</loc>
-    <lastmod>2015-10-11</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -566,7 +578,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/GitForWindows.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -578,7 +590,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/GuiMacro.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -650,7 +662,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/KeyboardShortcuts.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -662,7 +674,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/LaunchNewTab.html</loc>
-    <lastmod>2017-08-01</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -680,7 +692,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/LogFiles.html</loc>
-    <lastmod>2015-10-11</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -692,25 +704,25 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/MicrosoftBugs.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/NewConsole.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/OldBuild.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/PowershellPrompt.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -728,7 +740,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/Progress.html</loc>
-    <lastmod>2015-08-22</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -758,7 +770,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/RestartTab.html</loc>
-    <lastmod>2015-08-11</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -817,14 +829,20 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://conemu.github.io/en/SettingsANSI.html</loc>
+    <lastmod>2018-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://conemu.github.io/en/SettingsAppDistinct.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsAppearance.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -842,7 +860,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsColors.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -872,25 +890,25 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsEnvironment.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsFar.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsFarMacros.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsFarView.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -908,13 +926,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsFeatures.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsHighlight.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -932,7 +950,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsIntegration.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -944,25 +962,25 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsMain.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsMarkCopy.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsMouse.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsPaste.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -974,7 +992,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsSizePos.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -986,13 +1004,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsStatusBar.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsTabBar.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1004,13 +1022,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsTasks.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsTextCursor.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1028,7 +1046,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/ShellWorkDir.html</loc>
-    <lastmod>2017-10-18</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1046,7 +1064,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SplitScreen.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1058,7 +1076,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/StartupDir.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1088,13 +1106,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/TableOfContents.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/TableOfContents.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1130,13 +1148,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/Tasks.html</loc>
-    <lastmod>2017-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://conemu.github.io/ru/Tasks.html</loc>
-    <lastmod>2017-10-18</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1178,13 +1190,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/UnicodeSupport.html</loc>
-    <lastmod>2015-10-11</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/UpdateModes.html</loc>
-    <lastmod>2015-10-11</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1274,7 +1286,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/Xterm256Colors.html</loc>
-    <lastmod>2017-08-31</lastmod>
+    <lastmod>2018-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
