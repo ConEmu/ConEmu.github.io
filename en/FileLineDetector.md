@@ -1,6 +1,8 @@
 ---
 redirect_from:
  - /ru/FileLineDetector.html
+ - /en/HyperlinksAndFiles.html
+ - /ru/HyperlinksAndFiles.html
 
 title: "ConEmu | Hyperlinks and Errors Detector"
 

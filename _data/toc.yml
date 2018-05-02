@@ -518,6 +518,10 @@
       eng: "AppHelp problem"
       rus: "AppHelp problem"
       url: "AppHelp.html"
+    -
+      eng: "PuTTY and mintty"
+      rus: "PuTTY and mintty"
+      url: "putty.html"
 -
   eng: "WSL/Bash on Windows"
   rus: "WSL/Bash on Windows"
