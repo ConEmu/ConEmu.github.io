@@ -155,6 +155,9 @@ Examples are described in the [Shell Working Directory](ShellWorkDir.html) artic
 **NB**. If your shell explicitly changed directory to you home (for example) on startup,
 ConEmu is not able to force it to retain [shell Startup Directory](StartupDir.html).
 
+**NB**. This is not real fork of the shell, but ConEmu tries to inherit environment
+variables from the shell if it is possible.
+
 
 
 ## Default terminal feature  {#Default_terminal_feature}

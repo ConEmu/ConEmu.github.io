@@ -60,8 +60,17 @@ from command line or [keypress](SettingsHotkeys.html).
 
 ## How GuiMacro may be executed  {#HowToCall}
 
-* ConEmu hotkey - set up ‘Macro 01’ … ‘Macro 32’ on [‘Keys’](SettingsHotkeys.html) page of ‘Settings’ dialog.
-* [command line](#Command_line) (or batch file), format is flexible. Few examples below.
+##### 1. ConEmu hotkeys ‘Macro 01’ … ‘Macro 32’  {#call-hotkey}
+
+Just set up ‘Macro 01’ … ‘Macro 32’ on [‘Keys’](SettingsHotkeys.html) page of ‘Settings’ dialog.
+
+##### 2. ConEmuC -GuiMacro switch  {#call-conemuc}
+
+**NB**. This does not work in [WSL](BashOnWindows.html)!
+
+If you may call `ConEmuC.exe` (command line, batch file, etc.)
+then you may use [ConEmuC -GuiMacro](#Command_line) switch.
+The format is flexible, few examples below.
 
 ~~~
 "%ConEmuBaseDir%\ConEmuC.exe" /GUIMACRO WindowMinimize
@@ -71,15 +80,15 @@ ConEmuC -Guimacro Flash(1,3,5) ; MsgBox("Notification text")
 ConEmuC -GuiMacro:0 print: C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32
 ~~~
 
-* [From shortcut (ConEmu and ConEmu64)](#Gui_args).
+3. [From shortcut (ConEmu and ConEmu64)](#Gui_args).
 
 ~~~
 ConEmu.exe -Detached -GuiMacro "Create(0,1); Context; print(\"echo \\\"Hello world\\\"\");"
 ~~~
     
-* [ANSI](AnsiEscapeCodes.html) OSC code. The following example, is an example only,
+4. [ANSI OSC code](AnsiEscapeCodes.html#ConEmu_specific_OSC). The following is only a demo,
   if you need to check [‘IsConEmu’](ConEmuC.html) it is better to call
-  `"ConEmuC -IsConEmu"` and check %errorlevel%.
+  `"ConEmuC -IsConEmu"` and check `%errorlevel%`.
 
 ~~~
 rem We need real ESC code (symbol with ASCII \x1B) in cmd scripts
@@ -88,25 +97,25 @@ echo %ESC%]9;6;"IsConEmu"%ESC%\
 if "%ConEmuMacroResult%"=="Yes" echo ConEmu found!
 ~~~
 
-* Via [Far Manager plugin](#Far_Manager_plugin) (Far Manager 1.7x, 2.0, 3.0 are supported).
+5. Via [Far Manager plugin](#Far_Manager_plugin) (Far Manager 1.7x, 2.0, 3.0 are supported).
 
 ~~~
 F11 -> ConEmu -> Execute ConEmu macro
 ~~~
 
-* Via Far Manager macros, **Far3-lua**:
+6. Via Far Manager macros, **Far3-lua**:
 
 ~~~
 Plugin.SyncCall("4b675d80-1d4a-4ea9-8436-fdc23f2fc14b","IsConEmu()")
 ~~~
 
-* **Far3-pre-lua** (*callplugin is alias of Plugin.Call*):
+7. **Far3-pre-lua** (*callplugin is alias of Plugin.Call*):
 
 ~~~
 Plugin.Call("4b675d80-1d4a-4ea9-8436-fdc23f2fc14b","IsConEmu()")
 ~~~
 
-* **Far2**:
+8. **Far2**:
 
 ~~~
 callplugin(0x43454D55,"IsConEmu()")
@@ -268,16 +277,19 @@ Plugin.SyncCall("4b675d80-1d4a-4ea9-8436-fdc23f2fc14b","shell(\"new_console\",@\
 
 ## Command line (ConEmuC and ConEmuC64)  {#Command_line}
 
-Syntax (doesn't matter `ConEmuC.exe` or `ConEmuC64.exe` you are using):
+It doesn't matter `ConEmuC.exe` or `ConEmuC64.exe` you are using.
+
+Syntax:
 
 ~~~
-ConEmuC /GuiMacro[:PID|HWND][:T<tab>][:S<split>] <GuiMacro command>
+ConEmuC [/SILENT] /GuiMacro[:PID|HWND][:T<tab>][:S<split>] <GuiMacro command>
   or
-ConEmuC -GuiMacro[:PID|HWND][:T<tab>][:S<split>] <GuiMacro command>
+ConEmuC [-Silent] -GuiMacro[:PID|HWND][:T<tab>][:S<split>] <GuiMacro command>
 ~~~
 
-| **PID** | *‘Process ID’, decimal number* |
 |:---|:---|
+| **SILENT** | Suppress output of GuiMacro result (`OK`, `FAILED`, etc.) |
+| **PID** | *‘Process ID’, decimal number* |
 | 0 | Special value means ‘Use active tab/split of the first found ConEmu window |
 | ConEmu GUI PID | `ConEmu.exe` or `ConEmu64.exe`, macro will be executed in the **active** tab/split |
 | Console server PID | `ConEmuC.exe` or `ConEmuC64.exe` started with `/ROOT` argument |
