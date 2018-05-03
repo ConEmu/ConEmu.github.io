@@ -127,8 +127,10 @@ ConEmuC /ATTACH [/GHWND=NEW|<HWND>] /[FAR|CON|TRM]PID=<PID>
 
 ### [ConEmu GUI macro command](GuiMacro.html)  {#GuiMacro}
 
+Read full description on [GuiMacro](GuiMacro.html#Command_line) page.
+
 ~~~
-ConEmuC [/SILENT] /GUIMACRO[:PID|HWND][:T<tab>][:S<split>] Function([Arg1[,Arg2[,...]])
+ConEmuC [/SILENT] /GUIMACRO[:PID|HWND][:T<tab>][:S<split>] <GuiMacro command>
 ~~~
 
 
