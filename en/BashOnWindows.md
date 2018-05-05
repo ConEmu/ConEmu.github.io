@@ -41,6 +41,8 @@ without using of virtual machines or recompilations.
   * [TLDR: WSL Installation](#TLDR)
 * [Some techinfo](#techinfo)
 * [Preferred way to run WSL](#connector)
+  * [Change drives mount point in WSL](#wsl-mnt)
+  * [Start WSL in Unix home directory](#wsl-home)
 * [Get arrows working in ConEmu](#arrows)
   * [Solution 1: Default task {bash}](#arrows-sol-1)
   * [Solution 2: StatusBar's Terminal modes](#arrows-sol-2)
@@ -122,7 +124,13 @@ and be sure that your [Tasks](Tasks.html) are [updated](Tasks.html#add-default-t
 You `{Bash::bash}` task command shall be something like:
 
 ~~~
-set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pnm:/mnt -t bash -l
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/mnt
+~~~
+
+Or if you want to define your own shell, for example `fish -l`:
+
+~~~
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pnm:/mnt -t fish -l
 ~~~
 
 And its task parameters:
@@ -130,6 +138,26 @@ And its task parameters:
 ~~~
 /dir %CD% /icon "%USERPROFILE%\AppData\Local\lxss\bash.ico"
 ~~~
+
+### Change drives mount point in WSL  {#wsl-mnt}
+
+[Configuration file](https://blogs.msdn.microsoft.com/commandline/2018/02/07/automatically-configuring-wsl/)
+`/etc/wsl.conf` may be used to change drives mount point (default is `/mnt`).
+So you may access your files like `/c/path` instead of default `/mnt/c/path`.
+
+* If wslbridge fails to start, update ConEmu (preferred) or update wslbridge binaries
+  from [this issue](https://github.com/Maximus5/ConEmu/issues/1538#issuecomment-386838630).
+* To get proper conversion of Windows paths during Paste change `-new_console:m:/mnt` to `-new_console:m:""`.
+
+### Start WSL in Unix home directory  {#wsl-home}
+
+Add after `--wsl` the `-C~` switch:
+
+~~~
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -C~ -cur_console:pm:/mnt
+~~~
+
+
 
 
 
