@@ -253,26 +253,27 @@ bash -l -i
 ~~~
 
 
-### WSLBridge manual installation and Task contents  {#wslbridge-task}
+### WSLBridge installation and Task contents  {#wslbridge-task}
 
 To run wslbridge in ConEmu, just do simple steps:
 
-1. Download latest [wsltty](https://github.com/mintty/wsltty/releases) and unpack it.
-   You need three files: `wslbridge.exe`, `cygwin1.dll`, `wslbridge-backend`.
-2. Download latest [connector](https://github.com/Maximus5/cygwin-connector/releases).
-   You need the file: `conemu-cyg-64.exe`. Bitness must be the same as `cygwin1.dll`
-   from ‘step 1’.
-3. Put these four files into some folder, for example: `C:\Tools\ConEmu\wsl`.
-4. Create the task `{WSL:Bridge}`.
+0. Install ‘Windows Subsystem for Linux (WSL)’ and some Linux distro (e.g. Ubuntu)
+   from Microsoft Store.
+1. Download latest [ConEmu](https://www.fosshub.com/ConEmu.html) and install it.
+   * If you run [Installer](VersionComparison.html#installer) ensure that feature ‘WSL support’
+     and ‘cygwin/msys connector’ are enabled.
+   * Required files `wslbridge.exe`, `cygwin1.dll`, `wslbridge-backend` and `conemu-cyg-64.exe`
+     should be installed into `%ConEmuBaseDir%\wsl` and `%ConEmuBaseDir%` folders.
+2. Recreate [default tasks](Tasks.html#add-default-tasks), the Task `{Bash::bash}` should appear.
 
 Task **command**:
 ~~~
-C:\Tools\ConEmu\wsl\conemu-cyg-64.exe /cygdrive/c/Tools/ConEmu/wsl/wslbridge.exe -cur_console:pn
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/mnt
 ~~~
 
 Task parameters (icon):
 ~~~
--icon "%USERPROFILE%\AppData\Local\lxss\bash.ico"
+-icon "%ProgramW6432%\WindowsApps\CanonicalGroupLimited.UbuntuonWindows_1604.2017.922.0_x64__79rhkp1fndgsc\images\icon.ico"
 ~~~
 
 
@@ -285,11 +286,10 @@ If 64-bit version is not working for same reasons, you may try other WSLBridge v
 2. Obtain required dlls:
    * either `cygwin1.dll` from [https://cygwin.com/](https://cygwin.com)
    * or `msys-2.0.dll` from [http://www.msys2.org/](http://www.msys2.org/)
-3. Download latest [connector](https://github.com/Maximus5/cygwin-connector/releases).
-4. Collect all files in some folder, for example: `C:\Tools\ConEmu\wsl`.
-5. Create the task `{WSL:Bridge}`.
+3. Collect all files in some folder, for example: `C:\Tools\ConEmu\wsl`.
+4. Create the task `{WSL::Bridge}`.
 
 If you selected cygwin-32, so the Task command would be:
 ~~~
-C:\Tools\ConEmu\wsl\conemu-cyg-32.exe /cygdrive/c/Tools/ConEmu/wsl/wslbridge.exe -cur_console:pn
+C:\Tools\ConEmu\ConEmu\conemu-cyg-32.exe /cygdrive/c/Tools/ConEmu/wsl/wslbridge.exe -t -cur_console:pm:/mnt
 ~~~
