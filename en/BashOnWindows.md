@@ -43,6 +43,7 @@ without using of virtual machines or recompilations.
 * [Preferred way to run WSL](#connector)
   * [Change drives mount point in WSL](#wsl-mnt)
   * [Start WSL in Unix home directory](#wsl-home)
+  * [Support different WSL distributions](#wsl-distro)
 * [Get arrows working in ConEmu](#arrows)
   * [Solution 1: Default task {bash}](#arrows-sol-1)
   * [Solution 2: StatusBar's Terminal modes](#arrows-sol-2)
@@ -157,7 +158,19 @@ Add after `--wsl` the `-C~` switch:
 set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -C~ -cur_console:pm:/mnt
 ~~~
 
+### Support different WSL distributions  {#wsl-distro}
 
+If you want to install and run different WSL distributions simultaneously (Debian, Ubuntu, openSUSE, etc.)
+do the following steps:
+
+1. Find the GUID of your distribution in the registry under `HKCU\Software\Microsoft\Windows\CurrentVersion\Lxss`.
+   In my case, Debian distro has GUID `{1f6b2238-ec8d-4066-8e2b-ee31ce97ad3f}`.
+2. Modify [task](Tasks.html) for your WSL by inserting after `--wsl` switch `--distro-guid={DISTRO-GUID}`.
+   So, the task to run Debian distro on my machine looks like:
+
+~~~
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl --distro-guid={1f6b2238-ec8d-4066-8e2b-ee31ce97ad3f} -cur_console:pm:/mnt
+~~~
 
 
 
