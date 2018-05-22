@@ -15,6 +15,8 @@ breadcrumbs:
 readalso:
  - url: SettingsUpdate.html
    title: "Settings › Update page"
+ - url: InternetIssues
+   title: "Troubleshoot internet issues"
  - url: VersionComparison.html
    title: "Comparison: distros, bitness, stages"
  - url: Installation.html
@@ -54,9 +56,6 @@ All what you need is to enable
 or just call ‘Help > Check for updates’ from
 [SystemMenu](SystemMenu.html).
 
-
-### Internet access issues   {#auto-troubleshoot}
-
 ConEmu's internal update is using [ConEmuC](ConEmuC.html#Download)
 for accessing external sites. When automatic update check is issued,
 ConEmu tries to download `version.ini` with information about current
@@ -65,81 +64,9 @@ versions available, and than, after confirmation, it downloads appropriate
 or
 [7-Zip package](http://conemu.github.io/en/VersionComparison.html#zip-package).
 
-At the moment there are several maintained locations where `version.ini` is located:
+If download procedure fails for some reason please read
+[Troubleshoot internet issues](InternetIssues.html) article.
 
-* [http://conemu.github.io/version.ini](http://conemu.github.io/version.ini) (default)
-* [https://conemu.github.io/version.ini](https://conemu.github.io/version.ini) (same as above but using **https**)
-* [http://conemu.ru/version.ini](http://conemu.ru/version.ini)
-
-If your antivirus, proxy, firewall, router or provider
-blocks `ConEmuC.exe` from accessing these locations,
-ConEmu will not be able to update automatically.
-
-If these locations are inaccessible from any browser on users PC,
-there are no options. User have to contact their network
-administrators for assistance.
-
-But if `version.ini` is available, look for the options below.
-
-* [Change version.ini location](#auto-location)
-* [Change internal downloader switches](#auto-commandline)
-* [Use any third-party downloader tool](#auto-curl-wget)
-
-
-#### Update Internet Explorer   {#auto-ie}
-
-Try to open [https://conemu.github.io/](https://conemu.github.io/)
-in the **Internet Explorer** (not in your default browser).
-If it can't open the site, try to update your Internet Explorer.
-
-There were reports that after updating from 8.0 to 11.0 the problem
-with https access were solved.
-
-
-#### Change version.ini location   {#auto-location}
-
-If your provider/proxy/router blocks, for example, an access to
-[https://conemu.github.io/version.ini](https://conemu.github.io/version.ini),
-but **https** [location](https://conemu.github.io/version.ini), or
-[http://conemu.ru/version.ini](http://conemu.ru/version.ini) are available,
-you may switch to working location by changing value `Update.VerLocation`
-via [xml or registry](ConEmuXml.html). Look at the snippet below.
-
-~~~
-...
-<value name="Update.VerLocation" type="string" data="http://conemu.ru/version.ini"/>
-...
-~~~
-
-
-#### Change internal downloader switches   {#auto-commandline}
-
-To check internet issues from command line, run the following command.
-
-~~~
-ConEmuC.exe -download http://conemu.github.io/version.ini -
-~~~
-
-Actually, `-download` command has a lot of options like proxy settings,
-timeouts, agent name and others.
-They are described in `ConEmuC -?` printout, [About dialog](AboutDialog.html)
-and [online](ConEmuC.html#Download).
-You may play with them and if some option helps, change them in the
-[Settings dialog](SettingsUpdate.html) or [let us know](Issues.html).
-
-
-#### Use any third-party downloader tool   {#auto-curl-wget}
-
-Most known utilities available are ‘Curl’ and ‘Wget’.
-Just install them and switch to `External downloader`
-on the [Update settings page](SettingsUpdate.html).
-Sample commands lines are below, choose appropriate
-and tune their options if required.
-
-~~~
-wget.exe %1 -O %2
-curl.exe -L %1 -o %2
-~~~
 
 
 

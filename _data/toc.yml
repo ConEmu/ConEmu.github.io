@@ -41,6 +41,10 @@
           rus: "Автоматическое обновление"
           url: "UpdateModes.html"
         -
+          eng: "Troubleshoot internet issues"
+          rus: "Исправление проблем загрузки"
+          url: "InternetIssues.html"
+        -
           eng: "Speedup update with installer"
           rus: "Скорость обновления инсталлятором"
           url: "UpdateSpeedup.html"
