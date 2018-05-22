@@ -221,6 +221,7 @@ ANSICON_DEF=7
 | ESC \[ *lines* S | Scroll screen (whole buffer) up by *lines*. New lines are added at the bottom. |
 | ESC \[ *lines* T | Scroll screen (whole buffer) down by *lines*. New lines are added at the top. |
 | ESC \[ *n* X | Erase *n* (default 1) characters from cursor (fill with spaces and default attributes). |
+| ESC \[ *count* b | Repeats output of last written character *count* times. |
 | ESC \[ *>* c | Reports `ESC > 0 ; 136 ; 0 c` |
 | ESC \[ c | Reports `ESC [ ? 1 ; 2 c` |
 | ESC \[ *row* d | Moves the cursor to line *row* (absolute, 1-based). |
