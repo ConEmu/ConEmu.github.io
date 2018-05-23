@@ -23,6 +23,7 @@ readalso:
 * [Exception in ReadConsoleOutput](#Exception_in_ReadConsoleOutput)
 * [Console screen buffer corrupts from other console application](#Console_screen_buffer_corrupts_from_other_console_application)
 * [chcp hung](#chcp_hung)
+* [Ctrl+C lags](#ctrl-c)
 * [Insert/Overwrite indication](#Insert-Overwrite-Indicator)
 * [Conclusion](#Conclusion)
 
@@ -230,6 +231,38 @@ Console code page change (`chcp.com`, `SetConsoleCP`, `SetConsoleOutputCP`) hung
 
 Turn on ‘Inject ConEmuHk’ option.
 
+
+
+
+## Ctrl+C lags  {#ctrl-c}
+
+In [Windows console API](WinApi.html) there is no correct way to send `Ctrl+C` signals to console applications.
+
+The only working way which simulates conhost behavior is posting WM_KEYDOWN/WM_KEYUP
+events into the [RealConsole](RealConsole.html) window. But obviously due to asynchronous nature
+and possible race conditions console application may receive `Ctrl+C` signal after long lags
+or even may not receive the signal at all.
+
+| Appeared | Fixed |
+|:--------|:------|
+| Windows XP | ? |
+
+### Related issues
+
+* [Issue 1576: Ctrl+C won't stop a command which is dumping text to STDOUT](https://github.com/Maximus5/ConEmu/issues/1576)
+
+### Workaround
+
+First of all, check `Ctrl+C` in the [RealConsole](RealConsole.html),
+if it does not work - the problem is somewhere outside of ConEmu or conhost.
+
+If `Ctrl+C` works in the [RealConsole](RealConsole.html),
+no workaround may guarantee the expected result,
+but you may try the following:
+
+* Press and hold `Ctrl+C` for a longer time. But this may be not working too.
+* Use [GuiMacro.html#Break] `Break(0)`. But this has no effect on cmd.exe prompt, it's just ignored when you typed some command.
+* Use [hotkey](KeyboardShortcuts.html) for ‘Terminate (kill) all but shell processes in the current console’. But this really kills processes instead of sending `Ctrl+C` signal.
 
 
 
