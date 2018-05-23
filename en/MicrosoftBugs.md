@@ -249,6 +249,10 @@ or even may not receive the signal at all.
 
 ### Related issues
 
+* [Issue 402: ConEmu long delay on Ctrl+C with GitBash](https://github.com/Maximus5/ConEmu/issues/402)
+* [Issue 429: ctrl-c problems with build 151115 and above](https://github.com/Maximus5/ConEmu/issues/429)
+* [Issue 1018: ctrl-c not working in powershell windows 10 15007 on latest ConEmu](https://github.com/Maximus5/ConEmu/issues/1018)
+* [Issue 1470: CTRL-C out of erl shell running in powershell will stop responding to input and stop output in ConEmu](https://github.com/Maximus5/ConEmu/issues/1470)
 * [Issue 1576: Ctrl+C won't stop a command which is dumping text to STDOUT](https://github.com/Maximus5/ConEmu/issues/1576)
 
 ### Workaround
