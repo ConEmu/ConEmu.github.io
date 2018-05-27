@@ -20,23 +20,37 @@ readalso:
 
 Common question: ‘Is there any 'sudo' command for Windows?’
 
-One of the answers is here.
+An answer is here.
 
-ConEmu package contains (started from build 121028) batch file [`%ConEmuBaseDir%`](ConEmuEnvironment.html)\\[`csudo.cmd`](https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/csudo.cmd)’. When checkbox ‘Add %ConEmuBaseDir% to %PATH%’ is On (‘[ComSpec](SettingsComspec.html)’ settings page), you may just type csudo in non-elevated prompt in your shell.
+* [csudo in ConEmu](#csudo)
+* [Usage example](#example)
+* [Screenshots](#screenshots)
+* [Script and options](#options)
+* [csudo.cmd text](#script)
 
-**Note** You may also rename ‘csudo.cmd’ to ‘sudo.cmd’ if you like simple ‘sudo’ notation. And you must rename it if you like to change its contents to avoid loosing your changes when new update of ConEmu arrives.
+
+## csudo in ConEmu  {#csudo}
+
+ConEmu package contains (started from build 121028) batch file
+[`%ConEmuBaseDir%`](ConEmuEnvironment.html)\\[`csudo.cmd`](https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/csudo.cmd)’.
+When checkbox ‘Add %ConEmuBaseDir% to %PATH%’ is On (‘[ComSpec](SettingsComspec.html)’ settings page),
+you may just type csudo in non-elevated prompt in your shell.
+
+**Note** You may also rename `csudo.cmd` to `sudo.cmd` if you like simple ‘sudo’ notation.
+Don't change file contents to avoid your changes loss when new update of ConEmu arrives,
+set up options in the separate `csudo_parms.cmd` as [described below](#options).
 
 **Note** Elevated command will starts in new elevated ConEmu [tab](TabBar.html) or [pane](SplitScreen.html).
 
 
-## Example
+## Usage example  {#example}
 
 ```
 csudo dism /online /enable-feature /featurename:NetFX3 /All /Source:D:\sources\sxs /LimitAccess
 ```
 
 
-## Screenshots
+## Screenshots  {#screenshots}
 
 Let type in command prompt ‘csudo diskpart’
 
@@ -55,15 +69,25 @@ Here we are, diskpart started elevated in a split
 ![Running csudo command](/img/ConEmuSuDo3.png)
 
 
-## Batch file contents
+
+## Script and options  {#options}
 
 As you can see, batch contains two parameters, which you may redefine: `ConEmuSplit` and `ConfirmClose`.
 
-For example, if you want to start elevated command in new tab rather than in split - just change ‘`set ConEmuSplit=VERT`’ to ‘`set ConEmuSplit=NO`’.
+You may change them in the user-file `csudo_parms.cmd` in the same folder where `csudo.cmd` is located.
 
-### csudo.cmd
+For example, if you want to start elevated command in new tab rather than in split
+just create `csudo_parms.cmd` file with contents:
 
 ```
+set ConEmuSplit=NO
+```
+
+
+
+### csudo.cmd  {#script}
+
+~~~
 @echo off
 
 rem This is analogue for *nix "sudo" command
@@ -138,4 +162,4 @@ rem Start requested command
 %ConEmuSrvPath% /c %* %ConEmuNewCon%
 )
 rem all done
-```
+~~~
