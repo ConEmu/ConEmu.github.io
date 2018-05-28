@@ -11,68 +11,31 @@ breadcrumbs:
 
 # Settings: Startup
 
-*This page was generated automatically from ConEmu sources*
-{% comment %} IDD_SPG_STARTUP {% endcomment %}
-
 ![ConEmu Settings: Startup](/img/Settings-Startup.png)
 
+## Startup options  {#id2868}
+
+Choose here what consoles you want to be started with ConEmu by default.
+Defaults may be overriden with `-run` or `-runlist` [argument of ConEmu.exe](ConEmuArgs.html).
+
+* **Command line** Starts ConEmu with single tab opened.
+* **Tasks file** Starts ConEmu with several (one or more) tabs,
+  commands located in specified text file.
+* **Specified named task** (*Recommended option*) Starts ConEmu with several (one or more) tabs,
+  commands located in ConEmu Settings, Tasks page.
+* **Auto save/restore opened tabs** ConEmu tries to save configuration of your active tabs/panes
+  and restore them on ConEmu restart. Please read [Shell working directory](ShellWorkDir.html)
+  article for required steps.
+  
+
+#### Delay between consoles initialization  {#id2871}
+
+Define here the delay in milliseconds between creating consoles
+during ConEmu or [multi-command task](Tasks.html) startup.
 
 
-## Startup options (may be overriden with \"/cmd\" or \"/cmdlist\" argument of ConEmu.exe)  {#id2868}
+## Selected task contents  {#id2754}
 
+*View only, go to the [Tasks](Tasks.html) page for editing.*
 
-
-
-* **Command line** Starts ConEmu with single tab opened
-
-
-
-
-
-
-
-* **Tasks file** Starts ConEmu with several (one or more) tabs, commands located in specified text file
-
-
-
-
-
-
-
-* **Specified named task** Starts ConEmu with several (one or more) tabs, commands located in ConEmu Settings, Tasks page
-* **Auto save/restore opened tabs** Auto save/restore (reopen) ConEmu tabs
-
-
-#### Far folders also  {#id2237}
-When ‘Auto save/restore opened tabs’ save/restore Far Manager panels folders too
-
-#### Far editors/viewers also  {#id2238}
-When ‘Auto save/restore opened tabs’ save/restore Far Manager editors/viewers too
-
-## Group  {#id2869}
-
-
-
-#### Delay between consoles initialization (ms)
-
-
-
-
-
-
-## Group
-
-
-
-
-
-## Selected task contents (view only, change on Tasks page)  {#id2754}
-
-
-
-
-
-
-
-
-
+You may see here contents of the selected Task or ‘Auto saved tabs’.
