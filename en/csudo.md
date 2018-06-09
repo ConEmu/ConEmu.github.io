@@ -8,8 +8,12 @@ breadcrumbs:
    title: Launch Apps
 
 readalso:
+ - url: SettingsEnvironment.html
+   title: Environment settings page
  - url: NewConsole.html
    title: ‘-new_console’ and ‘-cur_console’ switches
+ - url: CmdPrompt.html
+   title: Configuring Cmd prompt
  - url: AnsiEscapeCodes.html
    title: ANSI X3.64 and Xterm-256 Support
  - url: SplitScreen.html
@@ -26,19 +30,21 @@ An answer is here.
 * [Usage example](#example)
 * [Screenshots](#screenshots)
 * [Script and options](#options)
-* [csudo.cmd text](#script)
+* [csudo.cmd script](#script)
 
 
 ## csudo in ConEmu  {#csudo}
 
 ConEmu package contains (started from build 121028) batch file
-[`%ConEmuBaseDir%`](ConEmuEnvironment.html)\\[`csudo.cmd`](https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/csudo.cmd)’.
-When checkbox ‘Add %ConEmuBaseDir% to %PATH%’ is On (‘[ComSpec](SettingsComspec.html)’ settings page),
-you may just type csudo in non-elevated prompt in your shell.
+[`%ConEmuBaseDir%`](ConEmuEnvironment.html)\\[`csudo.cmd`](https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/csudo.cmd).
+When checkbox ‘Add %ConEmuBaseDir% to %PATH%’ is checked (‘[ComSpec](SettingsComspec.html)’ settings page),
+you may just type `csudo` in non-elevated prompt in your shell.
 
-**Note** You may also rename `csudo.cmd` to `sudo.cmd` if you like simple ‘sudo’ notation.
-Don't change file contents to avoid your changes loss when new update of ConEmu arrives,
-set up options in the separate `csudo_parms.cmd` as [described below](#options).
+**Note** You may also define an alias `sudo` for `csudo.cmd` if you prefer simple `sudo` notation.
+Just go to the [Environment](SettingsEnvironment.html) settings page.
+
+**Note** Don't change file contents to avoid your changes loss when new update of ConEmu arrives,
+set up options as [described below](#options) instead.
 
 **Note** Elevated command will starts in new elevated ConEmu [tab](TabBar.html) or [pane](SplitScreen.html).
 
@@ -72,94 +78,27 @@ Here we are, diskpart started elevated in a split
 
 ## Script and options  {#options}
 
-As you can see, batch contains two parameters, which you may redefine: `ConEmuSplit` and `ConfirmClose`.
+As you can see, batch contains two parameters, which you may redefine: `ConEmuSudoSplit` and `ConEmuSudoConfirm`.
 
-You may change them in the user-file `csudo_parms.cmd` in the same folder where `csudo.cmd` is located.
+You may adjust them on the [Environment](SettingsEnvironment.html) settings page.
+
+| Variable | Value | Description |
+|:---|:---|:---|
+| `ConEmuSudoSplit`   | VERT | Create new console in the split below current one |
+|                     | HORZ | Create new console in the split rightward |
+|                     | NO   | Create new console in the new tab |
+| `ConEmuSudoConfirm` | YES  | When started command terminates ConEmu will show ‘Press Enter or Esc to close console...’ confirmation in started console |
+|                     | NO   | When started command terminates started console is closed automatically |
 
 For example, if you want to start elevated command in new tab rather than in split
-just create `csudo_parms.cmd` file with contents:
+just add the following line to your [Environment](SettingsEnvironment.html):
 
 ```
-set ConEmuSplit=NO
+set ConEmuSudoSplit=NO
 ```
 
 
 
-### csudo.cmd  {#script}
+### csudo.cmd script  {#script}
 
-~~~
-@echo off
-
-rem This is analogue for *nix "sudo" command
-rem You may rename this file to "sudo.cmd" or use it "as is"
-rem Example:
-rem csudo dism /online /enable-feature /featurename:NetFX3 /All /Source:D:\sources\sxs /LimitAccess
-
-setlocal
-
-rem Use split screen feature? Possible values: VERT, HORZ, NO
-set ConEmuSplit=VERT
-
-rem Show confirmation before closing SUDO tab
-rem You may set NO here, if confirmation is not needed
-set ConfirmClose=YES
-
-
-rem You may override default settings in batch-file "csudo_parms.cmd"
-if exist "%~dp0csudo_parms.cmd" call "%~dp0csudo_parms.cmd"
-
-
-rem When possible - use Ansi Esc sequences to print errors
-rem Let set "ESC" variable to char with code \x1B
-set ESC=
-
-rem It is 64-bit OS?
-if not %PROCESSOR_ARCHITECTURE%==AMD64 goto x32
-
-rem First, try to use 64-bit ConEmuC
-if exist "%~dp0ConEmuC64.exe" (
-set ConEmuSrvPath="%~dp0ConEmuC64.exe"
-goto run
-)
-
-:x32
-rem Let use 32-bit ConEmuC
-if exist "%~dp0ConEmuC.exe" (
-set ConEmuSrvPath="%~dp0ConEmuC.exe"
-goto run
-)
-
-:not_found
-rem Oops, csudo located in wrong folder
-if %ConEmuANSI%==ON (
-echo %ESC%[1;31;40mFailed to find ConEmuC.exe or ConEmuC64.exe!%ESC%[0m
-) else (
-echo Failed to find ConEmuC.exe or ConEmuC64.exe
-)
-exit 100
-goto :EOF
-
-:run
-rem Preparing switches
-if %ConEmuSplit%==VERT (
-set SPLIT=sV
-) else if %ConEmuSplit%==HORZ (
-set SPLIT=sH
-) else (
-set SPLIT=
-)
-if %ConfirmClose%==NO (
-set ConEmuNewCon=-new_console:an%SPLIT%
-) else (
-set ConEmuNewCon=-new_console:ac%SPLIT%
-)
-
-if "%~1"=="" (
-rem There was no arguments, just start new ComSpec
-%ConEmuSrvPath% /c %ComSpec% %ConEmuNewCon%
-) else (
-rem Start requested command
-%ConEmuSrvPath% /c %* %ConEmuNewCon%
-)
-rem all done
-~~~
+[`%ConEmuBaseDir%`](ConEmuEnvironment.html)\\[`csudo.cmd`](https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/csudo.cmd)

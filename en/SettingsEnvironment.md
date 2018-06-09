@@ -83,7 +83,7 @@ may harm output of some unaware console applications.
 
 ### alias
 
-These aliases will work within `cmd.exe` and [Far Manager](FarManager.html) only.
+These aliases will work within `cmd.exe` and [Far Manager](FarManager.html) **only**.
 Actually this command will do the same thing as `DosKey.exe` is doing.
 Few examples below.
 

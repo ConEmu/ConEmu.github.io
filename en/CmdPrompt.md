@@ -9,10 +9,14 @@ breadcrumbs:
    title: Tips and Tweaks
 
 readalso:
+ - url: SettingsEnvironment.html
+   title: Environment settings page
+ - url: csudo.html
+   title: Unix like sudo command
  - url: PowershellPrompt.html
-   title: "Extending Powershell Prompt"
+   title: Extending Powershell Prompt
  - url: PromptAtTheBottom.html
-   title: "Hold Shell Prompt at the Bottom"
+   title: Hold Shell Prompt at the Bottom
 ---
 
 # Configuring Cmd Prompt
