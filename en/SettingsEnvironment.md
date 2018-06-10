@@ -30,6 +30,7 @@ readalso:
   * [alias](#alias)
     * ["sudo" alias example](#sudo-alias)
     * ["st" alias example](#st-example)
+    * [More alias examples](#aliases)
 * [Add to %PATH% environment variable](#id2974)
   * [Add %ConEmuDir% to %PATH%](#id2423)
   * [Add %ConEmuBaseDir% to %PATH%](#id2584)
@@ -86,6 +87,7 @@ These aliases will work within `cmd.exe` and [Far Manager](FarManager.html) **on
 Actually this command will do the same thing as `DosKey.exe` is doing.
 Few examples below.
 
+
 #### "sudo" alias example  {#sudo-alias}
 
 There is the [csudo](csudo.html) command file.
@@ -103,6 +105,7 @@ sudo diskpart
 
 New elevated tab with `diskpart.exe` will be started (after UAC confirmation).
 
+
 #### "st" alias example  {#st-example}
 
 Use "start" to start new console application inside ConEmu
@@ -117,6 +120,34 @@ with `-new_console` new [tab](LaunchNewTab.html) will be created
 with `start` command, `-new_console` will be stripped from arguments
 and ‘true’ tab with your console application will start without
 this switch.
+
+
+#### More alias examples  {#aliases}
+
+Use `DOSKEY.exe` to add alias or print current aliases.
+
+~~~
+alias alias=DOSKEY $*
+alias aliases=DOSKEY /MACROS
+~~~
+
+Implement `cat` command in cmd.exe prompt via [ConEmuC -type](ConEmuC.html#EchoAndType) switch.
+
+~~~
+alias cat=ConEmuC -type $*
+~~~
+
+And `ce` to call [ConEmuC -echo](ConEmuC.html#EchoAndType).
+
+~~~
+alias ce=ConEmuC -echo $*
+~~~
+
+Fast way to go to the `%ConEmuDir%`.
+
+~~~
+alias ...=cd /d "%ConEmuDir%"
+~~~
 
 
 
