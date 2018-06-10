@@ -24,31 +24,6 @@ readalso:
 ![ConEmu Settings: Environment](/img/Settings-Environment.png)
 
 
-## Add to %PATH% environment variable
-
-Here you may add to the `PATH` environment variables
-for processes running inside ConEmu
-([tabs](Tabs.html) and [splits](SplitScreen.html)).
-
-**Add %ConEmuDir% to %PATH%**. If checked you may run `ConEmu.exe` and `ConEmu64.exe`
-from your [command-line interpreter](TerminalVsShell.html).
-Example below.
-
-~~~
-ConEmu -basic -noquake -nosingle -startTSA -run <build your project command line>
-~~~
-
-**Add %ConEmuBaseDir% to %PATH%**. If checked you may run `ConEmuC.exe` and `ConEmuC64.exe`
-from your [command-line interpreter](TerminalVsShell.html).
-`ConEmuC` is used generally to do some checks (`-IsConEmu` switch)
-and execute [GuiMacro](GuiMacro.html). Example below.
-
-~~~
-ConEmuC -GuiMacro Progress 3
-~~~
-
-
-
 ## Set up environment variables, cmd.exe aliases, codepage
 
 Here you may do the fine tuning of your environment
@@ -89,12 +64,11 @@ Few examples below.
 
 #### "sudo" alias
 
-There is the [csudo](csudo.html) command file, but it is not user-configurable
-(will be overwritten with next update).
-You may create an alias with desired behavior.
+There is the [csudo](csudo.html) command file.
+You may create an alias with desired behavior and name.
 
 ~~~
-alias sudo=ConEmuC -c $* -new_console:a
+alias sudo=ConEmuC -c $* -new_console:ac
 ~~~
 
 And you may just run in your non-elevated cmd.exe prompt (inside ConEmu of course):
@@ -119,3 +93,32 @@ with `-new_console` new [tab](LaunchNewTab.html) will be created
 with `start` command, `-new_console` will be stripped from arguments
 and ‘true’ tab with your console application will start without
 this switch.
+
+
+
+
+## Add to %PATH% environment variable
+
+**Note** This option group is superfluous and is maintained for compatibility
+and some simplification. You may modify your `%PATH%` in the edit area above.
+
+Here you may add to the `PATH` environment variables
+for processes running inside ConEmu
+([tabs](Tabs.html) and [splits](SplitScreen.html)).
+
+**Add %ConEmuDir% to %PATH%**. If checked you may run `ConEmu.exe` and `ConEmu64.exe`
+from your [command-line interpreter](TerminalVsShell.html).
+Example below.
+
+~~~
+ConEmu -basic -noquake -nosingle -startTSA -run <build your project command line>
+~~~
+
+**Add %ConEmuBaseDir% to %PATH%**. If checked you may run `ConEmuC.exe` and `ConEmuC64.exe`
+from your [command-line interpreter](TerminalVsShell.html).
+`ConEmuC` is used generally to do some checks (`-IsConEmu` switch)
+and execute [GuiMacro](GuiMacro.html). Example below.
+
+~~~
+ConEmuC -GuiMacro Progress 3
+~~~
