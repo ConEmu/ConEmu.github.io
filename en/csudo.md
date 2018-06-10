@@ -30,6 +30,7 @@ An answer is here.
 * [Usage example](#example)
 * [Screenshots](#screenshots)
 * [Script and options](#options)
+* [Alias for cmd.exe](#alias)
 * [csudo.cmd script](#script)
 
 
@@ -99,6 +100,17 @@ set ConEmuSudoSplit=NO
 
 
 
-### csudo.cmd script  {#script}
+## Alias for cmd.exe  {#alias}
+
+You may also [setup an alias](SettingsEnvironment.html) for `cmd.exe`
+and [Far Manager](FarManager.html) prompt.
+Please read [-new_console](NewConsole.html) options for details.
+
+~~~
+alias sudo=ConEmuC.exe -c $* -new_console:ac
+~~~
+
+
+## csudo.cmd script  {#script}
 
 [`%ConEmuBaseDir%`](ConEmuEnvironment.html)\\[`csudo.cmd`](https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/csudo.cmd)
