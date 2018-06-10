@@ -67,10 +67,6 @@ Get UAC confirmation on Vista or later
 
 ![csudo UAC confirmation](/img/ConEmuSuDo2.png)
 
-Or choose another credentials on Windows 2000 or Windows XP
-
-![csudo UAC confirmation](/img/ConEmuSuDo4.png)
-
 Here we are, diskpart started elevated in a split
 
 ![Running csudo command](/img/ConEmuSuDo3.png)
