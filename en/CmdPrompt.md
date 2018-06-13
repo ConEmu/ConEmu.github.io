@@ -13,6 +13,8 @@ readalso:
    title: Environment settings page
  - url: csudo.html
    title: Unix like sudo command
+ - url: GitForWindows.html
+   title: Using Git for Windows
  - url: PowershellPrompt.html
    title: Extending Powershell Prompt
  - url: PromptAtTheBottom.html
@@ -20,6 +22,46 @@ readalso:
 ---
 
 # Configuring Cmd Prompt
+
+The preferable way to run `cmd.exe` in ConEmu is
+[predefined Task](Tasks.html#add-default-tasks) `{cmd}`, itruns `cmd.exe` with
+[CmdInit.cmd](https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/CmdInit.cmd)
+initialization file.
+
+![cmd's prompt in ConEmu](/img/ConEmuCmdPrompt1.png)
+
+You may get git repository status in your prompt, just append
+`-git` switch after `CmdInit.cmd` in `{cmd}` task command.
+
+**Note** Results of `git status` are parsed by cmd script and you may
+notice long lags if your repository has a lot of changed files.
+
+**Note** Option ‘GuiMacro and Process execution’ should be enabled for `cmd.exe`
+on the [ANSI execution](SettingsANSI.html) settings page.
+
+![cmd's prompt with git status in ConEmu](/img/ConEmuCmdPrompt1.png)
+
+
+
+## CmdInit options  {#cmdinit}
+
+When you run `{cmd}` task or any other task utilizing `CmdInit.cmd`
+you may set configuration variables on the [Environment settings page](SettingsEnvironment.html):
+
+| Variable | Value | Description |
+|:---|:---|:---|
+| `ConEmuPromptNL`    | YES | (default) Use two-lines prompt: second line contains only `$ ` or `# ` (for elevated consoles) |
+|                     | NO  | Use one-line prompt |
+| `ConEmuPromptNames` | YES | (default) Print `User@PC` before current directory |
+|                     | NO  | Omit `User@PC` from prompt |
+
+
+
+## Legacy PROMPT command  {#prompt}
+
+**Note** `PROMPT` command does not work in [cmder](cmder.html)
+or [clink](TabCompletion.html#ConEmu_and_clink). PROMPT option
+is processed by `cmd.exe` only.
 
 All configuration of `cmd.exe` prompt (color, text, linefeeds) is done
 either by the `PROMPT` command (run `PROMPT /?` for help)
