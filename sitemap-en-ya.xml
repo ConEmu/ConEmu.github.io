@@ -44,13 +44,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/AnsiEscapeCodes.html</loc>
-    <lastmod>2018-05-02</lastmod>
+    <lastmod>2018-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/AnsiEscapeCodes.html</loc>
-    <lastmod>2018-05-02</lastmod>
+    <lastmod>2018-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -104,7 +104,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/BashOnWindows.html</loc>
-    <lastmod>2018-05-06</lastmod>
+    <lastmod>2018-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -134,7 +134,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/CmdPrompt.html</loc>
-    <lastmod>2015-07-01</lastmod>
+    <lastmod>2018-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -272,7 +272,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/csudo.html</loc>
-    <lastmod>2015-04-09</lastmod>
+    <lastmod>2018-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -631,6 +631,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://conemu.github.io/en/InternetIssues.html</loc>
+    <lastmod>2018-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://conemu.github.io/en/Issues.html</loc>
     <lastmod>2016-03-03</lastmod>
     <changefreq>daily</changefreq>
@@ -686,7 +692,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/MicrosoftBugs.html</loc>
-    <lastmod>2018-05-02</lastmod>
+    <lastmod>2018-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -872,7 +878,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsEnvironment.html</loc>
-    <lastmod>2018-05-02</lastmod>
+    <lastmod>2018-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -980,7 +986,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsStartup.html</loc>
-    <lastmod>2017-02-06</lastmod>
+    <lastmod>2018-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1178,7 +1184,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/UpdateModes.html</loc>
-    <lastmod>2018-05-02</lastmod>
+    <lastmod>2018-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
