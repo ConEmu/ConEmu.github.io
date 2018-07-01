@@ -152,6 +152,11 @@
       eng: "Tasks"
       rus: "Tasks"
       url: "Tasks.html"
+      children:
+        -
+          eng: "Default Tasks"
+          rus: "Default Tasks"
+          url: "DefaultTasks.html"
     -
       eng: "Default terminal"
       rus: "Терминал по умолчанию"
