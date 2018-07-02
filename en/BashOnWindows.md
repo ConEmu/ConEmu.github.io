@@ -41,6 +41,7 @@ without using of virtual machines or recompilations.
   * [TLDR: WSL Installation](#TLDR)
 * [Some techinfo](#techinfo)
 * [Preferred way to run WSL](#connector)
+  * [Change startup shell in WSL](#wsl-shell)
   * [Change drives mount point in WSL](#wsl-mnt)
   * [Start WSL in Unix home directory](#wsl-home)
   * [Support different WSL distributions](#wsl-distro)
@@ -120,7 +121,7 @@ or [ConEmu cygwin/msys connector](CygwinMsysConnector.html).
 The required files of wslbridge and connector are shipped with ConEmu since
 build [170730](/blog/2017/07/30/Build-170730.html).
 Just download and install latest [Preview or Alpha](VersionComparison.html) version
-and be sure that your [Tasks](Tasks.html) are [updated](Tasks.html#add-default-tasks).
+and be sure that your [Tasks](Tasks.html) are [updated](DefaultTasks.html#add-default-tasks).
 
 You `{Bash::bash}` task command shall be something like:
 
@@ -128,17 +129,27 @@ You `{Bash::bash}` task command shall be something like:
 set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/mnt
 ~~~
 
-Or if you want to define your own shell, for example `fish -l`:
-
-~~~
-set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pnm:/mnt -t fish -l
-~~~
-
 And its task parameters:
 
 ~~~
 /dir %CD% /icon "%USERPROFILE%\AppData\Local\lxss\bash.ico"
 ~~~
+
+
+### Change startup shell in WSL  {#wsl-shell}
+
+ConEmu starts WSL via [wslbridge](https://github.com/rprichard/wslbridge) to be able
+render ANSI internally. That means if you type additional arguments after `--wsl`
+this line (with the exception of [-cur_console](NewConsole.html)) is passed to
+wslbridge intact. So the `-t` switch of wslbridge is required.
+
+If you want to start your own shell, for example `fish -l`, append the `-t fish -l`
+at the end of default `{Bash::bash}` task command.
+
+~~~
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pnm:/mnt -t fish -l
+~~~
+
 
 ### Change drives mount point in WSL  {#wsl-mnt}
 
@@ -150,6 +161,7 @@ So you may access your files like `/c/path` instead of default `/mnt/c/path`.
   from [this issue](https://github.com/Maximus5/ConEmu/issues/1538#issuecomment-386838630).
 * To get proper conversion of Windows paths during Paste change `-new_console:m:/mnt` to `-new_console:m:""`.
 
+
 ### Start WSL in Unix home directory  {#wsl-home}
 
 Add after `--wsl` the `-C~` switch:
@@ -157,6 +169,7 @@ Add after `--wsl` the `-C~` switch:
 ~~~
 set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -C~ -cur_console:pm:/mnt
 ~~~
+
 
 ### Support different WSL distributions  {#wsl-distro}
 
