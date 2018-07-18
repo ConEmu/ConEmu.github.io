@@ -152,9 +152,8 @@ fi
 For zsh just add this to your `~/.zshrc` file.
 
 ~~~
-prmptcmd() { eval "$PROMPT_COMMAND" }
-precmd_functions=(prmptcmd)
-PROMPT_COMMAND='ConEmuC -StoreCWD'
+set_conemu_cwd() { ConEmuC -StoreCWD }
+precmd_functions+=set_conemu_cwd
 ~~~
 
 
