@@ -542,6 +542,10 @@
       rus: "Установка WSL"
       url: "BashOnWindows.html#TLDR"
     -
+      eng: "Preferred way to run WSL"
+      rus: "Как запускать WSL в ConEmu"
+      url: "BashOnWindows.html#connector"
+    -
       eng: "Get arrows working in ConEmu"
       rus: "Если не работают кнопки курсора"
       url: "BashOnWindows.html#arrows"
