@@ -24,8 +24,13 @@ Just hover mouse with `Ctrl` pressed.
 
 May be configured on [Highlight](SettingsHighlight.html) settings page.
 
+### Example for `git status` output
 
-![ConEmu FileLineDetector](/img/ConEmuFileLineHL.png)
+![ConEmu FileLineDetector](/img/ConEmuFileLineHL1.png)
+
+### Example for `cl` output
+
+![ConEmu FileLineDetector](/img/ConEmuFileLineHL2.png)
 
 
 
@@ -48,8 +53,8 @@ Action: File will be opened in the [specified editor](SettingsHighlight.html) on
 
 File names or full paths produced from `dir`, `ls`, `git status`, `git diff` and so on.
 
-**NB** File will not be highlighted if ConEmu can't find it in the
-[shell's current directory](ShellWorkDir.html).
+**NB** File will not be highlighted if ConEmu can't find them.
+It's critical to configure [shell's current directory](ShellWorkDir.html) reporting properly.
 
 Action:
 
