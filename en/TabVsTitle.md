@@ -44,5 +44,5 @@ And of course it can be specified from your task.
 Read wiki [NewConsole](NewConsole.html) switch `t`.
 
 ~~~
-cmd -new_console:t:'Your cool tab'
+cmd -new_console:t:"Your cool tab"
 ~~~
