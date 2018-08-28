@@ -87,7 +87,7 @@ and they are not using native
 
 When you run `%windir%\system32\bash.exe` this native Windows process
 starts ‘linux kernel’ outside of Windows console,
-and linux applications commuticate with [conhost](ConsoleApplication.html#conhost)
+and linux applications communicate with [conhost](ConsoleApplication.html#conhost)
 without use of Windows Console API.
 
 That means ConEmu can't ‘[hook](ConEmuHk.html)’ linux processes!
@@ -213,7 +213,7 @@ and
 3. So, just run `{bash}` [task](Tasks.html), arrow keys are expected
    to be working!
 
-   
+
 ### Solution 2: StatusBar's Terminal modes  {#arrows-sol-2}
 
 You may enable [StatusBar](StatusBar.html) column ‘Terminal modes’.
@@ -300,6 +300,28 @@ set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.
 Task parameters (icon):
 ~~~
 -icon "%ProgramW6432%\WindowsApps\CanonicalGroupLimited.UbuntuonWindows_1604.2017.922.0_x64__79rhkp1fndgsc\images\icon.ico"
+~~~
+
+To pass environment variable to WSL, you have two options:
+
+1) Forward it from host system:
+~~~
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -eHOST_VARIABLE -cur_console:pm:/mnt
+~~~
+
+2) Define it directly to wslbridge:
+~~~
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -eDISPLAY=:0 -cur_console:pm:/mnt
+~~~
+
+Task can contain initializing commands by evaluating a passed environment parameter.
+The method itself is detailed [here](CygwinStartCmd.html#bashrc).
+You can use this in case you would like to have different Tasks corresponding to different environment and the the environment variable setting is not enough.
+
+After following the linked **.bashrc** guide, you can pass different initializer commands to WSL for each Task.
+
+~~~
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -eSTARTUP_CMD='. $HOME/sdk/environment-setup' -cur_console:pm:/mnt
 ~~~
 
 
