@@ -149,7 +149,11 @@ Fast way to go to the `%ConEmuDir%`.
 alias ...=cd /d "%ConEmuDir%"
 ~~~
 
+Chain commands together using $t as a command separator
 
+~~~
+alias openNotes=cd /user/notes/ $t noteapad notes.txt
+~~~
 
 
 ## Add to %PATH% environment variable  {#id2974}
