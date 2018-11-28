@@ -17,7 +17,7 @@ readalso:
 When you run any application compiled with cygwin or msys
 (that is statically linked with cygwin1.dll or msys???.dll)
 you may, sometimes, notice weird error in application console output,
-and it will immediately exits after that.
+and it will immediately exit after that.
 
 Few examples.
 
@@ -51,20 +51,19 @@ compiled with link options ask Windows kernel to load [ConEmuHk](ConEmuHk.html).
 I really can't help you because it is not a ConEmu bug... But you may fix it yourself in your PC.
 
 1. If you are on 64-bit Windows try 64-bit distro of cygwin/msys/git.
-Have noticed that some versions of 32-bit Git-For-Windows were failed on 64-bit Windows,
-but 64-bit Git-For-Windows was succeeded. 
-2. Try to logoff/logon. If same here - try to restart your PC.
-3. Same here? That means you must find problematic dll. Use ConEmuReportExe environment
+I have noticed that some versions of 32-bit Git-For-Windows were failing on 64-bit Windows,
+but 64-bit Git-For-Windows were not. 
+2. Try to logout and log in again. If it still happens - try to restart your PC.
+3. Same here? That means you must find the problematic dll file. Use ConEmuReportExe environment
 variable to stop execution of your application (sh.exe, ls.exe, and so on).
-And when message box arrears "sh.exe loaded" use [ProcessMonitor](ProcessMonitor.html)
+And when message box appears "sh.exe loaded" use [ProcessMonitor](ProcessMonitor.html)
 to find dll which was loaded immediately after cygwin1.dll or msys???.dll.
 Press OK in the waiting message box and confirm that "failed" allocation memory
 address overlaps with dll your found. From my experience, that can be [apphelp.dll](AppHelp.html).
-4. When you find bad gay:
-    * You may to PATCH this dll. Use rebase tool from Windows sdk for example. What new base address to choose? I can't tell you. Ideally, that address must not overlaps with any other libraries... but there are thousands... Good thing - must of them can be linked with dynamic base, bad thing - off you choose bad address, your system will be unstable (error code 0xC???).
-    * And, if it possible, you may install the program which had installed that dll
+4. When you find bad guy:
+    * As a first step, you may want to try to either update/reinstall or remove the program which had installed that dll
     * Also, may be that program allows to set up exclusions. If you are working in the ConEmu consoles only, you may add to exclusions list only ConEmu's executables (ConEmuC.exe, ConEmuC64.exe, ConEmu.exe, ConEmu64.exe). Otherwise, you need to add to exclusions list all of your cygwin/msys applications (sh, ls, and on).
-
+    * You may try to PATCH this dll. Use rebase tool from Windows sdk for example. What new base address to choose? I can't tell you. Ideally, that address must not overlaps with any other libraries... but there are thousands... Good thing - must of them can be linked with dynamic base, bad thing - off you choose bad address, your system will be unstable (error code 0xC???).
 
 
 ## Still not sure?  {#Still_not_sure}
