@@ -865,6 +865,7 @@ Select(<Type>,<DX>,<DY>,<HE>)
    DX: select text horizontally: -1/+1
    DY: select text vertically: -1/+1
    HE: to-home(-1)/to-end(+1) with text selection
+   HE: word-left(-2)/word-right(+2) with text selection
 Select(2)
  - Use to cancel active selection
 ~~~
