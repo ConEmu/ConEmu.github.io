@@ -37,8 +37,16 @@ from command line or [keypress](SettingsHotkeys.html).
 
 ## Contents  {#Contents}
 
-
 * [How GuiMacro may be executed](#HowToCall)
+  * [ConEmu hotkeys ‘Macro 01’ … ‘Macro 32’](#call-hotkey)
+  * [ConEmuC -GuiMacro switch](#call-conemuc)
+  * [From shortcut (ConEmu and ConEmu64)](#Gui_args)
+  * [ANSI OSC sequence](#ANSI)
+  * When you are in Far Manager
+    * [Far Manager plugin](#FarPlugin)
+    * [Far Manager 3.0 macros, **Far3-lua**](#Far3Lua)
+    * [Far Manager 3.0 macros, **Far3-pre-lua**](#Far3PerLua)
+    * [Far Manager 2.0](#Far2)
 * [Syntax](#Syntax)
   * [Styles of arguments specification](#Styles_of_arguments_specification)
   * [Specifying more that a one argument](#Specifying_more_that_a_one_argument)
@@ -60,11 +68,11 @@ from command line or [keypress](SettingsHotkeys.html).
 
 ## How GuiMacro may be executed  {#HowToCall}
 
-##### 1. ConEmu hotkeys ‘Macro 01’ … ‘Macro 32’  {#call-hotkey}
+#### 1. ConEmu hotkeys ‘Macro 01’ … ‘Macro 32’  {#call-hotkey}
 
 Just set up ‘Macro 01’ … ‘Macro 32’ on [‘Keys’](SettingsHotkeys.html) page of ‘Settings’ dialog.
 
-##### 2. ConEmuC -GuiMacro switch  {#call-conemuc}
+#### 2. ConEmuC -GuiMacro switch  {#call-conemuc}
 
 **NB**. This does not work in [WSL](BashOnWindows.html)!
 
@@ -80,15 +88,15 @@ ConEmuC -Guimacro Flash(1,3,5) ; MsgBox("Notification text")
 ConEmuC -GuiMacro:0 print: C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32
 ~~~
 
-3. [From shortcut (ConEmu and ConEmu64)](#Gui_args).
+#### 3. [From shortcut (ConEmu and ConEmu64)]  {#Gui_args}
 
 ~~~
 ConEmu.exe -Detached -GuiMacro "Create(0,1); Context; print(\"echo \\\"Hello world\\\"\");"
 ~~~
     
-4. [ANSI OSC code](AnsiEscapeCodes.html#ConEmu_specific_OSC). The following is only a demo,
-  if you need to check [‘IsConEmu’](ConEmuC.html) it is better to call
-  `"ConEmuC -IsConEmu"` and check `%errorlevel%`.
+#### 4. [ANSI OSC code](AnsiEscapeCodes.html#ConEmu_specific_OSC)  {#ANSI}
+The following is only a demo, if you need to check [‘IsConEmu’](ConEmuC.html) it is better to call
+`"ConEmuC -IsConEmu"` and check `%errorlevel%`.
 
 ~~~
 rem We need real ESC code (symbol with ASCII \x1B) in cmd scripts
@@ -97,25 +105,26 @@ echo %ESC%]9;6;"IsConEmu"%ESC%\
 if "%ConEmuMacroResult%"=="Yes" echo ConEmu found!
 ~~~
 
-5. Via [Far Manager plugin](#Far_Manager_plugin) (Far Manager 1.7x, 2.0, 3.0 are supported).
+#### 5. Via [Far Manager plugin](#Far_Manager_plugin)  {#FarPlugin}
+**NB**. Far Manager 1.7x, 2.0, 3.0 are supported.
 
 ~~~
 F11 -> ConEmu -> Execute ConEmu macro
 ~~~
 
-6. Via Far Manager macros, **Far3-lua**:
+#### 6. Via Far Manager macros, **Far3-lua**  {#Far3Lua}
 
 ~~~
 Plugin.SyncCall("4b675d80-1d4a-4ea9-8436-fdc23f2fc14b","IsConEmu()")
 ~~~
 
-7. **Far3-pre-lua** (*callplugin is alias of Plugin.Call*):
+#### 7. **Far3-pre-lua** (*callplugin is alias of Plugin.Call*)  {#Far3PerLua}
 
 ~~~
 Plugin.Call("4b675d80-1d4a-4ea9-8436-fdc23f2fc14b","IsConEmu()")
 ~~~
 
-8. **Far2**:
+#### 8. **Far2**  {#Far2}
 
 ~~~
 callplugin(0x43454D55,"IsConEmu()")
