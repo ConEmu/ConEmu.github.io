@@ -132,7 +132,8 @@ Usage: conemu-cyg-32 [switches] [- | shell [shell switches]]
   -d, --dir <dir>  chdir to `dir` before starting shell
                    forces `set CHERE_INVOKING=1`
   -t <new-term>    forces `set TERM=new-term`
-  --logs [<dir>]   dump all conout to log file
+  --log [<dir>]    write console IN and OUT to files in `dir` folder
+                   use current folder if <dir> is not specified
   --debug          wait for debugger for 60 seconds
   --environ        print environment on startup
   --isatty         do isatty checks and print pts names

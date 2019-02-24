@@ -57,7 +57,9 @@ set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.
 ```
 
 And you want to log your console output to folder `D:\Users\Bugs`.
-Just add the `--log D:/Users/Bugs` (using forward slashes!) after connector executable.
+Just add the `--log D:/Users/Bugs` (backslashes are supported too) after connector executable.
+If `--log` is specified without the following directory, connector tries to created log files
+in the startup directory of the `conemu-cyg-64.exe` process.
 
 ```
 set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --log D:/Users/Bugs --wsl -cur_console:pm:/mnt
