@@ -546,6 +546,14 @@
       rus: "Как запускать WSL в ConEmu"
       url: "BashOnWindows.html#connector"
     -
+      eng: "Start WSL in Unix home directory"
+      rus: "Старт WSL в домашней директории Unix"
+      url: "BashOnWindows.html#wsl-home"
+    -
+      eng: "Select WSL distribution"
+      rus: "Выбор дистрибутива WSL"
+      url: "BashOnWindows.html#wsl-distro"
+    -
       eng: "Get arrows working in ConEmu"
       rus: "Если не работают кнопки курсора"
       url: "BashOnWindows.html#arrows"
