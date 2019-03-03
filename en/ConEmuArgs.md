@@ -36,7 +36,7 @@ breadcrumbs:
 | -NoUpdate | Disable automatic checking for updates on startup |
 | -CT`[0|1]` | Anti-aliasing: `-ct0` - off, `-ct1` - standard, `-ct` - clear type |
 | -Font *fontname* | Specify the font name |
-| -Size *fontsize* | Specify the font size |
+| -FontSize *fontsize* | Specify the font size |
 | -FontFile *fontfilename* | Loads font from file for ConEmu process (multiple pairs allowed) |
 | -FontDir *fontfolder* | Loads all fonts from folder (multiple pairs allowed) |
 | -BufferHeight *lines* | Set console buffer height. May be used with cmd.exe, PowerShell, etc. |
