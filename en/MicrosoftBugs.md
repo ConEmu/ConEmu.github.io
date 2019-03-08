@@ -20,8 +20,8 @@ readalso:
 * [Broken cursor position and height in Windows 10](#BrokenCursor-10)
 * [Broken WM_MOUSEWHEEL's mouse cursor position in Windows 10](#WM_MOUSEWHEEL-10)
 * [Broken desktop coordinate system in Windows 10](#SetWindowPos-10)
-* [Exception in ReadConsoleOutput](#Exception_in_ReadConsoleOutput)
-* [Console screen buffer corrupts from other console application](#Console_screen_buffer_corrupts_from_other_console_application)
+* [Exception in ReadConsoleOutput](#ReadConsoleOutputCrash)
+* [Console screen buffer corrupts from other console application](#CorruptedScreenBuffer)
 * [chcp hung](#chcp_hung)
 * [Ctrl+C lags](#ctrl-c)
 * [Insert/Overwrite indication](#Insert-Overwrite-Indicator)
@@ -161,7 +161,7 @@ More details in this sample project: [ms-bug-3](https://github.com/Maximus5/ms-b
 
 
 
-## Exception in ReadConsoleOutput  {#Exception_in_ReadConsoleOutput}
+## Exception in ReadConsoleOutput  {#ReadConsoleOutputCrash}
 
 [social.msdn.microsoft.com/Forums/en-US/40c8e395-cca9-45c8-b9b8-2fbe6782ac2b](http://social.msdn.microsoft.com/Forums/en-US/40c8e395-cca9-45c8-b9b8-2fbe6782ac2b)
 
@@ -191,7 +191,7 @@ Turn on ‘Inject ConEmuHk’ option.
 
 
 
-## Console screen buffer corrupts from other console application  {#Console_screen_buffer_corrupts_from_other_console_application}
+## Console screen buffer corrupts from other console application  {#CorruptedScreenBuffer}
 
 [social.msdn.microsoft.com/Forums/en-US/ec363615-397c-42a8-84d2-38a70e4f8ae2](http://social.msdn.microsoft.com/Forums/en-US/ec363615-397c-42a8-84d2-38a70e4f8ae2)
 
