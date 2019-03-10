@@ -156,6 +156,7 @@ start "Three tabs" "C:\Program Files\ConEmu\ConEmu.exe" -runlist
 | -noautoclose | Don't close ConEmu window automatically with last tab; may be used with ‘-detached’ |
 | -nocascade | Disable ‘Cascade’ option may be set in the Settings |
 | -nodefterm | Don't start initialization procedure for setting up ConEmu as default terminal |
+| -nohookswarn | Don't show ‘hooks are detected’ warning in console. |
 | -nokeyhooks | Disable SetWindowsHookEx and global hotkeys |
 | -nomacro | Disable hotkeys with [GuiMacro](GuiMacro.html) actions |
 | -nohotkey | Disable all hotkeys |
