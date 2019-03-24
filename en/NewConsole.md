@@ -35,6 +35,7 @@ readalso:
   * [Example 5](#example-5)
   * [Example 6 (Split Screen)](#example-6)
   * [Example 7 (grid 2x2)](#example-7)
+  * [Example 8 (AnsiLog files)](#example-8)
 
 
 ## Purpose  {#purpose}
@@ -151,6 +152,8 @@ you may use `-new_console` or `-cur_console` switches.
    h<height> - i.e., h0 - turn buffer off, h9999 - switch to 9999 lines
    i - don't inject ConEmuHk into starting process
    I - (GuiMacro only) forces inheriting of root process contents, like ‘Duplicate root’ feature
+   L:"<dir>\" - the directory for ANSI log files
+   L:"<logfile>" - the full path for ANSI log file
    m:/mnt - defines ‘/mnt’ prefix for Unix-path conversion, m:"" - no prefix
    n - disable ‘Press Enter or Esc to close console’
    o - don't enable ‘Long console output’ when starting command from Far Manager
@@ -285,4 +288,20 @@ You may also create named task with several shells. Next example creates four co
 powershell -cur_console:s1TVn
 bash -l -i -cur_console:s1THn
 ssh.exe user@127.0.0.1 -cur_console:s2THn
+~~~
+
+
+### Example 8 (AnsiLog files)   {#example-8}
+
+Write all [ANSI logs](AnsiLogFiles.html) to the file `C:\Logs\cmd.log`:
+
+~~~
+cmd.exe -new_console:L:"C:\Logs\cmd.log"
+~~~
+
+Create [ANSI logs](AnsiLogFiles.html) by filename format
+`ConEmu-<YYYY-MM-DD>-p<SrvPid>.log` in the folder `C:\Logs`:
+
+~~~
+cmd.exe -new_console:L:"C:\Logs\"
 ~~~
