@@ -17,13 +17,13 @@ if "%~1"=="" (
 cd /d "%~dp0.."
 call cecho /green "%CD%"
 
-call %git% add version.ini version.json
+call "%git%" add version.ini version.json
 if errorlevel 1 exit /b 100
-call %git% commit -m %message%
+call "%git%" commit -m %message%
 if errorlevel 1 exit /b 100
-call %git% checkout conemu-ru
+call "%git%" checkout conemu-ru
 if errorlevel 1 exit /b 100
-call %git% merge master
+call "%git%" merge master
 if errorlevel 1 exit /b 100
 
 call "%~dp0push-conemu.cmd" --pull
