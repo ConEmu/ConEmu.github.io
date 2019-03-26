@@ -234,6 +234,11 @@ So, if keys are not working properly, it may mean that application expects anoth
 of ‘App Keys’. The solution is simple: just LeftClick the ‘Terminal modes’ [StatusBar](StatusBar.html) column
 and change ‘AppKeys’ mode!
 
+You may change Task startup defaults with [-new_console](https://conemu.github.io/en/NewConsole.html#syntax) switch.
+Just add to your command:
+* `-new_console:p5` to enable ‘XTerm’ *and* ‘AppKeys’;
+* `-new_console:p1` to enable ‘XTerm’ *without* ‘AppKeys’.
+
 
 
 
