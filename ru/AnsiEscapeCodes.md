@@ -98,11 +98,11 @@ vim.exe -cur_console:h0 <Vim arguments here>
 #### Пример 3: прокрутить консоль  {#Example_3_scroll_console_to_bottom}
 
 Если приложение **не** «полноэкранное» (вроде Far/Vim/Hiew/...),
-можно прокрутить консоль в самый низ (в примере на 9999 строк)
+можно прокрутить консоль в самый низ (в примере на 99999 строк)
 для активации «рабочей области»:
 
 ~~~
-echo ^[[9999;1H
+echo ^[[99999;1H
 ~~~
 
 **Внимание** Нужно заменить `^[` на ESC код перед использованием в приглашении `cmd.exe`
@@ -112,7 +112,7 @@ echo ^[[9999;1H
 
 ~~~
 call SetEscChar.cmd
-echo %ESC%[9999;1H
+echo %ESC%[99999;1H
 ~~~
 
 
@@ -332,7 +332,7 @@ For simplifying, endings in the following table marked as «ST».
 Пример из файла: `ConEmu\Addons\AnsiColors256.ans`.
 
 ~~~
-^[[9999S^[[9999;1HSystem colors (0..15 from xterm palette):
+^[[9999S^[[99999;1HSystem colors (0..15 from xterm palette):
 ^[[48;5;0m  ^[[48;5;1m  ^[[48;5;2m  ^[[48;5;3m  ^[[48;5;4m  ^[[48;5;5m  ^[[48;5;6m  ^[[48;5;7m  ^[[0m
 ^[[48;5;8m  ^[[48;5;9m  ^[[48;5;10m  ^[[48;5;11m  ^[[48;5;12m  ^[[48;5;13m  ^[[48;5;14m  ^[[48;5;15m  ^[[0m
 

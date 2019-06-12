@@ -84,7 +84,7 @@ When you run **not** ‘fullscreen’ application (not Far/Vim/Hiew/...),
 you may scroll console to the bottom (`^[` must be replaced with real ESC symbol, ASCII code `\x1B`):
 
 ~~~
-echo ^[[9999;1H
+echo ^[[99999;1H
 ~~~
 
 

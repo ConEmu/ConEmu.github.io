@@ -94,11 +94,11 @@ Perl script [256colors2.pl](/256colors2.pl) have to be runned as following:
 #### Example 3: scroll console to bottom  {#Example_3_scroll_console_to_bottom}
 
 If your console application **is not** ‘fullscreen’ (alike Far/Vim/Hiew/...),
-you may scroll console to the bottom (by 9999 lines in the example)
+you may scroll console to the bottom (by 99999 lines in the example)
 to activate ‘working area’:
 
 ~~~
-echo ^[[9999;1H
+echo ^[[99999;1H
 ~~~
 
 **Warning** You need to change `^[` to ESC code before using this script in `cmd.exe` prompt
@@ -108,7 +108,7 @@ prompt using environment variable is recommended. Script `SetEscChar.cmd` is loc
 
 ~~~
 call SetEscChar.cmd
-echo %ESC%[9999;1H
+echo %ESC%[99999;1H
 ~~~
 
 
@@ -328,7 +328,7 @@ For simplifying, endings in the following table marked as ‘ST’.
 Example from file: `ConEmu\Addons\AnsiColors256.ans`.
 
 ~~~
-^[[9999S^[[9999;1HSystem colors (0..15 from xterm palette):
+^[[9999S^[[99999;1HSystem colors (0..15 from xterm palette):
 ^[[48;5;0m  ^[[48;5;1m  ^[[48;5;2m  ^[[48;5;3m  ^[[48;5;4m  ^[[48;5;5m  ^[[48;5;6m  ^[[48;5;7m  ^[[0m
 ^[[48;5;8m  ^[[48;5;9m  ^[[48;5;10m  ^[[48;5;11m  ^[[48;5;12m  ^[[48;5;13m  ^[[48;5;14m  ^[[48;5;15m  ^[[0m
 

@@ -103,7 +103,7 @@ reg.exe add "HKCU\command" /ve /t REG_EXPAND_SZ /d "\"C:\ConEmu\ConEmuPortable.e
     new tab with one ConEmu window **inside** another ConEmu window.
     **Note** This behavior first introduced in the build 140220.
 <pre>
-ConEmu /cmd PowerShell.exe -new_console:h9999
+ConEmu /run PowerShell.exe -new_console:h9999
 </pre>
   * Using [environment](ConEmuEnvironment.html) shell variable `ConEmuHooks` within your scripts
     (`rungit.cmd` for example).
