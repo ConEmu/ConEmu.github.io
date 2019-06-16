@@ -1002,6 +1002,7 @@ Tab(<Cmd>[,<Parm>])
    Cmd==9:  close active tab, same as Close(3)
    Cmd==10: switches visible split-panes, Parm=(1,-1)
    Cmd==11: activates tab by name, title or process name
+   Cmd==12: return tabs list "1: tab1\n2: tab2\n..."
 ~~~
 
 
