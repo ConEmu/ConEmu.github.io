@@ -328,7 +328,7 @@ For simplifying, endings in the following table marked as ‘ST’.
 Example from file: `ConEmu\Addons\AnsiColors256.ans`.
 
 ~~~
-^[[9999S^[[99999;1HSystem colors (0..15 from xterm palette):
+^[[99999S^[[99999;1HSystem colors (0..15 from xterm palette):
 ^[[48;5;0m  ^[[48;5;1m  ^[[48;5;2m  ^[[48;5;3m  ^[[48;5;4m  ^[[48;5;5m  ^[[48;5;6m  ^[[48;5;7m  ^[[0m
 ^[[48;5;8m  ^[[48;5;9m  ^[[48;5;10m  ^[[48;5;11m  ^[[48;5;12m  ^[[48;5;13m  ^[[48;5;14m  ^[[48;5;15m  ^[[0m
 
