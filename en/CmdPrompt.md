@@ -24,7 +24,7 @@ readalso:
 # Configuring Cmd Prompt
 
 The preferable way to run `cmd.exe` in ConEmu is
-[predefined Task](Tasks.html#add-default-tasks) `{cmd}`, itruns `cmd.exe` with
+[predefined Task](Tasks.html#add-default-tasks) `{cmd}`, it runs `cmd.exe` with
 [CmdInit.cmd](https://github.com/Maximus5/ConEmu/blob/master/Release/ConEmu/CmdInit.cmd)
 initialization file.
 
