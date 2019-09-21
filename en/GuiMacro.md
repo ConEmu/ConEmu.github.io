@@ -441,8 +441,10 @@ Optional parameters are italic.
 * [**Scroll** ( Type, Direction, *Count* )](#Scroll)
 * [**Select** ( Type, DX, DY, HE )](#Select)
 * [**SetDpi** ( DPI )](#SetDpi)
+* [**SetFocus** ()](#SetFocus)
 * [**SetOption** ( "Check", ID, Value )](#SetOptionID)
 * [**SetOption** ( "Name", Value, *IsRelative* )](#SetOptionName)
+* [**SetParentHWND** ( HWND )](#SetParentHWND)
 * [**Settings** ( *PageResourceId* )](#Settings)
 * [**Shell** ( "Verb", "File", "*Parms*", "*Dir*", *ShowCmd* )](#Shell)
 * [**Sleep** ( Milliseconds )](#Sleep)
@@ -890,6 +892,14 @@ SetDpi(<DPI>)
 
 
 
+### Try to set focus in ConEmu window  {#SetFocus}
+
+~~~
+SetFocus()
+ - May be useful during inside mode
+~~~
+
+
 ### Change setting by numeric ID of the checkbox  {#SetOptionID}
 
 ~~~
@@ -925,6 +935,15 @@ SetOption("<Name>",<Value>[,<IsRelative>])
      Value: 2 - switch auto-hide, 1 - enable, 0 - disable
 ~~~
 
+
+
+### Change ConEmu parent window  {#SetParentHWND}
+
+~~~
+SetParentHWND(<HWND>)
+ - Change ConEmu parent window during Inside mode
+   HWND: new parent window handle
+~~~
 
 
 ### Show ‘Settings’ dialog with specified (optionally) page activated  {#Settings}
