@@ -74,13 +74,51 @@ git config --global color.interactive.prompt "white cyan"
 git config --global color.diff.meta "cyan"
 ~~~
 
-Using Far Manager as editor (commit texts). I'm using
-[FarRun](https://github.com/Maximus5/FarPlugins/releases/tag/FarRun-1.1s)
-to simplify call of `far.exe`.
+
+
+## Useful aliases  {#aliases}
+
+~~~
+# Colorized one-line with hash, author, date:time, tags and commit message
+git config --global alias.tree 'log --graph "--date=format:%y%m%d:%H%M" "--pretty=format:%C(auto)%h%d %C(bold blue)%an %Cgreen%ad  %Creset%s"'
+# Simpler one-liner, useful with sort by date
+git config --global alias.log-date 'log "--date=format:%y%m%d:%H%M" "--pretty=format:%Cgreen%ad %C(auto)%h %C(bold blue)%an  %Creset%s"'
+~~~
+
+And few shell aliases to call these git aliases (.
+
+~~~
+alias gl="git tree"
+alias gl1="git tree -1"
+alias gl10="git tree -10"
+alias glb="git tree --branches --date-order"
+alias glbr="git tree --branches --date-order --remotes"
+alias gld="git log-date --author=mxmmsk --branches | sort -r | less"
+~~~
+
+Few more shell aliases from my config.
+
+~~~
+alias gcim="git commit -m"
+alias gcn!="git commit --amend --no-edit"
+alias gst="git status"
+alias gbr="git branch"
+alias grbc="git rebase --continue"
+~~~
+
+
+
+## Use Far Manager as editor  {#FarManager}
+
+I use [FarRun](https://github.com/Maximus5/FarPlugins/releases/tag/FarRun-1.1s)
+to simplify `core.editor` configuration (it's used when you edit commit messages,
+rebase scripts, etc.)
 
 ~~~
 git config --global core.editor "farrun -e1:1"
 ~~~
+
+Hint. Some useful macros: move/swap lines, keys e/f/s to change rebase actions to edit/fixup/squash.
 
 
 
