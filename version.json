@@ -1,80 +1,80 @@
 {
-  "lastmod":  "2019-07-14T23:00:56.779Z",
+  "lastmod":  "2019-10-13T15:51:50.703Z",
   "releases": [
     {
       "type": "Alpha",
-      "version":  "190714",
+      "version":  "191012",
       "files": [
         {
           "type": "7-Zip",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v19.07.14/ConEmuPack.190714.7z",
-            "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.190714.7z?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v19.10.12/ConEmuPack.191012.7z",
+            "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.191012.7z?use_mirror=autoselect"
           ],
-          "size":   4892285,
-          "crc32": "1CFF4622",
-          "md5":   "5cb82493bfec5df73313e1d9bb260e18",
+          "size":   4857446,
+          "crc32": "A4834327",
+          "md5":   "2380db40191718ea77165816dbacdceb",
           "description": "Alpha, Portable (32-bit, 64-bit)"
         },
         {
           "type": "Installer",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v19.07.14/ConEmuSetup.190714.exe",
-            "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.190714.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v19.10.12/ConEmuSetup.191012.exe",
+            "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.191012.exe?use_mirror=autoselect"
           ],
-          "size":   7229008,
-          "crc32": "1924BEA0",
-          "md5":   "f971dd4f00b5f39e5f9b3ba4e2fed638",
+          "size":   7194704,
+          "crc32": "7B9CB2D4",
+          "md5":   "8c3d0551984ab84c45a40ac53d690376",
           "description": "Alpha, Installer (32-bit, 64-bit)"
         },
         {
           "type": "PortableApps",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v19.07.14/ConEmu_190714_English.paf.exe",
-            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_190714_English.paf.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v19.10.12/ConEmu_191012_English.paf.exe",
+            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_191012_English.paf.exe?use_mirror=autoselect"
           ],
-          "size":   4770272,
-          "crc32": "C85DB420",
-          "md5":   "b4a9a14ff234b101e20fc7ffa36858c0",
+          "size":   4742504,
+          "crc32": "19E1FEE0",
+          "md5":   "27da32a7f9168e85ae6c2b2be2d7c3bd",
           "description": "Alpha, PortableApps.com"
         }
       ]
     },
     {
       "type": "Preview",
-      "version":  "190526",
+      "version":  "191012",
       "files": [
         {
           "type": "7-Zip",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v19.05.26/ConEmuPack.190526.7z",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.190526.7z?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v19.10.12/ConEmuPack.191012.7z",
+            "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.191012.7z?use_mirror=autoselect"
           ],
-          "size":   4851133,
-          "crc32": "F1F3FF16",
-          "md5":   "c11e102ae70b4189b8ff3c2badc91a05",
+          "size":   4857446,
+          "crc32": "A4834327",
+          "md5":   "2380db40191718ea77165816dbacdceb",
           "description": "Preview, Portable (32-bit, 64-bit)"
         },
         {
           "type": "Installer",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v19.05.26/ConEmuSetup.190526.exe",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.190526.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v19.10.12/ConEmuSetup.191012.exe",
+            "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.191012.exe?use_mirror=autoselect"
           ],
-          "size":   7187536,
-          "crc32": "9F1CC725",
-          "md5":   "fd3f8bda873325d88d74070bbffdab20",
+          "size":   7194704,
+          "crc32": "7B9CB2D4",
+          "md5":   "8c3d0551984ab84c45a40ac53d690376",
           "description": "Preview, Installer (32-bit, 64-bit)"
         },
         {
           "type": "PortableApps",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v19.05.26/ConEmu_190526_English.paf.exe",
-            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_190526_English.paf.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v19.10.12/ConEmu_191012_English.paf.exe",
+            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_191012_English.paf.exe?use_mirror=autoselect"
           ],
-          "size":   4735968,
-          "crc32": "06E06BF6",
-          "md5":   "c4ccf9baa1924aed7ef71902c14c2b8f",
+          "size":   4742504,
+          "crc32": "19E1FEE0",
+          "md5":   "27da32a7f9168e85ae6c2b2be2d7c3bd",
           "description": "Preview, PortableApps.com"
         }
       ]
