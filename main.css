@@ -369,9 +369,6 @@ table.no-border tr, table.no-border th, table.no-border td {
 
 /* Header and Social
 -----------------------------------------------------------------------------*/
-.header {
-  height: 90px;
-}
 .header-left {
   width: 100%;
 }
@@ -382,16 +379,6 @@ table.no-border tr, table.no-border th, table.no-border td {
   clear: both;
   float: left;
   margin-top: 10px;
-}
-#header-google {
-  overflow: hidden;
-  width:728px;
-  height:90px;
-  max-width: 100%;
-  float: right;
-  /* *
-  background-color: blue;
-  * */
 }
 
 div.h-logo {
@@ -474,13 +461,6 @@ div.h-social a {
 }
 
 @media (max-width: 980px) {
-  #header-google {
-    /*
-    max-width: 100%;
-    */
-    float: left;
-    margin-top: 0.5em;
-  }
   div.h-social {
     clear: none;
   }
