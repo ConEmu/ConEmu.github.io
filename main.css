@@ -373,7 +373,7 @@ table.no-border tr, table.no-border th, table.no-border td {
   height: 90px;
 }
 .header-left {
-  float: left;
+  width: 100%;
 }
 #header-line {
   background: #002b36;
@@ -445,7 +445,7 @@ div.h-desc {
 div.h-social {
   border: 0; /*1px solid red;*/
   display: block;
-  float: left;
+  float: right;
   min-height: 32px;
   padding-top: 6px;
   margin: 0;
@@ -454,26 +454,23 @@ div.h-social {
 div.h-social a {
   border: 0;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   float: left;
-  margin: 0 6px 6px 0;
+  margin: 0 0 0 0;
 }
 
 .h-facebook {
-  background: url('/img/fb.png');
+  background: url('/img/facebook.png');
 }
 .h-twitter {
-  background: url('/img/tw.png');
-}
-.h-gplus {
-  background: url('/img/gp.png');
+  background: url('/img/twitter.png');
 }
 .h-github {
-  background: url('/img/GitHub-Mark-32px.png');
+  background: url('/img/github.png');
 }
-.h-facebook:hover, .h-twitter:hover, .h-gplus:hover {
-  background-position: 0px -32px;
+.h-linked {
+  background: url('/img/linked.png');
 }
 
 @media (max-width: 980px) {
@@ -483,9 +480,6 @@ div.h-social a {
     */
     float: left;
     margin-top: 0.5em;
-  }
-  .header-left {
-    width: 100%;
   }
   div.h-social {
     clear: none;
@@ -497,7 +491,7 @@ div.h-social a {
 
 @media (min-width: 980px) {
   div.h-social {
-    clear: left;
+    clear: none;
   }
 }
 
