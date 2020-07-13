@@ -21,6 +21,10 @@ cd /d "%~dp0.."
 powershell -noprofile -command "%CD%\_posts\release.ps1"
 
 rem ""%git%" add en/Whats_New.html
+call "%git%" checkout master
+if errorlevel 1 exit /b 100
+call "%git%" pull origin
+if errorlevel 1 exit /b 100
 call "%git%" add _posts/20??-??-??-Build-*.md
 if errorlevel 1 exit /b 100
 call "%git%" commit -m %message%
