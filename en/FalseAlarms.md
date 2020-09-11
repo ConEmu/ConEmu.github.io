@@ -18,8 +18,7 @@ readalso:
 
 ## Softpedia guarantee  {#Softpedia_guarantee}
 
-<a href="http://www.softpedia.com/get/System/System-Miscellaneous/ConEmu.shtml" rel="nofollow"><img border="0" src="http://s1.softpedia-static.com/base_img/softpedia_free_award_f.gif"/></a>
-
+[100% Free](https://www.softpedia.com/get/System/System-Miscellaneous/ConEmu.shtml)
 
 ## Related issues  {#Related_issues}
 
