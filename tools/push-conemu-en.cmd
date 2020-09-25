@@ -1,1 +1,1 @@
-@call git push origin master:master
+@call git push origin master:master %*
