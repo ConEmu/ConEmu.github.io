@@ -73,6 +73,7 @@ Outside (upper area) 256 colors will be approximated to console stanard 16-color
   * ‘Inject ConEmuHk’ on the [Features](Settings.html#Features) page (required for 2-nd level programs, aka started from your shell)
 * You need to ensure that buffer/scrolling is Off
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 #### Example 1: Vim  {#Example_1_Vim}
 

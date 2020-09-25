@@ -5,9 +5,14 @@
     <div class="h-logo"><a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/"><img src="/img/logo.png" alt="ConEmu-Maximus5 logo"></a></div>
     <div class="h-title-desc">
       <div class="h-title"><a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/">ConEmu</a></div>
-      <div class="h-desc">{% if site.url != 'local' %}<a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/">{{ page.site_label }}</a>{% else %}<span id="media-width"></span><span id="media-orient"></span>{% endif %}</div>
+      <div class="h-desc">{% if site.url != 'local' %}<a href="{% if site.url != 'local' %}{{ site.url }}{% endif %}/">Windows Terminal</a>{% else %}<span id="media-width"></span><span id="media-orient"></span>{% endif %}</div>
     </div>
-    <div class="h-social">
+    <div class="h-right">
+{% if page.otherlang != nil %}
+{% include otherlang.html %}
+{% endif %}
+{% include search.html %}
+      <div class="h-social">
       <a class="h-github" target="_blank"
         href="https://github.com/Maximus5/ConEmu"
         title="Star and Fork on GitHub"></a>
@@ -20,6 +25,7 @@
       <a class="h-facebook" target="_blank"
         href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F{{ site.site_name }}"
         title="Share ConEmu on FaceBook"></a>
+      </div>
     </div>
   </div>
   <div id="header-line"></div>

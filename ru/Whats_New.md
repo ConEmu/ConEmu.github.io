@@ -42,3 +42,5 @@ ConEmu-Maximus5 поддерживается усилиями практичес
 <a href="Awards.html#Voting">лайками</a>
 и другими способами.
 </noindex>
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}

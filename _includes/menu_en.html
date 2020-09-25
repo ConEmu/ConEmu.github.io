@@ -1,13 +1,14 @@
 			<div class="block">
 				<nav>
-				<div class="blocktitle">Site menu</div>
+				<div class="blocktitle"><a href="/{{ page.pagelang }}/TableOfContents.html">Site menu</a></div>
 				<div class="blockcontent">
 					<ul>
 					<!-- Menu starts -->{% for mi in site.data.menu %}{% capture mi_url %}/{{ page.pagelang }}/{{ mi.url }}{% endcapture %}
 					<li><a {% if page.url == mi_url %} class="MenuItemA" {% endif %} href="{{ mi_url }}"><span>{% if page.pagelang == "en" %}{{ mi.eng }}{% else %}{{ mi.rus }}{% endif %}</span></a></li>{% endfor %}
-					<li><a {% if page.url == "/donate.html" %} class="MenuItemA" {% endif %} href="/donate.html"><span>Donate</span></a></li>
 					<!-- Menu ends -->
 					</ul>
 				</div>
+				<div class="blockextra"><a {% if page.url == "/donate.html" %} class="MenuItemA" {% endif %} href="/donate.html"><span>Donate</span></a></div>
+				<div class="blockextra"><a {% if page.url == "/en/Issues.html" %} class="MenuItemA" {% endif %} href="/{{ page.pagelang }}/Issues.html"><span>Feedback</span></a></div>
 				</nav>
 			</div>

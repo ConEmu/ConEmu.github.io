@@ -15,4 +15,8 @@ otherlang:
    ru: /donate_ru.html
 ---
 
+{% if site.site_lang == 'ru' %}
+{% include donate_ru.html %}
+{% else %}
 {% include donate_en.html %}
+{% endif %}

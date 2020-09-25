@@ -1,0 +1,6 @@
+<div>
+<h2 id="read_also">{% if page.pagelang == 'ru' %}Статьи по теме{% else %}Related articles{% endif %}</h2>
+<p><ul>{% for artcl in page.readalso %}
+  <li><a href="{{ artcl.url }}">{{ artcl.title }}</a></li>{% endfor %}
+</ul></p>
+</div>

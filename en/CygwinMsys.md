@@ -69,6 +69,7 @@ There are two types of Windows console (terminal) emulators:
   [ConsoleZ](https://github.com/cbucher/console/),
   [Take Command](http://jpsoft.com/).
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 ### stdin/stdout redirection style   {#stdin-stdout_redirection_style}
 

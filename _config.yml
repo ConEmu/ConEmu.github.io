@@ -53,7 +53,7 @@ defaults:
       isroot: true
       layout: "root"
       title: "ConEmu - default pagetitle"
-      site_label: "Windows terminal"
+      site_label: "Windows Terminal"
       docfolder: /en
       pagelang: en
       toctitle: "Back to the table of contents"
@@ -66,7 +66,7 @@ defaults:
       isroot: false
       layout: "root"
       title: "ConEmu - default pagetitle"
-      site_label: "Windows terminal"
+      site_label: "Windows Terminal"
       docfolder: /en
       pagelang: en
       toctitle: "Back to the table of contents"
@@ -79,7 +79,7 @@ defaults:
       isroot: false
       layout: "root"
       title: "ConEmu - default pagetitle"
-      site_label: "терминал Windows"
+      site_label: "Windows Terminal"
       docfolder: /ru
       pagelang: ru
       toctitle: "Назад к оглавлению"
@@ -92,7 +92,7 @@ defaults:
       isroot: false
       layout: "root"
       title: "ConEmu News"
-      site_label: "Windows terminal"
+      site_label: "Windows Terminal"
       docfolder: /en
       pagelang: en
       toctitle: "Back to the table of contents"

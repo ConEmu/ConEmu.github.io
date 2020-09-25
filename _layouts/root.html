@@ -90,18 +90,16 @@ window.cookieconsent.initialise({
 
 {% include header.html %}
 
-	<div class="middle">
-
+<div class="middle">
+<div class="container">
+<div id="container-delimiter"></div>
 {% include breadcrumbs.html %}
-
-		<div class="container">
-			<div class="content">
-
+<div class="content">
 <article>
 {% if page.h1_title != nil and page.h1_title %}{% assign h1_title = page.h1_title %}{% else %}{% assign h1_title = '' %}{% endif %}
 {% if page.force_header or h1_title != '' %}
-	<h1>{% if page.h1_title %}{{ page.h1_title }}{% else %}{{ page.title }}{% endif %}</h1>{% if page.h1_content != '' and page.h1_content != nil %}
-	<p>{{ page.h1_content }}</p>{% endif %}
+<h1>{% if page.h1_title %}{{ page.h1_title }}{% else %}{{ page.title }}{% endif %}</h1>{% if page.h1_content != '' and page.h1_content != nil %}
+<p>{{ page.h1_content }}</p>{% endif %}
 {% elsif page.category == "blog" and page.build %}
 <h2 class="h0" id="Build_{{ page.build }}"><a href="{{ page.url }}">Build {{ page.build }}{% if page.stage != '' and page.stage %} ({{ page.stage }}){% endif %}</a></h2>
 {% endif %}
@@ -115,40 +113,44 @@ window.cookieconsent.initialise({
 
 </article>
 
+{% if page.readalso %}
+{% include readalso_body.html %}
+{% endif %}
+
 {% if page.isroot == false %}
 <!-- Some footer links -->
-				<footer id="footer-links">
-				<!-- Back to the table of contents -->
-				<span class="text stext"><a href="{{ page.docfolder }}/TableOfContents.html">{{ page.toctitle }}</a></span>
-				<!-- Suggest better edit -->
-				<span class="text stext"> | <a href="https://github.com/ConEmu/ConEmu.github.io/blob/master/{{page.path}}" rel="nofollow">{{ page.suggedit }}</a></span>
-				</footer>
+<footer id="footer-links">
+<!-- Back to the table of contents -->
+<span class="text stext"><a href="{{ page.docfolder }}/TableOfContents.html">{{ page.toctitle }}</a></span>
+<!-- Suggest better edit -->
+<span class="text stext"> | <a href="https://github.com/ConEmu/ConEmu.github.io/blob/master/{{page.path}}" rel="nofollow">{{ page.suggedit }}</a></span>
+</footer>
 <!-- Some footer links end -->
 {% endif %}
-			</div><!-- .content-->
-		</div><!-- .container-->
+</div><!-- .content-->
+</div><!-- .container-->
 
-		<div class="left-sidebar">
+<div class="left-sidebar">
+{% if page.isroot == true %}
+{% if site.site_lang == 'ru' %}
+{% include menu_ru.html %}
+{% else %}
+{% include menu_en.html %}
+{% endif %}
+{% else %}
 {% if page.pagelang == 'ru' %}
 {% include menu_ru.html %}
 {% else %}
 {% include menu_en.html %}
 {% endif %}
-		</div>
-		<div class="left-sidebar">
-{% include search.html %}
-		</div>
-{% if page.otherlang != nil %}
-		<div class="left-sidebar">
-{% include otherlang.html %}
-		</div>
 {% endif %}
+</div>
 {% if page.readalso %}
-		<div class="left-sidebar">
+<div class="left-sidebar">
 {% include readalso.html %}
-		</div>
+</div>
 {% endif %}
-	</div><!-- .middle-->
+</div><!-- .middle-->
 
 </div><!-- .maincol -->
 </div><!-- .wrapper -->

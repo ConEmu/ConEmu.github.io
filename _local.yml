@@ -3,6 +3,6 @@
 url: local
 
 exclude:
-  - !dirs
-  - node_modules
-  - tools
+  - '!dirs'
+  - 'node_modules'
+  - 'tools'

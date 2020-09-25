@@ -25,7 +25,8 @@ my favorite <a href="{{ site.mirror }}{{ page.docfolder }}/TerminalVsShell.html"
 
 <p><img alt="ConEmu screenshot" src="/img/ConEmu-Maximus5.png"></p>
 
-<p><a href="{{ site.mirror }}{{ page.docfolder }}/Awards.html">Votes and awards</a> (vote for <a href="{{ site.mirror }}{{ page.docfolder }}/Awards.html#Please,_vote_for_ConEmu">ConEmu</a>, if you please). </p>
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 <h2 id="Disclaimer"> Disclaimer </h2>

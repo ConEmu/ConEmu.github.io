@@ -45,6 +45,7 @@ for ‘Start text selection (like text editors)’,
 There are also several [global hotkeys](GlobalHotKeys.html)
 available even ConEmu has not focus.
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 ## Non configurable hotkeys  {#Non_configurable_hotkeys}
 

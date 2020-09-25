@@ -1,6 +1,8 @@
 
 /* for layout debugging */
 
+/*
+
 @media (min-width: 1080px) {
   #media-width:after {
     content: "swide";
@@ -31,6 +33,7 @@
     content: " port";
   }
 }
+*/
 
 /*
 == Deprecated, ignored ==

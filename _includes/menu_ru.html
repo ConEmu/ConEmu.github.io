@@ -1,23 +1,16 @@
 			<div class="block">
 				<nav>
-				<div class="blocktitle">Меню сайта</div>
+				<div class="blocktitle"></div>
+				<div class="blocktitle"><a href="/{{ site.site_lang }}/TableOfContents.html">Меню сайта</a></div>
+
 				<div class="blockcontent">
 					<ul>
-					<!-- Menu starts -->
-					<li><a {% if page.url == '{{ site.mirror }}/ru/Downloads.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/ru/Downloads.html"><span>Зеркала загрузки</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/ru/TableOfContents.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/ru/TableOfContents.html"><span>Документация</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/en/Whats_New.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/en/Whats_New.html"><span>What's new</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/ru/ConEmuFAQ.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/ru/ConEmuFAQ.html"><span>ConEmu FAQ</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/ru/Screenshots.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/ru/Screenshots.html"><span>Скриншоты</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/ru/Settings.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/ru/Settings.html"><span>Настройка</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/en/AutoInstall.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/en/AutoInstall.html"><span>Автоматизация</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror_ru }}/donate.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror_ru }}/donate.html"><span>Поддержать</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/ru/AnsiEscapeCodes.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/ru/AnsiEscapeCodes.html"><span>ANSI</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/ru/Awards.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/ru/Awards.html"><span>Awards</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/ru/Delusions.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/ru/Delusions.html"><span>Заблуждения</span></a></li>
-					<li><a {% if page.url == '{{ site.mirror }}/ru/Source.html' %} class="MenuItemA" {% endif %} href="{{ site.mirror }}/ru/Source.html"><span>Исходный код</span></a></li>
+					<!-- Menu starts -->{% for mi in site.data.menu %}{% capture mi_url %}/{{ site.site_lang }}/{{ mi.url }}{% endcapture %}
+					<li><a {% if page.url == mi_url %} class="MenuItemA" {% endif %} href="{{ mi_url }}"><span>{{ mi.rus }}</span></a></li>{% endfor %}
 					<!-- Menu ends -->
 					</ul>
 				</div>
+				<div class="blockextra"><a {% if page.url == "/donate.html" %} class="MenuItemA" {% endif %} href="/donate.html"><span>Поддержать</span></a></div>
+				<div class="blockextra"><a {% if page.url == "/en/Issues.html" %} class="MenuItemA" {% endif %} href="/{{ page.pagelang }}/Issues.html"><span>Обратная связь</span></a></div>
 				</nav>
 			</div>

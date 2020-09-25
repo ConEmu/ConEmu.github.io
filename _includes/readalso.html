@@ -1,8 +1,3 @@
 			<div class="block">
-				<div class="blocktitle">{% if page.pagelang == 'ru' %}Читайте также{% else %}Read also{% endif %}</div>
-				<div class="blockcontent">
-					<ul>{% for artcl in page.readalso %}
-						<li><a href="{{ artcl.url }}">{{ artcl.title }}</a></li>{% endfor %}
-					</ul>
-				</div>
+				<div class="blocktitle"><a href="#read_also">{% if page.pagelang == 'ru' %}Статьи по теме{% else %}Related articles{% endif %}</a></div>
 			</div>

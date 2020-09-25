@@ -1,11 +1,7 @@
-			<div class="block">
-				<div class="blocktitle">{% if page.pagelang != 'ru' %}Site search{% else %}Поиск по сайту{% endif %}</div>
-				<div class="blockcontent">
+			<div class="h-search">
 					<form method="GET" action="{{ site.url }}/search.html">
-						<div id="search-field-div"><input id="search-field" type="text" name="q" value=""></div>
-						<div id="search-button-div"><input id="search-button" type="submit" value="Search"></div>
+						<div id="search-field-div"><input id="search-field" type="text" name="q" value="" placeholder="{% if page.pagelang != 'ru' %}Site search{% else %}Поиск по сайту{% endif %}"></div>
 					</form>
-				</div>
 				<script>
 				{
 					var regexS = "[\\?&]q=([^&#]*)";
