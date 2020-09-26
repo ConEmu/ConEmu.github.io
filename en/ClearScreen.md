@@ -61,6 +61,8 @@ Write "\n\n\e[91m========== '\e]9;8;\"time\"\e\\' ==========\e[m\n\n"
 Terminal reset may harm normal behavior of running console applications.
 So, use it carefully and on your own risk!
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 ### Reason 1  {#reason-1}
 
 You are editing file in vim, manage your files with Far Manager,

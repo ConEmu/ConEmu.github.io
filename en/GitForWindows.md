@@ -28,7 +28,20 @@ Native and full-featured set of [Git SCM](http://git-scm.com/) tools.
 * [Version 1.9.5 (deprecated)](https://github.com/msysgit/msysgit/releases)
 
 
-## Starting shell
+## Contents  {#Contents}
+
+* [Starting shell](#start-shell)
+  * [Use proper sh.exe from version 2.x](#proper-sh)
+* [Colorizing fix for Solarized color scheme](#Solarized)
+* [Useful aliases](#aliases)
+* [Fix `git diff` output](#git-utf8)
+* [Use Far Manager as editor](#FarManager)
+* [cygwin_exception in less.exe](#cygwin-exception)
+* [Git Credential Manager for Windows](#credentials)
+
+
+
+## Starting shell  {#start-shell}
 
 Git-for-Windows package provides a lot of msys tools,
 useful for users used to Unix environment. So, anyone
@@ -48,7 +61,7 @@ of [ChildGui](ChildGui.html) applications.
 
 
 
-### Use proper sh.exe from version 2.x
+### Use proper sh.exe from version 2.x  {#proper-sh}
 
 **NB** Don't run `/bin/sh.exe` as your shell ([root process](RootProcess.html))
 in ConEmu tab! This is just a wrapper for ‘full version’ located in `/usr/bin/`
@@ -58,6 +71,9 @@ process, or there is a shell only.
 Run `/usr/bin/sh.exe -l -i` to get proper behavior of
 [tab closing confirmation](SettingsConfirm.html#id2756)
 option.
+
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 
@@ -108,6 +124,17 @@ alias grbc="git rebase --continue"
 
 
 
+## Fix `git diff` output  {#git-utf8}
+
+To fix `git diff` output when you see character codes in angle brackets instead of non-english letters
+(e.g. `<D0><9F><D0><BE><D0><B4><D1><82>...`) setting the `LANG` environment to soft of **UTF-8** locales may help.
+
+~~~
+set LANG=en_US.UTF-8
+~~~
+
+
+
 ## Use Far Manager as editor  {#FarManager}
 
 I use [FarRun](https://github.com/Maximus5/FarPlugins/releases/tag/FarRun-1.1s)
@@ -137,7 +164,9 @@ After some investigations found how to fix that.
 The problem was in `TERM` environment variable, it was set to `msys`.
 After removing that variable (clearing it) git's less begins to work normally.
 
-## Git Credential Manager for Windows 
+
+
+## Git Credential Manager for Windows  {#credentials}
 
 As of git `2.x.x`, [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows) is used as a shell-integrated authentication mechanism supporting both password-only and 2-factor authentication.
 
