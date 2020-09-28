@@ -35,8 +35,10 @@ without using of virtual machines or recompilations.
 
 ![Bash on Windows in ConEmu](/img/BashOnWindows.png)
 
+## Contents  {#contents}
 
-* Installation
+* [Run WSL2 in ConEmu](#wsl2)
+* [WSL installation](#wsl-install)
   * [Good places to start](#start)
   * [TLDR: WSL Installation](#TLDR)
 * [Some techinfo](#techinfo)
@@ -55,6 +57,39 @@ without using of virtual machines or recompilations.
   * [Other versions of WSLBridge](#wslbridge-32)
 
 
+
+## Run WSL2 in ConEmu  {#wsl2}
+
+After update of WSL to version 2 you could observe an error on tab startup. That happens because
+ConEmu utilized third-party [wslbridge](#wslbridge-task) to implement [PTY terminal](CygwinMsys.html).
+
+~~~
+wslbridge error: failed to start backend process
+note: backend error output: -v: -c: line 0: unexpected EOF while looking for matching `''
+-v: -c: line 1: syntax error: unexpected end of file
+~~~
+
+There are two possible solutions meanwhile.
+
+### Run native wsl.exe in ConEmu  {#wsl-native}
+
+Change your `{bash}` [Task](Tasks.html) contents to run wsl without bridge. For the moment this is preferred solution.
+And in future this task should automatically have PTY capabilities (work in progress).
+
+~~~
+wsl.exe -cur_console:pm:/mnt
+~~~
+
+### Run wslbridge2 in ConEmu  {#wslbridge2}
+
+If you want to have PTY terminal now you could try wslbridge2. Please read the description
+[how to install wslbridge2](https://github.com/Maximus5/ConEmu/issues/1930#issuecomment-640120326).
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
+
+
+## WSL installarion  {#wsl-install}
 
 ### Good places to start  {#start}
 
