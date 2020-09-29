@@ -452,9 +452,9 @@ div.h-search {
   background: #39998e;
   box-shadow: 0 0 1px 0 #ffdc7c;
   margin-top: 4px;
-  padding: 0 0.3em 0 0.3em;
+  padding: 0 0.5em 0 0.5em;
   border: none;
-  font-size: 110%;
+  font-size: 90%;
   min-height: 28px;
   min-width: 15em;
   color: #fff7e1;
@@ -546,8 +546,12 @@ div.h-social a {
   }
 }
 
-div.post_navigation, div.build_download {
+div.post_navigation {
   font-size: .8em;
+  margin-bottom: 1em;
+}
+
+div.build_download {
   margin-bottom: 1em;
 }
 
@@ -684,7 +688,12 @@ div.blockextra a:visited {
   height: 17pt;
 }
 
-
+#read_also {
+  margin-top: 2em;
+  font-weight: bold;
+  color: #39998e;
+  text-transform: uppercase;
+}
 
 article img {
   max-width: 100%;
