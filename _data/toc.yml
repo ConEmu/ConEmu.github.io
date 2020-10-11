@@ -206,10 +206,14 @@
       url: "Settings.html"
       children:
         -
-          eng: "Main"
+          eng: "General"
           rus: "Основные"
-          url: "SettingsMain.html"
+          url: "SettingsGeneral.html"
           children:
+            -
+              eng: "Fonts"
+              rus: "Шрифты"
+              url: "SettingsFonts.html"
             -
               eng: "Size & Pos"
               rus: "Положение окна"

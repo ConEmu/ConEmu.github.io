@@ -78,7 +78,10 @@ Terminate all `ssh-agent.exe` processes started from ConEmu's consoles on ConEmu
 Don't send focus events to console to disable autoclosing of fast search dialog in panels
 
 #### Log console output (`*`)  {#id2679}
-Log console output to text files ConEmu-YYYY-MM-DD-pNNNN.log (affect new consoles only)
+Log console output to text files ConEmu-YYYY-MM-DD-pNNNN.log (affects new consoles only)
+
+#### Log ANSI sequences (`*`)  {#id3105}
+Write to console log ANSI sequences (affects new consoles only)
 
 You may choose folder for in-console log files (affect new consoles only)
 

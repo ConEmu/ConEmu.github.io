@@ -65,6 +65,9 @@ breadcrumbs:
 #### chars
 
 
+#### Automatically remove newline when pasting single line  {#id3102}
+
+
 
 
 

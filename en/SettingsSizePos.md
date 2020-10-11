@@ -107,6 +107,13 @@ Create pad between ConEmu frame and console field
 #### Snap to desktop edges  {#id2403}
 Lock ConEmu window inside desktop work area
 
+
+
+## Activation and minimization  {#id3098}
+
+#### Restore inactive window by hotkey  {#id3099}
+Restore and focus inactive window by ‘Minimize/Restore’ hotkey
+
 #### Restore to active monitor  {#id2867}
 When restoring or sliding-down move window to the active monitor, where mouse cursor is located
 
@@ -139,6 +146,12 @@ When restoring or sliding-down move window to the active monitor, where mouse cu
 
 
 ## Alignment
+
+
+
+
+
+## Activation and minimization
 
 
 

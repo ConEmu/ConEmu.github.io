@@ -18,9 +18,9 @@ breadcrumbs:
 
 
 
-## Intercept keys  {#id3017}
+## Hotkeys processing  {#id3017}
 
-#### Install keyboard hooks  {#id1649}
+#### Support special hotkeys  {#id1649}
 Allows interception of Win+Number, Win+Arrows, Alt+Esc, Alt+Tab, etc.
 
 #### Win+Tab - switch consoles (Tabs)  {#id1764}

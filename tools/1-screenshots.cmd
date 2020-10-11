@@ -30,9 +30,9 @@ if exist "%~dp0Screenshots.xml" (
 
 echo Starting ConEmu with screenshot maker script
 if "%~1" == "-detached" (
-call ConEmu %resetdefault% -loadcfgfile %tmp_drv%\ConEmu.xml -detached
+call ConEmu64 %resetdefault% -loadcfgfile %tmp_drv%\ConEmu.xml -detached
 ) else (
-call ConEmu %resetdefault% -loadcfgfile %tmp_drv%\ConEmu.xml -run powershell -noprofile -ExecutionPolicy RemoteSigned -command "%~dp0Settings-Screenshot.ps1" -cur_console:n
+call ConEmu64 %resetdefault% -loadcfgfile %tmp_drv%\ConEmu.xml -run powershell -noprofile -ExecutionPolicy RemoteSigned -command "%~dp0Settings-Screenshot.ps1" -cur_console:n
 )
 
 echo ConEmu was terminated (exitcode=%exitcode%)

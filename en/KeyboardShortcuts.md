@@ -118,10 +118,12 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | *NoDefault* | `SetFocusGui` | Set focus to ConEmu |
 | *NoDefault* | `SetFocusChild` | Set focus to child GUI application |
 | *NoDefault* | `ChildSystemMenu` | Child GUI window system menu (PuTTY, Notepad, etc.) |
-| Win+W | `Multi.NewConsole` | Create new console or new window (check ‘Multiple consoles in one ConEmu window’) |
-| Win+Shift+W | `Multi.NewConsoleShift` | Create new console (after ‘Create confirmation’) |
-| Win+X | `Multi.CmdKey` | Create new ‘cmd.exe’ console |
-| *NoDefault* | `Multi.NewWindow` | Create new window (after ‘Create confirmation’) |
+| Win+Shift+U | `CheckUpdates` <br/> `Update()` | Check for updates |
+| Win+W | `Multi.NewConsole` <br/> `Create()` | Create new console or new window (check ‘Multiple consoles in one ConEmu window’) |
+| Win+Shift+W | `Multi.NewConsoleShift` <br/> `Create(0,1)` | Create new console (‘Create confirmation’ dialog) |
+| Win+X | `Multi.CmdKey` | Create new %s console |
+| *NoDefault* | `Multi.NewWndConfirm` <br/> `Create(2)` | Create new window |
+| *NoDefault* | `Multi.NewWndConfirm` <br/> `Create(2,1)` | Create new window (‘Create confirmation’ dialog) |
 | Win+N | `Multi.NewConsolePopup` | Show create new console popup menu |
 | *NoDefault* | `Multi.NewConsolePopup2` | Show create new console popup menu with task submenus |
 | Win+Shift+G | `Multi.NewAttach` | Attach existing Console or GUI application |
@@ -145,7 +147,7 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Apps+Alt+RightArrow | `Multi.SplitSwapR` <br/> `Split(4,1,0)` | Split: Exchange (swap) with nearest pane rightward |
 | Win+Shift+Q | `Multi.Next` | Switch next console |
 | *NoDefault* | `Multi.NextShift` | Switch previous console |
-| Win+192/*тильда*/ | `Multi.Recreate` | Recreate active console |
+| Win+~ | `Multi.Recreate` | Recreate active console |
 | Win+A | `Multi.AltCon` | Show alternative console buffer (last command output) |
 | Pause | `Multi.Pause` <br/> `Pause` | Pause current console |
 | *NoDefault* | `Multi.Scroll` | Switch bufferheight mode |
@@ -161,6 +163,7 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | *NoDefault* | `CloseAllConKey` <br/> `Close(8)` | Close all consoles |
 | *NoDefault* | `CloseZombiesKey` <br/> `Close(9)` | Close all zombies |
 | *NoDefault* | `CloseExceptConKey` <br/> `Close(5)` | Close all but active |
+| *NoDefault* | `CloseToRightKey` <br/> `Close(11)` | Close to the right |
 | Ctrl+Alt+Break | `KillProcessKey` <br/> `Close(1)` | Terminate (kill) active process in the current console |
 | Win+Alt+Break | `KillAllButShellKey` <br/> `Close(10,1)` | Terminate (kill) all but shell processes in the current console |
 | Win+S | `DuplicateRootKey` | Duplicate tab with current state of root process |
@@ -179,8 +182,8 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Apps+X | `HighlightMouseSwitchX` <br/> `HighlightMouse(3)` | Highlighting: Switch ‘Highlight row & col under mouse cursor’ |
 | *NoDefault* | `Multi.ShowTabsList` | Show opened tabs list (ignored in Far - use macro instead) |
 | Apps+F12 | `Multi.ShowTabsList2` <br/> `Tabs(8)` | Show opened tabs list (works in Far too) |
-| Shift+Ins | `ClipboardVkAllLines` | Paste clipboard contents (ignored in Far) |
-| Ctrl+V | `ClipboardVkFirstLine` | Paste first line of clipboard contents, autoconvert paths for cygwin's applications (ignored in Far) |
+| Ctrl+V | `ClipboardVkAllLines` | Paste clipboard contents (ignored in Far) |
+| Shift+Ins | `ClipboardVkFirstLine` | Paste first line of clipboard contents, autoconvert paths for cygwin's applications (ignored in Far) |
 | *NoDefault* | `Key.AltNumpad` <br/> `AltNumber(16)` | Start Alt+Number mode to enter unicode symbol by its hex codebase |
 | Ctrl+BACK | `DeleteWordToLeft` | Delete word leftward to the cursor (ignored in Far) |
 | Apps+F | `FindTextKey` | Find text in active console |
@@ -192,8 +195,10 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | *NoDefault* | `AlwaysOnTopKey` | Switch ‘Always on top’ window mode |
 | *NoDefault* | `TransparencyInc` <br/> `Transparency(1,-20)` | Transparency: more translucent |
 | *NoDefault* | `TransparencyDec` <br/> `Transparency(1,+20)` | Transparency: more opaque |
+| *NoDefault* | `Key.EditMenu` | Show Edit context menu |
+| *NoDefault* | `Key.EditMenu2` | Show Edit context menu |
 | Apps+Space | `Key.TabMenu` | Show Tab context menu |
-| Shift+RightMouseButton | `Key.TabMenu2` | Show Tab context menu |
+| *NoDefault* | `Key.TabMenu2` | Show Tab context menu |
 | Alt+F9 | `Key.Maximize` <br/> `WindowMaximize()` | Maximize/restore |
 | Win+Shift+DownArrow | `Key.MaximizeWidth` <br/> `WindowMode(11)` | Snap ConEmu window to the monitor's left/right edges (maximize width) |
 | Win+Shift+UpArrow | `Key.MaximizeHeight` <br/> `WindowMode(8)` | Snap ConEmu window to the monitor's top/bottom edges (maximize height) |
@@ -219,7 +224,7 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Ctrl+Alt+PageUp | `Key.BufPrUp` <br/> `Scroll(5,-1)` |  |
 | Ctrl+Alt+PageDown | `Key.BufPrDn` <br/> `Scroll(5,+1)` |  |
 | Apps+BACK | `Key.BufCursor` <br/> `Scroll(4)` | Scroll buffer to the cursor position |
-| *NoDefault* | `Key.ResetTerm` <br/> `Write(\`\\ec\`)` | Reset terminal: clear screen, backscroll, move cursor to the upper-left corner |
+| *NoDefault* | `Key.ResetTerm` | Reset terminal: clear screen, backscroll, move cursor to the upper-left corner |
 | Ctrl+WheelUp | `FontLargerKey` <br/> `FontSetSize(1,2)` | Make main font larger |
 | Ctrl+WheelDown | `FontSmallerKey` <br/> `FontSetSize(1,-2)` | Make main font smaller |
 | Ctrl+MiddleMouseButton | `FontOriginalKey` <br/> `Zoom(100)` | Make main font original size |
@@ -251,6 +256,8 @@ and notes about [global hotkeys](GlobalHotKeys.html).
 | Esc | `-` | Minimize ConEmu by Esc when no open consoles left (see option ‘Don't close ConEmu on last console close’) |
 | Shift+LeftArrow | `-` <br/> `Select(0,-1)` | Start text selection, ignored in Far, may be disabled on ‘Mark & Paste’ and ‘App distinct’ pages |
 | Shift+RightArrow | `-` <br/> `Select(0,1)` | Start text selection, ignored in Far, may be disabled on ‘Mark & Paste’ and ‘App distinct’ pages |
+| Ctrl+Shift+LeftArrow | `-` <br/> `Select(0,-1,0,-2)` | Start text selection, ignored in Far, may be disabled on ‘Mark & Paste’ and ‘App distinct’ pages |
+| Ctrl+Shift+RightArrow | `-` <br/> `Select(0,1,0,2)` | Start text selection, ignored in Far, may be disabled on ‘Mark & Paste’ and ‘App distinct’ pages |
 | Shift+Home | `-` <br/> `Select(0,-1,0,-1)` | Start text selection, ignored in Far, may be disabled on ‘Mark & Paste’ and ‘App distinct’ pages |
 | Shift+End | `-` <br/> `Select(0,1,0,1)` | Start text selection, ignored in Far, may be disabled on ‘Mark & Paste’ and ‘App distinct’ pages |
 | Shift+UpArrow | `-` <br/> `Select(1,0,-1)` | Start block selection, ignored in Far, may be disabled on ‘Mark & Paste’ and ‘App distinct’ pages |

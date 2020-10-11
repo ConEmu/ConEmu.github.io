@@ -2,6 +2,7 @@
 $Script_File_path = split-path -parent $MyInvocation.MyCommand.Definition
 $img_path = Join-Path $Script_File_path "img"
 
+$IDD_SPG_GENERAL       = 189
 $IDD_SPG_FONTS         = 151
 $IDD_SPG_COLORS        = 152
 $IDD_SPG_INFO          = 153
@@ -40,13 +41,14 @@ $IDD_SPG_CHILDGUI      = 187
 $IDD_SPG_ANSI          = 188
 
 $pages = @(
-    @{id=$IDD_SPG_FONTS;       child=0; title="Main";        file="Settings-Main.png";},
+    @{id=$IDD_SPG_GENERAL;     child=0; title="General";       file="Settings-General.png";}, # NEW !!
+    @{id=$IDD_SPG_FONTS;       child=1; title="Fonts";         file="Settings-Fonts.png";},
     @{id=$IDD_SPG_SIZEPOS;     child=1; title="Size & Pos";  file="Settings-SizePos.png";},
     @{id=$IDD_SPG_APPEAR;      child=1; title="Appearance";  file="Settings-Appearance.png";},
 #   @{id=0}, # Uncomment to stop processing (for test purposes)
     @{id=$IDD_SPG_QUAKE;       child=1; title="Quake style"; file="Settings-Quake.png";}, # NEW !!
     @{id=$IDD_SPG_BACKGR;      child=1; title="Background";  file="Settings-Background.png";}, # NEW !!
-    @{id=$IDD_SPG_TABS;        child=1; title="Tabs";        file="Settings-TabBar.png";},
+    @{id=$IDD_SPG_TABS;        child=1; title="Tab bar";       file="Settings-TabBar.png";},
     @{id=$IDD_SPG_CONFIRM;     child=1; title="Confirm";     file="Settings-Confirm.png";},    # NEW !!
     @{id=$IDD_SPG_TASKBAR;     child=1; title="Task bar";    file="Settings-TaskBar.png";},
     @{id=$IDD_SPG_UPDATE;      child=1; title="Update";      file="Settings-Update.png";},
@@ -144,8 +146,11 @@ function ScreenShot([Drawing.Rectangle]$bounds, $path) {
 function DoScreenShoot($page,$file)
 {
   #$preWnd = [ActiveWindowAPI]::GetForegroundWindow()
-  & ConEmuC -GuiMacro Settings $page
-  Sleep 1
+  Write-Host -NoNewLine "Changing page..."
+  & ConEmuC -Silent -GuiMacro Settings $page
+  Write-Host -NoNewLine "Wait for GUI update..."
+  Sleep 3
+  Write-Host -NoNewLine " Taking screenshot..."
   $wnd = [ActiveWindowAPI]::GetForegroundWindow()
   #if ($preWnd -eq $wnd) {
   #  Write-Host -ForegroundColor Red "Settings window was not opened"
@@ -154,6 +159,7 @@ function DoScreenShoot($page,$file)
   $r = [ActiveWindowAPI]::GetWndRect($wnd)
   $bounds = [Drawing.Rectangle]::FromLTRB($r.Left+$os_shift_left,$r.Top+$os_shift_top,$r.Right+$os_shift_right,$r.Bottom+$os_shift_bottom)
   ScreenShot $bounds $file
+  Write-Host " Done"
 }
 
 if (-Not [System.IO.Directory]::Exists($img_path)) {

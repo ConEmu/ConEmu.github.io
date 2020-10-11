@@ -78,5 +78,8 @@ Specified minimal size of cursor in pixels (regardless of â€˜Fixed cursor sizeâ€
 #### Min size (pix)
 
 
+#### Treat hidden cursor as inactive  {#id3100}
+
+
 
 

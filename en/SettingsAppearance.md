@@ -78,9 +78,6 @@ Hide main window caption, when maximized (Alt-F9)
 #### Hide caption always  {#id1569}
 Remove window border and caption. Only console, tabs and status bar will be shown.
 
-#### Show tabs in caption  {#id1735}
-
-
 #### Frame width
 While caption and frame are hidden, ConEmu may keep small part of frame (in pixels) around console part. Default is 1 pixel.
 

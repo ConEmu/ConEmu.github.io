@@ -29,6 +29,9 @@ Confirm new console creation. You may change cmd line for it, or turn on "Run as
 #### Confirm console detach  {#id2689}
 
 
+#### Confirm terminal reset  {#id2690}
+
+
 
 
 ## Close confirmations  {#id2756}

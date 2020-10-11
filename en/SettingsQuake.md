@@ -32,6 +32,12 @@ Duration of window animation (0..2000ms): Quake slide down/up and restoring/hidi
 #### Always on top  {#id1572}
 Places the ConEmu window above all non-topmost windows. The window maintains its topmost position even when it is deactivated
 
+#### Restore inactive window by hotkey  {#id3099}
+Restore and focus inactive window by ‘Minimize/Restore’ hotkey
+
+#### Restore to active monitor  {#id2867}
+When restoring or sliding-down move window to the active monitor, where mouse cursor is located
+
 
 
 ## ConEmu window frame options  {#id3058}

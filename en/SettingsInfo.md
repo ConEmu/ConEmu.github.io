@@ -48,10 +48,13 @@ Far PID and Far with plugin PID
 
 
 
+#### Buffer (chars)
+
+
 #### Console (chars)
 
 
-#### (pixels)
+#### Left x Top
 
 
 #### DC window
@@ -63,11 +66,11 @@ Far PID and Far with plugin PID
 #### Left
 
 
+#### Right
+
+
 ## Font  {#id2951}
 
-
-
-#### Right
 
 
 #### Main
