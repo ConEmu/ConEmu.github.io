@@ -43,9 +43,9 @@ $IDD_SPG_ANSI          = 188
 $pages = @(
     @{id=$IDD_SPG_GENERAL;     child=0; title="General";       file="Settings-General.png";}, # NEW !!
     @{id=$IDD_SPG_FONTS;       child=1; title="Fonts";         file="Settings-Fonts.png";},
+#   @{id=0}, # Uncomment to stop processing (for test purposes)
     @{id=$IDD_SPG_SIZEPOS;     child=1; title="Size & Pos";  file="Settings-SizePos.png";},
     @{id=$IDD_SPG_APPEAR;      child=1; title="Appearance";  file="Settings-Appearance.png";},
-#   @{id=0}, # Uncomment to stop processing (for test purposes)
     @{id=$IDD_SPG_QUAKE;       child=1; title="Quake style"; file="Settings-Quake.png";}, # NEW !!
     @{id=$IDD_SPG_BACKGR;      child=1; title="Background";  file="Settings-Background.png";}, # NEW !!
     @{id=$IDD_SPG_TABS;        child=1; title="Tab bar";       file="Settings-TabBar.png";},
@@ -124,7 +124,7 @@ $v = [System.Environment]::OSVersion.Version
 if ($v.Major -eq 10) {
   $os_shift_left = 8
   $os_shift_right = -8
-  $os_shift_top = 0
+  $os_shift_top = 1
   $os_shift_bottom = -8
 } elseif (($v.Major -eq 6) -And (($v.Minor -eq 2) -Or ($v.Minor -eq 3))) {
   $os_shift_left = -5
@@ -143,13 +143,13 @@ function ScreenShot([Drawing.Rectangle]$bounds, $path) {
  $bmp.Dispose()
 }
 
-function DoScreenShoot($page,$file)
+function DoScreenShoot($page,$file,$child)
 {
   #$preWnd = [ActiveWindowAPI]::GetForegroundWindow()
   Write-Host -NoNewLine "Changing page..."
   & ConEmuC -Silent -GuiMacro Settings $page
   Write-Host -NoNewLine "Wait for GUI update..."
-  Sleep 3
+  Sleep $(if ($child) {2} else {4})
   Write-Host -NoNewLine " Taking screenshot..."
   $wnd = [ActiveWindowAPI]::GetForegroundWindow()
   #if ($preWnd -eq $wnd) {
@@ -171,5 +171,5 @@ $pages | % {
     exit
   }
   Write-Host ([String]$_.id + ": " + $_.title)
-  DoScreenShoot $_.id (Join-Path $img_path $_.file)
+  DoScreenShoot $_.id (Join-Path $img_path $_.file) ($_.child -ne 0)
 }
