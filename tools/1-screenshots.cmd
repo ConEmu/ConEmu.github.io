@@ -14,6 +14,7 @@ if errorlevel 1 (
 )
 
 echo Mapping drive %tmp_dir%
+subst %tmp_drv% /d
 subst %tmp_drv% "%tmp_dir%"
 if errorlevel 1 (
   call cecho "Failed to map %tmp_drv% drive"
