@@ -36,10 +36,7 @@ scroll the console contents, obtain fast access to your
 Large amount of [options](Settings.html) let you set up the terminal of your dream
 and replace [simple cmd or powershell window](Delusions.html#delusion-2).
 
-<div class="build_download">
-<a href="{{ site.fosshub }}" rel="nofollow"><img
-   src="/img/Downloads.png" alt="Fosshub.com" title="Fosshub.com mirror"></img></a>
-</div>
+{% include download.html %}
 
 
 

@@ -120,7 +120,7 @@ or any other folder, if you are not using Far Manager..
 
 Download page: <{{ site.fosshub }}>
 
-<a href="{{ site.fosshub }}" rel="nofollow"><img src="../img/Downloads.png" alt="Fosshub.com" title="Fosshub.com mirror"/></a>
+{% include download.html %}
 
 **PS**. In fact, it does not matter which version of GUI you use (ConEmu.exe or ConEmu64.exe).
 ConEmu automatically selects the required files (ConEmuHk.dll or ConEmuHk64.dll and so on)

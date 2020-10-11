@@ -14,10 +14,6 @@ The oldest build
 {% endif %}{% assign prev_post = post %}{% endfor %}
 </div>
 
-<div class="build_download">
-<a href="{{ site.fosshub }}" rel="nofollow"><img src="/img/Downloads.png" alt="Fosshub.com" title="Fosshub.com mirror"></img></a>
-<span>&nbsp;&nbsp;</span>
-<a href="/donate.html"><img src="/img/Donate.png" alt="Donate" title="Support development by donation"></img></a>
-</div>
+{% include download.html %}
 
 {% if site.url != 'local' %}{% include googleads.html %}{% endif %}
