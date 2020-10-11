@@ -122,10 +122,10 @@ $os_shift_bottom = 0
 
 $v = [System.Environment]::OSVersion.Version
 if ($v.Major -eq 10) {
-  $os_shift_left = 2
-  $os_shift_right = -2
+  $os_shift_left = 8
+  $os_shift_right = -8
   $os_shift_top = 0
-  $os_shift_bottom = -2
+  $os_shift_bottom = -8
 } elseif (($v.Major -eq 6) -And (($v.Minor -eq 2) -Or ($v.Minor -eq 3))) {
   $os_shift_left = -5
   $os_shift_right = 5

@@ -26,6 +26,7 @@
 			<value name="Update.ConfirmDownload" type="hex" data="01"/>
 			<value name="Update.UseBuilds" type="hex" data="03"/>
 			<key name="HotKeys" modified="2016-05-30 19:00:19" build="160529">
+				<value name="Key.EditMenu2" type="dword" data="00001002"/>
 				<value name="KeyMacro01" type="dword" data="00001144"/>
 				<value name="KeyMacro01.Text" type="string" data="print(&quot;\e&quot;,&quot;exit&quot;,&quot;\n&quot;)"/>
 				<value name="KeyMacro02" type="dword" data="00101141"/>
