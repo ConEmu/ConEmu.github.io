@@ -1,5 +1,5 @@
 ---
-title: "ConEmu | Tasks"
+title: "ConEmu | Tasks: Set up your favourite shells"
 
 description: "ConEmu's Tasks are simple way to store oft-used commands
   and start several shells in tabs or splits."

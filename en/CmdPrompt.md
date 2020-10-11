@@ -19,6 +19,8 @@ readalso:
    title: Extending Powershell Prompt
  - url: PromptAtTheBottom.html
    title: Hold Shell Prompt at the Bottom
+ - url: Tasks.html
+   title: "Tasks: Set up your favourite shells"
 ---
 
 # Configuring Cmd Prompt

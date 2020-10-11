@@ -26,37 +26,7 @@ otherlang:
     * [Save settings](#id1610)
     * [Export...](#id2572)
     * [Look up an option](#id2569)
-  * [Main](#Main)
-    * [Size and Pos](#Size_and_Pos)
-    * [Appearance](#Appearance)
-    * [Background](#Background)
-    * [Tabs](#Tabs)
-    * [Confirm](#Confirm)
-    * [Task bar](#Task_bar)
-    * [Automatic update](#Automatic_update)
-  * [Startup](#Startup)
-    * [Tasks](#Tasks)
-    * [ComSpec](#ComSpec)
-    * [Environment](#Environment)
-  * [Features](#Features)
-    * [RealConsole font](#RealConsole_font)
-    * [Text cursor](#Text_cursor)
-    * [Colors](#Colors)
-    * [Transparency](#Transparency)
-    * [Status bar](#Status_bar)
-    * [App distinct](#App_distinct)
-  * [Integration](#Integration)
-    * [Default Terminal](#Default_term)
-  * [Keys and Macro](#Keys_and_Macro)
-    * [Keyboard](#Keyboard)
-    * [Mark and Copy](#Mark_and_Copy)
-    * [Paste](#Paste)
-    * [Highlight](#Highlight)
-  * [Far Manager](#Far_Manager)
-    * [Far macros](#Far_macros)
-    * [Far Views](#Far_Views)
-  * [Info](#Info)
-    * [Debug](#Debug)
+  * [Settings pages](#screenshots)
 * [Alphabetical](SettingsAlphabetical.html)
 
 
@@ -156,49 +126,59 @@ next occurrence of the string.
 
 <a name="screenshots"></a>
 
-### Main   {#Main}
+### General   {#General}
 
-[![ConEmu settings, Main page](/img/Settings-Main.png "Click to open description")](SettingsMain.html)
+[![ConEmu settings, General page](/img/Settings-General.png "Click to open the description")](SettingsGeneral.html)
+
+
+### Fonts   {#Fonts}
+
+[![ConEmu settings, Fonts page](/img/Settings-Fonts.png "Click to open the description")](SettingsFonts.html)
 
 
 ### Size and Pos   {#Size_and_Pos}
 
-[![ConEmu settings, Size and position page](/img/Settings-SizePos.png "Click to open description")](SettingsSizePos.html)
+[![ConEmu settings, Size and position page](/img/Settings-SizePos.png "Click to open the description")](SettingsSizePos.html)
 
 
 ### Appearance   {#Appearance}
 
-[![ConEmu settings, Appearance page](/img/Settings-Appearance.png "Click to open description")](SettingsAppearance.html)
+[![ConEmu settings, Appearance page](/img/Settings-Appearance.png "Click to open the description")](SettingsAppearance.html)
+
+
+### Quake style   {#QuakeStyle}
+
+[![ConEmu settings, Quake style page](/img/Settings-Quake.png "Click to open the description")](SettingsQuake.html)
 
 
 ### Background   {#Background}
 
-[![ConEmu settings, Background page](/img/Settings-Background.png "Click to open description")](SettingsBackground.html)
+[![ConEmu settings, Background page](/img/Settings-Background.png "Click to open the description")](SettingsBackground.html)
 
 
-### Tabs   {#Tabs}
+### Tab bar   {#Tabs}
 
-[![ConEmu settings, Tabs page](/img/Settings-TabBar.png "Click to open description")](SettingsTabBar.html)
+[![ConEmu settings, Tabs page](/img/Settings-TabBar.png "Click to open the description")](SettingsTabBar.html)
 
 
 ### Confirm   {#Confirm}
 
-[![ConEmu settings, Confirm page](/img/Settings-Confirm.png "Click to open description")](SettingsConfirm.html)
+[![ConEmu settings, Confirm page](/img/Settings-Confirm.png "Click to open the description")](SettingsConfirm.html)
 
 
 ### Task bar   {#Task_bar}
 
-[![ConEmu settings, Task bar page](/img/Settings-TaskBar.png "Click to open description")](SettingsTaskBar.html)
+[![ConEmu settings, Task bar page](/img/Settings-TaskBar.png "Click to open the description")](SettingsTaskBar.html)
 
 
 ### Automatic update   {#Automatic_update}
 
-[![ConEmu settings, Update page](/img/Settings-Update.png "Click to open description")](SettingsUpdate.html)
+[![ConEmu settings, Update page](/img/Settings-Update.png "Click to open the description")](SettingsUpdate.html)
 
 
 ### Startup   {#Startup}
 
-[![ConEmu settings, Startup page](/img/Settings-Startup.png "Click to open description")](SettingsStartup.html)
+[![ConEmu settings, Startup page](/img/Settings-Startup.png "Click to open the description")](SettingsStartup.html)
 
 
 ### Tasks   {#Tasks}
@@ -211,17 +191,17 @@ next occurrence of the string.
 
 ### ComSpec   {#ComSpec}
 
-[![ConEmu settings, Comspec page](/img/Settings-Comspec.png "Click to open description")](SettingsComspec.html)
+[![ConEmu settings, Comspec page](/img/Settings-Comspec.png "Click to open the description")](SettingsComspec.html)
 
 
 ### Environment   {#Environment}
 
-[![ConEmu settings, Environment page](/img/Settings-Environment.png "Click to open description")](SettingsEnvironment.html)
+[![ConEmu settings, Environment page](/img/Settings-Environment.png "Click to open the description")](SettingsEnvironment.html)
 
 
 ### Features   {#Features}
 
-[![ConEmu settings, Features page](/img/Settings-Features.png "Click to open description")](SettingsFeatures.html)
+[![ConEmu settings, Features page](/img/Settings-Features.png "Click to open the description")](SettingsFeatures.html)
 
 
 #### RealConsole font  {#RealConsole_font}
@@ -229,84 +209,84 @@ next occurrence of the string.
 * [RealConsole](RealConsole.html)
 * [Unicode support](UnicodeSupport.html)
 
-[![ConEmu settings, RealConsole font](/img/Settings-More-RealFont.png "Click to open description")](RealConsole.html)
+[![ConEmu settings, RealConsole font](/img/Settings-More-RealFont.png "Click to open the description")](RealConsole.html)
 
 
 ### Text cursor   {#Text_cursor}
 
-[![ConEmu settings, Text cursor page](/img/Settings-TextCursor.png "Click to open description")](SettingsTextCursor.html)
+[![ConEmu settings, Text cursor page](/img/Settings-TextCursor.png "Click to open the description")](SettingsTextCursor.html)
 
 
 ### Colors   {#Colors}
 
-[![ConEmu settings, Colors page](/img/Settings-Colors.png "Click to open description")](SettingsColors.html)
+[![ConEmu settings, Colors page](/img/Settings-Colors.png "Click to open the description")](SettingsColors.html)
 
-[![ConEmu settings, Predefines palettes](/img/Settings-Colors2.png "Click to open description")](SettingsColors.html)
+[![ConEmu settings, Predefines palettes](/img/Settings-Colors2.png "Click to open the description")](SettingsColors.html)
 
 
 ### Transparency   {#Transparency}
 
-[![ConEmu settings, Transparency page](/img/Settings-Transparency.png "Click to open description")](SettingsTransparency.html)
+[![ConEmu settings, Transparency page](/img/Settings-Transparency.png "Click to open the description")](SettingsTransparency.html)
 
 
 ### Status bar   {#Status_bar}
 
-[![ConEmu settings, Status bar page](/img/Settings-StatusBar.png "Click to open description")](SettingsStatusBar.html)
+[![ConEmu settings, Status bar page](/img/Settings-StatusBar.png "Click to open the description")](SettingsStatusBar.html)
 
 
 ### App distinct   {#App_distinct}
 
-[![ConEmu settings, App distinct page](/img/Settings-AppDistinct.png "Click to open description")](SettingsAppDistinct.html)
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct.png "Click to open the description")](SettingsAppDistinct.html)
 
-[![ConEmu settings, App distinct page](/img/Settings-AppDistinct2.png "Click to open description")](SettingsAppDistinct.html)
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct2.png "Click to open the description")](SettingsAppDistinct.html)
 
-[![ConEmu settings, App distinct page](/img/Settings-AppDistinct3.png "Click to open description")](SettingsAppDistinct.html)
+[![ConEmu settings, App distinct page](/img/Settings-AppDistinct3.png "Click to open the description")](SettingsAppDistinct.html)
 
 
 ### Integration   {#Integration}
 
-[![ConEmu settings, Integration page](/img/Settings-Integration.png "Click to open description")](SettingsIntegration.html)
+[![ConEmu settings, Integration page](/img/Settings-Integration.png "Click to open the description")](SettingsIntegration.html)
 
 
 ### Default Terminal   {#Default_term}
 
 * [Set up ConEmu as Default Windows Terminal](DefaultTerminal.html)
 
-[![ConEmu settings, DefTerm page](/img/Settings-DefTerm.png "Click to open description")](SettingsDefTerm.html)
+[![ConEmu settings, DefTerm page](/img/Settings-DefTerm.png "Click to open the description")](SettingsDefTerm.html)
 
 
 ### Keys and Macro   {#Keys_and_Macro}
 
-[![ConEmu settings, Keys and Macro page](/img/Settings-Hotkeys.png "Click to open description")](SettingsHotkeys.html)
+[![ConEmu settings, Keys and Macro page](/img/Settings-Hotkeys.png "Click to open the description")](SettingsHotkeys.html)
 
-[![ConEmu settings, Few GuiMacros](/img/Settings-Hotkeys2.png "Click to open description")](SettingsHotkeys.html)
+[![ConEmu settings, Few GuiMacros](/img/Settings-Hotkeys2.png "Click to open the description")](SettingsHotkeys.html)
 
 
 ### Keyboard   {#Keyboard}
 
-[![ConEmu settings, Controls page](/img/Settings-Keyboard.png "Click to open description")](SettingsKeyboard.html)
+[![ConEmu settings, Controls page](/img/Settings-Keyboard.png "Click to open the description")](SettingsKeyboard.html)
 
 
 ### Mark and Copy   {#Mark_and_Copy}
 
 * [Text mark up, copy and paste](TextSelection.html)
 
-[![ConEmu settings, Text selection](/img/Settings-MarkCopy.png "Click to open description")](SettingsMarkCopy.html)
+[![ConEmu settings, Text selection](/img/Settings-MarkCopy.png "Click to open the description")](SettingsMarkCopy.html)
 
 
 ### Paste   {#Paste}
 
-[![ConEmu settings, Paste page](/img/Settings-Paste.png "Click to open description")](SettingsPaste.html)
+[![ConEmu settings, Paste page](/img/Settings-Paste.png "Click to open the description")](SettingsPaste.html)
 
 
 ### Highlight   {#Highlight}
 
-[![ConEmu settings, Highlight page](/img/Settings-Highlight.png "Click to open description")](SettingsHighlight.html)
+[![ConEmu settings, Highlight page](/img/Settings-Highlight.png "Click to open the description")](SettingsHighlight.html)
 
 
 ### Far Manager   {#Far_Manager}
 
-[![ConEmu settings, Far Manager page](/img/Settings-Far.png "Click to open description")](SettingsFar.html)
+[![ConEmu settings, Far Manager page](/img/Settings-Far.png "Click to open the description")](SettingsFar.html)
 
 
 ### Far macros   {#Far_macros}
@@ -324,11 +304,11 @@ This is settings for ‘Panel Views’ Far Manager plugin.
 
 ### Info   {#Info}
 
-[![ConEmu settings, Info page](/img/Settings-Info.png "Click to open description")](SettingsInfo.html)
+[![ConEmu settings, Info page](/img/Settings-Info.png "Click to open the description")](SettingsInfo.html)
 
 
 ### Debug   {#Debug}
 
 Enables advanced logging of console processes creation, ANSI output and keypresses.
 
-[![ConEmu settings, Debug page](/img/Settings-Debug.png "Click to open description")](SettingsDebug.html)
+[![ConEmu settings, Debug page](/img/Settings-Debug.png "Click to open the description")](SettingsDebug.html)

@@ -17,7 +17,7 @@ readalso:
  - url: StartupDir.html
    title: Startup Directory
  - url: Tasks.html
-   title: ConEmu Tasks
+   title: "Tasks: Set up your favourite shells"
 ---
 
 # Using Git for Windows

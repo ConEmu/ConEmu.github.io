@@ -26,37 +26,7 @@ otherlang:
     * [Save settings](#id1610)
     * [Export...](#id2572)
     * [Look up an option](#id2569)
-  * [Main](#Main)
-    * [Size and Pos](#Size_and_Pos)
-    * [Appearance](#Appearance)
-    * [Background](#Background)
-    * [Tabs](#Tabs)
-    * [Confirm](#Confirm)
-    * [Task bar](#Task_bar)
-    * [Automatic update](#Automatic_update)
-  * [Startup](#Startup)
-    * [Tasks](#Tasks)
-    * [ComSpec](#ComSpec)
-    * [Environment](#Environment)
-  * [Features](#Features)
-    * [RealConsole font](#RealConsole_font)
-    * [Text cursor](#Text_cursor)
-    * [Colors](#Colors)
-    * [Transparency](#Transparency)
-    * [Status bar](#Status_bar)
-    * [App distinct](#App_distinct)
-  * [Integration](#Integration)
-    * [Default Terminal](#Default_term)
-  * [Keys and Macro](#Keys_and_Macro)
-    * [Keyboard](#Keyboard)
-    * [Mark and Copy](#Mark_and_Copy)
-    * [Paste](#Paste)
-    * [Highlight](#Highlight)
-  * [Far Manager](#Far_Manager)
-    * [Far macros](#Far_macros)
-    * [Far Views](#Far_Views)
-  * [Info](#Info)
-    * [Debug](#Debug)
+  * [Страницы настроек](#screenshots)
 * [Alphabetical](SettingsAlphabetical.html)
 
 
@@ -155,9 +125,14 @@ next occurrence of the string.
 
 <a name="screenshots"></a>
 
-### Main   {#Main}
+### Основные   {#General}
 
-[![ConEmu settings, Main page](/img/Settings-Main.png "Щелкните чтобы открыть описание")](SettingsMain.html)
+[![ConEmu settings, General page](/img/Settings-General.png "Щелкните чтобы открыть описание")](SettingsGeneral.html)
+
+
+### Шрифты   {#Fonts}
+
+[![ConEmu settings, Fonts page](/img/Settings-Fonts.png "Щелкните чтобы открыть описание")](SettingsFonts.html)
 
 
 ### Size and Pos   {#Size_and_Pos}
@@ -168,6 +143,11 @@ next occurrence of the string.
 ### Appearance   {#Appearance}
 
 [![ConEmu settings, Appearance page](/img/Settings-Appearance.png "Щелкните чтобы открыть описание")](SettingsAppearance.html)
+
+
+### Quake режим   {#QuakeStyle}
+
+[![ConEmu settings, Quake style page](/img/Settings-Quake.png "Щелкните чтобы открыть описание")](SettingsQuake.html)
 
 
 ### Background   {#Background}

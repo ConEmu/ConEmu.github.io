@@ -13,11 +13,21 @@ readalso:
  - url: Settings.html#screenshots
    title: "Settings Dialog Screenshots"
  - url: Tasks.html
-   title: "Easy Way to Start Your Shells with ‘Tasks’"
+   title: "Tasks: Set up your favourite shells"
  - url: ConEmuFAQ.html
    title: "Frequently Asked Questions"
  - url: TableOfContents.html
    title: "Documentation"
+ - url: Tasks.html
+   title: "Tasks: Set up your favourite shells"
+ - url: Localization.html
+   title: "Contribute to ConEmu localization"
+ - url: SettingsColors.html
+   title: "Color schemes"
+ - url: GlobalHotKeys.html
+   title: "Global hotkeys"
+ - url: VersionComparison.html
+   title: "Version comparison"
 
 otherlang:
    en: /en/SettingsFast.html
@@ -129,9 +139,24 @@ with arguments.
 
 
 ### Preferred color scheme   {#color-scheme}
+
+Here you may choose one of the predefined or user-defined [color schemes](SettingsColors.html).
+
+
 ### Single instance mode   {#single-instance}
+
+Use one ConEmu window when starting new console from shortcut or somewhere. This may be disabled by ‘/nosingle’ or forced by ‘/single’ switches
+
+
 ### Quake-style   {#quake-style}
+
+Let ConEmu acts like consoles in video games, slide down from the top of the screen.
+
+
 ### Show-hide hotkey   {#show-hide-hotkey}
+
+Choose [global hotkey](GlobalHotKeys.html) to show and hide ConEmu window.
+
 
 ### Install keyboard hooks   {#keyboard-hooks}
 
@@ -169,6 +194,8 @@ Later you may tune up updating settings on the
 [Update](SettingsUpdate.html) settings page.
 ConEmu do not do unauthorized changes, it will ask your permission
 before starting update process.
+Choose your preferred [update channel](VersionComparison.html#release-stages),
+**Preview** is recommended for most users.
 
 
 ### Disable ConIme.exe autorun (Vista only)   {#disable-conime}

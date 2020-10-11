@@ -13,7 +13,7 @@ breadcrumbs:
 
 readalso:
  - url: Tasks.html
-   title: Using Tasks
+   title: "Tasks: Set up your favourite shells"
  - url: TerminalVsShell.html
    title: Terminal vs Shell
  - url: CommandLine.html

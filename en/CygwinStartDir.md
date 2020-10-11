@@ -12,7 +12,7 @@ readalso:
  - url: GitForWindows.html
    title: Git-for-Windows
  - url: Tasks.html
-   title: ConEmu Tasks
+   title: "Tasks: Set up your favourite shells"
 
 breadcrumbs:
  - url: TableOfContents.html#cygwin-and-msys

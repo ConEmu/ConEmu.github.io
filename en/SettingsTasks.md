@@ -10,7 +10,7 @@ breadcrumbs:
 
 readalso:
  - url: Tasks.html
-   title: "Tasks"
+   title: "Tasks: Set up your favourite shells"
  - url: CommandLine.html
    title: "GUI, Console and Shells switches"
  - url: NewConsole.html
