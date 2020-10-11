@@ -1,11 +1,11 @@
 
 .site {
 margin: 0 auto;
-max-width: 990px;
+max-width: 1060px;
 overflow: hidden;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1100px) {
   .site {
     max-width: 100%;
   }
@@ -24,7 +24,7 @@ div {
 }
 
 .text {
-  max-width: 800px;
+  max-width: 870px;
   margin-top: 5pt;
   margin-bottom: 5pt;
 }
@@ -34,14 +34,14 @@ div {
   min-height: 100%;
 }
 
-@media (min-width: 1070px) {
+@media (min-width: 1140px) {
   .wrapper {
-    width: 1050px;
-    min-width: 790px;
+    width: 1120px;
+    min-width: 860px;
   }
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1140px) {
   .wrapper {
     width: 100%;
   }
@@ -184,7 +184,7 @@ code.install {
   z-index: 1;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1130px) {
   pre {
     max-width: 91%;
   }
@@ -290,7 +290,7 @@ table.d-table a:visited {
   text-align: right;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1130px) {
   /* reflow tables to ensure all columns will be visible on narrow devices */
   table, thead, tbody, tr, td {
     display: block;
@@ -323,12 +323,12 @@ table.d-table a:visited {
   content: '';
 }
 .container {
-  width: 764px;
+  width: 834px;
   float: right;
   overflow: hidden;
   background-color: #fdf6e3;
 }
-@media (max-width: 1070px) {
+@media (max-width: 1140px) {
   .container {
     width: 100%;
     float: left;
@@ -355,7 +355,7 @@ table.d-table a:visited {
   margin: 0;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1130px) {
   .left-sidebar {
     width: 95%;
   }
@@ -525,7 +525,7 @@ div.h-social a {
   background: url('/img/linked.png');
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1130px) {
   div.h-social {
     clear: none;
   }
@@ -534,7 +534,7 @@ div.h-social a {
   }
 }
 
-@media (min-width: 1040px) {
+@media (min-width: 1130px) {
   div.h-social {
     clear: none;
   }
@@ -577,7 +577,7 @@ div.block a:visited {
 
 
 
-@media (max-width: 1040px) {
+@media (max-width: 1130px) {
   .block {
     width: 100%;
   }
@@ -652,7 +652,7 @@ div.blockextra a:visited {
   max-width: 120px;
   height: 13pt;
 }
-@media (max-width: 1040px) {
+@media (max-width: 1130px) {
   #footer-links {
     margin-bottom: 1em;
   }
