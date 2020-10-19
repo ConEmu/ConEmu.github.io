@@ -157,7 +157,7 @@ you may use `-new_console` or `-cur_console` switches.
    m:/mnt - defines ‘/mnt’ prefix for Unix-path conversion, m:"" - no prefix
    n - disable ‘Press Enter or Esc to close console’
    o - don't enable ‘Long console output’ when starting command from Far Manager
-   p[N] - pty modes, N - bitmask: 1 - XTermKeys, 2 - BrPaste, 4 - AppCursorKeys; default is 5 (1+4)
+   p[N] - pty modes, N - bitmask: 1 - XTermKeys, 2 - BrPaste, 4 - AppCursorKeys; default is 1
    P:"<palettename>" - set fixed palette for tab
    r - run as restricted user
    R - force start hooks server in the parent process
