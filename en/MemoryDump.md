@@ -30,6 +30,7 @@ Following information is a copy of answers from [ConEmu FAQ](ConEmuFAQ.html).
   * [Using Windows Task manager](#Using_Windows_Task_manager)
 * [How to find Process ID (PID)](#How_to_find_Process_ID_(PID))
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 

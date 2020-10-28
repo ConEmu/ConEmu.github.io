@@ -35,6 +35,8 @@ without using of virtual machines or recompilations.
 
 ![Bash on Windows in ConEmu](/img/BashOnWindows.png)
 
+
+
 ## Contents  {#contents}
 
 * [Run WSL2 in ConEmu](#wsl2)
@@ -87,9 +89,23 @@ If you want to have PTY terminal now you could try wslbridge2. Please read the d
 
 {% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
+### Tl;dr: Get arrows working in ConEmu  {#arrows-tldr}
+
+Without [Connector](CygwinMsysConnector.html) it's not possible yet to implement [PTY terminal](CygwinMsys.html).
+And Windows API has only one flag `ENABLE_VIRTUAL_TERMINAL_INPUT` which does not show if console expects AppKeys or not.
+
+With WSL version 2 the workarounds are:
+
+* Use switch `-new_console:p5` to enable or `-new_console:p1` to disable ‘AppKeys’.
+* Use StatusBar's Terminal modes to change ‘AppKeys’ manually on the fly.
+
+[More information is below](#arrows).
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
-## WSL installarion  {#wsl-install}
+
+## WSL installation  {#wsl-install}
 
 ### Good places to start  {#start}
 
@@ -211,15 +227,27 @@ set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.
 If you want to install and run different WSL distributions simultaneously (Debian, Ubuntu, openSUSE, etc.)
 do the following steps:
 
-1. Find the GUID of your distribution in the registry under `HKCU\Software\Microsoft\Windows\CurrentVersion\Lxss`.
-   In my case, Debian distro has GUID `{1f6b2238-ec8d-4066-8e2b-ee31ce97ad3f}`.
-2. Modify [task](Tasks.html) for your WSL by inserting after `--wsl` switch `--distro-guid={DISTRO-GUID}`.
+1. Run desired Linux distribution at least once from Windows Start menu.
+2. Find the your distribution in the registry under `HKCU\Software\Microsoft\Windows\CurrentVersion\Lxss`.
+   In my case, Debian distro GUID (registry key) is `{ad038902-973f-4baf-92b7-4d3ef9604ea5}` and DistributionName is just `Debian`.
+3. Modify [task](Tasks.html) for your WSL by inserting after `--wsl` switch or directly after `wsl.exe` your distribution identifier.
+   For WSL2 it's a switch `--distribution DistributionName` and for old WSL1 it's a `--distro-guid={DISTRO-GUID}`. Without quotes.
    So, the task to run Debian distro on my machine looks like:
+
+~~~
+wsl.exe --distribution Debian -cur_console:pm:/mnt
+~~~
+
+or
 
 ~~~
 set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl --distro-guid={1f6b2238-ec8d-4066-8e2b-ee31ce97ad3f} -cur_console:pm:/mnt
 ~~~
 
+Run from started prompt the `cat /etc/issue` to check the distribution.
+
+If it's not working for any reason, read about proper switches `wsl.exe --?` and validate the actual command line of `wsl.exe`
+using [Process Explorer](ProcessExplorer.html).
 
 
 

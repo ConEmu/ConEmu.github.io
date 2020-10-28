@@ -20,6 +20,7 @@ And that may be **not** a ConEmu issue at all.
   * [PowerShell](#PowerShell)
   * [Far Manager](#Far_Manager)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 ## How to run specified command  {#example}

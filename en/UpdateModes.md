@@ -42,6 +42,7 @@ You may choose any suitable way to update you ConEmu installation
 * [PortableApps.com](#portableapps)
 * [MSYS2](#msys2)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 ## Automatic update (internal)   {#automatic}

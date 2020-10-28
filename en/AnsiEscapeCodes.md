@@ -302,7 +302,7 @@ For simplifying, endings in the following table marked as ‘ST’.
 | ESC ] 9 ; 1 ; *ms* ST | Sleep. *ms* - number, milliseconds. |
 | ESC ] 9 ; 2 ; "*txt*" ST | Show GUI MessageBox ( *txt* ) for any purposes. |
 | ESC ] 9 ; 3 ; "*txt*" ST | Change ConEmu Tab to *txt*. Set empty string to return original Tab text. |
-| ESC ] 9 ; 4 ; *st* ; *pr* ST | Set progress state on Windows 7 taskbar and ConEmu title. When *st* is 0: remove progress. When *st* is 1: set progress value to *pr* (number, 0-100). When *st* is 2: set error state in progress on Windows 7 taskbar |
+| ESC ] 9 ; 4 ; *st* ; *pr* ST | Set progress state on Windows 7 taskbar and ConEmu title. When *st* is 0: remove progress. When *st* is 1: set progress value to *pr* (number, 0-100). When *st* is 2: set error state in progress on Windows 7 taskbar. When *st* is 3: set indeterminate state. |
 | ESC ] 9 ; 5 ST | Wait for Enter/Space/Esc. Set environment variable "ConEmuWaitKey" to "ENTER"/"SPACE"/"ESC" on exit. |
 | ESC ] 9 ; 6 ; "*txt*" ST | Execute [GuiMacro](GuiMacro.html) ( *txt* ). Set EnvVar "ConEmuMacroResult" on exit. |
 | ESC ] 9 ; 7 ; "*cmd*" ST | Run some process with arguments. |

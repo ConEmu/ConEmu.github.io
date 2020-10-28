@@ -12,6 +12,8 @@ breadcrumbs:
 
 Want to contribute? You may help with coding or documentation.
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 ## [Github (preferred mirror)](https://github.com/Maximus5/ConEmu)   {#github}
 

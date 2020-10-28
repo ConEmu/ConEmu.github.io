@@ -45,3 +45,5 @@ for /L %i in (0,5,100) do @(title [%i%] your title & timeout /t 1) > nul
 ```
 ConEmu\SetProgress.cmd
 ```
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}

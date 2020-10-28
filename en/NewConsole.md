@@ -25,7 +25,7 @@ readalso:
   * [Purpose](#purpose)
   * [Exclusions](#exclusions)
   * [The difference](#the-difference)
-  * [Syntax](#syntax)
+  * **[Syntax](#syntax)**
   * [Important notes](#important-notes)
   * [Examples](#examples)
   * [Example 1](#example-1)
@@ -79,6 +79,9 @@ with ConEmu's executables command line.
 ~~~
 ConEmu.exe /cmdlist cmd ||| powershell -new_console:sV
 ~~~
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 ## Exclusions  {#exclusions}
 

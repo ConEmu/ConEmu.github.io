@@ -46,6 +46,8 @@ ConEmu offers two types of integration, registered separately:
 * ‘ConEmu Here’ (upper group) - classic mode, your shell will be started in normal ConEmu window;
 * ‘ConEmu Inside’ (lower group) - your shell will be started in the pane of your Explorer window.
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 ## ConEmu Inside  {#ConEmu_Inside}
 

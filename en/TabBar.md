@@ -25,6 +25,8 @@ Tab captions may be changed
 * with templates on Settings pages [Tabs](SettingsTabBar.html) and [Far Manager](SettingsFar.html)
 * manually from tab context menu or customizable hotkey (`Apps+R` by default)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 Initially Far Manager Viewer windows are framed by square brackets.
 Editor windows are framed by curly brackets.
 Modified editors marked with asterisk.

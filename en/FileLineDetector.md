@@ -24,6 +24,9 @@ Just hover mouse with `Ctrl` pressed.
 
 May be configured on [Highlight](SettingsHighlight.html) settings page.
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
+
 ### Example for `git status` output
 
 ![ConEmu FileLineDetector](/img/ConEmuFileLineHL1.png)

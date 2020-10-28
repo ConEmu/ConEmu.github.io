@@ -1099,7 +1099,8 @@ WindowMinimize() or WindowMinimize(1)
 WindowMode(["<Mode>"])
  - Returns or set current window mode
    "NOR", "MAX", "FS" (fullscreen), "MIN", "TSA"
-   "TLEFT", "TRIGHT" (tile to left/right), "THEIGHT",
+   "TLEFT", "TRIGHT" (tile to left/right),
+   "THEIGHT", "TWIDTH" (tile/maximize height/width),
    "MPREV", "MNEXT" (move ConEmu to prev/next monitor)
    "HERE" (move ConEmu to monitor with mouse cursor)
 ~~~

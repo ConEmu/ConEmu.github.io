@@ -39,6 +39,8 @@ readalso:
     - [Preview (recommended)](#preview)
     - [Alpha](#alpha)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 ## Distros comparison
 In general, there is no significant differences between distros.

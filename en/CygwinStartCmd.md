@@ -24,6 +24,8 @@ Of course, the question is not related to ConEmu, but let options be here.
 
 All examples below suppose that `bash.exe` exists in your `%PATH%`.
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 
 ## Modify your ~/.bashrc  {#bashrc}

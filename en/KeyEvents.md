@@ -22,6 +22,7 @@ you want to troubleshoot.
   * [key-reader and key-curses](#key-reader)
   * [‘showkeys -a’ Unix command](#show-keys)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 ## KeyEvents  {#key-events}

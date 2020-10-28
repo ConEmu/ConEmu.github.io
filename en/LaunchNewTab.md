@@ -30,6 +30,7 @@ readalso:
 * [Automatic attach of cmd](#Automatic_attach_of_cmd)
 * [Gui Macro](#Gui_Macro)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 ## [Using ConEmu switches](ConEmuArgs.html)  {#Using_ConEmu_switches}

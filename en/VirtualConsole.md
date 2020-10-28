@@ -25,3 +25,5 @@ That's why its appearance is [fully configurable](Settings.html).
 Well, with the only exception of [ChildGui](ChildGui.html),
 when contents is drawn by child process and is not configurable
 by ConEmu.
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}

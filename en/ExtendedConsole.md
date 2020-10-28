@@ -23,3 +23,5 @@ Requirements:
 Than console program acquires 16M colors for text drawing and bold/italic/underline type faces.
 
 ![Console text and background settings](/img/ExtendedConsole.png)
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}

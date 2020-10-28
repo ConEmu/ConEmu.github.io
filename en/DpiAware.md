@@ -27,6 +27,8 @@ This article describes ‘high dpi’, ‘high resulution’, ‘dpi awareness�
   * [New dpi-aware build shows clean picture](#New_dpi-aware_build_shows_clean_picture)
 * [StackOverflow: No way to scale title bar (non-client area)](http://stackoverflow.com/q/31781767/1405560)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 ## Types of High-DPI OS settings  {#Types_of_High-DPI_OS_settings}
 

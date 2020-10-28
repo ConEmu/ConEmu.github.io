@@ -33,6 +33,8 @@ ConEmuC64.exe (and ConEmuHk64.dll) for 64bit applications.
 Root console process will be ConEmuC.exe, when You are using ConEmu.exe,
 and ConEmuC64.exe, when You are using ConEmu64.exe.
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 * [Font in real console](#Font_in_real_console)
   * [Warning](#font-warning)
 * [ConEmuC.exe command line switches](#ConEmuC_switches)

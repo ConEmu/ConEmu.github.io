@@ -30,6 +30,8 @@ Frequenly asked user questions about ConEmu usage.
 
 {% include faq_disclaimer_en.md %}
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 ### [General](FAQ-1.html#q-1-general)  {#faq-1}
 * [Q. I found a bug, what should I do?](FAQ-1.html#q-1-1)
 * [Q. What about ConMan , alternative console, etc.?](FAQ-1.html#q-1-2)

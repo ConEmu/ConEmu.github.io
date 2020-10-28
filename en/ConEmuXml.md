@@ -21,6 +21,7 @@ Windows 2000 is limited to using Registry.
   * [Note for PortableApps.com format](#PortableApps-format)
 * [How to send your config to developer](#send-to-developer)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 ## ConEmu.xml search sequence  {#search-sequence}

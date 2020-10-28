@@ -56,3 +56,5 @@ They do ‘read-evaluate-print’ cycle, aka command execution.
 
 ## Bottom line
 ConEmu is a Windows terminal where you can run any shell you want.
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}

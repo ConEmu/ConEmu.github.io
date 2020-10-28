@@ -34,6 +34,8 @@ This page was manually edited
 The easiest way to open this page is the system hotkey `Win+Alt+K`.
 But there are [other methods](Settings.html#Settings_dialog) too.
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 ### Hotkey list filtering
 
 By default ConEmu shows full hotkeys list, radio **All hotkeys** is checked.

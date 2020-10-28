@@ -20,6 +20,7 @@ title: "ConEmu | Terms"
 * [Windows API](WinApi.html)
 * [Root Process](RootProcess.html)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 <h3 id="RealConsole"><a href="RealConsole.html">RealConsole</a></h3>

@@ -41,6 +41,8 @@ it is impossible to fix something abstract...
 * [Assertions are not crashes!](#Assertions)
 * [Crash dumps](#Crash_dumps)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 
 ## Be verbose  {#Be_verbose}

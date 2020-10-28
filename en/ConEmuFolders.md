@@ -36,6 +36,8 @@ Do you really think you'll never run this bitness?
 You will waste much more nerves, energy and time when you face
 disability to run something somedays.
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 ## Standard structure  {#Standard_structure}
 

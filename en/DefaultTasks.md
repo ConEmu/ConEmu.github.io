@@ -38,6 +38,8 @@ list of ‘Default Tasks’.
 You may access these [Tasks](Tasks.html) as usual, set personal [hotkeys](SettingsTasks.html#task-hotkey)
 for each task, register them for [Jump Lists](SettingsTasks.html#id2752) and so on...
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 ## Add/refresh default tasks  {#add-default-tasks}
 

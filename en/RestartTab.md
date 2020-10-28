@@ -30,3 +30,5 @@ Also, you may restart console without comfirmation dialog from tab popup menu:
 This feature allows to reuse root command,
 for example restart your project compilation (on some build errors)
 or close (‘Terminate’ button in Restart dialog) active console.
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}

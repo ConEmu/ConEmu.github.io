@@ -42,6 +42,8 @@ These requests were rejects by a simple and logical reason - ConEmu
 (terminal) do not know what console application is doing. ConEmu
 able to show application output, but that is all.
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 However, since [GuiMacro Write](GuiMacro.html#Write) was implemented,
 anyone may create a macro to `Write("\ec")`, which actually resets the terminal.
 So, anyone may choose [desired hotkey](SettingsHotkeys.html) for action

@@ -28,3 +28,5 @@ Many of these columns are ‘clickable’ (try both LClick and RClick).
 
 Of course you may configure columns set or hide StatusBar
 in the [Settings](SettingsStatusBar.html).
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}

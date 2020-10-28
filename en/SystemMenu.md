@@ -23,3 +23,5 @@ You may pop up system menu in several ways:
 * by left clicking on the icon in windows caption.
 
 ![ConEmu system menu](/img/ConEmuSystemMenu.png)
+
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}

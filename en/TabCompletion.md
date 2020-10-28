@@ -30,6 +30,8 @@ containing some Tab characters (ASCII `\x09`),
 you may observe weird result of tab-completion in your prompt,
 like in the [issue 225](https://github.com/Maximus5/ConEmu/issues/225).
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 ## cmd.exe and clink  {#ConEmu_and_clink}
 

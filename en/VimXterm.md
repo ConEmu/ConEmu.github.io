@@ -32,6 +32,7 @@ readalso:
 
 ![256-colors vim in ConEmu](/img/ConEmuVimXterm.png)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
 
 ## Requirements   {#requirements}

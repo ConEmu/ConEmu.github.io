@@ -48,6 +48,8 @@ IMHO, there is no considerable difference between them, but not every plugin has
 
 I'm using Far 3.0 x86 version (my primary OS is Win 7 x64).
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 
 ### There are three (already) branches of Far Manager   {#Three-branches}

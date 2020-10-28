@@ -19,6 +19,8 @@ of [ConEmu](https://conemu.github.io/) and some third-party software:
 * [clink-completions](https://github.com/vladimir-kotikov/clink-completions);
 * [PsGet module](https://github.com/psget/psget).
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 Also cmder changes some default ConEmu settings:
 
 * ‘Monokai’ color scheme is default;

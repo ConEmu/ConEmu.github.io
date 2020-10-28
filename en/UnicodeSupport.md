@@ -47,6 +47,8 @@ bash and so on) can produce unicode output.
   * [UTF-8 test](#utf-8-test)
 * [Some hints](#some-hints)
 
+{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+
 
 
 ## UTF-8 (UTF8)  {#utf-8}
