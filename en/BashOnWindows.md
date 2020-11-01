@@ -87,8 +87,6 @@ wsl.exe -cur_console:pm:/mnt
 If you want to have PTY terminal now you could try wslbridge2. Please read the description
 [how to install wslbridge2](https://github.com/Maximus5/ConEmu/issues/1930#issuecomment-640120326).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
-
 ### Tl;dr: Get arrows working in ConEmu  {#arrows-tldr}
 
 Without [Connector](CygwinMsysConnector.html) it's not possible yet to implement [PTY terminal](CygwinMsys.html).

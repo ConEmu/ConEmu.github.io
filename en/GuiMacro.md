@@ -826,8 +826,9 @@ Progress(<Type>[,<Value>])
  - Set progress state on taskbar and ConEmu title
    Type=0: remove progress
    Type=1: set progress value to <Value> (0-100)
-   Type=2: set error state in progress
+   Type=2: set error state in progress with <Value>
    Type=3: set indeterminate state in progress
+   Type=4: set paused state in progress with <Value>
 ~~~
 
 
