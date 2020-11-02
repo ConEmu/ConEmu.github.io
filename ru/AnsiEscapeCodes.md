@@ -243,10 +243,14 @@ ANSICON_DEF=7
 
 | Последовательность | Описание |
 |:---|:---|
+| ESC \[ ? 1 h | Enables DECCKM (AppKeys). The cursor keys are sent with `ESC O` prefix rather than `ESC [`. |
+| ESC \[ ? 1 l | Disables DECCKM (AppKeys). |
 | ESC \[ 7 ; *col* h | Enables line wrapping at column position. If *col* (1-based) is absent, wrap at column 80. |
 | ESC \[ 7 l | Disables line wrapping. Lines wraps at the end of screen buffer. |
-| ESC \[ 25 h | Show text cursor. |
-| ESC \[ 25 l | Hide text cursor. |
+| ESC \[ 20 h | Enable Line Feed/New Line Mode (force carriage return on line feed). |
+| ESC \[ 20 l | Disable Line Feed/New Line Mode. |
+| ESC \[ ? 25 h | Show text cursor. |
+| ESC \[ ? 25 l | Hide text cursor. |
 | ESC \[ ? 47 h | Same as ‘ESC \[ ? 1047 h’ |
 | ESC \[ ? 47 l | Same as ‘ESC \[ ? 1047 l’ |
 | ESC \[ ? 1047 h | Activate xterm alternative buffer (no backscroll) |
@@ -257,7 +261,11 @@ ANSICON_DEF=7
 | ESC \[ ? 1049 l | Restore cursor position and restore xterm working buffer (with backscroll) |
 | ESC \[ ? 2004 h | Enable xterm bracketed paste mode: ConEmu sends pasted text to console input buffer framed into `\s[200~` ... `\e[201~` |
 | ESC \[ ? 2004 l | Disable xterm bracketed paste mode |
+| ESC \[ ? 2004 l | Disable xterm bracketed paste mode |
+| ESC \[ ? 7711 h | Let ConEmu treat current cursor position as prompt start (mintty compatible). |
 | ESC \[ *shape* SP q | Change text cursor in active console (DECSCUSR, VT520). *shape* is: 0 - ConEmu's default, 1 - blinking block, 2 - steady block, 3 - blinking underline, 4 - steady underline, 5 - blinking bar, 6 - steady bar. `SP` is just a ‘space’ character. |
+| ESC \[ ? *ms* h | Set mouse mode. *ms* meaning: 9 - X10_MOUSE, 1000 - VT200_MOUSE, 1002 - BTN_EVENT_MOUSE, 1003 - ANY_EVENT_MOUSE, 1004 - FOCUS_EVENT_MOUSE, 1005 - Xterm's UTF8, 1006 - Xterm's CSI-style, 1015 - Urxvt's CSI-style. |
+| ESC \[ ? *ms* l | Unset mouse mode set by `ESC \[ ? *ms* h`. |
 
 
 #### SGR (Select Graphic Rendition) parameters  {#SGR_Select_Graphic_Rendition_parameters}
@@ -305,7 +313,7 @@ For simplifying, endings in the following table marked as «ST».
 | ESC ] 9 ; 1 ; *ms* ST | Sleep. *ms* - number, milliseconds. |
 | ESC ] 9 ; 2 ; "*txt*" ST | Show GUI MessageBox ( *txt* ) for any purposes. |
 | ESC ] 9 ; 3 ; "*txt*" ST | Change ConEmu Tab to *txt*. Set empty string to return original Tab text. |
-| ESC ] 9 ; 4 ; *st* ; *pr* ST | Set progress state on Windows 7 taskbar and ConEmu title. When *st* is 0: remove progress. When *st* is 1: set progress value to *pr* (number, 0-100). When *st* is 2: set error state in progress on Windows 7 taskbar |
+| ESC ] 9 ; 4 ; *st* ; *pr* ST | Set progress state on Windows 7 taskbar and ConEmu title. When *st* is 0: remove progress. When *st* is **1**: set progress value to *pr* (number, 0-100). When *st* is **2**: set error state in progress on Windows 7 taskbar, *pr* is optional. When *st* is **3**: set indeterminate state. When *st* is **4**: set paused state, *pr* is optional. |
 | ESC ] 9 ; 5 ST | Wait for Enter/Space/Esc. Set environment variable "ConEmuWaitKey" to "ENTER"/"SPACE"/"ESC" on exit. |
 | ESC ] 9 ; 6 ; "*txt*" ST | Execute [GuiMacro](GuiMacro.html) ( *txt* ). Set EnvVar "ConEmuMacroResult" on exit. |
 | ESC ] 9 ; 7 ; "*cmd*" ST | Run some process with arguments. |
