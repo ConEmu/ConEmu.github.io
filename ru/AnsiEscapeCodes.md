@@ -16,6 +16,8 @@ readalso:
    title: "ANSI в Cygwin и Msys"
  - url: BashOnWindows.html
    title: "Стрелки и Цвета в Bash на Windows (WSL)"
+
+contentclass: ansi-escape-tables
 ---
 
 <!-- Content starts -->
@@ -213,8 +215,8 @@ ANSICON_DEF=7
 | ESC \[ *lines* F | Moves cursor to beginning of the line, *lines* (default 1) lines up. |
 | ESC \[ *col* G | Moves the cursor to column *col* (absolute, 1-based). |
 | ESC \[ *row* ; *col* H | Set cursor position. The values *row* and *col* are 1-based. |
-| ESC \[ *n* J | Erase display. When *n* is 0 or missing: from cursor to end of display). When *n* is 1: erase from start to cursor. When *n* is 2: erase whole display **and** moves cursor to upper-left corner. When *n* is 3: dispose all backscroll lines. |
-| ESC \[ *n* K | Erase line. When *n* is 0 or missing: from cursor to end of line. When *n* is 1: erase from start of line to cursor. When *n* is 2: erase whole line **and** moves cursor to first column. |
+| ESC \[ *n* J | Erase display. When *n* is **0** or missing: from cursor to end of display). When *n* is **1**: erase from start to cursor. When *n* is **2**: erase whole display **and** moves cursor to upper-left corner. When *n* is **3**: dispose all backscroll lines. |
+| ESC \[ *n* K | Erase line. When *n* is **0** or missing: from cursor to end of line. When *n* is **1**: erase from start of line to cursor. When *n* is **2**: erase whole line **and** moves cursor to first column. |
 | ESC \[ *n* L | Insert *n* (default 1) lines before current, scroll part of screen from current line to bottom. |
 | ESC \[ *n* M | Delete *n* (default 1) lines including current. |
 | ESC \[ *n* P | Delete *n* (default 1) characters. |
@@ -225,7 +227,7 @@ ANSICON_DEF=7
 | ESC \[ *>* c | Reports `ESC > 0 ; 136 ; 0 c` |
 | ESC \[ c | Reports `ESC [ ? 1 ; 2 c` |
 | ESC \[ *row* d | Moves the cursor to line *row* (absolute, 1-based). |
-| ESC \[ *row* ; *col* f | Set cursor position (same as H). The values *row* and *col* are 1-based. |
+| ESC \[ *row* ; *col* f | Set cursor position (same as `H`). The values *row* and *col* are 1-based. |
 | ESC \[ *a* ; *b* h | Set mode ([see below](#Terminal_modes)). |
 | ESC \[ *a* ; *b* l | Reset mode ([see below](#Terminal_modes)). |
 | ESC \[ *a* ; *b* ; *c* m | Set SGR attributes ([see below](#SGR_Select_Graphic_Rendition_parameters)). |
@@ -251,8 +253,8 @@ ANSICON_DEF=7
 | ESC \[ 20 l | Disable Line Feed/New Line Mode. |
 | ESC \[ ? 25 h | Show text cursor. |
 | ESC \[ ? 25 l | Hide text cursor. |
-| ESC \[ ? 47 h | Same as ‘ESC \[ ? 1047 h’ |
-| ESC \[ ? 47 l | Same as ‘ESC \[ ? 1047 l’ |
+| ESC \[ ? 47 h | Same as `ESC \[ ? 1047 h` |
+| ESC \[ ? 47 l | Same as `ESC \[ ? 1047 l` |
 | ESC \[ ? 1047 h | Activate xterm alternative buffer (no backscroll) |
 | ESC \[ ? 1047 l | Restore xterm working buffer (with backscroll) |
 | ESC \[ ? 1048 h | Save cursor position |
@@ -263,8 +265,8 @@ ANSICON_DEF=7
 | ESC \[ ? 2004 l | Disable xterm bracketed paste mode |
 | ESC \[ ? 2004 l | Disable xterm bracketed paste mode |
 | ESC \[ ? 7711 h | Let ConEmu treat current cursor position as prompt start (mintty compatible). |
-| ESC \[ *shape* SP q | Change text cursor in active console (DECSCUSR, VT520). *shape* is: 0 - ConEmu's default, 1 - blinking block, 2 - steady block, 3 - blinking underline, 4 - steady underline, 5 - blinking bar, 6 - steady bar. `SP` is just a ‘space’ character. |
-| ESC \[ ? *ms* h | Set mouse mode. *ms* meaning: 9 - X10_MOUSE, 1000 - VT200_MOUSE, 1002 - BTN_EVENT_MOUSE, 1003 - ANY_EVENT_MOUSE, 1004 - FOCUS_EVENT_MOUSE, 1005 - Xterm's UTF8, 1006 - Xterm's CSI-style, 1015 - Urxvt's CSI-style. |
+| ESC \[ *shape* SP q | Change text cursor in active console (DECSCUSR, VT520). *shape* is: **0** - ConEmu's default, **1** - blinking block, **2** - steady block, **3** - blinking underline, **4** - steady underline, **5** - blinking bar, **6** - steady bar. `SP` is just a ‘space’ character. |
+| ESC \[ ? *ms* h | Set mouse mode. *ms* meaning: **9** - X10_MOUSE, **1000** - VT200_MOUSE, **1002** - BTN_EVENT_MOUSE, **1003** - ANY_EVENT_MOUSE, **1004** - FOCUS_EVENT_MOUSE, **1005** - Xterm's UTF8, **1006** - Xterm's CSI-style, **1015** - Urxvt's CSI-style. |
 | ESC \[ ? *ms* l | Unset mouse mode set by `ESC \[ ? *ms* h`. |
 
 
@@ -284,12 +286,12 @@ ANSICON_DEF=7
 | ESC \[ 24 m | Unset BackOrUnderline |
 | ESC \[ 27 m | Use normal colors |
 | ESC \[ 30...37 m | Set ANSI text color |
-| ESC \[ 38 ; 5 ; *n* m | Set xterm text color, *n* is color index from 0 to 255 |
-| ESC \[ 38 ; 2 ; *r* ; *g* ; *b* m | Set xterm 24-bit text color, *r*, *g*, *b* are from 0 to 255 |
+| ESC \[ 38 ; 5 ; *n* m | Set xterm text color, *n* is color index from **0** to **255** |
+| ESC \[ 38 ; 2 ; *r* ; *g* ; *b* m | Set xterm 24-bit text color, *r*, *g*, *b* are from **0** to **255** |
 | ESC \[ 39 m | Reset text color to defauls |
 | ESC \[ 40...47 m | Set ANSI background color |
-| ESC \[ 48 ; 5 ; *n* m | Set xterm background color, *n* is color index from 0 to 255 |
-| ESC \[ 48 ; 2 ; *r* ; *g* ; *b* m | Set xterm 24-bit background color, *r*, *g*, *b* are from 0 to 255 |
+| ESC \[ 48 ; 5 ; *n* m | Set xterm background color, *n* is color index from **0** to **255** |
+| ESC \[ 48 ; 2 ; *r* ; *g* ; *b* m | Set xterm 24-bit background color, *r*, *g*, *b* are from **0** to **255** |
 | ESC \[ 49 m | Reset background color to defauls |
 | ESC \[ 90...97 m | Set bright ANSI text color |
 | ESC \[ 100...107 m | Set bright ANSI background color |

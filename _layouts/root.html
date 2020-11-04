@@ -104,7 +104,15 @@ window.cookieconsent.initialise({
 <h2 class="h0" id="Build_{{ page.build }}"><a href="{{ page.url }}">Build {{ page.build }}{% if page.stage != '' and page.stage %} ({{ page.stage }}){% endif %}</a></h2>
 {% endif %}
 
+{% if page.contentclass != '' and page.contentclass %}
+<div class="{{page.contentclass}}">
+{% endif %}
+
 {{ content }}
+
+{% if page.contentclass != '' and page.contentclass %}
+</div>
+{% endif %}
 
 {% if page.category == "blog" %}
 <!--end-->

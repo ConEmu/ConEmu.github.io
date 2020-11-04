@@ -175,6 +175,11 @@ Read more about [Default terminal feature](DefaultTerminal.html).
 
 Choose ‘Attach...’ from [system menu](SystemMenu.html).
 
+![Attach running application](/img/AttachRunningApp.png)
+
+The ‘Alternative mode’ options means don't inject ConEmuHk.dll into running process.
+The effect is similar to [-cur_console:i](NewConsole.html) switch.
+
 
 
 ## Attach from command prompt  {#Attach_from_command_prompt}

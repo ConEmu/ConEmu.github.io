@@ -641,6 +641,13 @@ div.blockextra a:visited {
   padding: 0.2em 0;
 }
 
+.ansi-escape-tables table {
+  width: 100%;
+}
+.ansi-escape-tables th:first-child {
+  width: 11em;
+}
+
 #search-results {
   margin-top: 10px;
 }
