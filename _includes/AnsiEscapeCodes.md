@@ -2,7 +2,7 @@
 
 # ANSI X3.64 and Xterm 256 colors
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ConEmu (from build 120520d) can process
 [ANSI X3.64](http://en.wikipedia.org/wiki/ANSI_X3.64)
 and its extension
@@ -15,7 +15,7 @@ xterm 256 color mode.
 {% endif %}
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 * [Description](#Description)
   * [ANSI sequences processing requirements](#ANSI_sequences_processing_requirements)
   * [xterm 256 color processing requirements](#xterm_256_color_processing_requirements)
@@ -66,7 +66,7 @@ xterm 256 color mode.
 {% endif %}
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ## Description  {#Description}
 
 Option ‘ANSI X3.64 / xterm 256 colors’ on the ‘Features’ page, turned On by default.
@@ -84,7 +84,7 @@ Outside (upper area) 256 colors will be approximated to console stanard 16-color
 
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ### ANSI sequences processing requirements   {#ANSI_sequences_processing_requirements}
 
 * These checkboxes must be **On**
@@ -99,7 +99,7 @@ Outside (upper area) 256 colors will be approximated to console stanard 16-color
 {% endif %}
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ### xterm 256 color processing requirements   {#xterm_256_color_processing_requirements}
 
 * These checkboxes must be **On**
@@ -119,7 +119,7 @@ Outside (upper area) 256 colors will be approximated to console stanard 16-color
 
 {% if site.url != 'local' %}{% include in_article.html %}{% endif %}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 #### Example 1: Vim  {#Example_1_Vim}
 {% else %}
 #### Пример 1: Vim  {#Example_1_Vim}
@@ -131,7 +131,7 @@ vim.exe -cur_console:h0 <Vim arguments here>
 
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 #### Example 2: 256colors2.pl  {#Example_2_256colors2_pl}
 
 Perl script [256colors2.pl](/256colors2.pl) have to be runned as following:
@@ -145,7 +145,7 @@ Perl script [256colors2.pl](/256colors2.pl) have to be runned as following:
 ~~~
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 #### Example 3: scroll console to bottom  {#Example_3_scroll_console_to_bottom}
 
 If your console application **is not** ‘fullscreen’ (alike Far/Vim/Hiew/...),
@@ -163,7 +163,7 @@ to activate ‘working area’:
 echo ^[[99999;1H
 ~~~
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 **Warning** You need to change `^[` to ESC code before using this script in `cmd.exe` prompt
 (char with code ASCII \x1B). Because you can't insert the character with this ASCII code into
 prompt using environment variable is recommended. Script `SetEscChar.cmd` is located in the
@@ -183,7 +183,7 @@ echo %ESC%[99999;1H
 
 ### TechInfo   {#TechInfo}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ANSI escape sequences will be processed when console application
 output text using Windows API functions
 `WriteConsoleA`, `WriteConsoleW` or `WriteFile`.
@@ -199,7 +199,7 @@ For example:
 cmd /c type "Colors-256.ans"
 ~~~
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 Also, output with extended attributes (xterm 256 color) is available with functions
 `WriteConsoleOutputCharacterA` and `WriteConsoleOutputCharacterW`.
 {% else %}
@@ -209,13 +209,13 @@ Also, output with extended attributes (xterm 256 color) is available with functi
 
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 #### Compatibility check  {#compat-check}
 {% else %}
 #### Проверка совместимости  {#compat-check}
 {% endif %}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 **NB** ConEmu is enable to ‘process’ ANSI sequences,
 if [console application](ConsoleApplication.html)
 processes and strips them before WinApi functions calls,
@@ -232,7 +232,7 @@ NO ANSI sequences in the output at all.
 нет ANSI последовательностей вообще.
 {% endif %}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 This behavior is observed in certain cygwin and msys version.
 The problem is described thoroughly
 [here](CygwinAnsi.html) and [here](VimXterm.html#required-release).
@@ -242,7 +242,7 @@ The problem is described thoroughly
 [здесь](CygwinAnsi.html) и [здесь](VimXterm.html#required-release).
 {% endif %}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 Anyone may easily check, if the application
 able to post real ANSI sequences by unchecking
 option ‘ANSI X3.64 / xterm 256 colors’ on the
@@ -262,7 +262,7 @@ in certain [shells](TerminalVsShell.html) only.
 только в некоторых [шеллах](TerminalVsShell.html).
 {% endif %}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ![Processed and bare ANSI sequences ConEmu](/img/ConEmuAnsi2.png)
 {% else %}
 ![Обработанные и не обработанные ANSI последовательности в ConEmu](/img/ConEmuAnsi2.png)
@@ -270,7 +270,7 @@ in certain [shells](TerminalVsShell.html) only.
 
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ### Environment variable   {#Environment_variable}
 
 How can I check in cmd-file if ANSI x3.64 is supported and enabled?
@@ -287,7 +287,7 @@ if "%ConEmuANSI%"=="ON"  echo Enabled
 if "%ConEmuANSI%"=="OFF" echo Disabled
 ~~~
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 Also, to be compatible with ANSICON, ConEmu defines environment variables
 `ANSICON`, `ANSICON_DEF` и `ANSICON_VER`. Last one is not visible
 int the output of the `set` command (same behavior as ANSICON's).
@@ -307,7 +307,7 @@ ANSICON_DEF=7
 ~~~
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ## List of supported codes  {#List_of_supported_codes}
 {% else %}
 ## Список поддерживаемых кодов  {#List_of_supported_codes}
@@ -327,7 +327,7 @@ ANSICON_DEF=7
 
 ### CSI (Control Sequence Initiator) codes   {#CSI_Control_Sequence_Initiator_codes}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 **NB** ANSI sequences address terminal working space only.
 So, all ‘absolute’ coordinates addresses visible terminal area,
 backscroll buffer (upper invisible parts) may not be accessed in that way.
@@ -337,7 +337,7 @@ backscroll buffer (upper invisible parts) may not be accessed in that way.
 область прокрутки (невидимая часть сверху) не может быть адресована.
 {% endif %}
 
-| {% if site.site_lang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if site.site_lang == 'en' %}Description{% else %}Описание{% endif %} |
+| {% if page.pagelang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if page.pagelang == 'en' %}Description{% else %}Описание{% endif %} |
 |:---|:---|
 | ESC \[ *n* @ | Insert *n* (default 1) blank characters. |
 | ESC \[ *lines* A | Moves cursor up by *lines* lines (1 by default) |
@@ -376,7 +376,7 @@ backscroll buffer (upper invisible parts) may not be accessed in that way.
 
 #### Terminal modes  {#Terminal_modes}
 
-| {% if site.site_lang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if site.site_lang == 'en' %}Description{% else %}Описание{% endif %} |
+| {% if page.pagelang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if page.pagelang == 'en' %}Description{% else %}Описание{% endif %} |
 |:---|:---|
 | ESC \[ ? 1 h | Enables DECCKM (AppKeys). The cursor keys are sent with `ESC O` prefix rather than `ESC [`. |
 | ESC \[ ? 1 l | Disables DECCKM (AppKeys). |
@@ -405,7 +405,7 @@ backscroll buffer (upper invisible parts) may not be accessed in that way.
 
 #### SGR (Select Graphic Rendition) parameters  {#SGR_Select_Graphic_Rendition_parameters}
 
-| {% if site.site_lang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if site.site_lang == 'en' %}Description{% else %}Описание{% endif %} |
+| {% if page.pagelang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if page.pagelang == 'en' %}Description{% else %}Описание{% endif %} |
 |:---|:---|
 | ESC \[ 0 m | Reset current attributes |
 | ESC \[ 1 m | Set BrightOrBold |
@@ -432,7 +432,7 @@ backscroll buffer (upper invisible parts) may not be accessed in that way.
 
 ### OSC (Operating system commands)   {#OSC_Operating_system_commands}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 **Note**. These codes may ends with ‘ESC\’ (two symbols - ESC and BackSlash)
 or ‘BELL’ (symbol with code \x07, same as ‘^a’ in `*`nix).
 For simplifying, endings in the following table marked as ‘ST’.
@@ -442,14 +442,14 @@ or «BELL» (symbol with code \x07, same as «^a» in `*`nix).
 For simplifying, endings in the following table marked as «ST».
 {% endif %}
 
-| {% if site.site_lang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if site.site_lang == 'en' %}Description{% else %}Описание{% endif %} |
+| {% if page.pagelang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if page.pagelang == 'en' %}Description{% else %}Описание{% endif %} |
 |:---|:---|
 | ESC ] 0..2 ; "*txt*" ST | Set console window title to *txt*. |
 
 
 #### ConEmu specific OSC  {#ConEmu_specific_OSC}
 
-| {% if site.site_lang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if site.site_lang == 'en' %}Description{% else %}Описание{% endif %} |
+| {% if page.pagelang == 'en' %}Sequence{% else %}Последовательность{% endif %} | {% if page.pagelang == 'en' %}Description{% else %}Описание{% endif %} |
 |:---|:---|
 | ESC ] 9 ; 1 ; *ms* ST | Sleep. *ms* - number, milliseconds. |
 | ESC ] 9 ; 2 ; "*txt*" ST | Show GUI MessageBox ( *txt* ) for any purposes. |
@@ -468,7 +468,7 @@ For simplifying, endings in the following table marked as «ST».
 
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ## Examples  {#Examples}
 {% else %}
 ## Примеры  {#Examples}
@@ -482,7 +482,7 @@ For simplifying, endings in the following table marked as «ST».
 
 #### Xterm 256 color map  {#Xterm_256_color_map}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 Example from file: `ConEmu\Addons\AnsiColors256.ans`.
 {% else %}
 Пример из файла: `ConEmu\Addons\AnsiColors256.ans`.
@@ -504,7 +504,7 @@ Grayscale ramp (232..255 from xterm palette):
 ^[[48;5;232m  ^[[48;5;233m  ^[[48;5;234m  ^[[48;5;235m  ^[[48;5;236m  ^[[48;5;237m  ^[[48;5;238m  ^[[48;5;239m  ^[[48;5;240m  ^[[48;5;241m  ^[[48;5;242m  ^[[48;5;243m  ^[[48;5;244m  ^[[48;5;245m  ^[[48;5;246m  ^[[48;5;247m  ^[[48;5;248m  ^[[48;5;249m  ^[[48;5;250m  ^[[48;5;251m  ^[[48;5;252m  ^[[48;5;253m  ^[[48;5;254m  ^[[48;5;255m  ^[[0m
 ~~~
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 **Warning** You need to change `^[` to ESC code before using this script (char with code ASCII \x1B).
 {% else %}
 **Warning** Перед использованием `^[` нужно заменить на ESC код (символ с ASCII кодом \x1B).
@@ -513,7 +513,7 @@ Grayscale ramp (232..255 from xterm palette):
 
 #### Standard ANSI color map  {#Standard_ANSI_color_map}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 This example is from file: `ConEmu\Addons\AnsiColors16.ans`.
 {% else %}
 Пример из файла: `ConEmu\Addons\AnsiColors16.ans`.
@@ -525,7 +525,7 @@ System colors (Standard console 16 colors):
 ^[[0;30;4;40m  ^[[0;30;4;41m  ^[[0;30;4;42m  ^[[0;30;4;43m  ^[[0;30;4;44m  ^[[0;30;4;45m  ^[[0;30;4;46m  ^[[0;30;4;47m  ^[[0m
 ~~~
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 **Warning** You need to change `^[` to ESC code before using this script (char with ASCII code \x1B).
 {% else %}
 **Warning** Перед использованием `^[` нужно заменить на ESC код (символ с ASCII кодом \x1B).
@@ -534,7 +534,7 @@ System colors (Standard console 16 colors):
 
 ### sixteencolors.net   {#sixteencolors_net}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 Large [ANSI art](http://en.wikipedia.org/wiki/ANSI_art) archive: [sixteencolors.net](http://sixteencolors.net/).
 
 Download ‘ans’ file and execute it in ConEmu console, e.g. `type TK-FREES.ANS`.
@@ -551,13 +551,13 @@ You can view and scroll last output switching into alternative mode - `Win+A`.
 {% endif %}
 
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 ### Compiler error highlighting  {#Compiler_error_highlighting}
 {% else %}
 ### Подсветка ошибок компиляции  {#Compiler_error_highlighting}
 {% endif %}
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 #### To highlight Microsoft NMAKE errors and warnings
 {% else %}
 #### Подсветка вывода Microsoft NMAKE
@@ -569,7 +569,7 @@ nmake | sed -e "s/.* : \bERR.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.* : \bWARN.*/\x1B
 type "Errors.log" | sed -e "s/.* : \bERR.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.* : \bWARN.*/\x1B[1;36;40m&\x1B[0m/i"
 ~~~
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 #### To highlight MinGW MAKE errors, warnings and notes
 
 The example below from scripts used to build ConEmu with GCC.
@@ -588,7 +588,7 @@ mingw32-make.exe -f makefile_gcc DIRBIT=64 2> Errors.log
 type "Errors.log" | sed -e "s/.*: \berror\b:.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.*: \bwarning\b: .*/\x1B[1;36;40m&\x1B[0m/i" -e "s/.*: \bnote\b: .*/\x1B[1;32;40m&\x1B[0m/i"
 ~~~
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 #### Some installations require ‘real’ ESC character
 
 On some installations you have to replace `\x1B` with real ESC character
@@ -608,7 +608,7 @@ mingw32-make.exe -f makefile_gcc DIRBIT=64 2> Errors.log
 type "Errors.log" | sed -e "s/.*: \berror\b:.*/%ESC%[1;31;40m&%ESC%[0m/i" -e "s/.*: \bwarning\b: .*/%ESC%[1;36;40m&%ESC%[0m/i" -e "s/.*: \bnote\b: .*/%ESC%[1;32;40m&%ESC%[0m/i"
 ~~~
 
-{% if site.site_lang == 'en' %}
+{% if page.pagelang == 'en' %}
 Or from bash-scripts.
 {% else %}
 Или для bash-скриптов.
@@ -622,6 +622,5 @@ cat "Errors.log" | sed -e "s/.*: \berror\b:.*/${esc}[1;31;40m&${esc}[0m/i" -e "s
 
 ### Text Progressbar in cmd-files  {#Text_Progressbar_in_cmd-files}
 
-From googlecode Issue#554
-[test_bar.cmd](/misc/test_bar.cmd]
-by @Artyom.Vorobets
+[test_bar.cmd](/misc/test_bar.cmd)
+Originally from googlecode issue by @Artyom.Vorobets
