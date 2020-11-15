@@ -20,4 +20,4 @@ readalso:
 contentclass: ansi-escape-tables
 ---
 
-{% include AnsiEscapeCodes.md }
+{% include AnsiEscapeCodes.md %}
