@@ -61,7 +61,7 @@ May be in future I'll find a way to combine pty and real console features,
 but at the moment, may be, better and faster way is request the ‘feature’
 from cygwin developers.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 

@@ -39,7 +39,7 @@ readalso:
     - [Preview (recommended)](#preview)
     - [Alpha](#alpha)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Distros comparison

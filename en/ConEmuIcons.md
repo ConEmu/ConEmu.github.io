@@ -33,4 +33,4 @@ actuall the icon from TabBar.
 
 Special plugin for Far Manager panels. Can show tiles and thumbnails.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

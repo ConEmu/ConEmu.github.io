@@ -49,7 +49,7 @@ set up options as [described below](#options) instead.
 
 **Note** Elevated command will starts in new elevated ConEmu [tab](TabBar.html) or [pane](SplitScreen.html).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Usage example  {#example}

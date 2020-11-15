@@ -24,4 +24,4 @@ Than console program acquires 16M colors for text drawing and bold/italic/underl
 
 ![Console text and background settings](/img/ExtendedConsole.png)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

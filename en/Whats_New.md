@@ -35,7 +35,7 @@ You can show your appreciation and support further development and maintaining b
 or anything else, spreading the word for example.
 
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 {% for post in site.posts %}{%if post.build %}

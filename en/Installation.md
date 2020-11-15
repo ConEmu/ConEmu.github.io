@@ -50,7 +50,7 @@ Just unpack or install to any folder and run `ConEmu.exe`.
   and may be deleted or unchecked in the installer.
 * Run `ConEmu.exe` or `ConEmu64.exe`.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## If you **are** a Far Manager user  {#far-manager}

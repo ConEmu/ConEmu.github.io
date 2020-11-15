@@ -30,7 +30,7 @@ Why? There are reasons.
 * It may be dangerous to start your shell in the `system32`
   folder (you will get that if you run something from Win+R).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Force use of the specific directory  {#force}

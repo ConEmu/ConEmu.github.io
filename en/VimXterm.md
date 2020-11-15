@@ -17,6 +17,8 @@ readalso:
    title: "X3.64 and Xterm-256 Support"
  - url: ExtendedConsole.html
    title: "Far Manager ExtendedConsole"
+ - url: TerminalModes.html
+   title: "Terminal input and output modes"
 ---
 
 # How to enable 256-color console Vim syntax highlight in ConEmu
@@ -32,7 +34,7 @@ readalso:
 
 ![256-colors vim in ConEmu](/img/ConEmuVimXterm.png)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Requirements   {#requirements}

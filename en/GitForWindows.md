@@ -73,7 +73,7 @@ Run `/usr/bin/sh.exe -l -i` to get proper behavior of
 option.
 
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 

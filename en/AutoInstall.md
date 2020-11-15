@@ -29,7 +29,7 @@ If you need to automate your box installation, this page describes how to
 setup ConEmu via PowerShell with single command.
 Internet connection is required.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Default automatic installation   {#default}

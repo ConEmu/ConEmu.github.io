@@ -17,7 +17,7 @@ ConEmu is able to ‘pause’ console output in two ways.
 * [Alternative Buffer](#alternative-buffer)
 * [Pause console applications](#pause)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Alternative Buffer  {#alternative-buffer}

@@ -19,6 +19,8 @@ readalso:
    title: "Far Manager ExtendedConsole"
  - url: BashOnWindows.html
    title: "Keys and Colors in Bash On Windows (WSL)"
+ - url: TerminalModes.html
+   title: "Terminal input and output modes"
 ---
 
 # How to enable xterm 256 colors in ConEmu
@@ -30,6 +32,8 @@ readalso:
   * [Example 3: scroll console to the bottom](#Ex_3_scroll_console_to_the_bottom)
 * [TechInfo](#TechInfo)
 
+
+{% include in_article.html %}
 
 
 ## Vim note   {#vim-note}

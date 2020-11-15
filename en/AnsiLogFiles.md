@@ -27,7 +27,7 @@ ConEmu may write all output from [console applications](ConsoleApplication.html)
 * [Settings page](#settings)
 * [Connector --log switch](#connector)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Please note  {#note}

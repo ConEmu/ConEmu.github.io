@@ -64,7 +64,7 @@ from command line or [keypress](SettingsHotkeys.html).
   * [Far2](#Far2)
   * [Far1](#Far1)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 ## How GuiMacro may be executed  {#HowToCall}
 

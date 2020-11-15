@@ -28,7 +28,7 @@ readalso:
 
 It's simple to configure.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ### Create or open your PowerShell profile script  {#profile}

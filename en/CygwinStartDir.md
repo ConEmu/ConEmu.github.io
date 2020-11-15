@@ -30,7 +30,7 @@ One of the most asked questions about cygwin usage:
 * [git-cmd --no-cd](#git-cmd)
 * [cygdrive](#cygdrive)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## The problem  {#the-problem}

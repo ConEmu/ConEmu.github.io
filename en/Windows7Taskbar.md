@@ -45,4 +45,4 @@ tab in ConEmu window.
 
 ![ConEmu Aero Peek and Thumnails](/img/ConEmuAero.png "ConEmu Aero Peek and Thumnails")
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

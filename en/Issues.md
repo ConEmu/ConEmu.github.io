@@ -49,7 +49,7 @@ Here are links to places where you may ask questions, report problems, suggest n
 
 * [Issue tracker on GitHub](https://github.com/Maximus5/ConEmu/issues)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Ask on social media

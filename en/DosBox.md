@@ -19,7 +19,7 @@ or directly from ConEmu.
 
 DosBox works in 32 or 64bit OS (Win2k, WinXP, and so on).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 DosBox direct link download:
 [DOSBox0.74-win32-installer.exe](http://sourceforge.net/projects/dosbox/files/dosbox/0.74/DOSBox0.74-win32-installer.exe/download)

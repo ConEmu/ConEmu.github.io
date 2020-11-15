@@ -7,6 +7,7 @@ ConEmu (from build 120520d) can process
 [ANSI X3.64](http://en.wikipedia.org/wiki/ANSI_X3.64)
 and its extension
 xterm 256 color mode.
+
 {% else %}
 ConEmu (начиная с версии 120520d) поддерживает последовательности
 [ANSI X3.64](http://en.wikipedia.org/wiki/ANSI_X3.64)
@@ -39,6 +40,7 @@ xterm 256 color mode.
   * [sixteencolors.net](#sixteencolors.net)
   * [Compiler error highlighting](#Compiler_error_highlighting)
   * [Text Progressbar in cmd-files](#Text_Progressbar_in_cmd-files)
+
 {% else %}
 * [Описание](#Description)
   * [Для обработки ANSI последовательностей](#ANSI_sequences_processing_requirements)
@@ -73,6 +75,7 @@ Option ‘ANSI X3.64 / xterm 256 colors’ on the ‘Features’ page, turned On
 It works with full console (including scrolling area - BufferHeight) but xterm 256 color
 affects only on ‘working’ area (this is bottom part of console, if scrolling exists).
 Outside (upper area) 256 colors will be approximated to console stanard 16-colors.
+
 {% else %}
 ## Описание  {#Description}
 
@@ -90,6 +93,7 @@ Outside (upper area) 256 colors will be approximated to console stanard 16-color
 * These checkboxes must be **On**
   * ‘ANSI X3.64 / xterm 256 colors’ on the [Features](Settings.html#Features) page
   * ‘Inject ConEmuHk’ on the [Features](Settings.html#Features) page (required for 2-nd level programs, aka started from your shell)
+
 {% else %}
 ### Для обработки ANSI последовательностей   {#ANSI_sequences_processing_requirements}
 
@@ -107,6 +111,7 @@ Outside (upper area) 256 colors will be approximated to console stanard 16-color
   * ‘ANSI X3.64 / xterm 256 colors’ on the [Features](Settings.html#Features) page
   * ‘Inject ConEmuHk’ on the [Features](Settings.html#Features) page (required for 2-nd level programs, aka started from your shell)
 * You need to ensure that buffer/scrolling is Off
+
 {% else %}
 ### Для режима xterm 256 color   {#xterm_256_color_processing_requirements}
 
@@ -117,10 +122,11 @@ Outside (upper area) 256 colors will be approximated to console stanard 16-color
 * проверить выключен ли буфер/прокрутка.
 {% endif %}
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 {% if page.pagelang == 'en' %}
 #### Example 1: Vim  {#Example_1_Vim}
+
 {% else %}
 #### Пример 1: Vim  {#Example_1_Vim}
 {% endif %}
@@ -135,6 +141,7 @@ vim.exe -cur_console:h0 <Vim arguments here>
 #### Example 2: 256colors2.pl  {#Example_2_256colors2_pl}
 
 Perl script [256colors2.pl](/256colors2.pl) have to be runned as following:
+
 {% else %}
 #### Пример 2: 256colors2.pl  {#Example_2_256colors2_pl}
 
@@ -151,6 +158,7 @@ Perl script [256colors2.pl](/256colors2.pl) have to be runned as following:
 If your console application **is not** ‘fullscreen’ (alike Far/Vim/Hiew/...),
 you may scroll console to the bottom (by 99999 lines in the example)
 to activate ‘working area’:
+
 {% else %}
 #### Пример 3: прокрутить консоль  {#Example_3_scroll_console_to_bottom}
 
@@ -168,6 +176,7 @@ echo ^[[99999;1H
 (char with code ASCII \x1B). Because you can't insert the character with this ASCII code into
 prompt using environment variable is recommended. Script `SetEscChar.cmd` is located in the
 `%ConEmuBaseDir%` folder and it defines the variable `ESC`.
+
 {% else %}
 **Внимание** Нужно заменить `^[` на ESC код перед использованием в приглашении `cmd.exe`
 (символ с ASCII кодом \x1B). Вставить символ с таким кодом в приглашение нельзя, поэтому
@@ -188,6 +197,7 @@ ANSI escape sequences will be processed when console application
 output text using Windows API functions
 `WriteConsoleA`, `WriteConsoleW` or `WriteFile`.
 For example:
+
 {% else %}
 Обработка ANSI escape последовательностей осуществляется в том случае,
 если консольная программа использует для вывода функции
@@ -202,6 +212,7 @@ cmd /c type "Colors-256.ans"
 {% if page.pagelang == 'en' %}
 Also, output with extended attributes (xterm 256 color) is available with functions
 `WriteConsoleOutputCharacterA` and `WriteConsoleOutputCharacterW`.
+
 {% else %}
 Вывод текста с текущими расширенными атрибутами (xterm 256 color) также возможен функциями
 `WriteConsoleOutputCharacterA` и `WriteConsoleOutputCharacterW`.
@@ -211,6 +222,7 @@ Also, output with extended attributes (xterm 256 color) is available with functi
 
 {% if page.pagelang == 'en' %}
 #### Compatibility check  {#compat-check}
+
 {% else %}
 #### Проверка совместимости  {#compat-check}
 {% endif %}
@@ -222,8 +234,8 @@ processes and strips them before WinApi functions calls,
 listed [above](#TechInfo).
 Obviously, that is because there are
 NO ANSI sequences in the output at all.
-{% else %}
 
+{% else %}
 **Внимание**, ConEmu не может «обрабатывать» ANSI последовательности,
 если [консольное приложение](ConsoleApplication.html)
 уже обработало и вырезало их перед вызовом функций WinApi,
@@ -236,6 +248,7 @@ NO ANSI sequences in the output at all.
 This behavior is observed in certain cygwin and msys version.
 The problem is described thoroughly
 [here](CygwinAnsi.html) and [here](VimXterm.html#required-release).
+
 {% else %}
 Такое поведение наблюдается в приложениях cygwin и msys.
 Проблема подробно описана
@@ -251,6 +264,7 @@ Look at screenshot below to realize how RAW ANSI looks like
 (`ESC` character with ASCII code `\x1B` is displayed as `←` symbol).
 Used switch [-cur_console:i](NewConsole.html) works
 in certain [shells](TerminalVsShell.html) only.
+
 {% else %}
 Вы можете проверить, может ли приложение
 выводить реальные ANSI последовательности отключив
@@ -264,6 +278,7 @@ in certain [shells](TerminalVsShell.html) only.
 
 {% if page.pagelang == 'en' %}
 ![Processed and bare ANSI sequences ConEmu](/img/ConEmuAnsi2.png)
+
 {% else %}
 ![Обработанные и не обработанные ANSI последовательности в ConEmu](/img/ConEmuAnsi2.png)
 {% endif %}
@@ -275,6 +290,7 @@ in certain [shells](TerminalVsShell.html) only.
 
 How can I check in cmd-file if ANSI x3.64 is supported and enabled?
 You have to check `ConEmuANSI` environment variable:
+
 {% else %}
 ### Переменная окружения   {#Environment_variable}
 
@@ -291,6 +307,7 @@ if "%ConEmuANSI%"=="OFF" echo Disabled
 Also, to be compatible with ANSICON, ConEmu defines environment variables
 `ANSICON`, `ANSICON_DEF` и `ANSICON_VER`. Last one is not visible
 int the output of the `set` command (same behavior as ANSICON's).
+
 {% else %}
 Также, для совместимости с ANSICON, ConEmu определяет переменные окружения
 `ANSICON`, `ANSICON_DEF` и `ANSICON_VER`. Последнюю в списке переменных
@@ -309,6 +326,7 @@ ANSICON_DEF=7
 
 {% if page.pagelang == 'en' %}
 ## List of supported codes  {#List_of_supported_codes}
+
 {% else %}
 ## Список поддерживаемых кодов  {#List_of_supported_codes}
 {% endif %}
@@ -331,6 +349,7 @@ ANSICON_DEF=7
 **NB** ANSI sequences address terminal working space only.
 So, all ‘absolute’ coordinates addresses visible terminal area,
 backscroll buffer (upper invisible parts) may not be accessed in that way.
+
 {% else %}
 **Внимание!** ANSI последовательности адресуют только рабочую область терминала.
 То есть «абсолютные» координаты работают в видимой части терминала,
@@ -436,6 +455,7 @@ backscroll buffer (upper invisible parts) may not be accessed in that way.
 **Note**. These codes may ends with ‘ESC\’ (two symbols - ESC and BackSlash)
 or ‘BELL’ (symbol with code \x07, same as ‘^a’ in `*`nix).
 For simplifying, endings in the following table marked as ‘ST’.
+
 {% else %}
 **Note**. These codes may ends with «ESC\» (two symbols - ESC and BackSlash)
 or «BELL» (symbol with code \x07, same as «^a» in `*`nix).
@@ -460,8 +480,8 @@ For simplifying, endings in the following table marked as «ST».
 | ESC ] 9 ; 7 ; "*cmd*" ST | Run some process with arguments. |
 | ESC ] 9 ; 8 ; "*env*" ST | Output value of environment variable. |
 | ESC ] 9 ; 9 ; "*cwd*" ST | Inform ConEmu about shell current working directory. |
-| ESC ] 9 ; 10 ST | Request xterm keyboard emulation. |
-| ESC ] 9 ; 10 ; 0 ST | Turn off xterm keyboard emulation. |
+| ESC ] 9 ; 10 ST | Request xterm [keyboard and output emulation](TerminalModes.html). |
+| ESC ] 9 ; 10 ; *n* ST | When *n* is **0** turn off [xterm keyboard and output emulation](TerminalModes.html). When *n* is **1** turn on xterm keyboard and output emulation. When *n* is **2** turn off [xterm output emulation](TerminalModes.html). When *n* is **3** turn on [xterm output emulation](TerminalModes.html). |
 | ESC ] 9 ; 11; "*txt*" ST | Just a ‘comment’, skip it. |
 | ESC ] 9 ; 12 ST | Let ConEmu treat current cursor position as prompt start. Useful with `PS1`. |
 
@@ -470,6 +490,7 @@ For simplifying, endings in the following table marked as «ST».
 
 {% if page.pagelang == 'en' %}
 ## Examples  {#Examples}
+
 {% else %}
 ## Примеры  {#Examples}
 {% endif %}
@@ -484,6 +505,7 @@ For simplifying, endings in the following table marked as «ST».
 
 {% if page.pagelang == 'en' %}
 Example from file: `ConEmu\Addons\AnsiColors256.ans`.
+
 {% else %}
 Пример из файла: `ConEmu\Addons\AnsiColors256.ans`.
 {% endif %}
@@ -506,6 +528,7 @@ Grayscale ramp (232..255 from xterm palette):
 
 {% if page.pagelang == 'en' %}
 **Warning** You need to change `^[` to ESC code before using this script (char with code ASCII \x1B).
+
 {% else %}
 **Warning** Перед использованием `^[` нужно заменить на ESC код (символ с ASCII кодом \x1B).
 {% endif %}
@@ -515,6 +538,7 @@ Grayscale ramp (232..255 from xterm palette):
 
 {% if page.pagelang == 'en' %}
 This example is from file: `ConEmu\Addons\AnsiColors16.ans`.
+
 {% else %}
 Пример из файла: `ConEmu\Addons\AnsiColors16.ans`.
 {% endif %}
@@ -527,6 +551,7 @@ System colors (Standard console 16 colors):
 
 {% if page.pagelang == 'en' %}
 **Warning** You need to change `^[` to ESC code before using this script (char with ASCII code \x1B).
+
 {% else %}
 **Warning** Перед использованием `^[` нужно заменить на ESC код (символ с ASCII кодом \x1B).
 {% endif %}
@@ -541,6 +566,7 @@ Download ‘ans’ file and execute it in ConEmu console, e.g. `type TK-FREES.AN
 You can view and scroll last output switching into alternative mode - `Win+A`.
 
 **Note** Many arts was written for 80-chars console width.
+
 {% else %}
 Большой архив [ANSI арта](http://en.wikipedia.org/wiki/ANSI_art): [sixteencolors.net](http://sixteencolors.net/).
 
@@ -553,12 +579,14 @@ You can view and scroll last output switching into alternative mode - `Win+A`.
 
 {% if page.pagelang == 'en' %}
 ### Compiler error highlighting  {#Compiler_error_highlighting}
+
 {% else %}
 ### Подсветка ошибок компиляции  {#Compiler_error_highlighting}
 {% endif %}
 
 {% if page.pagelang == 'en' %}
 #### To highlight Microsoft NMAKE errors and warnings
+
 {% else %}
 #### Подсветка вывода Microsoft NMAKE
 {% endif %}
@@ -575,6 +603,7 @@ type "Errors.log" | sed -e "s/.* : \bERR.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.* : \
 The example below from scripts used to build ConEmu with GCC.
 Take note of `2> Errors.log` while calling make, this is because
 all errors and warnings are printed to `STDERR` but `STDOUT`.
+
 {% else %}
 #### Подсветка вывода MinGW MAKE errors, warnings and notes
 
@@ -594,6 +623,7 @@ type "Errors.log" | sed -e "s/.*: \berror\b:.*/\x1B[1;31;40m&\x1B[0m/i" -e "s/.*
 On some installations you have to replace `\x1B` with real ESC character
 (symbol with ASCII code of \x1B).
 You may use `SetEscChar.cmd` in bat-files as in following example.
+
 {% else %}
 #### Некоторые версии SED требуют использования «реального» символа ESC
 
@@ -610,6 +640,7 @@ type "Errors.log" | sed -e "s/.*: \berror\b:.*/%ESC%[1;31;40m&%ESC%[0m/i" -e "s/
 
 {% if page.pagelang == 'en' %}
 Or from bash-scripts.
+
 {% else %}
 Или для bash-скриптов.
 {% endif %}
@@ -623,4 +654,4 @@ cat "Errors.log" | sed -e "s/.*: \berror\b:.*/${esc}[1;31;40m&${esc}[0m/i" -e "s
 ### Text Progressbar in cmd-files  {#Text_Progressbar_in_cmd-files}
 
 [test_bar.cmd](/misc/test_bar.cmd)
-Originally from googlecode issue by @Artyom.Vorobets
+originally from googlecode issue by @Artyom.Vorobets

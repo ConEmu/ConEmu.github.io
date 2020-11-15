@@ -25,7 +25,7 @@ you may also adjust list of hooked applications
 **from** which you like to run console applications.
 
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## ConEmu may be easily configured as compile-host  {#ConEmu_may_be_easily_configured_as_compile-host}

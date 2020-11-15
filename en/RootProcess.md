@@ -35,4 +35,4 @@ ConEmu.exe -basic -run bash -l -i
 
 **NB** Please don't confuse this term with ‘root’ from Unix world.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

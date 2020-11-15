@@ -16,6 +16,8 @@ readalso:
    title: "ANSI в Cygwin и Msys"
  - url: BashOnWindows.html
    title: "Стрелки и Цвета в Bash на Windows (WSL)"
+ - url: TerminalModes.html
+   title: "Режимы терминала ввода и вывода"
 
 contentclass: ansi-escape-tables
 ---

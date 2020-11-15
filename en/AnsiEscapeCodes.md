@@ -16,6 +16,8 @@ readalso:
    title: "ANSI processing in Cygwin and Msys"
  - url: BashOnWindows.html
    title: "Keys and Colors in Bash On Windows (WSL)"
+ - url: TerminalModes.html
+   title: "Terminal input and output modes"
 
 contentclass: ansi-escape-tables
 ---

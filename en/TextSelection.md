@@ -36,7 +36,7 @@ ConEmu allows to select text using:
 
 **NB** Both types of selection may be done either from keyboard or mouse.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 Marked text may be copied to Windows Clipboard using simple text format
 or colorized HTML format ready to paste into blogs and aware editors.

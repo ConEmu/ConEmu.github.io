@@ -21,4 +21,4 @@ It can show all (almost) file activities in your system:
 creating processes and files, finding and deleting files,
 loading libraries and so on.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

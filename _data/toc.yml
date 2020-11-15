@@ -520,6 +520,10 @@
       rus: "Cygwin & Ansi"
       url: "CygwinAnsi.html"
     -
+      eng: "Terminal input and output modes"
+      rus: "Режимы терминала ввода и вывода"
+      url: "TerminalModes.html"
+    -
       eng: "Cygwin current dir"
       rus: "Cygwin current dir"
       url: "CygwinCurDir.html"

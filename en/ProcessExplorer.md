@@ -29,4 +29,4 @@ Also, it can show all loaded dll-files in your process.
 BTW, [Far Manager](FarManager.html) plugin ‘Process list’
 can do same things.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

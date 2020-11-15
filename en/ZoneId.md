@@ -38,4 +38,4 @@ clicking ‘Unblock’ and ‘Apply’.
 Check files `ConEmu.exe`, `ConEmu64.exe`, `ConEmuC.exe`, `ConEmuC64.exe`,
 `ConEmuCD.dll`, `ConEmuCD64.dll`, `ConEmuHk.dll`, `ConEmuHk64.dll`.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

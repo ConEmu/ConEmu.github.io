@@ -20,7 +20,7 @@ If you want to use that handy way to start tasks, do the following:
 * goto ‘Tasks’ page of the Settings dialog and set up your favorites;
 * goto ‘Task bar’ page, check ‘Add ConEmu tasks to taskbar’ and press ‘Update Now!’ button.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Failed to reuse  {#Failed_to_reuse}

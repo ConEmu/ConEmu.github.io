@@ -19,6 +19,8 @@ readalso:
    title: "Startup Command"
  - url: Xterm256Colors.html
    title: "Xterm-256 Colors"
+ - url: TerminalModes.html
+   title: "Terminal input and output modes"
 ---
 
 # Bash on Windows
@@ -99,7 +101,7 @@ With WSL version 2 the workarounds are:
 
 [More information is below](#arrows).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 
@@ -293,10 +295,11 @@ ConEmu doesn't receive the request to change the mode!
 
 So, if keys are not working properly, it may mean that application expects another mode
 of ‘App Keys’. The solution is simple: just LeftClick the ‘Terminal modes’ [StatusBar](StatusBar.html) column
-and change ‘AppKeys’ mode!
+and change ‘AppKeys’ mode.
 
 You may change Task startup defaults with [-new_console](https://conemu.github.io/en/NewConsole.html#syntax) switch.
-Just add to your command:
+Just add to your [Task](Tasks.html) command:
+
 * `-new_console:p5` to enable ‘XTerm’ *and* ‘AppKeys’;
 * `-new_console:p1` to enable ‘XTerm’ *without* ‘AppKeys’.
 

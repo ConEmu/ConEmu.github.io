@@ -37,4 +37,4 @@ Just open [Settings/Keys & Macro](SettingsHotkeys.html) and search for ‘window
 Of course, there is a [Size & Pos](SettingsSizePos.html) settings page where
 you may change all parameters manually and save them.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

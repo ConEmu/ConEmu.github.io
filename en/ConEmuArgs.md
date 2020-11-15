@@ -59,7 +59,7 @@ These switches were introduced in build [160416](/blog/2016/04/16/Build-160416.h
 
 **NB** `ConEmuC.exe` command line switches are described [here](ConEmuC.html#ConEmuC_switches).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Examples  {#Examples}

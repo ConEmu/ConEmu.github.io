@@ -42,7 +42,7 @@ most of possible [shells](TerminalVsShell.html) available nowadays.
 User have to modify their profiles to let ConEmu know working directory.
 Please read the rest of article about required profile modifications.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 * [About directories](#description)
 * [What you shall do to get **CD** support](#What_you_shall_do_to_get_CD_support)

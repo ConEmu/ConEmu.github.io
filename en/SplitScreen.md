@@ -40,7 +40,7 @@ Article navigation
 
 As usual, ConEmu provides more than a one way to do any action.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ### SplitScreen options in ‘Create new console’ dialog  {#Create-new-console-dialog}

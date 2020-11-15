@@ -36,4 +36,4 @@ One more note. Terminals may be ‘local’ and ‘remote’.
 Remote terminals connect to remote hosts to run applications remotely.
 ConEmu is a **local** terminal (also known as console window).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

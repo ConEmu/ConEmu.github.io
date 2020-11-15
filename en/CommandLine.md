@@ -25,7 +25,7 @@ be working in the another place!
 * [Console args](#Console_args)
 * [Task parameters](#Task_parameters)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## [GUI args](ConEmuArgs.html)   {#ConEmuArgs}

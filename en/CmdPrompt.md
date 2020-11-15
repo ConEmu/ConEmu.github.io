@@ -43,7 +43,7 @@ on the [ANSI execution](SettingsANSI.html) settings page.
 
 ![cmd's prompt with git status in ConEmu](/img/ConEmuCmdPrompt1.png)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## CmdInit options  {#cmdinit}

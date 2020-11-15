@@ -29,7 +29,7 @@ The screenshot below shows `<ConEmu>` palette adapted for Windows' console appli
   * [Setup your application](#Setup_your_application)
   * [Use modified color scheme](#Use_modified_color_scheme)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Solarized scheme limitation  {#limitation}

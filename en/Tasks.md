@@ -59,7 +59,7 @@ or preconfigured [splits](SplitScreen.html) at once.
 
 Tasks may be configured in the [‘Settings’ dialog](SettingsTasks.html).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 ## Tasks in details  {#about-tasks}
 

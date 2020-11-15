@@ -65,7 +65,7 @@ Read more about settings storage options:
 * [Using specially defined xml files](ConEmuXml.html#special-xml-files)
 * [How to send settings when reporting issues](ConEmuXml.html#send-to-developer)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 ## Manual change of settings  {#Manual_change_of_settings}
 

@@ -22,4 +22,4 @@ Thought, it is not correct in Windows because `VK_MENU`
 
 ![Apps key](/img/KeyboardAppsKey.png)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

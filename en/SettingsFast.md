@@ -60,7 +60,7 @@ So at the first start ConEmu shows ‘Fast Configuration Dialog’
 with minimal set of options.
 These and other options you may change later in the full [Settings dialog](Settings.html).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 * [Dialog ‘ConEmu Fast Configuration’](#fast-configuration)

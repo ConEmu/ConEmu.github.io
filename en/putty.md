@@ -39,4 +39,4 @@ from your favorite POSIX distro (cygwin, msys, wsl).
 ConEmu creates by default [Tasks](Tasks.html#add-default-tasks) for all found installations,
 just use them.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

@@ -27,7 +27,7 @@ but it is not true. Windows console window is a part of Windows ‘kernel’
 And you may run there console applications:
 `cmd.exe`, `powershell.exe` and many others are shells and tools.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 

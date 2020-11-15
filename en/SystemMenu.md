@@ -24,4 +24,4 @@ You may pop up system menu in several ways:
 
 ![ConEmu system menu](/img/ConEmuSystemMenu.png)
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}

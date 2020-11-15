@@ -52,7 +52,7 @@ It's similar to ‘ConEmu Here’ - working folder will be current folder from �
 
 All options on the [Integration page](SettingsIntegration.html) of [Settings dialog](Settings.html).
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ### Group ‘ConEmu Inside’   {#inside-group}

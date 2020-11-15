@@ -80,7 +80,7 @@ with ConEmu's executables command line.
 ConEmu.exe /cmdlist cmd ||| powershell -new_console:sV
 ~~~
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Exclusions  {#exclusions}

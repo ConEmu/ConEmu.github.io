@@ -29,7 +29,7 @@ That means, if you notice some strange in your environment - find problems on yo
 
 Some common problems described below.
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
 
 
 ## Variables doesn't match defined in system settings  {#System_settings}

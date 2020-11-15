@@ -46,4 +46,4 @@ db_home: windows cygwin desc
 db_home: env windows /C/your-dot-files
 ~~~
 
-{% if site.url != 'local' %}{% include in_article.html %}{% endif %}
+{% include in_article.html %}
