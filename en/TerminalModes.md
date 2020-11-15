@@ -54,7 +54,7 @@ ConEmu could be switched between Windows and Unix (XTerm) modes in several ways.
 
 * [cygwin/msys connector](CygwinMsysConnector.html) is started;
 * official Vim build is started (official means not from cygwin or msys distro);
-* flag `ENABLE_VIRTUAL_TERMINAL_INPUT` is set for standard console input via [SetConsoleMode](https://docs.microsoft.com/en-us/windows/console/setconsolemode);
+* flag [ENABLE_VIRTUAL_TERMINAL_INPUT](https://docs.microsoft.com/en-us/windows/console/setconsolemode) is set for `CONIN$`;
 * [ConEmu specific OSC](AnsiEscapeCodes.html#ConEmu_specific_OSC) `ESC ] 9 ; 10 ; 1 ST` is issued;
 * the [Task](Tasks.html) was started with [-new_console:p1](#NewConsole) switch;
 * user could change the mode via [StatusBar](#StatusBar).
@@ -62,7 +62,7 @@ ConEmu could be switched between Windows and Unix (XTerm) modes in several ways.
 XTerm mode is changed back to Windows when:
 
 * application enabled the XTerm mode is terminated;
-* flag `ENABLE_VIRTUAL_TERMINAL_INPUT` is cleared for standard console input via [SetConsoleMode](https://docs.microsoft.com/en-us/windows/console/setconsolemode);
+* flag [ENABLE_VIRTUAL_TERMINAL_INPUT](https://docs.microsoft.com/en-us/windows/console/setconsolemode) is cleared for `CONIN$`;
 * [ConEmu specific OSC](AnsiEscapeCodes.html#ConEmu_specific_OSC) `ESC ] 9 ; 10 ; 0 ST` is issued;
 * user could change the mode via [StatusBar](#StatusBar).
 
@@ -100,14 +100,14 @@ using [INPUT_RECORD](https://docs.microsoft.com/en-us/windows/console/input-reco
 
 The XTerm output mode is enabled when:
 
-* simultaneously with [XTerm input mode](#TermInput);
-* flag `ENABLE_VIRTUAL_TERMINAL_PROCESSING` is set for standard console input via [SetConsoleMode](https://docs.microsoft.com/en-us/windows/console/setconsolemode);
+* simultaneously with [XTerm input mode](#TermInput) enabled;
+* flag [ENABLE_VIRTUAL_TERMINAL_PROCESSING](https://docs.microsoft.com/en-us/windows/console/setconsolemode) is set for `CONOUT$`;
 * [ConEmu specific OSC](AnsiEscapeCodes.html#ConEmu_specific_OSC) `ESC ] 9 ; 10 ; 3 ST` is issued;
 
 ConEmu switches back to Windows mode when:
 
-* simultaneously with [XTerm input mode](#TermInput);
-* flag `ENABLE_VIRTUAL_TERMINAL_PROCESSING` is cleared for standard console input via [SetConsoleMode](https://docs.microsoft.com/en-us/windows/console/setconsolemode);
+* simultaneously with [XTerm input mode](#TermInput) disabled;
+* flag [ENABLE_VIRTUAL_TERMINAL_PROCESSING](https://docs.microsoft.com/en-us/windows/console/setconsolemode) is cleared for `CONOUT$`;
 * [ConEmu specific OSC](AnsiEscapeCodes.html#ConEmu_specific_OSC) `ESC ] 9 ; 10 ; 2 ST` is issued;
 
 
@@ -131,5 +131,5 @@ coordinates and sizes of the console, running processes and more.
 You may change Task startup mode with [-new_console](https://conemu.github.io/en/NewConsole.html#syntax) switch.
 Just add to your [Task](Tasks.html) command:
 
-* `-new_console:p5` to enable ‘XTerm’ *and* ‘AppKeys’;
+* `-new_console:p5` to enable ‘XTerm’ *with* ‘AppKeys’;
 * `-new_console:p1` to enable ‘XTerm’ *without* ‘AppKeys’.
