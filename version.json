@@ -1,41 +1,41 @@
 {
-  "lastmod":  "2020-11-01T19:09:34.822Z",
+  "lastmod":  "2020-11-23T00:39:47.776Z",
   "releases": [
     {
       "type": "Alpha",
-      "version":  "201101",
+      "version":  "201122",
       "files": [
         {
           "type": "7-Zip",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v20.11.01/ConEmuPack.201101.7z",
-            "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.201101.7z?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v20.11.22/ConEmuPack.201122.7z",
+            "http://downloads.sf.net/project/conemu/Alpha/ConEmuPack.201122.7z?use_mirror=autoselect"
           ],
-          "size":   4893059,
-          "crc32": "72F1EDAC",
-          "md5":   "2833466bd4679e6138c569ffb3f7afeb",
+          "size":   4897599,
+          "crc32": "DDFCAB3F",
+          "md5":   "04206f599da73cf757f2d54875ad2977",
           "description": "Alpha, Portable (32-bit, 64-bit)"
         },
         {
           "type": "Installer",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v20.11.01/ConEmuSetup.201101.exe",
-            "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.201101.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v20.11.22/ConEmuSetup.201122.exe",
+            "http://downloads.sf.net/project/conemu/Alpha/ConEmuSetup.201122.exe?use_mirror=autoselect"
           ],
-          "size":   7424624,
-          "crc32": "85227D0B",
-          "md5":   "cdc3c037e6d6d2ebdaa178dc343864fb",
+          "size":   7421040,
+          "crc32": "94BBE3D5",
+          "md5":   "e9229b9a6d58bde80fbeebfdcf75adf9",
           "description": "Alpha, Installer (32-bit, 64-bit)"
         },
         {
           "type": "PortableApps",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v20.11.01/ConEmu_201101_English.paf.exe",
-            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_201101_English.paf.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v20.11.22/ConEmu_201122_English.paf.exe",
+            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_201122_English.paf.exe?use_mirror=autoselect"
           ],
-          "size":   4772264,
-          "crc32": "196CE4D5",
-          "md5":   "7f5080cf573d8ec2af9beaa5d1972937",
+          "size":   4775456,
+          "crc32": "90722C73",
+          "md5":   "f0b085062df0207f320843223a178184",
           "description": "Alpha, PortableApps.com"
         }
       ]
