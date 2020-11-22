@@ -26,6 +26,8 @@ readalso:
    title: "Installation Folders Structure"
  - url: Installation.html
    title: "Installation"
+
+add_download: "no"
 ---
 
 ## Contents

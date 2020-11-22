@@ -13,6 +13,8 @@ readalso:
    title: ConEmu Reviews
  - url: Awards.html
    title: ConEmu Awards
+
+add_download: "no"
 ---
 
 # Handy Windows command line replacement

@@ -125,6 +125,10 @@ window.cookieconsent.initialise({
 {% include readalso_body.html %}
 {% endif %}
 
+{% if page.add_download != "no" and page.category != "blog" %}
+{% include download.html %}
+{% endif %}
+
 {% if page.isroot == false %}
 <!-- Some footer links -->
 <footer id="footer-links">
