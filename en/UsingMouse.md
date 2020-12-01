@@ -95,9 +95,9 @@ Behaviour can be changed holding Ctrl, Shift, or Alt when You drop items to the 
 Drop to command line:
 
 * Simple drop: paste full file or folder paths, space separated, autoquoted.
-* Ctrl: paste with «edit:» prefix
-* Alt: paste with «goto:» prefix
-* Shift: paste with «view:» prefix
+* Ctrl: paste with ‘edit:’ prefix
+* Alt: paste with ‘goto:’ prefix
+* Shift: paste with ‘view:’ prefix
 
 
 
@@ -149,5 +149,5 @@ RClick on KeyBar pop up menu with F-key with possible modifiers.
 E.g., when you RClick on `7Search` in the Far Editor you can choose
 Ctrl-F7 to run Replace dialog.
 
-**NB** When you choose such menu item, ConEmu post «real» keypress to console.
+**NB** When you choose such menu item, ConEmu post ‘real’ keypress to console.
 So, macro will be executed, when there is one associated with this keypress.

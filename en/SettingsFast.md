@@ -118,7 +118,7 @@ If ConEmu was installed for example in the `C:\ConEmu\` folder it suggests follo
 * C:\ConEmu\ConEmu\ConEmu.xml
 * **C:\ConEmu\ConEmu.xml**
 
-**Note**. In old Windows 2000 current build may have problems with xml-storage,
+**Note**. In old Windows 2000 (not supported officially) current build may have problems with xml-storage,
 so the ‘Registry’ is suggested for this old OS.
 
 Read more about settings storage [here](ConEmuXml.html).

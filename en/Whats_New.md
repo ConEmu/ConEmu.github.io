@@ -188,7 +188,7 @@ or anything else, spreading the word for example.
 * Ensure all default bash tasks names will be unique.
 * Always reset FARHOME env.var when creating default Far tasks.
 * Move checkboxes ‘Add ConEmu??? to PATH’ to separate page ‘Environment’.
-* [conemu#171](https://github.com/Maximus5/ConEmu/issues/171), Issue 1655: Add option to skip ‘... brought ConEmu OnTop. Revert?’ confirmation.
+* [conemu#171](https://github.com/Maximus5/ConEmu/issues/171), Issue 1655: Add option to skip ’... brought ConEmu OnTop. Revert?’ confirmation.
 * [conemu#173](https://github.com/Maximus5/ConEmu/issues/173): Attach of detached console ignored new ConEmu instance.
 * [conemu#173](https://github.com/Maximus5/ConEmu/issues/173): Implement Unfasten of console tabs (ChildGui not yet). Tab menu item, hotkey and GuiMacro.
 * Implement ‘Settings\Environment’ page.
@@ -325,7 +325,7 @@ or anything else, spreading the word for example.
 
 * [conemu#88](https://github.com/Maximus5/ConEmu/issues/88): Allow ‘Apps’ key to use as single hotkey.
 * [GuiMacro](GuiMacro.html). Bugfixes and new function.
-  * Function delimiter ‘;’ was ignored without brackets.
+  * Function delimiter ’;’ was ignored without brackets.
   * Support escapes in C-strings with "ConEmu -GuiMacro ...".
   * ‘Shell’ function without args must create new console.
   * Some functions will be postponed when RCon initialization finishes. To force postponing add ‘@’ prefix.
@@ -404,7 +404,7 @@ or anything else, spreading the word for example.
 * Mouse events were sometimes unexpectedly sent to the console during selection.
 * 150309 regression. "`ConEmu.ico`" was looked in wrong folder.
 * Overlay icon on Win7 TaskBar was not shown in some cases.
-* Name checkbox ‘Alternative font ...’ instead of ‘... pseudographics font’.
+* Name checkbox ‘Alternative font ...’ instead of ’... pseudographics font’.
 * TaskBar aero thumbnail of active console was not live-updated if ConEmu was minimized.
 * Don't use ‘Enhance progressbars and scrollbars’ for cells with `bg==gf` unless it is `100%` filled block.
 * Search panel was too small in some cases.

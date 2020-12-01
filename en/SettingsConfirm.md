@@ -62,10 +62,10 @@ Show confirmation before closing Far Manager editor or viewer tab
 
 ## Miscellaneous  {#id2687}
 
-#### Show ‘... was hidden’ warning in TSA  {#id2435}
+#### Show ’... was hidden’ warning in TSA  {#id2435}
 Show ‘ConEmu was hidden from some program’ message in TSA
 
-#### Show ‘... brought ConEmu OnTop. Revert?’ confirmation box  {#id2854}
+#### Show ’... brought ConEmu OnTop. Revert?’ confirmation box  {#id2854}
 Show ‘Some external program brought ConEmu OnTop. Revert?’ confirmation box
 
 

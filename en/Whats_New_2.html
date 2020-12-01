@@ -213,7 +213,7 @@ Also, you may call &quot;/GUIMACRO:0&quot; to affect first found instance.</pre>
 <li>Task hotkeys may be configured on ‘Keys &amp; Macro’ settings page, too. </li>
 <li>Regression. Changes in ‘Default terminal’ hooked applications was ignored. </li>
 <li>Shift+Home and Shift+End start text selection if ‘Start selection with Shift+Arrows’ is enabled. </li>
-<li>Trim trailing ‘.,;’ from hyperlinks (Ctrl+LClick). </li></ul>
+<li>Trim trailing ’.,;’ from hyperlinks (Ctrl+LClick). </li></ul>
 
 <h2><a name="Build_131025"></a>Build 131025<a href="#Build_131025" class="section_anchor"></a></h2>
 <ul><li><a title="Fail to Run history item from dropdown menu." class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/1304">Issue 1304&nbsp;</a>: Fail to Run history item from dropdown menu. </li>
@@ -406,7 +406,7 @@ Also, you may call &quot;/GUIMACRO:0&quot; to affect first found instance.</pre>
 <li>Settings-&gt;Mark &amp; Paste: New option &quot;Show IBeam cursor&quot;. </li>
 <li><a title="Hangs on mouse wheel if mouse wheel is set to scroll one screen at a time" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/1152">Issue 1152&nbsp;</a>: Hungs on wheel when &quot;sreen per time&quot; was choosed in mouse settings. </li>
 <li>Issue ???: Don&#x27;t resize real console until mouse button released (Far Manager still resized ‘on the fly’). </li>
-<li><a title="Tab bar position fails after restoring ConEmu when «Auto show» (tabs) is selected"  href="http://github.com/Maximus5/conemu-old-issues/issues/1141">Issue 1141</a>: Tab bar position fails after restoring ConEmu when ‘Auto show’ (tabs) is selected. </li>
+<li><a title="Tab bar position fails after restoring ConEmu when ‘Auto show’ (tabs) is selected"  href="http://github.com/Maximus5/conemu-old-issues/issues/1141">Issue 1141</a>: Tab bar position fails after restoring ConEmu when ‘Auto show’ (tabs) is selected. </li>
 <li>Some more internal logging. </li>
 <li>Macro ConEmu.ShiftEnter.lua fails in Far 3. </li></ul>
 
@@ -1229,7 +1229,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <li>New settings page &#x27;Text cursor&#x27;. </li>
 <li><a title="Option to change vertical cursor width" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/612">Issue 612&nbsp;</a>: Option to change cursor size (&#x27;Fixed cursor size&#x27; &amp; &#x27;(5-100) %&#x27;). </li>
 <li><a title="Проблемы с telnet" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/608">Issue 608&nbsp;</a>: Fixed display problems after closing telnet and returning to calling app (cmd, far). </li>
-<li>cmd/powershell/tcc: Switch &quot;-new_console&quot; (for starting console applications in new ConEmu tab) </li></ul><blockquote>now may be used without &quot;ConEmuC.exe&quot;. For example, you may type in cmd.exe prompt: 
+<li>cmd/powershell/tcc: Switch &quot;-new_console&quot; (for starting console applications in new ConEmu tab) </li></ul><blockquote>now may be used without &quot;ConEmuC.exe&quot;. For example, you may type in cmd.exe prompt:
 <pre class="prettyprint">powershell -new_console</pre>
 </blockquote><ul><li>Some fixes in Detach of GUI applications. </li>
 <li><a title="Make text selection/copy work like a proper terminal" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/607">Issue 607&nbsp;</a>: &#x27;Mark &amp; Paste&#x27; and &#x27;App distinct&#x27; -&gt; &#x27;Detect text line ends&#x27;, &#x27;Bash margin&#x27;, &#x27;Trim trailing spaces&#x27;, &#x27;EOL&#x27;. </li>
@@ -1522,7 +1522,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <ul><li>Far3: после выполнения макроса ShiftEnter курсор прыгал к &quot;..&quot; </li>
 <li>Hyperlink detector (e-mails). </li>
 <li><a title="Глючный ре-атач консольного (не FAR) приложения"  href="http://github.com/Maximus5/conemu-old-issues/issues/505">Issue 505</a>: Reattach fixed. </li>
-<li>Settings-&gt;Far Manager-&gt;KeyBar RClick: Правый клик по кейбару отображает меню модификаторов. Т.е. щелкнув правой кнопкой по &quot;7Search&quot; в редакторе откроется всплывающее меню, в котором можно выбрать любой F7 с модификатором, например Ctrl-F7. </li><blockquote>Примечание. При выборе пункта меню в консоль посылается именно нажатие, т.е. если на Ctrl-F7 висит макрос - будет выполнен макрос. 
+<li>Settings-&gt;Far Manager-&gt;KeyBar RClick: Правый клик по кейбару отображает меню модификаторов. Т.е. щелкнув правой кнопкой по &quot;7Search&quot; в редакторе откроется всплывающее меню, в котором можно выбрать любой F7 с модификатором, например Ctrl-F7. </li><blockquote>Примечание. При выборе пункта меню в консоль посылается именно нажатие, т.е. если на Ctrl-F7 висит макрос - будет выполнен макрос.
 </blockquote></ul>
 
 <h2><a name="Build_120326"></a>Build 120326<a href="#Build_120326" class="section_anchor"></a></h2>
@@ -1574,7 +1574,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 
 <h2><a name="Build_120215"></a>Build 120215<a href="#Build_120215" class="section_anchor"></a></h2>
 <ul><li>Experimental: Внутренние изменения межпроцессного взаимодействия. </li>
-<li>Installer. Подхватывается путь установки Far 3.x, в том числе и для компонентов «Far Manager plugins» и «Far3 ExtendedConsole». </li>
+<li>Installer. Подхватывается путь установки Far 3.x, в том числе и для компонентов ‘Far Manager plugins’ и ‘Far3 ExtendedConsole’. </li>
 <li>Правки в injects. </li>
 <li><a title="Неясное поведение Hide Caption. 2я серия" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/296">Issue 296&nbsp;</a>: Исправлена работа в режиме HideCaption &amp; Maximized. </li>
 <li>Префикс плагина &quot;ConEmu:run:&quot; теперь поддерживает и &quot;-new_console&quot; для убирания мерцания панелей. </li>
@@ -1656,7 +1656,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <li><a title="YAC (Yet Another Completion) doesn't work" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/469">Issue 469&nbsp;</a>: YAC (Yet Another Completion) doesn&#x27;t work. Для GetConsoleWindow (возвращающего окно отрисовки) GetClassName перехватывается и возвращает &quot;ConsoleWindowClass&quot;. </li>
 <li><a title="Падение при выборе меню дисков (alt+F1)" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/472">Issue 472&nbsp;</a>: Падение при выборе меню дисков (Alt+F1). </li>
 <li>При отрисовке TrueColor через ExtendedConsole.dll сбивался цвет фона пробельных символов при совпадении с &#x27;цветом текста&#x27;. </li>
-<li>Все HotKeys теперь можно задать на вкладке &#x27;Keys&#x27; окна настроек. Настройка клавиш с вкладки &#x27;Tabs&#x27; убрана. На вкладке &#x27;Tabs&#x27; добавлен флажок &#x27;«Host-key»+Number iterates Far windows&#x27;. </li></ul>
+<li>Все HotKeys теперь можно задать на вкладке &#x27;Keys&#x27; окна настроек. Настройка клавиш с вкладки &#x27;Tabs&#x27; убрана. На вкладке &#x27;Tabs&#x27; добавлен флажок &#x27;‘Host-key‘+Number iterates Far windows&#x27;. </li></ul>
 
 <h2><a name="Build_120102"></a>Build 120102<a href="#Build_120102" class="section_anchor"></a></h2>
 <ul><li>На главной странице проекта ( <a href="http://code.google.com/p/conemu-maximus5/" rel="nofollow">http://code.google.com/p/conemu-maximus5/</a> ) добавлена кнопочка &#x27;+1&#x27;. Щелкните, кому не жалко :) Ну, и тут ( <a href="http://sourceforge.net/projects/conemu/" rel="nofollow">http://sourceforge.net/projects/conemu/</a> ) тоже. </li>
@@ -1669,7 +1669,7 @@ print: &quot;qqq&quot;; WindowMinimize</pre>
 <li><a title="Hang in ConEmuHk on exit from CygWin program" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/465">Issue 465&nbsp;</a>, <a title="Crash in ConEmuHk.dll!SetHookCallbacks when running msysgit perl" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/466">Issue 466&nbsp;</a>: Правки в ConEmuHk. </li>
 <li>Часть настроек с вкладки &#x27;Features&#x27; перенесена в новую &#x27;Far Manager&#x27;. </li>
 <li>На вкладке настроек &#x27;Far Manager&#x27; добавлены поля для макросов. Вернуть макрос &#x27;по умолчанию&#x27; можно очистив поле макроса. </li>
-<li><a title="System's &quot;Copy File&quot; window (by Ctrl+V) appears behind ConEmu" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/468">Issue 468&nbsp;</a>: System&#x27;s «Copy File» window (by Ctrl+V) appears behind ConEmu. </li>
+<li><a title="System's &quot;Copy File&quot; window (by Ctrl+V) appears behind ConEmu" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/468">Issue 468&nbsp;</a>: System&#x27;s ‘Copy File’ window (by Ctrl+V) appears behind ConEmu. </li>
 <li>При запуске ConEmu.exe выполняется проверка наличия необходимых файлов (ConEmuC.exe и т.п.) </li></ul>
 
 <h2><a name="Build_120101"></a>Build 120101<a href="#Build_120101" class="section_anchor"></a></h2>

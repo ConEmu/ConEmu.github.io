@@ -1,15 +1,23 @@
 ---
 redirect_from:
+ - /ru/TaskBarIcon.html
+ - /en/TaskBarBug.html
  - /ru/TaskBarBug.html
 
-title: "ConEmu | TaskBar Bug"
+title: "ConEmu | TaskBar Pinned Icon"
 
 breadcrumbs:
  - url: TableOfContents.html#tips-and-tweaks
    title: Tips and Tweaks
+
+readalso:
+ - url: TipsAndTweaks.html
+   title: "Tips and Tweaks"
+ - url: Tasks.html
+   title: "Tasks: Set up your favourite shells"
 ---
 
-# TaskBar Pin Bug
+# TaskBar pinned icon
 
 Windows 7 and higher allows to pin application icons to the taskbar.
 You can pin ConEmu icon too, just run it, right-click taskbar icon and choose ‘Pin to taskbar’.
@@ -33,8 +41,8 @@ to ‘reuse’ icon, taskbar decides ‘to do or not to do’ itself.
 Usual reasons for failing icon reuse are:
 
 * User pin different executable than actually running.
-  For example, pinned application is ‘...\KiTTYPortable.exe’,
-  but actually running is ‘...\App\KiTTY\kitty_portable.exe’.
+  For example, pinned application is ’...\KiTTYPortable.exe’,
+  but actually running is ’...\App\KiTTY\kitty_portable.exe’.
   That is not a ConEmu issue usually, user can (and must) pin ‘ConEmu.exe’ itself.
 * Bug in the Windows Explorer. Application can't do anything with that.
 

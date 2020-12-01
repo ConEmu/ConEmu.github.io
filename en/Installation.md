@@ -24,6 +24,8 @@ readalso:
    title: "ConEmu Settings"
  - url: Tasks.html
    title: "Tasks: Set up your favourite shells"
+ - url: ConEmuXml.html
+   title: "ConEmu settings, portable mode"
 ---
 
 # ConEmu Installation
@@ -31,8 +33,8 @@ readalso:
 In general, ConEmu installation is easy.
 Just unpack or install to any folder and run `ConEmu.exe`.
 
-* [If you are **not** a Far Manager user](#not-a-far-manager)
-* [If you **are** a Far Manager user](#far-manager)
+* [General installation routine](#general-install)
+* [Far Manager notes](#far-manager)
   * [Far Manager macros for ConEmu](#far-macros)
 * [MSI installer](#installer)
   * [Desktop icons](#installer-icons)
@@ -40,27 +42,32 @@ Just unpack or install to any folder and run `ConEmu.exe`.
 * [Java issues](#java)
 
 
-## If you are **not** a Far Manager user  {#not-a-far-manager}
+## General installation routine  {#general-install}
 
-* You may use either package `ConEmuPack.*.7z` or `ConEmuSetup.*.exe`, both contain identical binaries.
-  * Just unpack all files from `ConEmuPack.*.7z`;
-  * Or run installer `ConEmuSetup.*.exe` and follow MSI installation wizard steps.
+* You may use either [`ConEmuSetup.*.exe` installer](VersionComparison.html#installer) or 
+  [7-Zip package `ConEmuPack.*.7z`](VersionComparison.html#7-zip-package), both contain identical binaries.
+  * Run installer `ConEmuSetup.*.exe` and follow MSI installation wizard steps.
     Read more about [installer](#installer) below.
-* NB.	Subfolder `plugins` (Far Manager related) is not required in your case
-  and may be deleted or unchecked in the installer.
-* Run `ConEmu.exe` or `ConEmu64.exe`.
+  * Or just unpack all files from `ConEmuPack.*.7z` to desired directory.
+* **Note**. ‘Far Manager plugins’ MSI feature installs plugins required to get most of [Far Manager integration](ConEmuFarPlugin.html)
+  provided by ConEmu. These files located in `plugins` subfolder are not required if you don't use Far Manager.
+* When installation or unpacking finishes run `ConEmu.exe` or `ConEmu64.exe`. ConEmu shows [simplified configuration dialog](SettingsFast.html)
+  on the first start where you may turn on [portable mode](ConEmuXml.html#search-sequence).
 
 {% include in_article.html %}
 
 
-## If you **are** a Far Manager user  {#far-manager}
+## Far Manager notes  {#far-manager}
 
-In general, installation for using with Far Manager does not differ.
+In general, installation for using with Far Manager is the same as in general.
 With the only exception:
 
 * You must ensure [ConEmu plugin](ConEmuFarPlugin.html) is loaded by Far Manager.
 
-By default, ConEmu will create a Task for each Far Manager version found on your PC.
+To simplify that ConEmu creates a Task for each Far Manager version found on your PC.
+If Far Manager was installed after ConEmu you may use
+[Add/refresh default tasks](Tasks.html#add-default-tasks) feature.
+
 The example command line for Far Manager installed in the `C:\Tools\Far` folder:
 
 ```
@@ -101,8 +108,8 @@ If your Far version does not know `Macro:Load` command, just restart the Far to 
 
 ## MSI installer  {#installer}
 
-The installer `ConEmuSetup.*.exe` is actually a bundle for standard x32 and x64 MSI installers.
-There are not differences between them except of default installatin folder on 64-bit OS.
+The installer `ConEmuSetup.*.exe` is a bundle for standard 32-bit and 64-bit MSI installers.
+There are not differences between them except of default installation folder on 64-bit OS.
 
 | Bitness | Default folder on 64-bit OS |
 |:---|:---|
@@ -115,7 +122,7 @@ version was installed in the `C:\ConEmu` folder.
 
 ![Choose desired version](/img/Installer1.png)
 
-Actually, there are no differences between 32-bit and 64-bit packages, both contain
+There are no differences between 32-bit and 64-bit packages, both contain
 all required files to run on any Windows.
 
 Selected MSI installer is unpacked to `%TEMP%` folder and you'll face usual MSI wizard.

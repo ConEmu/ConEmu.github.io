@@ -28,7 +28,7 @@ otherlang:
 * [Q. How to set up Git Bash Here in ConEmu ?](#q-6-8)
 * [Q. How to export ConEmu settings?](#q-6-9)
 * [Q. How to attach a running console application to a new ConEmu instance?](#q-6-10)
-* [Q. How to delete items from the «Create new console» dropdown?](#q-6-11)
+* [Q. How to delete items from the ‘Create new console’ dropdown?](#q-6-11)
 
 
 
@@ -128,7 +128,7 @@ Each line in the file corresponds to a launched command. You may specify the con
 
 #### Q. Why are horizontal lines (drawn using box drawing characters) discontinuous?   {#q-6-4}
 
-**A.** In some fonts, the width of the corresponding box drawing characters is shorter than the font's declared average character width, which ConEmu uses to determine the size of box drawing characters. To get rid of the artifacts, enable the checkbox «Fix Far borders» and increase the width of the "frames" font. The corresponding settings are on the 'Main' tab in the 'Settings' dialog.
+**A.** In some fonts, the width of the corresponding box drawing characters is shorter than the font's declared average character width, which ConEmu uses to determine the size of box drawing characters. To get rid of the artifacts, enable the checkbox ‘Fix Far borders’ and increase the width of the "frames" font. The corresponding settings are on the 'Main' tab in the 'Settings' dialog.
 
 
 
@@ -181,6 +181,6 @@ cmd -cur_console:s2THn
 
 
 
-#### Q. How to delete items from the «Create new console» dropdown?   {#q-6-11}
+#### Q. How to delete items from the ‘Create new console’ dropdown?   {#q-6-11}
 
 **A.** Read the answer on [superuser.com](http://superuser.com/a/436273/139371).

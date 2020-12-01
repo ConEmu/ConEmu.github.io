@@ -19,7 +19,7 @@ otherlang:
 * [Q. What is the purpose of the files ConEmuC.exe, ConEmuCD.dll and ConEmuHk .dll in 64-bit OS?](#q-5-1)
 * [Q. What is the purpose of the files ConEmuC64 .exe, ConEmuCD64.dll and ConEmuHk64 .dll in the 32-bit version of ConEmu ?](#q-5-2)
 * [Q. After running the commands start, echo (and other cmd.exe commands) on 64-bit systems, an error similar to "File not found. Cannot execute. start" appears](#q-5-3)
-* [Q. Attempts to launch applications (from Far Manager) causes a system error such as: «Error launching application (0xc0000142). Click "OK" to exit.»](#q-5-4)
+* [Q. Attempts to launch applications (from Far Manager) causes a system error such as: ‘Error launching application (0xc0000142). Click "OK" to exit.’](#q-5-4)
 * [Q. What is going on with environment variables in 64-bit OS?](#q-5-5)
 
 
@@ -58,7 +58,7 @@ root console process.
 
 
 
-#### Q. Attempts to launch applications (from Far Manager) causes a system error such as: «Error launching application (0xc0000142). Click "OK" to exit.»   {#q-5-4}
+#### Q. Attempts to launch applications (from Far Manager) causes a system error such as: ‘Error launching application (0xc0000142). Click "OK" to exit.’   {#q-5-4}
 
 
 **A.** The cause is as of yet undiscovered - it is suspected to be a problem in Windows. Note that the error also appears without ConEmu. To restore proper function, restart the console (e.g. using Win-~).

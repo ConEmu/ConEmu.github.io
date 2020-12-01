@@ -62,7 +62,7 @@ select hotkey row and choose desired modifier.
 
 #### Q. Why doesn't Drag-n-Drop (plugin) work?   {#q-7-2}
 
-**A.** «Shell style Drag and Drop» is built-in ConEmu and is configured on the 'Far Manager' tab of the 'Settings' window. ConEmu supports dragging files out of Far and onto other applications (Explorer, GIMP, etc.) and dropping files into Far (onto the panel or command-line) from other applications. For proper support of «Shell style Drag and Drop», the Far plugin ConEmu.dll (ConEmu.x64.dll) must be installed. ConEmu can drag files with both the left (LDrag flag) as well as right (RDrag) mouse buttons. Optionally, a modifier key can be configured (e.g. drag files only with the left mouse button and when LCtrl is held down).
+**A.** ‘Shell style Drag and Drop’ is built-in ConEmu and is configured on the 'Far Manager' tab of the 'Settings' window. ConEmu supports dragging files out of Far and onto other applications (Explorer, GIMP, etc.) and dropping files into Far (onto the panel or command-line) from other applications. For proper support of ‘Shell style Drag and Drop’, the Far plugin ConEmu.dll (ConEmu.x64.dll) must be installed. ConEmu can drag files with both the left (LDrag flag) as well as right (RDrag) mouse buttons. Optionally, a modifier key can be configured (e.g. drag files only with the left mouse button and when LCtrl is held down).
 
 **A.** Screenshots and some explanations can be seen/read here:
 [Issue 527](http://github.com/Maximus5/conemu-old-issues/issues/527).
@@ -83,7 +83,7 @@ select hotkey row and choose desired modifier.
 
 **A.** In Far, check the setting Options -> Interface settings -> `[x]` Mouse.
 
-**A.** If Far is launched with «far /w» (System\WindowMode=1), the presence of the ConEmu.dll (ConEmu.x64.dll) plugin is required, otherwise ConEmu will consider Far as a simple console application (like cmd.exe) which does not need mouse events.
+**A.** If Far is launched with ‘far /w’ (System\WindowMode=1), the presence of the ConEmu.dll (ConEmu.x64.dll) plugin is required, otherwise ConEmu will consider Far as a simple console application (like cmd.exe) which does not need mouse events.
 
 
 

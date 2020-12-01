@@ -26,7 +26,7 @@ otherlang:
 * [Q. How to use the '-new_console' parameter?](#q-1-10)
 * [Q. Which environment variables does ConEmu set?](#q-1-11)
 * [Q. Launched console program outputs nothing.](#q-1-12)
-* [Q. A program does not work in «Long console output» mode.](#q-1-13)
+* [Q. A program does not work in ‘Long console output’ mode.](#q-1-13)
 
 
 
@@ -86,7 +86,7 @@ Switching between consoles can be done with `Ctrl+Tab` or `Win+Shift+Q`.
 #### Q. What is a Host key?   {#q-1-6}
 
 
-**A.** This is sort of «substitution» for key chosed by user. For example you may choose common modifier (from one or more Ctrl/Alt/Shift/Apps) for group of actions. Browse «Keys & Macro» page in the Settings dialog.
+**A.** This is sort of ‘substitution’ for key chosed by user. For example you may choose common modifier (from one or more Ctrl/Alt/Shift/Apps) for group of actions. Browse ‘Keys & Macro’ page in the Settings dialog.
 
 
 
@@ -164,15 +164,15 @@ This is not a ConEmu's problem, please contact your application author.
 
 **This question covers only [console applications](ConsoleApplication.html)!**
 
-**A.** Certain programs work with the console's alternative buffer - e.g. telnet.exe, launched without parameters. A history of this issue can be read here: [Issue 65](http://github.com/Maximus5/conemu-old-issues/issues/65). The problem is fixed in version 120504 (the «Inject [ConEmuHk](ConEmuHk.html)» flag must be set). In previous versions, the workaround was to show the real console (CtrlWinAltSpace), and temporarily work with it.
+**A.** Certain programs work with the console's alternative buffer - e.g. telnet.exe, launched without parameters. A history of this issue can be read here: [Issue 65](http://github.com/Maximus5/conemu-old-issues/issues/65). The problem is fixed in version 120504 (the ‘Inject [ConEmuHk](ConEmuHk.html)’ flag must be set). In previous versions, the workaround was to show the real console (CtrlWinAltSpace), and temporarily work with it.
 
 
-**A.** As a result of a ShellExecuteEx bug, on certain operating systems the console process was launched with an incorrect output buffer handle. To fix the problem, the «Inject ConEmuHk» flag must be set. If the problem persists - create a new [Issue](http://code.google.com/p/conemu-maximus5/issues/entry) with a detailed description of the problem, and attach the debug log of the launched program: «Settings -> Debug -> Shell and processes».
+**A.** As a result of a ShellExecuteEx bug, on certain operating systems the console process was launched with an incorrect output buffer handle. To fix the problem, the ‘Inject ConEmuHk’ flag must be set. If the problem persists - create a new [Issue](http://code.google.com/p/conemu-maximus5/issues/entry) with a detailed description of the problem, and attach the debug log of the launched program: ‘Settings -> Debug -> Shell and processes’.
 
 
 
 
-#### Q. A program does not work in «Long console output» mode.   {#q-1-13}
+#### Q. A program does not work in ‘Long console output’ mode.   {#q-1-13}
 
 
 **A.** Certain programs don't work correctly with a long console buffer. Some examples are bview, Aurora, and others. There are multiple solutions:

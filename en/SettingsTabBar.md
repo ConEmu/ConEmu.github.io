@@ -73,7 +73,7 @@ Charset
 
 
 
-%s - Title, %c - Console #, %n - Active process name, %p - PID,\n%m...m, %M...M - mark ‘...’ for active (m) and inactive (M) tab\n%a - ‘Admin’, %d - current shell directory, %f - folder, %% - %
+%s - Title, %c - Console #, %n - Active process name, %p - PID,\n%m...m, %M...M - mark ’...’ for active (m) and inactive (M) tab\n%a - ‘Admin’, %d - current shell directory, %f - folder, %% - %
 
 
 

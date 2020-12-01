@@ -92,7 +92,7 @@ Go to Registry editor (be careful!) and change appropriate value in the ConEmu s
 
 You may open settings dialog in several ways
 
-* Choosing «Settings...» menu item in ConEmu [system menu](SystemMenu.html), which can be opened
+* Choosing ‘Settings...’ menu item in ConEmu [system menu](SystemMenu.html), which can be opened
 * by right-clicking on the ‘Menu’ icon on the toolbar
 * by right-clicking on the window title
 * by left-clicking on the icon in the ConEmu title bar

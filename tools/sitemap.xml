@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://conemu.github.io/index.html</loc>
-    <lastmod>2020-10-11</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/donate.html</loc>
-    <lastmod>2020-10-11</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/Acknowledgement.html</loc>
-    <lastmod>2020-10-11</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -170,13 +170,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/ConEmuFAQ.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/ConEmuFAQ.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -230,13 +230,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/ConEmuXml.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/ConEmuXml.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/DefaultTasks.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -350,7 +350,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/Downloads.html</loc>
-    <lastmod>2020-10-11</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -398,13 +398,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/FAQ-1.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/FAQ-1.html</loc>
-    <lastmod>2017-08-19</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -428,73 +428,73 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/FAQ-2.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/FAQ-2.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/FAQ-3.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/FAQ-3.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/FAQ-4.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/FAQ-4.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/FAQ-5.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/FAQ-5.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/FAQ-6.html</loc>
-    <lastmod>2017-10-18</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/FAQ-6.html</loc>
-    <lastmod>2017-10-18</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/FAQ-7.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/FAQ-7.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -512,13 +512,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/FAQ-9.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/FAQ-9.html</loc>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -626,7 +626,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/Installation.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -662,7 +662,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/LaunchNewTab.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -698,7 +698,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/NewConsole.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -800,13 +800,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/Settings.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/Settings.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -860,7 +860,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsConfirm.html</loc>
-    <lastmod>2020-10-11</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -884,7 +884,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsFar.html</loc>
-    <lastmod>2018-05-02</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -902,13 +902,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsFast.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/SettingsFast.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1004,7 +1004,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/SettingsTabBar.html</loc>
-    <lastmod>2018-05-02</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1112,13 +1112,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/TabletPC.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/TabletPC.html</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1135,9 +1135,9 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://conemu.github.io/en/TaskBarBug.html</loc>
-    <lastmod>2020-11-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://conemu.github.io/en/TaskBarIcon.html</loc>
+    <lastmod>2020-12-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1154,7 +1154,7 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/TerminalModes.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1208,13 +1208,13 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/UsingMouse.html</loc>
-    <lastmod>2015-10-11</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/VersionComparison.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1238,31 +1238,31 @@
   </url>
   <url>
     <loc>https://conemu.github.io/en/Whats_New.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/ru/Whats_New.html</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/Whats_New_1.html</loc>
-    <lastmod>2015-09-14</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/Whats_New_2.html</loc>
-    <lastmod>2016-01-05</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://conemu.github.io/en/Whats_New_3.html</loc>
-    <lastmod>2015-10-16</lastmod>
+    <lastmod>2020-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

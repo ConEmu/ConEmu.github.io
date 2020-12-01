@@ -21,6 +21,8 @@ readalso:
    title: "Startup Directory"
  - url: SettingsTasks.html
    title: "Settings › Tasks page"
+ - url: ConEmuXml.html
+   title: "ConEmu: xml or registry settings storage"
 ---
 
 # ConEmu's Tasks

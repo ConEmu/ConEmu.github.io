@@ -170,7 +170,7 @@ you may use `-new_console` or `-cur_console` switches.
    u:"<user>:<pwd>" - specify user/pwd in args
    w[0] - Enable [disable] ‘Overwrite’ mode in command prompt by default
    W:"<tabwallpaper>" - use specified wallpaper for the tab
-   z - Don't use ‘Default terminal‘ feature for this command
+   z - Don't use ‘Default terminal’ feature for this command
 ~~~
 
 

@@ -99,13 +99,13 @@ breadcrumbs:
 <h4><a name="Changes"></a>Changes<a href="#Changes" class="section_anchor"></a></h4>
 <ul><li><a title="при переименованном far.exe конэму не видит плагин conemu.dll (со всеми вытекающими последствиями)…" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/440">Issue 440&nbsp;</a>: Игнорировалось наличие плагина ConEmu.x64.dll если Far.exe был переименован. </li>
 <li><a title="ConEmu 2011.10.19 - сломался QView + PictureVew2" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/441">Issue 441&nbsp;</a>: ConEmu 2011.10.19 - сломался QView + PictureVew2. </li>
-<li>Диалог создания/пересоздания консоли. </li><blockquote>&#x27;Команда по умолчанию&#x27; - то, что запускается при старте ConEmu (например &quot;C:\Far\Far.exe&quot;). 
-&#x27;Текущая команда&#x27; - то, что запущено в текущей консоли  (например &quot;C:\Far\Far64.exe /w&quot;). 
-При создании новой консоли в диалоге отображается &#x27;Команда по умолчанию&#x27;, &#x27;Текущая команда&#x27; 
-добавляется в историю (выпадающий список) следующим пунктом. Таким образом, поведение ConEmu 
-при отображении диалога теперь соответствует &#x27;тихому&#x27; созданию новой консоли ([ ] Create confirmation). 
-При пересоздании активной консоли в диалоге отображается &#x27;Текущая команда&#x27;, а &#x27;Команда по умолчанию&#x27; 
-добавляется в историю (выпадающий список) следующим пунктом. 
+<li>Диалог создания/пересоздания консоли. </li><blockquote>&#x27;Команда по умолчанию&#x27; - то, что запускается при старте ConEmu (например &quot;C:\Far\Far.exe&quot;).
+&#x27;Текущая команда&#x27; - то, что запущено в текущей консоли  (например &quot;C:\Far\Far64.exe /w&quot;).
+При создании новой консоли в диалоге отображается &#x27;Команда по умолчанию&#x27;, &#x27;Текущая команда&#x27;
+добавляется в историю (выпадающий список) следующим пунктом. Таким образом, поведение ConEmu
+при отображении диалога теперь соответствует &#x27;тихому&#x27; созданию новой консоли ([ ] Create confirmation).
+При пересоздании активной консоли в диалоге отображается &#x27;Текущая команда&#x27;, а &#x27;Команда по умолчанию&#x27;
+добавляется в историю (выпадающий список) следующим пунктом.
 </blockquote><li>Для некоторых пунктов меню (таба и системного) начали всплывать подсказки. </li>
 <li>Вернул slideshow для PictureView2 (кнопка Pause, интервал &#x27;-&#x27; и &#x27;+&#x27; на <i>основной</i> клавиатуре). </li>
 <li>Продолжение GUI приложений во вкладках. </li></ul>
@@ -131,8 +131,8 @@ breadcrumbs:
 <h2><a name="Build_111023"></a>Build 111023<a href="#Build_111023" class="section_anchor"></a></h2>
 
 <h4><a name="Changes"></a>Changes<a href="#Changes" class="section_anchor"></a></h4>
-<ul><li>Ресайз окна «HostKey»+стрелки не работал, если «HostKey» был переопределен (не Win). </li>
-<li>При включенном флажке &#x27;«User screen» transparency&#x27; часть картинки (PicView/MMView) могла оставаться невидимой. </li>
+<ul><li>Ресайз окна ‘HostKey‘+стрелки не работал, если ‘HostKey’ был переопределен (не Win). </li>
+<li>При включенном флажке &#x27;‘User screen’ transparency&#x27; часть картинки (PicView/MMView) могла оставаться невидимой. </li>
 <li><a title="transparent работает не коректно" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/423">Issue 423&nbsp;</a>: При просмотре картинок (PicView и т.п.) временно отключается альфа-прозрачность. </li>
 <li>Макросы в Far могли не выполняться, пока мышкой не дернешь над консолью. </li>
 <li>ConEmu падал, если все консольные процессы завершались пока было открыто окно &#x27;Recreate console&#x27;. </li>
@@ -419,9 +419,9 @@ breadcrumbs:
 <h2><a name="Build_110218"></a>Build 110218<a href="#Build_110218" class="section_anchor"></a></h2>
 
 <h4><a name="Major_changes"></a>Major changes<a href="#Major_changes" class="section_anchor"></a></h4>
-<ul><li>Хуки системных функций теперь устанавливаются не через плагин, а через ConEmuHk.dll (что позволит обрабатывать не только far.exe, но и любой процесс, запущенный в этой консоли). В результате вылечен <a title="2009.7.21 зависание при выполненинии chcp 1251 на win2003" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/60">Issue 60&nbsp;</a>, на подходе <a title="ConEmu.Maximus5.090725.7z - неработает Telnet.exe" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/65">Issue 65&nbsp;</a> и портабельный реестр. Часть кода по «внедрению» взята из Console2. </li>
+<ul><li>Хуки системных функций теперь устанавливаются не через плагин, а через ConEmuHk.dll (что позволит обрабатывать не только far.exe, но и любой процесс, запущенный в этой консоли). В результате вылечен <a title="2009.7.21 зависание при выполненинии chcp 1251 на win2003" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/60">Issue 60&nbsp;</a>, на подходе <a title="ConEmu.Maximus5.090725.7z - неработает Telnet.exe" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/65">Issue 65&nbsp;</a> и портабельный реестр. Часть кода по ‘внедрению’ взята из Console2. </li>
 <li>Переменная окружения &quot;ComSpec&quot; более не переопределяется, а переменная &quot;ComSpecC&quot; теперь не создается. </li>
-<li>Настройки конфигурации без имени (нет ключа &quot;/config «name»&quot; в параметрах ConEmu.exe) хранятся в &quot;Software\ConEmu\.Vanilla&quot;. Если ключ &quot;Software\ConEmu\.Vanilla&quot; ранее отсутствовал - он создается копированием из &quot;Software\ConEmu&quot;. </li>
+<li>Настройки конфигурации без имени (нет ключа &quot;/config ‘name’&quot; в параметрах ConEmu.exe) хранятся в &quot;Software\ConEmu\.Vanilla&quot;. Если ключ &quot;Software\ConEmu\.Vanilla&quot; ранее отсутствовал - он создается копированием из &quot;Software\ConEmu&quot;. </li>
 <li>В тестовом режиме - поддержка Far3. </li>
 <li>Изменения записи событий в консольный буфер ввода (ждем чистого буфера только для мышиных кнопок). </li>
 <li>В диалог настроек добавлена вкладка &#x27;Debug&#x27;. Если она открыта - в ней отображается журнал запускаемых в консоли процессов. </li></ul>
@@ -479,10 +479,10 @@ breadcrumbs:
 <h4><a name="Changes"></a>Changes<a href="#Changes" class="section_anchor"></a></h4>
 <ul><li>В архивы (7z) предыдущих версий случайно попал ConEmu64.exe. Для сильно желающих, 64битная версия GUI доступна в msi. </li>
 <li>При запуске ConEmu без параметров Far 2 по умолчанию запускается с ключом /w. </li>
-<li>Положено начало &#x27;GUI-макросам&#x27;. Смысл в том, чтобы дать фару &#x27;порулить&#x27; параметрами ConEmu. </li><blockquote>Пример вызова через callplugin (Far 2): 
+<li>Положено начало &#x27;GUI-макросам&#x27;. Смысл в том, чтобы дать фару &#x27;порулить&#x27; параметрами ConEmu. </li><blockquote>Пример вызова через callplugin (Far 2):
 <pre class="prettyprint">$if (callplugin(0x43454D55,&quot;IsConEmu()&quot;)!=1 &amp;&amp; env(&quot;ConEmuMacroResult&quot;)==&quot;Yes&quot;) MsgBox(&quot;Macro&quot;, &quot;Far started under ConEmu&quot;) $end</pre>
-В Far 1 (врочем, как и в Far 2) для исполнения GUI-макроса (и просмотра его результата) можно использвать меню плагина. 
-Пока что поддерживаются следующие функции: 
+В Far 1 (врочем, как и в Far 2) для исполнения GUI-макроса (и просмотра его результата) можно использвать меню плагина.
+Пока что поддерживаются следующие функции:
 <pre class="prettyprint">    IsConEmu()
      - возвращает &quot;Yes&quot; если Far прицеплен к ConEmu
     FindEditor(&quot;&lt;FullEditFileName&gt;&quot;), FindViewer(&quot;&lt;FullViewerFileName&gt;&quot;), FindFarWindow(&lt;WindowType&gt;,&quot;&lt;WindowTitle&gt;&quot;)
@@ -761,8 +761,8 @@ breadcrumbs:
     Esc
     $if (Shell) F10 $if (Dialog) Enter $end $Exit $end
     F10</pre>
-<blockquote>Макрос можно настроить (реестр/xml), параметр &quot;SafeFarCloseMacro&quot;. 
-Внимание! Если перед закрытием окна в Far открыты редакторы - они могут быть сохранены в режиме сохранения изменений. 
+<blockquote>Макрос можно настроить (реестр/xml), параметр &quot;SafeFarCloseMacro&quot;.
+Внимание! Если перед закрытием окна в Far открыты редакторы - они могут быть сохранены в режиме сохранения изменений.
 </blockquote><li>Некоторые изменения в установке хуков (плагин). </li></ul>
 
 <h2><a name="Build_100704"></a>Build 100704<a href="#Build_100704" class="section_anchor"></a></h2>
@@ -952,7 +952,7 @@ breadcrumbs:
 
 <h4><a name="Changes"></a>Changes<a href="#Changes" class="section_anchor"></a></h4>
 <ul><li>Перетрях диалога настроек. Добавлена новая вкладка &#x27;Tabs&#x27;. На ней теперь настройки хоткеев, мультиконсоли и табов. </li>
-<li>«Host-key»+Number можно отключить. </li>
+<li>‘Host-key‘+Number можно отключить. </li>
 <li>Разрешен D&amp;D на с активной на активную панель в режиме создания ярлыка. </li>
 <li>!RClick на табе или кнопке с номером консоли на тулбаре вызывает контекстное меню. </li>
 <li>В контекстном меню (таб/тулбар) созданы пункты &#x27;Save&#x27; и &#x27;Save all&#x27; для сохранения открытых редакторов FAR в <strong>активной</strong> консоли. Макрос для &#x27;Save all&#x27; можно настроить, для &#x27;Save&#x27; выполняется макрос &#x27;F2&#x27;. </li>
@@ -1016,7 +1016,7 @@ breadcrumbs:
 <ul><li><a title="ConEmu.Maximus5.100223.7z - странный показ/прятание панелей мышкой" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/198">Issue 198&nbsp;</a>: Redraw in FAR1. </li>
 <li><a title="100223: Fade-effect" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/199">Issue 199&nbsp;</a>: Не отключался Fade-effect. </li>
 <li><a title="Conemu 2010.2.24 - при детаче новая консоль становится с BufferHeight mode is ON" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/201">Issue 201&nbsp;</a>, <a title="ConEmu window extends to scrollback on attach " class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/202">Issue 202&nbsp;</a>: Ошибочно включался режим прокрутки после аттача консоли к ConEmu. </li>
-<li>При включенном &#x27;Transparent «User screen»&#x27; или отключенном &#x27;Monospace&#x27; в некоторых случаях падали с переполнением стека. </li>
+<li>При включенном &#x27;Transparent ‘User screen’&#x27; или отключенном &#x27;Monospace&#x27; в некоторых случаях падали с переполнением стека. </li>
 <li>Minor resize optimization. </li></ul>
 
 <h2><a name="Build_100223"></a>Build 100223<a href="#Build_100223" class="section_anchor"></a></h2>
@@ -1046,7 +1046,7 @@ breadcrumbs:
 <li>При ресайзе проверяем максимально допустимый размер real-консоли. </li>
 <li>Немного ускорена передача клавиатурного и мышиного ввода в консоль. </li>
 <li>Возможность настроить &#x27;Host-клавишу&#x27; для горячих клавиш мультиконсоли. Ранее были жестко выбраны правый или левый Win. Теперь можно выбрать Win, Apps, и [правый|левый|любой] Shift/Ctrl/Alt. Можно выбрать комбинацию до 3-х модификаторов.  Включение в диалоге настройки &#x27;Hotkey settings&#x27; обоих флажка модификатора (например LCtrl &amp; RCtrl) означает &#x27;любой&#x27;.  Не рекомендуется использовать Apps в сочетании с другими модификаторами - Apps провалится в консоль. </li>
-<li>Доработана прозрачность «User screen». Место под приподнятыми панелями считается прозрачным. CtrlAltShift показывает «User screen» (временно отменяет прозрачность). </li>
+<li>Доработана прозрачность ‘User screen’. Место под приподнятыми панелями считается прозрачным. CtrlAltShift показывает ‘User screen’ (временно отменяет прозрачность). </li>
 <li>В поставку добавлен файл &#x27;ConEmu.Addons\CallPlugin.txt&#x27;. В нем перечислены возможные коды команд callplugin (макросы FAR2). </li>
 <li>Доработан ресайз панелей мышкой. В FAR2 можно перед началом ресайза высоты зажать Shift, тогда будет меняться высота правой или левой панели (той, по рамке которой щелкнули). </li>
 <li><a title="Предложение" class=closed_ref href="http://github.com/Maximus5/conemu-old-issues/issues/160">Issue 160&nbsp;</a>: Разрешен драг элемента &#x27;..&#x27;. При этом перетаскивается текущая папка (не ее содержимое!). <strong>Внимание</strong>: допустимость такого драга НЕ проверяется и остается на совести пользователя.  При дропе на соседнюю панель предварительно выполняется макрос: <code>$If (APanel.SelCount==0 &amp;&amp; APanel.Current==&quot;..&quot;) CtrlPgUp $End</code> </li></ul>
@@ -1080,7 +1080,7 @@ breadcrumbs:
 <li>Улучшена работа при наличии нескольких мониторов. </li>
 <li>Переделано скрытие заголовка &#x27;Hide caption always&#x27;. Теперь заголовок скрывается вместе с рамкой, но при наведении мышки на скрытый заголовок/рамку - они появляются. Вокруг видимой части остается видимой тонкая (1 пиксел) часть рамки. Ширина настраивается &quot;HideCaptionAlwaysFrame&quot;. </li>
 <li>Желающие иметь FAR на рабочем столе могут поиграться с новой версией. Включать флажок &#x27;Desktop mode&#x27;. При желании - настроить стартовый размер и положение. </li>
-<li>В тестовом режиме появилась &#x27;прозрачность панелей&#x27;. Пока тормознуто и будет переделано. Смысл в том, чтобы при скрытии одной или двух панелей вместо них отображался рабочий стол, но сохранялась возможность посмотреть «User screen» приподняв край панелей (той же мышкой, например:). Включать флажок &#x27;Transparent «User screen» while panel(s) is turned off&#x27;. По умолчанию установлен цвет &#x27;ColorKey&#x27; - &#x27;1 1 1&#x27;, чтобы обычный черный консоли не пропадал как прозрачный. Для работы фичи необходим плагин ConEmu. Проверялось на черном фоне «User screen»; <code>[ ]</code> Always show menu bar; <code>[x]</code> Show key bar. При скрытии панели первая ячейка консоли в первой строке не скрывается, чтобы панели можно было легко вернуть мышкой. </li></ul>
+<li>В тестовом режиме появилась &#x27;прозрачность панелей&#x27;. Пока тормознуто и будет переделано. Смысл в том, чтобы при скрытии одной или двух панелей вместо них отображался рабочий стол, но сохранялась возможность посмотреть ‘User screen’ приподняв край панелей (той же мышкой, например:). Включать флажок &#x27;Transparent ‘User screen’ while panel(s) is turned off&#x27;. По умолчанию установлен цвет &#x27;ColorKey&#x27; - &#x27;1 1 1&#x27;, чтобы обычный черный консоли не пропадал как прозрачный. Для работы фичи необходим плагин ConEmu. Проверялось на черном фоне ‘User screen’; <code>[ ]</code> Always show menu bar; <code>[x]</code> Show key bar. При скрытии панели первая ячейка консоли в первой строке не скрывается, чтобы панели можно было легко вернуть мышкой. </li></ul>
 
 <h2><a name="Build_100208"></a>Build 100208<a href="#Build_100208" class="section_anchor"></a></h2>
 
@@ -1264,15 +1264,15 @@ breadcrumbs:
 
 <h4><a name="Changes"></a>Changes<a href="#Changes" class="section_anchor"></a></h4>
 <ul><li>В папке &#x27;Plugins\ConEmu&#x27; теперь выкладываются обе версии плагина (x64 и x86) для упрощения установки и использования. </li>
-<li>Ускорена работа &quot;RClick4ContextMenu&quot;, снято требование к кнопке Apps или настройке макроса. </li><blockquote>Возможность настройки макроса осталась, но за ненадобностью переименована в &quot;RightClickMacro2&quot;. 
-(Для информации) Макрос по умолчанию теперь такой: 
-$If (CmdLine.Empty) %Flg_Cmd=1; %CmdCurPos=CmdLine.ItemCount-CmdLine.CurPos+1; %CmdVal=CmdLine.Value; Esc $Else %Flg_Cmd=0; $End $Text &quot;rclk_gui:&quot; Enter $If (%Flg_Cmd==1) $Text %CmdVal %Flg_Cmd=0; %Num=%CmdCurPos; $While (%Num!=0) %Num=%Num-1; !CtrlS $End $End 
-</blockquote><li>Добавлена возможность одновременного запуска нескольких консолей. </li><blockquote>Пример: conemu.exe /cmd @startfile.txt 
-В файле каждая строка соответсвует запускаемой команде. 
-Допустимо указание в строке параметра /BufferHeight. 
-Если в начале строки стоит &quot;&gt;&quot; - эта консоль будет активной после завершения запуска. 
-Если в начале строки стоит &quot;<code>*</code>&quot; - эта консоль будет запущена под администратором. 
-Пример файла startfile.txt (лидирующие пробелы и табуляции игнорируются): 
+<li>Ускорена работа &quot;RClick4ContextMenu&quot;, снято требование к кнопке Apps или настройке макроса. </li><blockquote>Возможность настройки макроса осталась, но за ненадобностью переименована в &quot;RightClickMacro2&quot;.
+(Для информации) Макрос по умолчанию теперь такой:
+$If (CmdLine.Empty) %Flg_Cmd=1; %CmdCurPos=CmdLine.ItemCount-CmdLine.CurPos+1; %CmdVal=CmdLine.Value; Esc $Else %Flg_Cmd=0; $End $Text &quot;rclk_gui:&quot; Enter $If (%Flg_Cmd==1) $Text %CmdVal %Flg_Cmd=0; %Num=%CmdCurPos; $While (%Num!=0) %Num=%Num-1; !CtrlS $End $End
+</blockquote><li>Добавлена возможность одновременного запуска нескольких консолей. </li><blockquote>Пример: conemu.exe /cmd @startfile.txt
+В файле каждая строка соответсвует запускаемой команде.
+Допустимо указание в строке параметра /BufferHeight.
+Если в начале строки стоит &quot;&gt;&quot; - эта консоль будет активной после завершения запуска.
+Если в начале строки стоит &quot;<code>*</code>&quot; - эта консоль будет запущена под администратором.
+Пример файла startfile.txt (лидирующие пробелы и табуляции игнорируются):
 <pre class="prettyprint">&gt;E:\Source\FARUnicode\trunk\unicode_far\Debug.32.vc\far.exe
 */!BufferHeight 400 cmd
 /!BufferHeight 1000 powershell</pre>
@@ -1355,11 +1355,11 @@ $If (CmdLine.Empty) %Flg_Cmd=1; %CmdCurPos=CmdLine.ItemCount-CmdLine.CurPos+1; %
 
 <h4><a name="Bugfixes"></a>Bugfixes<a href="#Bugfixes" class="section_anchor"></a></h4>
 <ul><li>Могли злобно виснуть (или падать?) при попытке ресайза. </li>
-<li>В FAR2 активация плагина переведена на ACTL_SYNCHRO. Теперь в макросе для EMenu можно использовать перфикс &#x27;@&#x27;. </li><blockquote>Текстовое EMenu теперь всегда активируется по центру экрана  
-(Side effect - при нажатии клавиатуры скрытая реальная консоль сдвигается в сторону от мышки). 
-В текущей версии рекомендуются такие настройки EMenu:  
-Apps - показывает текстовое меню (автоматически отображается по центру окна). 
-Для мыши - макрос вида &quot;RightClickMacro&quot;=&quot;@F11 e Enter Enter&quot; в настройках ConEmu. 
+<li>В FAR2 активация плагина переведена на ACTL_SYNCHRO. Теперь в макросе для EMenu можно использовать перфикс &#x27;@&#x27;. </li><blockquote>Текстовое EMenu теперь всегда активируется по центру экрана
+(Side effect - при нажатии клавиатуры скрытая реальная консоль сдвигается в сторону от мышки).
+В текущей версии рекомендуются такие настройки EMenu:
+Apps - показывает текстовое меню (автоматически отображается по центру окна).
+Для мыши - макрос вида &quot;RightClickMacro&quot;=&quot;@F11 e Enter Enter&quot; в настройках ConEmu.
 </blockquote></ul>
 
 <h2><a name="Build_090913"></a>Build 090913<a href="#Build_090913" class="section_anchor"></a></h2>

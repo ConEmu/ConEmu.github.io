@@ -630,9 +630,9 @@
       rus: "Git For Windows"
       url: "GitForWindows.html"
     -
-      eng: "Task bar bug"
-      rus: "Task bar bug"
-      url: "TaskBarBug.html"
+      eng: "Task bar pinned icon"
+      rus: "Task bar pinned icon"
+      url: "TaskBarIcon.html"
     -
       eng: "Insert/Overwrite"
       rus: "Вставка/Замена"

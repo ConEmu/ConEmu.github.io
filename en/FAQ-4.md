@@ -35,9 +35,9 @@ otherlang:
 **A.** You can configure updates however you like it.
 
 * Proxy support.
-* Selection between «stable» or «alpha» builds.
+* Selection between ‘stable’ or ‘alpha’ builds.
 * In the presence of a new version, ConEmu can ask for confirmation before downloading the package (archive or installer).
-* If ConEmu was installed using the installer, and the install path for ConEmu.exe (or ConEmu64.exe) coincides with the current process, updating is done using the installer («`ConEmuSetup.*.exe`»).
+* If ConEmu was installed using the installer, and the install path for ConEmu.exe (or ConEmu64.exe) coincides with the current process, updating is done using the installer (`ConEmuSetup.*.exe`).
 * Otherwise, updating is done using the 7-zip archive.
 * Updating from the archive requires that file compression software ([7-Zip](http://www.7-zip.org/) or [WinRAR](http://www.rarlab.com/)) is installed.
 * By default, packages are downloaded to %TEMP% and deleted after installation is complete.

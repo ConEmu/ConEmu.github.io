@@ -43,7 +43,7 @@ Frequenly asked user questions about ConEmu usage.
 * [Q. How to use the '-new_console' parameter?](FAQ-1.html#q-1-10)
 * [Q. Which environment variables does ConEmu set?](FAQ-1.html#q-1-11)
 * [Q. Launched console program outputs nothing.](FAQ-1.html#q-1-12)
-* [Q. A program does not work in «Long console output» mode.](FAQ-1.html#q-1-13)
+* [Q. A program does not work in ‘Long console output’ mode.](FAQ-1.html#q-1-13)
 
 ### [Distribution package](FAQ-2.html#q-2-distr)  {#faq-2}
 * [Q. What is the purpose of ConEmuSetup.exe?](FAQ-2.html#q-2-1)
@@ -65,7 +65,7 @@ Frequenly asked user questions about ConEmu usage.
 * [Q. What is the purpose of the files ConEmuC.exe, ConEmuCD.dll and ConEmuHk .dll in 64-bit OS?](FAQ-5.html#q-5-1)
 * [Q. What is the purpose of the files ConEmuC64 .exe, ConEmuCD64.dll and ConEmuHk64 .dll in the 32-bit version of ConEmu ?](FAQ-5.html#q-5-2)
 * [Q. After running the commands start, echo (and other cmd.exe commands) on 64-bit systems, an error similar to "File not found. Cannot execute. start" appears](FAQ-5.html#q-5-3)
-* [Q. Attempts to launch applications (from Far Manager) causes a system error such as: «Error launching application (0xc0000142). Click "OK" to exit.»](FAQ-5.html#q-5-4)
+* [Q. Attempts to launch applications (from Far Manager) causes a system error such as: ‘Error launching application (0xc0000142). Click "OK" to exit.’](FAQ-5.html#q-5-4)
 * [Q. What is going on with environment variables in 64-bit OS?](FAQ-5.html#q-5-5)
 
 ### [Configuration](FAQ-6.html#q-6-settings)  {#faq-6}
@@ -81,7 +81,7 @@ Frequenly asked user questions about ConEmu usage.
 * [Q. How to set up Git Bash Here in ConEmu ?](FAQ-6.html#q-6-8)
 * [Q. How to export ConEmu settings?](FAQ-6.html#q-6-9)
 * [Q. How to attach a running console application to a new ConEmu instance?](FAQ-6.html#q-6-10)
-* [Q. How to delete items from the «Create new console» dropdown?](FAQ-6.html#q-6-11)
+* [Q. How to delete items from the ‘Create new console’ dropdown?](FAQ-6.html#q-6-11)
 
 ### [ConEmu automation](FAQ-11.html#q-11-automation)  {#faq-11}
 * [Q. How to distinguish different ConEmu instances (windows)?](FAQ-11.html#q-11-1)

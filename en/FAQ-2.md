@@ -57,7 +57,7 @@ when running commands/applications, and attaching "new" consoles
 * It displays the hidden real console (with FAR), should ConEmu crash.
 * After a console detach (Ctrl-Alt-Tab), it spawns a new ConEmu for the new console.
 * It is required to retrieve the long output buffer for console applications.
-* It is required for proper mouse function when using «far /w» (System\WindowMode=1).
+* It is required for proper mouse function when using ‘far /w’ (System\WindowMode=1).
 
 
 
@@ -77,7 +77,7 @@ multiple problems manifesting both with and without ConEmu.
 * Implements hosting of GUI applications in a ConEmu tab, etc.
 * Implements ANSI X3.64 with xterm 256 color extension.
 * Implements "Change prompt text cursor position with Left Click".
-* And any other existing or future «inprocess» features.
+* And any other existing or future ‘inprocess’ features.
 
 
 
@@ -85,6 +85,6 @@ multiple problems manifesting both with and without ConEmu.
 
 **A.** This file implements support for the extended console feature in
 Far 3.x, and must be placed in the same directory as ConEmuHk.dll.
-In its presence and enabled «TrueMod support» option, it is possible
+In its presence and enabled ‘TrueMod support’ option, it is possible
 to configure and use arbitrary (24-bit) colors and styles
 (bold/italic/underline) in Far Manager.

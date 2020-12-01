@@ -90,14 +90,14 @@ however *it will also fail to create a correct minidump for a 32-bit process on 
 
 **Note!** Sometimes PID column in the Task Manager window may be hidden, enable it in Task manager settings.
 
-* Windows 7 and below: Task Manager -> Processes tab -> Menu -> View -> Select Columns -> Check «PID».
-* Windows 8: Task Manager -> Show «More details» -> Processes tab -> Right click on column title -> Check «PID».
+* Windows 7 and below: Task Manager -> Processes tab -> Menu -> View -> Select Columns -> Check ‘PID’.
+* Windows 8: Task Manager -> Show ‘More details’ -> Processes tab -> Right click on column title -> Check ‘PID’.
 
 
 
 #### Q. How to run Task Manager   {#q-9-5}
 
-**A.** Press **Ctrl+Shift+Esc** or right click on taskbar and choose menu item «Task Manager».
+**A.** Press **Ctrl+Shift+Esc** or right click on taskbar and choose menu item ‘Task Manager’.
 
 
 

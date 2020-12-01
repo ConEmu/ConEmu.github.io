@@ -26,6 +26,8 @@ readalso:
    title: "Installation Folders Structure"
  - url: Installation.html
    title: "Installation"
+ - url: TaskBarIcon.html
+   title: "Taskbar pinned icon"
 
 add_download: "no"
 ---
@@ -47,8 +49,8 @@ add_download: "no"
 ## Distros comparison
 In general, there is no significant differences between distros.
 Each may be used as portable.
-Each may be used on any Windows versions (x32 or x64).
-Windows 2000 and above required.
+Each may be used on any Windows versions (32-bit or 64-bit).
+Windows XP or above is required.
 
 There are very small set of differences between them. Read below.
 
@@ -58,7 +60,7 @@ In fact, `ConEmuSetup.*.exe` is a pack of both both x86 and x64
 So user does not need to download two `msi` packets for different OS,
 but just get and run single `ConEmuSetup.*.exe`.
 
-Installer contains both x86 (aka x32) and x64 versions of all ConEmu binaries.
+Installer contains both x86 (32-bit) and x64 versions of all ConEmu binaries.
 
 Installer also contains [KeyEvents](KeyEvents.html) tool which can be downloaded
 separately from [Sourceforge.net](https://sourceforge.net/projects/conemu/files/Tools/).
@@ -77,14 +79,14 @@ Example (run x64 auto update as administrator):
 
 ### 7-Zip package
 [7-Zip](http://www.7-zip.org/) archive named `ConEmuPack.*.7z`
-contains both x86 (aka x32) and x64 versions of all ConEmu binaries.
+contains both x86 (32-bit) and x64 versions of all ConEmu binaries.
 
 Differences from an [Installer](#Installer):
   - You need [7-Zip](http://www.7-zip.org/) or [WinRar](http://www.rarlab.com/download.htm) to unpack it;
   - You have to create a shortcut or add ConEmu folder to the `%PATH%` manually.
 
-But who cares? Most of power users have either 7-Zip or WinRar installed,
-and it's very easy to pin `ConEmu.exe` to the Windows TaskBar from the
+Most of power users have either 7-Zip or WinRar installed, and it's very easy
+to pin `ConEmu.exe` to the [Windows TaskBar](TaskBarIcon.html) from the
 folder you've extracted ConEmu files.
 
 7-Zip packages does not contain [KeyEvents](KeyEvents.html) tool.
@@ -111,7 +113,7 @@ To install ConEmu into the PortableApps.com platform:
 ## x64 or x86
 ConEmu is distributed as msi package `ConEmuSetup.*.exe`,
 or [7-Zip](http://www.7-zip.org/) archive named `ConEmuPack.*.7z`.
-Both of them contain x86 (aka x32) and x64 versions of all ConEmu binaries.
+Both of them contain x86 (32-bit) and x64 versions of all ConEmu binaries.
 
 Well, there is also PortableApps.com packages named `ConEmu_*_English.paf.exe`.
 
@@ -126,42 +128,42 @@ Download page: <{{ site.fosshub }}>
 
 {% include download.html %}
 
-**PS**. In fact, it does not matter which version of GUI you use (ConEmu.exe or ConEmu64.exe).
+**PS**. It does not matter which version of GUI you use (ConEmu.exe or ConEmu64.exe).
 ConEmu automatically selects the required files (ConEmuHk.dll or ConEmuHk64.dll and so on)
-to work with choosen console or GUI application.
+to work with started console or GUI application.
 
 
 
 ## Release stages
 ConEmu released with 3-stage manner: Stable, Preview and Alpha.
-Thought, it must be obvious, that if one don't want new features **and bugfixes** - he may stuck on stable.
-But it is strange (for me) enough when user reports a bug which was fixed months ago...
+If one doesn't want to have new features **and bugfixes**, they may keep on stable.
+But please don't report bugs that are already fixed in [Preview or Alpha](BadIssue.html#Update_your_installation) versions.
 
 ### Stable
-This is «Stable» version of ConEmu.
+This is ‘Stable’ version of ConEmu.
 
-Please, don't think that «Stable» is «totally bug-free»,
-in the ConEmu project some builds are marked as «Stable»
+Please, don't think that ‘Stable’ is ‘totally bug-free’,
+in the ConEmu project some builds are marked as ‘Stable‘
 when they are ready (in my opinion) for public.
 
 But! Bugfixes, patches, features will not be applied to
-«Stable» builds until next «Stable» comes!
+‘Stable’ builds until next ‘Stable’ comes!
 
-On the other hand, that means that «Stable» builds will
+On the other hand, that means that ‘Stable’ builds will
 not contains breaking changes, side by side with bugfixes
 and new features.
 
 
 ### Preview
-**Recommended** for most users.
+It's **recommended** for most users.
 
-This is «Preview» (also known as «Release Preview») version of ConEmu.
+This is ‘Preview’ (also known as ‘Release Preview’) version of ConEmu.
 Most of latests bugfixes and features, but these builds comes with delay
-in comparison with «Developer» build. Trying to avoid creating new bugs :)
+in comparison with ‘Developer’ build. Trying to avoid creating new bugs :)
 
 
 ### Alpha
-This is «Developer» (also known as «Alpha») version of ConEmu.
+This is ‘Developer’ (also known as ‘Alpha’) version of ConEmu.
 Latests bugfixes and features, but some builds may be unstable
 due to changes in the code.
 
