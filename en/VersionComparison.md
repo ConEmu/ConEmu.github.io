@@ -124,8 +124,6 @@ So, You can simply unpack downloaded archive or install ConEmu to the
 [Far Manager](http://www.farmanager.com/download.php?l=en) folder
 or any other folder, if you are not using Far Manager..
 
-Download page: <{{ site.fosshub }}>
-
 {% include download.html %}
 
 **PS**. It does not matter which version of GUI you use (ConEmu.exe or ConEmu64.exe).

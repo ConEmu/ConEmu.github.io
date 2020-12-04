@@ -17,6 +17,10 @@ readalso:
    title: Old Builds
  - url: LogFiles.html
    title: Log Files
+ - url: VersionComparison.html
+   title: Version Comparison
+
+add_download: "no"
 ---
 
 # Bad issues has no value
@@ -95,9 +99,10 @@ There is ConEmu [internal updater](UpdateModes.html).
 Just call it from [SystemMenu](SystemMenu.html) \ Help \ Check for updates.
 Or visit download page at [FossHub]({{ site.fosshub }}).
 
-Also, thanks to googlecode for stopping Download service,
-if you are using **very old build** (pre 140115)
-ConEmu may be **automatically** updated in **two steps** only.
+Please note that staying on **Stable** update channel you almost never get latest build
+with latest bugfixes. More about [release stages](VersionComparison.html#release-stages).
+
+{% include download.html %}
 
 
 
