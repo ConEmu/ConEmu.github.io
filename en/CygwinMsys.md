@@ -26,19 +26,21 @@ cygwin, msys, msysgit and ConEmu
 Please, don't report third-party bugs on the ConEmu issue tracker,
 report cygwin and msys bugs to their [authors](http://dir.gmane.org/gmane.os.cygwin)!
 
-ConEmu is terminal! It just the display for output of console applications.
-Bugs in applications will lead wrong behaviour and display output in ConEmu.
-Undoubtedly.
+ConEmu is a terminal! It's just the display for the output of your console applications.
+Bugs in these applications will lead to wrong behaviour and display output in ConEmu.
 
-**Experimental** [cygwin/msys terminal connector](#cygwin-connector) is on the way.
-
-Still thinking the problem is inside ConEmu? Read the rest of this wiki.
+If you think that the problem is in ConEmu? Read the rest of this wiki first.
 
 * [Some techinfo first](#Some_techinfo_first)
-  * [stdin/stdout redirection style](#stdin-stdout_redirection_style)
-    * [Pros](#Pros)
-    * [Cons](#Cons)
+  * [TTY style](#stdin-stdout_redirection_style)
+    * [TTY Pros](#tty_pros)
+    * [TTY Cons](#tty_cons)
   * [Windows console API style](#Windows_console_API_style)
+    * [ConAPI Pros](#conapi_pros)
+    * [ConAPI Cons](#conapi_cons)
+  * [Windows pseudoconsole style](#Windows_PTY)
+    * [PTY Pros](#pty_pros)
+    * [PTY Cons](#pty_cons)
 * [Complains](#Complains)
 * [Windows power](#Windows_power)
 * [Problems with cygwin](#Problems_with_cygwin)
@@ -56,31 +58,42 @@ Still thinking the problem is inside ConEmu? Read the rest of this wiki.
 
 ## Some techinfo first  {#Some_techinfo_first}
 
-There are two types of Windows console (terminal) emulators:
+There are three types of Windows console (terminal) emulators:
 
-* Based on [stdin/stdout redirection](#stdin-stdout_redirection_style) (in very simple terms).
-  Most known are
-  [mintty](https://github.com/mintty/mintty/)>,
+* Based on [stdin/stdout redirection](#stdin-stdout_redirection_style) (simplifying).
+  Examples:
+  [mintty](https://github.com/mintty/mintty/),
+  [wsltty](https://github.com/mintty/wsltty),
   [puttycyg](https://code.google.com/p/puttycyg/),
-  [Poderosa's cygterm](https://sourceforge.net/projects/poderosa/).
-* Based on [Windows console API](#Windows_console_API_style).
-  Most known are ConEmu,
+  [Poderosa](https://sourceforge.net/projects/poderosa/).
+* Based on [Windows classic console API](#Windows_console_API_style).
+  Examples:
+  [ConEmu](https://github.com/Maximus5/ConEmu),
   [Console](https://sourceforge.net/projects/console/),
   [ConsoleZ](https://github.com/cbucher/console/),
   [Take Command](http://jpsoft.com/).
+* Bases on new [Windows pseudoconsole API](#Windows_PTY).
+  Examples:
+  [Windows Terminal](https://github.com/microsoft/terminal).
 
 {% include in_article.html %}
 
-### stdin/stdout redirection style   {#stdin-stdout_redirection_style}
+
+
+### TTY style   {#stdin-stdout_redirection_style}
 
 Most of this type emulators are based on ‘POSIX layer’ -
 <a href="http://cygwin.com/" rel="nofollow">cygwin</a>,
 <a href="http://www.mingw.org/wiki/MSYS" rel="nofollow">msys</a>
 or <a href="http://msysgit.github.io/" rel="nofollow">msysgit</a>.
-AFAIK, msys was forked long ago from cygwin, that is why they are alike in many cases.
+msys was forked long ago from cygwin, that is why they are alike in many cases.
 In turn, there is another fork - msysgit was forked from msys...
 
-#### Pros  {#Pros}
+When TTY emulator starts it establishes stdin/stdout redirection
+where it may process [control sequences](AnsiEscapeCodes.html) emitted
+by console application.
+
+#### TTY Pros  {#tty_pros}
 
 Very fast output. Really. No need to use ‘slow’ Windows console subsystem,
 that's why the speed is limited mainly with pipe throughput.
@@ -88,26 +101,39 @@ that's why the speed is limited mainly with pipe throughput.
 ‘Easy’ implementation of ANSI support. All ANSI codes are processed inside the emulator.
 No need to translate them to and from Windows console subsystem.
 
-Almost unlimited backscroll buffer.
+Almost unlimited backscroll buffer (depends on implementation).
 
 
-#### Cons  {#Cons}
+#### TTY Cons  {#tty_cons}
 
 User can't run here large amount of programs designed for Windows console.
 For example, Powershell and Far Manager can't be started at all.
 **Official** Vim is not working. cmd.exe can do something here,
 but command history (Up arrow) is not working. And so on...
 
+In other words, if your console application was not linked with `cygwin1.dll`
+or `msys-2.0.dll` there are chances it's not working properly in TTY terminal.
+
 
 ### Windows console API style   {#Windows_console_API_style}
 
 These emulators always have hidden standard Windows console window.
-Say, they are wrappers around Windows API. That means all programs
-designed for Windows console sybsystem must be working perfectly.
-Of course, using these emulators, users will get bonuses like
-easy resizing and handy copy/pasting.
+Say, they are wrappers around Windows console API. That means all programs
+designed for Windows console sybsystem are expected to work properly.
+Using these emulators, users will get bonuses like easy resizing,
+convenient copy/pasting, hyperlinks processing, etc.
+
+#### ConAPI Pros  {#conapi_pros}
+
+Programs running in classic consoles have access to full set of Windows
+classic console API. That's why applications utilizing this set of API
+work way better compared with cygwin terminals.
+
+#### ConAPI Pros  {#conapi_cons}
 
 On the other hand, programs designed for ‘POSIX layer’ may fails here or there...
+For example, there were a lot of complains about ssh-ing to remove machines from
+the classic consoles.
 
 
 ## Complains  {#Complains}
