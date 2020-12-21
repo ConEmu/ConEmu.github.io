@@ -56,6 +56,13 @@ but does not have some window-related items.
 ### TSA   {#TSA}
 
 Taskbar status area. It's a part of Windows taskbar next to the clock.
+ConEmu may show the TSA icon in several cases:
+
+* [Always show TSA icon](https://conemu.github.io/en/SettingsTaskBar.html#id1507) option is checked.
+* ConEmu is minimized to TSA, e.g. via [Auto minimize to TSA](https://conemu.github.io/en/SettingsTaskBar.html#id1507) or right click
+  on the "Cross" button or [Hide to TSA menu](https://conemu.github.io/en/SystemMenu.html).
+* ConEmu is minimized and option [Don’t show ConEmu window on Taskbar](https://conemu.github.io/en/SettingsTaskBar.html#id2909) is selected.
+* ConEmu shows some warning message (e.g. about hotkey conflict). In the last case user should remove the reason of the warning to remove TSA icon.
 
 
 ### Host key   {#Host_key}
