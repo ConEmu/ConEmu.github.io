@@ -35,9 +35,11 @@ to run them anytime later by name or hotkey.
 
 ## Predefined tasks (command groups)  {#id2115}
 
-Task name (alias), surrounded by {...}, used in
-<a href="ToolBar.html"><code class="plus">[+]</code> menu</a>, [Recreate dialog](LaunchNewTab.html#Create_new_console_dialog)
-or [-run argument](ConEmuArgs.html) of ConEmu.exe.
+**Task name**, surrounded by {...}, may be used in
+<a href="ToolBar.html"><code class="plus">[+]</code> menu</a>,
+[Recreate dialog](LaunchNewTab.html#Create_new_console_dialog),
+[-run argument](ConEmuArgs.html) of ConEmu.exe
+or even in prompt via [ConEmuC.exe -c {task name}](ConEmuC.html#Commands).
 
 
 #### Hotkey  {#id2628}
@@ -68,7 +70,7 @@ This field may contain some optional switches like startup directory or icon.
 Here you may set the [tab](TabBar.html) icon, [startup directory](StartupDir.html),
 control if Task should be started in existing or new ConEmu window, etc.
 
-Full set of allowed switches is described here: [Tasks parameters](Tasks.html).
+Full set of allowed switches is described here: [Tasks parameters](Tasks.html#task-parameters).
 
 Example:
 ```
@@ -97,6 +99,16 @@ Example: run two consoles - Visual Studio and Powershell prompts. VS tab remains
 
 Read about [-new_console](NewConsole.html#syntax) switches to undestand full set
 of possible options to control console start up.
+
+One-level one-liner Tasks **nesting** is supported.
+E.g. if you define the `{MyTool}` task, you may create another task `{ToolSet}` with nested tasks.
+You may also run them in [splits](SplitScreen.html).
+
+```
+{MyTool} parameter-set-1
+{MyTool} parameter-set-2
+{MyTool} parameter-set-3
+```
 
 
 #### Add/refresh default tasks...  {#id2632}

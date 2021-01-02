@@ -77,7 +77,7 @@ You may specify font face name and size to the real console.
 
 ## ConEmuC.exe command line switches  {#ConEmuC_switches}
 
-**Note** From build 140106 you may use '-'style switches with ConEmuC too, for example, following commands acts the same.
+**Note** From build 140106 you may use '-'style switches with ConEmuC too, for example, following commands are the same.
 
 ~~~
 ConEmuC /IsConEmu
@@ -89,7 +89,7 @@ ConEmuC -IsConEmu
 ### Show help screen  {#HelpScreen}
 
 ~~~
-ConEmuC /?
+ConEmuC -?
 ~~~
 
 
@@ -97,11 +97,11 @@ ConEmuC /?
 ### Useful checks  {#UsefulChecks}
 
 ~~~
-ConEmuC /IsConEmu
+ConEmuC -IsConEmu
     returns 1 as errorlevel if running in ConEmu tab, 2 if not
-ConEmuC /IsAnsi
+ConEmuC -IsAnsi
     returns 1 as errorlevel if ANSI are processed, 2 if not
-ConEmuC /IsTerm
+ConEmuC -IsTerm
     returns 1 as errorlevel if running in telnet, 2 if not
 ~~~
 
@@ -110,19 +110,19 @@ ConEmuC /IsTerm
 ### Attach consoles to ConEmu  {#Attach}
 
 ~~~
-ConEmuC /AUTOATTACH [/GHWND=NEW|<HWND>]
+ConEmuC -AUTOATTACH [-GHWND=NEW|<HWND>]
     asynchronous attach to ConEmu GUI (for batches)
     always returns 0 as errorlevel on exit (Issue 1003)
-ConEmuC /ATTACH /NOCMD [/GHWND=NEW|<HWND>]
+ConEmuC -ATTACH -NOCMD [-GHWND=NEW|<HWND>]
     asynchronous attach current (existing) console to ConEmu
-ConEmuC /ATTACH [/GHWND=NEW|<HWND>] /[FAR|CON|TRM]PID=<PID>
+ConEmuC -ATTACH [-GHWND=NEW|<HWND>] -[FAR|CON|TRM]PID=<PID>
     synchronous attach specified console process to ConEmu
   Switches
-    /GHWND        - you may force new ConEmu window or attach to specific one
-    /PID=<PID>    - use <PID> as root process
-    /FARPID=<PID> - for internal use from Far plugin
-    /CONPID=<PID> - 'soft' mode, don't inject ConEmuHk into <PID>
-    /TRMPID=<PID> - called from *.vshost.exe when 'AllocConsole' just created
+    -GHWND        - you may force new ConEmu window or attach to specific one
+    -PID=<PID>    - use <PID> as root process
+    -FARPID=<PID> - for internal use from Far plugin
+    -CONPID=<PID> - 'soft' mode, don't inject ConEmuHk into <PID>
+    -TRMPID=<PID> - called from *.vshost.exe when 'AllocConsole' just created
 ~~~
 
 
@@ -132,7 +132,7 @@ ConEmuC /ATTACH [/GHWND=NEW|<HWND>] /[FAR|CON|TRM]PID=<PID>
 Read full description on [GuiMacro](GuiMacro.html#Command_line) page.
 
 ~~~
-ConEmuC [/SILENT] /GUIMACRO[:PID|HWND][:T<tab>][:S<split>] <GuiMacro command>
+ConEmuC [-SILENT] -GUIMACRO[:PID|HWND][:T<tab>][:S<split>] <GuiMacro command>
 ~~~
 
 
@@ -177,11 +177,11 @@ ConEmuC -e "^[[1;33;45mqwerty^[[m"
 ### Debug and [MiniDump](MemoryDump.html)  {#Debug}
 
 ~~~
-ConEmuC /DEBUGPID=<Debugging PID> [/DUMP | /MINI | /FULL]
+ConEmuC -DEBUGPID=<Debugging PID> [-DUMP | -MINI | -FULL]
     start debugger or create memory dump
-ConEmuC /DEBUGEXE <command line>
+ConEmuC -DEBUGEXE <command line>
     start <command line> under debugger
-ConEmuC /DEBUGTREE <command line>
+ConEmuC -DEBUGTREE <command line>
     start <command line> under debugger, debug all children
 ~~~
 
@@ -190,7 +190,7 @@ ConEmuC /DEBUGTREE <command line>
 ### [Export environment variables](ConEmuEnvironment.html#Export_variables) to the parent processes  {#Export}
 
 ~~~
-ConEmuC /EXPORT[=CON|ALL] [Var1 [Var2 [...]]]
+ConEmuC -EXPORT[=CON|ALL] [Var1 [Var2 [...]]]
 ~~~
 
 
@@ -209,13 +209,13 @@ ConEmuC -download [-login <name> -password <pwd>]
 ### Execute commands and create tabs (use with caution!)  {#Commands}
 
 ~~~
-ConEmuC [switches] /ROOT <program with arguments, far.exe for example>
-ConEmuC [switches] [/U | /A] [/Async | /Fork] /C <command line>
+ConEmuC [switches] -ROOT <program with arguments, far.exe for example>
+ConEmuC [switches] [-U | -A] [-Async | -Fork] -C <command line>
   Switches
-    /[NO]CONFIRM - [don't] confirm closing console on program termination
-    /B{W|H|Z}    - define window width, height and buffer height
-    /F{N|W|H}    - define console font name, width, height
-    /LOG[N]      - create (debug) log file, N is number from 0 to 3
+    -[NO]CONFIRM - [don't] confirm closing console on program termination
+    -B{W|H|Z}    - define window width, height and buffer height
+    -F{N|W|H}    - define console font name, width, height
+    -LOG[N]      - create (debug) log file, N is number from 0 to 3
 ~~~
 
 
@@ -223,7 +223,7 @@ ConEmuC [switches] [/U | /A] [/Async | /Fork] /C <command line>
 ### Show errorlevel of `<command>`  {#ShowErrorlevel}
 
 ~~~
-ConEmuC /Result /C <command>
+ConEmuC -Result -C <command>
 ~~~
 
 
@@ -231,7 +231,7 @@ ConEmuC /Result /C <command>
 ### Return errorlevel = `<number>`  {#ReturnErrorlevel}
 
 ~~~
-ConEmuC /ErrorLevel <number>
+ConEmuC -ErrorLevel <number>
 ~~~
 
 
@@ -252,7 +252,13 @@ Btw, this is one of the ways to start **GUI** application in ConEmu tab.
 ### Examples  {#new_console-examples}
 
 ~~~
-dir "-new_console:bh9999c" c:\ /s
+dir c:\ /s
+ConEmuC -c dir "-new_console:bh9999c" c:\ /s
 vim.exe -new_console:nh0 c:\sources\1.cpp
 hiew.exe -cur_console:h0 c:\tools\far.exe
 ~~~
+
+Note: switches not related to ConEmuC should use the notation of the tool you running. E.g. for `dir c:\ /s` it's a cmd.exe, so use `/` for switches.
+
+Note: `-new_console` and `-cur_console` switches aren't working for internal commands of the shell. So `dir -new_console c:\ /s` will not work
+from the cmd.exe prompt, if you don't prepend the command with `ConEmuC -c`.

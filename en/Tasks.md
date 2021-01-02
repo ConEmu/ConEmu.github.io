@@ -98,14 +98,16 @@ Usually you put here a name or full path to your
 
 Read below about [creating new task commands](#create-new-task).
 
-Also you may put here the names of other single-command tasks.
-For example, my `{Startup}` task initializes [ssh-agent](SshAgent.html)
+Also you may put here the names of other single-command tasks (nesting).
+For example, my `{Startup}` task initializes nested [ssh-agent](SshAgent.html)
 and starts [Far Manager](FarManager.html) at once.
 
 ```
 > {ssh-agent}
 {Far}
 ```
+
+More examples here: [Settings/Tasks](SettingsTasks.html#id2118).
 
 
 ### Task hotkey  {#task-hotkey}
