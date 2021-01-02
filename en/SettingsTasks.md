@@ -28,7 +28,7 @@ This page was manually edited
 
 ![ConEmu Settings: Tasks](/img/Settings-Tasks.png)
 
-ConEmu's **Tasks** are used to store predefined commands
+ConEmu's [**Tasks**](Tasks.html) are used to store predefined commands
 or [shell's](TerminalVsShell.html) command lines
 to run them anytime later by name or hotkey.
 
@@ -36,7 +36,7 @@ to run them anytime later by name or hotkey.
 ## Predefined tasks (command groups)  {#id2115}
 
 Task name (alias), surrounded by {...}, used in
-<a href="ToolBar.html">[+] menu</a>, [Recreate dialog](LaunchNewTab.html#Create_new_console_dialog)
+<a href="ToolBar.html"><code class="plus">[+]</code> menu</a>, [Recreate dialog](LaunchNewTab.html#Create_new_console_dialog)
 or [-run argument](ConEmuArgs.html) of ConEmu.exe.
 
 
@@ -121,12 +121,12 @@ Works till ‘Save settings’ button is pressed.
 Create a copy of the selected Task. New Task is placed just below the current one.
 
 
-#### +  {#id2122}
+#### + (button)  {#id2122}
 
 Create a new empty Task.
 
 
-#### -  {#id2124}
+#### - (button)  {#id2124}
 
 Delete the selected Task after confirmation.
 
