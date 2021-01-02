@@ -9,6 +9,8 @@ breadcrumbs:
    title: Launch Apps
 
 readalso:
+ - url: SettingsTasks.html
+   title: "Settings › Tasks page"
  - url: DefaultTasks.html
    title: "Default Tasks"
  - url: NewConsole.html
@@ -19,15 +21,13 @@ readalso:
    title: "GUI, Console and Shells switches"
  - url: StartupDir.html
    title: "Startup Directory"
- - url: SettingsTasks.html
-   title: "Settings › Tasks page"
 ---
 
 # ConEmu's Tasks
 
 ConEmu's **Tasks** are used to store predefined commands
 or [shell's](TerminalVsShell.html) command lines
-and run them anytime later by name or hotkey.
+to run them anytime later by name or hotkey.
 
 * [Tasks in details](#about-tasks)
   * [Task name](#task-name)
@@ -107,9 +107,11 @@ and starts [Far Manager](FarManager.html) at once.
 {Far}
 ```
 
+
 ### Task hotkey  {#task-hotkey}
 You may assign a ‘hotkey’ to each task to have the task started
 in a simple keypress when ConEmu has focus.
+
 
 ### Task parameters  {#task-parameters}
 This field may contain some optional switches like startup directory or icon.
@@ -118,7 +120,8 @@ You may use here a subset from [ConEmu command line switches](ConEmuArgs.html):
 
 * `-icon "path-to-tab-icon"` defines tab icon; alternative to [-new_console:C:"path-to-tab-icon"](NewConsole.html);
 * `-dir "working-directory"` defines shell startup directory; alternative to [-new_console:d:"working-directory"](NewConsole.html);
-* `-single` or `-reuse` forces to run the task in an existing ConEmu instance; useful with [Windows 7 jump lists](#jump-list);
+* `-single` or `-reuse` forces to run the task in an existing ConEmu instance; also useful with [Windows 7 jump lists](#jump-list);
+* `-nosingle` forces to run the task in the new ConEmu window; also useful with [Windows 7 jump lists](#jump-list);
 * `-quake` or `-noquake` as is, allows to run a command in quake/noquake mode.
 
 
