@@ -20,12 +20,14 @@ readalso:
    title: "GUI, Console and Shells switches"
 ---
 
-# Switches -new_console and -cur_console
+# Command line switches -new_console and -cur_console
 
   * [Purpose](#purpose)
+  * **[Syntax](#syntax)**
+  * [Detailed description](#tech-info)
   * [Exclusions](#exclusions)
   * [The difference](#the-difference)
-  * **[Syntax](#syntax)**
+    * [Run Tasks in the existing console prompt](#run-in-prompt)
   * [Important notes](#important-notes)
   * [Examples](#examples)
   * [Example 1](#example-1)
@@ -41,8 +43,60 @@ readalso:
 ## Purpose  {#purpose}
 
 Switches `-new_console` and `-cur_console` are used to modify the behavior
-of the ConEmu tabs and splits (new or existing). Few examples below.
+of the ConEmu tabs and splits (new or existing).
 
+These switches are twofold purpose, they could be used both in console prompt (e.g. run `sh.exe` from `cmd.exe` prompt in ConEmu)
+and from ConEmu interface (e.g. in [Tasks](Tasks.html) or [New console dialog](LaunchNewTab.html)).
+
+`-new_console` and `-cur_console` were designed to minimize the possible impact on the command lines of used console applications.
+
+
+## Syntax  {#syntax}
+
+When you run application from existing ConEmu tab, or starting new tab from ConEmu interface,
+you may use `-new_console` or `-cur_console` switches.
+
+**Warning** `-new_console`, `-cur_console` and all subswitches are **case sensitive**.
+
+~~~
+-new_console[:switches]
+   or
+-cur_console[:switches]
+   a - RunAs shell verb (as Admin on Vista+, user/pwd in Win2k and WinXP)
+   b - create background tab
+   c - force enable ‘Press Enter or Esc to close console’ confirmation
+       c0 - wait for Enter/Esc silently
+       c1 - don't close console automatically, even by Enter/Esc
+   C:"<iconfile>" - specifies an icon used in tab
+   d:"<dir>" - specify working directory
+   e - use credentials for network resources only
+   f - force starting console active, useful when starting several consoles simultaneously
+   h<height> - i.e., h0 - turn buffer off, h9999 - switch to 9999 lines
+   i - don't inject ConEmuHk into starting process
+   I - (GuiMacro only) forces inheriting of root process contents, like ‘Duplicate root’ feature
+   L:"<dir>\" - the directory for ANSI log files
+   L:"<logfile>" - the full path for ANSI log file
+   m:/mnt - defines ‘/mnt’ prefix for Unix-path conversion, m:"" - no prefix
+   n - disable ‘Press Enter or Esc to close console’
+   o - don't enable ‘Long console output’ when starting command from Far Manager
+   p[N] - pty modes, N - bitmask: 1 - XTermKeys, 2 - BrPaste, 4 - AppCursorKeys; default is 1
+   P:"<palettename>" - set fixed palette for tab
+   r - run as restricted user
+   R - force start hooks server in the parent process
+   s[<SplitTab>T][<Percents>](H|V) - run new console in a split
+   t:"<tabname>" - rename new created tab
+   u - ConEmu choose user dialog
+   u:"<user>:<pwd>" - specify user/pwd in args
+   w[0] - Enable [disable] ‘Overwrite’ mode in command prompt by default
+   W:"<tabwallpaper>" - use specified wallpaper for the tab
+   z - Don't use ‘Default terminal’ feature for this command
+~~~
+
+
+
+## Detailed description  {#tech-info}
+
+Let's look on some usage examples.
 
 Within ConEmu Tasks you may explicitly set color palette for creating tab:
 
@@ -56,7 +110,7 @@ Or, from your shell prompt (e.g. cmd.exe started in ConEmu) you can start PuTTY 
 PuTTY.exe -new_console -load "yourserver"
 ~~~
 
-Or, if you need to run some script with disabled ‘[Inject ConEmuHk](ConEmuHk.html)’ from your shell prompt running in the ConEmu tab, you may use ‘-cur_console:i’ switch.
+Or, if you need to run some script with disabled ‘[Inject ConEmuHk](ConEmuHk.html)’ from your shell prompt running in the ConEmu tab, you may use `-cur_console:i` switch.
 
 ~~~
 cmd /c -cur_console:i MyBatch.cmd BatchArg1 ... BatchArgN
@@ -64,7 +118,7 @@ cmd /c -cur_console:i MyBatch.cmd BatchArg1 ... BatchArgN
 
 Switches may be used in the:
 
-  *  ConEmu command line: `/cmd` or `/cmdlist` from [ConEmu.exe arguments](ConEmuArgs.html)
+  *  ConEmu command line: `-run` or `-runlist` from [ConEmu.exe arguments](ConEmuArgs.html)
      or ‘Command line’ from the [Settings](SettingsStartup.html);
   *  ConEmu [Tasks](Settings.html#Tasks): Commands area;
   *  Your shell prompt started in ConEmu: ‘[Inject ConEmuHk](ConEmuHk.html)’
@@ -72,12 +126,12 @@ Switches may be used in the:
   *  And at last within switches of console application running with Default terminal feature.
 
 You must **not** specify them as `ConEmu(64).exe` or `ConEmuC(64).exe` arguments.
-Specify them **after** `/cmd` or `/cmdlist` (ConEmu.exe)
-and `/c` or `/k` (ConEmuC.exe) if you need to use them
+Specify them **after** `-run` or `-runlist` (ConEmu.exe)
+and `-c` or `-k` (ConEmuC.exe) if you need to use them
 with ConEmu's executables command line.
 
 ~~~
-ConEmu.exe /cmdlist cmd ||| powershell -new_console:sV
+ConEmu.exe -runlist cmd ||| powershell -new_console:sV
 ~~~
 
 {% include in_article.html %}
@@ -132,46 +186,20 @@ On the other hand, using them in ConEmu's tasks or command line,
 both `-new_console` and `-cur_console` has the same effect.
 
 
-## Syntax  {#syntax}
+### Run Tasks in the existing console prompt  {#run-in-prompt}
 
-When you run application from existing ConEmu tab, or starting new tab from ConEmu interface,
-you may use `-new_console` or `-cur_console` switches.
+You should use `-cur_console` in [Tasks](Tasks.html) if you want to run them
+in the existing console prompt using `ConEmuC.exe -c` switch.
+If [Task Command](SettingsTasks.html#id2118) contains the `-new_console` switch,
+the new tab will be started instead of reusing current one.
 
-**Warning** `-new_console`, `-cur_console` and all subswitches are **case sensitive**.
+Note! Only first [Task Command](SettingsTasks.html#id2118) is executed.
 
-~~~
--new_console[:switches]
-   or
--cur_console[:switches]
-   a - RunAs shell verb (as Admin on Vista+, user/pwd in Win2k and WinXP)
-   b - create background tab
-   c - force enable ‘Press Enter or Esc to close console’ confirmation
-       c0 - wait for Enter/Esc silently
-       c1 - don't close console automatically, even by Enter/Esc
-   C:"<iconfile>" - specifies an icon used in tab
-   d:"<dir>" - specify working directory
-   e - use credentials for network resources only
-   f - force starting console active, useful when starting several consoles simultaneously
-   h<height> - i.e., h0 - turn buffer off, h9999 - switch to 9999 lines
-   i - don't inject ConEmuHk into starting process
-   I - (GuiMacro only) forces inheriting of root process contents, like ‘Duplicate root’ feature
-   L:"<dir>\" - the directory for ANSI log files
-   L:"<logfile>" - the full path for ANSI log file
-   m:/mnt - defines ‘/mnt’ prefix for Unix-path conversion, m:"" - no prefix
-   n - disable ‘Press Enter or Esc to close console’
-   o - don't enable ‘Long console output’ when starting command from Far Manager
-   p[N] - pty modes, N - bitmask: 1 - XTermKeys, 2 - BrPaste, 4 - AppCursorKeys; default is 1
-   P:"<palettename>" - set fixed palette for tab
-   r - run as restricted user
-   R - force start hooks server in the parent process
-   s[<SplitTab>T][<Percents>](H|V) - run new console in a split
-   t:"<tabname>" - rename new created tab
-   u - ConEmu choose user dialog
-   u:"<user>:<pwd>" - specify user/pwd in args
-   w[0] - Enable [disable] ‘Overwrite’ mode in command prompt by default
-   W:"<tabwallpaper>" - use specified wallpaper for the tab
-   z - Don't use ‘Default terminal’ feature for this command
-~~~
+E.g. run `{cmd}` Task from Powershell prompt:
+
+```
+ConEmuC -c "{cmd}"
+```
 
 
 ## Important notes  {#important-notes}
