@@ -35,12 +35,12 @@ like in the [issue 225](https://github.com/Maximus5/ConEmu/issues/225).
 
 ## cmd.exe and clink  {#ConEmu_and_clink}
 
-If you are using `cmd.exe` as shell you may try [clink](http://mridgers.github.io/clink/)
+If you are using `cmd.exe` as shell you may try [clink](http://chrisant996.github.io/clink/)
 for bash style completion and advanced cmd prompt.
 ConEmu provides an [option](SettingsFeatures.html) to autoload clink in cmd tabs.
 
-* Download latest [clink](http://mridgers.github.io/clink/)
-  or build it yourself from [sources](https://github.com/mridgers/clink#building-clink).
+* Download latest [clink](http://chrisant996.github.io/clink/)
+  or build it yourself from [sources](https://github.com/chrisant996/clink#building-clink).
 * Unpack **files** (without subfolder) into `%ConEmuBaseDir%\clink`
   (this folder already created by ConEmu installer and contains `Readme.txt`).
   * Please note, clink archive contains subfolder. Files `clink_dll_x86.dll`, `clink_dll_x64.dll`
@@ -64,7 +64,7 @@ Actually, option ‘Use Clink in prompt’ is not required,
 if clink was set up using its installer.
 
 Please refer to
-[https://github.com/mridgers/clink](https://github.com/mridgers/clink)
+<https://github.com/chrisant996/clink>
 for further information and bugreports.
 
 
