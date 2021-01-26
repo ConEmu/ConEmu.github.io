@@ -367,7 +367,7 @@ backscroll buffer (upper invisible parts) may not be accessed in that way.
 | ESC \[ *lines* F | Moves cursor to beginning of the line, *lines* (default 1) lines up. |
 | ESC \[ *col* G | Moves the cursor to column *col* (absolute, 1-based). |
 | ESC \[ *row* ; *col* H | Set cursor position. The values *row* and *col* are 1-based. |
-| ESC \[ *n* J | Erase display. When *n* is **0** or missing: from cursor to end of display). When *n* is **1**: erase from start to cursor. When *n* is **2**: erase whole display **and** moves cursor to upper-left corner. When *n* is **3**: dispose all backscroll lines. |
+| ESC \[ *n* J | Erase display. When *n* is **0** or missing: from cursor to end of display). When *n* is **1**: erase from start to cursor. When *n* is **2**: erase viewport **and** moves cursor to upper-left corner. When *n* is **3**: dispose all backscroll lines. |
 | ESC \[ *n* K | Erase line. When *n* is **0** or missing: from cursor to end of line. When *n* is **1**: erase from start of line to cursor. When *n* is **2**: erase whole line **and** moves cursor to first column. |
 | ESC \[ *n* L | Insert *n* (default 1) lines before current, scroll part of screen from current line to bottom. |
 | ESC \[ *n* M | Delete *n* (default 1) lines including current. |
