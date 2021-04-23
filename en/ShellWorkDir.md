@@ -109,7 +109,7 @@ ConEmu will maintain **CD** for you automatically.
 **Warning!** This options will work only with
 [cygwin/msys connector](CygwinMsysConnector.html)!
 
-This is the only option available for [Bash on Ubuntu on Windows](BashOnWindows.html).
+This is the only option available for [Bash on Ubuntu on Windows](wsl.html).
 
 Use [ANSI](AnsiEscapeCodes.html#ConEmu_specific_OSC) in `PS1`
 environment variable to notify ConEmu about directory changes
@@ -130,7 +130,7 @@ This is required to avoid weird behavior of readline when you type really long c
 
 ### bash and some other cygwin shells   {#bash_and_other_cygwin_shells}
 
-**NB**. Dont try this in [Bash on Ubuntu on Windows](BashOnWindows.html).
+**NB**. Dont try this in [Bash on Ubuntu on Windows](wsl.html).
 `ConEmuC.exe` is *native* Windows application which can't be executed by *linux* kernel.
 
 **NB**. Preferred way is using [ANSI sequence](#connector-ps1) described above.
@@ -147,7 +147,7 @@ fi
 
 ### zsh   {#zsh}
 
-**NB**. Dont try this in [Bash on Ubuntu on Windows](BashOnWindows.html).
+**NB**. Dont try this in [Bash on Ubuntu on Windows](wsl.html).
 `ConEmuC.exe` is *native* Windows application which can't be executed by *linux* kernel.
 
 **NB**. Preferred way is using [ANSI sequence](#connector-ps1) described above.

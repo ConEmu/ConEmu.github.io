@@ -543,32 +543,32 @@
   eng: "WSL/Bash on Windows"
   rus: "WSL/Bash on Windows"
   id:  "bash-on-windows"
-  url: "BashOnWindows.html"
+  url: "wsl.html"
   children:
     -
       eng: "WSL installation"
       rus: "Установка WSL"
-      url: "BashOnWindows.html#TLDR"
+      url: "wsl.html#TLDR"
     -
       eng: "Preferred way to run WSL"
       rus: "Как запускать WSL в ConEmu"
-      url: "BashOnWindows.html#connector"
+      url: "wsl.html#connector"
     -
       eng: "Start WSL in Unix home directory"
       rus: "Старт WSL в домашней директории Unix"
-      url: "BashOnWindows.html#wsl-home"
+      url: "wsl.html#wsl-home"
     -
       eng: "Select WSL distribution"
       rus: "Выбор дистрибутива WSL"
-      url: "BashOnWindows.html#wsl-distro"
+      url: "wsl.html#wsl-distro"
     -
       eng: "Get arrows working in ConEmu"
       rus: "Если не работают кнопки курсора"
-      url: "BashOnWindows.html#arrows"
+      url: "wsl.html#arrows"
     -
       eng: "WSLBridge in ConEmu"
       rus: "WSLBridge в ConEmu"
-      url: "BashOnWindows.html#wslbridge"
+      url: "wsl.html#wslbridge"
 -
   eng: "ConEmu and Far Manager"
   rus: "ConEmu и Far Manager"

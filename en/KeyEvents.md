@@ -41,7 +41,7 @@ and other native [console applications](ConsoleApplication.html).
 ## key-reader and key-curses  {#key-reader}
 
 Both tools are distributes as [sources on GitHub](https://github.com/Maximus5/key-reader)
-and may be compiled with [cygwin, msys-2](CygwinMsys.html) or [WSL](BashOnWindows.html).
+and may be compiled with [cygwin, msys-2](CygwinMsys.html) or [WSL](wsl.html).
 
 key-reader shows just [raw character codes](#key-reader-out).
 
@@ -51,7 +51,7 @@ key-cureses tries to output [mnemonic key names and mouse events](#key-curses-ou
 ## ‘showkeys -a’ Unix command  {#show-keys}
 
 This simple tool is available from the box on many Unix distro
-and is available in [WSL](BashOnWindows.html) too.
+and is available in [WSL](wsl.html) too.
 Just execute `showkeys -a` from your prompt.
 
 [Sample showkeys output](#show-keys-out).

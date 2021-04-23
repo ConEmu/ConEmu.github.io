@@ -49,7 +49,7 @@ will affect newly created consoles only.
 
 ## Connector ‘--log’ switch  {#connector}
 
-When you use [Connector](CygwinMsysConnector.html) to run [WSL](BashOnWindows.html) or [cygwin/msys](CygwinMsys.html) shells
+When you use [Connector](CygwinMsysConnector.html) to run [WSL](wsl.html) or [cygwin/msys](CygwinMsys.html) shells
 you may turn on logging in the Connector itself using `--log <dir>` switch.
 
 For example, if you use the [Task](Tasks.html) `{Bash::bash}` it runs by default:

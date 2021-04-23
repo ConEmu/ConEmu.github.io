@@ -144,7 +144,7 @@ Don't forget to save them after changes!
 * from consoles started in ConEmu:
   * from [cmd.exe prompt](CmdPrompt.html): `"%ConEmuBaseDir%\ConEmuC.exe" /c {cmd} -new_console`;
   * from [Far Manager](FarManager.html) prompt via [plugin](ConEmuFarPlugin.html): `conemu:run:{cmd} -new_console`;
-  * you can't start new consoles from [WSL prompt](BashOnWindows.html) because all commands are executed on the Linux side.
+  * you can't start new consoles from [WSL prompt](wsl.html) because all commands are executed on the Linux side.
 
 The [ConEmu Jump list](#jump-list) may be configured here too.
 Set up a list of tasks in the field of ‘ConEmu arguments for Jump list’

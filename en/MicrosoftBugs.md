@@ -63,7 +63,7 @@ This is [known conhost's API bug](https://github.com/Maximus5/ConEmu/issues/1164
 There is no good solution yet.
 
 You may enable ‘Legacy mode’ in [RealConsole](RealConsole.html) properties,
-but you'd lost abitily to run [Bash on Ubuntu on Windows](BashOnWindows.html)
+but you'd lost abitily to run [Bash on Ubuntu on Windows](wsl.html)
 and console contents reflow would stop working.
 
 ### Related issues

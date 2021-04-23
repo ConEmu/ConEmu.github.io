@@ -150,7 +150,7 @@ Or with [-new_console](NewConsole.html) switch from your shell prompt.
 C:> putty -new_console
 ~~~
 
-**NB**. You can't run ChildGui from [Bash on Ubuntu on Windows](BashOnWindows.html).
+**NB**. You can't run ChildGui from [Bash on Ubuntu on Windows](wsl.html).
 
 
 

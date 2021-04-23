@@ -79,7 +79,7 @@ a.k.a. ‘Windows Subsystem for Linux’ please check your problem
 
 Please read also:
 
-* [Bash on Ubuntu on Windows in ConEmu](BashOnWindows.html)
+* [Bash on Ubuntu on Windows in ConEmu](wsl.html)
 * [Note about DefaultTerminal](#defterm)
 
 

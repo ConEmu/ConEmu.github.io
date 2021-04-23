@@ -1,8 +1,10 @@
 ---
 redirect_from:
+ - /en/BashOnWindows.html
  - /ru/BashOnWindows.html
+ - /ru/wsl.html
 
-title: "ConEmu | Bash on Ubuntu on Windows in ConEmu (WSL)"
+title: "ConEmu | Windows Subsystem for Linux (WSL)"
 
 description: "Some hints about setting up Bash on Windows (WSL) in ConEmu"
 
@@ -23,7 +25,7 @@ readalso:
    title: "Terminal input and output modes"
 ---
 
-# Bash on Windows
+# Bash on Ubuntu on Windows (WSL)
 
 At first, official place for bugs of ‘Windows Subsystem for Linux’ is:
 <https://github.com/Microsoft/WSL/issues/>.
@@ -49,7 +51,8 @@ without using of virtual machines or recompilations.
 * [Preferred way to run WSL](#connector)
   * [Change startup shell in WSL](#wsl-shell)
   * [Change drives mount point in WSL](#wsl-mnt)
-  * [Start WSL in Unix home directory](#wsl-home)
+  * [Start WSL in Unix home directory (WSL v2)](#wsl-home)
+  * [Start WSL in Unix home directory (connector)](#wsl-home-connector)
   * [Support different WSL distributions](#wsl-distro)
 * [Get arrows working in ConEmu](#arrows)
   * [Solution 1: Default task {bash}](#arrows-sol-1)
@@ -88,6 +91,34 @@ wsl.exe -cur_console:pm:/mnt
 
 If you want to have PTY terminal now you could try wslbridge2. Please read the description
 [how to install wslbridge2](https://github.com/Maximus5/ConEmu/issues/1930#issuecomment-640120326).
+
+### Run WSL v1 via connector  {#connector}
+
+**This variant does not work properly with latest WSL version.**
+
+Ryan Prichard has created [wslbridge](https://github.com/rprichard/wslbridge)
+which allows anyone to run WSL in any POSIX enabled terminal like mintty
+or [ConEmu cygwin/msys connector](CygwinMsysConnector.html).
+
+Note. If you don't use connector/wslbridge you may observe bugs with Bash.
+
+The required files of wslbridge and connector are shipped with ConEmu since
+build [170730](/blog/2017/07/30/Build-170730.html).
+Just download and install latest [Preview or Alpha](VersionComparison.html) version
+and be sure that your [Tasks](Tasks.html) are [updated](DefaultTasks.html#add-default-tasks).
+
+You `{Bash::bash}` task command shall be something like:
+
+~~~
+set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/mnt
+~~~
+
+And its task parameters:
+
+~~~
+/dir %CD% /icon "%USERPROFILE%\AppData\Local\lxss\bash.ico"
+~~~
+
 
 ### Tl;dr: Get arrows working in ConEmu  {#arrows-tldr}
 
@@ -161,32 +192,6 @@ Both problem have workarounds, read further.
 
 
 
-## Preferred way to run WSL  {#connector}
-
-Ryan Prichard has created [wslbridge](https://github.com/rprichard/wslbridge)
-which allows anyone to run WSL in any POSIX enabled terminal like mintty
-or [ConEmu cygwin/msys connector](CygwinMsysConnector.html).
-
-**Note** If you don't use connector/wslbridge you may observe bugs with Bash.
-
-The required files of wslbridge and connector are shipped with ConEmu since
-build [170730](/blog/2017/07/30/Build-170730.html).
-Just download and install latest [Preview or Alpha](VersionComparison.html) version
-and be sure that your [Tasks](Tasks.html) are [updated](DefaultTasks.html#add-default-tasks).
-
-You `{Bash::bash}` task command shall be something like:
-
-~~~
-set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" & %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/mnt
-~~~
-
-And its task parameters:
-
-~~~
-/dir %CD% /icon "%USERPROFILE%\AppData\Local\lxss\bash.ico"
-~~~
-
-
 ### Change startup shell in WSL  {#wsl-shell}
 
 ConEmu starts WSL via [wslbridge](https://github.com/rprichard/wslbridge) to be able
@@ -213,7 +218,16 @@ So you may access your files like `/c/path` instead of default `/mnt/c/path`.
 * To get proper conversion of Windows paths during Paste change `-new_console:m:/mnt` to `-new_console:m:""`.
 
 
-### Start WSL in Unix home directory  {#wsl-home}
+### Start WSL in Unix home directory (WSL v2)  {#wsl-home}
+
+Add after `wsl.exe` the `~` (tilda) without any quotes:
+
+~~~
+wsl.exe -cur_console:pm:/mnt ~
+~~~
+
+
+### Start WSL in Unix home directory (Connector)  {#wsl-home-connector}
 
 Add after `--wsl` the `-C~` switch:
 

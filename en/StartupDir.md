@@ -70,7 +70,7 @@ Few examples below.
 
 ### Cygwin  {#cygwin}
 
-*NB This is not related to ‘[Bash on Windows](BashOnWindows.html)’!*
+*NB This is not related to ‘[Windows Subsystem for Linux (WSL)](wsl.html)’!*
 
 Use `CHERE_INVOKING` environment variable for [cygwin shells](CygwinStartDir.html). Example:
 ~~~

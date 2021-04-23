@@ -13,7 +13,7 @@ readalso:
    title: "Terminal vs Shell"
  - url: CygwinMsysConnector.html
    title: "cygwin/msys connector"
- - url: BashOnWindows.html
+ - url: wsl.html
    title: "Keys and Colors in Bash On Windows (WSL)"
  - url: StatusBar.html
    title: "ConEmu Status Bar"

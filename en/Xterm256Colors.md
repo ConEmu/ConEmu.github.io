@@ -17,7 +17,7 @@ readalso:
    title: "Cygwin and Ansi"
  - url: ExtendedConsole.html
    title: "Far Manager ExtendedConsole"
- - url: BashOnWindows.html
+ - url: wsl.html
    title: "Keys and Colors in Bash On Windows (WSL)"
  - url: TerminalModes.html
    title: "Terminal input and output modes"

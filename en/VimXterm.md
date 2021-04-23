@@ -68,7 +68,7 @@ but I'm not sure how to do that properly.
 [gvim##.exe and vim##w32.zip](http://www.vim.org/download.php#pc)
 passed tests (versions 7.3 and 7.4 were tested).
 
-If you would like to use cygwin, msys, or [WSL](BashOnWindows.html) Vim versions
+If you would like to use cygwin, msys, or [WSL](wsl.html) Vim versions
 you shall use [connector](CygwinMsysConnector.html) to let ConEmu emulate POSIX terminal.
 Otherwise WSL, MinGW's and Cygwin's Vim [do not pass ANSI to ConEmu](CygwinAnsi.html).
 

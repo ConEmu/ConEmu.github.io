@@ -32,7 +32,7 @@ It supports:
 * [Cygwin](https://www.cygwin.com/): `conemu-cyg-32.exe` and `conemu-cyg-64.exe`;
 * [MSYS 1.0](http://www.mingw.org/wiki/msys): `conemu-msys-32.exe`;
 * [MSYS 2.0](https://msys2.github.io/) and [git for Windows](https://git-for-windows.github.io/): `conemu-msys2-32.exe` and `conemu-msys2-64.exe`.
-* [Windows subsystem for Linux](BashOnWindows.html): `conemu-cyg-64.exe` with [wslbridge](BashOnWindows.html#wslbridge).
+* [Windows subsystem for Linux](wsl.html): `conemu-cyg-64.exe` with [wslbridge](wsl.html#wslbridge).
 
 Since [ConEmu build 170705](/blog/2017/07/05/Build-170705.html) connector binaries
 are distributed with [ConEmu 7z-pack and installer](VersionComparison.html).

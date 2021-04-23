@@ -14,7 +14,7 @@ otherlang:
 readalso:
  - url: CygwinAnsi.html
    title: "ANSI в Cygwin и Msys"
- - url: BashOnWindows.html
+ - url: wsl.html
    title: "Стрелки и Цвета в Bash на Windows (WSL)"
  - url: TerminalModes.html
    title: "Режимы терминала ввода и вывода"

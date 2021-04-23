@@ -74,7 +74,7 @@ Just set up ‘Macro 01’ … ‘Macro 32’ on [‘Keys’](SettingsHotkeys.ht
 
 #### 2. ConEmuC -GuiMacro switch  {#call-conemuc}
 
-**NB**. This does not work in [WSL](BashOnWindows.html)!
+**NB**. This does not work in [WSL](wsl.html)!
 
 If you may call `ConEmuC.exe` (command line, batch file, etc.)
 then you may use [ConEmuC -GuiMacro](#Command_line) switch.
