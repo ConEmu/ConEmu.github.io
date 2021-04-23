@@ -1,80 +1,80 @@
 {
-  "lastmod":  "2021-03-15T01:58:09.873Z",
+  "lastmod":  "2021-04-23T08:44:43.544Z",
   "releases": [
     {
       "type": "Alpha",
-      "version":  "210314",
+      "version":  "210422",
       "files": [
         {
           "type": "7-Zip",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v21.03.14/ConEmuPack.210314.7z",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.210314.7z?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v21.04.22/ConEmuPack.210422.7z",
+            "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.210422.7z?use_mirror=autoselect"
           ],
-          "size":   4946792,
-          "crc32": "EA360FAE",
-          "md5":   "eb9fc8d7151f10736d022c4c56a1be7c",
+          "size":   4953262,
+          "crc32": "C79AA71C",
+          "md5":   "b960c299bbbcb785b569a1b0094d33e6",
           "description": "Alpha, Portable (32-bit, 64-bit)"
         },
         {
           "type": "Installer",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v21.03.14/ConEmuSetup.210314.exe",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.210314.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v21.04.22/ConEmuSetup.210422.exe",
+            "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.210422.exe?use_mirror=autoselect"
           ],
-          "size":   7478896,
-          "crc32": "CC0393C7",
-          "md5":   "43443af700d948eae11042f5b5e420c8",
+          "size":   8082544,
+          "crc32": "A461FF02",
+          "md5":   "8e4e72eefb4816d3fa4f4a2ca9be4ee0",
           "description": "Alpha, Installer (32-bit, 64-bit)"
         },
         {
           "type": "PortableApps",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v21.03.14/ConEmu_210314_English.paf.exe",
-            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_210314_English.paf.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v21.04.22/ConEmu_210422_English.paf.exe",
+            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_210422_English.paf.exe?use_mirror=autoselect"
           ],
-          "size":   4836064,
-          "crc32": "AEC3BDA7",
-          "md5":   "7d3d9663456e0ed9d5b6ab1591cc1c6e",
+          "size":   4840176,
+          "crc32": "C5999C94",
+          "md5":   "210ee0e2d624b2fc9cba7f844e674064",
           "description": "Alpha, PortableApps.com"
         }
       ]
     },
     {
       "type": "Preview",
-      "version":  "210314",
+      "version":  "210422",
       "files": [
         {
           "type": "7-Zip",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v21.03.14/ConEmuPack.210314.7z",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.210314.7z?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v21.04.22/ConEmuPack.210422.7z",
+            "http://downloads.sf.net/project/conemu/Preview/ConEmuPack.210422.7z?use_mirror=autoselect"
           ],
-          "size":   4946792,
-          "crc32": "EA360FAE",
-          "md5":   "eb9fc8d7151f10736d022c4c56a1be7c",
+          "size":   4953262,
+          "crc32": "C79AA71C",
+          "md5":   "b960c299bbbcb785b569a1b0094d33e6",
           "description": "Preview, Portable (32-bit, 64-bit)"
         },
         {
           "type": "Installer",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v21.03.14/ConEmuSetup.210314.exe",
-            "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.210314.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v21.04.22/ConEmuSetup.210422.exe",
+            "http://downloads.sf.net/project/conemu/Preview/ConEmuSetup.210422.exe?use_mirror=autoselect"
           ],
-          "size":   7478896,
-          "crc32": "CC0393C7",
-          "md5":   "43443af700d948eae11042f5b5e420c8",
+          "size":   8082544,
+          "crc32": "A461FF02",
+          "md5":   "8e4e72eefb4816d3fa4f4a2ca9be4ee0",
           "description": "Preview, Installer (32-bit, 64-bit)"
         },
         {
           "type": "PortableApps",
           "urls": [
-            "https://github.com/Maximus5/ConEmu/releases/download/v21.03.14/ConEmu_210314_English.paf.exe",
-            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_210314_English.paf.exe?use_mirror=autoselect"
+            "https://github.com/Maximus5/ConEmu/releases/download/v21.04.22/ConEmu_210422_English.paf.exe",
+            "http://downloads.sf.net/project/conemu/PortableApps/ConEmu_210422_English.paf.exe?use_mirror=autoselect"
           ],
-          "size":   4836064,
-          "crc32": "AEC3BDA7",
-          "md5":   "7d3d9663456e0ed9d5b6ab1591cc1c6e",
+          "size":   4840176,
+          "crc32": "C5999C94",
+          "md5":   "210ee0e2d624b2fc9cba7f844e674064",
           "description": "Preview, PortableApps.com"
         }
       ]
