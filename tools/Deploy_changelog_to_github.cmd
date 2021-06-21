@@ -18,7 +18,7 @@ if "%~1"=="" (
 cd /d "%~dp0.."
 call cecho /green "Creating release post {%CD%}"
 cd /d "%~dp0.."
-powershell -noprofile -command "%CD%\_posts\release.ps1"
+powershell -noprofile -ExecutionPolicy RemoteSigned -command "%CD%\_posts\release.ps1"
 
 rem ""%git%" add en/Whats_New.html
 call "%git%" checkout master
