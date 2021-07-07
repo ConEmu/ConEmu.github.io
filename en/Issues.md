@@ -54,6 +54,7 @@ Here are links to places where you may ask questions, report problems, suggest n
 
 ## Ask on social media
 
+* [Telegram group](https://t.me/conemugroupchat)
 * [Questions on SuperUser.com](http://superuser.com/questions/tagged/conemu) and [StackOverflow.com](http://stackoverflow.com/questions/tagged/conemu)
 * [ConEmu Mailing List](http://groups.google.com/group/conemu_ml)
 * [Follow @ConEmuMaximus5 on Twitter](https://twitter.com/intent/user?screen_name=ConEmuMaximus5)
