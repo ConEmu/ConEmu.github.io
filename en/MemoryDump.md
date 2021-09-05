@@ -28,7 +28,8 @@ Following information is a copy of answers from [ConEmu FAQ](ConEmuFAQ.html).
   * [ConEmu System menu](#ConEmu_System_menu)
   * [Using ConEmuC command line](#Using_ConEmuC_command_line)
   * [Using Windows Task manager](#Using_Windows_Task_manager)
-* [How to find Process ID (PID)](#How_to_find_Process_ID_(PID))
+  * [Using postmortem debugger](#Using_Postmortem_Debugger)
+* [How to find Process ID (PID)](#How_to_find_Process_ID)
 
 {% include in_article.html %}
 
@@ -98,7 +99,28 @@ Open Windows' Task Manager, switch to the "Processes" tab, right-click the proce
 
 
 
-## How to find Process ID (PID)  {#How_to_find_Process_ID_(PID)}
+### Using postmortem debugger  {#Using_Postmortem_Debugger}
+
+The [ProcDump](https://docs.microsoft.com/en-us/sysinternals/downloads/procdump) tool from SysInternals can install
+itself as postmortem debugger and it will create for you crash dumps automatically when any process in your system
+is terminated unexpectedly.
+
+Example command to install procdump as postmortem debugger (the command should be executed in the elevated console):
+
+~~~
+procdump.exe -i C:\CrashDumps -ma
+~~~
+
+To remove postmortem debugger:
+
+~~~
+procdump.exe -u
+~~~
+
+
+
+
+## How to find Process ID (PID)  {#How_to_find_Process_ID}
 
 A. You can find the Process ID near to Process Name (ConEmu.exe, cmd.exe, etc.)
 
