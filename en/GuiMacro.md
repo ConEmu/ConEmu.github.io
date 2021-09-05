@@ -896,8 +896,12 @@ SetDpi(<DPI>)
 ### Try to set focus in ConEmu window  {#SetFocus}
 
 ~~~
-SetFocus()
- - May be useful during inside mode
+SetFocus(<Type>)
+ - Try to change active window
+   Type: 0 - Set focus into ConEmu window/process (default)
+   Type: 1 - Switch focus between ConEmu and ChildGui
+   Type: 2 - Set focus into ChildGui window of the active console
+   Type: 3 - Set focus into the parent of the ConEmu window (ConEmu Inside mode)
 ~~~
 
 
