@@ -93,7 +93,7 @@ Length of backscroll buffer in lines. Maximum supported value is 32766.
 
 
 
-Old DOS programs may be run under console sizes: 80x25, 80x28, 80x43 or 80x50. You may force window size selection, or left the automatic selection. This feature is not available in x64 OS.
+Old DOS programs may be run under console sizes: 80x25, 80x28, 80x43 or 80x50. You may force window size selection, or leave the automatic selection. This feature is not available in x64 OS.
 
 #### Center console in ConEmu workspace  {#id1570}
 Draw console content in center of ConEmu window. Use together with ‘Pad size’
