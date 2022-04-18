@@ -1,1 +1,1 @@
-@call git push conemu-ru conemu-ru:master %*
+@rem call git push conemu-ru conemu-ru:master %*

@@ -7,6 +7,6 @@
 @call git checkout master
 @call git pull origin
 @call "%~dp0push-conemu-en.cmd"
-@call git checkout conemu-ru && call git merge master && call git checkout master
-@call "%~dp0push-conemu-ru.cmd"
+@rem call git checkout conemu-ru && call git merge master && call git checkout master
+@rem call "%~dp0push-conemu-ru.cmd"
 @popd
