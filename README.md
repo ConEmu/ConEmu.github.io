@@ -81,8 +81,8 @@ https://github.com/Maximus5/ConEmu/blob/master/src/HowToBuild.txt
 
  
 ## Screenshots
-![Splits and tabs in ConEmu](https://github.com/Maximus5/ConEmu/wiki/ConEmuSplits.png)
+![Splits and tabs in ConEmu](img/ConEmuSplits.png)
 
-![ConEmu+Powershell inside Windows Explorer pane](https://github.com/Maximus5/ConEmu/wiki/ConEmuInside.png)
+![ConEmu+Powershell inside Windows Explorer pane](img/ConEmuInside.png)
 
 [More screenshots](https://conemu.github.io/en/Screenshots.html)
