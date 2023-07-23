@@ -64,9 +64,6 @@ ways: chances are that most of the features that you need are
 already there (settings area is really overwhelming). You will
 probably end up in making ConEmu your default terminal for Windows.
 
-Read full review on
-[www.fosshub.com]({{ site.fosshub }})
-
 
 ## by Greg Steen (technet.microsoft.com)
 One of my favorite ConEmu features is the ability to add custom
@@ -85,8 +82,6 @@ First review I have posted in 28 years being a software dev. This
 app is awesome! I have been using Console2 for a long time, then
 just stumbled onto this. Have uninstalled Console2. The amount of
 features available in ConEmu are impressive. Kudos to the devs!!!
-
-More comments on [fosshub.com]({{ site.fosshub }})
 
 
 ## by Rafal Borowiec

@@ -79,7 +79,7 @@ I have not idea... Just a simple switch would be enough, but it does not exist.
 
 Anyway, anyone may go to [cygwin/msys connector](CygwinMsysConnector.html),
 download fresh test release, update ConEmu to
-<strong><a href="{{ site.fosshub }}" rel="nofollow">the latest ALPHA version</a></strong>,
+<strong><a href="{{ site.github }}" rel="nofollow">the latest ALPHA version</a></strong>,
 change your cygwin/msys task startup command and use console tools in ConEmu's native way.
 
 

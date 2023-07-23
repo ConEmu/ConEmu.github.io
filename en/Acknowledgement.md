@@ -46,7 +46,7 @@ and replace [simple cmd or powershell window](Delusions.html#delusion-2).
 
 * [https://github.com/Maximus5/ConEmu](https://github.com/Maximus5/ConEmu)
 * [https://sourceforge.net/projects/conemu/](https://sourceforge.net/projects/conemu/)
-* [{{ site.fosshub }}]({{ site.fosshub }})
+* [{{ site.github }}]({{ site.github }})
 * [https://code.google.com/p/conemu-maximus5/](https://code.google.com/p/conemu-maximus5/)
 
 

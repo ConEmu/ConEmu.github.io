@@ -18,7 +18,7 @@ mirror_ru: "http://www.conemu.ru"
 # used with conjunction with
 # page.docfolder: "/en"
 # sort of: href="{{ site.mirror }}{{ page.docfolder }}/VersionComparison.html"
-fosshub: "https://www.fosshub.com/ConEmu.html"
+github: "https://github.com/Maximus5/ConEmu/releases"
 
 
 # ### Build settings ###

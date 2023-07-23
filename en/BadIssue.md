@@ -97,7 +97,7 @@ Note, if you are using third-party bundles (like cmder)
 you may not using latest build.
 There is ConEmu [internal updater](UpdateModes.html).
 Just call it from [SystemMenu](SystemMenu.html) \ Help \ Check for updates.
-Or visit download page at [FossHub]({{ site.fosshub }}).
+Or visit download page at [GitHub]({{ site.github }}).
 
 Please note that staying on **Stable** update channel you almost never get latest build
 with latest bugfixes. More about [release stages](VersionComparison.html#release-stages).

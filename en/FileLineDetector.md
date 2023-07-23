@@ -70,7 +70,7 @@ Action:
 
 Examples:
 
-* [{{ site.fosshub }}]({{ site.fosshub }})
+* [{{ site.github }}]({{ site.github }})
 * [mailto:user@domain.com](mailto:user@domain.com)
 * [file:///c:\\sources\\abc.html](file:///c:\\sources\\abc.html)
 

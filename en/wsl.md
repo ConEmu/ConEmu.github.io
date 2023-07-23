@@ -368,7 +368,7 @@ To run wslbridge in ConEmu, just do simple steps:
 
 0. Install ‘Windows Subsystem for Linux (WSL)’ and some Linux distro (e.g. Ubuntu)
    from Microsoft Store.
-1. Download latest [ConEmu](https://www.fosshub.com/ConEmu.html) and install it.
+1. Download latest [ConEmu]({{ site.github }}) and install it.
    * If you run [Installer](VersionComparison.html#installer) ensure that feature ‘WSL support’
      and ‘cygwin/msys connector’ are enabled.
    * Required files `wslbridge.exe`, `cygwin1.dll`, `wslbridge-backend` and `conemu-cyg-64.exe`
