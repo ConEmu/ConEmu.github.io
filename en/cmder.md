@@ -11,7 +11,7 @@ breadcrumbs:
 
 # cmder
 
-[cmder](http://cmder.net/) is a preconfigured software bundle
+[cmder](https://cmder.app/) is a preconfigured software bundle
 of [ConEmu](https://conemu.github.io/) and some third-party software:
 
 * [Git for Windows](https://gitforwindows.org/);
